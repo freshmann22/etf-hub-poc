@@ -1,0 +1,10 @@
+{
+  "name": "etf-hub-main-poc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/logic.test.mjs tests/data-integrity.test.mjs tests/content-policy.test.mjs",
+    "serve": "node scripts/dev-server.js"
+  }
+}

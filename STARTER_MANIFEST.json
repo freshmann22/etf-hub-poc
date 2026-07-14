@@ -1,0 +1,20 @@
+{
+  "package": "ETF Hub Main PoC Starter",
+  "created": "2026-07-10",
+  "files": [
+    ".gitignore",
+    "CLAUDE_BOOTSTRAP_PROMPT.md",
+    "PROJECT_BRIEF.md",
+    "README_START_HERE.md",
+    "docs/ACCEPTANCE_TEST_PLAN.md",
+    "docs/DECISION_LOG.md",
+    "docs/MULTI_AGENT_PROJECT_RULES.md",
+    "docs/POC_SCOPE_MATRIX.md",
+    "docs/PRODUCT_VISION_AND_ROADMAP.md",
+    "docs/SAMPLE_DATA_SPEC.md",
+    "docs/SOURCE_CONTEXT.md",
+    "docs/UX_SCREEN_SPEC.md"
+  ],
+  "intended_project_path": "C:\\Users\\tleod\\projects\\etf-hub-main-poc",
+  "template_path": "C:\\Users\\tleod\\projects\\multi-agent-template"
+}

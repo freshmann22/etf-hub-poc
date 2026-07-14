@@ -1,0 +1,1008 @@
+/* ETF 허브 메인화면 PoC — 스타일
+   모바일 우선 (390x844 기준, 360~430 대응). 시스템 폰트만 사용. */
+
+:root {
+  /* 브랜드 포인트: iM Mint 단일 */
+  --brand: #00c7a9;
+  --brand-dark: #009a83;
+  --brand-deep: #04564a;
+  --brand-soft: #e5faf5;
+  --brand-ring: rgba(0, 199, 169, 0.35);
+
+  /* 중립 톤 */
+  --color-bg: #f6f7f8;
+  --color-surface: #ffffff;
+  --color-border: #e7e9ec;
+  --color-divider: #eef0f2;
+  --color-text: #1a1c20;
+  --color-text-muted: #666666;
+
+  /* 시세 의미색 (브랜드색과 역할 분리: 상승 빨강 / 하락 파랑) */
+  --color-up: #e0322f;
+  --color-down: #1968e0;
+  --color-neutral: #666666;
+  --up-bg-1: #fdf1f0;
+  --up-bg-2: #fadcda;
+  --up-bg-3: #f5bcb8;
+  --down-bg-1: #eff5fd;
+  --down-bg-2: #d9e7f9;
+  --down-bg-3: #bad3f3;
+  --flat-bg: #f0f1f3;
+
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 20px;
+  --space-xl: 28px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', Roboto,
+    'Apple SD Gothic Neo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.app-shell {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 var(--space-md) 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* ---------- 헤더 (컴팩트) ---------- */
+.app-header {
+  padding-top: var(--space-md);
+}
+
+.app-header-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.app-title::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 4px;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.app-subtitle {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 12.5px;
+}
+
+.sample-notice {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 검색 (컴팩트) ---------- */
+.search-section {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.search-input:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 4px var(--brand-ring);
+}
+
+.search-results {
+  margin-top: var(--space-sm);
+}
+
+.search-results:empty {
+  margin-top: 0;
+}
+
+.search-group {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.search-group h3 {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.search-result-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-result-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 4px;
+  font-size: 14px;
+  color: var(--color-text);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-result-btn:hover,
+.search-result-btn:focus-visible {
+  background: var(--brand-soft);
+}
+
+.result-code {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.empty-state {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  padding: var(--space-md);
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  margin: 0;
+}
+
+/* ---------- 공통 섹션 ---------- */
+.section-title {
+  margin: 0 0 var(--space-sm);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section-desc {
+  margin: -8px 0 var(--space-sm);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+/* ---------- 오늘의 ETF 시장 (1순위, 해석 헤드라인 중심) ---------- */
+.market-summary {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--brand);
+  border-radius: var(--radius-lg);
+  padding: 16px var(--space-lg);
+}
+
+.market-summary .section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.market-headline {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.market-breadth {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.breadth-item strong {
+  font-weight: 700;
+}
+
+.breadth-item.up strong {
+  color: var(--color-up);
+}
+
+.breadth-item.down strong {
+  color: var(--color-down);
+}
+
+.breadth-divider {
+  color: var(--color-border);
+}
+
+.market-trading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: var(--color-text-muted);
+}
+
+.market-trading-value {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.market-trading-note {
+  font-size: 11px;
+}
+
+.market-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.market-theme-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+}
+
+.market-theme-pill strong {
+  color: var(--color-text);
+}
+
+.market-theme-pill.strong {
+  background: var(--brand-soft);
+}
+
+.market-theme-pill.strong strong {
+  color: var(--brand-deep);
+}
+
+.change {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.change.up {
+  color: var(--color-up);
+}
+
+.change.down {
+  color: var(--color-down);
+}
+
+.change.neutral {
+  color: var(--color-neutral);
+}
+
+/* ---------- 히트맵 (1순위) ---------- */
+.period-tabs,
+.ranking-tabs,
+.content-filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.period-tab,
+.ranking-tab,
+.content-filter {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.period-tab.active,
+.ranking-tab.active,
+.content-filter.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+/* 히트맵: 타일 모자이크. 거래대금 3단계 크기 + 수익률 강도별 의미색 */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: var(--space-md);
+}
+
+.heatmap-card {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--flat-bg);
+}
+
+.heatmap-card--lg {
+  grid-column: 1 / -1;
+  min-height: 96px;
+  padding: 14px;
+}
+
+.heatmap-card--lg .heatmap-theme-name {
+  font-size: 16px;
+}
+
+.heatmap-card--lg .change {
+  font-size: 17px;
+}
+
+.heatmap-card--md {
+  min-height: 84px;
+}
+
+.heatmap-card--sm {
+  min-height: 66px;
+}
+
+.heatmap-card--sm .heatmap-trading-value {
+  display: none;
+}
+
+/* 수익률 절대값 강도별 배경 (상승 빨강 계열 / 하락 파랑 계열) */
+.heatmap-card.tone-up-1 { background: var(--up-bg-1); }
+.heatmap-card.tone-up-2 { background: var(--up-bg-2); }
+.heatmap-card.tone-up-3 { background: var(--up-bg-3); }
+.heatmap-card.tone-down-1 { background: var(--down-bg-1); }
+.heatmap-card.tone-down-2 { background: var(--down-bg-2); }
+.heatmap-card.tone-down-3 { background: var(--down-bg-3); }
+.heatmap-card.tone-flat { background: var(--flat-bg); }
+
+.heatmap-card.selected {
+  outline: 2px solid var(--brand);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 4px var(--brand-ring);
+}
+
+.heatmap-theme-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.heatmap-card .change {
+  font-size: 14px;
+}
+
+.heatmap-trading-value {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 지금 많이 움직인 ETF (2순위, 피드형 리스트) ---------- */
+.ranking-theme-filter {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: 12.5px;
+}
+
+.ranking-theme-label {
+  color: var(--brand-deep);
+  background: var(--brand-soft);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-weight: 600;
+}
+
+.ranking-theme-clear {
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-xs);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.etf-card {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-divider);
+  padding: 12px 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.etf-card:last-child {
+  border-bottom: none;
+}
+
+.etf-card:active {
+  background: var(--brand-soft);
+}
+
+/* 주 정보: ETF명 + 등락률 */
+.etf-card-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.etf-card-main > .change {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.etf-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.etf-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.etf-sub {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.etf-price {
+  font-variant-numeric: tabular-nums;
+}
+
+.etf-code {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* 보조 정보 */
+.etf-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.theme-tag {
+  background: var(--brand-soft);
+  color: var(--brand-deep);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.etf-card-holdings,
+.etf-card-issue {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 관심 종목으로 ETF 찾기 (2순위) ---------- */
+.stock-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: var(--space-md);
+}
+
+.stock-chip {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.stock-chip.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+.stock-etf-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.stock-result-card {
+  width: 100%;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.stock-result-card:active {
+  background: var(--brand-soft);
+}
+
+.stock-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.weight-value {
+  color: var(--brand-deep);
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* 편입비중 시각 막대 (브랜드 민트) */
+.weight-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-divider);
+  overflow: hidden;
+}
+
+.weight-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--brand);
+}
+
+.stock-result-meta {
+  display: flex;
+  gap: var(--space-md);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ---------- 오늘 주목할 테마 (3순위) ---------- */
+.theme-cards-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.theme-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.theme-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.theme-card .theme-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.theme-rep-etf,
+.theme-rep-stock,
+.theme-issue,
+.theme-trading-change {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.theme-issue {
+  color: #3a4150;
+}
+
+/* ---------- 같은 테마 ETF 비교 (3순위, 선택 칩 + 세로 비교 카드) ---------- */
+.compare-select-label {
+  display: block;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin: var(--space-sm) 0 0;
+}
+
+.compare-theme-select {
+  width: 100%;
+  margin-top: 4px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  font-size: 13px;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.compare-theme-select:focus {
+  outline: 2px solid var(--brand);
+}
+
+.compare-etf-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.compare-chip {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 12.5px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.compare-chip.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+.compare-cards {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.compare-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) 14px;
+}
+
+.compare-card-name {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--brand-soft);
+}
+
+.compare-card-rows {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  row-gap: 6px;
+  column-gap: 10px;
+  font-size: 12.5px;
+}
+
+.compare-card-rows dt {
+  color: var(--color-text-muted);
+}
+
+.compare-card-rows dd {
+  margin: 0;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.compare-note {
+  margin: var(--space-sm) 0 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 뉴스·공시·리서치 (4순위, 구분선 리스트) ---------- */
+.content-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-sm);
+}
+
+.content-item {
+  padding: 12px 2px;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.content-item:last-child {
+  border-bottom: none;
+}
+
+.content-item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.content-type-badge {
+  color: var(--brand-deep);
+  font-weight: 700;
+}
+
+.content-title {
+  margin: 0 0 3px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-summary {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* ---------- 푸터 ---------- */
+.app-footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  padding-bottom: var(--space-lg);
+}
+
+/* ---------- 바텀시트 ---------- */
+.bottom-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 24, 0.45);
+  z-index: 40;
+}
+
+.bottom-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  max-width: 480px;
+  margin: 0 auto;
+  max-height: 82vh;
+  overflow-y: auto;
+}
+
+.bottom-sheet-panel {
+  background: var(--color-surface);
+  border-radius: 20px 20px 0 0;
+  padding: var(--space-lg) var(--space-lg) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.bottom-sheet-handle {
+  width: 36px;
+  height: 4px;
+  background: var(--color-border);
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+.bottom-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.bottom-sheet-header h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.bottom-sheet-close {
+  border: none;
+  background: var(--brand-soft);
+  color: var(--brand-deep);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bottom-sheet-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bottom-sheet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.info-tile {
+  background: var(--color-bg);
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-label {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.bottom-sheet-holdings h3,
+.bottom-sheet-summary h3 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.bottom-sheet-holdings p,
+.bottom-sheet-summary p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.bottom-sheet-detail-link {
+  align-self: flex-start;
+  border: 1px solid var(--brand);
+  background: none;
+  color: var(--brand-deep);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bottom-sheet-detail-link:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.bottom-sheet-detail-notice {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 반응형 (360 ~ 430) ---------- */
+@media (max-width: 380px) {
+  .app-shell {
+    padding: 0 10px 96px;
+  }
+
+  .market-headline {
+    font-size: 15.5px;
+  }
+
+  .compare-card-rows {
+    grid-template-columns: 84px 1fr;
+  }
+}
+
+@media (min-width: 431px) {
+  .app-shell {
+    max-width: 520px;
+  }
+}

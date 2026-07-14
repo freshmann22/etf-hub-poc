@@ -1,0 +1,562 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - heading "ETF" [level=1] [ref=f1e5]
+      - paragraph [ref=f1e6]: 시장 흐름부터 구성종목까지 살펴보세요
+    - paragraph [ref=f1e7]: 화면 내 정보는 PoC용 샘플 데이터입니다.
+  - region "통합 검색" [ref=f1e8]:
+    - generic [ref=f1e9]: ETF, 종목, 테마 검색
+    - searchbox "ETF, 종목, 테마를 검색해보세요" [ref=f1e10]
+  - region "오늘의 ETF 시장" [ref=f1e11]:
+    - heading "오늘의 ETF 시장" [level=2] [ref=f1e12]
+    - generic [ref=f1e13]:
+      - paragraph [ref=f1e14]: 오늘은 상승한 ETF가 더 많아요. 방산 테마가 상대적으로 강한 흐름을 보였어요.
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]:
+          - text: 상승
+          - strong [ref=f1e17]: "14"
+        - generic [ref=f1e18]: ·
+        - generic [ref=f1e19]:
+          - text: 하락
+          - strong [ref=f1e20]: "7"
+        - generic [ref=f1e21]: ·
+        - generic [ref=f1e22]:
+          - text: 보합
+          - strong [ref=f1e23]: "3"
+      - generic [ref=f1e24]:
+        - generic [ref=f1e25]: 거래대금
+        - generic [ref=f1e26]: 6조 3,820억원
+        - generic [ref=f1e27]: +14.50%
+        - generic [ref=f1e28]: 전일 대비
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]:
+          - generic [ref=f1e31]: 강한 테마
+          - strong [ref=f1e32]: 방산
+        - generic [ref=f1e33]:
+          - generic [ref=f1e34]: 약한 테마
+          - strong [ref=f1e35]: 레버리지·인버스
+  - region "ETF 시장 히트맵" [ref=f1e36]:
+    - generic [ref=f1e37]:
+      - heading "ETF 시장 히트맵" [level=2] [ref=f1e38]
+      - tablist "히트맵 기간" [ref=f1e39]:
+        - tab "오늘" [selected] [ref=f1e40] [cursor=pointer]
+        - tab "1주" [ref=f1e41] [cursor=pointer]
+        - tab "1개월" [ref=f1e42] [cursor=pointer]
+    - generic [ref=f1e43]:
+      - button "반도체 +2.10% 거래대금 1조 2,200억원" [ref=f1e44] [cursor=pointer]:
+        - generic [ref=f1e45]: 반도체
+        - generic [ref=f1e46]: +2.10%
+        - generic [ref=f1e47]: 거래대금 1조 2,200억원
+      - button "AI·로봇 +1.80% 거래대금 9,800억원" [ref=f1e48] [cursor=pointer]:
+        - generic [ref=f1e49]: AI·로봇
+        - generic [ref=f1e50]: +1.80%
+        - generic [ref=f1e51]: 거래대금 9,800억원
+      - button "국내 대표지수 +0.35% 거래대금 8,500억원" [ref=f1e52] [cursor=pointer]:
+        - generic [ref=f1e53]: 국내 대표지수
+        - generic [ref=f1e54]: +0.35%
+        - generic [ref=f1e55]: 거래대금 8,500억원
+      - button "방산 +3.40% 거래대금 7,300억원" [ref=f1e56] [cursor=pointer]:
+        - generic [ref=f1e57]: 방산
+        - generic [ref=f1e58]: +3.40%
+        - generic [ref=f1e59]: 거래대금 7,300억원
+      - button "레버리지·인버스 -4.20% 거래대금 6,700억원" [ref=f1e60] [cursor=pointer]:
+        - generic [ref=f1e61]: 레버리지·인버스
+        - generic [ref=f1e62]: "-4.20%"
+        - generic [ref=f1e63]: 거래대금 6,700억원
+      - button "2차전지 -1.20% 거래대금 6,100억원" [ref=f1e64] [cursor=pointer]:
+        - generic [ref=f1e65]: 2차전지
+        - generic [ref=f1e66]: "-1.20%"
+        - generic [ref=f1e67]: 거래대금 6,100억원
+      - button "조선 +1.40%" [ref=f1e68] [cursor=pointer]:
+        - generic [ref=f1e69]: 조선
+        - generic [ref=f1e70]: +1.40%
+      - button "미국 기술주 +0.90%" [ref=f1e71] [cursor=pointer]:
+        - generic [ref=f1e72]: 미국 기술주
+        - generic [ref=f1e73]: +0.90%
+      - button "채권 +0.05%" [ref=f1e74] [cursor=pointer]:
+        - generic [ref=f1e75]: 채권
+        - generic [ref=f1e76]: +0.05%
+      - button "바이오 +0.60%" [ref=f1e77] [cursor=pointer]:
+        - generic [ref=f1e78]: 바이오
+        - generic [ref=f1e79]: +0.60%
+      - button "중국 -0.80%" [ref=f1e80] [cursor=pointer]:
+        - generic [ref=f1e81]: 중국
+        - generic [ref=f1e82]: "-0.80%"
+      - button "금 +0.40%" [ref=f1e83] [cursor=pointer]:
+        - generic [ref=f1e84]: 금
+        - generic [ref=f1e85]: +0.40%
+      - button "원유 -0.30%" [ref=f1e86] [cursor=pointer]:
+        - generic [ref=f1e87]: 원유
+        - generic [ref=f1e88]: "-0.30%"
+      - button "월배당 +0.15%" [ref=f1e89] [cursor=pointer]:
+        - generic [ref=f1e90]: 월배당
+        - generic [ref=f1e91]: +0.15%
+  - region "지금 많이 움직인 ETF" [ref=f1e92]:
+    - heading "지금 많이 움직인 ETF" [level=2] [ref=f1e93]
+    - button "필터 해제" [ref=f1e96] [cursor=pointer]
+    - tablist "ETF 순위 탭" [ref=f1e97]:
+      - tab "상승" [selected] [ref=f1e98] [cursor=pointer]
+      - tab "하락" [ref=f1e99] [cursor=pointer]
+      - tab "거래 급증" [ref=f1e100] [cursor=pointer]
+      - tab "변동성 확대" [ref=f1e101] [cursor=pointer]
+    - generic [ref=f1e102]:
+      - button "TIGER 방산 19,800원 449450 +3.55% 방산 거래대금 4,100억원 주요 구성종목 한화에어로스페이스, 두산에너빌리티, HD현대중공업 방산 수출 계약 관련 소식이 전해지며 관련 ETF에 관심이 모인 것으로 추정돼요." [ref=f1e103] [cursor=pointer]:
+        - generic [ref=f1e104]:
+          - generic [ref=f1e105]:
+            - generic [ref=f1e106]: TIGER 방산
+            - generic [ref=f1e107]:
+              - generic [ref=f1e108]: 19,800원
+              - generic [ref=f1e109]: "449450"
+          - generic [ref=f1e110]: +3.55%
+        - generic [ref=f1e111]:
+          - generic [ref=f1e112]: 방산
+          - generic [ref=f1e113]: 거래대금 4,100억원
+        - generic [ref=f1e114]: 주요 구성종목 한화에어로스페이스, 두산에너빌리티, HD현대중공업
+        - paragraph [ref=f1e115]: 방산 수출 계약 관련 소식이 전해지며 관련 ETF에 관심이 모인 것으로 추정돼요.
+      - button "KODEX K-방산 21,400원 483020 +3.20% 방산 거래대금 3,200억원 주요 구성종목 한화에어로스페이스, 두산에너빌리티, HD현대중공업 방산 수출 계약 관련 소식이 전해지며 관련 ETF에 관심이 모인 것으로 추정돼요." [ref=f1e116] [cursor=pointer]:
+        - generic [ref=f1e117]:
+          - generic [ref=f1e118]:
+            - generic [ref=f1e119]: KODEX K-방산
+            - generic [ref=f1e120]:
+              - generic [ref=f1e121]: 21,400원
+              - generic [ref=f1e122]: "483020"
+          - generic [ref=f1e123]: +3.20%
+        - generic [ref=f1e124]:
+          - generic [ref=f1e125]: 방산
+          - generic [ref=f1e126]: 거래대금 3,200억원
+        - generic [ref=f1e127]: 주요 구성종목 한화에어로스페이스, 두산에너빌리티, HD현대중공업
+        - paragraph [ref=f1e128]: 방산 수출 계약 관련 소식이 전해지며 관련 ETF에 관심이 모인 것으로 추정돼요.
+      - button "TIGER Fn반도체TOP10 28,900원 157490 +2.62% 반도체 거래대금 3,900억원 주요 구성종목 SK하이닉스, 한미반도체, 삼성전자 메모리 반도체 가격 반등 소식과 함께 관련 ETF 거래대금이 늘었어요." [ref=f1e129] [cursor=pointer]:
+        - generic [ref=f1e130]:
+          - generic [ref=f1e131]:
+            - generic [ref=f1e132]: TIGER Fn반도체TOP10
+            - generic [ref=f1e133]:
+              - generic [ref=f1e134]: 28,900원
+              - generic [ref=f1e135]: "157490"
+          - generic [ref=f1e136]: +2.62%
+        - generic [ref=f1e137]:
+          - generic [ref=f1e138]: 반도체
+          - generic [ref=f1e139]: 거래대금 3,900억원
+        - generic [ref=f1e140]: 주요 구성종목 SK하이닉스, 한미반도체, 삼성전자
+        - paragraph [ref=f1e141]: 메모리 반도체 가격 반등 소식과 함께 관련 ETF 거래대금이 늘었어요.
+      - button "KODEX 반도체 42,500원 091230 +2.35% 반도체 거래대금 4,300억원 주요 구성종목 SK하이닉스, 삼성전자, 한미반도체 메모리 반도체 가격 반등 소식과 함께 관련 ETF 거래대금이 늘었어요." [ref=f1e142] [cursor=pointer]:
+        - generic [ref=f1e143]:
+          - generic [ref=f1e144]:
+            - generic [ref=f1e145]: KODEX 반도체
+            - generic [ref=f1e146]:
+              - generic [ref=f1e147]: 42,500원
+              - generic [ref=f1e148]: "091230"
+          - generic [ref=f1e149]: +2.35%
+        - generic [ref=f1e150]:
+          - generic [ref=f1e151]: 반도체
+          - generic [ref=f1e152]: 거래대금 4,300억원
+        - generic [ref=f1e153]: 주요 구성종목 SK하이닉스, 삼성전자, 한미반도체
+        - paragraph [ref=f1e154]: 메모리 반도체 가격 반등 소식과 함께 관련 ETF 거래대금이 늘었어요.
+      - button "SOL 반도체소부장 15,400원 434730 +1.95% 반도체 거래대금 1,800억원 주요 구성종목 한미반도체, SK하이닉스, 삼성전자" [ref=f1e155] [cursor=pointer]:
+        - generic [ref=f1e156]:
+          - generic [ref=f1e157]:
+            - generic [ref=f1e158]: SOL 반도체소부장
+            - generic [ref=f1e159]:
+              - generic [ref=f1e160]: 15,400원
+              - generic [ref=f1e161]: "434730"
+          - generic [ref=f1e162]: +1.95%
+        - generic [ref=f1e163]:
+          - generic [ref=f1e164]: 반도체
+          - generic [ref=f1e165]: 거래대금 1,800억원
+        - generic [ref=f1e166]: 주요 구성종목 한미반도체, SK하이닉스, 삼성전자
+      - button "TIGER AI&로봇 9,800원 469070 +1.85% AI·로봇 거래대금 2,600억원 주요 구성종목 NAVER, 두산에너빌리티, 삼성전자 AI 인프라 투자 확대 소식과 함께 관련 ETF 거래가 늘었어요." [ref=f1e167] [cursor=pointer]:
+        - generic [ref=f1e168]:
+          - generic [ref=f1e169]:
+            - generic [ref=f1e170]: TIGER AI&로봇
+            - generic [ref=f1e171]:
+              - generic [ref=f1e172]: 9,800원
+              - generic [ref=f1e173]: "469070"
+          - generic [ref=f1e174]: +1.85%
+        - generic [ref=f1e175]:
+          - generic [ref=f1e176]: AI·로봇
+          - generic [ref=f1e177]: 거래대금 2,600억원
+        - generic [ref=f1e178]: 주요 구성종목 NAVER, 두산에너빌리티, 삼성전자
+        - paragraph [ref=f1e179]: AI 인프라 투자 확대 소식과 함께 관련 ETF 거래가 늘었어요.
+      - button "KODEX Fn시스템반도체 12,300원 396500 +1.70% 반도체 거래대금 1,200억원 주요 구성종목 SK하이닉스, 삼성전자, 한미반도체" [ref=f1e180] [cursor=pointer]:
+        - generic [ref=f1e181]:
+          - generic [ref=f1e182]:
+            - generic [ref=f1e183]: KODEX Fn시스템반도체
+            - generic [ref=f1e184]:
+              - generic [ref=f1e185]: 12,300원
+              - generic [ref=f1e186]: "396500"
+          - generic [ref=f1e187]: +1.70%
+        - generic [ref=f1e188]:
+          - generic [ref=f1e189]: 반도체
+          - generic [ref=f1e190]: 거래대금 1,200억원
+        - generic [ref=f1e191]: 주요 구성종목 SK하이닉스, 삼성전자, 한미반도체
+      - button "KODEX AI로봇액티브 11,250원 445290 +1.62% AI·로봇 거래대금 1,500억원 주요 구성종목 두산에너빌리티, NAVER, SK하이닉스 AI 인프라 투자 확대 소식과 함께 관련 ETF 거래가 늘었어요." [ref=f1e192] [cursor=pointer]:
+        - generic [ref=f1e193]:
+          - generic [ref=f1e194]:
+            - generic [ref=f1e195]: KODEX AI로봇액티브
+            - generic [ref=f1e196]:
+              - generic [ref=f1e197]: 11,250원
+              - generic [ref=f1e198]: "445290"
+          - generic [ref=f1e199]: +1.62%
+        - generic [ref=f1e200]:
+          - generic [ref=f1e201]: AI·로봇
+          - generic [ref=f1e202]: 거래대금 1,500억원
+        - generic [ref=f1e203]: 주요 구성종목 두산에너빌리티, NAVER, SK하이닉스
+        - paragraph [ref=f1e204]: AI 인프라 투자 확대 소식과 함께 관련 ETF 거래가 늘었어요.
+  - region "관심 종목으로 ETF 찾기" [ref=f1e205]:
+    - heading "어떤 종목에 관심 있으세요?" [level=2] [ref=f1e206]
+    - paragraph [ref=f1e207]: 그 종목을 담은 ETF를 찾아볼 수 있어요.
+    - generic [ref=f1e208]:
+      - button "삼성전자" [pressed] [ref=f1e209] [cursor=pointer]
+      - button "SK하이닉스" [ref=f1e210] [cursor=pointer]
+      - button "NAVER" [ref=f1e211] [cursor=pointer]
+      - button "한화에어로스페이스" [ref=f1e212] [cursor=pointer]
+      - button "두산에너빌리티" [ref=f1e213] [cursor=pointer]
+      - button "현대차" [ref=f1e214] [cursor=pointer]
+    - generic [ref=f1e215]:
+      - button "KODEX 레버리지 편입비중 25% 비중 순위 1위 레버리지·인버스 순자산 2조 1,000억원 거래대금 6,800억원" [ref=f1e216] [cursor=pointer]:
+        - generic [ref=f1e217]:
+          - generic [ref=f1e218]: KODEX 레버리지
+          - generic [ref=f1e219]: 편입비중 25%
+        - generic [ref=f1e222]:
+          - generic [ref=f1e223]: 비중 순위 1위
+          - generic [ref=f1e224]: 레버리지·인버스
+        - generic [ref=f1e225]:
+          - generic [ref=f1e226]: 순자산 2조 1,000억원
+          - generic [ref=f1e227]: 거래대금 6,800억원
+      - button "KODEX 인버스 편입비중 24.8% 비중 순위 1위 레버리지·인버스 순자산 9,800억원 거래대금 3,900억원" [ref=f1e228] [cursor=pointer]:
+        - generic [ref=f1e229]:
+          - generic [ref=f1e230]: KODEX 인버스
+          - generic [ref=f1e231]: 편입비중 24.8%
+        - generic [ref=f1e234]:
+          - generic [ref=f1e235]: 비중 순위 1위
+          - generic [ref=f1e236]: 레버리지·인버스
+        - generic [ref=f1e237]:
+          - generic [ref=f1e238]: 순자산 9,800억원
+          - generic [ref=f1e239]: 거래대금 3,900억원
+      - button "KODEX 200 편입비중 24.5% 비중 순위 1위 국내 대표지수 순자산 6조 2,000억원 거래대금 5,200억원" [ref=f1e240] [cursor=pointer]:
+        - generic [ref=f1e241]:
+          - generic [ref=f1e242]: KODEX 200
+          - generic [ref=f1e243]: 편입비중 24.5%
+        - generic [ref=f1e246]:
+          - generic [ref=f1e247]: 비중 순위 1위
+          - generic [ref=f1e248]: 국내 대표지수
+        - generic [ref=f1e249]:
+          - generic [ref=f1e250]: 순자산 6조 2,000억원
+          - generic [ref=f1e251]: 거래대금 5,200억원
+      - button "KBSTAR 200 편입비중 24.1% 비중 순위 1위 국내 대표지수 순자산 9,200억원 거래대금 1,400억원" [ref=f1e252] [cursor=pointer]:
+        - generic [ref=f1e253]:
+          - generic [ref=f1e254]: KBSTAR 200
+          - generic [ref=f1e255]: 편입비중 24.1%
+        - generic [ref=f1e258]:
+          - generic [ref=f1e259]: 비중 순위 1위
+          - generic [ref=f1e260]: 국내 대표지수
+        - generic [ref=f1e261]:
+          - generic [ref=f1e262]: 순자산 9,200억원
+          - generic [ref=f1e263]: 거래대금 1,400억원
+      - button "TIGER 200 편입비중 23.8% 비중 순위 1위 국내 대표지수 순자산 1조 8,000억원 거래대금 3,100억원" [ref=f1e264] [cursor=pointer]:
+        - generic [ref=f1e265]:
+          - generic [ref=f1e266]: TIGER 200
+          - generic [ref=f1e267]: 편입비중 23.8%
+        - generic [ref=f1e270]:
+          - generic [ref=f1e271]: 비중 순위 1위
+          - generic [ref=f1e272]: 국내 대표지수
+        - generic [ref=f1e273]:
+          - generic [ref=f1e274]: 순자산 1조 8,000억원
+          - generic [ref=f1e275]: 거래대금 3,100억원
+      - button "KODEX 반도체 편입비중 22.1% 비중 순위 2위 반도체 순자산 9,800억원 거래대금 4,300억원" [ref=f1e276] [cursor=pointer]:
+        - generic [ref=f1e277]:
+          - generic [ref=f1e278]: KODEX 반도체
+          - generic [ref=f1e279]: 편입비중 22.1%
+        - generic [ref=f1e282]:
+          - generic [ref=f1e283]: 비중 순위 2위
+          - generic [ref=f1e284]: 반도체
+        - generic [ref=f1e285]:
+          - generic [ref=f1e286]: 순자산 9,800억원
+          - generic [ref=f1e287]: 거래대금 4,300억원
+      - button "KODEX Fn시스템반도체 편입비중 20.4% 비중 순위 2위 반도체 순자산 1,900억원 거래대금 1,200억원" [ref=f1e288] [cursor=pointer]:
+        - generic [ref=f1e289]:
+          - generic [ref=f1e290]: KODEX Fn시스템반도체
+          - generic [ref=f1e291]: 편입비중 20.4%
+        - generic [ref=f1e294]:
+          - generic [ref=f1e295]: 비중 순위 2위
+          - generic [ref=f1e296]: 반도체
+        - generic [ref=f1e297]:
+          - generic [ref=f1e298]: 순자산 1,900억원
+          - generic [ref=f1e299]: 거래대금 1,200억원
+      - button "TIGER Fn반도체TOP10 편입비중 12.3% 비중 순위 3위 반도체 순자산 7,600억원 거래대금 3,900억원" [ref=f1e300] [cursor=pointer]:
+        - generic [ref=f1e301]:
+          - generic [ref=f1e302]: TIGER Fn반도체TOP10
+          - generic [ref=f1e303]: 편입비중 12.3%
+        - generic [ref=f1e306]:
+          - generic [ref=f1e307]: 비중 순위 3위
+          - generic [ref=f1e308]: 반도체
+        - generic [ref=f1e309]:
+          - generic [ref=f1e310]: 순자산 7,600억원
+          - generic [ref=f1e311]: 거래대금 3,900억원
+      - button "KODEX 미국나스닥100 편입비중 10.8% 비중 순위 1위 미국 기술주 순자산 2조 2,000억원 거래대금 5,200억원" [ref=f1e312] [cursor=pointer]:
+        - generic [ref=f1e313]:
+          - generic [ref=f1e314]: KODEX 미국나스닥100
+          - generic [ref=f1e315]: 편입비중 10.8%
+        - generic [ref=f1e318]:
+          - generic [ref=f1e319]: 비중 순위 1위
+          - generic [ref=f1e320]: 미국 기술주
+        - generic [ref=f1e321]:
+          - generic [ref=f1e322]: 순자산 2조 2,000억원
+          - generic [ref=f1e323]: 거래대금 5,200억원
+      - button "TIGER AI&로봇 편입비중 9.5% 비중 순위 3위 AI·로봇 순자산 4,200억원 거래대금 2,600억원" [ref=f1e324] [cursor=pointer]:
+        - generic [ref=f1e325]:
+          - generic [ref=f1e326]: TIGER AI&로봇
+          - generic [ref=f1e327]: 편입비중 9.5%
+        - generic [ref=f1e330]:
+          - generic [ref=f1e331]: 비중 순위 3위
+          - generic [ref=f1e332]: AI·로봇
+        - generic [ref=f1e333]:
+          - generic [ref=f1e334]: 순자산 4,200억원
+          - generic [ref=f1e335]: 거래대금 2,600억원
+      - button "SOL 반도체소부장 편입비중 8.4% 비중 순위 3위 반도체 순자산 2,600억원 거래대금 1,800억원" [ref=f1e336] [cursor=pointer]:
+        - generic [ref=f1e337]:
+          - generic [ref=f1e338]: SOL 반도체소부장
+          - generic [ref=f1e339]: 편입비중 8.4%
+        - generic [ref=f1e342]:
+          - generic [ref=f1e343]: 비중 순위 3위
+          - generic [ref=f1e344]: 반도체
+        - generic [ref=f1e345]:
+          - generic [ref=f1e346]: 순자산 2,600억원
+          - generic [ref=f1e347]: 거래대금 1,800억원
+      - button "TIGER 월배당커버드콜 편입비중 6.8% 비중 순위 1위 월배당 순자산 정보 없음 거래대금 320억원" [ref=f1e348] [cursor=pointer]:
+        - generic [ref=f1e349]:
+          - generic [ref=f1e350]: TIGER 월배당커버드콜
+          - generic [ref=f1e351]: 편입비중 6.8%
+        - generic [ref=f1e354]:
+          - generic [ref=f1e355]: 비중 순위 1위
+          - generic [ref=f1e356]: 월배당
+        - generic [ref=f1e357]:
+          - generic [ref=f1e358]: 순자산 정보 없음
+          - generic [ref=f1e359]: 거래대금 320억원
+      - button "TIGER 미국테크TOP10 편입비중 6.4% 비중 순위 3위 미국 기술주 순자산 1조 5,200억원 거래대금 3,700억원" [ref=f1e360] [cursor=pointer]:
+        - generic [ref=f1e361]:
+          - generic [ref=f1e362]: TIGER 미국테크TOP10
+          - generic [ref=f1e363]: 편입비중 6.4%
+        - generic [ref=f1e366]:
+          - generic [ref=f1e367]: 비중 순위 3위
+          - generic [ref=f1e368]: 미국 기술주
+        - generic [ref=f1e369]:
+          - generic [ref=f1e370]: 순자산 1조 5,200억원
+          - generic [ref=f1e371]: 거래대금 3,700억원
+      - button "KODEX 2차전지산업 편입비중 5.2% 비중 순위 3위 2차전지 순자산 5,200억원 거래대금 2,100억원" [ref=f1e372] [cursor=pointer]:
+        - generic [ref=f1e373]:
+          - generic [ref=f1e374]: KODEX 2차전지산업
+          - generic [ref=f1e375]: 편입비중 5.2%
+        - generic [ref=f1e378]:
+          - generic [ref=f1e379]: 비중 순위 3위
+          - generic [ref=f1e380]: 2차전지
+        - generic [ref=f1e381]:
+          - generic [ref=f1e382]: 순자산 5,200억원
+          - generic [ref=f1e383]: 거래대금 2,100억원
+      - button "KODEX 국고채10년 편입비중 4.8% 비중 순위 1위 채권 순자산 8,200억원 거래대금 450억원" [ref=f1e384] [cursor=pointer]:
+        - generic [ref=f1e385]:
+          - generic [ref=f1e386]: KODEX 국고채10년
+          - generic [ref=f1e387]: 편입비중 4.8%
+        - generic [ref=f1e390]:
+          - generic [ref=f1e391]: 비중 순위 1위
+          - generic [ref=f1e392]: 채권
+        - generic [ref=f1e393]:
+          - generic [ref=f1e394]: 순자산 8,200억원
+          - generic [ref=f1e395]: 거래대금 450억원
+      - button "KODEX 바이오 편입비중 4.1% 비중 순위 3위 바이오 순자산 1,400억원 거래대금 950억원" [ref=f1e396] [cursor=pointer]:
+        - generic [ref=f1e397]:
+          - generic [ref=f1e398]: KODEX 바이오
+          - generic [ref=f1e399]: 편입비중 4.1%
+        - generic [ref=f1e402]:
+          - generic [ref=f1e403]: 비중 순위 3위
+          - generic [ref=f1e404]: 바이오
+        - generic [ref=f1e405]:
+          - generic [ref=f1e406]: 순자산 1,400억원
+          - generic [ref=f1e407]: 거래대금 950억원
+      - button "KODEX 골드선물(H) 편입비중 3.5% 비중 순위 1위 금 순자산 3,900억원 거래대금 1,100억원" [ref=f1e408] [cursor=pointer]:
+        - generic [ref=f1e409]:
+          - generic [ref=f1e410]: KODEX 골드선물(H)
+          - generic [ref=f1e411]: 편입비중 3.5%
+        - generic [ref=f1e414]:
+          - generic [ref=f1e415]: 비중 순위 1위
+          - generic [ref=f1e416]: 금
+        - generic [ref=f1e417]:
+          - generic [ref=f1e418]: 순자산 3,900억원
+          - generic [ref=f1e419]: 거래대금 1,100억원
+      - button "TIGER 원유선물Enhanced(H) 편입비중 2.5% 비중 순위 3위 원유 순자산 1,500억원 거래대금 700억원" [ref=f1e420] [cursor=pointer]:
+        - generic [ref=f1e421]:
+          - generic [ref=f1e422]: TIGER 원유선물Enhanced(H)
+          - generic [ref=f1e423]: 편입비중 2.5%
+        - generic [ref=f1e426]:
+          - generic [ref=f1e427]: 비중 순위 3위
+          - generic [ref=f1e428]: 원유
+        - generic [ref=f1e429]:
+          - generic [ref=f1e430]: 순자산 1,500억원
+          - generic [ref=f1e431]: 거래대금 700억원
+  - region "오늘 주목할 테마" [ref=f1e432]:
+    - heading "오늘 주목할 테마" [level=2] [ref=f1e433]
+    - generic [ref=f1e434]:
+      - generic [ref=f1e435]:
+        - generic [ref=f1e436]:
+          - generic [ref=f1e437]: 반도체
+          - generic [ref=f1e438]: +2.10%
+        - paragraph [ref=f1e439]: 대표 ETF KODEX 반도체, TIGER Fn반도체TOP10, SOL 반도체소부장, KODEX Fn시스템반도체
+        - paragraph [ref=f1e440]: 주요 종목 SK하이닉스, 삼성전자, 한미반도체
+        - paragraph [ref=f1e441]: 메모리 반도체 업황 개선 기대감과 함께 관련 종목의 거래가 늘었어요.
+        - paragraph [ref=f1e442]: 거래대금 변화 +18.40%
+      - generic [ref=f1e443]:
+        - generic [ref=f1e444]:
+          - generic [ref=f1e445]: AI·로봇
+          - generic [ref=f1e446]: +1.80%
+        - paragraph [ref=f1e447]: 대표 ETF TIGER AI&로봇, KODEX AI로봇액티브
+        - paragraph [ref=f1e448]: 주요 종목 NAVER, 두산에너빌리티
+        - paragraph [ref=f1e449]: AI 인프라 투자 확대 소식이 관련 종목 강세에 영향을 준 것으로 추정돼요.
+        - paragraph [ref=f1e450]: 거래대금 변화 +22.10%
+      - generic [ref=f1e451]:
+        - generic [ref=f1e452]:
+          - generic [ref=f1e453]: 국내 대표지수
+          - generic [ref=f1e454]: +0.35%
+        - paragraph [ref=f1e455]: 대표 ETF KODEX 200, TIGER 200, KBSTAR 200
+        - paragraph [ref=f1e456]: 주요 종목 삼성전자, SK하이닉스
+        - paragraph [ref=f1e457]: 대형주 전반이 고르게 움직이며 지수가 완만한 흐름을 보였어요.
+        - paragraph [ref=f1e458]: 거래대금 변화 +5.20%
+      - generic [ref=f1e459]:
+        - generic [ref=f1e460]:
+          - generic [ref=f1e461]: 방산
+          - generic [ref=f1e462]: +3.40%
+        - paragraph [ref=f1e463]: 대표 ETF TIGER 방산, KODEX K-방산
+        - paragraph [ref=f1e464]: 주요 종목 한화에어로스페이스, 두산에너빌리티
+        - paragraph [ref=f1e465]: 방산 수출 계약 관련 소식과 함께 관련 종목 거래가 크게 늘었어요.
+        - paragraph [ref=f1e466]: 거래대금 변화 +30.50%
+      - generic [ref=f1e467]:
+        - generic [ref=f1e468]:
+          - generic [ref=f1e469]: 레버리지·인버스
+          - generic [ref=f1e470]: "-4.20%"
+        - paragraph [ref=f1e471]: 대표 ETF KODEX 레버리지, KODEX 인버스
+        - paragraph [ref=f1e472]: 주요 종목 삼성전자, SK하이닉스
+        - paragraph [ref=f1e473]: 지수 방향성에 따라 레버리지·인버스 상품의 변동폭이 크게 나타났어요.
+        - paragraph [ref=f1e474]: 거래대금 변화 +40.20%
+      - generic [ref=f1e475]:
+        - generic [ref=f1e476]:
+          - generic [ref=f1e477]: 2차전지
+          - generic [ref=f1e478]: "-1.20%"
+        - paragraph [ref=f1e479]: 대표 ETF TIGER 2차전지테마, KODEX 2차전지산업
+        - paragraph [ref=f1e480]: 주요 종목 LG에너지솔루션, 에코프로비엠
+        - paragraph [ref=f1e481]: 2차전지 소재 업황 둔화 우려와 함께 관련 종목 매물이 나온 것으로 추정돼요.
+        - paragraph [ref=f1e482]: 거래대금 변화 -8.30%
+  - region "같은 테마 ETF 비교" [ref=f1e483]:
+    - heading "같은 테마 ETF 비교" [level=2] [ref=f1e484]
+    - generic [ref=f1e485]: 비교 테마
+    - combobox "비교 테마" [ref=f1e486]:
+      - option "반도체" [selected]
+      - option "국내 대표지수"
+    - paragraph [ref=f1e487]: 비교 ETF (2~3개를 선택할 수 있어요)
+    - group "비교 ETF (2~3개를 선택할 수 있어요)" [ref=f1e488]:
+      - button "KODEX 반도체" [pressed] [ref=f1e489] [cursor=pointer]
+      - button "TIGER Fn반도체TOP10" [pressed] [ref=f1e490] [cursor=pointer]
+      - button "SOL 반도체소부장" [pressed] [ref=f1e491] [cursor=pointer]
+      - button "KODEX Fn시스템반도체" [ref=f1e492] [cursor=pointer]
+    - generic [ref=f1e493]:
+      - article [ref=f1e494]:
+        - heading "KODEX 반도체" [level=3] [ref=f1e495]
+        - generic [ref=f1e496]:
+          - term [ref=f1e497]: 주요 구성종목
+          - definition [ref=f1e498]: SK하이닉스, 삼성전자, 한미반도체
+          - term [ref=f1e499]: 상위 2종목 집중도
+          - definition [ref=f1e500]: 50.5%
+          - term [ref=f1e501]: 순자산
+          - definition [ref=f1e502]: 9,800억원
+          - term [ref=f1e503]: 거래대금
+          - definition [ref=f1e504]: 4,300억원
+          - term [ref=f1e505]: 총보수
+          - definition [ref=f1e506]: 0.45%
+          - term [ref=f1e507]: 1개월 수익률
+          - definition [ref=f1e508]: +10.20%
+      - article [ref=f1e509]:
+        - heading "TIGER Fn반도체TOP10" [level=3] [ref=f1e510]
+        - generic [ref=f1e511]:
+          - term [ref=f1e512]: 주요 구성종목
+          - definition [ref=f1e513]: SK하이닉스, 한미반도체, 삼성전자
+          - term [ref=f1e514]: 상위 2종목 집중도
+          - definition [ref=f1e515]: 48.7%
+          - term [ref=f1e516]: 순자산
+          - definition [ref=f1e517]: 7,600억원
+          - term [ref=f1e518]: 거래대금
+          - definition [ref=f1e519]: 3,900억원
+          - term [ref=f1e520]: 총보수
+          - definition [ref=f1e521]: 0.40%
+          - term [ref=f1e522]: 1개월 수익률
+          - definition [ref=f1e523]: +11.40%
+      - article [ref=f1e524]:
+        - heading "SOL 반도체소부장" [level=3] [ref=f1e525]
+        - generic [ref=f1e526]:
+          - term [ref=f1e527]: 주요 구성종목
+          - definition [ref=f1e528]: 한미반도체, SK하이닉스, 삼성전자
+          - term [ref=f1e529]: 상위 2종목 집중도
+          - definition [ref=f1e530]: 45.4%
+          - term [ref=f1e531]: 순자산
+          - definition [ref=f1e532]: 2,600억원
+          - term [ref=f1e533]: 거래대금
+          - definition [ref=f1e534]: 1,800억원
+          - term [ref=f1e535]: 총보수
+          - definition [ref=f1e536]: 0.45%
+          - term [ref=f1e537]: 1개월 수익률
+          - definition [ref=f1e538]: +8.70%
+      - paragraph [ref=f1e539]: 상품 간 차이는 구조적 차이일 뿐 우열을 의미하지 않아요.
+  - region "뉴스·공시·리서치" [ref=f1e540]:
+    - heading "뉴스·공시·리서치" [level=2] [ref=f1e541]
+    - tablist "콘텐츠 유형 필터" [ref=f1e542]:
+      - tab "뉴스" [selected] [ref=f1e543] [cursor=pointer]
+      - tab "공시" [ref=f1e544] [cursor=pointer]
+      - tab "리서치" [ref=f1e545] [cursor=pointer]
+    - generic [ref=f1e546]:
+      - article [ref=f1e547]:
+        - generic [ref=f1e548]:
+          - generic [ref=f1e549]: 뉴스
+          - generic [ref=f1e550]: 2026. 7. 10.
+        - heading "메모리 업황 개선 기대감 속 KODEX 반도체 거래 증가" [level=3] [ref=f1e551]
+        - paragraph [ref=f1e552]: 메모리 반도체 가격 반등 소식과 함께 관련 ETF 거래대금이 늘었어요.
+      - article [ref=f1e553]:
+        - generic [ref=f1e554]:
+          - generic [ref=f1e555]: 뉴스
+          - generic [ref=f1e556]: 2026. 7. 9.
+        - heading "한화에어로스페이스 관련 방산 ETF, 수주 소식에 주목" [level=3] [ref=f1e557]
+        - paragraph [ref=f1e558]: 방산 수출 계약 관련 소식이 전해지며 관련 ETF에 관심이 모인 것으로 추정돼요.
+      - article [ref=f1e559]:
+        - generic [ref=f1e560]:
+          - generic [ref=f1e561]: 뉴스
+          - generic [ref=f1e562]: 2026. 7. 9.
+        - heading "HD현대중공업 강세, 조선 테마 ETF 거래대금 증가" [level=3] [ref=f1e563]
+        - paragraph [ref=f1e564]: 조선업 수주 기대감과 함께 관련 종목 거래가 늘었어요.
+      - article [ref=f1e565]:
+        - generic [ref=f1e566]:
+          - generic [ref=f1e567]: 뉴스
+          - generic [ref=f1e568]: 2026. 7. 8.
+        - heading "AI·로봇 테마 ETF, 관련 종목 강세와 함께 순항" [level=3] [ref=f1e569]
+        - paragraph [ref=f1e570]: AI 인프라 투자 확대 소식과 함께 관련 ETF 거래가 늘었어요.
+      - article [ref=f1e571]:
+        - generic [ref=f1e572]:
+          - generic [ref=f1e573]: 뉴스
+          - generic [ref=f1e574]: 2026. 7. 8.
+        - heading "2차전지 소재주 조정, 관련 ETF 약세 흐름" [level=3] [ref=f1e575]
+        - paragraph [ref=f1e576]: 2차전지 소재 업황 둔화 우려가 관련 ETF 약세에 영향을 준 것으로 추정돼요.
+      - article [ref=f1e577]:
+        - generic [ref=f1e578]:
+          - generic [ref=f1e579]: 뉴스
+          - generic [ref=f1e580]: 2026. 7. 7.
+        - heading "차이나 ETF 약세 지속, 시장에서는 중국 경기 지표에 주목" [level=3] [ref=f1e581]
+        - paragraph [ref=f1e582]: 중국 경기 지표 부진 우려가 관련 ETF 약세에 영향을 준 것으로 추정돼요.
+      - article [ref=f1e583]:
+        - generic [ref=f1e584]:
+          - generic [ref=f1e585]: 뉴스
+          - generic [ref=f1e586]: 2026. 7. 7.
+        - heading "미국 나스닥 강세, 국내 미국테크 ETF도 동반 상승" [level=3] [ref=f1e587]
+        - paragraph [ref=f1e588]: 미국 기술주 강세 흐름이 관련 ETF 수익률에 영향을 준 것으로 추정돼요.
+      - article [ref=f1e589]:
+        - generic [ref=f1e590]:
+          - generic [ref=f1e591]: 뉴스
+          - generic [ref=f1e592]: 2026. 7. 6.
+        - heading "두산에너빌리티 거래 활발, 관련 ETF 관심 증가" [level=3] [ref=f1e593]
+        - paragraph [ref=f1e594]: 두산에너빌리티 거래가 늘며 관련 테마 ETF에도 관심이 이어진 것으로 추정돼요.
+  - contentinfo [ref=f1e595]:
+    - paragraph [ref=f1e596]: 실제 시세와 상품정보가 아니며 화면 검증을 위해 구성한 예시입니다.

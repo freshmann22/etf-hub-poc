@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ETF 허브 - PoC</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="app-header-row">
+        <h1 class="app-title">ETF</h1>
+        <p class="app-subtitle">시장 흐름부터 구성종목까지 살펴보세요</p>
+      </div>
+      <p class="sample-notice" data-testid="sample-notice">화면 내 정보는 PoC용 샘플 데이터입니다.</p>
+    </header>
+
+    <section class="search-section" aria-label="통합 검색">
+      <label class="visually-hidden" for="search-input">ETF, 종목, 테마 검색</label>
+      <input
+        id="search-input"
+        type="search"
+        class="search-input"
+        data-testid="search-input"
+        placeholder="ETF, 종목, 테마를 검색해보세요"
+        aria-label="ETF, 종목, 테마를 검색해보세요"
+        autocomplete="off"
+      />
+      <div id="search-results" class="search-results" data-testid="search-results"></div>
+    </section>
+
+    <section class="market-summary" data-testid="market-summary" aria-label="오늘의 ETF 시장">
+      <h2 class="section-title">오늘의 ETF 시장</h2>
+      <div id="market-summary-body"></div>
+    </section>
+
+    <section class="heatmap-section" data-testid="heatmap" aria-label="ETF 시장 히트맵">
+      <div class="section-header">
+        <h2 class="section-title">ETF 시장 히트맵</h2>
+        <div class="period-tabs" role="tablist" aria-label="히트맵 기간">
+          <button type="button" class="period-tab" data-testid="heatmap-period-1d" data-value="1d" role="tab" aria-selected="true">오늘</button>
+          <button type="button" class="period-tab" data-testid="heatmap-period-1w" data-value="1w" role="tab" aria-selected="false">1주</button>
+          <button type="button" class="period-tab" data-testid="heatmap-period-1m" data-value="1m" role="tab" aria-selected="false">1개월</button>
+        </div>
+      </div>
+      <div id="heatmap-grid" class="heatmap-grid"></div>
+    </section>
+
+    <section class="ranking-section" aria-label="지금 많이 움직인 ETF">
+      <h2 class="section-title">지금 많이 움직인 ETF</h2>
+      <div id="ranking-theme-filter" class="ranking-theme-filter" hidden>
+        <span id="ranking-theme-label" class="ranking-theme-label"></span>
+        <button type="button" id="ranking-theme-clear" class="ranking-theme-clear">필터 해제</button>
+      </div>
+      <div class="ranking-tabs" role="tablist" aria-label="ETF 순위 탭">
+        <button type="button" class="ranking-tab" data-testid="ranking-tab-gainers" data-value="gainers" role="tab" aria-selected="true">상승</button>
+        <button type="button" class="ranking-tab" data-testid="ranking-tab-losers" data-value="losers" role="tab" aria-selected="false">하락</button>
+        <button type="button" class="ranking-tab" data-testid="ranking-tab-volume" data-value="volume" role="tab" aria-selected="false">거래 급증</button>
+        <button type="button" class="ranking-tab" data-testid="ranking-tab-volatility" data-value="volatility" role="tab" aria-selected="false">변동성 확대</button>
+      </div>
+      <div id="ranking-list" class="ranking-list" data-testid="ranking-list"></div>
+    </section>
+
+    <section class="stock-explore-section" aria-label="관심 종목으로 ETF 찾기">
+      <h2 class="section-title">어떤 종목에 관심 있으세요?</h2>
+      <p class="section-desc">그 종목을 담은 ETF를 찾아볼 수 있어요.</p>
+      <div id="stock-chips" class="stock-chips"></div>
+      <div id="stock-etf-results" class="stock-etf-results" data-testid="stock-etf-results"></div>
+    </section>
+
+    <section class="theme-section" data-testid="theme-cards" aria-label="오늘 주목할 테마">
+      <h2 class="section-title">오늘 주목할 테마</h2>
+      <div id="theme-cards-body" class="theme-cards-body"></div>
+    </section>
+
+    <section class="compare-section" data-testid="compare-section" aria-label="같은 테마 ETF 비교">
+      <h2 class="section-title">같은 테마 ETF 비교</h2>
+      <label class="compare-select-label" for="compare-theme-select">비교 테마</label>
+      <select id="compare-theme-select" class="compare-theme-select"></select>
+      <p class="compare-select-label" id="compare-etf-select-label">비교 ETF (2~3개를 선택할 수 있어요)</p>
+      <div
+        id="compare-etf-select"
+        class="compare-etf-chips"
+        data-testid="compare-etf-select"
+        role="group"
+        aria-labelledby="compare-etf-select-label"
+      ></div>
+      <div id="compare-table" class="compare-cards"></div>
+    </section>
+
+    <section class="content-section" aria-label="뉴스·공시·리서치">
+      <h2 class="section-title">뉴스·공시·리서치</h2>
+      <div class="content-filters" role="tablist" aria-label="콘텐츠 유형 필터">
+        <button type="button" class="content-filter" data-testid="content-filter-news" data-value="news" role="tab" aria-selected="true">뉴스</button>
+        <button type="button" class="content-filter" data-testid="content-filter-disclosure" data-value="disclosure" role="tab" aria-selected="false">공시</button>
+        <button type="button" class="content-filter" data-testid="content-filter-research" data-value="research" role="tab" aria-selected="false">리서치</button>
+      </div>
+      <div id="content-list" class="content-list" data-testid="content-list"></div>
+    </section>
+
+    <footer class="app-footer">
+      <p>실제 시세와 상품정보가 아니며 화면 검증을 위해 구성한 예시입니다.</p>
+    </footer>
+  </div>
+
+  <div id="bottom-sheet-backdrop" class="bottom-sheet-backdrop" hidden></div>
+  <div
+    id="bottom-sheet"
+    class="bottom-sheet"
+    data-testid="bottom-sheet"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="bottom-sheet-title"
+    hidden
+  ></div>
+
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

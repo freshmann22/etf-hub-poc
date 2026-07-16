@@ -514,6 +514,65 @@ export function renderContentList(container, contentList) {
 }
 
 // ---------------------------------------------------------------------------
+// 태그 브리핑 (tag_brief)
+// ---------------------------------------------------------------------------
+const TAG_CATEGORY_LABEL = { sector: '섹터', strategy: '전략', dividend: '배당', provisional: '임시' };
+
+export function renderTagBriefList(container, briefs, ctx) {
+  container.innerHTML = '';
+
+  if (!briefs.length) {
+    container.appendChild(el('p', { className: 'empty-state' }, '표시할 태그 브리핑이 없어요.'));
+    return;
+  }
+
+  briefs.forEach((brief) => {
+    const sourcesList = el(
+      'ul',
+      { className: 'tag-brief-sources-list' },
+      brief.sourceArticles.map((source) => el('li', {}, `${source.title} · ${source.source}`))
+    );
+
+    const etfChips = el(
+      'div',
+      { className: 'tag-brief-etf-chips' },
+      brief.relatedEtfIds.map((etfCode) => {
+        const etf = ctx.etfByCode.get(etfCode);
+        if (!etf) return el('span', { className: 'tag-brief-etf-chip tag-brief-etf-chip--unresolved' }, etfCode);
+        return el(
+          'button',
+          { type: 'button', className: 'tag-brief-etf-chip', onClick: () => ctx.onSelectEtf(etf.id) },
+          etf.name
+        );
+      })
+    );
+
+    const isProvisional = brief.universeSnapshot.provisional;
+
+    container.appendChild(
+      el('article', { className: 'tag-brief-card' }, [
+        el('div', { className: 'tag-brief-meta' }, [
+          el('span', { className: `tag-brief-badge tag-brief-badge--${brief.tagCategory}` }, TAG_CATEGORY_LABEL[brief.tagCategory] || brief.tagCategory),
+          isProvisional ? el('span', { className: 'tag-brief-provisional-marker' }, '[임시 분류]') : null,
+        ]),
+        el('h3', { className: 'tag-brief-title' }, brief.title),
+        el('p', { className: 'tag-brief-summary' }, brief.summary),
+        el(
+          'ul',
+          { className: 'tag-brief-key-points' },
+          brief.keyPoints.map((point) => el('li', {}, point))
+        ),
+        el('details', { className: 'tag-brief-sources' }, [
+          el('summary', {}, `근거 기사 ${brief.sourceArticles.length}건`),
+          sourcesList,
+        ]),
+        etfChips,
+      ])
+    );
+  });
+}
+
+// ---------------------------------------------------------------------------
 // 바텀시트
 // ---------------------------------------------------------------------------
 export function renderBottomSheet(container, etf, ctx) {

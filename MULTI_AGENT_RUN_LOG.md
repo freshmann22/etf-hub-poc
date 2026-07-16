@@ -359,3 +359,67 @@ UI 연결 전에 **스코어링 커버리지부터 확장**.
   (2) filter-map → `explore.js` 카테고리 UI 연결(현재는 이름-키워드 `chipMatches` 사용), (3) 메타데이터
   자체 커버리지(470/1141)는 WiseReport 23종만 스크랩+네이버 구성종목 559종 EMPTY 로 별개 백로그.
 - **UI 무변경**(이번 단계는 데이터 산출물만). 유닛 테스트 회귀 영향 없음(98/98 유지).
+
+## S18. ETF 택소노미 v2 facet 재설계 실행(병행 개발, 컷오버·UI연결 제외) — 완료 (총괄=Opus, 2026-07-16)
+
+`docs/ETF_TAXONOMY_V2_WORKPLAN.md` 지시(짝문서 `ETF_TAXONOMY_V2_FACET_DESIGN.md`, 정책결정 §7 전부 확정 상태로 시작).
+WORKPLAN §1 버전전략대로 **v1과 완전 병행**(신규 파일만 생성, v1 파일 무변경) — 컷오버·`explore.js` UI연결은
+각각 별도 사용자 승인 대상이라 이번 단계에서 제외.
+
+- **taxonomy v2 초안**: `config/etf-tagging/etf-taxonomy-v2.json`(v2.0.0) — 5 facet(assetClass·region 은
+  cardinality=primary, sector·strategy·dividend 는 multi) · 56태그. v1 25태그 중 이동/개명 4건(`sector.commodities`
+  →`asset.commodity`, `strategy.reit`→`asset.reit`, `strategy.consumer_discretionary`→`sector.consumer_discretionary`,
+  `strategy.sp500/nasdaq100`→`strategy.benchmark.sp500/nasdaq100`+region.us 자동부여, `dividend.us_dividend_growth`
+  →`dividend.dividend_growth` 지역한정 해제)는 `aliasOf_v1`에 구 id 보존. auditor ADD 9 + 확정 REVIEW 승격 4
+  (철강·건설·로봇·운송) 반영.
+- **rule 확장**: `config/etf-tagging/etf-tagging-rules-v2.json`(assetClass/region 정규식 24개 + defaultFacetValues
+  3개 — 신호 없을 때 asset.equity/region.domestic_kr/strategy.passive_index 기본값). 실측 중 정규식 오탐 2건
+  발견·수정: `S&P`단독 패턴이 `S&P GSCI Gold`(원자재) 를 region.us로 오분류(132030) → `S&P\s*500`으로 한정,
+  `글로벌` 단독 패턴이 `코스닥글로벌`(KRX 국내 세그먼트)·`K-글로벌`(국내 테마) 오탐(3건) → lookbehind로 제외.
+- **기존 스크립트 인자화(하위호환, WORKPLAN §2/§3)**: `run-rule-classifier.mjs`/`merge-scores.mjs`/
+  `build-filter-map.mjs`에 `--taxonomy=`/`--rules=`/`--out(-dir)=` 등 추가, 인자 없으면 v1 기본 경로 그대로.
+  **검증**: 각 스크립트를 인자 없이 재실행 → v1 산출물 4종 `generatedAt`/`scoredAt` 타임스탬프 외 diff 0(내용 완전 동일).
+- **v2 병합 방식 결정(WORKPLAN §4-3 대비 변경)**: 신규 sector/strategy 태그 대상 470종을 `etf-scoring-worker`로
+  재호출하지 않고, v1 파이프라인이 이미 산출해 둔 원본 evidence(candidateTags, `etf-candidate-tags-raw.json`의
+  ETF별 score/confidence/reason)를 그대로 재사용 — 동일 사실관계에 동일 워커를 재호출하는 중복 대신 이미 수집된
+  근거를 인용(추정 생성 아님). 신규 스크립트 `scripts/tagging/build-v2-tag-scores.mjs`(v2 전용)가 v1
+  `etf-tag-scores.json` 이관 + v2 rule 결과 + 승격 태그 evidence 를 병합, primary facet(assetClass/region)
+  cardinality 충돌은 (score, confidence) 최고값 하나만 남기고 정리(충돌 로그 보존).
+- **검증 체크리스트(WORKPLAN §5)**:
+  - v1 산출물 변경 0 (`git diff` 로 확인, config/etf-tagging/etf-taxonomy.json 포함 전부 불변).
+  - v2 filter-map: 채권 6종/해외 25종이 실제 assetClass/region facet에 분류됨(0000Y0 등 표본 확인).
+  - **미분류 227→0종**(설계 예측대로 assetClass/region 기본값 덕분에 전량 최소 1개 이상 facet 태깅), 필터 22→49개.
+  - facet cardinality: assetClass/region 위반 0/470(1차 시도 시 20건 이상 위반 발견 → 규칙 임계값·중복 primary
+    정리 로직 수정 후 0으로 수렴).
+  - 근거: 신규 태그 전부 실제 워커 evidence 인용 또는 정규식 매치, 추정 생성 없음.
+  - `npm test` **98/98 유지**.
+- **산출물**: `config/etf-tagging/etf-taxonomy-v2.json`, `etf-tagging-rules-v2.json`, `data/tagging/v2/`(
+  `etf-rule-scores.json`, `etf-tag-scores.json`, `etf-filter-map.json`, `etf-low-confidence.json`,
+  `etf-unclassified.json`), `scripts/tagging/build-v2-tag-scores.mjs`.
+- **미해결/후속(별도 승인 필요, WORKPLAN §7·§6)**: (1) 컷오버(v2를 정본으로 승격) — 1커밋, (2) `explore.js`
+  카테고리를 facet 드릴다운으로 재구성. sector.robotics/steel_metals/construction/transportation_logistics 는
+  표본 1~6건으로 향후 배치 확대 시 재검증 권장(taxonomy definition에 명시).
+- **UI 무변경**. 유닛 테스트 회귀 영향 없음(98/98 유지).
+
+### 컷오버 — 완료 (사용자 승인, 2026-07-16)
+
+사용자 지시("V2로 교체하고 커밋해줘")로 WORKPLAN §7 컷오버 실행.
+
+- `config/etf-tagging/etf-taxonomy-v2.json`/`etf-tagging-rules-v2.json` 내용을 각각 canonical
+  `etf-taxonomy.json`/`etf-tagging-rules.json` 에 덮어쓰고 `-v2` 접미사 파일·`data/tagging/v2/` 는 삭제
+  (v1 은 git 히스토리에 보존, 워킹트리에서는 제거). `data/tagging/v2/*` 5종을 `data/tagging/etf-*.json` 으로 이동.
+- `run-rule-classifier.mjs` 의 `--taxonomy` 기본값을 canonical 경로로 고정(이전엔 인자 없으면 null 이라
+  defaultFacetValues 의 `unlessFacet` 판단이 항상 무력화되는 결함 — 컷오버 후 기본 실행에서도 facet 인식되도록 수정).
+  스크립트 헤더 주석의 `-v2` 파일 예시는 삭제 후 정리.
+- **일회성 마이그레이션 스크립트(`scripts/tagging/build-v2-tag-scores.mjs`) 삭제**: v1→v2 이관 전용 로직(구
+  `etf-tag-scores.json`을 원본으로 읽어 재해석)이라 컷오버 후 canonical 파일이 이미 v2 내용이 된 상태에서
+  재실행하면 잘못 재해석해 데이터를 오염시킬 위험이 있어 제거. 방법론은 위 S18 기록에 보존.
+- **알려진 위험(후속 주의)**: `data/tagging/batches/validated/*`(18배치)는 여전히 **구 v1 25태그 체계**로
+  스코어링된 원본이다. 향후 별다른 조치 없이 `npm run tagging:merge`(=`merge-scores.mjs`+`build-filter-map.mjs`)
+  를 그대로 재실행하면 이 구버전 배치 결과가 canonical v2 taxonomy 와 병합되어 이번에 반영한 승격 태그·
+  assetClass/region 값이 유실될 수 있다. 새 배치 재스코어링 전까지는 `tagging:merge`/`tagging:rules` 를
+  **함부로 재실행하지 말 것** — 재실행이 필요하면 배치를 v2 56태그로 다시 스코어링(`etf-scoring-worker`)한
+  뒤에 진행한다.
+- **검증**: canonical `etf-tag-scores.json`/`etf-filter-map.json` 의 모든 tagId 가 canonical
+  `etf-taxonomy.json`(2.0.0) 에 존재(고아 참조 0), `etf-unclassified.json` count=0, `npm test` **98/98 유지**.
+- **UI 무변경**(explore.js 는 여전히 filter-map 미사용, `chipMatches` 그대로). UI 연결은 WORKPLAN §6 대로 별도 승인 대상.

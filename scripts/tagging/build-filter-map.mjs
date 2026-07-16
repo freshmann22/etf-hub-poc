@@ -2,16 +2,29 @@
 //   입력: data/tagging/etf-tag-scores.json, config/etf-tagging/etf-taxonomy.json
 //   출력: data/tagging/etf-filter-map.json, data/tagging/etf-low-confidence.json, data/tagging/etf-unclassified.json
 //   실행: npm run tagging:merge 이후 자동 호출(또는 node scripts/tagging/build-filter-map.mjs)
+//   --taxonomy=/--tag-scores=/--out-dir= 로 개별 override 가능(기본은 위 canonical 경로).
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readJsonCache, writeJsonCache, cacheExists } from '../metadata/lib/cache.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
-const TAG_SCORES_FILE = resolve(ROOT, 'data/tagging/etf-tag-scores.json');
-const TAXONOMY_FILE = resolve(ROOT, 'config/etf-tagging/etf-taxonomy.json');
-const OUT_FILTER_MAP = resolve(ROOT, 'data/tagging/etf-filter-map.json');
-const OUT_LOW_CONFIDENCE = resolve(ROOT, 'data/tagging/etf-low-confidence.json');
-const OUT_UNCLASSIFIED = resolve(ROOT, 'data/tagging/etf-unclassified.json');
+
+function parseArgs() {
+  const out = {};
+  for (const arg of process.argv.slice(2)) {
+    const m = arg.match(/^--([^=]+)=(.*)$/);
+    if (m) out[m[1]] = m[2];
+  }
+  return out;
+}
+const cliArgs = parseArgs();
+
+const TAG_SCORES_FILE = resolve(ROOT, cliArgs['tag-scores'] || 'data/tagging/etf-tag-scores.json');
+const TAXONOMY_FILE = resolve(ROOT, cliArgs.taxonomy || 'config/etf-tagging/etf-taxonomy.json');
+const OUT_DIR = resolve(ROOT, cliArgs['out-dir'] || 'data/tagging');
+const OUT_FILTER_MAP = resolve(OUT_DIR, 'etf-filter-map.json');
+const OUT_LOW_CONFIDENCE = resolve(OUT_DIR, 'etf-low-confidence.json');
+const OUT_UNCLASSIFIED = resolve(OUT_DIR, 'etf-unclassified.json');
 
 function main() {
   if (!cacheExists(TAG_SCORES_FILE)) throw new Error('먼저 npm run tagging:merge 를 실행하세요.');

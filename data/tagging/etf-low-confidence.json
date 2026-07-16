@@ -1,12 +1,40 @@
 {
-  "generatedAt": "2026-07-16T00:47:00.281Z",
-  "count": 77,
+  "generatedAt": "2026-07-16T02:10:42.814Z",
+  "count": 94,
   "items": [
+    {
+      "etfCode": "102960",
+      "tagId": "sector.shipbuilding",
+      "score": 0.7,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
     {
       "etfCode": "104530",
       "tagId": "dividend.korea_high_dividend",
       "score": 0.68,
       "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "117460",
+      "tagId": "sector.energy_chemicals",
+      "score": 0.75,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "117680",
+      "tagId": "sector.steel_metals",
+      "score": 0.8,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "117700",
+      "tagId": "sector.construction",
+      "score": 0.8,
+      "confidence": 0.45,
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
     },
     {
@@ -24,11 +52,39 @@
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
     },
     {
+      "etfCode": "192720",
+      "tagId": "strategy.low_volatility",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.6/minimumConfidence=0.46 미달"
+    },
+    {
       "etfCode": "213610",
       "tagId": "strategy.value",
       "score": 0.55,
       "confidence": 0.4,
       "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "213610",
+      "tagId": "strategy.large_conglomerate_group",
+      "score": 0.6,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "226380",
+      "tagId": "sector.beauty_cosmetics",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "226380",
+      "tagId": "sector.consumer_staples_food",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
     },
     {
       "etfCode": "227550",
@@ -59,11 +115,25 @@
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
     },
     {
+      "etfCode": "266550",
+      "tagId": "strategy.low_volatility",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.6/minimumConfidence=0.46 미달"
+    },
+    {
       "etfCode": "275290",
       "tagId": "strategy.value",
       "score": 0.65,
       "confidence": 0.4,
       "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "279540",
+      "tagId": "strategy.low_volatility",
+      "score": 0.6,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.6/minimumConfidence=0.46 미달"
     },
     {
       "etfCode": "315960",
@@ -157,6 +227,27 @@
       "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
     },
     {
+      "etfCode": "375760",
+      "tagId": "strategy.esg_screening",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.5/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "375770",
+      "tagId": "strategy.esg_screening",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.5/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "376410",
+      "tagId": "strategy.esg_screening",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.5/minimumConfidence=0.45 미달"
+    },
+    {
       "etfCode": "380340",
       "tagId": "sector.it",
       "score": 0.5,
@@ -183,6 +274,13 @@
       "score": 0.6,
       "confidence": 0.45,
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "385590",
+      "tagId": "strategy.esg_screening",
+      "score": 0.45,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.5/minimumConfidence=0.45 미달"
     },
     {
       "etfCode": "385710",
@@ -255,6 +353,13 @@
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
     },
     {
+      "etfCode": "445290",
+      "tagId": "sector.robotics",
+      "score": 0.6,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
       "etfCode": "457990",
       "tagId": "sector.ev_battery",
       "score": 0.55,
@@ -263,7 +368,14 @@
     },
     {
       "etfCode": "464600",
-      "tagId": "strategy.consumer_discretionary",
+      "tagId": "sector.consumer_discretionary",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "469070",
+      "tagId": "sector.robotics",
       "score": 0.55,
       "confidence": 0.4,
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
@@ -434,6 +546,13 @@
       "tagId": "sector.semiconductor",
       "score": 0.58,
       "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0190C0",
+      "tagId": "sector.robotics",
+      "score": 0.55,
+      "confidence": 0.5,
       "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
     },
     {

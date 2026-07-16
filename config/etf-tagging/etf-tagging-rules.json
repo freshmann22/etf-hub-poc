@@ -1,10 +1,22 @@
 {
-  "version": "1.0.0",
-  "_note": "명시적 구조 사실 → taxonomy 태그 규칙 매핑. 정규식은 ETF명·기초지수명·분배스케줄 원문에만 적용한다(추측 금지). 여기 없는 태그(sector.* 대부분, strategy.growth/value 등)는 규칙만으로 확정하지 않고 Claude 서브에이전트로 넘긴다(§7 주의사항).",
+  "version": "2.0.0",
+  "_note": "v2.0.0(2026-07-16 컷오버) — assetClass/region 축 포함 정규식 규칙. 정규식은 ETF명·기초지수명 원문에만 적용(추측 금지). impliesTags 는 규칙 매칭 시 함께 부여할 태그. defaultFacetValues 는 규칙 매칭이 없을 때 채우는 facet 기본값(예: asset.equity/region.domestic_kr). 구 v1 규칙은 git 히스토리에 보존.",
   "tagRules": [
     {
+      "tagId": "strategy.active",
+      "matchFields": [
+        "name"
+      ],
+      "pattern": "액티브",
+      "flags": "",
+      "score": 0.9,
+      "confidence": 0.8
+    },
+    {
       "tagId": "strategy.leverage",
-      "matchFields": ["name"],
+      "matchFields": [
+        "name"
+      ],
       "pattern": "레버리지|(\\d(?:\\.\\d)?)\\s*X\\b",
       "flags": "i",
       "score": 1,
@@ -12,31 +24,66 @@
     },
     {
       "tagId": "strategy.inverse",
-      "matchFields": ["name"],
+      "matchFields": [
+        "name"
+      ],
       "pattern": "인버스",
       "flags": "",
       "score": 1,
       "confidence": 1
     },
     {
-      "tagId": "strategy.sp500",
-      "matchFields": ["name", "benchmarkName"],
+      "tagId": "strategy.benchmark.sp500",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
       "pattern": "S&P\\s*500",
       "flags": "i",
       "score": 1,
-      "confidence": 0.95
+      "confidence": 0.95,
+      "impliesTags": [
+        "region.us"
+      ]
     },
     {
-      "tagId": "strategy.nasdaq100",
-      "matchFields": ["name", "benchmarkName"],
+      "tagId": "strategy.benchmark.nasdaq100",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
       "pattern": "나스닥\\s*100|NASDAQ\\s*100",
       "flags": "i",
       "score": 1,
-      "confidence": 0.95
+      "confidence": 0.95,
+      "impliesTags": [
+        "region.us"
+      ]
     },
     {
-      "tagId": "strategy.reit",
-      "matchFields": ["name", "benchmarkName"],
+      "tagId": "strategy.benchmark.kospi200",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100",
+      "flags": "i",
+      "score": 0.7,
+      "confidence": 0.55,
+      "impliesTags": [
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "tagId": "asset.reit",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
       "pattern": "리츠|REIT",
       "flags": "i",
       "score": 0.9,
@@ -44,7 +91,9 @@
     },
     {
       "tagId": "dividend.covered_call",
-      "matchFields": ["name"],
+      "matchFields": [
+        "name"
+      ],
       "pattern": "커버드콜",
       "flags": "",
       "score": 1,
@@ -52,16 +101,217 @@
     },
     {
       "tagId": "dividend.monthly",
-      "matchFields": ["name", "distributionScheduleText"],
+      "matchFields": [
+        "name",
+        "distributionScheduleText"
+      ],
       "pattern": "먼슬리|월배당|매\\s*1,\\s*2,\\s*3",
       "flags": "",
       "score": 0.85,
       "confidence": 0.7,
       "_note": "scheduleText의 '매 1,4,7,10월' 형태(분기)는 매칭하지 않도록 '매 1,2,3'(연속 월) 패턴만 사용 — 분기배당을 월배당으로 오분류 방지"
+    },
+    {
+      "tagId": "asset.bond.target_maturity",
+      "matchFields": [
+        "name"
+      ],
+      "pattern": "\\d{2}\\s*-\\s*\\d{2}(?!\\d)|만기매칭|목표전환",
+      "flags": "",
+      "score": 0.85,
+      "confidence": 0.75,
+      "impliesTags": [
+        "asset.bond"
+      ]
+    },
+    {
+      "tagId": "asset.bond.money_market",
+      "matchFields": [
+        "name"
+      ],
+      "pattern": "KOFR|CD\\s*금리|초단기|머니마켓",
+      "flags": "i",
+      "score": 0.85,
+      "confidence": 0.75,
+      "impliesTags": [
+        "asset.bond"
+      ]
+    },
+    {
+      "tagId": "asset.bond.corporate",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "회사채|크레딧\\s*채권|AA-|A\\+\\s*이상",
+      "flags": "",
+      "score": 0.8,
+      "confidence": 0.7,
+      "impliesTags": [
+        "asset.bond"
+      ]
+    },
+    {
+      "tagId": "asset.bond.government",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "국고채|통안채|미국채|국채",
+      "flags": "",
+      "score": 0.8,
+      "confidence": 0.7,
+      "impliesTags": [
+        "asset.bond"
+      ]
+    },
+    {
+      "tagId": "asset.bond",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "채권|종합채권|금리|KOFR|통안",
+      "flags": "",
+      "score": 0.75,
+      "confidence": 0.65
+    },
+    {
+      "tagId": "asset.commodity",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "금현물|은현물|골드|원유|구리|팔라듐|백금|천연가스|농산물|원자재",
+      "flags": "",
+      "score": 0.85,
+      "confidence": 0.75
+    },
+    {
+      "tagId": "asset.mixed",
+      "matchFields": [
+        "name"
+      ],
+      "pattern": "혼합|밸런스|멀티에셋|자산배분|TDF|EMP",
+      "flags": "i",
+      "score": 0.75,
+      "confidence": 0.6
+    },
+    {
+      "tagId": "asset.currency",
+      "matchFields": [
+        "name"
+      ],
+      "pattern": "달러선물|엔화선물|통화선물",
+      "flags": "",
+      "score": 0.8,
+      "confidence": 0.65
+    },
+    {
+      "tagId": "region.us",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "미국|S&P\\s*500|나스닥|다우존스|러셀",
+      "flags": "i",
+      "score": 0.85,
+      "confidence": 0.75,
+      "_note": "'S&P'만으로는 매칭하지 않음 — S&P GSCI Gold 등 비-미국 원자재 지수도 'S&P'를 포함해 오탐(132030 사례)"
+    },
+    {
+      "tagId": "region.china",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "중국|차이나|항셍|CSI",
+      "flags": "i",
+      "score": 0.85,
+      "confidence": 0.75
+    },
+    {
+      "tagId": "region.japan",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "일본|닛케이|TOPIX",
+      "flags": "i",
+      "score": 0.85,
+      "confidence": 0.75
+    },
+    {
+      "tagId": "region.india",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "인도|Nifty",
+      "flags": "i",
+      "score": 0.85,
+      "confidence": 0.75
+    },
+    {
+      "tagId": "region.vietnam",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "베트남",
+      "flags": "",
+      "score": 0.85,
+      "confidence": 0.75
+    },
+    {
+      "tagId": "region.developed",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "선진국|MSCI\\s*World|(?<!코스닥)(?<!K-)글로벌",
+      "flags": "i",
+      "score": 0.7,
+      "confidence": 0.55,
+      "_note": "'코스닥글로벌'(KRX 코스닥 글로벌세그먼트, 국내)·'K-글로벌'(국내 테마) 오탐 방지용 lookbehind"
+    },
+    {
+      "tagId": "region.emerging",
+      "matchFields": [
+        "name",
+        "benchmarkName"
+      ],
+      "pattern": "신흥국|이머징",
+      "flags": "",
+      "score": 0.75,
+      "confidence": 0.6
+    }
+  ],
+  "defaultFacetValues": [
+    {
+      "unlessFacet": "assetClass",
+      "tagId": "asset.equity",
+      "score": 1,
+      "confidence": 0.6,
+      "note": "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+    },
+    {
+      "unlessFacet": "region",
+      "tagId": "region.domestic_kr",
+      "score": 1,
+      "confidence": 0.6,
+      "note": "해외 지역 신호 없음 → 국내 기본값"
+    },
+    {
+      "unlessTagId": "strategy.active",
+      "tagId": "strategy.passive_index",
+      "score": 0.6,
+      "confidence": 0.5,
+      "note": "액티브 신호 없음 → 패시브 지수추종 기본값"
     }
   ],
   "factRules": {
-    "_note": "taxonomy 태그가 아닌 구조적 사실(참고용, UI 필터 아님). 이전 파이프라인(scripts/normalize-etf-metadata.mjs)의 classificationFacts.nameHints 를 그대로 재사용한다.",
+    "_note": "taxonomy 태그가 아닌 구조적 사실(참고용, UI 필터 아님). v1과 동일.",
     "active": "명칭에 '액티브' 포함",
     "currencyHedged": "명칭에 '(H)' 포함",
     "synthetic": "명칭에 '합성' 포함",

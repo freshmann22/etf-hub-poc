@@ -1,0 +1,379 @@
+{
+  "valid": true,
+  "perEtf": [
+    {
+      "etfCode": "495550",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "495550",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'SOL 코리아밸류업TR'에 '밸류업' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 구성종목(SK하이닉스 20.4%, 삼성전자 16%, SK스퀘어 8.74%, 현대차 4.99%, KB금융 4.65% 등)이 동일 배치 내 타 밸류업 상품군(HANARO/KODEX/TIGER/KIWOOM/ACE 코리아밸류업)과 비중까지 거의 일치해 동일 밸류업 기초지수 추종 정황이 강함"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/description이 모두 null이라 기초지수명으로 직접 확인하지 못함(명칭+동일 홀딩패턴 근거로 판단, confidence 제한)"
+        ]
+      }
+    },
+    {
+      "etfCode": "495750",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "495750",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'HANARO 코리아밸류업'에 '밸류업' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 구성종목(SK하이닉스 20.28%, 삼성전자 15.93%, SK스퀘어 8.72%, 현대차 4.96% 등)이 동일 배치 내 타 밸류업 상품군과 비중까지 거의 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/description이 모두 null이라 기초지수명으로 직접 확인하지 못함"
+        ]
+      }
+    },
+    {
+      "etfCode": "495850",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "495850",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'KODEX 코리아밸류업'에 '밸류업' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 구성종목(SK하이닉스 20.39%, 삼성전자 15.99%, SK스퀘어 8.79%, 현대차 4.96% 등)이 동일 배치 내 타 밸류업 상품군과 비중까지 거의 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/description이 모두 null이라 기초지수명으로 직접 확인하지 못함"
+        ]
+      }
+    },
+    {
+      "etfCode": "496080",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "496080",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'TIGER 코리아밸류업'에 '밸류업' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 구성종목(SK하이닉스 20.15%, 삼성전자 15.84%, SK스퀘어 8.71%, 현대차 4.93% 등)이 동일 배치 내 타 밸류업 상품군과 비중까지 거의 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/description이 모두 null이라 기초지수명으로 직접 확인하지 못함"
+        ]
+      }
+    },
+    {
+      "etfCode": "496090",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "496090",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'KIWOOM 코리아밸류업'에 '밸류업' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 구성종목(SK하이닉스 20.38%, 삼성전자 15.96%, SK스퀘어 8.78%, 현대차 4.96% 등)이 동일 배치 내 타 밸류업 상품군과 비중까지 거의 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/description이 모두 null이라 기초지수명으로 직접 확인하지 못함"
+        ]
+      }
+    },
+    {
+      "etfCode": "496120",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "496120",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'ACE 코리아밸류업'에 '밸류업' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 구성종목(SK하이닉스 20.38%, 삼성전자 15.95%, SK스퀘어 8.73%, 현대차 4.96% 등)이 동일 배치 내 타 밸류업 상품군과 비중까지 거의 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/description이 모두 null이라 기초지수명으로 직접 확인하지 못함"
+        ]
+      }
+    },
+    {
+      "etfCode": "496130",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "496130",
+        "classifications": [
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.7,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'TRUSTON 코리아밸류업액티브'에 '밸류업' 및 '액티브' 명시 (facts.active=true)"
+              },
+              {
+                "type": "holdings",
+                "text": "삼성전자 22.68%, SK하이닉스 18.82% 등 대형주 중심이나, 패시브 밸류업 상품군과 비교해 KB금융/삼성증권/삼성물산/LS/SK스퀘어/CJ/GS리테일/삼성생명 등 구성이 상이해 액티브 운용에 따른 편차가 있음"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "액티브 운용으로 밸류업 지수와 실제 구성이 다를 수 있어 패시브 상품군보다 confidence를 낮춤",
+          "benchmark 정보 없음"
+        ]
+      }
+    },
+    {
+      "etfCode": "498050",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "498050",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.9,
+            "confidence": 0.65,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'HANARO 바이오코리아액티브'에 '바이오' 명시 (facts.active=true)"
+              },
+              {
+                "type": "holdings",
+                "text": "상위 10종목이 모두 바이오/제약 기업(에이비엘바이오 10.72%, 리가켐바이오 7.98%, 한올바이오파마 7.24%, 에스티팜 5.65%, 올릭스 4.76%, 한미약품 4.7%, 셀트리온 3.94%, 알테오젠 3.9%, 파마리서치 3.66%, 엘앤씨바이오 3.61%)로 합산 비중 약 60%에 달해 섹터 집중도가 매우 높음"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer/fees 정보 없음(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "498400",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "498400",
+        "classifications": [
+          {
+            "tagId": "dividend.covered_call",
+            "score": 1,
+            "confidence": 1,
+            "source": "rule",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "distribution.coveredCall=true, 명칭에 '커버드콜' 명시(규칙 기반 결과 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "498410",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "498410",
+        "classifications": [
+          {
+            "tagId": "dividend.covered_call",
+            "score": 1,
+            "confidence": 1,
+            "source": "rule",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "distribution.coveredCall=true, 명칭에 '커버드콜' 명시(규칙 기반 결과 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.financials",
+            "score": 0.9,
+            "confidence": 0.8,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "상위 10종목이 모두 금융업(KB금융 21.77%, 하나금융지주 14.49%, 우리금융지주 11.65%, 기업은행 9.48%, 삼성화재 9.42%, DB손해보험 5.78%, 한국금융지주 5.74%, NH투자증권 5.58%, 삼성증권 3.81%)으로 합산 비중 약 95%에 달함"
+              }
+            ]
+          },
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.7,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'KODEX 금융고배당TOP10타겟위클리커버드콜'에 '고배당' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "구성종목이 배당수익률이 높은 은행/보험/증권주 위주"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "실제 분배는 커버드콜 옵션 프리미엄 중심이라 dividend.korea_high_dividend는 보조 태그로 낮은 score/confidence로 부여"
+        ]
+      }
+    },
+    {
+      "etfCode": "498860",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "498860",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.9,
+            "confidence": 0.8,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "상위 10종목이 모두 금융업(KB금융 12.94%, 기업은행 10.93%, DB손해보험 10.45%, NH투자증권 10.34%, 한국금융지주 9.91%, 삼성증권 9.54%, 신영증권 9.07%, 키움증권 8.84%, 교보증권 7.71%, 삼성생명 2.85%)으로 합산 비중 약 92%에 달함"
+              }
+            ]
+          },
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.85,
+            "confidence": 0.65,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "ETF명 'RISE 코리아금융고배당'에 '고배당' 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "은행/보험/증권 등 배당수익률이 높은 금융업종 상위 10종목에 집중 (distribution.coveredCall=false로 옵션 전략이 아닌 종목 배당 기반)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/distribution 스케줄 정보 없음(coverage 0.35)"
+        ]
+      }
+    }
+  ],
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

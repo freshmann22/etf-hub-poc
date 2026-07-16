@@ -1,0 +1,876 @@
+{
+  "valid": true,
+  "perEtf": [
+    {
+      "etfCode": "234310",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "234310",
+        "classifications": [
+          {
+            "tagId": "strategy.value",
+            "score": 0.55,
+            "confidence": 0.35,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"RISE V&S셀렉트밸류\" — 명칭에 \"밸류\" 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "삼성전자 28.45%, 메리츠금융지주 11.82%, 신한지주 3.76%, BNK금융지주 1.92% 등 금융지주 비중이 상당하며 전통적 저평가 대형주 위주 구성"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 전부 결측(coverage.score=0.35) — 명칭과 홀딩스 패턴만으로 가치주 팩터를 추정, 지수 방법론 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "237350",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "237350",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.55,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 30.95%, 삼성전자 30.13% — 상위 2종목 합산 약 61%가 반도체 기업"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "\"코스피100\"은 시가총액 상위 100종목을 담는 광범위한 블루칩 지수로, 반도체 집중은 KOSPI 시총 구조상 발생하는 결과이지 의도된 섹터 전략이 아님 — 태그는 참고용으로만 낮은 score/confidence 부여"
+        ]
+      }
+    },
+    {
+      "etfCode": "243880",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "243880",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK스퀘어 37.17%, SK하이닉스 36.47%, 삼성전자 27.86%, 삼성전기 24.52%, 삼성SDI 8.55%, LG이노텍 3.02%, 한미반도체 2.77% — KOSPI200 IT지수 레버리지 상품이나 실제 상위 구성은 반도체 밸류체인이 압도적"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "243890",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "243890",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "에너지/화학",
+            "suggestedCategory": "sector",
+            "score": 0.7,
+            "confidence": 0.55,
+            "reason": "SK 44.7%, LG화학 25.76%, HD현대 19.23%, SK이노베이션 17.65%, S-Oil 12.52%, 한화솔루션 9.75%, GS 7.64%, OCI홀딩스 5.83%, 한솔케미칼 5.46% — 정유·화학·에너지 대기업 위주 구성이나 현재 taxonomy에는 클린에너지(태양광/풍력/수소) 외 전통 에너지/화학 섹터 태그가 없음"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "244580",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "244580",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.95,
+            "confidence": 0.85,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "FnGuide 바이오 지수"
+              },
+              {
+                "type": "holdings",
+                "text": "파마리서치, 씨어스, 한미사이언스, 삼성바이오로직스, 셀트리온, 한올바이오파마, 올릭스, 에스티팜, 동국제약, 클래시스 — 상위 10종목 전부 제약/바이오 기업"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "244620",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "244620",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "모멘텀 팩터",
+            "suggestedCategory": "strategy",
+            "score": 0.6,
+            "confidence": 0.4,
+            "reason": "명칭에 \"모멘텀\" 명시, 상위 10종목이 반도체장비/유통/뷰티 등 업종 혼합에 개별 비중 2.6~4.2%로 고르게 분산 — 특정 섹터가 아닌 모멘텀 팩터 전략으로 추정되나 현재 taxonomy에는 모멘텀 팩터 태그 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/descriptions 전부 결측(coverage.score=0.35), 홀딩스도 반도체장비(테스/피에스케이/티에스이/피에스케이홀딩스/유진테크 합산 약 16.7%)가 일부 있으나 섹터 확정할 만큼 지배적이지 않아 sector 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "244660",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "244660",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "퀄리티 팩터",
+            "suggestedCategory": "strategy",
+            "score": 0.6,
+            "confidence": 0.4,
+            "reason": "명칭에 \"퀄리티\" 명시, 상위 10종목이 하이트진로/농심/오리온/롯데칠성 등 필수소비재·식음료 위주로 재무 안정성 높은 기업군 — 현재 taxonomy에는 퀄리티 팩터 태그 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage.score=0.35) — 식음료 소비재 비중이 높으나 strategy.consumer_discretionary(경기소비재)는 정의상 자동차/유통/레저 위주라 매핑 부적절, sector/strategy 정규 태그 부여 보류"
+        ]
+      }
+    },
+    {
+      "etfCode": "244670",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "244670",
+        "classifications": [
+          {
+            "tagId": "strategy.value",
+            "score": 0.65,
+            "confidence": 0.45,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"KODEX 밸류Plus\" — 명칭에 \"밸류\" 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "동아쏘시오홀딩스, 대상, 롯데웰푸드, 동원산업, CJ제일제당, 오리온홀딩스, 세방전지, 아세아제지, GS, 영원무역홀딩스 — 상위 10종목이 2.7~4.2%로 고르게 분산된 저평가 지주사/제조업 위주 구성으로 가치주 팩터 특성과 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage.score=0.35) — 지수 방법론(PER/PBR 기준) 직접 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "251590",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "251590",
+        "classifications": [
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.75,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"PLUS 고배당저변동50\" — 명칭에 고배당 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "기업은행, KT&G, 한국쉘석유, 우리금융지주, 강원랜드, KT 등 전통적 국내 고배당주 위주 구성, 상위 10종목 2.6~2.9%로 고르게 분산"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage.score=0.35) — 저변동성 스크리닝 방법론은 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "252000",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252000",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "동일가중",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.4,
+            "reason": "명칭에 \"동일가중\" 명시, 홀딩스 비중이 0.6~0.9%로 매우 고르게 분산되어 코스피200을 동일가중 방식으로 담는 전략 — 현재 taxonomy에는 동일가중 전략 태그 없음"
+          }
+        ],
+        "warnings": [
+          "코스피200 시가총액 상위 구성과 달리 동일가중이라 특정 섹터 편중이 없어 sector 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "252400",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252400",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "252410",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252410",
+        "classifications": [
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "252420",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252420",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "252650",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252650",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "동일가중",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.4,
+            "reason": "홀딩스 비중이 0.6~0.9%로 매우 고르게 분산 — \"KODEX 200동일가중\" 명칭과 일치, 252000과 동일 후보 태그 제안"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "252670",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252670",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "252710",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "252710",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "253150",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "253150",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "253160",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "253160",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "253230",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "253230",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "253240",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "253240",
+        "classifications": [
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "253250",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "253250",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "253280",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "253280",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.9,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성바이오로직스 11.83%, 셀트리온 11.56%, 알테오젠 9.98%, 유한양행 5.33%, 에이비엘바이오 4.73%, SK바이오팜 4.49%, HLB 4.29%, 리가켐바이오 4.24%, 삼천당제약 3.64%, 삼성에피스홀딩스 3.5% — 상위 10종목 합산 약 63%가 전부 제약/바이오 기업"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage.score=0.35)이나 홀딩스 근거는 뚜렷함"
+        ]
+      }
+    },
+    {
+      "etfCode": "261060",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261060",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "주성엔지니어링 8.33%, 원익IPS 6.01%, 피에스케이 5.32%, 리노공업 5.25%, 이오테크닉스 4.39%, HPSP 3.99%, 심텍 3.91%, 제주반도체 3.43%, 테스 3.18% — 상위 10종목 중 8종목이 반도체 장비/소재/부품, 합산 약 44%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage.score=0.35)이나 홀딩스 근거는 뚜렷함"
+        ]
+      }
+    },
+    {
+      "etfCode": "261070",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261070",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.95,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "알테오젠 25.49%, 에이비엘바이오 6.5%, HLB 5.96%, 리가켐바이오 5.83%, 디앤디파마텍 5.29%, 삼천당제약 5.07%, 펩트론 4.61%, 파마리서치 4.46%, 올릭스 4.09%, 에스티팜 3.19% — 상위 10종목 전부 바이오테크 기업, 합산 약 70%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage.score=0.35)이나 홀딩스 근거는 뚜렷함"
+        ]
+      }
+    },
+    {
+      "etfCode": "261110",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261110",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "261120",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261120",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "261140",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261140",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "우선주 전략",
+            "suggestedCategory": "strategy",
+            "score": 0.75,
+            "confidence": 0.5,
+            "reason": "명칭 \"TIGER 우선주\", 홀딩스가 삼성전자우/현대차2우B/미래에셋증권2우B/삼성전기우/LG전자우/삼성화재우/LG화학우/한국금융지주우/두산우/한화3우B 등 전부 우선주로 구성 — 업종은 혼합이나 우선주라는 증권 유형 전략은 현재 taxonomy(sector/strategy/dividend)에 매핑할 태그 없음"
+          }
+        ],
+        "warnings": [
+          "업종이 전자/자동차/금융/화학 등으로 혼합되어 있어 sector 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "261250",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261250",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "261260",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "261260",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: leverage=2X(명칭 표기) (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "266160",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "266160",
+        "classifications": [
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.5,
+            "confidence": 0.35,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"RISE 고배당\" — 명칭에 고배당 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "홀딩스 상위가 SK하이닉스 26.3%, 삼성전자 24.43%로 반도체 대형주 비중이 압도적이며, 배당수익률이 높은 종목군이라기보다 시가총액 상위주 위주 구성으로 보여 명칭과 실제 구성이 불일치할 가능성이 있음 — score/confidence를 낮게 부여"
+        ]
+      }
+    }
+  ],
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

@@ -4,7 +4,30 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/logic.test.mjs tests/data-integrity.test.mjs tests/content-policy.test.mjs",
-    "serve": "node scripts/dev-server.js"
+    "test": "node --test tests/logic.test.mjs tests/data-integrity.test.mjs tests/content-policy.test.mjs tests/server.test.mjs tests/holdings-schema.test.mjs tests/holdings-pipeline.test.mjs",
+    "serve": "node server/index.js",
+    "serve:static": "node scripts/dev-server.js",
+    "explore": "node scripts/launch.mjs",
+    "build:data": "node scripts/build-etf-holdings-data.mjs",
+    "metadata:web": "node scripts/build-etf-metadata-web.mjs",
+    "metadata:inspect": "node scripts/inspect-etf-data-sources.mjs",
+    "metadata:master": "node scripts/collect-etf-master.mjs",
+    "metadata:ingest-csv": "node scripts/ingest-naver-holdings-csv.mjs",
+    "metadata:sample": "node scripts/collect-etf-metadata.mjs --sample",
+    "metadata:collect": "node scripts/collect-etf-metadata.mjs",
+    "metadata:normalize": "node scripts/normalize-etf-metadata.mjs",
+    "metadata:report": "node scripts/build-etf-metadata-report.mjs",
+    "metadata:all": "npm run metadata:master && npm run metadata:ingest-csv && npm run metadata:sample && npm run metadata:normalize && npm run metadata:report",
+    "tagging:inspect": "node scripts/tagging/inspect-tagging.mjs",
+    "tagging:prepare": "node scripts/tagging/prepare-tagging-input.mjs",
+    "tagging:rules": "node scripts/tagging/run-rule-classifier.mjs",
+    "tagging:sample": "node scripts/tagging/select-sample.mjs",
+    "tagging:build-batches": "node scripts/tagging/build-batches.mjs",
+    "tagging:validate": "node scripts/tagging/run-validate-batches.mjs",
+    "tagging:resume": "node scripts/tagging/build-batches.mjs",
+    "tagging:merge": "node scripts/tagging/merge-scores.mjs && node scripts/tagging/build-filter-map.mjs",
+    "tagging:candidates": "node -e \"const c=require('./data/tagging/etf-candidate-tags-raw.json'); console.log(c.count+'건 → data/tagging/etf-candidate-tags-raw.json (정규화/추천은 etf-taxonomy-auditor 서브에이전트 실행 필요, 결과는 data/tagging/etf-filter-candidates.json)')\"",
+    "tagging:report": "node scripts/tagging/build-tagging-report.mjs",
+    "tagging:all": "npm run tagging:prepare && npm run tagging:rules && npm run tagging:merge && npm run tagging:report"
   }
 }

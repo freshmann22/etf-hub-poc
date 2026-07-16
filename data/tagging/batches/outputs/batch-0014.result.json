@@ -1,0 +1,394 @@
+[
+  {
+    "etfCode": "395270",
+    "classifications": [
+      {
+        "tagId": "sector.semiconductor",
+        "score": 0.93,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "SK하이닉스 26.39% + 삼성전자 24.71% + SK스퀘어 22.39% + 삼성전기 14.91% = 상위 4종목 약 88.4%가 반도체 밸류체인" },
+          { "type": "holdings", "text": "한미반도체, 주성엔지니어링, 이수페타시스, 원익IPS, 리노공업, 피에스케이 등 반도체 장비/소재 종목 다수 포함" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/descriptions/issuer 등 핵심 필드 결측(coverage 0.35)으로 confidence를 낮게 산정함"]
+  },
+  {
+    "etfCode": "395280",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.92,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "크래프톤, NC, 펄어비스, 넷마블, 시프트업, 더블유게임즈, NHN, 위메이드, 웹젠, 네오위즈 등 게임회사 10종목이 전체 구성" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측"]
+  },
+  {
+    "etfCode": "395290",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.92,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "하이브 26.33% + JYP 23.3% + 에스엠 17.07% + 와이지 9.91% + CJ ENM 6.19% + 스튜디오드래곤 4.85% 등 엔터/미디어 기업이 전체 비중 지배" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측"]
+  },
+  {
+    "etfCode": "395750",
+    "classifications": [
+      {
+        "tagId": "strategy.value",
+        "score": 0.5,
+        "confidence": 0.35,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'PLUS ESG가치주액티브'에 '가치주' 명시" },
+          { "type": "holdings", "text": "구성종목이 삼성전자/SK하이닉스/금융지주 등 대형 우량주 중심이나 가치주 팩터 근거(저평가 지표 등)는 입력에 없음" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["가치주 팩터를 뒷받침하는 지수/전략 설명이 없어 명칭 근거만으로 낮은 score/confidence 부여함"]
+  },
+  {
+    "etfCode": "395760",
+    "classifications": [
+      {
+        "tagId": "strategy.growth",
+        "score": 0.5,
+        "confidence": 0.35,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'PLUS ESG성장주액티브'에 '성장주' 명시" },
+          { "type": "holdings", "text": "구성종목이 삼성전자/SK하이닉스 등 대형주 중심이며 성장 팩터 근거는 입력에 없음" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["성장주 팩터를 뒷받침하는 지수/전략 설명이 없어 명칭 근거만으로 낮은 score/confidence 부여함"]
+  },
+  {
+    "etfCode": "396500",
+    "classifications": [
+      {
+        "tagId": "sector.semiconductor",
+        "score": 0.96,
+        "confidence": 0.6,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'TIGER 반도체TOP10'" },
+          { "type": "holdings", "text": "상위 10종목 전부 반도체 밸류체인(삼성전자, SK하이닉스, SK스퀘어, 주성엔지니어링, 한미반도체, 이수페타시스, 원익IPS, DB하이텍, 이오테크닉스, 리노공업)이며 합산 비중이 100%에 근접" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측"]
+  },
+  {
+    "etfCode": "400970",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.7,
+        "confidence": 0.5,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "크래프톤, 하이브, NC, JYP, 펄어비스, 넷마블, 시프트업 등 게임/엔터 종목 합산 비중 약 56%" }
+        ]
+      }
+    ],
+    "candidateTags": [
+      { "label": "메타버스", "suggestedCategory": "sector", "score": 0.6, "confidence": 0.45, "reason": "펀드명 'TIGER Fn메타버스' 및 게임/엔터+디스플레이/부품(NAVER, LG디스플레이, LG이노텍)이 혼합된 메타버스 테마 구성이 이 배치 내 4개 ETF(400970,401170,401470,402460)에서 반복 관찰됨" }
+    ],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측; 메타버스 테마는 게임/엔터 태그만으로 완전히 포착되지 않음"]
+  },
+  {
+    "etfCode": "401170",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.6,
+        "confidence": 0.45,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "크래프톤, NC, 하이브, JYP, 펄어비스 등 게임/엔터 종목 합산 비중 약 43%, 나머지는 카카오/NAVER/LG디스플레이/삼성전기/LG이노텍 등 IT 부품·플랫폼" }
+        ]
+      }
+    ],
+    "candidateTags": [
+      { "label": "메타버스", "suggestedCategory": "sector", "score": 0.55, "confidence": 0.4, "reason": "펀드명 'RISE 메타버스'; 게임/엔터+플랫폼+디스플레이 부품이 혼합된 구성이 반복 관찰되는 메타버스 테마" }
+    ],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측"]
+  },
+  {
+    "etfCode": "401470",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.65,
+        "confidence": 0.5,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "하이브, 크래프톤, NC, NHN, YG, SM, JYP, 넷마블 등 게임/엔터 종목 합산 비중 약 46%" }
+        ]
+      }
+    ],
+    "candidateTags": [
+      { "label": "메타버스", "suggestedCategory": "sector", "score": 0.55, "confidence": 0.4, "reason": "펀드명 'KODEX 메타버스액티브'; 게임/엔터 비중이 높으나 삼성전자/SK하이닉스 등 반도체 비중도 혼재" }
+    ],
+    "warnings": ["active=true (액티브 펀드)이나 전략 설명 결측"]
+  },
+  {
+    "etfCode": "402460",
+    "classifications": [],
+    "candidateTags": [
+      { "label": "메타버스", "suggestedCategory": "sector", "score": 0.5, "confidence": 0.35, "reason": "펀드명 'HANARO Fn K-메타버스MZ'이나 구성종목이 KT/SK텔레콤/LG전자/LG유플러스 등 통신·전자 대기업 위주이고 크래프톤+하이브 합산은 17.9%에 불과해 기존 sector 태그로 확정하기 어려움" }
+    ],
+    "warnings": ["구성종목이 통신/가전 대기업 중심으로 게임/엔터 비중이 낮아 sector.game_entertainment_media 부여를 보류함"]
+  },
+  {
+    "etfCode": "403790",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["코스피 액티브 대형주 위주 구성으로 특정 섹터/전략 태그를 뒷받침할 근거 부족"]
+  },
+  {
+    "etfCode": "404120",
+    "classifications": [
+      {
+        "tagId": "sector.clean_energy",
+        "score": 0.72,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'TIME K신재생에너지액티브'" },
+          { "type": "holdings", "text": "한화솔루션, 두산퓨얼셀, 씨에스윈드, 한화 등 신재생에너지 관련 종목 합산 비중 약 28.6%, 나머지는 삼성전자/SK하이닉스 등 대형주" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["신재생에너지 종목 비중이 절반에 못 미쳐 confidence를 다소 낮게 산정함"]
+  },
+  {
+    "etfCode": "404260",
+    "classifications": [
+      {
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.45,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'KODEX 기후변화솔루션'" },
+          { "type": "holdings", "text": "씨에스윈드, 한화솔루션, 두산퓨얼셀 등 신재생에너지 종목과 삼성SDI(배터리), 포스코DX 등 기후 관련 종목이 혼재, 특정 신재생에너지 단일 비중은 30% 미만" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["기후변화솔루션 지수는 신재생에너지 외에도 다양한 업종을 포괄해 sector.clean_energy 근거가 약함"]
+  },
+  {
+    "etfCode": "404540",
+    "classifications": [
+      {
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.45,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'TIGER KRX기후변화솔루션', 404260(KODEX 기후변화솔루션)과 거의 동일한 구성종목·비중" },
+          { "type": "holdings", "text": "씨에스윈드, 한화솔루션, 삼성SDI, 두산퓨얼셀 등 신재생에너지/배터리 종목이 혼재" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["기후변화솔루션 지수는 다업종 포괄로 sector.clean_energy 근거가 약함; 404260/404650과 동일 지수 추종으로 추정"]
+  },
+  {
+    "etfCode": "404650",
+    "classifications": [
+      {
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.45,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'SOL KRX기후변화솔루션', 404260/404540과 거의 동일한 구성종목·비중" },
+          { "type": "holdings", "text": "씨에스윈드, 한화솔루션, 삼성SDI, 두산퓨얼셀 등 신재생에너지/배터리 종목이 혼재" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["기후변화솔루션 지수는 다업종 포괄로 sector.clean_energy 근거가 약함; 404260/404540과 동일 지수 추종으로 추정"]
+  },
+  {
+    "etfCode": "407300",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["펀드명 'HANARO Fn골프테마'이나 구성종목(카카오, 신세계, 한화, 두산에너빌리티, 강원랜드 등)이 골프 관련 사업으로 확인되지 않아 태그를 부여하지 않음; 근거 부족"]
+  },
+  {
+    "etfCode": "407310",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["코스피200 시가총액 상위 종목 위주 구성으로 특정 섹터 테마 근거 부족"]
+  },
+  {
+    "etfCode": "407820",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["펀드명 '코리아플랫폼액티브'이나 구성종목이 금융지주/화장품/유통/전선 등으로 다양해 플랫폼 테마 근거 부족"]
+  },
+  {
+    "etfCode": "410870",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.55,
+        "confidence": 0.4,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "펄어비스, NC, 하이브, 에스엠 등 게임/엔터 종목 합산 비중 약 20.6%, 삼양식품/휴젤/에이피알 등 K뷰티·K푸드 종목도 다수 포함된 'K컬처' 혼합 테마" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["게임/엔터 비중이 과반에 못 미쳐 score/confidence를 낮게 산정함; K뷰티·유통 종목 비중도 상당함"]
+  },
+  {
+    "etfCode": "411540",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["코스피200 시가총액 상위 종목 위주 구성으로 특정 섹터 테마 근거 부족(407310과 유사 구성)"]
+  },
+  {
+    "etfCode": "412560",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["strategy.leverage는 규칙 기반으로 이미 score=1/confidence=1 확정(재판단 생략); 구성종목이 배터리/바이오/인터넷/게임(BBIG)에 고르게 분산되어 있어 단일 sector 태그를 부여하지 않음"]
+  },
+  {
+    "etfCode": "412570",
+    "classifications": [
+      {
+        "tagId": "sector.ev_battery",
+        "score": 0.9,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "TIGER 2차전지TOP10(모지수 ETF, 23.55%) 및 삼성SDI, POSCO홀딩스, LG에너지솔루션, LG화학, SK이노베이션, 에코프로, 에코프로비엠, 포스코퓨처엠, 엘앤에프 등 2차전지 밸류체인 종목으로 전체 구성" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["strategy.leverage는 규칙 기반으로 이미 score=1/confidence=1 확정(재판단 생략)"]
+  },
+  {
+    "etfCode": "413930",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["펀드명 'WON AI ESG액티브'이나 구성종목이 삼성전자/SK하이닉스 등 코스피 시가총액 상위주 중심으로 AI 테마 근거가 명확하지 않아 태그를 부여하지 않음"]
+  },
+  {
+    "etfCode": "417630",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["'혁신기업ESG30'로 다양한 업종에 분산되어 특정 섹터 태그 근거 부족"]
+  },
+  {
+    "etfCode": "421320",
+    "classifications": [
+      {
+        "tagId": "sector.aerospace_defense",
+        "score": 0.95,
+        "confidence": 0.6,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'PLUS 우주항공'" },
+          { "type": "holdings", "text": "한국항공우주, LIG디펜스앤에어로스페이스, 한화에어로스페이스, 한화시스템, 인텔리안테크, 쎄트렉아이 등 방산/우주항공 종목 합산 비중 약 91%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측"]
+  },
+  {
+    "etfCode": "422420",
+    "classifications": [
+      {
+        "tagId": "sector.ev_battery",
+        "score": 0.93,
+        "confidence": 0.6,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'RISE 2차전지액티브'" },
+          { "type": "holdings", "text": "삼성SDI, LG에너지솔루션, 엘앤에프, 포스코퓨처엠, 에코프로비엠, 대주전자재료, 에코프로, 롯데에너지머티리얼즈, SKC 등 2차전지 밸류체인 종목 합산 비중 약 82%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["active=true, 전략 설명 결측이나 구성종목 근거는 충분함"]
+  },
+  {
+    "etfCode": "427120",
+    "classifications": [
+      {
+        "tagId": "sector.it",
+        "score": 0.68,
+        "confidence": 0.5,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "SOOP, NHN, NICE평가정보, 카카오, NAVER, 코나아이, 카페24, 디어유, 한글과컴퓨터, 노타 등 인터넷/플랫폼/소프트웨어 기업으로 전체 구성" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["펀드명 'AI플랫폼'이나 구성종목은 AI 전용이라기보다 인터넷/소프트웨어 기업 전반이라 sector.it로 분류함; AI 특화 근거는 부족"]
+  },
+  {
+    "etfCode": "429740",
+    "classifications": [
+      {
+        "tagId": "strategy.reit",
+        "score": 0.97,
+        "confidence": 0.7,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "펀드명 'PLUS K리츠'" },
+          { "type": "holdings", "text": "SK리츠, ESR켄달스퀘어리츠, 롯데리츠, 신한알파리츠, 한화리츠, 코람코라이프인프라리츠, 코람코더원리츠, 삼성FN리츠, 제이알글로벌리츠, 대신밸류리츠 등 상위 10종목 전부 국내 상장 리츠"
+          }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["coverage 0.35, benchmark/issuer 결측"]
+  },
+  {
+    "etfCode": "433250",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["펀드명 'UNICORN R&D 액티브'로 SK하이닉스/삼성전자 비중이 39%로 상당하나 나머지는 방산/자동차/IT부품 등으로 분산되어 sector.semiconductor로 확정하기엔 근거 부족"]
+  },
+  {
+    "etfCode": "433500",
+    "classifications": [],
+    "candidateTags": [
+      { "label": "원전", "suggestedCategory": "sector", "score": 0.95, "confidence": 0.65, "reason": "펀드명 'ACE 원자력TOP10'; 두산에너빌리티, 현대건설, 두산, 대우건설, 한전기술, 비에이치아이, 우리기술, 한전KPS, 한국전력 등 원전 밸류체인 종목 합산 비중 약 99%. 기존 taxonomy sector.clean_energy의 negativeSignals에 '원자력 단일 테마(별도 후보 태그 검토 대상)'로 명시되어 있어 정규 태그 대신 후보로 제안함" }
+    ],
+    "warnings": ["원자력(원전)은 기존 taxonomy에 정규 sector 태그가 없어 candidateTags로만 제안함"]
+  }
+]

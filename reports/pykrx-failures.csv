@@ -1,0 +1,14 @@
+productType,etfCode,etfName,issuer,requestedDate,resolvedBaseDate,lookbackDays,status,dateResolutionStatus,holdingsCount,errorType,reason,provider
+국내현물,069500,KODEX 200,삼성자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+국내현물,102110,TIGER 200,미래에셋자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+국내현물,069660,KOSEF 200,키움투자자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+해외주식,360750,TIGER 미국S&P500,미래에셋자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+해외주식,133690,TIGER 미국나스닥100,미래에셋자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+채권,148070,KOSEF 국고채10년,키움투자자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+채권,114260,KODEX 국고채3년,삼성자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+레버리지,122630,KODEX 레버리지,삼성자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+인버스,114800,KODEX 인버스,삼성자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+합성,195930,TIGER 유로스탁스50(합성 H),미래에셋자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+재간접,251350,KODEX 선진국MSCI World,삼성자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+원자재/파생,132030,KODEX 골드선물(H),삼성자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX
+합성/원자재,130680,TIGER 원유선물Enhanced(H),미래에셋자산운용,20240105,,7,EMPTY,UNRESOLVED,0,EMPTY,구성자산 PDF 엔드포인트 빈 응답,PYKRX

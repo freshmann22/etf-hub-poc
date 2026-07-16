@@ -206,3 +206,156 @@ viewport 390×844 기준. testid 25종 전부 존재 확인.
 - 3차 반복 완료. 자동 테스트 22/22, Playwright 화면 검증 전 항목 통과, 결함 0건.
 - 모델 역할(이번 세션): 총괄=Opus 4.8 / 구현=Sonnet 서브에이전트(`.claude/agents/implementer.md`) / 검증=Codex MCP 유지.
 - **사용자 최종 승인 대기.**
+
+## S11. DS 정렬 마감 + 실데이터 공급 구조 전환 — 완료 (총괄=Opus, 2026-07-14)
+
+### (1) 디자인 시스템 정렬 마감
+- 브랜드 HEX 충돌 해소: 정렬 리포트 초안의 `#007CA9`(딥틸)는 계약(INTERFACE_CONTRACT·CLAUDE.md)
+  및 DS 문서 4종이 명시한 `#00C7A9`(iM Mint)의 자릿수 전치 오기로 판단 → 계약 정본 `#00C7A9`로 확정.
+  `src/styles/main.css` 의 `--brand`/`--brand-strong`/`--brand-soft`/`--brand-ring` 갱신, 리포트 미해결 항목 마감.
+- 회귀: Playwright 확인 `getComputedStyle(--brand)=#00c7a9`, 가로 스크롤 0(375=375), testid 25종, 콘솔 0/0.
+
+### (2) 더미 데이터 → 실 ETF 데이터 공급 구조 전환
+- 서버 계층 완성(기 스캐폴드 위에): `providers/registry.js`, `services/etf-service.js`(mock/live/hybrid ×
+  capability 우선순위 × TTL 캐시 × 정직한 폴백), `routes/api.js`(/api/health·config·providers·bundle·etf/:code/:field),
+  `server/index.js`(정적+API 통합 진입점). mock provider 번들에 themes·comparisonSets 보강.
+- 프런트 전환: `src/js/dataSource.js`(/api/bundle fetch → 실패 시 fixture 폴백), `app.js` 를 async
+  부트스트랩으로 감쌈(로직·이벤트·testid·콘텐츠정책 전부 보존).
+- 비밀값 원칙: `.env.example`만 커밋(값 비움), `.env` 는 .gitignore 제외, Claude 는 키 생성/추정 안 함.
+  describeConfig 는 configured/unconfigured 상태만 노출(테스트로 비노출 검증).
+- 문서: `docs/ETF_DATA_SOURCES.md`(provider↔capability 매트릭스·우선순위·모드), `docs/ETF_DATA_LIMITATIONS.md`
+  (KRX/broker/DART/issuer/KIND/SEIBRO 이용조건·라이선스·스크래핑 리스크·오버레이 한계).
+- 테스트: `tests/server.test.mjs` 추가(normalize·cache(TTL/SWR/dedup)·schemas·registry·service(mock/live/hybrid)·
+  router·오류매핑·비밀 비노출) → package.json 테스트 목록 등록. **전체 44/44 통과**.
+- 화면 검증(Playwright, 390×844): 통합 서버(`npm run serve`)에서 `/api/bundle` 실사용(usedApiBundle=true),
+  testid 25종·히트맵 14·카드 8 렌더, 가로 스크롤 0, 콘솔 0/0. 바텀시트 role=dialog·aria-modal·닫기·매수/매도/주문 부재.
+  폴백 경로(정적 전용 서버)에서도 화면 완전 렌더(단, /api 미마운트 시 브라우저가 404 네트워크 로그 1건 —
+  JS 예외 아님, catch 처리). → 이를 없애기 위해 `scripts/dev-server.js`에도 API 마운트, 두 serve 경로 동작 일원화.
+
+- 파일 경계: 계약/오케스트레이션 문서·기존 3개 계약 테스트 파일 무변경. 서버는 net-new 영역으로 총괄이
+  직접 작성(사용자 직접 지시), 서버 테스트도 동반 작성(멀티에이전트 tests 소유 규칙의 예외로 기록).
+- **사용자 최종 승인 대기.**
+
+## S12. 실 API 채널 검증·전환(토스증권/DART/KRX) — 완료 (총괄=Opus, 2026-07-14)
+
+사용자가 `.env` 에 직접 입력한 자격을 검증하고 실 데이터 채널로 전환.
+
+- **자격 실호출 검증**(비밀값 미노출): 토스증권 OAuth2 토큰 200(만료 ~24h)·`/api/v1/prices` 200(실시세)·
+  `/api/v1/candles` 200(일봉). DART `list.json` 200(status 000 정상). KRX 공개 엔드포인트 400(불안정 확인).
+- **변수명 불일치 발견**: 넣으신 `TOSS_CLIENT_ID/SECRET/TOKEN_URL` 은 기존 broker 변수(BROKER_*)와 달라
+  미인식이었고, `KRX_ID/PW` 는 KRX 데이터 API 인증방식(AUTH_KEY)과 불일치 → 아래로 정리.
+- **토스증권 실 provider 구현**(`server/providers/toss/index.js`): OAuth2 client_credentials 토큰 캐시 +
+  `/prices`(현재가 배치) + `/candles`(전일종가→등락률 계산). config `TOSS_*` 로드, registry 등록,
+  service PREFERENCE(price/summary: toss→broker→krx), 번들 오버레이 toss 우선, allowlist 에 openapi.tossinvest.com.
+- **KRX**: 포털 ID/PW 로는 데이터 API 호출 불가(공식 API 는 AUTH_KEY 발급 필요) → 미배선·문서화. 공개
+  엔드포인트는 베스트에포트로 두되 hybrid 폴백. `.env.example`/`docs/ETF_DATA_*` 에 한계 명시.
+- **모드 전환**: `.env` → `ETF_DATA_MODE=hybrid`, `ETF_BUNDLE_OVERLAY=true`.
+- **테스트**: toss provider 단위테스트(fetch 모킹: 토큰 재사용·prices·candles→등락률·미가용) 추가.
+  **전체 48/48 통과**.
+- **E2E/화면 검증**(hybrid, Playwright 390×844): `/api/etf/069500/price` → source=toss·실시세(예: 107,170·-1.52%).
+  `/api/bundle` 오버레이 24/24 매칭(sources [mock,toss]). 화면: 실 등락률로 순위 재정렬(1위 원유선물 +5.86% 등),
+  testid 25종·히트맵 14·가로 스크롤 0·콘솔 0/0·브랜드 #00c7a9.
+- **정직성**: 토스 미제공(구성종목·분배·괴리율·순자산·테마수익률)은 fixture 유지, meta.overlay 로 실/샘플 범위 표기.
+- **사용자 최종 승인 대기.**
+
+## S13. 토스 제공 데이터 전면 연결(오버레이 확장) — 완료 (총괄=Opus, 2026-07-14)
+
+사용자 요청 "toss 가 제공하는 것 전부 연결". Toss 피드로 계산 가능한 화면 필드를 모두 live 로 전환.
+
+- **toss provider 확장**: getQuotes 를 일봉(count=25) 기반으로 확장 — changeRate1d·return1w(5영업일)·
+  return1m(20영업일)·tradingValue(종가×거래량/1e8 억원 근사)·tradingValueChangeRate 계산. 과거 종가/거래량은
+  일 단위 캐시, 현재가는 매 호출 fresh. getEtfPerformance capability 추가.
+- **번들 오버레이 확장**: ETF 6개 시세필드 + 종목 changeRate1d + 테마(멤버 집계 return1d/1w/1m·거래대금) +
+  시장요약 1d(상승/하락/보합 수·총거래대금·최강/최약 테마·중립 요약문구) 를 live 파생. 파생은 toss 소스일 때만
+  수행(krx/none 이면 fixture 유지). 계산 실패 필드는 fixture 유지. 문구는 투자유도 표현 없이 사실 서술.
+- **테스트**: toss 확장 계산 단위테스트(return1w/1m·tradingValue·tvChangeRate) 추가. **전체 49/49 통과**.
+- **E2E/화면 검증**(hybrid, Playwright 390×844): 번들 overlay matched 24/24·stockMatched 9/12·derived
+  [stocks,themes,marketSummary.1d]. 화면: 시장요약(상승/하락·총거래대금·최강테마)·히트맵(테마 수익률·거래대금)·
+  순위(주간/월간·거래급증) 모두 live 반영. testid 25·가로 스크롤 0·콘솔 0/0.
+- **여전히 fixture(toss 밖)**: volatilityScore, netAssets, totalFee, riskTags, holdings, NAV/괴리율/추적오차,
+  콘텐츠(뉴스/공시/리서치), 시장요약 tradingValueChangeRate. (meta.overlay.stillMock 에 표기.)
+- **사용자 최종 승인 대기.**
+
+## S14. ETF 전종목 유니버스 확장(공공데이터) + Toss 결합 — 완료 (총괄=Opus, 2026-07-14)
+
+사용자 요청: "전종목 유니버스로 확장하고 Toss 시세 결합". Toss 는 목록 열거 API 가 없어(확인됨)
+공공데이터포털로 유니버스를 확보하고 Toss 실시간 시세를 결합.
+
+- **키 검증**: 사용자가 발급한 공공데이터 serviceKey 실호출 200/NORMAL, ETF 전종목 = **1,141종**(basDt T+1).
+  (첫 시도는 잘못된 키로 401 → 일반 인증키 재발급 후 정상.)
+- **publicdata provider**(`server/providers/publicdata/index.js`): 최신 basDt 판별 → 페이지네이션 전종목 수집,
+  일 캐시. 필드 매핑(srtnCd·itmsNm·clpr·fltRt·trPrc→억원·nPptTotAmt(순자산)→억원·nav·bssIdxIdxNm(기초지수)).
+  getEtfList capability. config/registry 등록, allowlist +apis.data.go.kr, `.env` PUBLICDATA_ENABLED=true.
+- **Toss 대량**: `_fetchPrices` 200심볼 청킹 + `getPricesOnly`(캔들 없이 현재가).
+- **유니버스 병합**(getBundle): 공공데이터 1,141 을 fixture 24 에 병합 — 큐레이션은 순자산/NAV/기초지수 보강,
+  나머지 1,117 은 thin ETF(테마·구성종목 없음, topHoldings:[] 보장)로 추가. 큐레이션=toss 캔들 풀지표,
+  thin=toss 현재가+공공데이터 전일종가로 등락률. 순위/검색=전종목, 히트맵/역검색/비교=큐레이션.
+  PREFERENCE.getEtfList=[publicdata,krx].
+- **테스트**: publicdata 매핑/미가용 + 유니버스 확장(thin 렌더 안전·내부필드 미노출) 테스트 추가. **전체 52/52**.
+- **E2E/화면**(hybrid, Playwright 390×844): /api/bundle universeSize 1,141·priceMatched 867. 화면: 순위=전시장
+  실제 최대등락 ETF(예: SOL SK하이닉스인버스2X +31.76%), 시장요약 상승144·하락959·보합38(=1,141 집계),
+  thin ETF 카드/검색/바텀시트(순자산 표시, 테마·총보수 "정보 없음") 모두 무결·크래시 0, 가로스크롤 0, 콘솔 0/0.
+- **제약**: 공공데이터 T+1(목록·순자산엔 충분). thin ETF 는 테마/구성종목/총보수/변동성 없음(관계 데이터 부재).
+- **사용자 최종 승인 대기.**
+
+## S15. ETF 구성자산 파이프라인 계층 + 공통 스키마 — 완료 (총괄=Opus + 병렬 서브에이전트 2, 2026-07-14)
+
+`ETF_DATA_PIPELINE_SCHEMA_PROMPT.md` 지시. 공급자 비종속 holdings 파이프라인 + 구성자산 공통 스키마 구축
+(기반 구조만; 대량 실수집·UI 연결 제외). UI/디자인/기존 더미데이터 무변경.
+
+- **구조 매핑**: 스펙의 `src/data/` 는 이 repo 에서 프런트 디렉터리 → **`server/holdings/`** 로 매핑(백엔드 혼입 방지).
+  JSON Schema 는 스펙대로 root `schemas/`.
+- **계약 우선 고정(§10, 총괄)**: `server/holdings/constants.js`(enum 중앙정의), `schemas/etf-holdings.schema.json`
+  (draft 2020-12; weightPct null=공란/0=실제0% 구분, assetType enum, 해외코드 6자리 미강제).
+- **병렬 워크스트림(§3, 서브에이전트 2, 파일영역 분리)**:
+  - A: `schemaValidator.js`(무의존 JSON Schema 검증), `tests/holdings-schema.test.mjs`(14), `docs/ETF_DATA_CONTRACT.md`.
+  - B: providers(base·mock·pykrx어댑터·krxDirect/seibro/issuer 스텁), normalizer, businessValidator,
+    orchestrator(우선순위 폴백·전체채택·행병합 금지·진단 보존), repository(getEtfHoldings/Summary/CollectionStatus),
+    fixtures 8종, `scripts/collect_etf_holdings.py`+requirements.txt, `tests/holdings-pipeline.test.mjs`(30).
+- **통합·교차검증(총괄)**: 스키마↔모델 필드 일치(e2e 스키마검증 통과로 입증), repository 는 pykrx 미import,
+  schema/business validator 분리, mock 전체흐름 실행(repository→OK·MOCK 폴백·원본필드 미노출), enum 드리프트 테스트.
+  package.json 테스트 목록에 2파일 추가. **전체 96/96 통과**.
+- **pykrx smoke(대표 ETF 069500)**: 날짜지정 → status EMPTY(정직 실패, 위조 없음). 날짜미지정 시 pykrx 내부
+  IndexError 가 traceback 으로 새던 결함을 총괄이 수정(최상위 try/except → REQUEST_FAILED JSON). 이제 항상 상태 JSON.
+- **UI 영향**: 없음(src/**·index.html 이번 작업 무변경). repository↔UI 연결은 후속 단계로 남김.
+- **사용자 최종 승인 대기.**
+
+## S16. pykrx 실데이터 가용성 검증 + 백로그 병렬 소진 — 완료 (총괄=Opus + 병렬 서브에이전트 3, 2026-07-14)
+
+`ETF_PYKRX_BENCHMARK_BACKLOG_PROMPT.md` 지시. pykrx 구성자산 가용성 실검증 + 독립 백로그 실제 소진.
+
+- **핵심 발견(§1 사전확인)**: pykrx `get_market_ohlcv` 정상(KRX 연결 OK)이나 `get_etf_portfolio_deposit_file`(구성자산)은
+  전 종목·전 과거영업일에서 구조적 EMPTY(0행). 날짜 문제가 아니라 **PDF 엔드포인트 파손**. → 대표 13종 성공률 **0%**.
+- **판단**: pykrx 를 1차 provider 로 쓰기 어려움(재검토). **전수 dry-run 미수행**(진입 80% 미충족). KRX_DIRECT 최우선, UI 연결 차단.
+- **병렬 워크스트림(서브에이전트 3, 파일영역 분리)**:
+  - A: `scripts/pykrx_benchmark.py` + `reports/pykrx-benchmark-results.csv`·`-raw.json`(13종 실호출, 유형/운용사 기록).
+  - B: `scripts/collect_etf_holdings.py` 영업일 리졸버(`resolve_base_date`, 주입식) + `dateResolution` 출력 +
+    `scripts/test_date_resolution.py` 8/8. 하위호환(기존 키 불변).
+  - C: `schemaValidator.js` 미지원 키워드 가드(`checkSchemaSupport`) + 스키마 테스트 16/16 + `docs/ETF_DATA_CONTRACT.md` §8(경미 6항목).
+- **총괄(D+통합)**: 계약 pin(`DATE_RESOLUTION_STATUS` enum + schema optional `dateResolution`), 집계
+  `reports/pykrx-benchmark-summary.json`·`pykrx-failures.csv`, 단일 백로그 `docs/ETF_DATA_BACKLOG.md`(BL-01~12, §4.3 우선순위).
+- **통합 검증**: 전체 회귀 **98/98**, 파이썬 날짜테스트 8/8, DATE_RESOLUTION_STATUS 3자(constants↔schema↔python) 일치,
+  리포트 JSON/CSV 파싱 OK, 위조 0(전부 실제 EMPTY), UI 무변경.
+- **사용자 최종 승인 대기.**
+
+## S17. ETF 태깅 커버리지 확장 (섹터/전략/배당 재설정) — 완료 (총괄=Opus + 병렬 서브에이전트 15+1, 2026-07-16)
+
+메타데이터 기반 ETF별 태그/카테고리 재설정 작업. 이전 세션에서 파이프라인·정본 taxonomy·초기 스코어링(39종)은
+만들어졌으나 **개발 로그 미기록 + UI 미연결** 상태였음(taxonomy `_note`에 "UI 미연결" 명시). 사용자 요청으로
+UI 연결 전에 **스코어링 커버리지부터 확장**.
+
+- **범위**: 메타데이터 통합 470종 중 서브에이전트 미스코어 431종을 15개 배치(batch-0004~0018, 배치당 30종)로 생성.
+- **병렬 스코어링(서브에이전트 15, `etf-scoring-worker`, 파일영역 배치별 분리)**: 각 배치를 taxonomy 22태그로
+  멀티라벨 스코어링. 규칙 확정치(레버리지/인버스/커버드콜 score=1/conf=1)는 유지·evidence만 보강, 광범위
+  대표지수 추종은 억지 태깅 금지, 근거 약하면 미부여+warnings. 검증 **431/431 통과**(코드 누락·오염·중복 0).
+- **병합**(`tagging:merge`): 규칙+LLM 병합 → `etf-tag-scores.json`(470종, 충돌 14건), `etf-filter-map.json`
+  재생성. **태깅된 ETF 105→243종**, 필터 17→22개. 섹터 급증(반도체 3→45, 2차전지 2→20, 헬스케어 3→18,
+  금융 2→15, 게임 1→12, 방산 2→10, 밸류업 1→10). low-confidence 77, 미분류 227(대부분 대표지수 추종/
+  taxonomy 공백 테마).
+- **신규 태그 후보 감사**(서브에이전트 1, `etf-taxonomy-auditor`): candidateTags 106건 → 40후보 정규화 →
+  **add 9 / merge 2 / review 13 / reject 16**. add 상위: 조선·원전·코스피200국내벤치·그룹주·ESG·화장품·
+  저변동성·필수소비재/K-푸드·정유화학. 결과=`data/tagging/etf-filter-candidates.json`(taxonomy 미수정, 추천만).
+- **미해결/후속**: (1) add 9종 taxonomy 승격 + 재스코어링 → 미분류 추가 감소(사용자 결정 대기),
+  (2) filter-map → `explore.js` 카테고리 UI 연결(현재는 이름-키워드 `chipMatches` 사용), (3) 메타데이터
+  자체 커버리지(470/1141)는 WiseReport 23종만 스크랩+네이버 구성종목 559종 EMPTY 로 별개 백로그.
+- **UI 무변경**(이번 단계는 데이터 산출물만). 유닛 테스트 회귀 영향 없음(98/98 유지).

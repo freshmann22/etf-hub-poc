@@ -1,0 +1,5998 @@
+{
+  "generatedAt": "2026-07-14T08:10:57.781Z",
+  "rulesVersion": "1.0.0",
+  "recordCount": 470,
+  "taggedByRuleCount": 88,
+  "results": [
+    {
+      "etfCode": "0000D0",
+      "name": "TIGER 엔비디아미국채커버드콜밸런스(합성)",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 엔비디아미국채커버드콜밸런스(합성)\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜",
+          "name_contains=합성(스왑) 구조"
+        ]
+      }
+    },
+    {
+      "etfCode": "0000J0",
+      "name": "PLUS 한화그룹주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0000Y0",
+      "name": "HK 26-12 회사채(AA-이상)액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0000Z0",
+      "name": "RISE 바이오TOP10액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0001P0",
+      "name": "마이티 바이오시밀러&CDMO액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0005D0",
+      "name": "SOL 전고체배터리&실리콘음극재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0005G0",
+      "name": "IBK K-AI반도체코어테크",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0007N0",
+      "name": "아이엠에셋 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0008T0",
+      "name": "SOL 화장품TOP3플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0018C0",
+      "name": "PLUS 고배당주위클리고정커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 고배당주위클리고정커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0026S0",
+      "name": "1Q 미국S&P500",
+      "classifications": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95,
+          "source": "rule",
+          "evidence": [
+            "name=\"1Q 미국S&P500\" matched /S&P\\s*500/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0049K0",
+      "name": "ACE 미국배당퀄리티채권혼합50",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0052D0",
+      "name": "TIGER 코리아배당다우존스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0053M0",
+      "name": "더제이 중소형포커스액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0074K0",
+      "name": "KoAct K수출핵심기업TOP30액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0080G0",
+      "name": "KODEX 방산TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0080Y0",
+      "name": "SOL 조선TOP3플러스레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"SOL 조선TOP3플러스레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0086B0",
+      "name": "TIGER 리츠부동산인프라TOP10액티브",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 리츠부동산인프라TOP10액티브\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0086C0",
+      "name": "TIGER 리츠부동산인프라10채권혼합액티브",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 리츠부동산인프라10채권혼합액티브\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0088N0",
+      "name": "WON K-글로벌수급상위",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0089D0",
+      "name": "KODEX 금융고배당TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0090B0",
+      "name": "PLUS K방산소부장",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0091P0",
+      "name": "TIGER 코리아원자력",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0092B0",
+      "name": "SOL 한국원자력SMR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0093A0",
+      "name": "RISE AI반도체TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0094M0",
+      "name": "RISE 코리아밸류업위클리고정커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 코리아밸류업위클리고정커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0098F0",
+      "name": "KODEX 원자력SMR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0098N0",
+      "name": "PLUS 자사주매입고배당주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0098Z0",
+      "name": "FOCUS 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0100K0",
+      "name": "KODEX 방산TOP10레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 방산TOP10레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0101N0",
+      "name": "RISE AI전력인프라",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0103T0",
+      "name": "1Q K소버린AI",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0104G0",
+      "name": "PLUS K방산레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS K방산레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0104N0",
+      "name": "TIGER 200타겟위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200타겟위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0104P0",
+      "name": "TIGER 코리아배당다우존스위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 코리아배당다우존스위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0105D0",
+      "name": "SOL 한국AI소프트웨어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0105E0",
+      "name": "SOL 코리아고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0111J0",
+      "name": "HANARO 증권고배당TOP3플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0112X0",
+      "name": "마이티 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0115D0",
+      "name": "KODEX 조선TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0115E0",
+      "name": "KODEX 코리아소버린AI",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0117V0",
+      "name": "TIGER 코리아AI전력기기TOP3플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0120J0",
+      "name": "BNK 카카오그룹포커스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0138D0",
+      "name": "RISE 동학개미",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0139P0",
+      "name": "ACE 고배당주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0141S0",
+      "name": "SOL 조선기자재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0148J0",
+      "name": "TIGER 코리아휴머노이드로봇산업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0150K0",
+      "name": "KoAct 수소전력ESS인프라액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0151P0",
+      "name": "RISE 코리아전략산업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0152E0",
+      "name": "SOL 배당성향탑픽액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0153K0",
+      "name": "KODEX 주주환원고배당주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0153P0",
+      "name": "ACE 리츠부동산인프라액티브",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"ACE 리츠부동산인프라액티브\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0154F0",
+      "name": "WON 초대형IB&금융지주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0155N0",
+      "name": "HANARO K휴머노이드테마TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0162Y0",
+      "name": "TIME 코스닥액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0163Y0",
+      "name": "KoAct 코스닥액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0166N0",
+      "name": "PLUS 코스닥150액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0166S0",
+      "name": "PLUS K제조업핵심기업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0167A0",
+      "name": "SOL AI반도체TOP2플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0167B0",
+      "name": "SOL 200타겟위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"SOL 200타겟위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0168K0",
+      "name": "TIGER 기술이전바이오액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0172Y0",
+      "name": "ACE K수출핵심TOP10산업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0174J0",
+      "name": "DAISHIN343 오피스리츠플러스",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"DAISHIN343 오피스리츠플러스\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0176P0",
+      "name": "FOCUS AI반도체위클리고정커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"FOCUS AI반도체위클리고정커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0177A0",
+      "name": "WON 두산그룹포커스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0177R0",
+      "name": "TIGER 반도체TOP10커버드콜액티브",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 반도체TOP10커버드콜액티브\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0177X0",
+      "name": "ACE K휴머노이드로봇산업TOP2+",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0182R0",
+      "name": "1Q K반도체TOP2+",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0184V0",
+      "name": "UNICORN K바이오액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0189Z0",
+      "name": "DAISHIN343 금융&지주고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0190C0",
+      "name": "RISE 현대차고정피지컬AI",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0190G0",
+      "name": "KODEX 반도체타겟위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 반도체타겟위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0191B0",
+      "name": "MIDAS 코스닥액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0191S0",
+      "name": "IBK 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0192L0",
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE SK하이닉스단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0192M0",
+      "name": "RISE 삼성전자단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 삼성전자단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0192T0",
+      "name": "SOL 코스닥TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0193G0",
+      "name": "KoAct 코스피액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0193K0",
+      "name": "PLUS 삼성전자단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 삼성전자단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 삼성전자선물단일종목인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 삼성전자선물단일종목인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX SK하이닉스단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0193W0",
+      "name": "KODEX 삼성전자단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 삼성전자단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0194M0",
+      "name": "ACE 삼성전자단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"ACE 삼성전자단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0194N0",
+      "name": "KIWOOM 삼성전자선물단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 삼성전자선물단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0194R0",
+      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM SK하이닉스선물단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0194T0",
+      "name": "ACE SK하이닉스단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"ACE SK하이닉스단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0195R0",
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 삼성전자단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0195S0",
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER SK하이닉스단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0197W0",
+      "name": "SOL SK하이닉스단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"SOL SK하이닉스단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0198A0",
+      "name": "KIWOOM 코스닥150커버드콜액티브",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 코스닥150커버드콜액티브\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0198B0",
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"1Q 삼성전자선물단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0198D0",
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"1Q SK하이닉스선물단일종목레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "0199C0",
+      "name": "ACE 고배당주Plus커버드콜액티브",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"ACE 고배당주Plus커버드콜액티브\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0204S0",
+      "name": "TIGER 코스닥액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0207G0",
+      "name": "SOL 우주항공밸류체인",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0208N0",
+      "name": "IBK 코스피액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "0209D0",
+      "name": "KODEX 전고체배터리ESS TOP2플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0209Z0",
+      "name": "ACE 코리아AI전력TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0210A0",
+      "name": "ACE K반도체TOP2+",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "0210E0",
+      "name": "PLUS 200커버드콜액티브",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 200커버드콜액티브\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "0216Z0",
+      "name": "ACE K방산TOP5+",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "069500",
+      "name": "KODEX 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "069660",
+      "name": "KIWOOM 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "091160",
+      "name": "KODEX 반도체",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "091170",
+      "name": "KODEX 은행",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "091180",
+      "name": "KODEX 자동차",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "091220",
+      "name": "TIGER 은행",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "091230",
+      "name": "TIGER 반도체",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "100910",
+      "name": "KIWOOM KRX100",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "102110",
+      "name": "TIGER 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "102780",
+      "name": "KODEX 삼성그룹",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "102960",
+      "name": "KODEX 기계장비",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "102970",
+      "name": "KODEX 증권",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "104520",
+      "name": "KIWOOM 블루칩",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "104530",
+      "name": "KIWOOM 코리아고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "105190",
+      "name": "ACE 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "105780",
+      "name": "RISE 5대그룹주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "108450",
+      "name": "ACE 삼성그룹섹터가중",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "108590",
+      "name": "TREX 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "114800",
+      "name": "KODEX 인버스",
+      "classifications": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 인버스\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "117460",
+      "name": "KODEX 에너지화학",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "117680",
+      "name": "KODEX 철강",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "117700",
+      "name": "KODEX 건설",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "122090",
+      "name": "PLUS 코스피50",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "122630",
+      "name": "KODEX 레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "123320",
+      "name": "TIGER 레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "131890",
+      "name": "ACE 삼성그룹동일가중",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "132030",
+      "name": "KODEX 골드선물(H)",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": true,
+        "nameHints": [
+          "name_contains=(H) 환헤지 표기"
+        ]
+      }
+    },
+    {
+      "etfCode": "133690",
+      "name": "TIGER 미국나스닥100",
+      "classifications": [
+        {
+          "tagId": "strategy.nasdaq100",
+          "score": 1,
+          "confidence": 0.95,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국나스닥100\" matched /나스닥\\s*100|NASDAQ\\s*100/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "138520",
+      "name": "TIGER 삼성그룹",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "138530",
+      "name": "TIGER LG그룹플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "138540",
+      "name": "TIGER 현대차그룹플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139220",
+      "name": "TIGER 200 건설",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139230",
+      "name": "TIGER 200 중공업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139240",
+      "name": "TIGER 200 철강소재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139250",
+      "name": "TIGER 200 에너지화학",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139260",
+      "name": "TIGER 200 IT",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139270",
+      "name": "TIGER 200 금융",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139280",
+      "name": "TIGER 경기방어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "139290",
+      "name": "TIGER 200 경기소비재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "140570",
+      "name": "RISE 수출주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "140580",
+      "name": "RISE 우량업종대표주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "140700",
+      "name": "KODEX 보험",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "140710",
+      "name": "KODEX 운송",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "140950",
+      "name": "파워 코스피100",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "143860",
+      "name": "TIGER 헬스케어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "145670",
+      "name": "ACE 인버스",
+      "classifications": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"ACE 인버스\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "145850",
+      "name": "TREX 펀더멘탈 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "147970",
+      "name": "TIGER 모멘텀",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "148020",
+      "name": "RISE 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "150460",
+      "name": "TIGER 중국소비테마",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "152100",
+      "name": "PLUS 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "152500",
+      "name": "ACE 레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"ACE 레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "152870",
+      "name": "파워 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "153270",
+      "name": "KIWOOM 코스피100",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "156080",
+      "name": "KODEX MSCI Korea",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "157490",
+      "name": "TIGER 소프트웨어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "157500",
+      "name": "TIGER 증권",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "159800",
+      "name": "마이티 코스피100",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "161510",
+      "name": "PLUS 고배당주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "166400",
+      "name": "TIGER 200커버드콜OTM",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200커버드콜OTM\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "174350",
+      "name": "TIGER 로우볼",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "192720",
+      "name": "파워 고배당저변동성",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "203780",
+      "name": "TIGER 미국나스닥바이오",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "210780",
+      "name": "TIGER 코스피고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "211560",
+      "name": "TIGER 배당성장",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "211900",
+      "name": "KODEX 코리아배당성장",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "213610",
+      "name": "KODEX 삼성그룹밸류",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "215620",
+      "name": "HK S&P코리아로우볼",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "223190",
+      "name": "KODEX 200가치저변동",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "225800",
+      "name": "KIWOOM 미국달러선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 미국달러선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "226380",
+      "name": "ACE Fn성장소비주도주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "226490",
+      "name": "KODEX 코스피",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "226980",
+      "name": "KODEX 200 중소형",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "227540",
+      "name": "TIGER 200 헬스케어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "227550",
+      "name": "TIGER 200 산업재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "227560",
+      "name": "TIGER 200 생활소비재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "227570",
+      "name": "TIGER 우량가치",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "227830",
+      "name": "PLUS 코스피",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "228790",
+      "name": "TIGER 화장품",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "228800",
+      "name": "TIGER 여행레저",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "228810",
+      "name": "TIGER 미디어컨텐츠",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "228820",
+      "name": "TIGER KTOP30",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "229200",
+      "name": "KODEX 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "229720",
+      "name": "KODEX KTOP30",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "230480",
+      "name": "KIWOOM 미국달러선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 미국달러선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 미국달러선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "232080",
+      "name": "TIGER 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "233160",
+      "name": "TIGER 코스닥150 레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 코스닥150 레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 코스닥150레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "234310",
+      "name": "RISE V&S셀렉트밸류",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "237350",
+      "name": "KODEX 코스피100",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "243880",
+      "name": "TIGER 200IT레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200IT레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "243890",
+      "name": "TIGER 200에너지화학레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200에너지화학레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "244580",
+      "name": "KODEX 바이오",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "244620",
+      "name": "KODEX 모멘텀Plus",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "244660",
+      "name": "KODEX 퀄리티Plus",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "244670",
+      "name": "KODEX 밸류Plus",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "251590",
+      "name": "PLUS 고배당저변동50",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "252000",
+      "name": "TIGER 200동일가중",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "252400",
+      "name": "RISE 200선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 200선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "252410",
+      "name": "RISE 200선물인버스",
+      "classifications": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 200선물인버스\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "252420",
+      "name": "RISE 200선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 200선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 200선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "252650",
+      "name": "KODEX 200동일가중",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 200선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 200선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "252710",
+      "name": "TIGER 200선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "253150",
+      "name": "PLUS 200선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 200선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "253160",
+      "name": "PLUS 200선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 200선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 200선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "253230",
+      "name": "KIWOOM 200선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 200선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 200선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "253240",
+      "name": "KIWOOM 200선물인버스",
+      "classifications": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 200선물인버스\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "253250",
+      "name": "KIWOOM 200선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 200선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "253280",
+      "name": "RISE 헬스케어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "261060",
+      "name": "TIGER 코스닥150IT",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "261070",
+      "name": "TIGER 코스닥150바이오테크",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "261110",
+      "name": "TIGER 미국달러선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국달러선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "261120",
+      "name": "TIGER 미국달러선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국달러선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국달러선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "261140",
+      "name": "TIGER 우선주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "261250",
+      "name": "KODEX 미국달러선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 미국달러선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "261260",
+      "name": "KODEX 미국달러선물인버스2X",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 미국달러선물인버스2X\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 미국달러선물인버스2X\" matched /인버스/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ]
+      }
+    },
+    {
+      "etfCode": "266160",
+      "name": "RISE 고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "266360",
+      "name": "KODEX K콘텐츠",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "266370",
+      "name": "KODEX IT",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "266390",
+      "name": "KODEX 경기소비재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "266410",
+      "name": "KODEX 필수소비재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "266420",
+      "name": "KODEX 헬스케어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "266550",
+      "name": "PLUS 중형주저변동50",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "267770",
+      "name": "TIGER 200선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "270800",
+      "name": "RISE KQ고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "270810",
+      "name": "RISE 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "275280",
+      "name": "KODEX 모멘텀주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "275290",
+      "name": "KODEX 가치주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "275300",
+      "name": "KODEX 우량주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "277630",
+      "name": "TIGER 코스피",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "277640",
+      "name": "TIGER 코스피대형주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "277650",
+      "name": "TIGER 코스피중형주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "278240",
+      "name": "RISE 코스닥150선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 코스닥150선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "278530",
+      "name": "KODEX 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "278540",
+      "name": "KODEX MSCI Korea TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "279530",
+      "name": "KODEX 고배당주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "279540",
+      "name": "KODEX 최소변동성",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "280920",
+      "name": "PLUS 주도업종",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "281990",
+      "name": "RISE 중소형고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "284980",
+      "name": "RISE 200금융",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "285690",
+      "name": "FOCUS ESG리더스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "289040",
+      "name": "KODEX MSCI KOREA ESG유니버설",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "289250",
+      "name": "TIGER MSCI KOREA ESG유니버설",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "289260",
+      "name": "TIGER MSCI KOREA ESG리더스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "289480",
+      "name": "TIGER 200커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 200커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "290080",
+      "name": "RISE 200고배당커버드콜ATM",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 200고배당커버드콜ATM\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "290130",
+      "name": "RISE ESG사회책임투자",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "291630",
+      "name": "KIWOOM 코스닥150선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KIWOOM 코스닥150선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "292050",
+      "name": "RISE KRX300",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "292150",
+      "name": "TIGER 코리아TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "292160",
+      "name": "TIGER KRX300",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "292190",
+      "name": "KODEX KRX300",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "292500",
+      "name": "SOL KRX300",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "293180",
+      "name": "HANARO 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "294400",
+      "name": "KIWOOM 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "295040",
+      "name": "SOL 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "298340",
+      "name": "PLUS 국채선물3년",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "300610",
+      "name": "TIGER K게임",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "300640",
+      "name": "RISE 게임테마",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "300950",
+      "name": "KODEX 게임산업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "301400",
+      "name": "PLUS 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "302450",
+      "name": "RISE 코스피",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "304760",
+      "name": "HANARO KRX300",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "304770",
+      "name": "HANARO 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "304780",
+      "name": "HANARO 200선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"HANARO 200선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "305050",
+      "name": "ACE 코스피",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "305540",
+      "name": "TIGER 2차전지테마",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "305720",
+      "name": "KODEX 2차전지산업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "306530",
+      "name": "HANARO 코스닥150선물레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"HANARO 코스닥150선물레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "306950",
+      "name": "KODEX KRX300레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX KRX300레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "307510",
+      "name": "TIGER 의료기기",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "307520",
+      "name": "TIGER 지주회사",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "310960",
+      "name": "TIGER 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "310970",
+      "name": "TIGER MSCI Korea TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "314700",
+      "name": "HANARO 농업융복합산업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "315270",
+      "name": "TIGER 200커뮤니케이션서비스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "315930",
+      "name": "KODEX Top5PlusTR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "315960",
+      "name": "RISE 대형고배당10TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "316670",
+      "name": "KIWOOM 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "322400",
+      "name": "HANARO e커머스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "322410",
+      "name": "HANARO K고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "325010",
+      "name": "KODEX 성장주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "325020",
+      "name": "KODEX 배당가치",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "326230",
+      "name": "RISE 내수주플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "326240",
+      "name": "RISE IT플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "328370",
+      "name": "PLUS 코스피TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 리츠부동산인프라\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "332500",
+      "name": "ACE 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "332930",
+      "name": "HANARO 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "332940",
+      "name": "HANARO MSCI Korea TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "337120",
+      "name": "KODEX 멀티팩터",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "337140",
+      "name": "KODEX 코스피대형주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "337150",
+      "name": "KODEX 200exTOP",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "337160",
+      "name": "KODEX 200ESG",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "341850",
+      "name": "TIGER 리츠부동산인프라채권",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 리츠부동산인프라채권\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "354500",
+      "name": "ACE 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "359210",
+      "name": "KODEX 코스피TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "360140",
+      "name": "KODEX 200롱코스닥150숏선물",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "360150",
+      "name": "KODEX 코스닥150롱코스피200숏선물",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "360750",
+      "name": "TIGER 미국S&P500",
+      "classifications": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국S&P500\" matched /S&P\\s*500/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "361580",
+      "name": "RISE 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "363580",
+      "name": "KODEX 200IT TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "364690",
+      "name": "KODEX 혁신기술테마액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "364960",
+      "name": "TIGER BBIG",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "364970",
+      "name": "TIGER 바이오TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "364980",
+      "name": "TIGER 2차전지TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "364990",
+      "name": "TIGER 게임TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "365000",
+      "name": "TIGER 인터넷TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "365040",
+      "name": "TIGER AI코리아그로스액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "367740",
+      "name": "HANARO Fn5G산업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "367760",
+      "name": "RISE 네트워크인프라",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "367770",
+      "name": "RISE 수소경제테마",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "368190",
+      "name": "HANARO Fn K-뉴딜디지털플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "368680",
+      "name": "KODEX K-뉴딜디지털플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "373490",
+      "name": "KODEX 코리아혁신성장액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "375760",
+      "name": "HANARO 탄소효율그린뉴딜",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "375770",
+      "name": "KODEX 탄소효율그린뉴딜",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "376410",
+      "name": "TIGER 탄소효율그린뉴딜",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "377990",
+      "name": "TIGER Fn신재생에너지",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "379800",
+      "name": "KODEX 미국S&P500",
+      "classifications": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 미국S&P500\" matched /S&P\\s*500/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "379810",
+      "name": "KODEX 미국나스닥100",
+      "classifications": [
+        {
+          "tagId": "strategy.nasdaq100",
+          "score": 1,
+          "confidence": 0.95,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 미국나스닥100\" matched /나스닥\\s*100|NASDAQ\\s*100/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "380340",
+      "name": "ACE 코리아AI테크핵심산업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "381560",
+      "name": "HANARO Fn전기&수소차",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "381570",
+      "name": "HANARO Fn친환경에너지",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "385510",
+      "name": "KODEX 신재생에너지액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "385520",
+      "name": "KODEX 자율주행액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "385590",
+      "name": "ACE ESG액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "385600",
+      "name": "ACE 2차전지&친환경차액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "385710",
+      "name": "TIME K이노베이션액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "385720",
+      "name": "TIME 코스피액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "387280",
+      "name": "TIGER 퓨처모빌리티액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "388280",
+      "name": "RISE K엔터&여행레저",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "388420",
+      "name": "RISE 비메모리반도체액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "391670",
+      "name": "HK 베스트일레븐액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "395150",
+      "name": "KODEX 웹툰&드라마",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "395160",
+      "name": "KODEX AI반도체TOP2플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "395170",
+      "name": "KODEX Top10동일가중",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "395270",
+      "name": "HANARO Fn K-반도체",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "395280",
+      "name": "HANARO Fn K-게임",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "395290",
+      "name": "HANARO Fn K-POP&미디어",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "395750",
+      "name": "PLUS ESG가치주액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "395760",
+      "name": "PLUS ESG성장주액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "396500",
+      "name": "TIGER 반도체TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "400970",
+      "name": "TIGER Fn메타버스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "401170",
+      "name": "RISE 메타버스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "401470",
+      "name": "KODEX 메타버스액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "402460",
+      "name": "HANARO Fn K-메타버스MZ",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "403790",
+      "name": "MIDAS 코스피액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "404120",
+      "name": "TIME K신재생에너지액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "404260",
+      "name": "KODEX 기후변화솔루션",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "404540",
+      "name": "TIGER KRX기후변화솔루션",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "404650",
+      "name": "SOL KRX기후변화솔루션",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "407300",
+      "name": "HANARO Fn골프테마",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "407310",
+      "name": "HANARO 200 TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "407820",
+      "name": "에셋플러스 코리아플랫폼액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "410870",
+      "name": "TIME K컬처액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "411540",
+      "name": "SOL 200 Top10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "412560",
+      "name": "TIGER BBIG레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER BBIG레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "412570",
+      "name": "TIGER 2차전지TOP10레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 2차전지TOP10레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "413930",
+      "name": "WON AI ESG액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "417630",
+      "name": "TIGER KEDI혁신기업ESG30",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "421320",
+      "name": "PLUS 우주항공",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "422420",
+      "name": "RISE 2차전지액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "427120",
+      "name": "RISE AI플랫폼",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "429740",
+      "name": "PLUS K리츠",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS K리츠\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "433250",
+      "name": "UNICORN R&D 액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "433500",
+      "name": "ACE 원자력TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "434730",
+      "name": "HANARO 원자력iSelect",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "434960",
+      "name": "DAISHIN343 K200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "438740",
+      "name": "MIDAS 중소형액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "438900",
+      "name": "HANARO Fn K-푸드",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "441540",
+      "name": "HANARO Fn조선해운",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "441640",
+      "name": "KODEX 미국배당커버드콜액티브",
+      "classifications": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"S&P 500\" matched /S&P\\s*500/i"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 미국배당커버드콜액티브\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "441800",
+      "name": "TIME Korea플러스배당액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "442090",
+      "name": "에셋플러스 코리아대장장이액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "442260",
+      "name": "마이티 다이나믹퀀트액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "444200",
+      "name": "SOL 코리아메가테크액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "445150",
+      "name": "KODEX 친환경조선해운액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "445290",
+      "name": "KODEX 로봇액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "445690",
+      "name": "BNK 주주가치액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "445910",
+      "name": "TIGER MKF배당귀족",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "446700",
+      "name": "RISE 배터리 리사이클링",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "447430",
+      "name": "ACE 주주환원가치주액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "448100",
+      "name": "WON 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "448570",
+      "name": "FOCUS AI코리아액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "449450",
+      "name": "PLUS K방산",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "450910",
+      "name": "SOL 코스닥150",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "451060",
+      "name": "1Q 200액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "454320",
+      "name": "HANARO CAPEX설비투자iSelect",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "455850",
+      "name": "SOL AI반도체소부장",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "455860",
+      "name": "SOL 2차전지소부장Fn",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "457930",
+      "name": "BNK 미래전략기술액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "457990",
+      "name": "PLUS 태양광&ESS",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "461450",
+      "name": "KODEX 코스닥글로벌",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "461490",
+      "name": "RISE 글로벌자산배분액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "461580",
+      "name": "TIGER 코스닥글로벌",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "461950",
+      "name": "KODEX 2차전지핵심소재10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "462010",
+      "name": "TIGER 2차전지소재Fn",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "462330",
+      "name": "KODEX 2차전지산업레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 2차전지산업레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "462900",
+      "name": "KoAct 바이오헬스케어액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "463050",
+      "name": "TIME K바이오액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "463250",
+      "name": "TIGER K방산&우주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "464600",
+      "name": "SOL 자동차소부장Fn",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "464610",
+      "name": "SOL 의료기기소부장Fn",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "465330",
+      "name": "RISE 2차전지TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "466810",
+      "name": "BNK 2차전지양극재",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "466920",
+      "name": "SOL 조선TOP3플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "466930",
+      "name": "SOL 자동차TOP3플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "466940",
+      "name": "TIGER 은행고배당플러스TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "469070",
+      "name": "RISE AI&로봇",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "469150",
+      "name": "ACE AI반도체TOP3+",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "469170",
+      "name": "ACE 포스코그룹포커스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "469790",
+      "name": "KIWOOM 코리아테크TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "470310",
+      "name": "UNICORN 생성형AI강소기업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "471760",
+      "name": "TIGER AI반도체핵심공정",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "471780",
+      "name": "TIGER 코리아테크액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "471990",
+      "name": "KODEX AI반도체핵심장비",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "472150",
+      "name": "TIGER 배당커버드콜액티브",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 배당커버드콜액티브\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "472720",
+      "name": "TRUSTON 주주가치액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "472840",
+      "name": "IBK 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "474590",
+      "name": "WON 반도체밸류체인액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "475050",
+      "name": "ACE KPOP포커스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "475300",
+      "name": "SOL 반도체전공정",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "475310",
+      "name": "SOL 반도체후공정",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "475720",
+      "name": "RISE 200위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 200위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "476000",
+      "name": "UNICORN 포스트IPO액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "476260",
+      "name": "HANARO 반도체핵심공정주도주",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "476800",
+      "name": "KODEX 한국부동산리츠인프라",
+      "classifications": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 한국부동산리츠인프라\" matched /리츠|REIT/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "476850",
+      "name": "KoAct 배당성장액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "479850",
+      "name": "HANARO K-뷰티",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "480460",
+      "name": "WON 한국부동산TOP3플러스",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "482030",
+      "name": "KoAct 반도체&2차전지핵심소재액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "483020",
+      "name": "KIWOOM 의료AI",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "484880",
+      "name": "SOL 금융지주플러스고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "486240",
+      "name": "DAISHIN343 AI반도체&인프라액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "487130",
+      "name": "KoAct AI인프라액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "487240",
+      "name": "KODEX AI전력핵심설비",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "487750",
+      "name": "BNK 온디바이스AI",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "488080",
+      "name": "TIGER 반도체TOP10레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 반도체TOP10레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "488200",
+      "name": "KIWOOM K-2차전지북미공급망",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "488210",
+      "name": "KIWOOM K-반도체북미공급망",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "489030",
+      "name": "PLUS 고배당주위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 고배당주위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "490480",
+      "name": "SOL K방산",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "491220",
+      "name": "PLUS 200TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "491510",
+      "name": "파워 K-주주가치액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "491700",
+      "name": "HK 200",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "491820",
+      "name": "HANARO 전력설비투자",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "494220",
+      "name": "UNICORN SK하이닉스밸류체인액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "494310",
+      "name": "KODEX 반도체레버리지",
+      "classifications": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 반도체레버리지\" matched /레버리지|(\\d(?:\\.\\d)?)\\s*X\\b/i"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      }
+    },
+    {
+      "etfCode": "494330",
+      "name": "ACE 라이프자산주주가치액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "494670",
+      "name": "TIGER 조선TOP10",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "494890",
+      "name": "KODEX 200액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "495040",
+      "name": "PLUS 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "495050",
+      "name": "RISE 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "495060",
+      "name": "TIME 코리아밸류업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "495230",
+      "name": "KoAct 코리아밸류업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "495330",
+      "name": "1Q 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "495550",
+      "name": "SOL 코리아밸류업TR",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "495750",
+      "name": "HANARO 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "495850",
+      "name": "KODEX 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "496080",
+      "name": "TIGER 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "496090",
+      "name": "KIWOOM 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "496120",
+      "name": "ACE 코리아밸류업",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    },
+    {
+      "etfCode": "496130",
+      "name": "TRUSTON 코리아밸류업액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "498050",
+      "name": "HANARO 바이오코리아액티브",
+      "classifications": [],
+      "facts": {
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      }
+    },
+    {
+      "etfCode": "498400",
+      "name": "KODEX 200타겟위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 200타겟위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "498410",
+      "name": "KODEX 금융고배당TOP10타겟위클리커버드콜",
+      "classifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"KODEX 금융고배당TOP10타겟위클리커버드콜\" matched /커버드콜/"
+          ]
+        }
+      ],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      }
+    },
+    {
+      "etfCode": "498860",
+      "name": "RISE 코리아금융고배당",
+      "classifications": [],
+      "facts": {
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      }
+    }
+  ]
+}

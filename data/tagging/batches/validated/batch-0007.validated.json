@@ -1,0 +1,709 @@
+{
+  "valid": true,
+  "perEtf": [
+    {
+      "etfCode": "122630",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "122630",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "benchmark.name=\"코스피 200 레버리지지수\""
+              },
+              {
+                "type": "descriptions",
+                "text": "rawTypeText=\"국내파생, 레버리지\""
+              },
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "123320",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "123320",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지"
+              },
+              {
+                "type": "holdings",
+                "text": "TIGER 200(102110) 14.98% 보유로 코스피200 연계 레버리지 상품 구조와 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락 (coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "131890",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "131890",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "그룹주(계열사 집중)",
+            "suggestedCategory": "strategy",
+            "score": 0.7,
+            "confidence": 0.55,
+            "reason": "상위 10개 구성종목이 모두 삼성그룹 계열사(삼성카드, 삼성화재, 호텔신라, 제일기획, 에스원, 삼성증권, 삼성바이오로직스, 삼성에스디에스, 삼성중공업, 삼성E&A)로 동일가중 편입되어 특정 산업 섹터가 아닌 그룹 계열사 테마임"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락, 특정 sector 태그와 명확히 매칭되지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "133690",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "133690",
+        "classifications": [
+          {
+            "tagId": "strategy.nasdaq100",
+            "score": 1,
+            "confidence": 0.9,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "benchmark.name=\"NASDAQ 100\""
+              },
+              {
+                "type": "descriptions",
+                "text": "rawTypeText=\"해외주식형, 시장대표\""
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "holdings 데이터 없음(coverage 0.55) — 구성종목 근거는 사용 못함, benchmark 명시로만 판단"
+        ]
+      }
+    },
+    {
+      "etfCode": "138520",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "138520",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "그룹주(계열사 집중)",
+            "suggestedCategory": "strategy",
+            "score": 0.75,
+            "confidence": 0.55,
+            "reason": "상위 10개 구성종목이 전부 삼성그룹 계열사(삼성전자24.23%, 삼성물산20.88%, 삼성SDI9.83%, 삼성생명7.38% 등)로 구성되어 있으나 반도체/금융/보험/조선 등 여러 업종에 걸쳐 있어 단일 sector 태그로 확정하기 어려움"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "138530",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "138530",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "그룹주(계열사 집중)",
+            "suggestedCategory": "strategy",
+            "score": 0.75,
+            "confidence": 0.55,
+            "reason": "상위 10개 구성종목이 LG/GS 계열사(LG유플러스19.54%, LG화학16.33%, LG전자13.58%, GS건설6.95%, GS5.05% 등)로 구성된 그룹주 테마이며 통신/화학/전자/건설 등 여러 업종에 걸쳐 있어 단일 sector 태그로 확정하기 어려움"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "138540",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "138540",
+        "classifications": [
+          {
+            "tagId": "strategy.consumer_discretionary",
+            "score": 0.72,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "기아27.26% + 현대차22.05% + 현대모비스15.06% + 현대글로비스6.9% + 현대위아1.75% ≈ 73%가 완성차/부품 계열사"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "그룹주(계열사 집중)",
+            "suggestedCategory": "strategy",
+            "score": 0.75,
+            "confidence": 0.55,
+            "reason": "명칭 자체가 '현대차그룹플러스'이며 현대건설(건설)·HD한국조선해양(조선)·HD현대 등 비자동차 계열사도 포함되어 자동차 섹터펀드보다는 그룹주 테마에 가까움"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락, 자동차 비중이 높으나 그룹주 성격도 혼재"
+        ]
+      }
+    },
+    {
+      "etfCode": "139220",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139220",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "건설",
+            "suggestedCategory": "sector",
+            "score": 0.85,
+            "confidence": 0.6,
+            "reason": "코스피200 건설업 서브지수 추종 상품으로 삼성물산26.79%, 삼성E&A22.09%, 현대건설15.58%, 대우건설10.83%, DL이앤씨6.08% 등 건설사가 상위 구성종목의 대부분(약 90%)을 차지하나 taxonomy에 건설 sector 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "139230",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139230",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "조선/중공업",
+            "suggestedCategory": "sector",
+            "score": 0.85,
+            "confidence": 0.6,
+            "reason": "코스피200 중공업 서브지수 추종 상품으로 두산에너빌리티17.59%, HD현대일렉트릭11.48%, HD현대중공업10.28%, HD한국조선해양10.21%, 삼성중공업9.36%, 한화오션6.67% 등 조선·중공업 기업이 상위 구성종목 대부분을 차지하나 taxonomy에 해당 sector 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "139240",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139240",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "철강/소재",
+            "suggestedCategory": "sector",
+            "score": 0.85,
+            "confidence": 0.6,
+            "reason": "코스피200 철강소재 서브지수 추종 상품으로 POSCO홀딩스23.2%, 현대제철20.65%, 고려아연19.43%, 풍산17.53% 등 철강/비철금속 기업이 상위 구성종목 대부분을 차지. sector.commodities는 실물/선물 연동만 해당(negativeSignal)이라 부적합하고 taxonomy에 철강 sector 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "139250",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139250",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "에너지/화학",
+            "suggestedCategory": "sector",
+            "score": 0.8,
+            "confidence": 0.6,
+            "reason": "코스피200 에너지화학 서브지수 추종 상품으로 SK24.69%, LG화학14.19%, SK이노베이션9.76%, S-Oil6.9%, 한화솔루션5.39% 등 정유/화학 기업이 상위 구성종목 대부분을 차지하나 taxonomy에 해당 sector 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "139260",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139260",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.72,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK하이닉스24.07% + 삼성전자17.64% + 삼성전기15.54% + 한미반도체1.56% ≈ 59%가 반도체 관련, SK스퀘어24.38%도 SK하이닉스 지주사로 반도체 연계"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락. 명칭은 'IT'이나 실제 구성은 반도체 편중이라 sector.it은 부여하지 않음(negativeSignal)"
+        ]
+      }
+    },
+    {
+      "etfCode": "139270",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139270",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.9,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "KB금융19.75%, 신한지주15.58%, 하나금융지주11.5%, 삼성생명9.67%, 우리금융지주7.32%, 삼성화재6.56% 등 은행/보험/증권 상위 10종목 합산 비중 약 83%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "139280",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139280",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "경기방어주",
+            "suggestedCategory": "strategy",
+            "score": 0.65,
+            "confidence": 0.5,
+            "reason": "명칭이 '경기방어'이며 바이오(셀트리온16.75%, 삼성바이오로직스9.32%), 통신(SK텔레콤8.16%, KT7.43%), 필수소비재(KT&G10%), 유틸리티(한국전력6.94%) 등 저베타/경기둔감 업종 혼합 구성이나 taxonomy에 방어주 전략 태그가 없어 특정 sector 태그로 환원하기 어려움"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "139290",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "139290",
+        "classifications": [
+          {
+            "tagId": "strategy.consumer_discretionary",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "명칭 '200 경기소비재'와 일치. 현대모비스21.1% + 기아18.09% + 현대차16.26% + 한국타이어앤테크놀로지5.48% ≈ 61%가 자동차·부품, 코웨이5.41%/신세계4.05%/현대백화점2.02% 등 유통·렌탈 포함"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "140570",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "140570",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "수출주",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.4,
+            "reason": "명칭 'RISE 수출주'와 일치하게 정유(S-Oil, SK이노베이션), 항공/해운(대한항공, HMM), 조선/화학(SK) 등 수출 비중이 큰 업종에 고르게(각 2~3%) 분산 투자하나 taxonomy에 수출주 테마 태그가 없고 개별 비중이 낮아 근거가 약함"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락, 구성종목 비중이 고르게 낮아(2~3%) 테마 확신도 낮음"
+        ]
+      }
+    },
+    {
+      "etfCode": "140580",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "140580",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "구성종목이 다양한 업종(정유/화학/의류/유통/유틸리티)에 고르게 분산(각 2~3%)되어 있어 뚜렷한 sector/strategy 근거 없음. issuer/benchmark/descriptions 등 메타데이터도 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "140700",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "140700",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.9,
+            "confidence": 0.65,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성화재22.19%, DB손해보험19.14%, 삼성생명18.35%, 현대해상11.87%, 코리안리10.09%, 한화생명7.75% 등 보험사가 상위 10종목 합산 비중 약 97%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "140710",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "140710",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "운송/물류",
+            "suggestedCategory": "sector",
+            "score": 0.85,
+            "confidence": 0.6,
+            "reason": "명칭 'KODEX 운송'과 일치하게 현대글로비스25.79%, 대한항공21.71%, HMM15.41%, 팬오션11.2%, CJ대한통운7.67% 등 항공/해운/육상운송 기업이 상위 10종목 합산 비중 약 97%를 차지하나 taxonomy에 해당 sector 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "140950",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "140950",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "코스피100 시가총액 가중 추종 상품으로 SK하이닉스30.95%/삼성전자30.16% 비중이 높은 것은 시가총액 가중 결과이며 섹터 테마 펀드가 아니므로 sector 태그를 부여하지 않음. issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "143860",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "143860",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.9,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "셀트리온22.88%, 삼성바이오로직스12.22%, 알테오젠11.05%, 유한양행3.49%, HLB2.58%, 리가켐바이오2.52% 등 제약/바이오텍 기업이 상위 10종목 합산 비중 약 64%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "145670",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "145670",
+        "classifications": [
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=인버스"
+              },
+              {
+                "type": "holdings",
+                "text": "KODEX 인버스(114800) 17.13%, TIGER 인버스(123310) 0.14% 등 타 인버스 ETF를 편입한 재간접 구조로 인버스 전략과 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "145850",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "145850",
+        "classifications": [
+          {
+            "tagId": "strategy.value",
+            "score": 0.5,
+            "confidence": 0.3,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "descriptions",
+                "text": "명칭 'TREX 펀더멘탈 200' — 펀더멘탈지수는 통상 매출/장부가/배당 등 재무 지표 가중 방식으로 가치주 팩터와 연관되나 benchmark/descriptions 필드가 모두 비어 있어 방법론을 직접 확인할 수 없음"
+              },
+              {
+                "type": "holdings",
+                "text": "구성종목 자체는 코스피200 대형주 위주(삼성전자19.71%, SK하이닉스4.71%)로 시가총액가중과 큰 차이가 드러나지 않음"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name/descriptions가 모두 null이라 '펀더멘탈' 가중 방식이 가치주 팩터인지 다른 방식인지 확인 불가, 명칭 추론에만 근거해 낮은 confidence로 부여"
+        ]
+      }
+    },
+    {
+      "etfCode": "147970",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "147970",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "모멘텀",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.35,
+            "reason": "명칭 'TIGER 모멘텀'과 일치하는 모멘텀 팩터 전략으로 추정되나 taxonomy에 모멘텀 팩터 태그가 없고, 구성종목이 다양한 업종에 고르게(각 3~5%) 분산되어 있어 팩터 방법론을 직접 확인할 근거는 부족"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "148020",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "148020",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "코스피200 시가총액 가중 추종 상품(삼성전자32.71%/SK하이닉스28.19%는 시가총액 가중 결과)으로 섹터 테마 펀드가 아니므로 sector 태그를 부여하지 않음. issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "150460",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "150460",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "화장품/뷰티",
+            "suggestedCategory": "sector",
+            "score": 0.55,
+            "confidence": 0.4,
+            "reason": "명칭은 '중국소비테마'이나 실제 구성종목은 모두 한국 상장 기업(중국 소비 관련 K-뷰티/소비재)이며 한국콜마5.95%+코스맥스4.94%+아모레퍼시픽4.81%+LG생활건강4.63%+클래시스4.49%+파마리서치5.11% 등 화장품/미용 관련 기업 합산 비중이 약 30%로 유의미하나 과반은 아니어서 확정 태그로는 부여하지 않음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 누락, 명칭과 달리 중국 기업이 아닌 한국 소비재/화장품 기업으로 구성되어 있어 명칭만으로 지역/섹터 태그를 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "152100",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "152100",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "코스피200 시가총액 가중 추종 상품(삼성전자32.71%/SK하이닉스28.18%는 시가총액 가중 결과)으로 섹터 테마 펀드가 아니므로 sector 태그를 부여하지 않음. issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "152500",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "152500",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=레버리지"
+              },
+              {
+                "type": "holdings",
+                "text": "KODEX 레버리지(122630) 9.88%, ACE 200(105190) 0.99% 편입 등 코스피200 레버리지 상품 구조와 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "152870",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "152870",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "코스피200 시가총액 가중 추종 상품(삼성전자32.65%/SK하이닉스28.14%는 시가총액 가중 결과)으로 섹터 테마 펀드가 아니므로 sector 태그를 부여하지 않음. issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    },
+    {
+      "etfCode": "153270",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "153270",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "코스피100 시가총액 가중 추종 상품(SK하이닉스30.96%/삼성전자30.19%는 시가총액 가중 결과)으로 섹터 테마 펀드가 아니므로 sector 태그를 부여하지 않음. issuer/benchmark/descriptions 등 메타데이터 누락"
+        ]
+      }
+    }
+  ],
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

@@ -1,0 +1,164 @@
+{
+  "generatedAt": "2026-07-14T08:10:58.038Z",
+  "requestedCategories": 26,
+  "foundCount": 24,
+  "notFoundCount": 2,
+  "picks": [
+    {
+      "category": "국내 대표지수",
+      "etfCode": "069500",
+      "name": "KODEX 200",
+      "reason": "명칭 패턴 매칭(/^(KODEX|TIGER)\\s*200$/i)"
+    },
+    {
+      "category": "미국 대표지수",
+      "etfCode": "0026S0",
+      "name": "1Q 미국S&P500",
+      "reason": "명칭 패턴 매칭(/S&P\\s*500/i)"
+    },
+    {
+      "category": "반도체",
+      "etfCode": "0005G0",
+      "name": "IBK K-AI반도체코어테크",
+      "reason": "명칭 패턴 매칭(/반도체/)"
+    },
+    {
+      "category": "AI",
+      "etfCode": "0101N0",
+      "name": "RISE AI전력인프라",
+      "reason": "명칭 패턴 매칭(/\\bAI\\b/)"
+    },
+    {
+      "category": "바이오",
+      "etfCode": "203780",
+      "name": "TIGER 미국나스닥바이오",
+      "reason": "명칭 패턴 매칭(/바이오/)"
+    },
+    {
+      "category": "게임·엔터·미디어",
+      "etfCode": "228810",
+      "name": "TIGER 미디어컨텐츠",
+      "reason": "명칭 패턴 매칭(/게임|엔터|미디어|콘텐츠/)"
+    },
+    {
+      "category": "전기차·2차전지",
+      "etfCode": "0005D0",
+      "name": "SOL 전고체배터리&실리콘음극재",
+      "reason": "명칭 패턴 매칭(/2차전지|전기차|배터리/)"
+    },
+    {
+      "category": "클린에너지",
+      "etfCode": "0150K0",
+      "name": "KoAct 수소전력ESS인프라액티브",
+      "reason": "명칭 패턴 매칭(/클린에너지|태양광|풍력|수소/)"
+    },
+    {
+      "category": "원자재",
+      "etfCode": "132030",
+      "name": "KODEX 골드선물(H)",
+      "reason": "명칭 패턴 매칭(/골드|금현물|은현물|원유|구리|원자재/)"
+    },
+    {
+      "category": "금융",
+      "etfCode": "0154F0",
+      "name": "WON 초대형IB&금융지주",
+      "reason": "명칭 패턴 매칭(/금융|증권|은행/)"
+    },
+    {
+      "category": "방산·우주항공",
+      "etfCode": "0080G0",
+      "name": "KODEX 방산TOP10",
+      "reason": "명칭 패턴 매칭(/방산|우주/)"
+    },
+    {
+      "category": "AI 전력·인프라",
+      "etfCode": "0117V0",
+      "name": "TIGER 코리아AI전력기기TOP3플러스",
+      "reason": "명칭 패턴 매칭(/전력.*AI|AI.*전력|데이터센터/)"
+    },
+    {
+      "category": "레버리지",
+      "etfCode": "0080Y0",
+      "name": "SOL 조선TOP3플러스레버리지",
+      "reason": "명칭 패턴 매칭(/레버리지/)"
+    },
+    {
+      "category": "인버스",
+      "etfCode": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "reason": "명칭 패턴 매칭(/인버스/)"
+    },
+    {
+      "category": "성장",
+      "etfCode": "226380",
+      "name": "ACE Fn성장소비주도주",
+      "reason": "명칭 패턴 매칭(/성장/)"
+    },
+    {
+      "category": "가치",
+      "etfCode": "223190",
+      "name": "KODEX 200가치저변동",
+      "reason": "명칭 패턴 매칭(/가치/)"
+    },
+    {
+      "category": "리츠",
+      "etfCode": "0086B0",
+      "name": "TIGER 리츠부동산인프라TOP10액티브",
+      "reason": "명칭 패턴 매칭(/리츠|REIT/i)"
+    },
+    {
+      "category": "밸류업",
+      "etfCode": "0094M0",
+      "name": "RISE 코리아밸류업위클리고정커버드콜",
+      "reason": "명칭 패턴 매칭(/밸류업/)"
+    },
+    {
+      "category": "고배당",
+      "etfCode": "0089D0",
+      "name": "KODEX 금융고배당TOP10",
+      "reason": "명칭 패턴 매칭(/고배당/)"
+    },
+    {
+      "category": "배당성장",
+      "etfCode": "0052D0",
+      "name": "TIGER 코리아배당다우존스",
+      "reason": "명칭 패턴 매칭(/배당성장|배당다우존스/)"
+    },
+    {
+      "category": "월배당",
+      "etfCode": null,
+      "name": null,
+      "reason": "현재 수집된 469종 내 매칭 종목 없음"
+    },
+    {
+      "category": "커버드콜",
+      "etfCode": "0000D0",
+      "name": "TIGER 엔비디아미국채커버드콜밸런스(합성)",
+      "reason": "명칭 패턴 매칭(/커버드콜/)"
+    },
+    {
+      "category": "채권",
+      "etfCode": "0049K0",
+      "name": "ACE 미국배당퀄리티채권혼합50",
+      "reason": "명칭 패턴 매칭(/채권/)"
+    },
+    {
+      "category": "만기매칭 채권",
+      "etfCode": null,
+      "name": null,
+      "reason": "현재 수집된 469종 내 매칭 종목 없음"
+    },
+    {
+      "category": "액티브",
+      "etfCode": "0000Y0",
+      "name": "HK 26-12 회사채(AA-이상)액티브",
+      "reason": "명칭 패턴 매칭(/액티브/)"
+    },
+    {
+      "category": "복합(이름만으로 분류 어려움)",
+      "etfCode": "0177R0",
+      "name": "TIGER 반도체TOP10커버드콜액티브",
+      "reason": "nameHints 2개 이상 동시 존재: [\"name_contains=액티브\",\"name_contains=커버드콜\"]"
+    }
+  ]
+}

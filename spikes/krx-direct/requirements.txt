@@ -1,0 +1,2 @@
+# spike-only deps, isolated from repo root requirements.txt
+requests>=2.31

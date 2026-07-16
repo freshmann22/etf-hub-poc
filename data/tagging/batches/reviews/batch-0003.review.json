@@ -1,0 +1,57 @@
+[
+  {
+    "etfCode": "0000J0",
+    "issues": [
+      {
+        "type": "below_taxonomy_threshold",
+        "tagId": "sector.aerospace_defense",
+        "detail": "score=0.55/confidence=0.4로 taxonomy의 sector.aerospace_defense minimumScore(0.65)/minimumConfidence(0.5)를 모두 하회함. worker 스스로 evidence에서 '나머지는 조선/화학/보험/증권 등으로 분산된 그룹주 구성이라 방산 단일 테마로 보기엔 근거가 약함'이라 명시해 자기모순적으로 확정 태그를 부여함. 실제로는 그룹주(대기업집단) candidateTag만으로 충분하며 sector 태그는 부여하지 말아야 함."
+      }
+    ],
+    "correctedClassifications": []
+  },
+  {
+    "etfCode": "0007N0",
+    "issues": [
+      {
+        "type": "below_taxonomy_threshold",
+        "tagId": "sector.semiconductor",
+        "detail": "score=0.55/confidence=0.4로 taxonomy의 sector.semiconductor minimumScore(0.65)/minimumConfidence(0.5)를 모두 하회함. evidence 자체가 '반도체 테마 펀드인지 대형주 지수(이름의 200)를 추종하다 결과적으로 비중이 높아진 것인지 구분 불가'라고 밝혀, 삼성전자/SK하이닉스 비중이 큰 것은 KOSPI200류 시가총액가중 지수 추종의 부수적 결과일 가능성이 높음에도 확정 섹터 태그를 부여함. benchmark 확인 전까지는 태그를 부여하지 않는 것이 타당함."
+      }
+    ],
+    "correctedClassifications": []
+  },
+  {
+    "etfCode": "0074K0",
+    "issues": [
+      {
+        "type": "below_taxonomy_threshold",
+        "tagId": "sector.semiconductor",
+        "detail": "score=0.55/confidence=0.45로 taxonomy의 sector.semiconductor minimumScore(0.65)/minimumConfidence(0.5)를 모두 하회함. evidence에서도 '수출 핵심기업이라는 테마 하에 여러 업종(반도체/방산/뷰티/조선)이 섞여 있어 반도체 단일 테마로 단정하기는 어려움'이라 인정하면서도 classifications에 확정 태그로 포함함. 이미 별도로 제안한 candidateTag '수출주(수출 핵심기업)'만으로 충분하며 sector.semiconductor 확정 분류는 과도함."
+      }
+    ],
+    "correctedClassifications": []
+  },
+  {
+    "etfCode": "0018C0",
+    "issues": [
+      {
+        "type": "below_taxonomy_threshold",
+        "tagId": "sector.financials",
+        "detail": "score=0.55/confidence=0.45로 taxonomy의 sector.financials minimumScore(0.65)/minimumConfidence(0.5)를 모두 하회함. evidence에서도 '기아/KT/제일기획 등으로 분산되어 절대적 지배력은 아님'이라 인정하는 등 자기모순적 근거로 확정 태그를 부여함. dividend.korea_high_dividend(score=0.7/confidence=0.55, threshold 충족)는 유지하되 sector.financials는 제거해야 함."
+      }
+    ],
+    "correctedClassifications": [
+      {
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.7,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          "펀드명에 '고배당주' 명시되어 커버드콜 기초자산이 국내 고배당주 바스켓임을 시사",
+          "기업은행, DB손해보험, NH투자증권, 우리금융지주, 하나금융지주, 삼성증권 등 배당수익률이 높은 금융주 위주 구성이나 실제 배당수익률 데이터는 입력에 없음"
+        ]
+      }
+    ]
+  }
+]

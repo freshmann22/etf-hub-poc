@@ -1,0 +1,445 @@
+{
+  "meta": {
+    "anchorDate": "20240105",
+    "requestedDate": "20240105",
+    "maxLookbackDays": 7,
+    "generatedAt": "2026-07-14T13:12:42.051569+09:00",
+    "pykrxVersion": "1.0.51",
+    "provider": "PYKRX",
+    "note": "REAL benchmark; no fabricated data."
+  },
+  "connectivityDiagnostic": {
+    "ohlcv": {
+      "code": "069500",
+      "start": "20240102",
+      "end": "20240105",
+      "rowCount": 4,
+      "error": null
+    },
+    "pdf": {
+      "date": "20240105",
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY"
+    },
+    "interpretation": "OHLCV rowCount>0 이면서 PDF holdingsCount==0 이면 네트워크는 정상이나 구성자산 엔드포인트만 실패."
+  },
+  "tickerListDiagnostic": {
+    "tickerListWorked": false,
+    "count": 0,
+    "error": "KeyError: '시장'",
+    "picked": []
+  },
+  "sampleUsed": [
+    {
+      "productType": "국내현물",
+      "etfCode": "069500",
+      "providedName": "KODEX 200"
+    },
+    {
+      "productType": "국내현물",
+      "etfCode": "102110",
+      "providedName": "TIGER 200"
+    },
+    {
+      "productType": "국내현물",
+      "etfCode": "069660",
+      "providedName": "KOSEF 200"
+    },
+    {
+      "productType": "해외주식",
+      "etfCode": "360750",
+      "providedName": "TIGER 미국S&P500"
+    },
+    {
+      "productType": "해외주식",
+      "etfCode": "133690",
+      "providedName": "TIGER 미국나스닥100"
+    },
+    {
+      "productType": "채권",
+      "etfCode": "148070",
+      "providedName": "KOSEF 국고채10년"
+    },
+    {
+      "productType": "채권",
+      "etfCode": "114260",
+      "providedName": "KODEX 국고채3년"
+    },
+    {
+      "productType": "레버리지",
+      "etfCode": "122630",
+      "providedName": "KODEX 레버리지"
+    },
+    {
+      "productType": "인버스",
+      "etfCode": "114800",
+      "providedName": "KODEX 인버스"
+    },
+    {
+      "productType": "합성",
+      "etfCode": "195930",
+      "providedName": "TIGER 유로스탁스50(합성 H)"
+    },
+    {
+      "productType": "재간접",
+      "etfCode": "251350",
+      "providedName": "KODEX 선진국MSCI World"
+    },
+    {
+      "productType": "원자재/파생",
+      "etfCode": "132030",
+      "providedName": "KODEX 골드선물(H)"
+    },
+    {
+      "productType": "합성/원자재",
+      "etfCode": "130680",
+      "providedName": "TIGER 원유선물Enhanced(H)"
+    }
+  ],
+  "records": [
+    {
+      "productType": "국내현물",
+      "etfCode": "069500",
+      "etfName": "KODEX 200",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:12:48.748783+09:00"
+    },
+    {
+      "productType": "국내현물",
+      "etfCode": "102110",
+      "etfName": "TIGER 200",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:12:54.159675+09:00"
+    },
+    {
+      "productType": "국내현물",
+      "etfCode": "069660",
+      "etfName": "KOSEF 200",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:12:59.571129+09:00"
+    },
+    {
+      "productType": "해외주식",
+      "etfCode": "360750",
+      "etfName": "TIGER 미국S&P500",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:04.982318+09:00"
+    },
+    {
+      "productType": "해외주식",
+      "etfCode": "133690",
+      "etfName": "TIGER 미국나스닥100",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:10.392818+09:00"
+    },
+    {
+      "productType": "채권",
+      "etfCode": "148070",
+      "etfName": "KOSEF 국고채10년",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:15.804454+09:00"
+    },
+    {
+      "productType": "채권",
+      "etfCode": "114260",
+      "etfName": "KODEX 국고채3년",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:21.215155+09:00"
+    },
+    {
+      "productType": "레버리지",
+      "etfCode": "122630",
+      "etfName": "KODEX 레버리지",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:26.625712+09:00"
+    },
+    {
+      "productType": "인버스",
+      "etfCode": "114800",
+      "etfName": "KODEX 인버스",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:32.036723+09:00"
+    },
+    {
+      "productType": "합성",
+      "etfCode": "195930",
+      "etfName": "TIGER 유로스탁스50(합성 H)",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:37.447209+09:00"
+    },
+    {
+      "productType": "재간접",
+      "etfCode": "251350",
+      "etfName": "KODEX 선진국MSCI World",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:42.860537+09:00"
+    },
+    {
+      "productType": "원자재/파생",
+      "etfCode": "132030",
+      "etfName": "KODEX 골드선물(H)",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:48.272055+09:00"
+    },
+    {
+      "productType": "합성/원자재",
+      "etfCode": "130680",
+      "etfName": "TIGER 원유선물Enhanced(H)",
+      "etfNameFromApi": false,
+      "requestedDate": "20240105",
+      "requestedDateResult": {
+        "date": "20240105",
+        "holdingsCount": 0,
+        "weightValidCount": 0,
+        "columns": [],
+        "errorType": "EMPTY",
+        "status": "EMPTY"
+      },
+      "resolvedBaseDate": null,
+      "lookbackDays": 7,
+      "businessDayResolved": false,
+      "holdingsCount": 0,
+      "weightValidCount": 0,
+      "columns": [],
+      "errorType": "EMPTY",
+      "status": "EMPTY",
+      "provider": "PYKRX",
+      "collectedAt": "2026-07-14T13:13:53.684118+09:00"
+    }
+  ],
+  "statusCounts": {
+    "OK": 0,
+    "PARTIAL": 0,
+    "EMPTY": 13,
+    "REQUEST_FAILED": 0
+  },
+  "totalSample": 13,
+  "successCount": 0,
+  "successRatePct": 0.0,
+  "fullDryRun": {
+    "performed": false,
+    "reason": "표본 성공률 <80% (구조적 EMPTY)",
+    "entryThresholdPct": 80,
+    "actualSuccessRatePct": 0.0
+  },
+  "rootCauseHypothesis": "get_etf_portfolio_deposit_file(PDF/구성자산) 엔드포인트가 이 환경에서 구조적으로 빈 DataFrame 반환 (OHLCV는 정상) — KRX PDF 응답 파싱 불가/차단"
+}

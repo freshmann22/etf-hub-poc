@@ -1,0 +1,10 @@
+etfCode,field,selectedValue,selectedSource,otherValue,otherSource,asOfDateDiff,reason
+0005G0,holdings,wisereport(20종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+0080G0,holdings,wisereport(11종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+0080Y0,holdings,wisereport(15종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+069500,holdings,wisereport(201종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+091160,holdings,wisereport(36종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+102110,holdings,wisereport(200종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+122630,holdings,wisereport(210종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+244580,holdings,wisereport(51종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"
+449450,holdings,wisereport(11종),wisereport,naver_csv(10종),naver_csv,wisereport=2026-07-13 / naver_csv=null,"우선순위(wisereport) 채택, 구성종목 리스트 상이 — 원본 모두 보존"

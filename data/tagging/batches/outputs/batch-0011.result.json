@@ -1,0 +1,316 @@
+[
+  {
+    "etfCode": "291630",
+    "classifications": [
+      {
+        "tagId": "strategy.leverage",
+        "score": 1,
+        "confidence": 1,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "name=\"KIWOOM 코스닥150선물레버리지\" contains '레버리지'" },
+          { "type": "holdings", "text": "최상위 보유가 'KIWOOM 코스닥150'(20.66%)로 코스닥150 선물 기반 2배 추종 구조를 뒷받침" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/descriptions/issuer 등 핵심 필드 결측 (coverage 0.45)"]
+  },
+  {
+    "etfCode": "292050",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KRX300 광범위 지수 추종(시가총액 가중)로 삼성전자/SK하이닉스 비중이 높지만 이는 섹터 전략이 아닌 시총 가중 결과이므로 sector 태그를 부여하지 않음", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "292150",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["Top10 대형주 시총 가중 지수로 특정 섹터 집중을 의도한 상품이 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "292160",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KRX300 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "292190",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KRX300 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "292500",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KRX300 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "293180",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KOSPI200 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "294400",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KOSPI200 TR 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "295040",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KOSPI200 TR 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "298340",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["국채선물 3년 추종 채권형 ETF로 taxonomy 내 매칭되는 sector/strategy/dividend 태그 없음", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "300610",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.92,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "명칭 'TIGER K게임'" },
+          { "type": "holdings", "text": "상위 10종목 전부 게임업체(넷마블 10.11%, 크래프톤 10.03%, 펄어비스 9.94%, 시프트업 9.75%, 더블유게임즈 9.75%, NC 9.53%, 카카오게임즈 8.93%, 위메이드 8.66%, 웹젠 5.16%, 네오위즈 4.94%)로 합산 비중 약 86.8%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "300640",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.91,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "명칭 'RISE 게임테마'" },
+          { "type": "holdings", "text": "상위 10종목 전부 게임업체(시프트업 12.32%, NC 11.49%, 더블유게임즈 11.06%, 크래프톤 11%, 넷마블 7.76%, 위메이드 6.03%, 펄어비스 5.54%, 카카오게임즈 5.37%, 웹젠 3.95%, 네오위즈 3.59%)로 합산 비중 약 78.1%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "300950",
+    "classifications": [
+      {
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.93,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "명칭 'KODEX 게임산업'" },
+          { "type": "holdings", "text": "상위 10종목 전부 게임업체이며 크래프톤(26.62%)·NC(19.28%)·펄어비스(11.74%)·넷마블(10.38%)·시프트업(10.25%) 등 상위 5종목 합산 약 78.3%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "301400",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["코스닥150 광범위 지수 추종. 상위 종목이 바이오/2차전지/반도체장비 등으로 분산되어 있고 최상위 비중도 7.81%에 불과해 특정 섹터 태그를 부여할 근거 부족", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "302450",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KOSPI 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "304760",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KRX300 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "304770",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["코스닥150 광범위 지수 추종. 상위 종목이 바이오/2차전지/반도체장비 등으로 분산되어 있고 최상위 비중도 7.81%에 불과해 특정 섹터 태그를 부여할 근거 부족", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "304780",
+    "classifications": [
+      {
+        "tagId": "strategy.leverage",
+        "score": 1,
+        "confidence": 1,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "name=\"HANARO 200선물레버리지\" contains '레버리지'" },
+          { "type": "holdings", "text": "보유종목이 'TIGER 200선물레버리지'(12.22%), 'HANARO 200TR'(8.94%), 'HANARO 200'(7.55%) 등 KOSPI200 레버리지/현물 ETF들로 구성" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "305050",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KOSPI 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "305540",
+    "classifications": [
+      {
+        "tagId": "sector.ev_battery",
+        "score": 0.93,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "명칭 'TIGER 2차전지테마'" },
+          { "type": "holdings", "text": "상위 10종목이 배터리 셀·소재 밸류체인(삼성SDI 15.29%, LG에너지솔루션 14.9%, LG화학 13.87%, POSCO홀딩스 13.75%, SK이노베이션 9.03%, 포스코퓨처엠 7.31%, 에코프로비엠 6.39%, 에코프로 6.18%, SKC 2.37%, 엘앤에프 2.24%)로 합산 비중 약 91.3%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "305720",
+    "classifications": [
+      {
+        "tagId": "sector.ev_battery",
+        "score": 0.93,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "명칭 'KODEX 2차전지산업'" },
+          { "type": "holdings", "text": "상위 10종목이 배터리 셀·소재 밸류체인(LG에너지솔루션 20.74%, 삼성SDI 16.06%, POSCO홀딩스 13.94%, LG화학 10.71%, 에코프로비엠 8.18%, 에코프로 6.75%, SK이노베이션 5.75%, 포스코퓨처엠 4.89%, 엘앤에프 2.72%, SKC 1.55%)로 합산 비중 약 91.3%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "306530",
+    "classifications": [
+      {
+        "tagId": "strategy.leverage",
+        "score": 1,
+        "confidence": 1,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "name=\"HANARO 코스닥150선물레버리지\" contains '레버리지'" },
+          { "type": "holdings", "text": "보유종목이 'HANARO 코스닥150'(17.25%), 'KODEX 코스닥150레버리지'(2.03%) 등 코스닥150 관련 ETF" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "306950",
+    "classifications": [
+      {
+        "tagId": "strategy.leverage",
+        "score": 1,
+        "confidence": 1,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "name=\"KODEX KRX300레버리지\" contains '레버리지'" },
+          { "type": "holdings", "text": "최상위 보유가 'KODEX KRX300'(25.14%) ETF와 삼성전자/SK하이닉스 등 KRX300 구성종목 직접 보유로 KRX300 일간수익률 2배 추종 구조를 뒷받침" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측. KRX300 기초지수 자체는 광범위 지수이므로 sector 태그는 부여하지 않음(레버리지 구조만 확정)"]
+  },
+  {
+    "etfCode": "307510",
+    "classifications": [
+      {
+        "tagId": "sector.healthcare_bio_pharma",
+        "score": 0.85,
+        "confidence": 0.65,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "descriptions", "text": "명칭 'TIGER 의료기기'" },
+          { "type": "holdings", "text": "상위 10종목이 의료기기/헬스케어 업체(파마리서치 13.54%, 클래시스 7.74%, 엘앤씨바이오 7.73%, 씨어스 5.64%, 씨젠 5.57%, 루닛 4.24%, 큐리옥스바이오시스템즈 3.83%, 리브스메드 3.66%, 차바이오텍 3.55%, 인바디 2.87%)로 합산 비중 약 58.4%" }
+        ]
+      }
+    ],
+    "candidateTags": [],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "307520",
+    "classifications": [],
+    "candidateTags": [
+      {
+        "label": "지주회사",
+        "suggestedCategory": "sector",
+        "score": 0.85,
+        "confidence": 0.6,
+        "reason": "명칭 'TIGER 지주회사' 및 상위 10종목이 SK(13.36%), 두산(10.01%), 삼성물산(8.48%), LG(8.09%), 한진칼(8.02%), LS(7.63%), POSCO홀딩스(6.29%), HD현대(5.95%), GS(5.2%), OCI홀딩스(3.92%) 등 지주회사 위주로 구성되어 있으나 taxonomy에 매칭되는 태그 없음"
+      }
+    ],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측. taxonomy에 '지주회사' 섹터 태그가 없어 후보로만 제안"]
+  },
+  {
+    "etfCode": "310960",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["KOSPI200 TR 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "310970",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["MSCI Korea TR 광범위 지수 추종, 섹터 특화 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  },
+  {
+    "etfCode": "314700",
+    "classifications": [],
+    "candidateTags": [
+      {
+        "label": "농업/식품",
+        "suggestedCategory": "sector",
+        "score": 0.8,
+        "confidence": 0.6,
+        "reason": "명칭 'HANARO 농업융복합산업' 및 상위 10종목이 식품·농업 관련 기업(KT&G 21.36%, LG화학 16.7%, 동원산업 15.19%, CJ 13.62%, LS 8.84%, 하림지주 8.44%, CJ제일제당 6.46%, 이지홀딩스 3.68%, 오뚜기 2.07%, 롯데정밀화학 1.71%) 위주로 구성되어 있으나 taxonomy에 매칭되는 태그 없음"
+      }
+    ],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측. taxonomy에 농업/식품 섹터 태그가 없어 후보로만 제안"]
+  },
+  {
+    "etfCode": "315270",
+    "classifications": [],
+    "candidateTags": [
+      {
+        "label": "통신서비스",
+        "suggestedCategory": "sector",
+        "score": 0.75,
+        "confidence": 0.55,
+        "reason": "명칭 'TIGER 200커뮤니케이션서비스' 및 상위 종목이 통신사(SK텔레콤 17.14%, KT 15.6%, LG유플러스 5.33%, 합산 약 38%)와 인터넷 플랫폼(NAVER 20.43%, 카카오 15.75%)로 구성되어 taxonomy의 sector.game_entertainment_media(게임/엔터/미디어)와는 결이 다른 통신서비스 섹터 태그가 필요해 보임. 게임업체 비중(크래프톤 9.03%+NC 5.52%+넷마블 1.57%=약 16%)은 부수적 수준이라 game_entertainment_media 태그는 부여하지 않음"
+      }
+    ],
+    "warnings": ["benchmark/issuer 등 핵심 필드 결측. taxonomy에 통신서비스 섹터 태그가 없어 후보로만 제안"]
+  },
+  {
+    "etfCode": "315930",
+    "classifications": [],
+    "candidateTags": [],
+    "warnings": ["Top5Plus 대형주 시총 가중 지수로 섹터 특화 상품이 아님", "benchmark/issuer 등 핵심 필드 결측"]
+  }
+]

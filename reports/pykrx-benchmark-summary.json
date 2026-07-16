@@ -1,0 +1,65 @@
+{
+  "title": "pykrx ETF 구성자산(holdings) 가용성 벤치마크 요약",
+  "generatedAt": "2026-07-14T13:20:00+09:00",
+  "source": {
+    "results": "reports/pykrx-benchmark-results.csv",
+    "raw": "reports/pykrx-benchmark-raw.json",
+    "pykrxVersion": "1.0.51",
+    "anchorDate": "20240105"
+  },
+  "totals": {
+    "targetCount": 13,
+    "OK": 0,
+    "PARTIAL": 0,
+    "EMPTY": 13,
+    "REQUEST_FAILED": 0,
+    "WEIGHT_MISSING": 0,
+    "businessDayResolvedCount": 0,
+    "successRatePct": 0.0
+  },
+  "byProductType": [
+    { "productType": "국내현물", "count": 3, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "해외주식", "count": 2, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "채권", "count": 2, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "레버리지", "count": 1, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "인버스", "count": 1, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "합성", "count": 1, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "재간접", "count": 1, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "원자재/파생", "count": 1, "okOrPartial": 0, "successRatePct": 0.0 },
+    { "productType": "합성/원자재", "count": 1, "okOrPartial": 0, "successRatePct": 0.0 }
+  ],
+  "byIssuerFailures": [
+    { "issuer": "삼성자산운용(KODEX)", "failures": 6 },
+    { "issuer": "미래에셋자산운용(TIGER)", "failures": 5 },
+    { "issuer": "키움투자자산운용(KOSEF)", "failures": 2 }
+  ],
+  "failureReasonsByStatus": {
+    "EMPTY": {
+      "count": 13,
+      "reason": "get_etf_portfolio_deposit_file 가 모든 종목·모든 시도일에서 0행/빈 컬럼 반환(구조적 EMPTY). 상품유형·운용사와 무관하게 일괄 발생 → 종목 특성이 아니라 엔드포인트 레벨 문제."
+    }
+  },
+  "connectivityDiagnostic": {
+    "note": "네트워크/KRX 접근은 정상이며 구성자산(PDF) 엔드포인트만 비어 있음(=인증/개편으로 스크래핑 경로 파손 추정).",
+    "get_market_ohlcv_069500_20240102_20240105_rows": 4,
+    "get_etf_portfolio_deposit_file_069500_20240105_rows": 0,
+    "get_etf_ticker_list_20240105": "empty (get_etf_ticker_name → KeyError)"
+  },
+  "businessDayResolution": {
+    "attempted": true,
+    "lookbackDays": 7,
+    "resolvedCount": 0,
+    "note": "요청일(20240105)부터 최대 7일 후퇴해도 전 종목 UNRESOLVED — 날짜 문제가 아니라 엔드포인트 EMPTY 이기 때문."
+  },
+  "fullDryRun": {
+    "performed": false,
+    "entryThresholdPct": 80,
+    "actualSuccessRatePct": 0.0,
+    "reason": "표본 성공률 0% (<80%) 및 구조적 EMPTY — 전수 dry-run 진입 기준 미충족. §2.3/§4.3."
+  },
+  "verdict": "pykrx를 1차 provider로 쓰기 어려움(현 환경에서 구성자산 조회 불가).",
+  "krxDirectNeed": {
+    "assessment": "HIGH — 최우선",
+    "rationale": "pykrx 구성자산 경로가 구조적으로 막혀 있어, 구성종목 확보에는 KRX 정보데이터시스템 직접 조회(AUTH_KEY) 또는 정식 데이터 소스가 필요. 참고: 이미 연동된 공공데이터포털(증권상품시세정보)은 시세·순자산·기초지수만 제공하고 구성종목은 제공하지 않음."
+  }
+}

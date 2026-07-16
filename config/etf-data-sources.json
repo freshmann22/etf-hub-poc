@@ -1,0 +1,98 @@
+{
+  "_comment": "ETF 메타데이터 소스 레지스트리. 실제로 접근 가능성이 검증된 소스만 등록한다. 근거: spikes/krx-direct/AMC_FEASIBILITY.md, spikes/krx-direct/DETAIL_SCREEN_SOURCES.md, docs/ETF_DATA_BACKLOG.md",
+  "sources": [
+    {
+      "sourceId": "naver_master",
+      "sourceType": "secondary",
+      "fields": ["etfCode", "name", "netAssets", "nav"],
+      "accessMethod": "json",
+      "endpoint": "https://finance.naver.com/api/sise/etfItemList.nhn",
+      "encoding": "euc-kr",
+      "requiresLogin": false,
+      "rateLimit": "single request (전종목 일괄)",
+      "reliability": 0.75,
+      "notes": "국내 상장 ETF 전종목 코드+명 확보용 1차 마스터 소스. 1회 호출로 전체 유니버스(1141종목, 2026-07-14 실측) 반환. 시세/순자산은 참고용(공공데이터포털이 더 신뢰도 높음)."
+    },
+    {
+      "sourceId": "wisereport",
+      "sourceType": "secondary",
+      "fields": [
+        "issuer", "listingDate", "totalFee", "benchmarkName", "liquidityProvider",
+        "fiscalPeriod", "distributionScheduleText", "etfTypeText",
+        "holdings", "return1m", "return3m", "return6m", "return12m", "netAssets", "beta"
+      ],
+      "accessMethod": "html",
+      "endpoint": "https://navercomp.wisereport.co.kr/v2/ETF/index.aspx?cmp_cd={code}",
+      "encoding": "utf-8",
+      "requiresLogin": false,
+      "rateLimit": "500ms/request",
+      "reliability": 0.85,
+      "notes": "네이버 금융이 iframe으로 그대로 노출하는 WiseReport/FnGuide ETF 카드. 서버 렌더링 HTML 안에 인라인 JS 객체(summary_data/status_data/product_summary_data/CU_data)로 실값이 박혀 있어 AJAX 없이 GET 1회 + 정규식 파싱으로 충분. 상위10 구성종목까지만(전체 구성종목 아님). 최대 12개월 수익률까지만 제공(5년 없음). PER/PBR/배당수익률 필드 자체가 없음(ETF 관례). 로그인/키 불필요, Referer 없이도 200."
+    },
+    {
+      "sourceId": "naver_csv",
+      "sourceType": "secondary",
+      "fields": ["holdings"],
+      "accessMethod": "csv",
+      "endpoint": "spikes/krx-direct/reports/naver_top10_holdings_full.csv",
+      "requiresLogin": false,
+      "rateLimit": "n/a (기존 수집 결과 재사용)",
+      "reliability": 0.8,
+      "notes": "기존 naver_top10_crawler.py 실행 결과(2026-07-14 수집). WiseReport CU_data와 교차검증 완료(동일값). 대형/해외지수 ETF는 EMPTY_NO_TABLE 다수 — 이번 파이프라인에서는 wisereport 우선, 이 CSV는 wisereport 실패 시 fallback으로만 사용."
+    },
+    {
+      "sourceId": "issuer_kodex",
+      "sourceType": "primary",
+      "fields": ["holdings_full"],
+      "accessMethod": "xls",
+      "endpoint": "https://m.samsungfund.com/excel_pdf.do?fId={fId}&gijunYMD={yyyymmdd}",
+      "requiresLogin": false,
+      "rateLimit": "미구현",
+      "reliability": 0.95,
+      "notes": "AMC_FEASIBILITY.md 실측: 전체(200+) 구성종목 확보 가능, 로그인/키 불필요. 단 ETF코드→fId 매핑표가 없어 이번 세션 범위에서는 미구현(BL-12 연장선). fId 매핑 확보 시 최우선 전체 구성종목 소스가 될 수 있음."
+    },
+    {
+      "sourceId": "issuer_tiger",
+      "sourceType": "primary",
+      "fields": ["holdings_full"],
+      "accessMethod": "ajax_html",
+      "endpoint": "https://investments.miraeasset.com/tigeretf/ko/reference/pdf-status-list.ajax (POST, ksdFund=ISIN)",
+      "requiresLogin": false,
+      "rateLimit": "미구현",
+      "reliability": 0.95,
+      "notes": "AMC_FEASIBILITY.md 실측: 전체 구성종목 확보 가능, 로그인/키 불필요. ETF코드→ISIN 매핑 미확보로 이번 세션 미구현."
+    },
+    {
+      "sourceId": "seibro",
+      "sourceType": "primary",
+      "fields": ["distribution_history"],
+      "accessMethod": "html",
+      "endpoint": "seibro.or.kr (ETF종합정보 > 분배금 지급현황)",
+      "requiresLogin": false,
+      "rateLimit": "미구현",
+      "reliability": 0.6,
+      "notes": "화면 구조만 확인(DETAIL_SCREEN_SOURCES.md), 실검색 미재현. 분배금 실지급이력(날짜·금액)의 유일한 후보 소스지만 이번 세션 미구현(BL-11 연장선)."
+    },
+    {
+      "sourceId": "publicdata",
+      "sourceType": "primary",
+      "fields": ["netAssets", "nav", "benchmarkName"],
+      "accessMethod": "json",
+      "endpoint": "apis.data.go.kr (금융위 증권상품시세정보 getETFPriceInfo)",
+      "requiresLogin": true,
+      "rateLimit": "server/providers/publicdata 기존 구현 참조",
+      "reliability": 0.9,
+      "notes": "이미 server/providers/publicdata/index.js 로 구현됨(PUBLICDATA_SERVICE_KEY 필요, 이 저장소 .env엔 미설정). 구성종목/전략/배당 미제공. 이번 파이프라인은 무인증 소스만으로 동작하도록 설계했으므로 이 소스는 선택적 보강용으로만 문서화."
+    },
+    {
+      "sourceId": "krx_direct",
+      "sourceType": "primary",
+      "fields": [],
+      "accessMethod": "blocked",
+      "requiresLogin": true,
+      "rateLimit": "n/a",
+      "reliability": 0,
+      "notes": "중단됨(docs/ETF_DATA_BACKLOG.md BL-06/BL-13). openapi.krx.co.kr 카탈로그에 구성종목 API 없음. data.krx.co.kr 웹 화면은 로그인 필수로 전환됨. 이번 파이프라인 미사용."
+    }
+  ]
+}

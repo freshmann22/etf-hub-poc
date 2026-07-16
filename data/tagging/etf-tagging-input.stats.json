@@ -1,0 +1,2361 @@
+{
+  "generatedAt": "2026-07-14T08:10:57.548Z",
+  "recordCount": 470,
+  "totalCharCount": 482395,
+  "totalEstimatedTokens": 219494,
+  "avgCharCountPerEtf": 1026,
+  "avgEstimatedTokensPerEtf": 467,
+  "maxHoldingsPerEtf": 10,
+  "perRecord": [
+    {
+      "etfCode": "0000D0",
+      "charCount": 646,
+      "estimatedTokens": 294
+    },
+    {
+      "etfCode": "0000J0",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0000Y0",
+      "charCount": 649,
+      "estimatedTokens": 295
+    },
+    {
+      "etfCode": "0000Z0",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0001P0",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "0005D0",
+      "charCount": 1083,
+      "estimatedTokens": 493
+    },
+    {
+      "etfCode": "0005G0",
+      "charCount": 1108,
+      "estimatedTokens": 504
+    },
+    {
+      "etfCode": "0007N0",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "0008T0",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0018C0",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0026S0",
+      "charCount": 625,
+      "estimatedTokens": 285
+    },
+    {
+      "etfCode": "0049K0",
+      "charCount": 643,
+      "estimatedTokens": 293
+    },
+    {
+      "etfCode": "0052D0",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "0053M0",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "0074K0",
+      "charCount": 1093,
+      "estimatedTokens": 497
+    },
+    {
+      "etfCode": "0080G0",
+      "charCount": 1127,
+      "estimatedTokens": 513
+    },
+    {
+      "etfCode": "0080Y0",
+      "charCount": 1118,
+      "estimatedTokens": 509
+    },
+    {
+      "etfCode": "0086B0",
+      "charCount": 1048,
+      "estimatedTokens": 477
+    },
+    {
+      "etfCode": "0086C0",
+      "charCount": 1096,
+      "estimatedTokens": 499
+    },
+    {
+      "etfCode": "0088N0",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "0089D0",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0090B0",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0091P0",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0092B0",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "0093A0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0094M0",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "0098F0",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0098N0",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0098Z0",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "0100K0",
+      "charCount": 1101,
+      "estimatedTokens": 501
+    },
+    {
+      "etfCode": "0101N0",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "0103T0",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0104G0",
+      "charCount": 1087,
+      "estimatedTokens": 495
+    },
+    {
+      "etfCode": "0104N0",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0104P0",
+      "charCount": 1086,
+      "estimatedTokens": 494
+    },
+    {
+      "etfCode": "0105D0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0105E0",
+      "charCount": 1053,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "0111J0",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "0112X0",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "0115D0",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "0115E0",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "0117V0",
+      "charCount": 1080,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "0120J0",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "0138D0",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0139P0",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0141S0",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "0148J0",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "0150K0",
+      "charCount": 1085,
+      "estimatedTokens": 494
+    },
+    {
+      "etfCode": "0151P0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0152E0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0153K0",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0153P0",
+      "charCount": 1087,
+      "estimatedTokens": 495
+    },
+    {
+      "etfCode": "0154F0",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "0155N0",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0162Y0",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "0163Y0",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "0166N0",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "0166S0",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "0167A0",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0167B0",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "0168K0",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "0172Y0",
+      "charCount": 1082,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "0174J0",
+      "charCount": 1082,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "0176P0",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0177A0",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "0177R0",
+      "charCount": 1104,
+      "estimatedTokens": 502
+    },
+    {
+      "etfCode": "0177X0",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0182R0",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0184V0",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "0189Z0",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "0190C0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0190G0",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "0191B0",
+      "charCount": 1050,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "0191S0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0192L0",
+      "charCount": 653,
+      "estimatedTokens": 297
+    },
+    {
+      "etfCode": "0192M0",
+      "charCount": 650,
+      "estimatedTokens": 296
+    },
+    {
+      "etfCode": "0192T0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0193G0",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "0193K0",
+      "charCount": 769,
+      "estimatedTokens": 350
+    },
+    {
+      "etfCode": "0193L0",
+      "charCount": 732,
+      "estimatedTokens": 333
+    },
+    {
+      "etfCode": "0193T0",
+      "charCount": 655,
+      "estimatedTokens": 298
+    },
+    {
+      "etfCode": "0193W0",
+      "charCount": 651,
+      "estimatedTokens": 296
+    },
+    {
+      "etfCode": "0194M0",
+      "charCount": 708,
+      "estimatedTokens": 322
+    },
+    {
+      "etfCode": "0194N0",
+      "charCount": 654,
+      "estimatedTokens": 298
+    },
+    {
+      "etfCode": "0194R0",
+      "charCount": 658,
+      "estimatedTokens": 300
+    },
+    {
+      "etfCode": "0194T0",
+      "charCount": 715,
+      "estimatedTokens": 325
+    },
+    {
+      "etfCode": "0195R0",
+      "charCount": 651,
+      "estimatedTokens": 296
+    },
+    {
+      "etfCode": "0195S0",
+      "charCount": 655,
+      "estimatedTokens": 298
+    },
+    {
+      "etfCode": "0197W0",
+      "charCount": 653,
+      "estimatedTokens": 297
+    },
+    {
+      "etfCode": "0198A0",
+      "charCount": 1108,
+      "estimatedTokens": 504
+    },
+    {
+      "etfCode": "0198B0",
+      "charCount": 650,
+      "estimatedTokens": 296
+    },
+    {
+      "etfCode": "0198D0",
+      "charCount": 654,
+      "estimatedTokens": 298
+    },
+    {
+      "etfCode": "0199C0",
+      "charCount": 1099,
+      "estimatedTokens": 500
+    },
+    {
+      "etfCode": "0204S0",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "0207G0",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "0208N0",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "0209D0",
+      "charCount": 1094,
+      "estimatedTokens": 498
+    },
+    {
+      "etfCode": "0209Z0",
+      "charCount": 1079,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "0210A0",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "0210E0",
+      "charCount": 1083,
+      "estimatedTokens": 493
+    },
+    {
+      "etfCode": "0216Z0",
+      "charCount": 1083,
+      "estimatedTokens": 493
+    },
+    {
+      "etfCode": "069500",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "069660",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "091160",
+      "charCount": 1079,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "091170",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "091180",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "091220",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "091230",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "100910",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "102110",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "102780",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "102960",
+      "charCount": 1080,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "102970",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "104520",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "104530",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "105190",
+      "charCount": 1051,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "105780",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "108450",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "108590",
+      "charCount": 1053,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "114800",
+      "charCount": 689,
+      "estimatedTokens": 314
+    },
+    {
+      "etfCode": "117460",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "117680",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "117700",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "122090",
+      "charCount": 1054,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "122630",
+      "charCount": 1083,
+      "estimatedTokens": 493
+    },
+    {
+      "etfCode": "123320",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "131890",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "132030",
+      "charCount": 631,
+      "estimatedTokens": 287
+    },
+    {
+      "etfCode": "133690",
+      "charCount": 631,
+      "estimatedTokens": 287
+    },
+    {
+      "etfCode": "138520",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "138530",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "138540",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "139220",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "139230",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "139240",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "139250",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "139260",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "139270",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "139280",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "139290",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "140570",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "140580",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "140700",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "140710",
+      "charCount": 1053,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "140950",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "143860",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "145670",
+      "charCount": 695,
+      "estimatedTokens": 316
+    },
+    {
+      "etfCode": "145850",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "147970",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "148020",
+      "charCount": 1054,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "150460",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "152100",
+      "charCount": 1054,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "152500",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "152870",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "153270",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "156080",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "157490",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "157500",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "159800",
+      "charCount": 1053,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "161510",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "166400",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "174350",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "192720",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "203780",
+      "charCount": 614,
+      "estimatedTokens": 280
+    },
+    {
+      "etfCode": "210780",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "211560",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "211900",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "213610",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "215620",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "223190",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "225800",
+      "charCount": 659,
+      "estimatedTokens": 300
+    },
+    {
+      "etfCode": "226380",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "226490",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "226980",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "227540",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "227550",
+      "charCount": 1081,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "227560",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "227570",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "227830",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "228790",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "228800",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "228810",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "228820",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "229200",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "229720",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "230480",
+      "charCount": 683,
+      "estimatedTokens": 311
+    },
+    {
+      "etfCode": "232080",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "233160",
+      "charCount": 1086,
+      "estimatedTokens": 494
+    },
+    {
+      "etfCode": "233740",
+      "charCount": 1085,
+      "estimatedTokens": 494
+    },
+    {
+      "etfCode": "234310",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "237350",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "243880",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "243890",
+      "charCount": 1084,
+      "estimatedTokens": 493
+    },
+    {
+      "etfCode": "244580",
+      "charCount": 1089,
+      "estimatedTokens": 495
+    },
+    {
+      "etfCode": "244620",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "244660",
+      "charCount": 1050,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "244670",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "251590",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "252000",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "252400",
+      "charCount": 760,
+      "estimatedTokens": 346
+    },
+    {
+      "etfCode": "252410",
+      "charCount": 655,
+      "estimatedTokens": 298
+    },
+    {
+      "etfCode": "252420",
+      "charCount": 736,
+      "estimatedTokens": 335
+    },
+    {
+      "etfCode": "252650",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "252670",
+      "charCount": 674,
+      "estimatedTokens": 307
+    },
+    {
+      "etfCode": "252710",
+      "charCount": 674,
+      "estimatedTokens": 307
+    },
+    {
+      "etfCode": "253150",
+      "charCount": 805,
+      "estimatedTokens": 366
+    },
+    {
+      "etfCode": "253160",
+      "charCount": 738,
+      "estimatedTokens": 336
+    },
+    {
+      "etfCode": "253230",
+      "charCount": 739,
+      "estimatedTokens": 336
+    },
+    {
+      "etfCode": "253240",
+      "charCount": 651,
+      "estimatedTokens": 296
+    },
+    {
+      "etfCode": "253250",
+      "charCount": 655,
+      "estimatedTokens": 298
+    },
+    {
+      "etfCode": "253280",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "261060",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "261070",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "261110",
+      "charCount": 726,
+      "estimatedTokens": 330
+    },
+    {
+      "etfCode": "261120",
+      "charCount": 740,
+      "estimatedTokens": 337
+    },
+    {
+      "etfCode": "261140",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "261250",
+      "charCount": 835,
+      "estimatedTokens": 380
+    },
+    {
+      "etfCode": "261260",
+      "charCount": 913,
+      "estimatedTokens": 415
+    },
+    {
+      "etfCode": "266160",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "266360",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "266370",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "266390",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "266410",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "266420",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "266550",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "267770",
+      "charCount": 760,
+      "estimatedTokens": 346
+    },
+    {
+      "etfCode": "270800",
+      "charCount": 1054,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "270810",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "275280",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "275290",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "275300",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "277630",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "277640",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "277650",
+      "charCount": 1050,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "278240",
+      "charCount": 768,
+      "estimatedTokens": 350
+    },
+    {
+      "etfCode": "278530",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "278540",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "279530",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "279540",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "280920",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "281990",
+      "charCount": 1049,
+      "estimatedTokens": 477
+    },
+    {
+      "etfCode": "284980",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "285690",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "289040",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "289250",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "289260",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "289480",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "290080",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "290130",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "291630",
+      "charCount": 661,
+      "estimatedTokens": 301
+    },
+    {
+      "etfCode": "292050",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "292150",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "292160",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "292190",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "292500",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "293180",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "294400",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "295040",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "298340",
+      "charCount": 646,
+      "estimatedTokens": 294
+    },
+    {
+      "etfCode": "300610",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "300640",
+      "charCount": 1051,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "300950",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "301400",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "302450",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "304760",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "304770",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "304780",
+      "charCount": 766,
+      "estimatedTokens": 349
+    },
+    {
+      "etfCode": "305050",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "305540",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "305720",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "306530",
+      "charCount": 719,
+      "estimatedTokens": 327
+    },
+    {
+      "etfCode": "306950",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "307510",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "307520",
+      "charCount": 1048,
+      "estimatedTokens": 477
+    },
+    {
+      "etfCode": "310960",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "310970",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "314700",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "315270",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "315930",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "315960",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "316670",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "322400",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "322410",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "325010",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "325020",
+      "charCount": 1054,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "326230",
+      "charCount": 1047,
+      "estimatedTokens": 476
+    },
+    {
+      "etfCode": "326240",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "328370",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "329200",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "332500",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "332930",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "332940",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "337120",
+      "charCount": 1051,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "337140",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "337150",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "337160",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "341850",
+      "charCount": 1083,
+      "estimatedTokens": 493
+    },
+    {
+      "etfCode": "354500",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "359210",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "360140",
+      "charCount": 1082,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "360150",
+      "charCount": 710,
+      "estimatedTokens": 323
+    },
+    {
+      "etfCode": "360750",
+      "charCount": 637,
+      "estimatedTokens": 290
+    },
+    {
+      "etfCode": "361580",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "363580",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "364690",
+      "charCount": 1080,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "364960",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "364970",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "364980",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "364990",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "365000",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "365040",
+      "charCount": 1081,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "367740",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "367760",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "367770",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "368190",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "368680",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "373490",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "375760",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "375770",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "376410",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "377990",
+      "charCount": 1079,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "379800",
+      "charCount": 646,
+      "estimatedTokens": 294
+    },
+    {
+      "etfCode": "379810",
+      "charCount": 649,
+      "estimatedTokens": 295
+    },
+    {
+      "etfCode": "380340",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "381560",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "381570",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "385510",
+      "charCount": 1081,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "385520",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "385590",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "385600",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "385710",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "385720",
+      "charCount": 1057,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "387280",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "388280",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "388420",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "391670",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "395150",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "395160",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "395170",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "395270",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "395280",
+      "charCount": 1055,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "395290",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "395750",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "395760",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "396500",
+      "charCount": 1069,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "400970",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "401170",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "401470",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "402460",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "403790",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "404120",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "404260",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "404540",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "404650",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "407300",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "407310",
+      "charCount": 1081,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "407820",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "410870",
+      "charCount": 1050,
+      "estimatedTokens": 478
+    },
+    {
+      "etfCode": "411540",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "412560",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "412570",
+      "charCount": 1096,
+      "estimatedTokens": 499
+    },
+    {
+      "etfCode": "413930",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "417630",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "421320",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "422420",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "427120",
+      "charCount": 1054,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "429740",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "433250",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "433500",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "434730",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "434960",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "438740",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "438900",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "441540",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "441640",
+      "charCount": 615,
+      "estimatedTokens": 280
+    },
+    {
+      "etfCode": "441800",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "442090",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "442260",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "444200",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "445150",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "445290",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "445690",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "445910",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "446700",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "447430",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "448100",
+      "charCount": 1053,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "448570",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "449450",
+      "charCount": 1108,
+      "estimatedTokens": 504
+    },
+    {
+      "etfCode": "450910",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "451060",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "454320",
+      "charCount": 1082,
+      "estimatedTokens": 492
+    },
+    {
+      "etfCode": "455850",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "455860",
+      "charCount": 1079,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "457930",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "457990",
+      "charCount": 1089,
+      "estimatedTokens": 495
+    },
+    {
+      "etfCode": "461450",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "461490",
+      "charCount": 1171,
+      "estimatedTokens": 533
+    },
+    {
+      "etfCode": "461580",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "461950",
+      "charCount": 1080,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "462010",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "462330",
+      "charCount": 1090,
+      "estimatedTokens": 496
+    },
+    {
+      "etfCode": "462900",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "463050",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "463250",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "464600",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "464610",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "465330",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "466810",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "466920",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "466930",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "466940",
+      "charCount": 1079,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "469070",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "469150",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "469170",
+      "charCount": 1080,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "469790",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "470310",
+      "charCount": 1074,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "471760",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "471780",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "471990",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "472150",
+      "charCount": 1106,
+      "estimatedTokens": 503
+    },
+    {
+      "etfCode": "472720",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "472840",
+      "charCount": 1053,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "474590",
+      "charCount": 1069,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "475050",
+      "charCount": 1066,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "475300",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "475310",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "475720",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "476000",
+      "charCount": 1078,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "476260",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "476800",
+      "charCount": 1085,
+      "estimatedTokens": 494
+    },
+    {
+      "etfCode": "476850",
+      "charCount": 1068,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "479850",
+      "charCount": 1059,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "480460",
+      "charCount": 1090,
+      "estimatedTokens": 496
+    },
+    {
+      "etfCode": "482030",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "483020",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "484880",
+      "charCount": 1077,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "486240",
+      "charCount": 1080,
+      "estimatedTokens": 491
+    },
+    {
+      "etfCode": "487130",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "487240",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "487750",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "488080",
+      "charCount": 1089,
+      "estimatedTokens": 495
+    },
+    {
+      "etfCode": "488200",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "488210",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "489030",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "490480",
+      "charCount": 1075,
+      "estimatedTokens": 489
+    },
+    {
+      "etfCode": "491220",
+      "charCount": 1056,
+      "estimatedTokens": 480
+    },
+    {
+      "etfCode": "491510",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "491700",
+      "charCount": 1052,
+      "estimatedTokens": 479
+    },
+    {
+      "etfCode": "491820",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "494220",
+      "charCount": 1073,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "494310",
+      "charCount": 1072,
+      "estimatedTokens": 488
+    },
+    {
+      "etfCode": "494330",
+      "charCount": 1067,
+      "estimatedTokens": 485
+    },
+    {
+      "etfCode": "494670",
+      "charCount": 1076,
+      "estimatedTokens": 490
+    },
+    {
+      "etfCode": "494890",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "495040",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "495050",
+      "charCount": 1058,
+      "estimatedTokens": 481
+    },
+    {
+      "etfCode": "495060",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "495230",
+      "charCount": 1069,
+      "estimatedTokens": 486
+    },
+    {
+      "etfCode": "495330",
+      "charCount": 1061,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "495550",
+      "charCount": 1060,
+      "estimatedTokens": 482
+    },
+    {
+      "etfCode": "495750",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "495850",
+      "charCount": 1063,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "496080",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "496090",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "496120",
+      "charCount": 1062,
+      "estimatedTokens": 483
+    },
+    {
+      "etfCode": "496130",
+      "charCount": 1064,
+      "estimatedTokens": 484
+    },
+    {
+      "etfCode": "498050",
+      "charCount": 1070,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "498400",
+      "charCount": 1071,
+      "estimatedTokens": 487
+    },
+    {
+      "etfCode": "498410",
+      "charCount": 1095,
+      "estimatedTokens": 498
+    },
+    {
+      "etfCode": "498860",
+      "charCount": 1065,
+      "estimatedTokens": 485
+    }
+  ]
+}

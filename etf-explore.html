@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>ETF 탐색 · iM</title>
+  <link rel="stylesheet" href="src/styles/explore.css" />
+</head>
+<body>
+<div class="wrap">
+  <main class="phone">
+    <!-- ============ 홈: 탐색 ============ -->
+    <section id="home" class="screen">
+      <div class="topbar">
+        <div class="title">ETF 탐색</div>
+        <button class="iconbtn" type="button" aria-label="메뉴">≡</button>
+      </div>
+
+      <div class="sample-notice" data-testid="sample-notice">화면 내 정보는 PoC용 샘플·실데이터 혼합입니다.</div>
+
+      <div class="search">
+        <span class="search-ico" aria-hidden="true">⌕</span>
+        <input id="search-input" class="search-input" type="search"
+               placeholder="ETF, 종목, 테마를 검색해보세요" aria-label="ETF 검색" />
+      </div>
+
+      <div class="tabs" id="categoryTabs" role="tablist"></div>
+
+      <div class="filterPanel">
+        <div class="chips collapsed" id="chips"></div>
+        <button class="chips-toggle hidden" id="chipsToggle" type="button">전체 필터 +</button>
+      </div>
+
+      <div class="listHead">
+        <b id="listTitle">ETF</b>
+        <div class="sort-wrap">
+          <button id="sortBtn" class="select" type="button" aria-haspopup="listbox" aria-expanded="false">시가총액순 ⌄</button>
+          <div id="sortMenu" class="sort-menu hidden" role="listbox"></div>
+        </div>
+      </div>
+      <div id="etfList"></div>
+      <button id="moreBtn" class="more-btn hidden" type="button">더보기 +</button>
+      <div id="listEmpty" class="empty-state hidden">조건에 맞는 ETF를 찾지 못했어요.</div>
+    </section>
+
+    <!-- ============ 상세 ============ -->
+    <section id="detail" class="screen hidden">
+      <div class="topbar">
+        <button class="back" type="button" onclick="__explore.showHome()">‹ ETF 탐색</button>
+        <button class="iconbtn star-lg" id="detailStar" type="button" aria-label="관심 추가">☆</button>
+      </div>
+      <div class="title" id="detailName">—</div>
+      <div class="sub" id="detailMeta">—</div>
+      <div class="priceBig" id="detailPrice">—</div>
+      <div class="change" id="detailChange">—</div>
+      <div class="sub asof" id="detailAsOf"></div>
+
+      <div class="periods" id="periods" role="tablist"></div>
+      <div class="chartCard"><div id="priceChart" class="chart"></div></div>
+
+      <div class="detailTabs" id="detailTabs" role="tablist"></div>
+      <div id="detailBody"></div>
+    </section>
+
+    <nav class="bottomNav" id="bottomNav"></nav>
+
+    <div id="cta" class="cta hidden">
+      <button class="btn watch" id="ctaWatch" type="button">관심등록</button>
+      <button class="btn buy" id="ctaBuy" type="button" aria-disabled="true">매수</button>
+      <button class="btn sell" id="ctaSell" type="button" aria-disabled="true">매도</button>
+    </div>
+  </main>
+</div>
+<script type="module" src="src/js/explore.js"></script>
+</body>
+</html>

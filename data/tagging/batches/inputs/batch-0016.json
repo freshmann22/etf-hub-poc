@@ -1,0 +1,2869 @@
+{
+  "batchId": "batch-0016",
+  "generatedAt": "2026-07-16T00:42:30.411Z",
+  "etfCodes": [
+    "462010",
+    "462330",
+    "462900",
+    "463050",
+    "463250",
+    "464600",
+    "464610",
+    "465330",
+    "466810",
+    "466920",
+    "466930",
+    "466940",
+    "469070",
+    "469150",
+    "469170",
+    "469790",
+    "470310",
+    "471760",
+    "471780",
+    "471990",
+    "472150",
+    "472720",
+    "472840",
+    "474590",
+    "475050",
+    "475300",
+    "475310",
+    "475720",
+    "476000",
+    "476260"
+  ],
+  "inputs": [
+    {
+      "etfCode": "462010",
+      "name": "TIGER 2차전지소재Fn",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 20.19
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 19.3
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 18.95
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 18.43
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "weight": 11.71
+        },
+        {
+          "code": "066970",
+          "name": "엘앤에프",
+          "weight": 2.71
+        },
+        {
+          "code": "011790",
+          "name": "SKC",
+          "weight": 2.05
+        },
+        {
+          "code": "450080",
+          "name": "에코프로머티",
+          "weight": 1.25
+        },
+        {
+          "code": "005070",
+          "name": "코스모신소재",
+          "weight": 0.87
+        },
+        {
+          "code": "078600",
+          "name": "대주전자재료",
+          "weight": 0.84
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "462330",
+      "name": "KODEX 2차전지산업레버리지",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "305720",
+          "name": "KODEX 2차전지산업",
+          "weight": 28.83
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 25.79
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "weight": 17.96
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 14.51
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "weight": 9.27
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 6.02
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 5.6
+        },
+        {
+          "code": "096770",
+          "name": "SK이노베이션",
+          "weight": 3.69
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 2.84
+        },
+        {
+          "code": "178320",
+          "name": "서진시스템",
+          "weight": 2.47
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "462900",
+      "name": "KoAct 바이오헬스케어액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "weight": 9
+        },
+        {
+          "code": "226950",
+          "name": "올릭스",
+          "weight": 8.76
+        },
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "weight": 8.19
+        },
+        {
+          "code": "141080",
+          "name": "리가켐바이오",
+          "weight": 7.9
+        },
+        {
+          "code": "068270",
+          "name": "셀트리온",
+          "weight": 7.75
+        },
+        {
+          "code": "298380",
+          "name": "에이비엘바이오",
+          "weight": 7.5
+        },
+        {
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "weight": 6.69
+        },
+        {
+          "code": "128940",
+          "name": "한미약품",
+          "weight": 5.63
+        },
+        {
+          "code": "009420",
+          "name": "한올바이오파마",
+          "weight": 4.75
+        },
+        {
+          "code": "476830",
+          "name": "알지노믹스",
+          "weight": 4.18
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "463050",
+      "name": "TIME K바이오액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "068270",
+          "name": "셀트리온",
+          "weight": 13.73
+        },
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "weight": 10.98
+        },
+        {
+          "code": "207940",
+          "name": "삼성바이오로직스",
+          "weight": 8.87
+        },
+        {
+          "code": "128940",
+          "name": "한미약품",
+          "weight": 7.25
+        },
+        {
+          "code": "226950",
+          "name": "올릭스",
+          "weight": 7.03
+        },
+        {
+          "code": "141080",
+          "name": "리가켐바이오",
+          "weight": 5.37
+        },
+        {
+          "code": "237690",
+          "name": "에스티팜",
+          "weight": 4.99
+        },
+        {
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "weight": 3.61
+        },
+        {
+          "code": "298380",
+          "name": "에이비엘바이오",
+          "weight": 3.13
+        },
+        {
+          "code": "068760",
+          "name": "셀트리온제약",
+          "weight": 2.54
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "463250",
+      "name": "TIGER K방산&우주",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "064350",
+          "name": "현대로템",
+          "weight": 20.79
+        },
+        {
+          "code": "079550",
+          "name": "LIG디펜스앤에어로스페이스",
+          "weight": 20.52
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "weight": 19.28
+        },
+        {
+          "code": "047810",
+          "name": "한국항공우주",
+          "weight": 18.79
+        },
+        {
+          "code": "272210",
+          "name": "한화시스템",
+          "weight": 13.74
+        },
+        {
+          "code": "103140",
+          "name": "풍산",
+          "weight": 2.96
+        },
+        {
+          "code": "099320",
+          "name": "쎄트렉아이",
+          "weight": 1.49
+        },
+        {
+          "code": "189300",
+          "name": "인텔리안테크",
+          "weight": 1.44
+        },
+        {
+          "code": "211270",
+          "name": "AP위성",
+          "weight": 0.24
+        },
+        {
+          "code": "361390",
+          "name": "제노코",
+          "weight": 0.19
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "464600",
+      "name": "SOL 자동차소부장Fn",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "weight": 11.05
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "weight": 10.7
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 9.2
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "weight": 8.3
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "weight": 7.81
+        },
+        {
+          "code": "018880",
+          "name": "한온시스템",
+          "weight": 7.05
+        },
+        {
+          "code": "204320",
+          "name": "HL만도",
+          "weight": 6.32
+        },
+        {
+          "code": "098460",
+          "name": "고영",
+          "weight": 5.76
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 5.43
+        },
+        {
+          "code": "011210",
+          "name": "현대위아",
+          "weight": 3.86
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "464610",
+      "name": "SOL 의료기기소부장Fn",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "weight": 11.96
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "weight": 11.16
+        },
+        {
+          "code": "069620",
+          "name": "대웅제약",
+          "weight": 11.16
+        },
+        {
+          "code": "145020",
+          "name": "휴젤",
+          "weight": 10.41
+        },
+        {
+          "code": "290650",
+          "name": "엘앤씨바이오",
+          "weight": 9.48
+        },
+        {
+          "code": "086900",
+          "name": "메디톡스",
+          "weight": 8.86
+        },
+        {
+          "code": "042520",
+          "name": "한스바이오메드",
+          "weight": 6.21
+        },
+        {
+          "code": "145720",
+          "name": "덴티움",
+          "weight": 6.08
+        },
+        {
+          "code": "060280",
+          "name": "큐렉소",
+          "weight": 5.53
+        },
+        {
+          "code": "336570",
+          "name": "원텍",
+          "weight": 5.33
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "465330",
+      "name": "RISE 2차전지TOP10",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 17.91
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 15.23
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "weight": 14.56
+        },
+        {
+          "code": "096770",
+          "name": "SK이노베이션",
+          "weight": 12.49
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 11.95
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 9.19
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 7.8
+        },
+        {
+          "code": "066970",
+          "name": "엘앤에프",
+          "weight": 4.22
+        },
+        {
+          "code": "011790",
+          "name": "SKC",
+          "weight": 3.19
+        },
+        {
+          "code": "450080",
+          "name": "에코프로머티",
+          "weight": 2.07
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "466810",
+      "name": "BNK 2차전지양극재",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "096770",
+          "name": "SK이노베이션",
+          "weight": 10.63
+        },
+        {
+          "code": "005070",
+          "name": "코스모신소재",
+          "weight": 8.81
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "weight": 8.65
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 8.57
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 8.41
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "weight": 8.12
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 8.11
+        },
+        {
+          "code": "066970",
+          "name": "엘앤에프",
+          "weight": 8.01
+        },
+        {
+          "code": "005420",
+          "name": "코스모화학",
+          "weight": 7.95
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 7.63
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "466920",
+      "name": "SOL 조선TOP3플러스",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "010140",
+          "name": "삼성중공업",
+          "weight": 25.76
+        },
+        {
+          "code": "329180",
+          "name": "HD현대중공업",
+          "weight": 24.13
+        },
+        {
+          "code": "042660",
+          "name": "한화오션",
+          "weight": 23.54
+        },
+        {
+          "code": "009540",
+          "name": "HD한국조선해양",
+          "weight": 16.07
+        },
+        {
+          "code": "443060",
+          "name": "HD현대마린솔루션",
+          "weight": 2.98
+        },
+        {
+          "code": "082740",
+          "name": "한화엔진",
+          "weight": 2.64
+        },
+        {
+          "code": "071970",
+          "name": "HD현대마린엔진",
+          "weight": 1.36
+        },
+        {
+          "code": "017960",
+          "name": "한국카본",
+          "weight": 0.81
+        },
+        {
+          "code": "439260",
+          "name": "대한조선",
+          "weight": 0.5
+        },
+        {
+          "code": "014620",
+          "name": "성광벤드",
+          "weight": 0.47
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "466930",
+      "name": "SOL 자동차TOP3플러스",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 27.65
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "weight": 26.32
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 22.7
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 8.82
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 5.19
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "weight": 4.86
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "weight": 2.24
+        },
+        {
+          "code": "307950",
+          "name": "현대오토에버",
+          "weight": 0.64
+        },
+        {
+          "code": "018880",
+          "name": "한온시스템",
+          "weight": 0.41
+        },
+        {
+          "code": "204320",
+          "name": "HL만도",
+          "weight": 0.37
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "466940",
+      "name": "TIGER 은행고배당플러스TOP10",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 16.77
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 15.76
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 15.29
+        },
+        {
+          "code": "316140",
+          "name": "우리금융지주",
+          "weight": 14.12
+        },
+        {
+          "code": "024110",
+          "name": "기업은행",
+          "weight": 13.77
+        },
+        {
+          "code": "138930",
+          "name": "BNK금융지주",
+          "weight": 6.08
+        },
+        {
+          "code": "175330",
+          "name": "JB금융지주",
+          "weight": 5.65
+        },
+        {
+          "code": "071050",
+          "name": "한국금융지주",
+          "weight": 4.68
+        },
+        {
+          "code": "000810",
+          "name": "삼성화재",
+          "weight": 4.38
+        },
+        {
+          "code": "139130",
+          "name": "iM금융지주",
+          "weight": 2.75
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "469070",
+      "name": "RISE AI&로봇",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "weight": 6.6
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "weight": 5.81
+        },
+        {
+          "code": "064400",
+          "name": "LG씨엔에스",
+          "weight": 5.77
+        },
+        {
+          "code": "108490",
+          "name": "로보티즈",
+          "weight": 5.67
+        },
+        {
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "weight": 5.38
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 5.23
+        },
+        {
+          "code": "454910",
+          "name": "두산로보틱스",
+          "weight": 5.05
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "weight": 4.67
+        },
+        {
+          "code": "204320",
+          "name": "HL만도",
+          "weight": 4.66
+        },
+        {
+          "code": "058610",
+          "name": "에스피지",
+          "weight": 3.63
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "469150",
+      "name": "ACE AI반도체TOP3+",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 27.52
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 26.7
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "weight": 22.15
+        },
+        {
+          "code": "140860",
+          "name": "파크시스템스",
+          "weight": 1.77
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "weight": 1.63
+        },
+        {
+          "code": "007660",
+          "name": "이수페타시스",
+          "weight": 1.49
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "weight": 1.49
+        },
+        {
+          "code": "080220",
+          "name": "제주반도체",
+          "weight": 1.47
+        },
+        {
+          "code": "067310",
+          "name": "하나마이크론",
+          "weight": 1.47
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "weight": 1.4
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "469170",
+      "name": "ACE 포스코그룹포커스",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "047050",
+          "name": "포스코인터내셔널",
+          "weight": 26.35
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 26.05
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 24.69
+        },
+        {
+          "code": "022100",
+          "name": "포스코DX",
+          "weight": 12.78
+        },
+        {
+          "code": "009520",
+          "name": "포스코엠텍",
+          "weight": 3.05
+        },
+        {
+          "code": "058430",
+          "name": "포스코스틸리온",
+          "weight": 1.61
+        },
+        {
+          "code": "001120",
+          "name": "LX인터내셔널",
+          "weight": 1.4
+        },
+        {
+          "code": "028050",
+          "name": "삼성E&A",
+          "weight": 1.36
+        },
+        {
+          "code": "004020",
+          "name": "현대제철",
+          "weight": 1.27
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 1.25
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "469790",
+      "name": "KIWOOM 코리아테크TOP10",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 27.09
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.7
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 12.27
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "weight": 6.24
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "weight": 5.59
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "weight": 5.42
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "weight": 4.92
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "weight": 4.29
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "weight": 4.28
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "weight": 3.05
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "470310",
+      "name": "UNICORN 생성형AI강소기업액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "035720",
+          "name": "카카오",
+          "weight": 9.49
+        },
+        {
+          "code": "066570",
+          "name": "LG전자",
+          "weight": 9.48
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "weight": 9.25
+        },
+        {
+          "code": "064400",
+          "name": "LG씨엔에스",
+          "weight": 8.98
+        },
+        {
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "weight": 8.85
+        },
+        {
+          "code": "328130",
+          "name": "루닛",
+          "weight": 8.49
+        },
+        {
+          "code": "181710",
+          "name": "NHN",
+          "weight": 8.27
+        },
+        {
+          "code": "030520",
+          "name": "한글과컴퓨터",
+          "weight": 4.94
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "weight": 3.18
+        },
+        {
+          "code": "108860",
+          "name": "셀바스AI",
+          "weight": 2.98
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "471760",
+      "name": "TIGER AI반도체핵심공정",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 21.68
+        },
+        {
+          "code": "011070",
+          "name": "LG이노텍",
+          "weight": 17.88
+        },
+        {
+          "code": "007660",
+          "name": "이수페타시스",
+          "weight": 16.31
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "weight": 11.91
+        },
+        {
+          "code": "353200",
+          "name": "대덕전자",
+          "weight": 10.18
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "weight": 3.11
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "weight": 2.52
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "weight": 2.29
+        },
+        {
+          "code": "084370",
+          "name": "유진테크",
+          "weight": 1.97
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "weight": 1.95
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "471780",
+      "name": "TIGER 코리아테크액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 26.01
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 21.17
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 10.21
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "weight": 4.44
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "weight": 4.02
+        },
+        {
+          "code": "353200",
+          "name": "대덕전자",
+          "weight": 3.73
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "weight": 3.48
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "weight": 3.4
+        },
+        {
+          "code": "131290",
+          "name": "티에스이",
+          "weight": 3.08
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "weight": 3.06
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "471990",
+      "name": "KODEX AI반도체핵심장비",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "007660",
+          "name": "이수페타시스",
+          "weight": 21.27
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "weight": 18.57
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "weight": 15.78
+        },
+        {
+          "code": "353200",
+          "name": "대덕전자",
+          "weight": 11.45
+        },
+        {
+          "code": "222800",
+          "name": "심텍",
+          "weight": 7.13
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "weight": 6.88
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "weight": 6.07
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "weight": 4.44
+        },
+        {
+          "code": "067310",
+          "name": "하나마이크론",
+          "weight": 1.83
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "weight": 1.65
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "472150",
+      "name": "TIGER 배당커버드콜액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 24.52
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 23.07
+        },
+        {
+          "code": "102110",
+          "name": "TIGER 200",
+          "weight": 8.78
+        },
+        {
+          "code": "005935",
+          "name": "삼성전자우",
+          "weight": 6.13
+        },
+        {
+          "code": "0104N0",
+          "name": "TIGER 200타겟위클리커버드콜",
+          "weight": 3.05
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.75
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.84
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.77
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 1.76
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.69
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": true,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "472720",
+      "name": "TRUSTON 주주가치액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 17.08
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 6.38
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 5.03
+        },
+        {
+          "code": "005940",
+          "name": "NH투자증권",
+          "weight": 4.8
+        },
+        {
+          "code": "000150",
+          "name": "두산",
+          "weight": 4.77
+        },
+        {
+          "code": "006260",
+          "name": "LS",
+          "weight": 4.45
+        },
+        {
+          "code": "039490",
+          "name": "키움증권",
+          "weight": 3.43
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 3.14
+        },
+        {
+          "code": "034730",
+          "name": "SK",
+          "weight": 2.81
+        },
+        {
+          "code": "082920",
+          "name": "비츠로셀",
+          "weight": 2.76
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "472840",
+      "name": "IBK 200",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 32.55
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 28.01
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.92
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.96
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.66
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.55
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.23
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.96
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.96
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.91
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "474590",
+      "name": "WON 반도체밸류체인액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 22.99
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 21.55
+        },
+        {
+          "code": "420770",
+          "name": "기가비스",
+          "weight": 6.08
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "weight": 5.22
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "weight": 5.18
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "weight": 4.72
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 4.4
+        },
+        {
+          "code": "353200",
+          "name": "대덕전자",
+          "weight": 3.84
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 3.8
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "weight": 3.24
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "475050",
+      "name": "ACE KPOP포커스",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "352820",
+          "name": "하이브",
+          "weight": 26.7
+        },
+        {
+          "code": "035900",
+          "name": "JYP Ent.",
+          "weight": 24.71
+        },
+        {
+          "code": "041510",
+          "name": "에스엠",
+          "weight": 23.05
+        },
+        {
+          "code": "122870",
+          "name": "와이지엔터테인먼트",
+          "weight": 20.5
+        },
+        {
+          "code": "060570",
+          "name": "드림어스컴퍼니",
+          "weight": 0.97
+        },
+        {
+          "code": "376300",
+          "name": "디어유",
+          "weight": 0.85
+        },
+        {
+          "code": "037270",
+          "name": "YG PLUS",
+          "weight": 0.82
+        },
+        {
+          "code": "182360",
+          "name": "큐브엔터",
+          "weight": 0.8
+        },
+        {
+          "code": "035760",
+          "name": "CJ ENM",
+          "weight": 0.76
+        },
+        {
+          "code": "473980",
+          "name": "노머스",
+          "weight": 0.7
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "475300",
+      "name": "SOL 반도체전공정",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "weight": 18.21
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "weight": 15.14
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "weight": 13.62
+        },
+        {
+          "code": "403870",
+          "name": "HPSP",
+          "weight": 10.23
+        },
+        {
+          "code": "014680",
+          "name": "한솔케미칼",
+          "weight": 8.78
+        },
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "weight": 8.17
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "weight": 8.1
+        },
+        {
+          "code": "084370",
+          "name": "유진테크",
+          "weight": 8.01
+        },
+        {
+          "code": "357780",
+          "name": "솔브레인",
+          "weight": 4.93
+        },
+        {
+          "code": "064760",
+          "name": "티씨케이",
+          "weight": 4.39
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "475310",
+      "name": "SOL 반도체후공정",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "007660",
+          "name": "이수페타시스",
+          "weight": 20.41
+        },
+        {
+          "code": "042700",
+          "name": "한미반도체",
+          "weight": 18.31
+        },
+        {
+          "code": "353200",
+          "name": "대덕전자",
+          "weight": 14.21
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "weight": 13.51
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "weight": 11.37
+        },
+        {
+          "code": "067310",
+          "name": "하나마이크론",
+          "weight": 6.89
+        },
+        {
+          "code": "089030",
+          "name": "테크윙",
+          "weight": 4.41
+        },
+        {
+          "code": "131290",
+          "name": "티에스이",
+          "weight": 4.08
+        },
+        {
+          "code": "031980",
+          "name": "피에스케이홀딩스",
+          "weight": 3.76
+        },
+        {
+          "code": "195870",
+          "name": "해성디에스",
+          "weight": 2.21
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "475720",
+      "name": "RISE 200위클리커버드콜",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 27.22
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 24.6
+        },
+        {
+          "code": "148020",
+          "name": "RISE 200",
+          "weight": 3.82
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.73
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.82
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.53
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.43
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.14
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.92
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.91
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": true,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "476000",
+      "name": "UNICORN 포스트IPO액티브",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": true,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "458870",
+          "name": "씨어스",
+          "weight": 15.01
+        },
+        {
+          "code": "394420",
+          "name": "리센스메디컬",
+          "weight": 9.45
+        },
+        {
+          "code": "439960",
+          "name": "코스모로보틱스",
+          "weight": 9.14
+        },
+        {
+          "code": "0017J0",
+          "name": "세미티에스",
+          "weight": 7.91
+        },
+        {
+          "code": "477850",
+          "name": "마키나락스",
+          "weight": 6.81
+        },
+        {
+          "code": "279570",
+          "name": "케이뱅크",
+          "weight": 5.42
+        },
+        {
+          "code": "0011A0",
+          "name": "액스비스",
+          "weight": 5.32
+        },
+        {
+          "code": "493280",
+          "name": "아이엠바이오로직스",
+          "weight": 5.3
+        },
+        {
+          "code": "0082N0",
+          "name": "카나프테라퓨틱스",
+          "weight": 3.52
+        },
+        {
+          "code": "476830",
+          "name": "알지노믹스",
+          "weight": 3.24
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "476260",
+      "name": "HANARO 반도체핵심공정주도주",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "089970",
+          "name": "브이엠",
+          "weight": 18.19
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "weight": 14.89
+        },
+        {
+          "code": "095610",
+          "name": "테스",
+          "weight": 12.49
+        },
+        {
+          "code": "095340",
+          "name": "ISC",
+          "weight": 10.19
+        },
+        {
+          "code": "067310",
+          "name": "하나마이크론",
+          "weight": 9.57
+        },
+        {
+          "code": "281820",
+          "name": "케이씨텍",
+          "weight": 3.73
+        },
+        {
+          "code": "482630",
+          "name": "삼양엔씨켐",
+          "weight": 2.6
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "weight": 2.52
+        },
+        {
+          "code": "084370",
+          "name": "유진테크",
+          "weight": 2.4
+        },
+        {
+          "code": "102710",
+          "name": "이엔에프테크놀로지",
+          "weight": 2.38
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    }
+  ]
+}

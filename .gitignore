@@ -34,3 +34,19 @@ Thumbs.db
 *.tmp
 *.temp
 .cache/
+
+# Spike secrets (session cookies/tokens — never commit)
+spikes/krx-direct/config.json
+spikes/**/*.session.json
+
+# ETF 메타데이터 파이프라인 raw 캐시(재생성 가능 — scripts/collect-*.mjs 로 재수집)
+data/raw/
+
+# Playwright MCP 스냅샷/스크린샷(재생성 가능, 세션 산출물)
+.playwright-mcp/
+# 화면 검증 스크린샷(루트 임시 산출물)
+*-390.png
+ds-align-*.png
+datasupply-*.png
+toss-*.png
+full-universe-*.png

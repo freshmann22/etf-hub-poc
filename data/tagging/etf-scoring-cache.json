@@ -1,0 +1,4234 @@
+{
+  "entries": {
+    "100910": {
+      "etfCode": "100910",
+      "inputHash": "sha256:5c421ecc9a2de3916ac71a73b09b750fc4021855e6693f92fb8363a03c64a9a2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "102110": {
+      "etfCode": "102110",
+      "inputHash": "sha256:d359e2ae871dd7f8364b3f2f5aeef60b85ec7d1d5481175d72d3adcb3886ab57",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "102780": {
+      "etfCode": "102780",
+      "inputHash": "sha256:c9d07639cdce902b7a30efa41c8a0dedcddaaa4affa590da4194187cba8d44a5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "102960": {
+      "etfCode": "102960",
+      "inputHash": "sha256:7a21feb116af20baece085ccddba90d691caafdc62d2cb410180362f80336606",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "102970": {
+      "etfCode": "102970",
+      "inputHash": "sha256:fd2b1d20cbc1986d99184dab20658350cf93b85f4a610e1f9567cdd97eaa1acb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "104520": {
+      "etfCode": "104520",
+      "inputHash": "sha256:4beee2cec8db38f57473315c1ba52d825d9e558bb36d82dc35d31120f3964923",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "104530": {
+      "etfCode": "104530",
+      "inputHash": "sha256:5a39d5f5a46fbd0c4d44937c57f72ecc363cd0ab681edc856eb65a63ef6af616",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "105190": {
+      "etfCode": "105190",
+      "inputHash": "sha256:7de6b279071dc319995e4fae299e73d05281e83ec37305a7bffefb5e68b311cf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "105780": {
+      "etfCode": "105780",
+      "inputHash": "sha256:65f2f600b85d98ab91b11867e1ca3dfb1da7ec85c455bb6bd1671295b4205a55",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "108450": {
+      "etfCode": "108450",
+      "inputHash": "sha256:d21c4f0af1ef04ff0f67f88ad5d494da846dfb287f3998fc2d0c191526133166",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "108590": {
+      "etfCode": "108590",
+      "inputHash": "sha256:6dad9a70a3d8fd0ad41fc6f282f6b58d32c931836cf4de3b8eedefeda540d91f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "114800": {
+      "etfCode": "114800",
+      "inputHash": "sha256:8e3abaa808373f56cbc82aadb3efcaf947f946b3f0d59fb49b2a268f048e1636",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "117460": {
+      "etfCode": "117460",
+      "inputHash": "sha256:837efedba6e0f3d650325081ac8ccc8c06edee0970df852d433189be71f0f94b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "117680": {
+      "etfCode": "117680",
+      "inputHash": "sha256:a7fb02dd51ecf0ca31345275720dc07acf1d72bbed0894cc4b170f9778043ff5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "117700": {
+      "etfCode": "117700",
+      "inputHash": "sha256:c5f07a800182e8391368d5c49a0d352214b97b404c9e0cc37f1499e0bba12048",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "122090": {
+      "etfCode": "122090",
+      "inputHash": "sha256:9421b261a7044ead922ab940a566530575b440b977e44c36d74e069cd1122326",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "122630": {
+      "etfCode": "122630",
+      "inputHash": "sha256:720c52c4157d2fc9612f2b1e8fba2cc56e317074d60c981b7942dca679d4c4f2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.051Z",
+      "batchId": "batch-0007"
+    },
+    "123320": {
+      "etfCode": "123320",
+      "inputHash": "sha256:e5b8860abc30c0b9997226d0f1583aa58860297aa00153db38e780dd2ddcb3b9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "131890": {
+      "etfCode": "131890",
+      "inputHash": "sha256:5735e6fe687983ce1c67fc9136e404318280493dd5584eb16a0c69e754e09a07",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "132030": {
+      "etfCode": "132030",
+      "inputHash": "sha256:6b17f475adfc04ff9471b39e776545f8bd4240669d9b23a94c8a7e155f53a90e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "133690": {
+      "etfCode": "133690",
+      "inputHash": "sha256:652c8f86f00c81dbe58fd5609e37b5484f6f59dc66d9e112000f8b1b8f524be1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "138520": {
+      "etfCode": "138520",
+      "inputHash": "sha256:91dc9b532e1d3865a0f9d788c94016589a2f643317b40d0beab7768e294ba46e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "138530": {
+      "etfCode": "138530",
+      "inputHash": "sha256:aac6bfcd7da122bba7ad631e4163cd12b7cf22e3538e4f442c0202acfd6f0ddf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "138540": {
+      "etfCode": "138540",
+      "inputHash": "sha256:f1b064d2db9d17922682c718bb749d54fc3d5a53a90bc3d4a56ab3ee8647964b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139220": {
+      "etfCode": "139220",
+      "inputHash": "sha256:1772ec65e4d525a3b628aa2c4dc8a895ab7d6ef53e85716e3da5b4de3610c02c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139230": {
+      "etfCode": "139230",
+      "inputHash": "sha256:7b1a150dd15286ed797c2d0786737cfc265e57781dda6eebb1a55122568471da",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139240": {
+      "etfCode": "139240",
+      "inputHash": "sha256:7f45ee5be400bfeed7daa31f3ff65d583cd53e0e4ab56224d1270b39f2d13a70",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139250": {
+      "etfCode": "139250",
+      "inputHash": "sha256:94b24624f18de7d5ba337e4a305871ba7fba901d5683efdfc9112cb34abb9c8a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139260": {
+      "etfCode": "139260",
+      "inputHash": "sha256:d231e891bbf55928cd3e0861b835b9736f7af173e43dbd724edac0fd0b0d4668",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139270": {
+      "etfCode": "139270",
+      "inputHash": "sha256:2f3dcbbcdb34f3a61f0de61200b2f0781bcc5d5b70d66589187c6c840ffecc59",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139280": {
+      "etfCode": "139280",
+      "inputHash": "sha256:4e829c9f01ae97f057da11bd2e223642ae7c8f8935193df4b04faa9115a92ad7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "139290": {
+      "etfCode": "139290",
+      "inputHash": "sha256:79c4a0eeb5a3fd21ca59e3e3f8b2f189be71793dc9aa9f7e7c18b5ab41189c81",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "140570": {
+      "etfCode": "140570",
+      "inputHash": "sha256:479b4893ab80f12d44c5218c9897cfb47044acef05c1f948172aeb5390cfd4d0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "140580": {
+      "etfCode": "140580",
+      "inputHash": "sha256:dd4d8c3234728ed43992828fb48ad89d0fa5f67e71c5a2bcc59441f72e53db12",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "140700": {
+      "etfCode": "140700",
+      "inputHash": "sha256:0f9f2b783f8bf5ef4f7861a20bb060c78bc4a27996209bae1bb78c6332f88e13",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "140710": {
+      "etfCode": "140710",
+      "inputHash": "sha256:360691ae6e9abbd24fc6534e8731c36430ff328a490a70d3febb9370583805f2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "140950": {
+      "etfCode": "140950",
+      "inputHash": "sha256:ae6fcd9b95fbcb8045b3e02a01ece70a782e9a11fc888e902c3c66aa64ca1488",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "143860": {
+      "etfCode": "143860",
+      "inputHash": "sha256:63ef32f27dd3b6a41e54743caec33b66c982672de02bbdca532ca13cacdabebf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "145670": {
+      "etfCode": "145670",
+      "inputHash": "sha256:45eb6db61ca25ff493d1d8e8ccafe6d440d6f58505dcfaf8004fb7301e200c54",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "145850": {
+      "etfCode": "145850",
+      "inputHash": "sha256:7d50102693cb9de7f9abd166306a71b4a5a413da854a83635bcc609bca1a03a1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "147970": {
+      "etfCode": "147970",
+      "inputHash": "sha256:355dd462ce105ac56d82f7fed5b2fed51143b4712ef86c7e5fe703b5c8b3738c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "148020": {
+      "etfCode": "148020",
+      "inputHash": "sha256:1564495cc1610ffa89a1ee6276ec0fc0c16e8b9369daec80ddb784c550b2b8c5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "150460": {
+      "etfCode": "150460",
+      "inputHash": "sha256:a9bee57e1fa853621d5973036e1b41824b64f6e811e61bc7036e8f1e14d902d9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "152100": {
+      "etfCode": "152100",
+      "inputHash": "sha256:c12ed34e1eac76dbc2c6297af88b746f9722e27e5c7344cc7ec806ff13e35899",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "152500": {
+      "etfCode": "152500",
+      "inputHash": "sha256:082a5f6237d0b53c80fae27d625c09f2c7b0b6a920c9b73ccd2913e7ca470648",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "152870": {
+      "etfCode": "152870",
+      "inputHash": "sha256:7cbde477f6f7082e90ecbf2aece7f3474aa9d31dc8b4704811c1898334208d3e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "153270": {
+      "etfCode": "153270",
+      "inputHash": "sha256:ef74eecd31f39761deaf58346b1a408bba3d30dd14023b8a7baae8a25067194f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.052Z",
+      "batchId": "batch-0007"
+    },
+    "156080": {
+      "etfCode": "156080",
+      "inputHash": "sha256:9b2bf2a2eb95ea15c0ba90dddcd0a7132f69cd0914134d525ad865e8dd1c8581",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "157490": {
+      "etfCode": "157490",
+      "inputHash": "sha256:e2469e1dd45f405933c81135bc7430c09d689b7c374b57c673f7844a7da0eca1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "157500": {
+      "etfCode": "157500",
+      "inputHash": "sha256:1815fca9b26306e6e581975703ab9f03b85872067bcf39885a4d6fbd0565c473",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "159800": {
+      "etfCode": "159800",
+      "inputHash": "sha256:6f58bb1af5b52475180b6fc8611b60fd68a1cdd8f4cd1f4399bf0a866dbb2e82",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "161510": {
+      "etfCode": "161510",
+      "inputHash": "sha256:7383b68c95c985d161df141c1bfbfa1208892606385cc4f026a4685d70f6aaf0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "166400": {
+      "etfCode": "166400",
+      "inputHash": "sha256:7b6d7d8180f7b5a99a473ce6908ab89826eb07655f0199077ca47e09a0a374d8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "174350": {
+      "etfCode": "174350",
+      "inputHash": "sha256:f11c783e10da89b278abe2abef45d36631d82b14af1590653665388ddedaa866",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "192720": {
+      "etfCode": "192720",
+      "inputHash": "sha256:de723c9d20a2e0caa527bd2a8a58fd881aaf154da10a65943aeb4bb73e0ec8e5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "203780": {
+      "etfCode": "203780",
+      "inputHash": "sha256:8ed3ca7b9cfddeefe6a0fbac7e695bdea99cd06a30d6f244954a28040b1e39b5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "210780": {
+      "etfCode": "210780",
+      "inputHash": "sha256:ebe7d97a78fb88ef2443fba6eef6ff1e9eedd7f49091e80059048813256c5741",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "211560": {
+      "etfCode": "211560",
+      "inputHash": "sha256:12a232ba8a50536f3be4792403d03f71296635afd867e288c028883cfe035a41",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "211900": {
+      "etfCode": "211900",
+      "inputHash": "sha256:a2321f4ac699f1ab98d6f346e8a5a954e894534ea696327fa9a96791707064f8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "213610": {
+      "etfCode": "213610",
+      "inputHash": "sha256:461756ff789d3b3ec253b9471033e2332418adb52c1ea2c23a0ac674556285f1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "215620": {
+      "etfCode": "215620",
+      "inputHash": "sha256:f5bd5fee45e31fedff22a5b709ccd02fcd8a95cc6d7f3b12ec6f35bb50719239",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "223190": {
+      "etfCode": "223190",
+      "inputHash": "sha256:3572dfbbc40448d234c34a67391ee1a98a8649d1e5b331a3cb294fb6b8d36907",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "225800": {
+      "etfCode": "225800",
+      "inputHash": "sha256:45705e6dd0c34e967c0b88313e9e57e1019b7ceba96e3e9183348a447e8e1bf5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "226380": {
+      "etfCode": "226380",
+      "inputHash": "sha256:20553ed77819653ec38a7b3f2be20e7b2f5a75c8267ea74fa3a80788cdf0c2ba",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.028Z",
+      "batchId": "batch-0002"
+    },
+    "226490": {
+      "etfCode": "226490",
+      "inputHash": "sha256:a69e4ae4a9947d08ab11807d060358c0d6458c38da5f8091b807cb6ad146e2ac",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "226980": {
+      "etfCode": "226980",
+      "inputHash": "sha256:dbac32492106b1d2cb68b175639bac48038ec504b15b5f0b48438d48abc84f1c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "227540": {
+      "etfCode": "227540",
+      "inputHash": "sha256:1d032894b3b95ec17cfa7adb6ad362bd56bd7ae63e7763b86d65d44e7d400eb1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "227550": {
+      "etfCode": "227550",
+      "inputHash": "sha256:a2f729bb6145f98ebdf79fdfc893757676acc0b525bd9c85f5ee32ee4fbde80d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "227560": {
+      "etfCode": "227560",
+      "inputHash": "sha256:b37d4bae7971edad55de261b067173c7093191c82e2039f7354a0934011a580f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "227570": {
+      "etfCode": "227570",
+      "inputHash": "sha256:a3adb581a66d64c470bf23f259e3b26215d782c37a586fcbd7c7f5337843de21",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "227830": {
+      "etfCode": "227830",
+      "inputHash": "sha256:af2da514bc270b8555bcf1fc489cfcf550c4aa823fa0888a778af2d277fe5407",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "228790": {
+      "etfCode": "228790",
+      "inputHash": "sha256:eaab504e6352aa0ffa7b279f7f8b5af00e4526508d179b4e7f9958091ff56b9d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "228800": {
+      "etfCode": "228800",
+      "inputHash": "sha256:4abe8817f4d6ccb8b0d4b3492035690553ee21cf39910a62e2707a09dcf34be5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "228810": {
+      "etfCode": "228810",
+      "inputHash": "sha256:36606114b66bddd2e7172485b509b20566ccc0ad82dadeb5d8bcc4fe0d87c2d5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.028Z",
+      "batchId": "batch-0002"
+    },
+    "228820": {
+      "etfCode": "228820",
+      "inputHash": "sha256:7b55ab322aeafa11fb5659d184db0ef07791dfe5dd76895c4eb1a8baf99d92a2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "229200": {
+      "etfCode": "229200",
+      "inputHash": "sha256:43cfef989f8c1e7b7e51c6053ebc814324aae3d931f46efd8f76a8b906da0736",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "229720": {
+      "etfCode": "229720",
+      "inputHash": "sha256:0b3d65ee5419292f5cba570dce22899c35452604b81759f5eb8adc28f872b13a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "230480": {
+      "etfCode": "230480",
+      "inputHash": "sha256:8c64702658dabb717923f77c50253380f6f70aac57aeac6fb24c4fd735ce4f84",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "232080": {
+      "etfCode": "232080",
+      "inputHash": "sha256:c328ad5a913fbf88bb6e9c08f32e60d42902b72c99499b81f6f5419252aff78f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "233160": {
+      "etfCode": "233160",
+      "inputHash": "sha256:492ded935ef40c9148452adb3072fa6dde5e5a2c00b2311d0c9252d7b4a01ffc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.056Z",
+      "batchId": "batch-0008"
+    },
+    "233740": {
+      "etfCode": "233740",
+      "inputHash": "sha256:7935108c165b105d26cf2c92879c37e49d84d0cadffe224a07e6bc8c49496975",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.057Z",
+      "batchId": "batch-0008"
+    },
+    "234310": {
+      "etfCode": "234310",
+      "inputHash": "sha256:a84069a1971de19699e8cf8a3b8a0c399e76dde3658fb6b8f299a1fbd31faf8b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "237350": {
+      "etfCode": "237350",
+      "inputHash": "sha256:01e60563d03fa22b52cdd3f30bba452d86cc77c5fd191a819940b1d379a8106e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "243880": {
+      "etfCode": "243880",
+      "inputHash": "sha256:7e9ba2008d6027b958daf119df265641d9086b51f026492b82ea358c8993e3b7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "243890": {
+      "etfCode": "243890",
+      "inputHash": "sha256:07220ff1ea4663f00aa3e34b5f2d1228e5408c377aa04b6cb86a39cfa948b926",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "244580": {
+      "etfCode": "244580",
+      "inputHash": "sha256:e54d087f1813df957d5343fdd25fb398857c03dc05c0c22e64d95ff874bb382e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "244620": {
+      "etfCode": "244620",
+      "inputHash": "sha256:2046b0d0fa591a90dead8e13207dc278551a8b5a49176405fe26c5bac3ea8a0f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "244660": {
+      "etfCode": "244660",
+      "inputHash": "sha256:5a0983cb3f9c6ab4d8a92600cc4c2d3c2459333ac8adc0e94e49c6fb2c9d008a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "244670": {
+      "etfCode": "244670",
+      "inputHash": "sha256:87a8c0adb3aeb9fde90e3d4b1aeb737681e78cf603a35085ca2c6631e98c0669",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "251590": {
+      "etfCode": "251590",
+      "inputHash": "sha256:b3fafd1e6d22cbced3b730fe07359b35f126f3b13f78b1b6f62898069466c88f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252000": {
+      "etfCode": "252000",
+      "inputHash": "sha256:2e62e0c9ca3d47314b435b326f91d522e113725b7837307958bd2318be9c21de",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252400": {
+      "etfCode": "252400",
+      "inputHash": "sha256:600b118604b07acdafc7916a1d54732c9b2461a77556b2d22b6635af61ab9b3b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252410": {
+      "etfCode": "252410",
+      "inputHash": "sha256:0e4025d70c0c69bf383cacc52212fed2e82f7fc5316a608adb66770366eacba3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252420": {
+      "etfCode": "252420",
+      "inputHash": "sha256:d5e2f81dc1aae6bba9b680a03d4246850f63d1ac707336735f8a6e571d918a9b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252650": {
+      "etfCode": "252650",
+      "inputHash": "sha256:0f8f80ca97a932c9d10ba9314fbc15983685bc73d4f1a51c36783f692e6aa4f3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252670": {
+      "etfCode": "252670",
+      "inputHash": "sha256:9add046e33a32ddde8317941c8e4b55e1cd4fd8129e9a7be1400c210dd01e5c9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "252710": {
+      "etfCode": "252710",
+      "inputHash": "sha256:4b61faf22e8eb7588a8c76629d69f4f1eb20523e1d1be0babb4473ba516ae2f9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "253150": {
+      "etfCode": "253150",
+      "inputHash": "sha256:39dbf1437fbf30498b790f9ab1726a905d28701cd2e76615c6a29da426d1fc45",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "253160": {
+      "etfCode": "253160",
+      "inputHash": "sha256:bba9a5b89df1cf6b7749033c8590d9803736ed401309981d8e82e43fbb50d9de",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "253230": {
+      "etfCode": "253230",
+      "inputHash": "sha256:aec093a257acbad3e904f91ab21353d063bc41d3f86ac56ba71943a08b944f6e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "253240": {
+      "etfCode": "253240",
+      "inputHash": "sha256:7d15fb9ca4852f78a36dd03c739c69be6450a17dfee8c4e0c4c60a3ce90ffcd5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "253250": {
+      "etfCode": "253250",
+      "inputHash": "sha256:51ecf4b112a0ab1364e3b1b26122a74ee9dd82b34b3a6d80815a05981b70a86b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "253280": {
+      "etfCode": "253280",
+      "inputHash": "sha256:e7640d8bf73b6eeb4966df683390bb262100c8fec9853038812e967be103b24e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261060": {
+      "etfCode": "261060",
+      "inputHash": "sha256:bef4cfb1a2bca648c95e3f42e18b72dd8f2a5abe1b1d473fd3339990a13d1db6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261070": {
+      "etfCode": "261070",
+      "inputHash": "sha256:67f04f91f4cfd045542479c08c766d966ff7abb2c45b05344b7ee5e7cdccbfd7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261110": {
+      "etfCode": "261110",
+      "inputHash": "sha256:023c169f8ac39f6bd50a428d1772a641145574d2fff63d7557e1c4104b8a13a6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261120": {
+      "etfCode": "261120",
+      "inputHash": "sha256:36e20009207adfc771c55082e31350e86c0fcf639009696179184a05a736acdf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261140": {
+      "etfCode": "261140",
+      "inputHash": "sha256:f8cf58e8bf400772bbd384278a74687131488576b5363114333dbd619af0d883",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261250": {
+      "etfCode": "261250",
+      "inputHash": "sha256:d5c54c1624d75e95683aa4e0160d8505ff1fa04898ec7aed3bcee1e17fe1e914",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "261260": {
+      "etfCode": "261260",
+      "inputHash": "sha256:edc7e2c46c375046d41546c824e03d65da0f11dc87aad72d33da9574d75bc580",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "266160": {
+      "etfCode": "266160",
+      "inputHash": "sha256:769d0c46221016dc4677fd3606c4913580ecacded798f688cee34c46eb2154f3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.060Z",
+      "batchId": "batch-0009"
+    },
+    "266360": {
+      "etfCode": "266360",
+      "inputHash": "sha256:f3a295177679e763c97e7365238fa96c32672e05b46d8ec809bb99d0718d46df",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "266370": {
+      "etfCode": "266370",
+      "inputHash": "sha256:3c4fa57bfbe456fcf7ab48fc4b8f77125c46a2669f34cb1de99ca396445d321d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "266390": {
+      "etfCode": "266390",
+      "inputHash": "sha256:25a141a5439ceecfe8afe6dbc30441b4cbce68d51228369b71dd904d17e7fcb4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "266410": {
+      "etfCode": "266410",
+      "inputHash": "sha256:f4d9061d3abf544453573524b6f8a2d59b53b081995980c2994c971845ec528e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "266420": {
+      "etfCode": "266420",
+      "inputHash": "sha256:3ab36d3febaee240f17f810ea9381821bfa2f4e407b505e1dfec949193155ae4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "266550": {
+      "etfCode": "266550",
+      "inputHash": "sha256:d1decb3aacd351f9bcf57219db58d55f3ea76abbda4191bce06b6059afab2aee",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "267770": {
+      "etfCode": "267770",
+      "inputHash": "sha256:e5b6603bdcfda93d9abc6f74f3b1b6a35a801b2c1c7d989cce6aa3530fbbc44a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "270800": {
+      "etfCode": "270800",
+      "inputHash": "sha256:875f49d611a4897c8b2f5b5571536e83f923678a899472429b79370c1b29e6fd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "270810": {
+      "etfCode": "270810",
+      "inputHash": "sha256:68fcdbccb1569a140f08366b4cb445a8e7ee193f3d220739a1e4531921956718",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "275280": {
+      "etfCode": "275280",
+      "inputHash": "sha256:32bcd20f1b6e05f18a67e7911dd1755be3e17720c3867075b3cfe6795dd59802",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "275290": {
+      "etfCode": "275290",
+      "inputHash": "sha256:376ca1a26c08ad7cdc2a5c66040c47985b8c88e4463df91256c742ac98cf45ed",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "275300": {
+      "etfCode": "275300",
+      "inputHash": "sha256:3a7413f3780a8d6b3d086ee4ab2399e429ae090a96b7d580486be14b64fa9804",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "277630": {
+      "etfCode": "277630",
+      "inputHash": "sha256:2cfd01ff2cbfabfa96ffed06205b63febd8630088b96451e6102868ddbbd093a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "277640": {
+      "etfCode": "277640",
+      "inputHash": "sha256:11c94c9ad327f26d0fca42a120876845ecc7fa7417565ca436b2e026b6d9f195",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "277650": {
+      "etfCode": "277650",
+      "inputHash": "sha256:ed1d12fa758e9559f882969ec5daa3389dc2b26bacbaac08a917d79fb84177b1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "278240": {
+      "etfCode": "278240",
+      "inputHash": "sha256:67d075038f9534deaf9d4b08210381f67183c7226355740f3b43252c945770d3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "278530": {
+      "etfCode": "278530",
+      "inputHash": "sha256:4f6b6e5a7c628acf025a701b84f162204974651a2c1058424e266eb1c4542ac6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "278540": {
+      "etfCode": "278540",
+      "inputHash": "sha256:0563ba8f628aebbbfc9143bebbe4c50833efd98eb0afa87e769bdcea6b5825f5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "279530": {
+      "etfCode": "279530",
+      "inputHash": "sha256:af7101154144cb301db8eff0d6f227d42625c72375a1c195ecce0c2dc705e73b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "279540": {
+      "etfCode": "279540",
+      "inputHash": "sha256:384c2b88ffc92d2d0046804059155c341d41dcba63850181a400e3efaa63bcb7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "280920": {
+      "etfCode": "280920",
+      "inputHash": "sha256:22d06f3aa9cf86de5f82e3aabac34b2a1e7046d1f6132c30eb984d1fd5d89f45",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "281990": {
+      "etfCode": "281990",
+      "inputHash": "sha256:f2d81563e36dbf3f2ec79fa312332d472529a18c8af4a09086e7514ea6a5dc2a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "284980": {
+      "etfCode": "284980",
+      "inputHash": "sha256:6042a5d2558bcdeef52a696d7c25dbb2c0db2673ffc9e9ec29ca778d9e18ffc7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "285690": {
+      "etfCode": "285690",
+      "inputHash": "sha256:04c2d41251ef596d7f20cf5124fb3e91572cedd8c38e7fc3477d7d74b4b4f6a1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "289040": {
+      "etfCode": "289040",
+      "inputHash": "sha256:7151fce9455c1c6897cbeaafa115ab04a6c6349e3cbaa6abb77d92e72e5169fd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "289250": {
+      "etfCode": "289250",
+      "inputHash": "sha256:d2abd98cd15fa36dfb7751236a5c912752f2609e3c8ed1798b47ff68521b11c2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "289260": {
+      "etfCode": "289260",
+      "inputHash": "sha256:bcb40cdd2a652ea5b7174203b289cde6662a585ceb63a9931cc08711a286d8d0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "289480": {
+      "etfCode": "289480",
+      "inputHash": "sha256:2a9989c8eeaec6c56374a77ed35565e3f741808eeded8a5b383a17fed89fba31",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "290080": {
+      "etfCode": "290080",
+      "inputHash": "sha256:882c9b209eb8e688cd37e7b6b816347734f938c0feda3e7b8293b16c343c95e6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "290130": {
+      "etfCode": "290130",
+      "inputHash": "sha256:257644bac723566b22fc614df55f3ac76554facf2dd31c6f8b91901b44b79af5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.063Z",
+      "batchId": "batch-0010"
+    },
+    "291630": {
+      "etfCode": "291630",
+      "inputHash": "sha256:906765fbe616b64a20ea491199161b1949b69cd084b979c8fd5c5b4ec3e42d50",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "292050": {
+      "etfCode": "292050",
+      "inputHash": "sha256:26d6479cc11ca9fd06554f68a9864f198a2b7e65b10f86c4674b4f48471ea833",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "292150": {
+      "etfCode": "292150",
+      "inputHash": "sha256:2e17790ebf583eb08a92eb73a62180c50e74c13afc938fddd6bbbc59895b178f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "292160": {
+      "etfCode": "292160",
+      "inputHash": "sha256:41a87c307599517c90efb448c214d9f894db8165315459282833bd6676689066",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "292190": {
+      "etfCode": "292190",
+      "inputHash": "sha256:a9fd5c4eb0b2b7bc3dc9e6708b7fa77632165fce321455f47c8d4673f4ab7f04",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "292500": {
+      "etfCode": "292500",
+      "inputHash": "sha256:5d3d2843e68696e39c2924f1e8283223de2d563c419bb63f6647385329adb1b9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "293180": {
+      "etfCode": "293180",
+      "inputHash": "sha256:470f539b8e0b5027c77598be6a9ee354e7f9329edb7c76ef3432eb6e0cb343c6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "294400": {
+      "etfCode": "294400",
+      "inputHash": "sha256:b8ae84af3764f46e19ddb95ef742c359ab6dfa07ef38fbdfe13265ea5e08c2b3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "295040": {
+      "etfCode": "295040",
+      "inputHash": "sha256:e8049a93099689ba3caa552b32d88d681ebf2dbbef3e6f75af45003e079ae875",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "298340": {
+      "etfCode": "298340",
+      "inputHash": "sha256:d09bd47af7a3e9b881c0389d45c74655cc9c37fa50db9b39c9a78a08215d1f7c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "300610": {
+      "etfCode": "300610",
+      "inputHash": "sha256:1a6b82fa9e62392cdae52403ba1877e97e829a31c743b049addaeb060f2dace4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "300640": {
+      "etfCode": "300640",
+      "inputHash": "sha256:8f29f3d495133c51c46ddb37d965be79402870fe42c4dd0d0588dcdd334e5eb8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "300950": {
+      "etfCode": "300950",
+      "inputHash": "sha256:140a68d5a37db8b779f8a24a63a73aa1e90a730ec008dc40baa47b82515e3af1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "301400": {
+      "etfCode": "301400",
+      "inputHash": "sha256:8520da2ee0e2236b06af84d36a9d2423f4102714f3ecb5f82f8c254d735dc933",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "302450": {
+      "etfCode": "302450",
+      "inputHash": "sha256:e326c99a7eb21a263585b329e12b8fdb66a3aaa23c0d9f0f78b9a6bc6a65b07e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "304760": {
+      "etfCode": "304760",
+      "inputHash": "sha256:fdd2f25bf945d120681bdbb96c3a9a8dd550a0d188346b8e68988c6ef502f263",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "304770": {
+      "etfCode": "304770",
+      "inputHash": "sha256:6ad177ac79fa435e665922239030a158caa6568608a7c0f3de5d09ffc89317f2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "304780": {
+      "etfCode": "304780",
+      "inputHash": "sha256:508a4746d39cef4c7cc5361b38c32abfa663c784683fb83238f241797845d46b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "305050": {
+      "etfCode": "305050",
+      "inputHash": "sha256:4988856ccbd64cc0640af378e9c5da06d6bf97abc47f4e46ad792de4a12cccc0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "305540": {
+      "etfCode": "305540",
+      "inputHash": "sha256:8759d3298104d093e07cfd7107d46bcbc80022aeef129f9a2f56de13e6a1a382",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "305720": {
+      "etfCode": "305720",
+      "inputHash": "sha256:20f3b61c0bf419730ab5708515adea34bac2ec4c6f40a8c966b5bc4e733c5a88",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "306530": {
+      "etfCode": "306530",
+      "inputHash": "sha256:9bdd5e7e1eab83d922c622c8e569fb7d1a94c1cd56182a8d14fb7d43076a7860",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "306950": {
+      "etfCode": "306950",
+      "inputHash": "sha256:846011778e6e739aa4fec9cfc2d181c3159bcf4f96721a90ea05b41949480d3a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "307510": {
+      "etfCode": "307510",
+      "inputHash": "sha256:fef9f9b92101893c61f53a21ba3ce8e83138c367d67f64dd2000d9deffb66cf7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "307520": {
+      "etfCode": "307520",
+      "inputHash": "sha256:27670f842e5765bdc1c675e8d923f201b44cb94f1ca5fa8cb0ca7dcc71ab01c6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "310960": {
+      "etfCode": "310960",
+      "inputHash": "sha256:dd58aca4bf049ae89b2fc6b8135cc21fc4e44dffb9c26607d19876a313d96d13",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "310970": {
+      "etfCode": "310970",
+      "inputHash": "sha256:079c1c0c8f5ac50e77b01e4a42d31934aafd9fab74d499838ed4435f176de641",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "314700": {
+      "etfCode": "314700",
+      "inputHash": "sha256:16e562f667832f2884fb42c48c2cfb2d590ce14bd93fc77080e715fbdbe89a51",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "315270": {
+      "etfCode": "315270",
+      "inputHash": "sha256:54020b00f4369fa8116ebd4020c6136ee1e14bdb58cb4a6051269fc074287b86",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "315930": {
+      "etfCode": "315930",
+      "inputHash": "sha256:7bc5eeb7fd1c18e2b07c9ea0c4dea44ea8f17440752bd7e5695f65fdc9327805",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.066Z",
+      "batchId": "batch-0011"
+    },
+    "315960": {
+      "etfCode": "315960",
+      "inputHash": "sha256:dd9e4a4fb4b1df333b1ec0092df0c1c738fcd63bb5dc7a8c76b11e9d0273710c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "316670": {
+      "etfCode": "316670",
+      "inputHash": "sha256:0ac46cfba525ade3791312a33a8c67e8116c76fcc052c67e5d38057818c9b65c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "322400": {
+      "etfCode": "322400",
+      "inputHash": "sha256:b502098413a1258717ce1b31e99476cf257682f9d7338eaec0d14f7d1dd1f6bd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "322410": {
+      "etfCode": "322410",
+      "inputHash": "sha256:dbc19fb8ae080c204c9aa517ca4e191f2292b13f335ecda9fdd5b20f61924e48",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "325010": {
+      "etfCode": "325010",
+      "inputHash": "sha256:bc95601413ee92edb3341ed66890964aabe3d79a4f621866934e2e4432581bb7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "325020": {
+      "etfCode": "325020",
+      "inputHash": "sha256:7c199a8079133f63fce1aece865868cfc8a466eeb4b2f3df1004f5bcb2664277",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "326230": {
+      "etfCode": "326230",
+      "inputHash": "sha256:c8329e7102538da6488d3fc0aaa23c063f202b0f93c0fe8d67207acd745a7767",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "326240": {
+      "etfCode": "326240",
+      "inputHash": "sha256:52f3caa0ba9aa984053b0a54b3c373d3edff8e8aab3cce88ac522b7a05a5dc7e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "328370": {
+      "etfCode": "328370",
+      "inputHash": "sha256:7386591794774db3f4ce628c99f2b6ccc243c80e0374e5b52fe8303764f23c7c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "329200": {
+      "etfCode": "329200",
+      "inputHash": "sha256:a79bbc3a46801732a091196aa98563d2471eb3e229a3143b5dc0bc154d8059c0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "332500": {
+      "etfCode": "332500",
+      "inputHash": "sha256:1f071cfd78b293ff0aeb5afe6ffdfa6da751c565d90e4ef5b1d6b4f4d32ec6eb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "332930": {
+      "etfCode": "332930",
+      "inputHash": "sha256:85a030cf619699f267434a5fab80a94df3192751251cc9314e638d965740aeaa",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "332940": {
+      "etfCode": "332940",
+      "inputHash": "sha256:00aee34c244e713c9706fef8c096492af142710d576c932634303c4bffd8c199",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "337120": {
+      "etfCode": "337120",
+      "inputHash": "sha256:385f51187238ae2cf2add16dc839690e90fe61b48079d5b20fbee28f8840a2da",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "337140": {
+      "etfCode": "337140",
+      "inputHash": "sha256:2b35fdcc1854c8037671e044370dd3b9c0df65b97ca1ed89f90751420c9403d8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "337150": {
+      "etfCode": "337150",
+      "inputHash": "sha256:e4fcfb1ad057a734e35537c59ec7b648f6ba9735a3c8846f3755d11e9dc61fa7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "337160": {
+      "etfCode": "337160",
+      "inputHash": "sha256:2d50116dda38072182a97708bad776f79c438a11aa154b83fc07f8264b1f683c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "341850": {
+      "etfCode": "341850",
+      "inputHash": "sha256:1f34535d74460990b376ae95a49f2a355558481ab8203dbd16f6e36ff38bf1f3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "354500": {
+      "etfCode": "354500",
+      "inputHash": "sha256:c5409bfcd20c109b38296f075e83a7e84804612fa7abcbbf75876994c1eb6b3e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "359210": {
+      "etfCode": "359210",
+      "inputHash": "sha256:b6eff0be362f130f5551a4816575256937020555edca765ba4302676262e88f0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "360140": {
+      "etfCode": "360140",
+      "inputHash": "sha256:0d8da813644d6f540225efb7277542646c9ae194526f4be4924fccd051d229c5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "360150": {
+      "etfCode": "360150",
+      "inputHash": "sha256:1ed6152542b72dd231033685edb194e23f33af0e823480946314af25999b7c82",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "360750": {
+      "etfCode": "360750",
+      "inputHash": "sha256:6bbf5a21070b93aa8ac8056fc6da63ce57bb633405c7dc729730ec8b2e3e5386",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.069Z",
+      "batchId": "batch-0012"
+    },
+    "361580": {
+      "etfCode": "361580",
+      "inputHash": "sha256:e4ff2f5c4299deaf512e25186867b066efa0ae1aad4407b1c0d46ede55b73e8c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "363580": {
+      "etfCode": "363580",
+      "inputHash": "sha256:4b4e35a6f905542ff043beb087b2b3b4e320a857b2938aebe4344f227f67faeb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "364690": {
+      "etfCode": "364690",
+      "inputHash": "sha256:7978878de252affe23c76a845380bd792b42dd6fe331f8cf80850a83b7694c9c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "364960": {
+      "etfCode": "364960",
+      "inputHash": "sha256:a67fabc916c31f5ad73241c7f4acdfb52219d3cc00dd5c00bd46bbb9dbe7b7f0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "364970": {
+      "etfCode": "364970",
+      "inputHash": "sha256:5f6691c45997a40e6b27836be9e85d838215941a5960f1a96689443faaedc5ac",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "364980": {
+      "etfCode": "364980",
+      "inputHash": "sha256:6e52487cbbab72f908903f409acb5a955a861481a4ef0a8f7bca7b0ab0e441c1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "364990": {
+      "etfCode": "364990",
+      "inputHash": "sha256:f181dce309a24d12ed81024207ebfefdd9cd734b863c790cd07049ed1c65c44d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.070Z",
+      "batchId": "batch-0012"
+    },
+    "365000": {
+      "etfCode": "365000",
+      "inputHash": "sha256:5aabfdcff27401203c00fc4341bb5ff548ddb7ca1abc2591ac4b8c02c0d8bd9c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "365040": {
+      "etfCode": "365040",
+      "inputHash": "sha256:974e6ecb7ff5d2fb96d12c7820b85cd7781fba9046c79792ee5d51f909ae298d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "367740": {
+      "etfCode": "367740",
+      "inputHash": "sha256:684aa0dea96863d71db4a789f96df76c6521d465a78a750bc00eb02e9e6d3e0b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "367760": {
+      "etfCode": "367760",
+      "inputHash": "sha256:0f776ec9d44997c53a7a9df47f8b722c148bc961d1bc509ef04c41294cbe96b6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "367770": {
+      "etfCode": "367770",
+      "inputHash": "sha256:308b0fb67be7b3bd815edd4e064c5566ce9346eaaf8afffbf575771a02aeec77",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "368190": {
+      "etfCode": "368190",
+      "inputHash": "sha256:9182a805f4181769ad3f34b1bb75c4189e9e0b27bb1639482ad60bb3066334dd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "368680": {
+      "etfCode": "368680",
+      "inputHash": "sha256:6aff7b050cba1584c97f47ea83ae6ff135bd77882230b5a393ad6b94947d31ef",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "373490": {
+      "etfCode": "373490",
+      "inputHash": "sha256:b8f82ef8571a45041f3a1ff6fb9473ee248393d2b8863ed511130332a1fa5522",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "375760": {
+      "etfCode": "375760",
+      "inputHash": "sha256:a560f7010d704cc96afc59e35f6cb386d61abde01af4a647b29c3d56dcf4e067",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "375770": {
+      "etfCode": "375770",
+      "inputHash": "sha256:d4b5bde438c843eb455bfcbe91486ea1e5f51778b7344dba1e7c345845f7cfc0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "376410": {
+      "etfCode": "376410",
+      "inputHash": "sha256:1116310b4b9aa91b063d8eaebc40a2adbd79b0caf7324800c8106bce47098a0b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "377990": {
+      "etfCode": "377990",
+      "inputHash": "sha256:62babb820887b63c22f717ccf6acc0ca12a457e81ddbd482070a9c3c76ea64c7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "379800": {
+      "etfCode": "379800",
+      "inputHash": "sha256:73c2f3df846f86b6aeec0a7df1f707b882113ad431594e9d1e9b0eb51de59575",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "379810": {
+      "etfCode": "379810",
+      "inputHash": "sha256:aec2ef10f42c7ca1c11dc83029367e5248bc25807c7601c2db51f7cdb5c24797",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "380340": {
+      "etfCode": "380340",
+      "inputHash": "sha256:1923d459850e2f4a89ff38fc5deac8dda684767166666403ac1ce89626435cdc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "381560": {
+      "etfCode": "381560",
+      "inputHash": "sha256:32911e9de9ee603725cc87a08c3474d545ce8588f840f57d7139628fc30c51a7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "381570": {
+      "etfCode": "381570",
+      "inputHash": "sha256:14476348a886a26b33563404001b5fd13ea24be0fe7c8f8eac98e90a8b72d44b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.073Z",
+      "batchId": "batch-0013"
+    },
+    "385510": {
+      "etfCode": "385510",
+      "inputHash": "sha256:19d7a8bbc6be55b153323435249a5d75998d9eaab732ffc8e18d67bbd09f2670",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "385520": {
+      "etfCode": "385520",
+      "inputHash": "sha256:45631a39c32a1ec9534e7ebf3d6a232bbaa18de568258ddf2d1b790e269990f9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "385590": {
+      "etfCode": "385590",
+      "inputHash": "sha256:d25521cbe6c76e89d21095e1d7b50196bec5671c2914a2839ebb3a21d0c0e147",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "385600": {
+      "etfCode": "385600",
+      "inputHash": "sha256:898f8c84c72469aacf10da677df3e2c4523471f193515a6f89b57c76bf641cc1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "385710": {
+      "etfCode": "385710",
+      "inputHash": "sha256:8a9df2648e53dd080df09d68ed93360f317f1c5755055489f64d8db87c56bd18",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "385720": {
+      "etfCode": "385720",
+      "inputHash": "sha256:1133d6721d34f26700a3843b11dc8b9f5b3651dab09b85ce44ace6117aabc619",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "387280": {
+      "etfCode": "387280",
+      "inputHash": "sha256:488f90b98073accc99cd3a50d6d68d924020dfab5448bdef2cb7780579c0f8ad",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "388280": {
+      "etfCode": "388280",
+      "inputHash": "sha256:77391fa20cee1b3ae15ecb114a17fef03acc76124611717dc539c12ebd7268d6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "388420": {
+      "etfCode": "388420",
+      "inputHash": "sha256:5a5bfee844e16981aab8b7d59067802fb67328aaeb785476ad28bf4f207936c8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "391670": {
+      "etfCode": "391670",
+      "inputHash": "sha256:fce4827026becda7c917519604932bcf4db48996122f7cc2ceb7f5dded988f2c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "395150": {
+      "etfCode": "395150",
+      "inputHash": "sha256:83a7b8dd4473b272573091d31b5e11152cf5133c65c3eda58e72a1e6d20bd288",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "395160": {
+      "etfCode": "395160",
+      "inputHash": "sha256:5ec90b75203f22b565817de9053908e3efba624c580c4dcae30e14b6ebdac8d1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "395170": {
+      "etfCode": "395170",
+      "inputHash": "sha256:2a99e4e2fca788900d19f7b36dc8f6fbdb0380011e08a26faf9ad8089457fba7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.074Z",
+      "batchId": "batch-0013"
+    },
+    "395270": {
+      "etfCode": "395270",
+      "inputHash": "sha256:26a88d4bd7e4e4d2193340c8fc4cedfcc090173ebd5e70da1d3d873003e6d387",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.076Z",
+      "batchId": "batch-0014"
+    },
+    "395280": {
+      "etfCode": "395280",
+      "inputHash": "sha256:49e5d5e45ce459f4270cc7e579e3a36a08875b0c9379197e207ce85d91c8a3f6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.076Z",
+      "batchId": "batch-0014"
+    },
+    "395290": {
+      "etfCode": "395290",
+      "inputHash": "sha256:9cea6691243e40227a9fd04f7db1d7a7b0688d14be178a4409dc68efcad7ef97",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.076Z",
+      "batchId": "batch-0014"
+    },
+    "395750": {
+      "etfCode": "395750",
+      "inputHash": "sha256:f674039ec8a66cfde962855bd734d5fb138f4f0e4fdf8afede09d35353c12f8b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.076Z",
+      "batchId": "batch-0014"
+    },
+    "395760": {
+      "etfCode": "395760",
+      "inputHash": "sha256:fb2d9d79acd4506995c51dee97d05b2b6402fe84fcc25855ee99dc524cf1f9de",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.076Z",
+      "batchId": "batch-0014"
+    },
+    "396500": {
+      "etfCode": "396500",
+      "inputHash": "sha256:63a39f471a9d3e26372099f779fe2e8718f20c925c88700f733ad58634423cbf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "400970": {
+      "etfCode": "400970",
+      "inputHash": "sha256:11449adc01277403c53c2a161579325912ee51ddc8e27a2e5ec04f9ad0d97d71",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "401170": {
+      "etfCode": "401170",
+      "inputHash": "sha256:5bdbb78331676a150cdd6a41c491a84a2c32bfaee24f9f17bf0749ca509d5766",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "401470": {
+      "etfCode": "401470",
+      "inputHash": "sha256:e94143173d30d2bca54d93264a1d98c4132c51444de55601ecd1074429984bd1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "402460": {
+      "etfCode": "402460",
+      "inputHash": "sha256:2e81739ae1fc9ad2cc44be50146dc066ccd4d7cb7b3cd955441a4aa0005cdbc3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "403790": {
+      "etfCode": "403790",
+      "inputHash": "sha256:3006eb1354749c420b608dee7727ea95a338a850dceefa63cd60c2f32165c847",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "404120": {
+      "etfCode": "404120",
+      "inputHash": "sha256:b90957424b13ac0e5f78c3cbd939abc7a3ada71becb9cc70bf80ed2303531bc7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "404260": {
+      "etfCode": "404260",
+      "inputHash": "sha256:0309dfd9079b3f57f923f8afdfb8c06b7e56ba24c74e5090ae10d694ce02adfd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "404540": {
+      "etfCode": "404540",
+      "inputHash": "sha256:3a4342efa9f21fd154495326895307d8517880798ec1d6bb24a6757bd44d079a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "404650": {
+      "etfCode": "404650",
+      "inputHash": "sha256:b83f7fa172e049d95e4d18983d7361e95168277326fadb778f27576fd74977ec",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "407300": {
+      "etfCode": "407300",
+      "inputHash": "sha256:659b9e0a0eedecc0793e243dd00ae162bb597ddadc4c7d559c1f8e1701c1a13f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "407310": {
+      "etfCode": "407310",
+      "inputHash": "sha256:110dc1c8167846fcde093c13c9b6014c1fcfbf9247ca08190919ddc0c84b3c38",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "407820": {
+      "etfCode": "407820",
+      "inputHash": "sha256:94cbcfef115c9bdb577a055b214aa6b90ee8b1f2699e6753a197fe36ee0d67ff",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "410870": {
+      "etfCode": "410870",
+      "inputHash": "sha256:d439460c23f7472b4c3b75f7fd1662072c1a2306770753b9965c423e7451a3e7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "411540": {
+      "etfCode": "411540",
+      "inputHash": "sha256:2f3e366736e8b9c18877cf878c8a7b6083bc5d3e72a287e2247aff641eced28c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "412560": {
+      "etfCode": "412560",
+      "inputHash": "sha256:b9bfded30a5e211be105d3ba75867524784865fbdabac56754126ff703eba508",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "412570": {
+      "etfCode": "412570",
+      "inputHash": "sha256:25b4ef2a1f16bddb96fa803e7cb71c16b5967845c62d522b229896637fc022bd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "413930": {
+      "etfCode": "413930",
+      "inputHash": "sha256:354af6bcc75dc66b366395016e6388e8b1adf89ce7bb7d37772d6a46ee074ba5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "417630": {
+      "etfCode": "417630",
+      "inputHash": "sha256:43737aa2fa88619de0f4c7d0086f06dbad70c28357838bcecc8a659e5a796bef",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "421320": {
+      "etfCode": "421320",
+      "inputHash": "sha256:7d730e0153fe4396c36a88875e752d9783f71c062df6a2c20ac2143acb57f8fe",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "422420": {
+      "etfCode": "422420",
+      "inputHash": "sha256:fa8d1360a19f9f60e2e2d1e0ee5d4fed77f2380d565b2c48b50863b79f9b5bcb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "427120": {
+      "etfCode": "427120",
+      "inputHash": "sha256:7990816cf2bb1f27754acc5d7c771913d6f36e3a73ab07426221b44ec03a3c08",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "429740": {
+      "etfCode": "429740",
+      "inputHash": "sha256:20909c998489767013595c5c5b83ba28f80c0407a5d96ef930b28b47cabecb83",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "433250": {
+      "etfCode": "433250",
+      "inputHash": "sha256:2a6ccba56f48bc1b36a3668f0140657cbc593b2650ddeabc4e5829b6a8a8fcee",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "433500": {
+      "etfCode": "433500",
+      "inputHash": "sha256:f9cd05d0a2b9b91ab174fd8de14d3fd069d29a3a42f1e21be5f908520d8fb84e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.077Z",
+      "batchId": "batch-0014"
+    },
+    "434730": {
+      "etfCode": "434730",
+      "inputHash": "sha256:f862967f2480619add738d52b205c8927b88f5b9d349e8a77b81ac5fd80a1fa4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "434960": {
+      "etfCode": "434960",
+      "inputHash": "sha256:0d07f24dbd9e8d564415ecbec9c5470cce23ec711639f527d7d69f6085b3657b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "438740": {
+      "etfCode": "438740",
+      "inputHash": "sha256:558a768185bc37dbd80699d1c5f55548bdd92fcd2b23d2c9641a64c8346f881f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "438900": {
+      "etfCode": "438900",
+      "inputHash": "sha256:3970d5c2c006755fd53bc1cec5bc24b2adadcd8181f8811dc5f7765f0dabd0d4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "441540": {
+      "etfCode": "441540",
+      "inputHash": "sha256:a4e80c7d0bd9a80c3b8269a864a201047ff96a2c4244637802e9ad2952146ce6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "441640": {
+      "etfCode": "441640",
+      "inputHash": "sha256:6130d60e1078d9a2ad044e3430d3cba28abceb2b0bc291d74de0eab1549a73b3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "441800": {
+      "etfCode": "441800",
+      "inputHash": "sha256:694953af754aff924a2c2660f424cae034a396fd2ad5b9df387bf3ef97df4d01",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "442090": {
+      "etfCode": "442090",
+      "inputHash": "sha256:c664624cbc9064a3a246f838cfc80ed815156996eb626b6ec0e44948564c6b74",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "442260": {
+      "etfCode": "442260",
+      "inputHash": "sha256:b6d58768f4465e5db42a3a47526f11da73ba280aeeec76da1261c6ef03206dc7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "444200": {
+      "etfCode": "444200",
+      "inputHash": "sha256:4d658bdfc43e3b64dbeef9fc5d9ca1f5583e4b0909c5cbaa9ac28c6e5e31ad04",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "445150": {
+      "etfCode": "445150",
+      "inputHash": "sha256:78f56316822a54bff6a7ba17e7850c4c13e108edbce999e6b60adcc2942c57ad",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "445290": {
+      "etfCode": "445290",
+      "inputHash": "sha256:fdcbaecd1e4bbe94738ba2d940b45fec40902840159308d08637c17595026a49",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "445690": {
+      "etfCode": "445690",
+      "inputHash": "sha256:0b366c8f0b96bb942d122e951dad4ce4e616550f4385579c01efc0c8ee305dee",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "445910": {
+      "etfCode": "445910",
+      "inputHash": "sha256:d64cd5279d72de91e224d6cf8ace5c9bc880134feffc09db5649d97f5f1949c4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.079Z",
+      "batchId": "batch-0015"
+    },
+    "446700": {
+      "etfCode": "446700",
+      "inputHash": "sha256:17d0ff81a3ae7840b4b8214a580b729d39a3fad55b044a411e8eec97a163566a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "447430": {
+      "etfCode": "447430",
+      "inputHash": "sha256:38755a5d2c689ff306ca4caf4386c1c39d6878e8885b0311efe156d3f116fcee",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "448100": {
+      "etfCode": "448100",
+      "inputHash": "sha256:0aa899b15b7a963aa99079a2068906e257e6f9b9426fa6960c8c1ca30b944623",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "448570": {
+      "etfCode": "448570",
+      "inputHash": "sha256:a234a324dac810df72b1c25d9927ca78bea3fc53e3a4d5ba86ea52f7f768f7bc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "449450": {
+      "etfCode": "449450",
+      "inputHash": "sha256:155e96e548fb35a90bd13c9f0c135a3d219e15d65ef7787e6bf606099d308dbd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "450910": {
+      "etfCode": "450910",
+      "inputHash": "sha256:a3cf51545aa2aa4550fc946138e49fb5c25568516633234035e62cff6698c64c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "451060": {
+      "etfCode": "451060",
+      "inputHash": "sha256:cf5ec792f82eaab720904b76921d4f78a128d73a82c8fba3ee5f556d4585f29d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "454320": {
+      "etfCode": "454320",
+      "inputHash": "sha256:df3db54f65bb664b5de2f8d9b0ae78db846cb23991a613bd92f91025af55be5f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "455850": {
+      "etfCode": "455850",
+      "inputHash": "sha256:839fb9f7432f3196a9651d7417a2d35e61d77508c74510ad729a162a35ae01cb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "455860": {
+      "etfCode": "455860",
+      "inputHash": "sha256:996ade9db965442cf3550efbdbe3538cbf627b238da535e6cbea8fcad94334f9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "457930": {
+      "etfCode": "457930",
+      "inputHash": "sha256:7583b22e240f0dc36971345d4436e6e7b685913cba8a9ff88d2e717a2d501166",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "457990": {
+      "etfCode": "457990",
+      "inputHash": "sha256:fcfcc6f304d342bff19e62d6e496449bbcf411ac65cbf9009a778bdb6db23699",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "461450": {
+      "etfCode": "461450",
+      "inputHash": "sha256:c2a33a19be5b9f22dabf3a49ee52c829afc386eab587995ef43c33770e437e10",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "461490": {
+      "etfCode": "461490",
+      "inputHash": "sha256:e28cc5ecbcaa39e0277e22790345321705255a50ffd8cb76fa80bd89c8d5d4ad",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "461580": {
+      "etfCode": "461580",
+      "inputHash": "sha256:bc7e1cd2086a3352b64e65f3a81d6d667a6f69c66de16a3f9d3a15f3e6e62e35",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "461950": {
+      "etfCode": "461950",
+      "inputHash": "sha256:1e2240cd48a72136dffe34e690f6eaa271f2b668c93c48cc063163e2f75b40b2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.080Z",
+      "batchId": "batch-0015"
+    },
+    "462010": {
+      "etfCode": "462010",
+      "inputHash": "sha256:14e04f37917b41ca7d9b69c8062670511a3b0ed2d9f61192ae09b4a4ea9caf0a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "462330": {
+      "etfCode": "462330",
+      "inputHash": "sha256:0069336bd1a6a4341792d6895731f91b9d1939b5edaac8aa776260cc70d89415",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "462900": {
+      "etfCode": "462900",
+      "inputHash": "sha256:75ae2060e400f14e7d7f49dabe11354b48d290ef548f5232dfb0ed79d14c73c6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "463050": {
+      "etfCode": "463050",
+      "inputHash": "sha256:00640e811364d0f3b2bfc5ffc75a099e00ddee49c8e1862aba4cc01a06dba203",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "463250": {
+      "etfCode": "463250",
+      "inputHash": "sha256:4327c83a0c0bcb4fe3a6cf29a240052d20f29a552056310b5115a8127dec4fe1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "464600": {
+      "etfCode": "464600",
+      "inputHash": "sha256:d6a8c5ef404e769a2ba9811622246f4ad6fbc8d47967ac15c3866e7077ffe9a0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "464610": {
+      "etfCode": "464610",
+      "inputHash": "sha256:4357949a393519d37027f1bc9feea3b2797e605c0dc928aea5eacf453991da6f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "465330": {
+      "etfCode": "465330",
+      "inputHash": "sha256:952a250701bc2b1f0bd629ce2d660e8e60b7b1179c7d413153b969878440b3fc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "466810": {
+      "etfCode": "466810",
+      "inputHash": "sha256:7de29215797964336ed8efb3f37c7357f0cb00059cfd8bf12596a5e650f8ff99",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "466920": {
+      "etfCode": "466920",
+      "inputHash": "sha256:706e4f15d5587b7f5acc4c643a4802281f399b9238f91d6d9ade1066c3c01a22",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "466930": {
+      "etfCode": "466930",
+      "inputHash": "sha256:c432ade7c3b352d773b4a41b29d1a84da72cb96ae496ba886439ee089ce91f00",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "466940": {
+      "etfCode": "466940",
+      "inputHash": "sha256:ce045d892d67741f831d8271ea6cd60b11573ee65e1f0b81d9f1399ad332a5d9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "469070": {
+      "etfCode": "469070",
+      "inputHash": "sha256:705792bb39895e62b1c14370553d45facaa8c49dd702db2ff7ef652a9583b0bf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "469150": {
+      "etfCode": "469150",
+      "inputHash": "sha256:000b9086b5de9fa03d6981dbcffbd92a0335aaffcbe075bfe78c27e3aeeffdd8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "469170": {
+      "etfCode": "469170",
+      "inputHash": "sha256:6793aca4465bc0fb2a2bbec1a28bf3683c4be036f203b65a99f50c974a4f0262",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "469790": {
+      "etfCode": "469790",
+      "inputHash": "sha256:b3ef4b5229d02acdd554e09c0d73a7ef0082feab461d8d9edf7de32aa63b7874",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "470310": {
+      "etfCode": "470310",
+      "inputHash": "sha256:566903d9250c78bed1e79d03035b64d216031a1ba1bfca97df5574775b3e625d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "471760": {
+      "etfCode": "471760",
+      "inputHash": "sha256:e84103134fb68e5dd264406bab76cfc7fa395772c226d3cd0f337dd728338ee4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "471780": {
+      "etfCode": "471780",
+      "inputHash": "sha256:67351a6883b6713f505fa57938b00c02c997fa47f643483c596d275d9710e9ae",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "471990": {
+      "etfCode": "471990",
+      "inputHash": "sha256:dfa51624b54986c61d23faa2286de294d40e3797844b3e89c360426aed8fcf5b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "472150": {
+      "etfCode": "472150",
+      "inputHash": "sha256:59f641d4d51dffe4dec31affd9bc9891d3edc134765ea44da5d514c79b33cd82",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "472720": {
+      "etfCode": "472720",
+      "inputHash": "sha256:25ca861d76a2b7ff4bb2e153d08c666068a2aeece2259748fb113aa7962b988e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "472840": {
+      "etfCode": "472840",
+      "inputHash": "sha256:9c6d713f30dacb950d8c1e09b763b5f21deec13e939c1c78488dc3d0eb1d930a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "474590": {
+      "etfCode": "474590",
+      "inputHash": "sha256:e7275c7822dfb22f366e6c618e4104dfebe680fcdb33d125527279838c9e11b5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "475050": {
+      "etfCode": "475050",
+      "inputHash": "sha256:6f1c38852ed296ae3b93d1ebb4b9bad66e626c3f6f7115ce1a2d190d033712e9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "475300": {
+      "etfCode": "475300",
+      "inputHash": "sha256:a2ab1f16711383d821f8b4f09d4934aa5ea570c0644a7c084d633fd6811d9bcd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "475310": {
+      "etfCode": "475310",
+      "inputHash": "sha256:380812d35a237f644d1954e34d3c26f4101f32a4abe37335f4e93dcc2c206d7f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "475720": {
+      "etfCode": "475720",
+      "inputHash": "sha256:ad7a2c48c8861c6038930429baafe8648f12bd522e0932ca100b2c92c7e7e3a1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "476000": {
+      "etfCode": "476000",
+      "inputHash": "sha256:018306387718d4516c60efecac663d990baf6f42a503867c2427b4faef52caa7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.082Z",
+      "batchId": "batch-0016"
+    },
+    "476260": {
+      "etfCode": "476260",
+      "inputHash": "sha256:37f8cabb8612b67740bd0fce1adffb4b2e13ca5541cb4da97d310c5e6cf05991",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.083Z",
+      "batchId": "batch-0016"
+    },
+    "476800": {
+      "etfCode": "476800",
+      "inputHash": "sha256:45b92e5952d764f5f2547500d8cd101303a2aa471647a408da2fe0f1b1678269",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "476850": {
+      "etfCode": "476850",
+      "inputHash": "sha256:2cd6468f25f796d67ac9bb0b5ed709bb96e916c944b4f733bada22fa7dbf6218",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "479850": {
+      "etfCode": "479850",
+      "inputHash": "sha256:a95236039588896d3a84d8b954ef36b98a1a5aa8ae2d9e4da6aab8b1110f1f7b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "480460": {
+      "etfCode": "480460",
+      "inputHash": "sha256:70b32c28dc53a362d9aca74d0c91882246078d2570237a6680e2b1ba6f003724",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "482030": {
+      "etfCode": "482030",
+      "inputHash": "sha256:5f0b3aec3f09d3c61e0a4c9de6fd499becf771eddc3f8cfc863b052add0334ae",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "483020": {
+      "etfCode": "483020",
+      "inputHash": "sha256:60c9d899536e2774c8b7cd288b3d9be6afefe7c65f47478d57ec3324ddf3a389",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "484880": {
+      "etfCode": "484880",
+      "inputHash": "sha256:2f4ceb51fbc9c051d38999db6964f66abce391ab2779690abf4628c8f23c7fd4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "486240": {
+      "etfCode": "486240",
+      "inputHash": "sha256:1fcef5bd4f1516cd9cce03b3ad8975c6b36049b728486a9e05444e4a66ecdf57",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "487130": {
+      "etfCode": "487130",
+      "inputHash": "sha256:4003ac8fb5911bd9552685d6a6c097a6f127c608e8d5887eb0a875058ec816f3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "487240": {
+      "etfCode": "487240",
+      "inputHash": "sha256:1f92ff2f3e13258617e080fabf492e5fa9301a987b6e5dfd626e9a27b9366a1e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "487750": {
+      "etfCode": "487750",
+      "inputHash": "sha256:b1a05f129b89481715cae38c6eebf5f3df3e5e9aed49c94aa2fb32700c0e24b9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "488080": {
+      "etfCode": "488080",
+      "inputHash": "sha256:6b8e1c54002130610f6f34485c2b33ec79fcc782e288e6776f936111903ddba7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "488200": {
+      "etfCode": "488200",
+      "inputHash": "sha256:1a78fa4f26032e4fd5fc3fba312072a8afb97ff1d37cdf50d62fba3e9931dc7f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "488210": {
+      "etfCode": "488210",
+      "inputHash": "sha256:bcbf703290791a045bb2dadcb38bc39dcc1db43c0faeb58eb0ca8bbc4de89d10",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "489030": {
+      "etfCode": "489030",
+      "inputHash": "sha256:1b6cc6539f93fe884d7977be39eb0a05cdc04ffa571b99e30ee2c2814a281924",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "490480": {
+      "etfCode": "490480",
+      "inputHash": "sha256:6b8f53c08a28b947bcbd98d0abcb5b32f0460070d989ed1fee12a981b9d568e8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "491220": {
+      "etfCode": "491220",
+      "inputHash": "sha256:3e34c9e1bc2cc496c57c0ca994256e7613fb89d9a281531be533e23bf7221c7c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "491510": {
+      "etfCode": "491510",
+      "inputHash": "sha256:6fff1668386d65293b69327b0a39e3d92594e527f83fc6b18b5ae4ec3ba16536",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "491700": {
+      "etfCode": "491700",
+      "inputHash": "sha256:20a40cb290e8964c0bee3ec03da92580b5a83922194ffce35d698fa2f7d58cb6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "491820": {
+      "etfCode": "491820",
+      "inputHash": "sha256:4980e1562bdcee769788a129dac3186602029aeb34ae8a0b676dad282cd6faa2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "494220": {
+      "etfCode": "494220",
+      "inputHash": "sha256:89eacc1fa74609d056d6a072153dd240e635720636b2cadefb532c580356f41e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "494310": {
+      "etfCode": "494310",
+      "inputHash": "sha256:43db93b997b8d543cdf601507960e9cdb7aba05a4e197aaaec4db74d8b43e247",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "494330": {
+      "etfCode": "494330",
+      "inputHash": "sha256:f977963732e3b8900d6d6d22704d8d0b0442a089b8e513e2bbd7ed43da852cd3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "494670": {
+      "etfCode": "494670",
+      "inputHash": "sha256:5317d0cf4e77095a411bd475f4938a38323ca68420a9deba304f1215bed4c4da",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "494890": {
+      "etfCode": "494890",
+      "inputHash": "sha256:3a73ab44b77151e028c4bb88e6b6ebc9226ff7d2baa829bd86151e50d93d55a8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "495040": {
+      "etfCode": "495040",
+      "inputHash": "sha256:6c111a611043b096135813a6d512c4a4910b48d6c76e05e49bedd36d49936f23",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "495050": {
+      "etfCode": "495050",
+      "inputHash": "sha256:2f15b1816b9325daa7287c977cc63c777f7d2a25492f861ef6d76ce5f8b13f38",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "495060": {
+      "etfCode": "495060",
+      "inputHash": "sha256:737655b7c1cdd70ebe35b9416bd9fd7f488586a8f4cd1dec7cda19707163af99",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "495230": {
+      "etfCode": "495230",
+      "inputHash": "sha256:15b8785470eb7d16e51b29069ceb5cb36a2104578e4427449d2db23dcd32f2eb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "495330": {
+      "etfCode": "495330",
+      "inputHash": "sha256:ebe951f0b62be3b482482fe4a9d224469423fe2a7e52bf95bc29723f214690c1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.086Z",
+      "batchId": "batch-0017"
+    },
+    "495550": {
+      "etfCode": "495550",
+      "inputHash": "sha256:ac30eae53bf9d9ddc8e1fea3e3887c15dbfb40f9f598028e1d10340975f46240",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "495750": {
+      "etfCode": "495750",
+      "inputHash": "sha256:00e0edddf157c163b97d962999da68f3f04c92ed6b95619657f9788b5ab04b2b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "495850": {
+      "etfCode": "495850",
+      "inputHash": "sha256:dd9521bd28896b8303ecd04d3453b631d9e38432de50c95cb2fd62f25f72ff8c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "496080": {
+      "etfCode": "496080",
+      "inputHash": "sha256:5bc4fd1149089b719924dad77750ea48b2ce652245150a8242d4164dcb884e55",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "496090": {
+      "etfCode": "496090",
+      "inputHash": "sha256:0d7d848c7bf91bf4d4b8764c1bf806e159e7565631cf3f67e468c4362d55ca8f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "496120": {
+      "etfCode": "496120",
+      "inputHash": "sha256:3f60e4d085a7b6e87e2d58113710079018f9507791b82a70432891c0d3c55be9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "496130": {
+      "etfCode": "496130",
+      "inputHash": "sha256:25f4680e31bb75b23b070934080eb6da815d0474556a0782469998d7ba2bc2b9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "498050": {
+      "etfCode": "498050",
+      "inputHash": "sha256:3cb465bda73335fd416ae03a6a8ac2a5a1677f174912422aeac846d7509489cd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "498400": {
+      "etfCode": "498400",
+      "inputHash": "sha256:0a0484e4a0bf7e83061d6098cbeb8fc74cef1cc0a288c19dc4c070088c5a6ece",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "498410": {
+      "etfCode": "498410",
+      "inputHash": "sha256:0a6a4babae81bbcf1fd9de81b09ce88c84b2c922462c1b305ec4c6a54df0feb8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.088Z",
+      "batchId": "batch-0018"
+    },
+    "498860": {
+      "etfCode": "498860",
+      "inputHash": "sha256:ead0d66d6d4ac197c9cfb52b8cf611cf0b227e8762edefb07dbd6d7d50f148ba",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.089Z",
+      "batchId": "batch-0018"
+    },
+    "0000D0": {
+      "etfCode": "0000D0",
+      "inputHash": "sha256:2be0ef53b46c1a251c79bae0a888127043764feb72210f1fe6d898878b8445fa",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.019Z",
+      "batchId": "batch-0001"
+    },
+    "0000Y0": {
+      "etfCode": "0000Y0",
+      "inputHash": "sha256:01820e934aee4bc935588eaa8f59fec6477725d59994a39c997057fb48981b9e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.021Z",
+      "batchId": "batch-0001"
+    },
+    "0005D0": {
+      "etfCode": "0005D0",
+      "inputHash": "sha256:839e26dae4c59ddc460b2c1f44e5fdf165ff05c4704393a60060bfd2235cb503",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.021Z",
+      "batchId": "batch-0001"
+    },
+    "0005G0": {
+      "etfCode": "0005G0",
+      "inputHash": "sha256:b39993f43ed7d03cf29b29accb37fbef614eb90216731fbce3135a7efcc72938",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.021Z",
+      "batchId": "batch-0001"
+    },
+    "0026S0": {
+      "etfCode": "0026S0",
+      "inputHash": "sha256:98fa6e4252cb5866e40d143d0ec4276550776993edd96160a36b3f469ba4de22",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.021Z",
+      "batchId": "batch-0001"
+    },
+    "0049K0": {
+      "etfCode": "0049K0",
+      "inputHash": "sha256:9de44ebc173d1fd03a7084e04b89ff4813bd53ada111d453d72222e356bcd3f7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.021Z",
+      "batchId": "batch-0001"
+    },
+    "0052D0": {
+      "etfCode": "0052D0",
+      "inputHash": "sha256:fe369a938ba0d46a093d41b5aa946e90ea790a03e03f729f7a80e68adb8e2327",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.022Z",
+      "batchId": "batch-0001"
+    },
+    "0080G0": {
+      "etfCode": "0080G0",
+      "inputHash": "sha256:205d90be372ded4d228585cfdc3f2aeb92dc66319f6af35a635a7706dca324dd",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.022Z",
+      "batchId": "batch-0001"
+    },
+    "0080Y0": {
+      "etfCode": "0080Y0",
+      "inputHash": "sha256:243ac989fef69dd955617849c9df326bb9efc132af4eec7db91cc9af72f57568",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.022Z",
+      "batchId": "batch-0001"
+    },
+    "0086B0": {
+      "etfCode": "0086B0",
+      "inputHash": "sha256:6c1f0a9003695809c69779a7372ea2c3b32b0cfc08de6ead9082cc644b7feb3e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.022Z",
+      "batchId": "batch-0001"
+    },
+    "0089D0": {
+      "etfCode": "0089D0",
+      "inputHash": "sha256:9f429825959e3e8cbc7e4e905311a0caf0bc26bdd0d1c198bb38fcebbc7f297b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.022Z",
+      "batchId": "batch-0001"
+    },
+    "0094M0": {
+      "etfCode": "0094M0",
+      "inputHash": "sha256:1c7456cfeae754114a10878d48efc4a639f57f10af9d5f073485a29593df6cc4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.022Z",
+      "batchId": "batch-0001"
+    },
+    "0101N0": {
+      "etfCode": "0101N0",
+      "inputHash": "sha256:8f62aa082cafd624ce896973ff3cdf797e7b9974da82c35a9d3c48e55dfb439b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "0117V0": {
+      "etfCode": "0117V0",
+      "inputHash": "sha256:538f5612c55c3d45a4fede428d68b34672d23455836ab5c72229c8d2df81657f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "0150K0": {
+      "etfCode": "0150K0",
+      "inputHash": "sha256:8714a6204e6e6785c37b02bfb335085399aa31d32ca711030e27cc4cb3cb4637",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "0154F0": {
+      "etfCode": "0154F0",
+      "inputHash": "sha256:fb99d014d9fc704662b2fa7e004240291571efa22599b39743083f084d92f4c6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "0177R0": {
+      "etfCode": "0177R0",
+      "inputHash": "sha256:b814d401b9004080febcb83fa3ca3e88d150685aef955112e68f00a53d3c0eaa",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "0193L0": {
+      "etfCode": "0193L0",
+      "inputHash": "sha256:f4b4005c6e1b9ff00e6a92c69c23a596bc4b8ab67bed15d1e00eddff7dbf5517",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "069500": {
+      "etfCode": "069500",
+      "inputHash": "sha256:54aab7a0e58802bc2720792d44664b1b94665a3e75e94337d5a4680ae93748e7",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.027Z",
+      "batchId": "batch-0002"
+    },
+    "0000J0": {
+      "etfCode": "0000J0",
+      "inputHash": "sha256:d6434cb5c1fb1027bc5f9e04c0590635d05dd1ca1b4aec1840d8ae88dba2c469",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0000Z0": {
+      "etfCode": "0000Z0",
+      "inputHash": "sha256:f5b8ed33d1ab625f25518f92a2d566b1eabbce35a003a75056e923c9347cb647",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0001P0": {
+      "etfCode": "0001P0",
+      "inputHash": "sha256:313bd0473aed2dc2bbef7c8971c94ed86dddfc00d9ae48d4faafe6c7c138449e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0007N0": {
+      "etfCode": "0007N0",
+      "inputHash": "sha256:010bf00bc0111a707836d7a25eccd9f8ff76326a9f404441f93755bfb8b6f3f1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0008T0": {
+      "etfCode": "0008T0",
+      "inputHash": "sha256:220c7f7110b6344e42c65597baffd07062db638ba95ee24cfc0223e70df988fe",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0018C0": {
+      "etfCode": "0018C0",
+      "inputHash": "sha256:713acda7196ce84dc36ee397703d31ba196641e907f02e9389933b44ad63f5e5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0053M0": {
+      "etfCode": "0053M0",
+      "inputHash": "sha256:22e772801777cf4dbb2a3f1209f7cc3c2efc3b808765e2e4b6f6a8073c462726",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0074K0": {
+      "etfCode": "0074K0",
+      "inputHash": "sha256:ca9645fc78847520588cf76a21ce76cf6a6361deda5ea66ed846629cd93d6dbf",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0086C0": {
+      "etfCode": "0086C0",
+      "inputHash": "sha256:e94532c405bb5e265f1bd345cbb6def7ac721ae01f9563b335133801c2e61ce2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0088N0": {
+      "etfCode": "0088N0",
+      "inputHash": "sha256:2a05cb69c52b36065d3f0735d3dc6816a173f651bcf9c3a2771ff55cce34e93d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0090B0": {
+      "etfCode": "0090B0",
+      "inputHash": "sha256:0e70dee8a81178868f02bb72bcd6f5bfc249067b5178457007cec7408e6ff511",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0091P0": {
+      "etfCode": "0091P0",
+      "inputHash": "sha256:54e38a1920603074ea698fd7d49c6a401f4b7af1499284ffa0898905925ae0b8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0092B0": {
+      "etfCode": "0092B0",
+      "inputHash": "sha256:a8ab62fddc0542d9df8ee68896c1bb90187bffffe19800e137823b08cd585ac4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0093A0": {
+      "etfCode": "0093A0",
+      "inputHash": "sha256:a36f7ee31e5fa406abaa93388afda549e0347867eec42671cecb549934644df9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0098F0": {
+      "etfCode": "0098F0",
+      "inputHash": "sha256:3614a4f1fbae4e6b87799075b0600e871a3170f3c7933d05e0f8f478fb089ba0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.036Z",
+      "batchId": "batch-0003"
+    },
+    "0098N0": {
+      "etfCode": "0098N0",
+      "inputHash": "sha256:7409977fcfb0fc385e6422e18a85427457e5729164b1132e8790e3d15d56412a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0098Z0": {
+      "etfCode": "0098Z0",
+      "inputHash": "sha256:acd2ffa238fd73ebacc06d0a721a1c96fbe37cdb4f097e45ae2ee6b76d1bc20e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0100K0": {
+      "etfCode": "0100K0",
+      "inputHash": "sha256:237da0f79939dd59a12bd4d40a50cb03a2a3e805d5ee2280357777ce9441aa93",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0103T0": {
+      "etfCode": "0103T0",
+      "inputHash": "sha256:12ca6bb03b9f143719bdb99a0d0987059b239b58a7a5a34bb97630d3e9e92f6b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0104G0": {
+      "etfCode": "0104G0",
+      "inputHash": "sha256:be4d180be0863da020ba66a3115a13bd81d94dd0606a250dadbfe41466c05ac3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0104N0": {
+      "etfCode": "0104N0",
+      "inputHash": "sha256:2ecae60240cfb22ad08f2b658b6fd4f967c85ee04e62f360431fb9bec1a5803a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0104P0": {
+      "etfCode": "0104P0",
+      "inputHash": "sha256:f23046913fac6171f597cafdc81802b11225e7aed112074ef215bb662933d6ce",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0105D0": {
+      "etfCode": "0105D0",
+      "inputHash": "sha256:1f2c080d27ea3de0565e96ddb2a506a07309de68e3d0eb82cee33e9782e9880e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0105E0": {
+      "etfCode": "0105E0",
+      "inputHash": "sha256:2687290595c11fd79dc37005abcda3acdd541de668ac526f6503a8f088c9564a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0111J0": {
+      "etfCode": "0111J0",
+      "inputHash": "sha256:790029fd30f75c701a4e13f3e418933c7a206c0b5f0c9abe41d734b9c6f2946d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0112X0": {
+      "etfCode": "0112X0",
+      "inputHash": "sha256:ae857fc0d23257c9330d99dd9d70ba73fe16ad59f71e7cc0978bdd4a90564a88",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0115D0": {
+      "etfCode": "0115D0",
+      "inputHash": "sha256:2ca78b56e5b93ab305d1db3005dd7435f44cd9b2476d7e70a0b20208c5794f5e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0115E0": {
+      "etfCode": "0115E0",
+      "inputHash": "sha256:4a30cc305e2adeabbd3eb1004c644125270524980a97707d84796353ec0e0304",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0120J0": {
+      "etfCode": "0120J0",
+      "inputHash": "sha256:20f41c53e5f8b062c362c28e134d85d041c31bfb01c499eab98526afd984aa7d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0138D0": {
+      "etfCode": "0138D0",
+      "inputHash": "sha256:cb59194fef6454479eeff568a4bd0faef95ce0165b33e085b7e78c2013b684e1",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0139P0": {
+      "etfCode": "0139P0",
+      "inputHash": "sha256:0d7b6f86539a136ed8016fe6ef3a565beadbcd4587b8ed15a571f43e30bee42d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0141S0": {
+      "etfCode": "0141S0",
+      "inputHash": "sha256:fc6a618c964c75931534d1f64f9e6afdcb62a0511f221c2882a20c269dd37e4c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0148J0": {
+      "etfCode": "0148J0",
+      "inputHash": "sha256:ce37313ad86a6316e1c6121bf24cc631d5f5ce4acae3845d96473cf900b76d41",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0151P0": {
+      "etfCode": "0151P0",
+      "inputHash": "sha256:ec09413f67f8401826571a5fa19f67a71a935d86380bea735f5d53d890bf3507",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0152E0": {
+      "etfCode": "0152E0",
+      "inputHash": "sha256:1e0b752cc7ff7bd69d985070fad8ac3059654f33160c30e29ec6dc1e147dc9a0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0153K0": {
+      "etfCode": "0153K0",
+      "inputHash": "sha256:3de19385f54d41c803b32f76b5a4c57c60096eeb53c83b22552b299f1959cf70",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0153P0": {
+      "etfCode": "0153P0",
+      "inputHash": "sha256:1ea65a3b8799fb2e4671bc242d1aaf4db56240f9e64daf83b3c29cc114be3bc9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0155N0": {
+      "etfCode": "0155N0",
+      "inputHash": "sha256:41685fa3501705591c5d7c18186fc5a82f0d506f1425dc31e1658bb27fc0ab54",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0162Y0": {
+      "etfCode": "0162Y0",
+      "inputHash": "sha256:31f48ed8a0f0936b4ead8248da6bd7d59fb7132d54b36e23a80136bd636cdfba",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0163Y0": {
+      "etfCode": "0163Y0",
+      "inputHash": "sha256:7674a4e7962e1de8372bc555e9bed59a79453618b6c099ae98cefcae704c2584",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0166N0": {
+      "etfCode": "0166N0",
+      "inputHash": "sha256:2f3f1d858c23fa234678701b1ec5f86e95b4bffb9caf7ba3ffa60594ca5b17d8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0166S0": {
+      "etfCode": "0166S0",
+      "inputHash": "sha256:fb7ba49b319779af999e4ddfc696d65362d20a85cc3a5a47c3b70533302caea9",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0167A0": {
+      "etfCode": "0167A0",
+      "inputHash": "sha256:ee4afb921faf3b3f371244ba2c327abc51b71a619200d07bbe7d45be6e41344f",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0167B0": {
+      "etfCode": "0167B0",
+      "inputHash": "sha256:13458ef58c902a94d60cb8521df541dc64f420103b8f435b3df22777f2395e8a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0168K0": {
+      "etfCode": "0168K0",
+      "inputHash": "sha256:8314bbae145d3474738eeda48494bd8709c9001e51344f3d644b74794d470c7b",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.039Z",
+      "batchId": "batch-0004"
+    },
+    "0172Y0": {
+      "etfCode": "0172Y0",
+      "inputHash": "sha256:8a0a52d023383e30cde201f68f82e5aea158758ef6837d8f78fc5b0d13a6b3f3",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.042Z",
+      "batchId": "batch-0005"
+    },
+    "0174J0": {
+      "etfCode": "0174J0",
+      "inputHash": "sha256:c42308dddf0c6414cb1c59e819291fb3553f9032c8065027a42aab3041bc859e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.042Z",
+      "batchId": "batch-0005"
+    },
+    "0176P0": {
+      "etfCode": "0176P0",
+      "inputHash": "sha256:97d1641cd2ab642ff8c093f7dda57233be34f0ed174f4a76e7532453ff98e4b0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.042Z",
+      "batchId": "batch-0005"
+    },
+    "0177A0": {
+      "etfCode": "0177A0",
+      "inputHash": "sha256:08cfc418a14108d4a3bb497d850117c180dc0c4049c73943e73ea8c29b559107",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.042Z",
+      "batchId": "batch-0005"
+    },
+    "0177X0": {
+      "etfCode": "0177X0",
+      "inputHash": "sha256:9963ea4c29d2b657f1eaf4d1e0fb594bff7ea96d61ee8547fc4baccbf6343dd4",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.042Z",
+      "batchId": "batch-0005"
+    },
+    "0182R0": {
+      "etfCode": "0182R0",
+      "inputHash": "sha256:a8c0a0761ecd41a16a77a94c6395571f78ec98839ff7674cdff5498c8fd5dd79",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0184V0": {
+      "etfCode": "0184V0",
+      "inputHash": "sha256:31f158db33259275dcda5852358ed9ae5be27f6b681dbe486b027b87e2b85fdc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0189Z0": {
+      "etfCode": "0189Z0",
+      "inputHash": "sha256:b4f6dc3ad6dca22ad78595a428217f9f78d58a818f28e8155717cefc8b9b8a9d",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0190C0": {
+      "etfCode": "0190C0",
+      "inputHash": "sha256:b521eda004bc6a53635f812f710f72416c9bbffaa5ff15b40de622934e8719fc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0190G0": {
+      "etfCode": "0190G0",
+      "inputHash": "sha256:ea7ce71770deb0fd6e5c632c7f9fc94db880caf0493370cd7473c37658a399e2",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0191B0": {
+      "etfCode": "0191B0",
+      "inputHash": "sha256:16e68d05d07aef5e64ab33a20bbc725dc0fdeec929f140da23c3bfce45f38835",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0191S0": {
+      "etfCode": "0191S0",
+      "inputHash": "sha256:e0a84fa13ae8b7ebdf13ccd534114c64bd734a935ccc2a75dffad0c70f5cb73a",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0192L0": {
+      "etfCode": "0192L0",
+      "inputHash": "sha256:b845265a57339e51db721c941d556ec1dc94e67c849595e1a44d5dc1057b75ee",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0192M0": {
+      "etfCode": "0192M0",
+      "inputHash": "sha256:a5b49eb94297a76aefda20c8dc768a1087373860df659d7404eea072e17658c0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0192T0": {
+      "etfCode": "0192T0",
+      "inputHash": "sha256:5beb624ea67367555cd51802231c13ced5707b72cdc3d07ce5085dc12aa77e25",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0193G0": {
+      "etfCode": "0193G0",
+      "inputHash": "sha256:4eeea0ec078e697180b2ef05e826a98bd25a3a1a49876cd674598c7dc06dd081",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0193K0": {
+      "etfCode": "0193K0",
+      "inputHash": "sha256:9aed8b5149eadf1308240873524f011c95c896e82941891466b322c56ff8edbc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0193T0": {
+      "etfCode": "0193T0",
+      "inputHash": "sha256:db1fd1613b24b1f0da225a76ae3ef9d7bc3bf5ef5744fc534188b67ae96702aa",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0193W0": {
+      "etfCode": "0193W0",
+      "inputHash": "sha256:3bf9cd6e2684811ccacbd8a7e3b7059e965076debbfacb53591894f2d52f0550",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0194M0": {
+      "etfCode": "0194M0",
+      "inputHash": "sha256:64b6092d06c6b0c3020e8aa6a789e1755e2b56351ae02ef7b6f8b706ed15dc0c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0194N0": {
+      "etfCode": "0194N0",
+      "inputHash": "sha256:100525b82e823bf97660810f718d959843f4ffd4aa4897a814988bd11b74cb01",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0194R0": {
+      "etfCode": "0194R0",
+      "inputHash": "sha256:1fac7e1a6009eb163366d3ca78b6b52b99ed86ba6d867a2b1af961c62228c38c",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0194T0": {
+      "etfCode": "0194T0",
+      "inputHash": "sha256:71dd3ace5b79d67c156eb4f690f999f512736d14fc12e2da88ee6c034447b17e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0195R0": {
+      "etfCode": "0195R0",
+      "inputHash": "sha256:41e5d91fb7a9aa40f63edf4d421e08cd03db12277684c8c29a232ae38466256e",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0195S0": {
+      "etfCode": "0195S0",
+      "inputHash": "sha256:c8fea6ffe6073f4e15da4e14c9fca978cf2c58c0a67b7f9a965310926663c533",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0197W0": {
+      "etfCode": "0197W0",
+      "inputHash": "sha256:2093fcad8040182e0df5cd4463eaae3a40cfb09fb753407bd991cca086eeba53",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0198A0": {
+      "etfCode": "0198A0",
+      "inputHash": "sha256:17de156bd4317bd400f1dd6050c909f751c60e16f3726daf036ff4f755965edc",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0198B0": {
+      "etfCode": "0198B0",
+      "inputHash": "sha256:821fc6238256c15fbe3b37d62112d2f00936561df26ac25e485077b1ae0524de",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0198D0": {
+      "etfCode": "0198D0",
+      "inputHash": "sha256:639b93f007c18ae79d3b955c4f6afb70531fe280ca9a455945c696510efe6678",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0199C0": {
+      "etfCode": "0199C0",
+      "inputHash": "sha256:5438ab4afaab899f44b8f07bee1b6848fabceb4995f99314b37c6a3c004ac550",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.043Z",
+      "batchId": "batch-0005"
+    },
+    "0204S0": {
+      "etfCode": "0204S0",
+      "inputHash": "sha256:b44d40ec72314d3b69e9ed5a7534f2e280291a35a3000c9c95b671014d613f47",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0207G0": {
+      "etfCode": "0207G0",
+      "inputHash": "sha256:0d45aa942597d25e9d251f2736cb7df24f61176bbc08fdeeff118224e6ce7a02",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0208N0": {
+      "etfCode": "0208N0",
+      "inputHash": "sha256:4b5817374cc3a03dd9f7175bab8700a17fc182b8ddd0043b0320a0d284dea0bb",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0209D0": {
+      "etfCode": "0209D0",
+      "inputHash": "sha256:2913a7a91cddc1edc2fd96cb306e167b62b382086f8dbc24a320c070ee824961",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0209Z0": {
+      "etfCode": "0209Z0",
+      "inputHash": "sha256:7dd4d66c9ac2e275cbd1e93c0b364d15497a62bdc025a5575f75e8a0f4bfdcca",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0210A0": {
+      "etfCode": "0210A0",
+      "inputHash": "sha256:96a73f473a4315b778d9936533b5186c78d1c691aa6c675bc79ea2165dee8757",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0210E0": {
+      "etfCode": "0210E0",
+      "inputHash": "sha256:1b2fde4e6e44dd7a7a56c5e9040f42786202c846ce20e6c9b7252d42cb336248",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "0216Z0": {
+      "etfCode": "0216Z0",
+      "inputHash": "sha256:71d6a75cca3dcf97914260c7f6ca6241d164a69785ef6684d874ced4252b45d0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.047Z",
+      "batchId": "batch-0006"
+    },
+    "069660": {
+      "etfCode": "069660",
+      "inputHash": "sha256:fc34dedc67e01e3b35ec25b5c00dba113683d5e3479efaee012fb13af5eb8de0",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "091160": {
+      "etfCode": "091160",
+      "inputHash": "sha256:79328604f0e7c431d28f17396c604e18823711b9541965345f96cabfee656ff8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "091170": {
+      "etfCode": "091170",
+      "inputHash": "sha256:88d4f3fd8ed9a89bd867ca0b10a4e74c8f67d3e2c18b261197480112e4f0d397",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "091180": {
+      "etfCode": "091180",
+      "inputHash": "sha256:b50c74d7f71d16d73920d8164490739111420852c89e589790212a321be98eb6",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "091220": {
+      "etfCode": "091220",
+      "inputHash": "sha256:e36d3eacf24fda82dbe7cc077ace9accabcd3823fb9f54033ed75ec0bd2032e8",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    },
+    "091230": {
+      "etfCode": "091230",
+      "inputHash": "sha256:e0e6358966f45849f940eff0e6823498ab8bcb6224e3efc3f23a47aba447fec5",
+      "taxonomyVersion": "1.0.0",
+      "workerPromptVersion": "1.0.0",
+      "scoringMethod": "claude-code-subagent",
+      "scoredAt": "2026-07-16T00:47:00.048Z",
+      "batchId": "batch-0006"
+    }
+  }
+}

@@ -1,8 +1,10 @@
 // 로컬 정적 서버 (Fable 소유) — 외부 의존성 없음
+// /api 요청은 데이터 공급 API 라우터로 위임한다(통합 서버 server/index.js 와 동일 동작).
 import http from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { handleApiRequest } from '../server/routes/api.js';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const port = Number(process.env.PORT) || 4173;
@@ -19,6 +21,7 @@ const MIME = {
 
 http.createServer(async (req, res) => {
   try {
+    if (await handleApiRequest(req, res)) return;
     const urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     const rel = urlPath === '/' ? 'index.html' : urlPath.replace(/^\/+/, '');
     const filePath = normalize(join(root, rel));

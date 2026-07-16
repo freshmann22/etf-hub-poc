@@ -1,0 +1,3844 @@
+{
+  "generatedAt": "2026-07-16T00:47:00.276Z",
+  "taxonomyVersion": "1.0.0",
+  "filters": {
+    "sector.financials": [
+      {
+        "etfCode": "0089D0",
+        "score": 0.95,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "0154F0",
+        "score": 0.95,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "284980",
+        "score": 0.95,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "091170",
+        "score": 0.93,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "091220",
+        "score": 0.93,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "157500",
+        "score": 0.92,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "484880",
+        "score": 0.92,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "498410",
+        "score": 0.9,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "498860",
+        "score": 0.9,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "140700",
+        "score": 0.9,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "466940",
+        "score": 0.9,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "139270",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "102970",
+        "score": 0.9,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0189Z0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0111J0",
+        "score": 0.85,
+        "confidence": 0.55
+      }
+    ],
+    "strategy.inverse": [
+      {
+        "etfCode": "0193L0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "114800",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "145670",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "230480",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252410",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252420",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252670",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252710",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253160",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253230",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253240",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "261120",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "261260",
+        "score": 1,
+        "confidence": 1
+      }
+    ],
+    "strategy.leverage": [
+      {
+        "etfCode": "0080Y0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0100K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104G0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0192L0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0192M0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0193K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0193L0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0193T0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0193W0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0194M0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0194N0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0194R0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0194T0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0195R0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0195S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0197W0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0198B0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0198D0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "122630",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "123320",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "152500",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "225800",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "230480",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "233160",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "233740",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "243880",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "243890",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252400",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252420",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252670",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "252710",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253150",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253160",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253230",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "253250",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "261110",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "261120",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "261250",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "261260",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "267770",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "278240",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "291630",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "304780",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "306530",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "306950",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "412560",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "412570",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "462330",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "488080",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "494310",
+        "score": 1,
+        "confidence": 1
+      }
+    ],
+    "sector.commodities": [
+      {
+        "etfCode": "132030",
+        "score": 0.95,
+        "confidence": 0.8
+      }
+    ],
+    "strategy.nasdaq100": [
+      {
+        "etfCode": "133690",
+        "score": 1,
+        "confidence": 0.95
+      },
+      {
+        "etfCode": "379810",
+        "score": 1,
+        "confidence": 0.95
+      }
+    ],
+    "strategy.consumer_discretionary": [
+      {
+        "etfCode": "139290",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "266390",
+        "score": 0.85,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "466930",
+        "score": 0.78,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "228800",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "091180",
+        "score": 0.75,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "138540",
+        "score": 0.72,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "388280",
+        "score": 0.7,
+        "confidence": 0.55
+      }
+    ],
+    "sector.semiconductor": [
+      {
+        "etfCode": "091160",
+        "score": 0.97,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "396500",
+        "score": 0.96,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0093A0",
+        "score": 0.95,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "0177R0",
+        "score": 0.95,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "395160",
+        "score": 0.95,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "469150",
+        "score": 0.95,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "475300",
+        "score": 0.95,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "475310",
+        "score": 0.95,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "0005G0",
+        "score": 0.93,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "455850",
+        "score": 0.93,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "474590",
+        "score": 0.93,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "476260",
+        "score": 0.93,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "091230",
+        "score": 0.93,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "395270",
+        "score": 0.93,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0182R0",
+        "score": 0.92,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "0190G0",
+        "score": 0.92,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "471990",
+        "score": 0.92,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0167A0",
+        "score": 0.92,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0176P0",
+        "score": 0.9,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "388420",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "471760",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "488080",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "494310",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0210A0",
+        "score": 0.9,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "488210",
+        "score": 0.88,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "494220",
+        "score": 0.88,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0192L0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0193T0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0194T0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0195S0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0197W0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "243880",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "261060",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "487750",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0204S0",
+        "score": 0.85,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "266370",
+        "score": 0.85,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "471780",
+        "score": 0.85,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "367760",
+        "score": 0.8,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "365040",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "482030",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "486240",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139260",
+        "score": 0.72,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "363580",
+        "score": 0.72,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "380340",
+        "score": 0.72,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "487130",
+        "score": 0.7,
+        "confidence": 0.55
+      }
+    ],
+    "sector.healthcare_bio_pharma": [
+      {
+        "etfCode": "244580",
+        "score": 0.95,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "0001P0",
+        "score": 0.95,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "227540",
+        "score": 0.95,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "261070",
+        "score": 0.95,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "364970",
+        "score": 0.93,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "0000Z0",
+        "score": 0.93,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "203780",
+        "score": 0.92,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "462900",
+        "score": 0.92,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0184V0",
+        "score": 0.9,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "498050",
+        "score": 0.9,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "143860",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "253280",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "463050",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0168K0",
+        "score": 0.9,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "266420",
+        "score": 0.88,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "307510",
+        "score": 0.85,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "464610",
+        "score": 0.8,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "483020",
+        "score": 0.78,
+        "confidence": 0.55
+      }
+    ],
+    "sector.it": [
+      {
+        "etfCode": "157490",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "363580",
+        "score": 0.8,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0105D0",
+        "score": 0.78,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "365000",
+        "score": 0.72,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "427120",
+        "score": 0.68,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "326240",
+        "score": 0.65,
+        "confidence": 0.5
+      }
+    ],
+    "dividend.korea_high_dividend": [
+      {
+        "etfCode": "0089D0",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "161510",
+        "score": 0.85,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "498860",
+        "score": 0.85,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "0052D0",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "210780",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "445910",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "251590",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0105E0",
+        "score": 0.75,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0139P0",
+        "score": 0.75,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0153K0",
+        "score": 0.75,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "279530",
+        "score": 0.75,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0199C0",
+        "score": 0.72,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "322410",
+        "score": 0.72,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "466940",
+        "score": 0.72,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0018C0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "211560",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "211900",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "498410",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0189Z0",
+        "score": 0.7,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "192720",
+        "score": 0.7,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "281990",
+        "score": 0.7,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0098N0",
+        "score": 0.68,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "489030",
+        "score": 0.68,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "325020",
+        "score": 0.65,
+        "confidence": 0.5
+      }
+    ],
+    "dividend.covered_call": [
+      {
+        "etfCode": "0000D0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0018C0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0094M0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104N0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104P0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0167B0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0176P0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0177R0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0190G0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0198A0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0199C0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0210E0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "166400",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "289480",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "290080",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "441640",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "472150",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "475720",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "489030",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "498400",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "498410",
+        "score": 1,
+        "confidence": 1
+      }
+    ],
+    "strategy.value": [
+      {
+        "etfCode": "447430",
+        "score": 0.65,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "244670",
+        "score": 0.65,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "227570",
+        "score": 0.6,
+        "confidence": 0.45
+      }
+    ],
+    "sector.game_entertainment_media": [
+      {
+        "etfCode": "364990",
+        "score": 0.93,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "228810",
+        "score": 0.93,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "300950",
+        "score": 0.93,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "475050",
+        "score": 0.93,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "300610",
+        "score": 0.92,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "395280",
+        "score": 0.92,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "395290",
+        "score": 0.92,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "300640",
+        "score": 0.91,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "395150",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "266360",
+        "score": 0.85,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "400970",
+        "score": 0.7,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "401470",
+        "score": 0.65,
+        "confidence": 0.5
+      }
+    ],
+    "sector.ev_battery": [
+      {
+        "etfCode": "461950",
+        "score": 0.97,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "455860",
+        "score": 0.95,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "0005D0",
+        "score": 0.95,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "364980",
+        "score": 0.93,
+        "confidence": 0.8
+      },
+      {
+        "etfCode": "305540",
+        "score": 0.93,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "305720",
+        "score": 0.93,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "422420",
+        "score": 0.93,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "465330",
+        "score": 0.92,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "412570",
+        "score": 0.9,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "466810",
+        "score": 0.9,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "462010",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "462330",
+        "score": 0.9,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0209D0",
+        "score": 0.9,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "446700",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "385600",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0150K0",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "381560",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "488200",
+        "score": 0.72,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "482030",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "387280",
+        "score": 0.65,
+        "confidence": 0.5
+      }
+    ],
+    "strategy.growth": [
+      {
+        "etfCode": "365040",
+        "score": 0.6,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "325010",
+        "score": 0.6,
+        "confidence": 0.45
+      }
+    ],
+    "strategy.reit": [
+      {
+        "etfCode": "480460",
+        "score": 0.92,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0086B0",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "0086C0",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "0153P0",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "0174J0",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "329200",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "341850",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "429740",
+        "score": 0.9,
+        "confidence": 0.85
+      },
+      {
+        "etfCode": "476800",
+        "score": 0.9,
+        "confidence": 0.85
+      }
+    ],
+    "strategy.sp500": [
+      {
+        "etfCode": "0026S0",
+        "score": 1,
+        "confidence": 0.95
+      },
+      {
+        "etfCode": "360750",
+        "score": 1,
+        "confidence": 0.95
+      },
+      {
+        "etfCode": "379800",
+        "score": 1,
+        "confidence": 0.95
+      },
+      {
+        "etfCode": "441640",
+        "score": 1,
+        "confidence": 0.95
+      }
+    ],
+    "sector.clean_energy": [
+      {
+        "etfCode": "457990",
+        "score": 0.85,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "377990",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "385510",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "404120",
+        "score": 0.72,
+        "confidence": 0.55
+      }
+    ],
+    "sector.aerospace_defense": [
+      {
+        "etfCode": "0080G0",
+        "score": 0.97,
+        "confidence": 0.9
+      },
+      {
+        "etfCode": "449450",
+        "score": 0.97,
+        "confidence": 0.9
+      },
+      {
+        "etfCode": "463250",
+        "score": 0.95,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "490480",
+        "score": 0.95,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "421320",
+        "score": 0.95,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0100K0",
+        "score": 0.93,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "0104G0",
+        "score": 0.93,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "0216Z0",
+        "score": 0.93,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0090B0",
+        "score": 0.92,
+        "confidence": 0.7
+      },
+      {
+        "etfCode": "0207G0",
+        "score": 0.88,
+        "confidence": 0.55
+      }
+    ],
+    "sector.ai_power_infrastructure": [
+      {
+        "etfCode": "0117V0",
+        "score": 0.92,
+        "confidence": 0.65
+      },
+      {
+        "etfCode": "487240",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0101N0",
+        "score": 0.82,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0209Z0",
+        "score": 0.82,
+        "confidence": 0.5
+      }
+    ],
+    "strategy.value_up": [
+      {
+        "etfCode": "495550",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "495750",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "495850",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "496080",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "496090",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "496120",
+        "score": 0.85,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0094M0",
+        "score": 0.8,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "495040",
+        "score": 0.8,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "495050",
+        "score": 0.8,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "495330",
+        "score": 0.8,
+        "confidence": 0.6
+      }
+    ],
+    "dividend.monthly": [
+      {
+        "etfCode": "0000D0",
+        "score": 0.85,
+        "confidence": 0.75
+      },
+      {
+        "etfCode": "0049K0",
+        "score": 0.85,
+        "confidence": 0.75
+      }
+    ]
+  },
+  "etfs": {
+    "102970": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.9,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "114800": {
+      "tags": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "122630": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "123320": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "132030": {
+      "tags": [
+        {
+          "tagId": "sector.commodities",
+          "score": 0.95,
+          "confidence": 0.8
+        }
+      ]
+    },
+    "133690": {
+      "tags": [
+        {
+          "tagId": "strategy.nasdaq100",
+          "score": 1,
+          "confidence": 0.95
+        }
+      ]
+    },
+    "138540": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.72,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "139260": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.72,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "139270": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "139290": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "140700": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.9,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "143860": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "145670": {
+      "tags": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "152500": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "157490": {
+      "tags": [
+        {
+          "tagId": "sector.it",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "157500": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.92,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "161510": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "166400": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "192720": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "203780": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.92,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "210780": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "211560": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "211900": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "225800": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "227540": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.95,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "227570": {
+      "tags": [
+        {
+          "tagId": "strategy.value",
+          "score": 0.6,
+          "confidence": 0.45
+        }
+      ]
+    },
+    "228800": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.75,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "228810": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.93,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "230480": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "233160": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "233740": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "243880": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "243890": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "244580": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.95,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "244670": {
+      "tags": [
+        {
+          "tagId": "strategy.value",
+          "score": 0.65,
+          "confidence": 0.45
+        }
+      ]
+    },
+    "251590": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "252400": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "252410": {
+      "tags": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "252420": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "252670": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "252710": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "253150": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "253160": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "253230": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "253240": {
+      "tags": [
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "253250": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "253280": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "261060": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "261070": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.95,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "261110": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "261120": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "261250": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "261260": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "266360": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.85,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "266370": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "266390": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.85,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "266420": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.88,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "267770": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "278240": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "279530": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "281990": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "284980": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.95,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "289480": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "290080": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "291630": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "300610": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.92,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "300640": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.91,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "300950": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.93,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "304780": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "305540": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.93,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "305720": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.93,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "306530": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "306950": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "307510": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.85,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "322410": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.72,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "325010": {
+      "tags": [
+        {
+          "tagId": "strategy.growth",
+          "score": 0.6,
+          "confidence": 0.45
+        }
+      ]
+    },
+    "325020": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.65,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "326240": {
+      "tags": [
+        {
+          "tagId": "sector.it",
+          "score": 0.65,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "329200": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "341850": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "360750": {
+      "tags": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95
+        }
+      ]
+    },
+    "363580": {
+      "tags": [
+        {
+          "tagId": "sector.it",
+          "score": 0.8,
+          "confidence": 0.6
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.72,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "364970": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.93,
+          "confidence": 0.8
+        }
+      ]
+    },
+    "364980": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.93,
+          "confidence": 0.8
+        }
+      ]
+    },
+    "364990": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.93,
+          "confidence": 0.8
+        }
+      ]
+    },
+    "365000": {
+      "tags": [
+        {
+          "tagId": "sector.it",
+          "score": 0.72,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "365040": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.75,
+          "confidence": 0.55
+        },
+        {
+          "tagId": "strategy.growth",
+          "score": 0.6,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "367760": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.8,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "377990": {
+      "tags": [
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "379800": {
+      "tags": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95
+        }
+      ]
+    },
+    "379810": {
+      "tags": [
+        {
+          "tagId": "strategy.nasdaq100",
+          "score": 1,
+          "confidence": 0.95
+        }
+      ]
+    },
+    "380340": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.72,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "381560": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.75,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "385510": {
+      "tags": [
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.75,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "385600": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "387280": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.65,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "388280": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "388420": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "395150": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "395160": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "395270": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.93,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "395280": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.92,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "395290": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.92,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "396500": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.96,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "400970": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.7,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "401470": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.65,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "404120": {
+      "tags": [
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.72,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "412560": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "412570": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.9,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "421320": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.95,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "422420": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.93,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "427120": {
+      "tags": [
+        {
+          "tagId": "sector.it",
+          "score": 0.68,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "429740": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "441640": {
+      "tags": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "445910": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "446700": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "447430": {
+      "tags": [
+        {
+          "tagId": "strategy.value",
+          "score": 0.65,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "449450": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.97,
+          "confidence": 0.9
+        }
+      ]
+    },
+    "455850": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.93,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "455860": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.95,
+          "confidence": 0.8
+        }
+      ]
+    },
+    "457990": {
+      "tags": [
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "461950": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.97,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "462010": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "462330": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "462900": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.92,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "463050": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "463250": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.95,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "464610": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.8,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "465330": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.92,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "466810": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.9,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "466930": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.78,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "466940": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.9,
+          "confidence": 0.65
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.72,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "469150": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "471760": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "471780": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "471990": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.92,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "472150": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "474590": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.93,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "475050": {
+      "tags": [
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.93,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "475300": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "475310": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "475720": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "476260": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.93,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "476800": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "480460": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.92,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "482030": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.75,
+          "confidence": 0.55
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "483020": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.78,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "484880": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.92,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "486240": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.75,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "487130": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "487240": {
+      "tags": [
+        {
+          "tagId": "sector.ai_power_infrastructure",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "487750": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "488080": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "488200": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.72,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "488210": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.88,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "489030": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.68,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "490480": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.95,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "494220": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.88,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "494310": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "495040": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.8,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "495050": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.8,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "495330": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.8,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "495550": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "495750": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "495850": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "496080": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "496090": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "496120": {
+      "tags": [
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "498050": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "498400": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "498410": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.9,
+          "confidence": 0.8
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "498860": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.9,
+          "confidence": 0.8
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "0000D0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 0.85,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0000Z0": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.93,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0001P0": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.95,
+          "confidence": 0.8
+        }
+      ]
+    },
+    "0005D0": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.95,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0005G0": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.93,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "0018C0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0026S0": {
+      "tags": [
+        {
+          "tagId": "strategy.sp500",
+          "score": 1,
+          "confidence": 0.95
+        }
+      ]
+    },
+    "0049K0": {
+      "tags": [
+        {
+          "tagId": "dividend.monthly",
+          "score": 0.85,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0052D0": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "0080G0": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.97,
+          "confidence": 0.9
+        }
+      ]
+    },
+    "0080Y0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0086B0": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "0086C0": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "0089D0": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.95,
+          "confidence": 0.85
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0090B0": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.92,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0093A0": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "0094M0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.8,
+          "confidence": 0.6
+        }
+      ]
+    },
+    "0098N0": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.68,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0100K0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.93,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0101N0": {
+      "tags": [
+        {
+          "tagId": "sector.ai_power_infrastructure",
+          "score": 0.82,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0104G0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.93,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0104N0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0104P0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0105D0": {
+      "tags": [
+        {
+          "tagId": "sector.it",
+          "score": 0.78,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0105E0": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0111J0": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.85,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0117V0": {
+      "tags": [
+        {
+          "tagId": "sector.ai_power_infrastructure",
+          "score": 0.92,
+          "confidence": 0.65
+        }
+      ]
+    },
+    "0139P0": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0150K0": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.75,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0153K0": {
+      "tags": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0153P0": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "0154F0": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.95,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0167A0": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.92,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0167B0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0168K0": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0174J0": {
+      "tags": [
+        {
+          "tagId": "strategy.reit",
+          "score": 0.9,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "0176P0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0177R0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0182R0": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.92,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0184V0": {
+      "tags": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0189Z0": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.85,
+          "confidence": 0.7
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0190G0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.92,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "0192L0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0192M0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0193K0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0193L0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0193T0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0193W0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0194M0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0194N0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0194R0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0194T0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0195R0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0195S0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0197W0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "0198A0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0198B0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0198D0": {
+      "tags": [
+        {
+          "tagId": "strategy.leverage",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0199C0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.72,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0204S0": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0207G0": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.88,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0209D0": {
+      "tags": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.9,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0209Z0": {
+      "tags": [
+        {
+          "tagId": "sector.ai_power_infrastructure",
+          "score": 0.82,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "0210A0": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "0210E0": {
+      "tags": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1
+        }
+      ]
+    },
+    "0216Z0": {
+      "tags": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.93,
+          "confidence": 0.55
+        }
+      ]
+    },
+    "091160": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.97,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "091170": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.93,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "091180": {
+      "tags": [
+        {
+          "tagId": "strategy.consumer_discretionary",
+          "score": 0.75,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "091220": {
+      "tags": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.93,
+          "confidence": 0.5
+        }
+      ]
+    },
+    "091230": {
+      "tags": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.93,
+          "confidence": 0.55
+        }
+      ]
+    }
+  }
+}

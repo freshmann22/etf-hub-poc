@@ -1,0 +1,432 @@
+{
+  "valid": true,
+  "perEtf": [
+    {
+      "etfCode": "0000D0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0000D0",
+        "classifications": [
+          {
+            "tagId": "dividend.covered_call",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "KEDI 엔비디아미국채30년타겟커버드콜혼합지수(TR)"
+              },
+              {
+                "type": "facts",
+                "text": "distribution.coveredCall=true"
+              },
+              {
+                "type": "facts",
+                "text": "nameHints: name_contains=커버드콜 (규칙 기반 확정치, 유지)"
+              }
+            ]
+          },
+          {
+            "tagId": "dividend.monthly",
+            "score": 0.8,
+            "confidence": 0.65,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "distribution",
+                "text": "scheduleText=\"매월 마지막 영업일\""
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "holdings 비어있음, benchmark/descriptions 상세 정보 부족(coverage.score=0.55) — 섹터 태그는 부여하지 않음(엔비디아+미국채 혼합 구조화 상품으로 단일종목 익스포저 근거만 있어 섹터 확정 보류)"
+        ]
+      }
+    },
+    {
+      "etfCode": "0000Y0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0000Y0",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "국내 크레딧/회사채",
+            "suggestedCategory": "strategy",
+            "score": 0.7,
+            "confidence": 0.6,
+            "reason": "benchmark=\"KAP 26-12 크레딧 채권 총수익지수(AA-이상)\", rawTypeText=\"국내채권형, 일반\" — 현재 taxonomy는 주식형 섹터/전략/배당 위주라 채권형(만기매칭형 크레딧 채권) ETF를 표현할 태그가 없음. 같은 배치의 0049K0(혼합형 채권 포함)에서도 유사 니즈가 반복됨."
+          }
+        ],
+        "warnings": [
+          "holdings 비어있고 국내 채권형 상품이라 sector/strategy/dividend 어떤 정규 태그도 실질적 근거로 부여할 수 없음"
+        ]
+      }
+    },
+    {
+      "etfCode": "0005D0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0005D0",
+        "classifications": [
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.95,
+            "confidence": 0.75,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성SDI 22.72%, 에코프로비엠 18.65%, 이수스페셜티케미컬 18.05%, 롯데에너지머티리얼즈 11.91%, 대주전자재료 9.84%, 포스코퓨처엠 6.58%, 레이크머티리얼즈 4.11%, 나노신소재 3.04%, 피엔티 3%, SFA넥셀 1.86% — 상위 10종목 전부 2차전지 셀/소재/장비 밸류체인, 합산 비중 약 100%"
+              },
+              {
+                "type": "name",
+                "text": "\"전고체배터리&실리콘음극재\" 명칭이 홀딩스 구성과 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 메타데이터 결측(coverage.score=0.35)이나 holdings 데이터 자체는 충분히 뚜렷함"
+        ]
+      }
+    },
+    {
+      "etfCode": "0005G0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0005G0",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.93,
+            "confidence": 0.85,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "FnGuide K-AI반도체 코어테크 지수"
+              },
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 22.1%, 삼성전자 21.45%, 삼성전기 18.02%, 한미반도체 12.07%, 이수페타시스 7.58%, 리노공업 5.02%, 심텍 3.69%, ISC 2.19%, 피에스케이홀딩스 1.4% — 메모리·반도체 장비·기판·테스트소켓 등 반도체 공급망 상위 비중 합산 90%대"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "0026S0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0026S0",
+        "classifications": [
+          {
+            "tagId": "strategy.sp500",
+            "score": 1,
+            "confidence": 0.95,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "S&P 500 (규칙 기반 확정치, 유지)"
+              },
+              {
+                "type": "name",
+                "text": "\"1Q 미국S&P500\""
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "0049K0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0049K0",
+        "classifications": [
+          {
+            "tagId": "dividend.us_dividend_growth",
+            "score": 0.55,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "Bloomberg WisdomTree U.S. Quality Dividend & Short Term KRW Bonds 50:50 TR Index — 지수명의 \"Quality Dividend\" 절반 비중"
+              }
+            ]
+          },
+          {
+            "tagId": "dividend.monthly",
+            "score": 0.8,
+            "confidence": 0.65,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "distribution",
+                "text": "scheduleText=\"매월의 마지막 영업일\""
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "국내 크레딧/회사채",
+            "suggestedCategory": "strategy",
+            "score": 0.5,
+            "confidence": 0.4,
+            "reason": "지수의 나머지 50%가 \"Short Term KRW Bonds\"(국내 단기채) — 채권 혼합형 태그 부재, 0000Y0과 동일 후보로 합산 제안"
+          }
+        ],
+        "warnings": [
+          "holdings 없음, 지수명만으로 배당 성격 판단(coverage.score=0.55) — 미국주식 50%가 실제 \"연속 배당 증액\" 요건을 충족하는지는 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "0052D0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0052D0",
+        "classifications": [
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"코리아배당다우존스\" — Dow Jones 방식 국내 배당지수 추종 상품군의 전형적 명칭"
+              },
+              {
+                "type": "holdings",
+                "text": "JB금융지주 4.78%, 미스토홀딩스 4.64%, 하나금융지주 4.61%, DB손해보험 4.46%, 영원무역 4.38%, BNK금융지주 4.3%, 우리금융지주 4.25%, 기업은행 4.23%, 삼성화재 4.09%, 한국타이어앤테크놀로지 4.06% — 상위 10종목이 4~5%대로 고르게 분산된 배당가중/동일가중 구조, 업종은 금융·보험·소비재·제조 등으로 혼합되어 있어 배당 팩터 지수 특성과 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmarkName 등 메타데이터 결측(coverage.score=0.35), 벤치마크 상세 설명 없이 명칭+홀딩스 패턴으로만 판단"
+        ]
+      }
+    },
+    {
+      "etfCode": "0080G0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0080G0",
+        "classifications": [
+          {
+            "tagId": "sector.aerospace_defense",
+            "score": 0.97,
+            "confidence": 0.9,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "iSelect 방산 TOP10 지수(Price Return)"
+              },
+              {
+                "type": "holdings",
+                "text": "한국항공우주 22.18%, 한화에어로스페이스 20.27%, 현대로템 19.78%, LIG디펜스앤에어로스페이스 19.56%, 한화시스템 11.32%, 풍산 4.09%, 인텔리안테크 0.96%, 아이쓰리시스템 0.83%, 엠앤씨솔루션 0.68%, 스피어 0.24% — 전 종목 방위산업/우주항공, 상위 5종목 합산 약 93%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "0080Y0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0080Y0",
+        "classifications": [
+          {
+            "tagId": "strategy.leverage",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"조선TOP3플러스레버리지\" (규칙 기반 확정치, 유지)"
+              },
+              {
+                "type": "benchmark",
+                "text": "FnGuide 조선 TOP3 플러스레버리지(2x) 지수 — 2배수 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "조선",
+            "suggestedCategory": "sector",
+            "score": 0.95,
+            "confidence": 0.85,
+            "reason": "benchmark=\"FnGuide 조선 TOP3 플러스레버리지(2x) 지수\", holdings 전부(설정현금액 제외) 조선사 — 삼성중공업 26.52%, HD현대중공업 24.81%, 한화오션 24.23%, HD한국조선해양 16.56%, HD현대마린솔루션 3.06%, 한화엔진 2.72%, HD현대마린엔진 1.41%, 한국카본 0.83%, 대한조선 0.51%. 현재 taxonomy에 조선(shipbuilding) 섹터 태그가 없어 후보로 제안."
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "0086B0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0086B0",
+        "classifications": [
+          {
+            "tagId": "strategy.reit",
+            "score": 0.9,
+            "confidence": 0.85,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"리츠부동산인프라TOP10액티브\" (규칙 기반 확정치, 유지)"
+              },
+              {
+                "type": "holdings",
+                "text": "맥쿼리인프라 28.12%, SK리츠 18.19%, 신한알파리츠 10.4%, 롯데리츠 9.91%, 한화리츠 8.57%, ESR켄달스퀘어리츠 8.41%, 코람코라이프인프라리츠 5.73%, 삼성FN리츠 3.26%, 이지스밸류플러스리츠 2.85% — 전 종목 리츠/인프라펀드, 합산 비중 95%대"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "0089D0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0089D0",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.95,
+            "confidence": 0.85,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"금융고배당TOP10\""
+              },
+              {
+                "type": "holdings",
+                "text": "KB금융 23.9%, 하나금융지주 15.89%, 우리금융지주 12.78%, 기업은행 10.4%, 삼성화재 10.33%, DB손해보험 6.34%, 한국금융지주 6.3%, NH투자증권 6.12%, 삼성증권 4.18%, 키움증권 3.48% — 전 종목 은행/보험/증권, 합산 100%"
+              }
+            ]
+          },
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.85,
+            "confidence": 0.7,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"고배당\" 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "금융업종 내 고배당 대형주 위주 구성(은행지주·손보·증권)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmarkName 등 메타데이터 결측(coverage.score=0.35), 벤치마크 상세 설명 없이 명칭+홀딩스로만 판단"
+        ]
+      }
+    },
+    {
+      "etfCode": "0094M0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0094M0",
+        "classifications": [
+          {
+            "tagId": "dividend.covered_call",
+            "score": 1,
+            "confidence": 1,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"위클리고정커버드콜\" (규칙 기반 확정치, 유지)"
+              },
+              {
+                "type": "facts",
+                "text": "distribution.coveredCall=true"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.value_up",
+            "score": 0.8,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "name",
+                "text": "\"코리아밸류업\" 명시"
+              },
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 19.23%, 삼성전자 15.1%, SK스퀘어 8.24%, 현대차 4.72%, KB금융 4.4%, 신한지주 3.48%, 기아 2.71%, 하나금융지주 2.57%, 한화에어로스페이스 2.41%, 현대모비스 2.36% — 밸류업 프로그램 참여 대형주 위주 구성과 일치"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark.name이 null이라 밸류업 지수 추종 여부를 지수명으로 직접 확인할 수 없고 종목명+상품명 정황 근거만 있음"
+        ]
+      }
+    }
+  ],
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

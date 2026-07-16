@@ -1,0 +1,108 @@
+[
+  {
+    "etfCode": "0101N0",
+    "issues": [
+      {
+        "type": "evidence_selective_omission",
+        "tagId": "sector.ai_power_infrastructure",
+        "detail": "evidence가 상위 10개 보유종목 중 서진시스템(5.55%)과 두산에너빌리티(4.97%)를 언급 없이 제외하고 나머지 8개만으로 '합산 비중 약 66%'를 주장함. 실제 상위 10종목 전체 합산은 약 76.5%이며, 특히 두산에너빌리티는 발전설비/에너지 기업으로 오히려 '전력인프라' 테마에 부합할 수 있는데 근거 없이 누락됨. 왜 제외했는지 설명이 없어 점수·신뢰도 근거의 투명성이 부족함."
+      }
+    ],
+    "correctedClassifications": [
+      {
+        "tagId": "sector.ai_power_infrastructure",
+        "score": 0.82,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "name", "text": "종목명에 'AI전력인프라' 명시" },
+          { "type": "holdings", "text": "가온전선 23.88%, LS ELECTRIC 7.93%, 산일전기 6.41%, 효성중공업 6.27%, 대한전선 5.91%, HD현대일렉트릭 5.82%, 서진시스템 5.55%(부품·기구물 제조업체로 전력인프라 테마와의 연관성은 약함), 두산에너빌리티 4.97%(발전설비/에너지), LS에코에너지 4.92%, 제룡전기 4.81% — 상위 10종목 합산 비중 약 76.5%이며, 이 중 전선·변압기·중전기기 등 명확한 전력설비 기업 비중만 보면 약 66%(서진시스템·두산에너빌리티 제외 시)" }
+        ]
+      }
+    ]
+  },
+  {
+    "etfCode": "0150K0",
+    "issues": [
+      {
+        "type": "below_taxonomy_minimum",
+        "tagId": "sector.clean_energy",
+        "detail": "taxonomy상 sector.clean_energy의 minimumScore=0.65/minimumConfidence=0.5이나, worker가 score=0.58/confidence=0.42로 기준 미달인 태그를 확정 classifications에 포함함. 근거(수소·신재생 비중 합산 약 20%)도 명확히 약한 수준이므로 확정 태그가 아니라 candidateTag로 강등되어야 함."
+      }
+    ],
+    "correctedClassifications": [
+      {
+        "tagId": "sector.ev_battery",
+        "score": 0.75,
+        "confidence": 0.55,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "삼성SDI 6.1%, 상신이디피 6.06%, LG에너지솔루션 5.56%, 신성에스티 4.83%, 한중엔시에스 4.58%, LS머트리얼즈 4.52%(2차전지 셀/소재/부품 기업 합산 약 31.65%)" }
+        ]
+      }
+    ]
+  },
+  {
+    "etfCode": "0177R0",
+    "issues": [
+      {
+        "type": "evidence_math_error",
+        "tagId": "sector.semiconductor",
+        "detail": "evidence에서 상위 10종목 합산 비중을 '약 91%'로 주장했으나 실제 나열된 가중치(20.94+20.74+12.41+7.64+7+2.91+2.61+2.47+2.22+2.1)를 합산하면 약 81.04%로 10%p 이상 과장됨. 태그 자체(반도체 상위 2종목만으로도 41.68%)는 충분히 타당하나 evidence 수치는 정정 필요."
+      }
+    ],
+    "correctedClassifications": [
+      {
+        "tagId": "sector.semiconductor",
+        "score": 0.95,
+        "confidence": 0.75,
+        "source": "claude_subagent",
+        "evidence": [
+          { "type": "holdings", "text": "SK하이닉스 20.94%, 삼성전자 20.74%, TIGER 반도체TOP10(기초 ETF) 12.41%, SK스퀘어 7.64%, 삼성전기 7%, 원익IPS 2.91%, LG이노텍 2.61%, DB하이텍 2.47%, 이오테크닉스 2.22%, 한미반도체 2.1% — 반도체 설계·제조·장비·소재 밸류체인에 집중(상위 10종목 합산 비중 약 81%)" }
+        ]
+      },
+      {
+        "tagId": "dividend.covered_call",
+        "score": 1,
+        "confidence": 1,
+        "source": "rule",
+        "evidence": [
+          { "type": "rule", "text": "name=\"TIGER 반도체TOP10커버드콜액티브\" matched /커버드콜/ (규칙 기반 확정, 변경하지 않음)" },
+          { "type": "facts", "text": "distribution.coveredCall = true로 커버드콜 옵션 전략을 명시적으로 확인" }
+        ]
+      }
+    ]
+  },
+  {
+    "etfCode": "223190",
+    "issues": [
+      {
+        "type": "name_only_bias",
+        "tagId": "strategy.value",
+        "detail": "evidence가 종목명('가치저변동')만 근거로 제시되며 holdings/benchmark 뒷받침이 없음. 실제 holdings는 삼성전자 23.23% 등 코스피200 대형주 구성과 유사해 가치주 팩터 틸트를 확인하기 어려움(worker 자신도 warnings에서 이를 인정)."
+      },
+      {
+        "type": "below_taxonomy_minimum",
+        "tagId": "strategy.value",
+        "detail": "taxonomy상 strategy.value의 minimumScore=0.6/minimumConfidence=0.45이나 worker가 score=0.55/confidence=0.4로 기준 미달인 태그를 확정 classifications에 포함함."
+      }
+    ],
+    "correctedClassifications": []
+  },
+  {
+    "etfCode": "226380",
+    "issues": [
+      {
+        "type": "name_only_bias",
+        "tagId": "strategy.growth",
+        "detail": "evidence가 종목명('성장소비주도주')만 근거로 제시되며 holdings/benchmark 뒷받침이 없음. 실제 holdings는 뷰티·식품 등 소비재 기업이 각 2%대로 고르게 분산되어 있어 '성장' 팩터를 뒷받침하는 구체적 근거가 없음."
+      },
+      {
+        "type": "below_taxonomy_minimum",
+        "tagId": "strategy.growth",
+        "detail": "taxonomy상 strategy.growth의 minimumScore=0.6/minimumConfidence=0.45이나 worker가 score=0.55/confidence=0.4로 기준 미달인 태그를 확정 classifications에 포함함. candidateTags에 이미 '소비재(뷰티/식품)' 후보가 있으므로 strategy.growth는 확정 태그가 아니라 candidateTag 수준으로 낮추거나 제외해야 함."
+      }
+    ],
+    "correctedClassifications": []
+  }
+]

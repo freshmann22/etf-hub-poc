@@ -1,0 +1,545 @@
+{
+  "generatedAt": "2026-07-16T00:47:00.281Z",
+  "count": 77,
+  "items": [
+    {
+      "etfCode": "104530",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.68,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "145850",
+      "tagId": "strategy.value",
+      "score": 0.5,
+      "confidence": 0.3,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "157490",
+      "tagId": "sector.game_entertainment_media",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "213610",
+      "tagId": "strategy.value",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "227550",
+      "tagId": "sector.aerospace_defense",
+      "score": 0.6,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "234310",
+      "tagId": "strategy.value",
+      "score": 0.55,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "237350",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "266160",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.5,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "275290",
+      "tagId": "strategy.value",
+      "score": 0.65,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "315960",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "325020",
+      "tagId": "strategy.value",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "364690",
+      "tagId": "sector.tech_general",
+      "score": 0.6,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.7/minimumConfidence=0.55 미달"
+    },
+    {
+      "etfCode": "364960",
+      "tagId": "sector.ev_battery",
+      "score": 0.5,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "364960",
+      "tagId": "sector.healthcare_bio_pharma",
+      "score": 0.5,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "364960",
+      "tagId": "sector.game_entertainment_media",
+      "score": 0.5,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "367740",
+      "tagId": "sector.semiconductor",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "367770",
+      "tagId": "sector.clean_energy",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "368190",
+      "tagId": "sector.healthcare_bio_pharma",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "368190",
+      "tagId": "sector.ev_battery",
+      "score": 0.45,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "368680",
+      "tagId": "sector.healthcare_bio_pharma",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "368680",
+      "tagId": "sector.ev_battery",
+      "score": 0.45,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "373490",
+      "tagId": "strategy.growth",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "380340",
+      "tagId": "sector.it",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "381570",
+      "tagId": "sector.clean_energy",
+      "score": 0.6,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "381570",
+      "tagId": "sector.ev_battery",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "385520",
+      "tagId": "sector.autonomous_mobility",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "385710",
+      "tagId": "sector.ev_battery",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "385710",
+      "tagId": "sector.healthcare_bio_pharma",
+      "score": 0.45,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "387280",
+      "tagId": "sector.autonomous_mobility",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "395750",
+      "tagId": "strategy.value",
+      "score": 0.5,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "395760",
+      "tagId": "strategy.growth",
+      "score": 0.5,
+      "confidence": 0.35,
+      "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+    },
+    {
+      "etfCode": "401170",
+      "tagId": "sector.game_entertainment_media",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "404260",
+      "tagId": "sector.clean_energy",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "404540",
+      "tagId": "sector.clean_energy",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "404650",
+      "tagId": "sector.clean_energy",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "410870",
+      "tagId": "sector.game_entertainment_media",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "457990",
+      "tagId": "sector.ev_battery",
+      "score": 0.55,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "464600",
+      "tagId": "strategy.consumer_discretionary",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "469790",
+      "tagId": "sector.semiconductor",
+      "score": 0.62,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "469790",
+      "tagId": "sector.tech_general",
+      "score": 0.7,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.7/minimumConfidence=0.55 미달"
+    },
+    {
+      "etfCode": "470310",
+      "tagId": "sector.tech_general",
+      "score": 0.68,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.7/minimumConfidence=0.55 미달"
+    },
+    {
+      "etfCode": "476850",
+      "tagId": "sector.semiconductor",
+      "score": 0.45,
+      "confidence": 0.3,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "484880",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.6,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "486240",
+      "tagId": "sector.ai_power_infrastructure",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "487130",
+      "tagId": "sector.ai_power_infrastructure",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "491820",
+      "tagId": "sector.ai_power_infrastructure",
+      "score": 0.68,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "495060",
+      "tagId": "strategy.value_up",
+      "score": 0.75,
+      "confidence": 0.55,
+      "reason": "minimumScore=0.75/minimumConfidence=0.6 미달"
+    },
+    {
+      "etfCode": "495230",
+      "tagId": "strategy.value_up",
+      "score": 0.75,
+      "confidence": 0.55,
+      "reason": "minimumScore=0.75/minimumConfidence=0.6 미달"
+    },
+    {
+      "etfCode": "496130",
+      "tagId": "strategy.value_up",
+      "score": 0.7,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.75/minimumConfidence=0.6 미달"
+    },
+    {
+      "etfCode": "0098N0",
+      "tagId": "sector.financials",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0103T0",
+      "tagId": "sector.it",
+      "score": 0.62,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0104P0",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.62,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0111J0",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0115E0",
+      "tagId": "sector.it",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0120J0",
+      "tagId": "sector.game_entertainment_media",
+      "score": 0.52,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0151P0",
+      "tagId": "sector.semiconductor",
+      "score": 0.72,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0152E0",
+      "tagId": "dividend.korea_high_dividend",
+      "score": 0.68,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0152E0",
+      "tagId": "sector.financials",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0153K0",
+      "tagId": "sector.financials",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0162Y0",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0163Y0",
+      "tagId": "sector.semiconductor",
+      "score": 0.58,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0166S0",
+      "tagId": "sector.semiconductor",
+      "score": 0.58,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0191B0",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0192M0",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0192T0",
+      "tagId": "sector.healthcare_bio_pharma",
+      "score": 0.55,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0192T0",
+      "tagId": "sector.ev_battery",
+      "score": 0.5,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0192T0",
+      "tagId": "sector.semiconductor",
+      "score": 0.4,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0193G0",
+      "tagId": "sector.semiconductor",
+      "score": 0.6,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0193K0",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0193W0",
+      "tagId": "sector.semiconductor",
+      "score": 0.6,
+      "confidence": 0.55,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0194M0",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.5,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0194N0",
+      "tagId": "sector.semiconductor",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0194R0",
+      "tagId": "sector.semiconductor",
+      "score": 0.55,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0195R0",
+      "tagId": "sector.semiconductor",
+      "score": 0.6,
+      "confidence": 0.55,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0198B0",
+      "tagId": "sector.semiconductor",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0198D0",
+      "tagId": "sector.semiconductor",
+      "score": 0.5,
+      "confidence": 0.4,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    },
+    {
+      "etfCode": "0199C0",
+      "tagId": "sector.financials",
+      "score": 0.5,
+      "confidence": 0.45,
+      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+    }
+  ]
+}

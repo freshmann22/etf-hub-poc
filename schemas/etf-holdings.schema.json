@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://etf-hub.poc/schemas/etf-holdings.schema.json",
+  "title": "ETF Holdings Document",
+  "description": "ETF 구성자산(구성종목) 공통 스키마. 현물/파생/현금/외화/다른 ETF 를 포괄한다. 단일 계약 원천이며 server/holdings/constants.js 의 enum 과 값이 일치해야 한다.",
+  "type": "object",
+  "required": ["schemaVersion", "etfCode", "etfName", "baseDate", "generatedAt", "source", "collection", "holdings"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "etfCode": {
+      "description": "ETF 자체의 단축코드(6자리 영숫자). 구성자산 코드가 아님.",
+      "type": "string",
+      "pattern": "^[0-9A-Za-z]{6}$"
+    },
+    "etfName": { "type": "string", "minLength": 1 },
+    "baseDate": {
+      "description": "기준일 YYYY-MM-DD (Asia/Seoul).",
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "generatedAt": {
+      "description": "수집/생성 시각 ISO8601.",
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}"
+    },
+    "source": {
+      "type": "object",
+      "required": ["provider", "isFallback"],
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": ["PYKRX", "KRX_DIRECT", "SEIBRO", "ISSUER", "MOCK"]
+        },
+        "sourceType": {
+          "type": ["string", "null"],
+          "enum": ["KRX_PDF", "KRX_API", "SEIBRO_PDF", "ISSUER_FILE", "MOCK", "UNKNOWN", null]
+        },
+        "isFallback": { "type": "boolean" }
+      }
+    },
+    "collection": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["OK", "PARTIAL", "EMPTY", "REQUEST_FAILED", "INVALID_SCHEMA", "NORMALIZATION_FAILED", "WEIGHT_MISSING", "UNSUPPORTED", "NOT_IMPLEMENTED", "UNRESOLVED"]
+        },
+        "attemptedProviders": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["PYKRX", "KRX_DIRECT", "SEIBRO", "ISSUER", "MOCK"]
+          }
+        },
+        "message": { "type": ["string", "null"] }
+      }
+    },
+    "holdings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/holding" }
+    },
+    "diagnostics": {
+      "description": "원본/검증 실패 등 진단 정보 보존용(선택).",
+      "type": "object"
+    },
+    "dateResolution": {
+      "description": "요청일 ↔ 실제 채택 기준일 해결 메타데이터(선택, 하위호환). baseDate 는 최종 채택 기준일과 동일하다.",
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "requestedDate": { "type": ["string", "null"] },
+        "resolvedBaseDate": { "type": ["string", "null"] },
+        "lookbackDays": { "type": ["integer", "null"] },
+        "status": {
+          "type": "string",
+          "enum": ["EXACT", "RESOLVED_PRIOR", "UNRESOLVED", "NOT_ATTEMPTED"]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "holding": {
+      "type": "object",
+      "required": ["assetCode", "assetName", "assetType"],
+      "additionalProperties": false,
+      "properties": {
+        "assetCode": {
+          "description": "구성자산 코드. 해외자산은 국내 6자리 종목코드를 강제하지 않는다.",
+          "type": "string",
+          "minLength": 1
+        },
+        "assetName": { "type": "string", "minLength": 1 },
+        "assetType": {
+          "type": "string",
+          "enum": ["EQUITY", "ETF", "FUTURE", "OPTION", "SWAP", "BOND", "CASH", "CURRENCY", "REIT", "FUND", "DERIVATIVE", "OTHER", "UNKNOWN"]
+        },
+        "market": { "type": ["string", "null"] },
+        "currency": { "type": ["string", "null"] },
+        "quantity": { "type": ["number", "null"] },
+        "contractCount": {
+          "description": "파생상품 계약수. 수량(quantity)과 별도 필드.",
+          "type": ["number", "null"]
+        },
+        "marketValue": { "type": ["number", "null"] },
+        "weightPct": {
+          "description": "구성비중(백분율 숫자). null=공란, 0=실제 0%(구분한다).",
+          "type": ["number", "null"]
+        },
+        "rank": { "type": ["integer", "null"] },
+        "rawAssetCode": {
+          "description": "원본 식별자 보존(선택).",
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

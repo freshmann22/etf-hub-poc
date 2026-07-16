@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "_note": "명시적 구조 사실 → taxonomy 태그 규칙 매핑. 정규식은 ETF명·기초지수명·분배스케줄 원문에만 적용한다(추측 금지). 여기 없는 태그(sector.* 대부분, strategy.growth/value 등)는 규칙만으로 확정하지 않고 Claude 서브에이전트로 넘긴다(§7 주의사항).",
+  "tagRules": [
+    {
+      "tagId": "strategy.leverage",
+      "matchFields": ["name"],
+      "pattern": "레버리지|(\\d(?:\\.\\d)?)\\s*X\\b",
+      "flags": "i",
+      "score": 1,
+      "confidence": 1
+    },
+    {
+      "tagId": "strategy.inverse",
+      "matchFields": ["name"],
+      "pattern": "인버스",
+      "flags": "",
+      "score": 1,
+      "confidence": 1
+    },
+    {
+      "tagId": "strategy.sp500",
+      "matchFields": ["name", "benchmarkName"],
+      "pattern": "S&P\\s*500",
+      "flags": "i",
+      "score": 1,
+      "confidence": 0.95
+    },
+    {
+      "tagId": "strategy.nasdaq100",
+      "matchFields": ["name", "benchmarkName"],
+      "pattern": "나스닥\\s*100|NASDAQ\\s*100",
+      "flags": "i",
+      "score": 1,
+      "confidence": 0.95
+    },
+    {
+      "tagId": "strategy.reit",
+      "matchFields": ["name", "benchmarkName"],
+      "pattern": "리츠|REIT",
+      "flags": "i",
+      "score": 0.9,
+      "confidence": 0.85
+    },
+    {
+      "tagId": "dividend.covered_call",
+      "matchFields": ["name"],
+      "pattern": "커버드콜",
+      "flags": "",
+      "score": 1,
+      "confidence": 1
+    },
+    {
+      "tagId": "dividend.monthly",
+      "matchFields": ["name", "distributionScheduleText"],
+      "pattern": "먼슬리|월배당|매\\s*1,\\s*2,\\s*3",
+      "flags": "",
+      "score": 0.85,
+      "confidence": 0.7,
+      "_note": "scheduleText의 '매 1,4,7,10월' 형태(분기)는 매칭하지 않도록 '매 1,2,3'(연속 월) 패턴만 사용 — 분기배당을 월배당으로 오분류 방지"
+    }
+  ],
+  "factRules": {
+    "_note": "taxonomy 태그가 아닌 구조적 사실(참고용, UI 필터 아님). 이전 파이프라인(scripts/normalize-etf-metadata.mjs)의 classificationFacts.nameHints 를 그대로 재사용한다.",
+    "active": "명칭에 '액티브' 포함",
+    "currencyHedged": "명칭에 '(H)' 포함",
+    "synthetic": "명칭에 '합성' 포함",
+    "targetMaturity": "명칭에 '만기매칭' 또는 '목표전환' 포함"
+  }
+}

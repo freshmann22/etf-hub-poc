@@ -1,0 +1,2697 @@
+{
+  "batchId": "batch-0011",
+  "generatedAt": "2026-07-16T00:42:30.393Z",
+  "etfCodes": [
+    "291630",
+    "292050",
+    "292150",
+    "292160",
+    "292190",
+    "292500",
+    "293180",
+    "294400",
+    "295040",
+    "298340",
+    "300610",
+    "300640",
+    "300950",
+    "301400",
+    "302450",
+    "304760",
+    "304770",
+    "304780",
+    "305050",
+    "305540",
+    "305720",
+    "306530",
+    "306950",
+    "307510",
+    "307520",
+    "310960",
+    "310970",
+    "314700",
+    "315270",
+    "315930"
+  ],
+  "inputs": [
+    {
+      "etfCode": "291630",
+      "name": "KIWOOM 코스닥150선물레버리지",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "316670",
+          "name": "KIWOOM 코스닥150",
+          "weight": 20.66
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "292050",
+      "name": "RISE KRX300",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 31.29
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.96
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.84
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.89
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.59
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.49
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.18
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.93
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.92
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.87
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "292150",
+      "name": "TIGER 코리아TOP10",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 35.26
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 26.55
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 7.43
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 6.5
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 4.98
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 4.37
+        },
+        {
+          "code": "012450",
+          "name": "한화에어로스페이스",
+          "weight": 3.98
+        },
+        {
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "weight": 3.95
+        },
+        {
+          "code": "068270",
+          "name": "셀트리온",
+          "weight": 3.51
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "weight": 3.04
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "292160",
+      "name": "TIGER KRX300",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 31.13
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.82
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.8
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.88
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.59
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.49
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.17
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.92
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.92
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.87
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "292190",
+      "name": "KODEX KRX300",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 31.24
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.9
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.81
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.88
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.6
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.49
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.18
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.92
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.92
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.87
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "292500",
+      "name": "SOL KRX300",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 30.88
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.6
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.77
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.87
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.58
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.48
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.16
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.91
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.91
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.86
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "293180",
+      "name": "HANARO 200",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 32.64
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 28.11
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.94
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.99
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.66
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.56
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.23
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.97
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.96
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.91
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "294400",
+      "name": "KIWOOM 200TR",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 32.63
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 28.12
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.94
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.98
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.67
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.56
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.23
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.96
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.96
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.91
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "295040",
+      "name": "SOL 200TR",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 30.81
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.54
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.76
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.87
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.57
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.47
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.16
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.91
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.91
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.86
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "298340",
+      "name": "PLUS 국채선물3년",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "453010",
+          "name": "PLUS KOFR금리",
+          "weight": 0.93
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "300610",
+      "name": "TIGER K게임",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "weight": 10.11
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "weight": 10.03
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "weight": 9.94
+        },
+        {
+          "code": "462870",
+          "name": "시프트업",
+          "weight": 9.75
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "weight": 9.75
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "weight": 9.53
+        },
+        {
+          "code": "293490",
+          "name": "카카오게임즈",
+          "weight": 8.93
+        },
+        {
+          "code": "112040",
+          "name": "위메이드",
+          "weight": 8.66
+        },
+        {
+          "code": "069080",
+          "name": "웹젠",
+          "weight": 5.16
+        },
+        {
+          "code": "095660",
+          "name": "네오위즈",
+          "weight": 4.94
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "300640",
+      "name": "RISE 게임테마",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "462870",
+          "name": "시프트업",
+          "weight": 12.32
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "weight": 11.49
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "weight": 11.06
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "weight": 11
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "weight": 7.76
+        },
+        {
+          "code": "112040",
+          "name": "위메이드",
+          "weight": 6.03
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "weight": 5.54
+        },
+        {
+          "code": "293490",
+          "name": "카카오게임즈",
+          "weight": 5.37
+        },
+        {
+          "code": "069080",
+          "name": "웹젠",
+          "weight": 3.95
+        },
+        {
+          "code": "095660",
+          "name": "네오위즈",
+          "weight": 3.59
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "300950",
+      "name": "KODEX 게임산업",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "weight": 26.62
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "weight": 19.28
+        },
+        {
+          "code": "263750",
+          "name": "펄어비스",
+          "weight": 11.74
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "weight": 10.38
+        },
+        {
+          "code": "462870",
+          "name": "시프트업",
+          "weight": 10.25
+        },
+        {
+          "code": "192080",
+          "name": "더블유게임즈",
+          "weight": 5.69
+        },
+        {
+          "code": "112040",
+          "name": "위메이드",
+          "weight": 3.18
+        },
+        {
+          "code": "293490",
+          "name": "카카오게임즈",
+          "weight": 2.74
+        },
+        {
+          "code": "069080",
+          "name": "웹젠",
+          "weight": 1.89
+        },
+        {
+          "code": "095660",
+          "name": "네오위즈",
+          "weight": 1.82
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "301400",
+      "name": "PLUS 코스닥150",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "weight": 7.81
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 4.94
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 3.9
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "weight": 3.43
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "weight": 2.49
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "weight": 2.2
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "weight": 2.17
+        },
+        {
+          "code": "298380",
+          "name": "에이비엘바이오",
+          "weight": 1.99
+        },
+        {
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "weight": 1.96
+        },
+        {
+          "code": "028300",
+          "name": "HLB",
+          "weight": 1.82
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "302450",
+      "name": "RISE 코스피",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 27.62
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 24.42
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.83
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.79
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.69
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 1.42
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.22
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "weight": 1.21
+        },
+        {
+          "code": "207940",
+          "name": "삼성바이오로직스",
+          "weight": 1.19
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 1.08
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "304760",
+      "name": "HANARO KRX300",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 31.12
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.8
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.81
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.92
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.58
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.49
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.17
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.92
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.92
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.87
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "304770",
+      "name": "HANARO 코스닥150",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "196170",
+          "name": "알테오젠",
+          "weight": 7.81
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 4.91
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 3.87
+        },
+        {
+          "code": "036930",
+          "name": "주성엔지니어링",
+          "weight": 3.44
+        },
+        {
+          "code": "240810",
+          "name": "원익IPS",
+          "weight": 2.49
+        },
+        {
+          "code": "319660",
+          "name": "피에스케이",
+          "weight": 2.21
+        },
+        {
+          "code": "058470",
+          "name": "리노공업",
+          "weight": 2.15
+        },
+        {
+          "code": "298380",
+          "name": "에이비엘바이오",
+          "weight": 1.98
+        },
+        {
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "weight": 1.96
+        },
+        {
+          "code": "039030",
+          "name": "이오테크닉스",
+          "weight": 1.83
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "304780",
+      "name": "HANARO 200선물레버리지",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "267770",
+          "name": "TIGER 200선물레버리지",
+          "weight": 12.22
+        },
+        {
+          "code": "332930",
+          "name": "HANARO 200TR",
+          "weight": 8.94
+        },
+        {
+          "code": "293180",
+          "name": "HANARO 200",
+          "weight": 7.55
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "305050",
+      "name": "ACE 코스피",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 27.51
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 24.34
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.83
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.79
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.68
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 1.42
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.22
+        },
+        {
+          "code": "032830",
+          "name": "삼성생명",
+          "weight": 1.21
+        },
+        {
+          "code": "207940",
+          "name": "삼성바이오로직스",
+          "weight": 1.19
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 1.08
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "305540",
+      "name": "TIGER 2차전지테마",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "weight": 15.29
+        },
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 14.9
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "weight": 13.87
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 13.75
+        },
+        {
+          "code": "096770",
+          "name": "SK이노베이션",
+          "weight": 9.03
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 7.31
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 6.39
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 6.18
+        },
+        {
+          "code": "011790",
+          "name": "SKC",
+          "weight": 2.37
+        },
+        {
+          "code": "066970",
+          "name": "엘앤에프",
+          "weight": 2.24
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "305720",
+      "name": "KODEX 2차전지산업",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "373220",
+          "name": "LG에너지솔루션",
+          "weight": 20.74
+        },
+        {
+          "code": "006400",
+          "name": "삼성SDI",
+          "weight": 16.06
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 13.94
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "weight": 10.71
+        },
+        {
+          "code": "247540",
+          "name": "에코프로비엠",
+          "weight": 8.18
+        },
+        {
+          "code": "086520",
+          "name": "에코프로",
+          "weight": 6.75
+        },
+        {
+          "code": "096770",
+          "name": "SK이노베이션",
+          "weight": 5.75
+        },
+        {
+          "code": "003670",
+          "name": "포스코퓨처엠",
+          "weight": 4.89
+        },
+        {
+          "code": "066970",
+          "name": "엘앤에프",
+          "weight": 2.72
+        },
+        {
+          "code": "011790",
+          "name": "SKC",
+          "weight": 1.55
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "306530",
+      "name": "HANARO 코스닥150선물레버리지",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "304770",
+          "name": "HANARO 코스닥150",
+          "weight": 17.25
+        },
+        {
+          "code": "233740",
+          "name": "KODEX 코스닥150레버리지",
+          "weight": 2.03
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "306950",
+      "name": "KODEX KRX300레버리지",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ]
+      },
+      "holdings": [
+        {
+          "code": "292190",
+          "name": "KODEX KRX300",
+          "weight": 25.14
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 22.82
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 19.64
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.06
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.38
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.17
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.09
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 0.86
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.67
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.67
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.45,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "307510",
+      "name": "TIGER 의료기기",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "214450",
+          "name": "파마리서치",
+          "weight": 13.54
+        },
+        {
+          "code": "214150",
+          "name": "클래시스",
+          "weight": 7.74
+        },
+        {
+          "code": "290650",
+          "name": "엘앤씨바이오",
+          "weight": 7.73
+        },
+        {
+          "code": "458870",
+          "name": "씨어스",
+          "weight": 5.64
+        },
+        {
+          "code": "096530",
+          "name": "씨젠",
+          "weight": 5.57
+        },
+        {
+          "code": "328130",
+          "name": "루닛",
+          "weight": 4.24
+        },
+        {
+          "code": "445680",
+          "name": "큐리옥스바이오시스템즈",
+          "weight": 3.83
+        },
+        {
+          "code": "491000",
+          "name": "리브스메드",
+          "weight": 3.66
+        },
+        {
+          "code": "085660",
+          "name": "차바이오텍",
+          "weight": 3.55
+        },
+        {
+          "code": "041830",
+          "name": "인바디",
+          "weight": 2.87
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "307520",
+      "name": "TIGER 지주회사",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "034730",
+          "name": "SK",
+          "weight": 13.36
+        },
+        {
+          "code": "000150",
+          "name": "두산",
+          "weight": 10.01
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 8.48
+        },
+        {
+          "code": "003550",
+          "name": "LG",
+          "weight": 8.09
+        },
+        {
+          "code": "180640",
+          "name": "한진칼",
+          "weight": 8.02
+        },
+        {
+          "code": "006260",
+          "name": "LS",
+          "weight": 7.63
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 6.29
+        },
+        {
+          "code": "267250",
+          "name": "HD현대",
+          "weight": 5.95
+        },
+        {
+          "code": "078930",
+          "name": "GS",
+          "weight": 5.2
+        },
+        {
+          "code": "010060",
+          "name": "OCI홀딩스",
+          "weight": 3.92
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "310960",
+      "name": "TIGER 200TR",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 30.87
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 26.58
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 2.77
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 1.86
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.58
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.47
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.16
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.91
+        },
+        {
+          "code": "028260",
+          "name": "삼성물산",
+          "weight": 0.91
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 0.86
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "310970",
+      "name": "TIGER MSCI Korea TR",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 33.56
+        },
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 28.72
+        },
+        {
+          "code": "005935",
+          "name": "삼성전자우",
+          "weight": 4
+        },
+        {
+          "code": "402340",
+          "name": "SK스퀘어",
+          "weight": 3.03
+        },
+        {
+          "code": "009150",
+          "name": "삼성전기",
+          "weight": 2.03
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 1.86
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 1.66
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 1.27
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 1.02
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 0.95
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "314700",
+      "name": "HANARO 농업융복합산업",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "033780",
+          "name": "KT&G",
+          "weight": 21.36
+        },
+        {
+          "code": "051910",
+          "name": "LG화학",
+          "weight": 16.7
+        },
+        {
+          "code": "006040",
+          "name": "동원산업",
+          "weight": 15.19
+        },
+        {
+          "code": "001040",
+          "name": "CJ",
+          "weight": 13.62
+        },
+        {
+          "code": "006260",
+          "name": "LS",
+          "weight": 8.84
+        },
+        {
+          "code": "003380",
+          "name": "하림지주",
+          "weight": 8.44
+        },
+        {
+          "code": "097950",
+          "name": "CJ제일제당",
+          "weight": 6.46
+        },
+        {
+          "code": "035810",
+          "name": "이지홀딩스",
+          "weight": 3.68
+        },
+        {
+          "code": "007310",
+          "name": "오뚜기",
+          "weight": 2.07
+        },
+        {
+          "code": "004000",
+          "name": "롯데정밀화학",
+          "weight": 1.71
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "315270",
+      "name": "TIGER 200커뮤니케이션서비스",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "weight": 20.43
+        },
+        {
+          "code": "017670",
+          "name": "SK텔레콤",
+          "weight": 17.14
+        },
+        {
+          "code": "035720",
+          "name": "카카오",
+          "weight": 15.75
+        },
+        {
+          "code": "030200",
+          "name": "KT",
+          "weight": 15.6
+        },
+        {
+          "code": "259960",
+          "name": "크래프톤",
+          "weight": 9.03
+        },
+        {
+          "code": "352820",
+          "name": "하이브",
+          "weight": 7.2
+        },
+        {
+          "code": "036570",
+          "name": "NC",
+          "weight": 5.52
+        },
+        {
+          "code": "032640",
+          "name": "LG유플러스",
+          "weight": 5.33
+        },
+        {
+          "code": "030000",
+          "name": "제일기획",
+          "weight": 1.75
+        },
+        {
+          "code": "251270",
+          "name": "넷마블",
+          "weight": 1.57
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    },
+    {
+      "etfCode": "315930",
+      "name": "KODEX Top5PlusTR",
+      "issuer": null,
+      "listingDate": null,
+      "benchmark": {
+        "name": null,
+        "description": null,
+        "provider": null
+      },
+      "descriptions": {
+        "product": null,
+        "investmentObjective": null,
+        "strategy": null,
+        "rawTypeText": null
+      },
+      "facts": {
+        "assetClass": null,
+        "regions": null,
+        "active": null,
+        "currencyHedged": null,
+        "nameHints": []
+      },
+      "holdings": [
+        {
+          "code": "000660",
+          "name": "SK하이닉스",
+          "weight": 24.33
+        },
+        {
+          "code": "005930",
+          "name": "삼성전자",
+          "weight": 23.58
+        },
+        {
+          "code": "005380",
+          "name": "현대차",
+          "weight": 10.65
+        },
+        {
+          "code": "105560",
+          "name": "KB금융",
+          "weight": 9.28
+        },
+        {
+          "code": "055550",
+          "name": "신한지주",
+          "weight": 7.15
+        },
+        {
+          "code": "000270",
+          "name": "기아",
+          "weight": 6.26
+        },
+        {
+          "code": "086790",
+          "name": "하나금융지주",
+          "weight": 5.64
+        },
+        {
+          "code": "012330",
+          "name": "현대모비스",
+          "weight": 5.18
+        },
+        {
+          "code": "035420",
+          "name": "NAVER",
+          "weight": 4.36
+        },
+        {
+          "code": "005490",
+          "name": "POSCO홀딩스",
+          "weight": 3.56
+        }
+      ],
+      "distribution": {
+        "frequency": null,
+        "scheduleText": null,
+        "coveredCall": false,
+        "trailing12MonthAmount": null
+      },
+      "coverage": {
+        "score": 0.35,
+        "missingFields": [
+          "issuer",
+          "benchmarkName",
+          "descriptions",
+          "strategyFacts",
+          "distribution",
+          "sectorCountryWeights",
+          "feesAndAssets"
+        ]
+      }
+    }
+  ]
+}

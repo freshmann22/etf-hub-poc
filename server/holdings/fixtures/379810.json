@@ -1,0 +1,14 @@
+{
+  "etfCode": "379810",
+  "etfName": "KODEX 미국나스닥100",
+  "baseDate": "20260713",
+  "provider": "MOCK",
+  "note": "(3) 해외자산 포함 ETF — 국내 6자리 코드 강제 금지(티커/ISIN 유지), 통화 USD",
+  "rows": [
+    { "assetCode": "AAPL", "assetName": "Apple Inc.", "type": "EQUITY", "weight": "12.5", "quantity": "10,000", "marketValue": "2,500,000", "market": "NASDAQ", "currency": "USD", "rank": 1 },
+    { "assetCode": "MSFT", "assetName": "Microsoft Corp.", "type": "EQUITY", "weight": "11.8", "quantity": "8,000", "marketValue": "2,360,000", "market": "NASDAQ", "currency": "USD", "rank": 2 },
+    { "assetCode": "NVDA", "assetName": "NVIDIA Corp.", "type": "EQUITY", "weight": "10.2", "quantity": "6,000", "marketValue": "2,040,000", "market": "NASDAQ", "currency": "USD", "rank": 3 },
+    { "assetCode": "US0378331005", "assetName": "Amazon.com Inc.", "type": "EQUITY", "weight": "9.4", "quantity": "5,000", "marketValue": "1,880,000", "market": "NASDAQ", "currency": "USD", "rank": 4 },
+    { "assetCode": "USD", "assetName": "미국달러 예치금", "type": "CURRENCY", "weight": "1.1", "quantity": null, "marketValue": "220,000", "market": null, "currency": "USD", "rank": 5 }
+  ]
+}

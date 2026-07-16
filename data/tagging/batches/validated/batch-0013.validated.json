@@ -1,0 +1,914 @@
+{
+  "valid": true,
+  "perEtf": [
+    {
+      "etfCode": "365000",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "365000",
+        "classifications": [
+          {
+            "tagId": "sector.it",
+            "score": 0.72,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "카카오 29.32%, NAVER 27.83% (합산 57.15%)로 국내 대표 인터넷 플랫폼 기업이 압도적 비중"
+              },
+              {
+                "type": "holdings",
+                "text": "카페24(전자상거래 플랫폼) 3.09%, 안랩(보안 소프트웨어) 2.76% 등 IT 서비스 기업 추가 포함"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "인터넷/플랫폼",
+            "suggestedCategory": "sector",
+            "score": 0.75,
+            "confidence": 0.5,
+            "reason": "카카오/NAVER 등 국내 인터넷 플랫폼 기업 집중 ETF가 반복적으로 나타나며, 현행 sector.it보다 더 구체적인 태그가 유용할 수 있음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 대부분 필드 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "365040",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "365040",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.75,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성전자 27.21% + SK하이닉스 24.12% = 51.33%로 상위 2종목이 메모리 반도체"
+              }
+            ]
+          },
+          {
+            "tagId": "strategy.growth",
+            "score": 0.6,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "name_contains=액티브, 펀드명 'AI코리아그로스액티브'에 그로스(성장) 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "367740",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "367740",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.6,
+            "confidence": 0.45,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성전자 8.04% + SK하이닉스 6.42% + 한미반도체 7.88% + 원익IPS 5.03% + 이수페타시스 6.83% + 삼성전기 6.88% 등 반도체/부품 공급망 종목 합산 비중 약 41%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "5G/통신인프라",
+            "suggestedCategory": "sector",
+            "score": 0.55,
+            "confidence": 0.45,
+            "reason": "KT, SK텔레콤 등 통신사와 반도체/부품 공급망이 혼재된 '5G산업' 테마가 현행 taxonomy에 없음"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35), 통신+반도체 혼합 구성으로 단일 태그 근거가 약함"
+        ]
+      }
+    },
+    {
+      "etfCode": "367760",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "367760",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.8,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 22.9% + 삼성전자 22.18% + 삼성전기 18.57% + LG이노텍 13.11% + 이수페타시스 7.68% + 리노공업 5.08% + 제주반도체 3.21% 등 반도체/전자부품 공급망 비중 합산 약 93%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "367770",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "367770",
+        "classifications": [
+          {
+            "tagId": "sector.clean_energy",
+            "score": 0.55,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "두산에너빌리티(수소터빈) 14.8%, POSCO홀딩스(수소환원제철) 10.17%, 현대차/현대모비스(수소차) 28.11% 등 수소경제 밸류체인 관련 종목 포함"
+              },
+              {
+                "type": "holdings",
+                "text": "한화에어로스페이스(방산) 16.41%, LS ELECTRIC/효성중공업(전력설비) 등 수소와 직접 관련 없는 종목도 상당 비중 포함되어 근거가 완전하지 않음"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 결측(coverage 0.35), 방산/자동차 등 비관련 종목 혼재로 확신도 낮음"
+        ]
+      }
+    },
+    {
+      "etfCode": "368190",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "368190",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.5,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "셀트리온 11.61% + 삼성바이오로직스 9.97% + 알테오젠 8.41% = 약 30%로 바이오 비중이 가장 크지만 단일 테마로 보기엔 부족"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.45,
+            "confidence": 0.35,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성SDI 9.76% + LG에너지솔루션 9.36% = 약 19%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "'K-뉴딜디지털플러스'는 바이오/배터리/IT/게임이 고르게 섞인 뉴딜 테마로 특정 섹터로 확정하기 어려움; coverage 0.35"
+        ]
+      }
+    },
+    {
+      "etfCode": "368680",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "368680",
+        "classifications": [
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.5,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "셀트리온 11.66% + 삼성바이오로직스 10.08% + 알테오젠 8.47% = 약 30%"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.45,
+            "confidence": 0.35,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성SDI 9.74% + LG에너지솔루션 9.46% = 약 19%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "368190(HANARO)과 사실상 동일 구성의 K-뉴딜디지털플러스 지수 추종; 특정 섹터 확정 근거 약함; coverage 0.35"
+        ]
+      }
+    },
+    {
+      "etfCode": "373490",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "373490",
+        "classifications": [
+          {
+            "tagId": "strategy.growth",
+            "score": 0.55,
+            "confidence": 0.45,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "name_contains=액티브, 펀드명 '코리아혁신성장액티브'에 혁신성장 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "자동차(19%)/배터리(14.5%)/반도체(27%)가 고르게 섞여 단일 섹터 태그 근거 부족; coverage 0.45"
+        ]
+      }
+    },
+    {
+      "etfCode": "375760",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "375760",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "ESG/탄소효율",
+            "suggestedCategory": "strategy",
+            "score": 0.5,
+            "confidence": 0.4,
+            "reason": "'탄소효율그린뉴딜'은 삼성전자/SK하이닉스 등 대형주 위주로 KOSPI 상위종목과 유사한 구성이며, ESG 스크리닝 전략이나 현행 taxonomy에 대응 태그 없음"
+          }
+        ],
+        "warnings": [
+          "명칭은 '탄소효율그린뉴딜'이나 실제 구성은 삼성전자/SK하이닉스 등 대형 시가총액주 중심으로 특정 섹터 근거가 부족해 태그를 부여하지 않음; coverage 0.35"
+        ]
+      }
+    },
+    {
+      "etfCode": "375770",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "375770",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "ESG/탄소효율",
+            "suggestedCategory": "strategy",
+            "score": 0.5,
+            "confidence": 0.4,
+            "reason": "375760과 동일한 '탄소효율그린뉴딜' 지수를 KODEX가 추종; 구성이 대형주 위주라 특정 섹터보다 ESG 스크리닝 전략 후보 태그가 적합"
+          }
+        ],
+        "warnings": [
+          "명칭과 달리 구성종목이 삼성전자/SK하이닉스 등 대형주 중심으로 특정 섹터 근거 부족; coverage 0.35"
+        ]
+      }
+    },
+    {
+      "etfCode": "376410",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "376410",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "ESG/탄소효율",
+            "suggestedCategory": "strategy",
+            "score": 0.5,
+            "confidence": 0.4,
+            "reason": "TIGER판 '탄소효율그린뉴딜'도 동일하게 대형주 중심 구성"
+          }
+        ],
+        "warnings": [
+          "명칭과 달리 구성종목이 삼성전자/SK하이닉스 등 대형주 중심으로 특정 섹터 근거 부족; coverage 0.35"
+        ]
+      }
+    },
+    {
+      "etfCode": "377990",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "377990",
+        "classifications": [
+          {
+            "tagId": "sector.clean_energy",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "한화솔루션(태양광) 14.14%, OCI홀딩스(태양광) 9.03%, 씨에스윈드(풍력타워) 3.38%, 두산퓨얼셀(수소연료전지) 6.2% 등 신재생에너지 밸류체인 기업 다수"
+              },
+              {
+                "type": "holdings",
+                "text": "효성중공업/LS ELECTRIC/산일전기/HD현대일렉트릭 등 전력설비 기업 합산 약 29.78%로 재생에너지 계통 인프라와 밀접"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "379800",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "379800",
+        "classifications": [
+          {
+            "tagId": "strategy.sp500",
+            "score": 1,
+            "confidence": 0.95,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "benchmark.name = \"S&P 500 Total Return Index\""
+              },
+              {
+                "type": "rule_reference",
+                "text": "규칙 기반 결과에서 score=1, confidence=0.95로 이미 확정됨(재판단하지 않고 그대로 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "379810",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "379810",
+        "classifications": [
+          {
+            "tagId": "strategy.nasdaq100",
+            "score": 1,
+            "confidence": 0.95,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "benchmark.name = \"NASDAQ-100 Total Return Index\""
+              },
+              {
+                "type": "rule_reference",
+                "text": "규칙 기반 결과에서 score=1, confidence=0.95로 이미 확정됨(재판단하지 않고 그대로 유지)"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "380340",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "380340",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.72,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성전기 18.85% + LG이노텍 13.73% + SK하이닉스 8.02% + 삼성전자 7.74% + 대덕전자 5.02% = 약 53%로 반도체/전자부품 공급망 비중 우세"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.it",
+            "score": 0.5,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "NAVER 22.16% + 삼성에스디에스 10.28% + LG씨엔에스 4.42% = 약 37%로 IT서비스/플랫폼 비중도 유의미"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "381560",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "381560",
+        "classifications": [
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.75,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "기아 11.5% + 현대모비스 10.23% + 현대차 9.21% (완성차/부품) + LG에너지솔루션 8.38% + 삼성SDI 6.43% + SK이노베이션 4.74% (배터리) 합산 약 50%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "381570",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "381570",
+        "classifications": [
+          {
+            "tagId": "sector.clean_energy",
+            "score": 0.6,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "한화솔루션(태양광) 11% + OCI홀딩스(태양광) 8.81% + 두산퓨얼셀(수소연료전지) 5.91% = 약 25.72%"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.55,
+            "confidence": 0.45,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성SDI 10.59% + LG에너지솔루션 10.4% + 솔브레인(배터리 소재) 4.3% = 약 25.29%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "클린에너지와 배터리 비중이 비슷하게 혼재되어 있어 두 태그 모두 근거는 있으나 특정 단일 테마로 확정하기는 어려움; coverage 0.35"
+        ]
+      }
+    },
+    {
+      "etfCode": "385510",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "385510",
+        "classifications": [
+          {
+            "tagId": "sector.clean_energy",
+            "score": 0.75,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK이터닉스 7.16% + OCI홀딩스 6.5% + HD현대에너지솔루션(태양광) 6.3% + 한화솔루션 5.66% + 씨에스윈드(풍력) 4.85% + SK오션플랜트(해상풍력) 3.88% = 약 34.35%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "펀드명 '신재생에너지액티브'와 일치하는 구성이나 benchmark/descriptions 결측(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "385520",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "385520",
+        "classifications": [
+          {
+            "tagId": "sector.autonomous_mobility",
+            "score": 0.6,
+            "confidence": 0.45,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "현대모비스 5.08% + HL만도(자율주행 부품) 4.93% + 현대오토에버(자동차 SW) 3.85% + 한국타이어앤테크놀로지 5.99% 등 자율주행 밸류체인 종목 포함"
+              },
+              {
+                "type": "facts",
+                "text": "name_contains=액티브, 펀드명 '자율주행액티브'로 자율주행 테마 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "상위 종목 비중이 개별 5~6% 수준으로 분산되어 있어 자율주행 익스포저 집중도는 낮음(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "385590",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "385590",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "ESG/탄소효율",
+            "suggestedCategory": "strategy",
+            "score": 0.45,
+            "confidence": 0.35,
+            "reason": "펀드명 'ESG액티브'이나 구성은 삼성전자/SK하이닉스 등 KOSPI 대형주 위주로 특정 섹터 태그 근거 부족; ESG 관련 태그가 taxonomy에 없음"
+          }
+        ],
+        "warnings": [
+          "삼성전자 23.83%+SK하이닉스 16.75%로 대형주 비중이 크지만 나머지는 금융/지주 등으로 분산되어 특정 섹터 확정 근거 부족; coverage 0.45"
+        ]
+      }
+    },
+    {
+      "etfCode": "385600",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "385600",
+        "classifications": [
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.85,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성SDI 8.5% + LG에너지솔루션 8.23% + LG화학 7.92% + 에코프로비엠(배터리 소재) 4.41% = 약 29.06%"
+              },
+              {
+                "type": "holdings",
+                "text": "기아 8.84% + 현대모비스 8.15% + 현대차 7.16% (친환경차) = 약 24.15%"
+              },
+              {
+                "type": "facts",
+                "text": "펀드명 '2차전지&친환경차액티브'로 테마 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "385710",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "385710",
+        "classifications": [
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.5,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성SDI 10.98% + LG에너지솔루션 9.35% = 약 20.33%"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.healthcare_bio_pharma",
+            "score": 0.45,
+            "confidence": 0.35,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "알테오젠 10.24% + 삼성바이오로직스 5.17% + 셀트리온 4.03% = 약 19.44%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "'K이노베이션액티브'는 배터리/바이오/반도체/IT가 고르게 섞여 단일 섹터로 확정하기 어려움; coverage 0.45"
+        ]
+      }
+    },
+    {
+      "etfCode": "385720",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "385720",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "'코스피액티브'는 SK하이닉스/삼성전자 비중이 높지만(46%) 펀드 성격상 KOSPI 시가총액 상위주를 폭넓게 담는 벤치마크 추종형으로 판단되어 섹터 태그를 부여하지 않음; coverage 0.45"
+        ]
+      }
+    },
+    {
+      "etfCode": "387280",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "387280",
+        "classifications": [
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.65,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "현대모비스 8.85% + 삼성SDI 8.38% + LG에너지솔루션 7.45% + 현대차 6.04% + 현대글로비스 5.62% + 엘앤에프(배터리 소재) 3.22% = 약 39.56%"
+              }
+            ]
+          },
+          {
+            "tagId": "sector.autonomous_mobility",
+            "score": 0.55,
+            "confidence": 0.45,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "로보티즈(로봇) 5.79% + 현대오토에버(자동차 SW) 5.96% 등 미래 모빌리티 관련 종목 포함"
+              },
+              {
+                "type": "facts",
+                "text": "펀드명 '퓨처모빌리티액티브'로 미래 모빌리티 테마 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "388280",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "388280",
+        "classifications": [
+          {
+            "tagId": "strategy.consumer_discretionary",
+            "score": 0.7,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "대한항공(여행) 11.21% + 강원랜드(레저) 6.16% + 호텔신라(호텔/면세) 5.08% = 약 22.45% (여행/레저)"
+              },
+              {
+                "type": "holdings",
+                "text": "신세계+현대백화점+롯데쇼핑+이마트(유통) 합산 약 26.43%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "엔터테인먼트(약한 신호)",
+            "suggestedCategory": "sector",
+            "score": 0.45,
+            "confidence": 0.4,
+            "reason": "하이브 10.48% + JYP Ent. 4.61% = 약 15.09%로 엔터 비중이 있으나 sector.game_entertainment_media의 minimumScore(0.65)에는 미달"
+          }
+        ],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "388420",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "388420",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.9,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "삼성전자 24.72% + SK하이닉스 17.21% + 심텍(PCB) 6.86% + 브이엠(반도체 장비) 6.67% + 피에스케이(반도체 장비) 5.81% + 삼성전기 4.94% + 원익QnC(반도체 소재) 4.31% + 대덕전자(PCB) 4.27% + 네패스아크(반도체 패키징) 4.09% + 리노공업(반도체 테스트) 4% = 상위 10종목 합산 약 82.88%"
+              },
+              {
+                "type": "facts",
+                "text": "펀드명 '비메모리반도체액티브'로 비메모리(시스템) 반도체 테마 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage 0.45)"
+        ]
+      }
+    },
+    {
+      "etfCode": "391670",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "391670",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "'베스트일레븐액티브'는 대표 우량주 11종목을 담는 취지로, 삼성전자/SK하이닉스 비중이 높지만(55%) 사업 목적이 특정 섹터가 아닌 국내 우량주 선별형으로 판단되어 섹터 태그를 부여하지 않음; coverage 0.45"
+        ]
+      }
+    },
+    {
+      "etfCode": "395150",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "395150",
+        "classifications": [
+          {
+            "tagId": "sector.game_entertainment_media",
+            "score": 0.9,
+            "confidence": 0.6,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "카카오 14.92% + 스튜디오드래곤(드라마 제작) 14.22% + NAVER 14.2% + CJ ENM(미디어) 14.02% + SAMG엔터(애니메이션/캐릭터) 11.19% = 상위 5종목 합산 약 68.55%"
+              },
+              {
+                "type": "holdings",
+                "text": "애니플러스(애니메이션) 4.3%, 더핑크퐁컴퍼니(IP콘텐츠) 4.05%, 키다리스튜디오(웹툰 플랫폼) 3.61%, 쇼박스(영화) 3.1% 등 콘텐츠 제작·유통 기업 다수 포함"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "395160",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "395160",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.95,
+            "confidence": 0.65,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 25.57% + 삼성전자 25.03% + SK스퀘어 24.74% + 삼성전기 16.74% = 상위 4종목 합산 약 92%로 반도체 관련 종목 압도적"
+              },
+              {
+                "type": "facts",
+                "text": "펀드명 'AI반도체TOP2플러스'로 AI 반도체 테마 명시"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "issuer/benchmark/descriptions 등 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "395170",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "395170",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "'Top10동일가중'은 KOSPI 시가총액 상위 10종목을 동일가중 편입하는 벤치마크형으로 특정 섹터 태그를 부여하지 않음; coverage 0.35"
+        ]
+      }
+    }
+  ],
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

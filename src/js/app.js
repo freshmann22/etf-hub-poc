@@ -1,13 +1,6 @@
 // ETF 허브 메인화면 PoC — 상태 관리 및 이벤트 연결 (브라우저 전용)
-import {
-  etfs,
-  themes,
-  stocks,
-  holdings,
-  contents,
-  marketSummaryByPeriod,
-  comparisonSets,
-} from './data.js';
+// 데이터는 서버 API(/api/bundle)에서 로드하고, 서버 부재 시 로컬 fixture 로 폴백한다(dataSource.js).
+import { loadData } from './dataSource.js';
 import {
   getRankedEtfs,
   getThemeHeatmap,
@@ -31,6 +24,19 @@ import {
   renderContentList,
   renderBottomSheet,
 } from './render.js';
+
+// 비동기 부트스트랩: 데이터를 먼저 로드한 뒤 상태·DOM 배선·초기 렌더를 수행한다.
+// 데이터 로딩만 async 로 감쌌을 뿐, 이하 로직/이벤트/렌더는 기존과 동일하다.
+async function main() {
+  const {
+    etfs,
+    themes,
+    stocks,
+    holdings,
+    contents,
+    marketSummaryByPeriod,
+    comparisonSets,
+  } = await loadData();
 
 const REQUIRED_STOCK_NAMES = [
   '삼성전자',
@@ -361,3 +367,6 @@ renderThemeSection();
 renderCompareThemeOptions();
 renderCompareSection();
 renderContentSection();
+}
+
+main();

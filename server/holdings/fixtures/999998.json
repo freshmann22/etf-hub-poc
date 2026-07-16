@@ -1,0 +1,8 @@
+{
+  "etfCode": "999998",
+  "note": "(8) 모든 provider 실패 사례 — Mock 도 실패를 시뮬레이션(제어 픽스처). 결과: UNRESOLVED",
+  "_control": {
+    "status": "REQUEST_FAILED",
+    "message": "모든 공급자에서 구성자산 수집에 실패했습니다(시뮬레이션)."
+  }
+}

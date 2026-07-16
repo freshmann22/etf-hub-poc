@@ -1,0 +1,41 @@
+{
+  "_comment": "필드별 소스 우선순위(높을수록 우선). 동일 필드가 여러 소스에서 나오면 이 순위로 선택하되 충돌은 모두 보존한다.",
+  "defaultPriority": {
+    "issuer": ["wisereport", "naver_master"],
+    "listingDate": ["wisereport"],
+    "totalFee": ["wisereport"],
+    "benchmarkName": ["wisereport"],
+    "liquidityProvider": ["wisereport"],
+    "etfTypeText": ["wisereport"],
+    "distributionScheduleText": ["wisereport"],
+    "netAssets": ["wisereport", "naver_master"],
+    "return1m": ["wisereport"],
+    "return3m": ["wisereport", "naver_master"],
+    "return6m": ["wisereport"],
+    "return12m": ["wisereport"],
+    "holdings": ["wisereport", "naver_csv"],
+    "name": ["naver_master", "wisereport"]
+  },
+  "recencyOverride": {
+    "_comment": "구성종목처럼 최신성이 중요한 필드는 asOfDate가 더 최신인 소스를 선택할 수 있다(우선순위보다 기준일 우선).",
+    "fields": ["holdings"]
+  },
+  "coverageThresholds": {
+    "highConfidence": 0.75,
+    "lowConfidence": 0.45,
+    "_comment": "coverage>=highConfidence: 정상 LLM 스코어링 가능. lowConfidence<=coverage<highConfidence: 저신뢰 스코어링 가능. coverage<lowConfidence: 추가 수집 필요."
+  },
+  "fieldWeights": {
+    "_comment": "coverage score 계산용 가중치. 그룹 합 = 1.0",
+    "etfCode": 0.10,
+    "name": 0.05,
+    "issuer": 0.05,
+    "benchmarkName": 0.15,
+    "descriptions": 0.20,
+    "holdings": 0.20,
+    "strategyFacts": 0.10,
+    "distribution": 0.05,
+    "sectorCountryWeights": 0.05,
+    "feesAndAssets": 0.05
+  }
+}

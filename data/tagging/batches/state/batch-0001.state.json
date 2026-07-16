@@ -1,0 +1,23 @@
+{
+  "batchId": "batch-0001",
+  "status": "done",
+  "etfCodes": [
+    "0000D0",
+    "0000Y0",
+    "0005D0",
+    "0005G0",
+    "0026S0",
+    "0049K0",
+    "0052D0",
+    "0080G0",
+    "0080Y0",
+    "0086B0",
+    "0089D0",
+    "0094M0"
+  ],
+  "createdAt": "2026-07-14T08:11:19.019Z",
+  "attempts": 1,
+  "validatedAt": "2026-07-14T08:14:43.381Z",
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

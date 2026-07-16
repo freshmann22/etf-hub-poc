@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-07-14T13:47:42.661054+09:00",
+  "note": "익명(비로그인) HTTP 요청. 로그인 세션 위조/쿠키 주입 없음. 이 스크립트만으로는 클라이언트 JS 게이트(alert)는 재현되지 않으므로 서버 리다이렉트 여부만 관찰한다.",
+  "results": [
+    {
+      "label": "etf_pdf_menu_anonymous",
+      "menuId": "MDC0201030108",
+      "requestUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd",
+      "params": {
+        "menuId": "MDC0201030108"
+      },
+      "collectedAt": "2026-07-14T13:47:41.134374+09:00",
+      "finalUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030108",
+      "httpStatus": 200,
+      "redirectedToLogin": false,
+      "contentType": "text/html;charset=utf-8",
+      "bodyLength": 377,
+      "status": "OK_HTTP_200_NEEDS_MANUAL_REVIEW",
+      "rawPath": "krx-direct\\raw\\2026-07-14\\etf_pdf_menu_anonymous.response.html"
+    },
+    {
+      "label": "etf_list_menu_anonymous_control",
+      "menuId": "MDC0201030101",
+      "requestUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd",
+      "params": {
+        "menuId": "MDC0201030101"
+      },
+      "collectedAt": "2026-07-14T13:47:42.585302+09:00",
+      "finalUrl": "https://data.krx.co.kr/contents/MDC/MDI/mdiLoader/index.cmd?menuId=MDC0201030101",
+      "httpStatus": 200,
+      "redirectedToLogin": false,
+      "contentType": "text/html;charset=utf-8",
+      "bodyLength": 377,
+      "status": "OK_HTTP_200_NEEDS_MANUAL_REVIEW",
+      "rawPath": "krx-direct\\raw\\2026-07-14\\etf_list_menu_anonymous_control.response.html"
+    }
+  ]
+}

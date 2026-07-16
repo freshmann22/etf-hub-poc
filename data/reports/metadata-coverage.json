@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-07-14T08:10:57.262Z",
+  "masterEtfCount": 1141,
+  "integratedRecordCount": 470,
+  "coverageBuckets": {
+    "highConfidence": {
+      "threshold": ">= 0.75",
+      "count": 11
+    },
+    "lowConfidence": {
+      "threshold": "0.45 ~ 0.75",
+      "count": 155
+    },
+    "needsMoreData": {
+      "threshold": "< 0.45",
+      "count": 304
+    }
+  },
+  "fieldCoveragePct": {
+    "etfCode": 100,
+    "name": 100,
+    "issuer": 4.7,
+    "benchmarkName": 4.7,
+    "descriptions": 0,
+    "holdings": 97.7,
+    "strategyFacts": 35.3,
+    "distribution": 4.7,
+    "sectorCountryWeights": 0,
+    "feesAndAssets": 4.7
+  },
+  "conflictCount": 9,
+  "missingFieldEntryCount": 3047
+}

@@ -1,0 +1,754 @@
+{
+  "valid": true,
+  "perEtf": [
+    {
+      "etfCode": "0204S0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0204S0",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.85,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "상위 10종목이 티에스이/피에스케이홀딩스/테스/브이엠/샘씨엔에스/심텍/엠케이전자/제주반도체/인텍플러스 등 반도체 장비·소재·후공정 기업으로 구성되며 합산 비중 약 47.8%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer/descriptions 결측(coverage 0.45)으로 코스닥액티브 펀드의 실제 운용전략(반도체 집중 여부의 지속성)은 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "0207G0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0207G0",
+        "classifications": [
+          {
+            "tagId": "sector.aerospace_defense",
+            "score": 0.88,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "상위 10종목 인텔리안테크/스피어/쎄트렉아이/한화시스템/RFHIC 등 위성·방산·우주항공 기업 합산 비중 약 99.7%"
+              },
+              {
+                "type": "facts",
+                "text": "ETF명 '우주항공밸류체인'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer/descriptions 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "0208N0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0208N0",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.35,
+            "reason": "IBK 코스피액티브는 삼성전자/SK하이닉스 등 코스피 대형주 위주로 구성되어 벤치마크 정보 없이도 광범위 대형주 액티브 펀드로 보이며, 특정 섹터에 국한되지 않아 기존 taxonomy 태그에 부합하지 않음"
+          }
+        ],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage 0.45)으로 액티브 운용전략의 실질 편중 여부 확인 불가; 삼성전자·SK하이닉스 비중이 47.5%로 높으나 KB금융/삼양식품/현대차 등 타 섹터도 혼재되어 섹터 태그를 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "0209D0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0209D0",
+        "classifications": [
+          {
+            "tagId": "sector.ev_battery",
+            "score": 0.9,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "LG에너지솔루션 27.34%, 삼성SDI 24.37%, 이수스페셜티케미컬/롯데에너지머티리얼즈/대주전자재료/엘앤에프 등 배터리 셀·소재 기업 합산 비중 약 99%"
+              },
+              {
+                "type": "facts",
+                "text": "ETF명 '전고체배터리ESS TOP2플러스'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer/descriptions 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "0209Z0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0209Z0",
+        "classifications": [
+          {
+            "tagId": "sector.ai_power_infrastructure",
+            "score": 0.82,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "HD현대일렉트릭/LS ELECTRIC/효성중공업/두산에너빌리티 등 전력설비·중전기 기업 합산 비중 약 87%"
+              },
+              {
+                "type": "facts",
+                "text": "ETF명 '코리아AI전력TOP10'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/descriptions 결측(coverage 0.35)으로 AI 데이터센터 수요와의 명시적 연계 근거는 명칭 외에는 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "0210A0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0210A0",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.9,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 24.56%, 삼성전자 22.06%, SK스퀘어 21.14%, 삼성전기 16.11%, 기가비스/심텍 등 반도체 밸류체인 기업 합산 비중 약 99.7%"
+              },
+              {
+                "type": "facts",
+                "text": "ETF명 'K반도체TOP2+'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer/descriptions 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "0210E0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0210E0",
+        "classifications": [
+          {
+            "tagId": "dividend.covered_call",
+            "score": 1,
+            "confidence": 1,
+            "source": "rule",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "name=\"PLUS 200커버드콜액티브\" matched /커버드콜/ (rule-based, 참고만 함)"
+              },
+              {
+                "type": "facts",
+                "text": "distribution.coveredCall = true"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "기초지수는 코스피200 계열로 추정되나 벤치마크명 결측; 섹터 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "0216Z0",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "0216Z0",
+        "classifications": [
+          {
+            "tagId": "sector.aerospace_defense",
+            "score": 0.93,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "한화에어로스페이스/LIG디펜스앤에어로스페이스/한화시스템/현대로템/한국항공우주 등 방산·항공우주 기업 합산 비중 약 99.5%"
+              },
+              {
+                "type": "facts",
+                "text": "ETF명 'K방산TOP5+'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer/descriptions 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "069660",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "069660",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.6,
+            "confidence": 0.4,
+            "reason": "KIWOOM 200은 코스피200 구성종목과 유사한 대형주 분산 포트폴리오(삼성전자/SK하이닉스 등)로 보이나 taxonomy에는 국내 대표지수 추종 태그(strategy.sp500/nasdaq100의 국내판)가 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)으로 코스피200 추종 확정 불가; 삼성전자/SK하이닉스 비중이 높지만 금융/자동차 등 다양한 섹터가 혼재되어 섹터 태그 미부여"
+        ]
+      }
+    },
+    {
+      "etfCode": "091160",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "091160",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.97,
+            "confidence": 0.85,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "benchmark",
+                "text": "benchmark.name = \"KRX 반도체\""
+              },
+              {
+                "type": "descriptions",
+                "text": "rawTypeText = \"국내주식형, 섹터\""
+              },
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 38.67%, 삼성전자 21.84%, 한미반도체/주성엔지니어링/원익IPS/피에스케이/리노공업/DB하이텍/이오테크닉스/HPSP 등 반도체 밸류체인 상위10 합산 약 82.7%"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "091170",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "091170",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.93,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "신한지주/KB금융/하나금융지주/우리금융지주 등 은행지주 4사 합산 비중 81.5%, ETF명 'KODEX 은행'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "091180",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "091180",
+        "classifications": [
+          {
+            "tagId": "strategy.consumer_discretionary",
+            "score": 0.75,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "현대차/현대모비스/기아/한국타이어앤테크놀로지 등 완성차·자동차부품 기업 합산 비중 약 92%, ETF명 'KODEX 자동차'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [
+          {
+            "label": "자동차",
+            "suggestedCategory": "sector",
+            "score": 0.8,
+            "confidence": 0.5,
+            "reason": "완성차/부품 전용 섹터 ETF가 반복적으로 등장(KODEX 자동차 등)하나 taxonomy에는 자동차 전용 sector 태그가 없어 strategy.consumer_discretionary로 대체 분류함"
+          }
+        ],
+        "warnings": [
+          "자율주행 기술 익스포저 근거는 없어 sector.autonomous_mobility는 부여하지 않음(negativeSignal: 완성차 비중만 높음)"
+        ]
+      }
+    },
+    {
+      "etfCode": "091220",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "091220",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.93,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "신한지주/KB금융/하나금융지주/우리금융지주 등 은행지주 4사 합산 비중 80.97%, ETF명 'TIGER 은행'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "091230",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "091230",
+        "classifications": [
+          {
+            "tagId": "sector.semiconductor",
+            "score": 0.93,
+            "confidence": 0.55,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "SK하이닉스 33.29%, 삼성전자 27.59%, 한미반도체/주성엔지니어링/원익IPS/피에스케이/리노공업/DB하이텍/이오테크닉스/HPSP 등 반도체 밸류체인 상위10 합산 약 83%, ETF명 'TIGER 반도체'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "100910",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "100910",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.35,
+            "reason": "KRX100은 국내 대표 대형주 100종목 지수를 추종하는 것으로 보이나 taxonomy에 국내 대표지수 추종 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)으로 지수 추종 확정 불가; 삼성전자/SK하이닉스 비중이 높지만 금융/자동차 등 혼재되어 섹터 태그 미부여"
+        ]
+      }
+    },
+    {
+      "etfCode": "102110",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "102110",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.6,
+            "confidence": 0.5,
+            "reason": "TIGER 200은 benchmark.name='코스피 200'으로 명확한 코스피200 추종 ETF이나 taxonomy에는 미국 S&P500/나스닥100 태그만 있고 국내 대표지수(코스피200) 추종 태그가 없어 반복적으로 후보 제안됨"
+          }
+        ],
+        "warnings": [
+          "기초지수는 코스피200이 확인되나(benchmark.name) 반도체 등 특정 섹터 집중 펀드가 아니므로 sector 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "102780",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "102780",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "삼성그룹 계열사(전자/전기/물산/생명/SDI/화재/바이오로직스/중공업/에스디에스/증권) 분산 포트폴리오로 전자·중공업·금융·바이오 등 업종이 혼재되어 단일 sector 태그에 부합하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "102960",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "102960",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "기계/조선",
+            "suggestedCategory": "sector",
+            "score": 0.7,
+            "confidence": 0.4,
+            "reason": "두산에너빌리티/HD현대중공업/HD한국조선해양/삼성중공업/한화오션 등 조선·중공업·기계장비 기업이 상위 비중을 차지하나 taxonomy에 해당 섹터 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "102970",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "102970",
+        "classifications": [
+          {
+            "tagId": "sector.financials",
+            "score": 0.9,
+            "confidence": 0.5,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "holdings",
+                "text": "미래에셋증권/한국금융지주/삼성증권/키움증권/NH투자증권 등 증권사 상위5 합산 비중 약 90%, ETF명 'KODEX 증권'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "104520",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "104520",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "KB금융/아모레퍼시픽/메리츠금융지주/삼성바이오로직스/신한지주/코웨이/셀트리온/삼양식품/SK이노베이션/하이브 등 업종이 매우 다양하게 분산되어(각 3% 내외) 특정 섹터 태그에 부합하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "104530",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "104530",
+        "classifications": [
+          {
+            "tagId": "dividend.korea_high_dividend",
+            "score": 0.68,
+            "confidence": 0.4,
+            "source": "claude_subagent",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "ETF명 'KIWOOM 코리아고배당'"
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": [
+          "distribution/배당수익률 데이터가 전부 결측(coverage 0.35)이라 실제 배당수익률 근거는 명칭 외에 확인 불가"
+        ]
+      }
+    },
+    {
+      "etfCode": "105190",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "105190",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.35,
+            "reason": "ACE 200은 명칭상 코스피200 추종으로 추정되나 benchmark 필드가 결측"
+          }
+        ],
+        "warnings": [
+          "benchmark 결측(coverage 0.35)으로 코스피200 추종 확정 불가; 특정 섹터 집중 펀드가 아니므로 sector 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "105780",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "105780",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "SK/삼성/현대차 등 5대그룹 계열사 분산 포트폴리오로 반도체/전기전자/자동차/금융/화학 등 업종이 혼재되어 단일 sector 태그에 부합하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "108450",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "108450",
+        "classifications": [],
+        "candidateTags": [],
+        "warnings": [
+          "삼성그룹 계열사(전자/전기/에스원/중공업/물산/SDI/증권/바이오로직스/생명/E&A) 분산 포트폴리오로 전자·시스템경비·중공업·금융·바이오 등 업종이 혼재되어 단일 sector 태그에 부합하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "108590",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "108590",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.6,
+            "confidence": 0.4,
+            "reason": "TREX 200은 홀딩스 구성이 삼성전자/SK하이닉스 등 코스피200과 유사한 대형주 분산 포트폴리오이나 taxonomy에 국내 대표지수 추종 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)으로 코스피200 추종 확정 불가; 특정 섹터 집중 펀드가 아니므로 sector 태그는 부여하지 않음"
+        ]
+      }
+    },
+    {
+      "etfCode": "114800",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "114800",
+        "classifications": [
+          {
+            "tagId": "strategy.inverse",
+            "score": 1,
+            "confidence": 1,
+            "source": "rule",
+            "evidence": [
+              {
+                "type": "facts",
+                "text": "name=\"KODEX 인버스\" matched /인버스/ (rule-based, 참고만 함)"
+              },
+              {
+                "type": "benchmark",
+                "text": "benchmark.name = \"코스피 200 선물인버스 지수\""
+              },
+              {
+                "type": "descriptions",
+                "text": "rawTypeText = \"국내파생, 인버스\""
+              }
+            ]
+          }
+        ],
+        "candidateTags": [],
+        "warnings": []
+      }
+    },
+    {
+      "etfCode": "117460",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "117460",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "화학/정유",
+            "suggestedCategory": "sector",
+            "score": 0.75,
+            "confidence": 0.45,
+            "reason": "LG화학/HD현대/SK이노베이션/S-Oil/한화솔루션/OCI홀딩스 등 정유·화학 기업이 상위 비중을 차지하나 taxonomy에 해당 섹터 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "117680",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "117680",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "철강/금속",
+            "suggestedCategory": "sector",
+            "score": 0.8,
+            "confidence": 0.45,
+            "reason": "POSCO홀딩스/현대제철/고려아연/풍산 등 철강·비철금속 기업 상위4 합산 비중 71.5%로 명확한 업종 집중이나 taxonomy에 해당 섹터 태그가 없고, sector.commodities는 실물/선물 연동 ETF에 한정되어 부합하지 않음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "117700",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "117700",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "건설",
+            "suggestedCategory": "sector",
+            "score": 0.8,
+            "confidence": 0.45,
+            "reason": "삼성E&A/현대건설/대우건설/GS건설/DL이앤씨 등 건설사 상위 비중이 높으나 taxonomy에 건설 섹터 태그가 없고 REIT 구조가 아니므로 strategy.reit는 부합하지 않음"
+          }
+        ],
+        "warnings": [
+          "benchmark/issuer 결측(coverage 0.35)"
+        ]
+      }
+    },
+    {
+      "etfCode": "122090",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "sanitized": {
+        "etfCode": "122090",
+        "classifications": [],
+        "candidateTags": [
+          {
+            "label": "코스피 대표지수 추종",
+            "suggestedCategory": "strategy",
+            "score": 0.55,
+            "confidence": 0.35,
+            "reason": "PLUS 코스피50은 코스피50 대형주 지수 추종으로 추정되나 benchmark 필드 결측; taxonomy에 국내 대표지수 추종 태그가 없음"
+          }
+        ],
+        "warnings": [
+          "benchmark 결측(coverage 0.35)으로 코스피50 추종 확정 불가; 특정 섹터 집중 펀드가 아니므로 sector 태그는 부여하지 않음"
+        ]
+      }
+    }
+  ],
+  "unexpectedCodes": [],
+  "missingCodes": []
+}

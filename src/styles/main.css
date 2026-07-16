@@ -2,35 +2,36 @@
    모바일 우선 (390x844 기준, 360~430 대응). 시스템 폰트만 사용. */
 
 :root {
-  /* 브랜드 포인트: iM Mint 단일 */
+  /* 브랜드 포인트: iM Mint 단일 (계약 정본 #00C7A9) */
   --brand: #00c7a9;
-  --brand-dark: #009a83;
-  --brand-deep: #04564a;
-  --brand-soft: #e5faf5;
-  --brand-ring: rgba(0, 199, 169, 0.35);
+  --brand-strong: #00a98f;
+  --brand-soft: #e4f8f4;
+  --brand-ring: rgba(0, 199, 169, 0.28);
 
   /* 중립 톤 */
-  --color-bg: #f6f7f8;
+  --color-bg: #ffffff;
   --color-surface: #ffffff;
-  --color-border: #e7e9ec;
-  --color-divider: #eef0f2;
-  --color-text: #1a1c20;
-  --color-text-muted: #666666;
+  --color-surface-alt: #eef0f1;
+  --color-border: #eeeeee;
+  --color-divider: #f0f1f2;
+  --color-text: #212121;
+  --color-text-muted: #616263;
+  --color-text-faint: #a2a2a2;
 
   /* 시세 의미색 (브랜드색과 역할 분리: 상승 빨강 / 하락 파랑) */
-  --color-up: #e0322f;
-  --color-down: #1968e0;
-  --color-neutral: #666666;
-  --up-bg-1: #fdf1f0;
-  --up-bg-2: #fadcda;
-  --up-bg-3: #f5bcb8;
-  --down-bg-1: #eff5fd;
-  --down-bg-2: #d9e7f9;
-  --down-bg-3: #bad3f3;
-  --flat-bg: #f0f1f3;
+  --color-up: #da463c;
+  --color-down: #3880e0;
+  --color-neutral: #616263;
+  --up-bg-1: #fcedeb;
+  --up-bg-2: #f7d3cf;
+  --up-bg-3: #f0b4ae;
+  --down-bg-1: #eaf1fc;
+  --down-bg-2: #cfe0f7;
+  --down-bg-3: #b4ccf0;
+  --flat-bg: #f2f3f4;
 
-  --radius-md: 14px;
-  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
@@ -240,7 +241,6 @@ button {
 .market-summary {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-left: 4px solid var(--brand);
   border-radius: var(--radius-lg);
   padding: 16px var(--space-lg);
 }
@@ -318,20 +318,12 @@ button {
   font-size: 12px;
   border-radius: 999px;
   padding: 4px 12px;
-  background: var(--color-bg);
+  background: var(--color-surface-alt);
   color: var(--color-text-muted);
 }
 
 .market-theme-pill strong {
   color: var(--color-text);
-}
-
-.market-theme-pill.strong {
-  background: var(--brand-soft);
-}
-
-.market-theme-pill.strong strong {
-  color: var(--brand-deep);
 }
 
 .change {
@@ -351,18 +343,24 @@ button {
   color: var(--color-neutral);
 }
 
+.change.up::before {
+  content: '\25B2 ';
+  font-size: 0.85em;
+}
+
+.change.down::before {
+  content: '\25BC ';
+  font-size: 0.85em;
+}
+
 /* ---------- 히트맵 (1순위) ---------- */
-.period-tabs,
-.ranking-tabs,
-.content-filters {
+.period-tabs {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
 }
 
-.period-tab,
-.ranking-tab,
-.content-filter {
+.period-tab {
   border: 1px solid var(--color-border);
   background: var(--color-surface);
   color: var(--color-text-muted);
@@ -372,13 +370,39 @@ button {
   cursor: pointer;
 }
 
-.period-tab.active,
+.period-tab.active {
+  background: var(--brand-soft);
+  border-color: var(--brand-soft);
+  color: var(--brand);
+  font-weight: 700;
+}
+
+/* 언더라인형 탭: 랭킹 탭 / 콘텐츠 필터 */
+.ranking-tabs,
+.content-filters {
+  display: flex;
+  gap: 4px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ranking-tab,
+.content-filter {
+  flex-shrink: 0;
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
 .ranking-tab.active,
 .content-filter.active {
-  background: var(--brand);
-  border-color: var(--brand);
-  color: var(--brand-deep);
+  color: var(--color-text);
   font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--brand);
 }
 
 /* 히트맵: 타일 모자이크. 거래대금 3단계 크기 + 수익률 강도별 의미색 */
@@ -452,6 +476,10 @@ button {
   font-size: 14px;
 }
 
+.heatmap-card .change::before {
+  content: none;
+}
+
 .heatmap-trading-value {
   font-size: 11px;
   color: var(--color-text-muted);
@@ -467,8 +495,8 @@ button {
 }
 
 .ranking-theme-label {
-  color: var(--brand-deep);
-  background: var(--brand-soft);
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
   border-radius: 999px;
   padding: 4px 12px;
   font-weight: 600;
@@ -512,7 +540,7 @@ button {
 }
 
 .etf-card:active {
-  background: var(--brand-soft);
+  background: var(--color-surface-alt);
 }
 
 /* 주 정보: ETF명 + 등락률 */
@@ -568,8 +596,8 @@ button {
 }
 
 .theme-tag {
-  background: var(--brand-soft);
-  color: var(--brand-deep);
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
   padding: 2px 8px;
   border-radius: 999px;
   font-weight: 600;
@@ -604,8 +632,8 @@ button {
 .stock-chip.active {
   background: var(--brand);
   border-color: var(--brand);
-  color: var(--brand-deep);
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .stock-etf-results {
@@ -628,7 +656,7 @@ button {
 }
 
 .stock-result-card:active {
-  background: var(--brand-soft);
+  background: var(--color-surface-alt);
 }
 
 .stock-result-header {
@@ -639,7 +667,7 @@ button {
 }
 
 .weight-value {
-  color: var(--brand-deep);
+  color: var(--color-text);
   font-size: 13px;
   font-weight: 700;
   flex-shrink: 0;
@@ -706,7 +734,7 @@ button {
 }
 
 .theme-issue {
-  color: #3a4150;
+  color: var(--color-text-muted);
 }
 
 /* ---------- 같은 테마 ETF 비교 (3순위, 선택 칩 + 세로 비교 카드) ---------- */
@@ -752,8 +780,8 @@ button {
 .compare-chip.active {
   background: var(--brand);
   border-color: var(--brand);
-  color: var(--brand-deep);
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .compare-cards {
@@ -830,8 +858,11 @@ button {
 }
 
 .content-type-badge {
-  color: var(--brand-deep);
+  color: var(--color-text);
+  background: var(--color-surface-alt);
   font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
 }
 
 .content-title {
@@ -883,6 +914,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .bottom-sheet-handle {
@@ -907,8 +939,8 @@ button {
 
 .bottom-sheet-close {
   border: none;
-  background: var(--brand-soft);
-  color: var(--brand-deep);
+  background: var(--color-surface-alt);
+  color: var(--color-text-muted);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 13px;
@@ -931,7 +963,7 @@ button {
 }
 
 .info-tile {
-  background: var(--color-bg);
+  background: var(--color-surface-alt);
   border-radius: 10px;
   padding: 8px 10px;
   display: flex;
@@ -967,7 +999,7 @@ button {
   align-self: flex-start;
   border: 1px solid var(--brand);
   background: none;
-  color: var(--brand-deep);
+  color: var(--brand);
   padding: 8px 16px;
   border-radius: 10px;
   font-size: 13px;

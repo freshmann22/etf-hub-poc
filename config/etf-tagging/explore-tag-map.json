@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "taxonomyVersion": "2.0.0",
+  "defaultSelection": {
+    "facetId": "sector",
+    "tagId": "sector.semiconductor"
+  },
+  "facets": [
+    {
+      "id": "sector",
+      "label": "섹터/테마",
+      "cardinality": "multi",
+      "filters": [
+        { "tagId": "sector.game_entertainment_media", "label": "게임/엔터/미디어" },
+        { "tagId": "sector.it", "label": "IT" },
+        { "tagId": "sector.healthcare_bio_pharma", "label": "의료/제약/바이오" },
+        { "tagId": "sector.semiconductor", "label": "반도체" },
+        { "tagId": "sector.ev_battery", "label": "전기차/2차전지" },
+        { "tagId": "sector.shipbuilding", "label": "조선/조선기자재" },
+        { "tagId": "sector.clean_energy", "label": "클린에너지" },
+        { "tagId": "sector.financials", "label": "금융" },
+        { "tagId": "sector.aerospace_defense", "label": "우주항공/방산" },
+        { "tagId": "sector.ai_power_infrastructure", "label": "AI전력/인프라" },
+        { "tagId": "sector.consumer_discretionary", "label": "경기소비재" },
+        { "tagId": "sector.nuclear_power", "label": "원전/원자력" },
+        { "tagId": "sector.beauty_cosmetics", "label": "화장품/뷰티" },
+        { "tagId": "sector.consumer_staples_food", "label": "필수소비재/식품" },
+        { "tagId": "sector.energy_chemicals", "label": "에너지/화학" },
+        { "tagId": "sector.steel_metals", "label": "철강/금속" },
+        { "tagId": "sector.construction", "label": "건설" },
+        { "tagId": "sector.robotics", "label": "휴머노이드로봇/로보틱스" },
+        { "tagId": "sector.transportation_logistics", "label": "운송/물류" }
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "구조·전략",
+      "cardinality": "multi",
+      "filters": [
+        { "tagId": "strategy.leverage", "label": "레버리지" },
+        { "tagId": "strategy.inverse", "label": "인버스" },
+        { "tagId": "strategy.active", "label": "액티브" },
+        { "tagId": "strategy.passive_index", "label": "지수추종(패시브)" },
+        { "tagId": "strategy.growth", "label": "성장주" },
+        { "tagId": "strategy.value", "label": "가치주" },
+        { "tagId": "strategy.low_volatility", "label": "저변동성(로우볼)" },
+        { "tagId": "strategy.benchmark.sp500", "label": "S&P500" },
+        { "tagId": "strategy.benchmark.nasdaq100", "label": "나스닥100" },
+        { "tagId": "strategy.benchmark.kospi200", "label": "코스피200" },
+        { "tagId": "strategy.value_up", "label": "밸류업" },
+        { "tagId": "strategy.esg_screening", "label": "ESG/탄소효율" },
+        { "tagId": "strategy.large_conglomerate_group", "label": "그룹주(계열사 집중)" }
+      ]
+    },
+    {
+      "id": "dividend",
+      "label": "배당",
+      "cardinality": "multi",
+      "filters": [
+        { "tagId": "dividend.korea_high_dividend", "label": "한국 고배당" },
+        { "tagId": "dividend.dividend_growth", "label": "배당성장" },
+        { "tagId": "dividend.covered_call", "label": "커버드콜 배당" },
+        { "tagId": "dividend.monthly", "label": "월배당" }
+      ]
+    },
+    {
+      "id": "assetClass",
+      "label": "자산군",
+      "cardinality": "primary",
+      "filters": [
+        { "tagId": "asset.equity", "label": "주식" },
+        { "tagId": "asset.bond", "label": "채권" },
+        { "tagId": "asset.bond.government", "label": "국채", "parentTagId": "asset.bond" },
+        { "tagId": "asset.bond.corporate", "label": "회사채", "parentTagId": "asset.bond" },
+        { "tagId": "asset.bond.target_maturity", "label": "만기매칭", "parentTagId": "asset.bond" },
+        { "tagId": "asset.bond.money_market", "label": "초단기/금리", "parentTagId": "asset.bond" },
+        { "tagId": "asset.commodity", "label": "원자재" },
+        { "tagId": "asset.reit", "label": "리츠/부동산" },
+        { "tagId": "asset.mixed", "label": "혼합/멀티에셋" },
+        { "tagId": "asset.currency", "label": "통화/환" }
+      ]
+    },
+    {
+      "id": "region",
+      "label": "지역",
+      "cardinality": "primary",
+      "filters": [
+        { "tagId": "region.domestic_kr", "label": "국내" },
+        { "tagId": "region.us", "label": "미국" },
+        { "tagId": "region.china", "label": "중국" },
+        { "tagId": "region.japan", "label": "일본" },
+        { "tagId": "region.india", "label": "인도" },
+        { "tagId": "region.vietnam", "label": "베트남" },
+        { "tagId": "region.developed", "label": "선진국/글로벌" },
+        { "tagId": "region.emerging", "label": "신흥국" }
+      ]
+    }
+  ],
+  "briefChannels": [
+    { "targetTagId": "sector.semiconductor", "newsTopicIds": [], "stockAnchorMode": "top_holdings", "stockAnchorLimit": 8 },
+    { "targetTagId": "sector.aerospace_defense", "newsTopicIds": [], "stockAnchorMode": "top_holdings", "stockAnchorLimit": 8 },
+    { "targetTagId": "sector.ev_battery", "newsTopicIds": [], "stockAnchorMode": "top_holdings", "stockAnchorLimit": 8 },
+    { "targetTagId": "sector.shipbuilding", "newsTopicIds": [], "stockAnchorMode": "top_holdings", "stockAnchorLimit": 8 },
+    { "targetTagId": "strategy.benchmark.sp500", "newsTopicIds": ["topic.us_index", "topic.rates"], "stockAnchorMode": "top_holdings", "stockAnchorLimit": 8 },
+    { "targetTagId": "asset.bond", "newsTopicIds": ["topic.rates", "topic.credit"], "stockAnchorMode": "top_holdings", "stockAnchorLimit": 8 }
+  ]
+}

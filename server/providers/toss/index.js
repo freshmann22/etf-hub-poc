@@ -15,6 +15,7 @@ const IDX_PREV = 1; // 직전 영업일
 const IDX_1W = 5; // 5영업일 전(주간)
 const IDX_1M = 20; // 20영업일 전(월간)
 const EOKWON = 1e8; // 억원 환산
+const DEFAULT_HISTORY_TTL_MS = 60_000;
 
 export class TossProvider extends BaseProvider {
   constructor(config = {}) {
@@ -32,7 +33,8 @@ export class TossProvider extends BaseProvider {
     this._tokenUrl = config.tokenUrl || `${this._base}/oauth2/token`;
     this._host = safeHost(this._base);
     this._token = null; // { value, expMs }
-    this._history = new Map(); // code -> { dayKey, prevClose, close1w, close1m, tvToday, tvPrev }
+    this._history = new Map();
+    this._historyTtlMs = config.historyTtlMs ?? DEFAULT_HISTORY_TTL_MS;
   }
 
   isAvailable() {
@@ -140,19 +142,20 @@ export class TossProvider extends BaseProvider {
     return out;
   }
 
-  // 일봉 파생 과거값(전일종가·주간/월간 기준종가·거래대금). 일 단위 캐시.
+  // 일봉 파생값. 당일 거래량이 포함되므로 짧게 캐시한다.
   async _fetchHistory(code) {
-    const dayKey = new Date().toISOString().slice(0, 10);
+    const now = Date.now();
     const cached = this._history.get(code);
-    if (cached && cached.dayKey === dayKey) return cached;
+    if (cached && now - cached.fetchedAt < this._historyTtlMs) return cached;
 
-    let hist = { dayKey, prevClose: null, close1w: null, close1m: null, tvToday: null, tvPrev: null };
+    let hist = { fetchedAt: now, prevClose: null, close1w: null, close1m: null, volumeToday: null, tvToday: null, tvPrev: null };
     try {
       const json = await this._get(`/api/v1/candles?symbol=${encodeURIComponent(code)}&interval=1d&count=${CANDLE_COUNT}`);
       const candles = (json && json.result && json.result.candles) || []; // 최신순
       hist.prevClose = closeAt(candles, IDX_PREV);
       hist.close1w = closeAt(candles, IDX_1W);
       hist.close1m = closeAt(candles, IDX_1M);
+      hist.volumeToday = volumeAt(candles, 0);
       hist.tvToday = tradingValueAt(candles, 0);
       hist.tvPrev = tradingValueAt(candles, IDX_PREV);
     } catch {
@@ -164,7 +167,7 @@ export class TossProvider extends BaseProvider {
 
   /**
    * 코드 목록 → Map(code -> 시세지표).
-   * price/change/changeRate 는 현재가(fresh) 기준, return1w/1m·tradingValue 는 일봉(일 캐시) 기준.
+   * price/change/changeRate 는 현재가 기준, return1w/1m·volume·tradingValue 는 일봉 기준.
    */
   async getQuotes(codes, { concurrency = 8 } = {}) {
     this._requireCreds();
@@ -180,6 +183,7 @@ export class TossProvider extends BaseProvider {
         changeRate: null,
         return1w: null,
         return1m: null,
+        volume: null,
         tradingValue: null,
         tradingValueChangeRate: null,
         timestamp: p ? p.timestamp : null,
@@ -197,6 +201,7 @@ export class TossProvider extends BaseProvider {
       }
       q.return1w = pct(price, h.close1w);
       q.return1m = pct(price, h.close1m);
+      q.volume = h.volumeToday;
       if (h.tvToday != null) q.tradingValue = Math.round(h.tvToday); // 억원(정수)
       q.tradingValueChangeRate = pct(h.tvToday, h.tvPrev);
     });
@@ -225,7 +230,7 @@ export class TossProvider extends BaseProvider {
         changeRate: q.changeRate,
         return1w: q.return1w,
         return1m: q.return1m,
-        volume: null,
+        volume: q.volume,
         tradingValue: q.tradingValue,
         tradingValueChangeRate: q.tradingValueChangeRate,
         marketCap: null,
@@ -341,6 +346,11 @@ function tradingValueAt(candles, idx) {
   const vol = parseNumber(c.volume);
   if (close == null || vol == null) return null;
   return (close * vol) / EOKWON;
+}
+
+function volumeAt(candles, idx) {
+  const c = candles[idx];
+  return c ? parseNumber(c.volume) : null;
 }
 
 // 배열을 size 단위로 분할.

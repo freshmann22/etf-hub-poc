@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/logic.test.mjs tests/data-integrity.test.mjs tests/content-policy.test.mjs tests/server.test.mjs tests/holdings-schema.test.mjs tests/holdings-pipeline.test.mjs tests/tag-brief/assign.test.mjs tests/tag-brief/policyGate.test.mjs tests/tag-brief/generate.test.mjs tests/tag-brief/topicRegistry.test.mjs tests/tag-brief/universeAdapter.test.mjs tests/tag-brief/tag-briefs-fixture.test.mjs",
+    "test": "node --test tests/logic.test.mjs tests/data-integrity.test.mjs tests/content-policy.test.mjs tests/server.test.mjs tests/holdings-schema.test.mjs tests/holdings-pipeline.test.mjs tests/tag-brief/assign.test.mjs tests/tag-brief/policyGate.test.mjs tests/tag-brief/generate.test.mjs tests/tag-brief/topicRegistry.test.mjs tests/tag-brief/universeAdapter.test.mjs tests/tag-brief/tag-briefs-fixture.test.mjs tests/tag-brief/explore-tag-map.test.mjs",
+    "test:reverse-search": "node --test modules/reverse-search/tests/nlu-ranker.test.mjs modules/reverse-search/tests/query-plan.test.mjs",
+    "review:reverse-search": "node scripts/review-module.mjs reverse-search",
     "build:tag-briefs": "node scripts/build-tag-briefs.js",
     "serve": "node server/index.js",
     "serve:static": "node scripts/dev-server.js",

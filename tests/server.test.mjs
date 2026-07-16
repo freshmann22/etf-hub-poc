@@ -19,6 +19,8 @@ import { Status, errorCodeToHttp, ErrorCodes } from '../server/lib/errors.js';
 import { createRegistry } from '../server/providers/registry.js';
 import { createEtfService } from '../server/services/etf-service.js';
 import { handleApiRequest } from '../server/routes/api.js';
+import { createReverseSearchQueryPlanner } from '../server/services/reverse-search-query-planner.js';
+import { OpenRouterQueryPlannerClient } from '../server/llm/openrouter-query-planner.js';
 
 // ---------------------------------------------------------------------------
 // 공용 픽스처
@@ -242,6 +244,7 @@ test('service(mock): getBundle includes all UI collections', async () => {
   const svc = createEtfService({ config: makeConfig({ mode: 'mock' }) });
   const b = await svc.getBundle();
   assert.ok(Array.isArray(b.etfsRaw) && b.etfsRaw.length > 0);
+  assert.ok(b.etfsRaw.every((etf) => typeof etf.volume === 'number' || etf.volume === null));
   assert.ok(Array.isArray(b.themesRaw) && b.themesRaw.length > 0);
   assert.ok(Array.isArray(b.stocksRaw));
   assert.ok(Array.isArray(b.holdingsRaw));
@@ -318,6 +321,81 @@ test('router: unknown field → 404, non-GET → 405', async () => {
   assert.equal(r405.statusCode, 405);
 });
 
+test('router: reverse-search planner accepts POST and returns a validated plan', async () => {
+  const req = {
+    method: 'POST',
+    url: '/api/reverse-search/plan',
+    async *[Symbol.asyncIterator]() {
+      yield Buffer.from(JSON.stringify({ query: '반도체 ETF' }));
+    },
+  };
+  const queryPlanner = {
+    async createPlan(query) {
+      return { source: 'rules', taxonomyVersion: '2.0.0', warnings: [], plan: { intent: 'TAG_MATCH', query, tags: [] } };
+    },
+  };
+  const res = fakeRes();
+  await handleApiRequest(req, res, { service: createEtfService({ config: makeConfig() }), queryPlanner });
+  assert.equal(res.statusCode, 200);
+  const payload = JSON.parse(res.body);
+  assert.equal(payload.source, 'rules');
+  assert.equal(payload.plan.query, '반도체 ETF');
+});
+
+test('reverse-search planner validates LLM output against canonical taxonomy', async () => {
+  const planner = createReverseSearchQueryPlanner({
+    llmClient: {
+      async createPlan() {
+        return {
+          intent: 'TAG_MATCH',
+          tags: [
+            { tagId: 'sector.semiconductor', queryScore: 0.92, mode: 'required', reason: 'direct match' },
+            { tagId: 'sector.fabricated', queryScore: 1, mode: 'required' },
+          ],
+        };
+      },
+    },
+  });
+  const result = await planner.createPlan('반도체 ETF');
+  assert.equal(result.source, 'llm');
+  assert.deepEqual(result.plan.tags.map((tag) => tag.tagId), ['sector.semiconductor']);
+  assert.deepEqual(result.warnings, ['unknown_tag:sector.fabricated']);
+});
+
+test('openrouter query planner sends a structured request and parses JSON content', async () => {
+  const originalFetch = globalThis.fetch;
+  let captured;
+  globalThis.fetch = async (url, options) => {
+    captured = { url: String(url), options };
+    return new Response(JSON.stringify({
+      choices: [{ message: { content: JSON.stringify({
+        intent: 'TAG_MATCH',
+        tags: [{ tagId: 'sector.semiconductor', queryScore: 0.9, mode: 'required', reason: '반도체 요청' }],
+        sort: null,
+      }) } }],
+    }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  };
+  try {
+    const client = new OpenRouterQueryPlannerClient({
+      apiKey: 'SECRET_KEY',
+      model: 'deepseek/deepseek-v4-flash',
+      retries: 0,
+    });
+    const plan = await client.createPlan({
+      query: '반도체 ETF',
+      taxonomy: { tags: [{ id: 'sector.semiconductor', facet: 'sector', label: '반도체', definition: '반도체 ETF', enabled: true }] },
+    });
+    assert.equal(plan.tags[0].tagId, 'sector.semiconductor');
+    assert.equal(captured.url, 'https://openrouter.ai/api/v1/chat/completions');
+    assert.equal(captured.options.headers.Authorization, 'Bearer SECRET_KEY');
+    const body = JSON.parse(captured.options.body);
+    assert.equal(body.model, 'deepseek/deepseek-v4-flash');
+    assert.deepEqual(body.response_format, { type: 'json_object' });
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 // ---------------------------------------------------------------------------
 // 오류코드 → HTTP 매핑
 // ---------------------------------------------------------------------------
@@ -336,12 +414,15 @@ test('config: describeConfig never leaks secret values', async () => {
   process.env.DART_API_KEY = 'SECRET_SHOULD_NOT_LEAK';
   process.env.BROKER_API_KEY = 'BROKER_SECRET_XYZ';
   process.env.BROKER_API_SECRET = 'BROKER_SECRET_XYZ';
+  process.env.OPENROUTER_API_KEY = 'OPENROUTER_SECRET_XYZ';
   process.env.BROKER_API_BASE_URL = 'https://example.invalid';
   // 캐시버스터로 새 모듈 인스턴스를 만들어 현재 env 를 반영.
   const mod = await import('../server/config.js?secrettest=1');
   const d = mod.describeConfig();
   const serialized = JSON.stringify(d);
   assert.ok(!serialized.includes('SECRET_SHOULD_NOT_LEAK'));
+  assert.ok(!serialized.includes('OPENROUTER_SECRET_XYZ'));
+  assert.equal(d.reverseSearch.configured, true);
   assert.ok(!serialized.includes('BROKER_SECRET_XYZ'));
   assert.equal(d.providers.dart, 'configured');
   assert.equal(d.providers.broker, 'configured');
@@ -424,6 +505,7 @@ test('toss: computes return1w/return1m/tradingValue from daily candles', async (
     assert.equal(q.changeRate, 2.04); // vs 98000
     assert.equal(q.return1w, 5.26); // vs 95000
     assert.equal(q.return1m, 25); // vs 80000
+    assert.equal(q.volume, 12000000);
     assert.equal(q.tradingValue, 12000); // 억원
     assert.equal(q.tradingValueChangeRate, 22.45); // 12000 vs 9800
   } finally {
@@ -506,6 +588,7 @@ test('publicdata: lists ETFs and converts amounts to 억원 (mocked)', async () 
     assert.equal(kodex.name, 'KODEX 200');
     assert.equal(kodex.prevClose, 10000);
     assert.equal(kodex.netAssets, 500); // 50,000,000,000 / 1e8 = 500 억원
+    assert.equal(kodex.volume, 1000);
     assert.equal(kodex.tradingValue, 1); // 100,000,000 / 1e8 = 1 억원
     assert.equal(kodex.indexName, '테스트지수');
     assert.equal(env.meta.source, 'publicdata');
@@ -546,6 +629,7 @@ test('service: publicdata expands universe with thin ETFs (toss off)', async () 
     assert.equal(thin.themeId, null);
     assert.ok(Array.isArray(thin.topHoldings));
     assert.equal(thin.currentPrice, 10000); // toss off → 공공데이터 종가
+    assert.equal(thin.volume, 1000);
     assert.equal(thin.netAssets, 500);
     // 모든 유니버스 항목이 렌더 안전(topHoldings 배열 + id/code/name).
     assert.ok(b.etfsRaw.every((e) => e.id && e.code && e.name && Array.isArray(e.topHoldings)));

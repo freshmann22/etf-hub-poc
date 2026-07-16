@@ -44,6 +44,18 @@ export const config = {
     retries: num(env.HTTP_RETRIES, 2),
   },
 
+  llm: {
+    openrouter: {
+      apiKey: env.OPENROUTER_API_KEY || '',
+      model: env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash',
+      baseUrl: env.OPENROUTER_BASE_URL || 'https://openrouter.ai/api/v1',
+      siteUrl: env.OPENROUTER_SITE_URL || 'http://localhost:4174',
+      appName: env.OPENROUTER_APP_NAME || 'ETF Hub Reverse Search',
+      timeoutMs: num(env.OPENROUTER_TIMEOUT_MS, 30000),
+      retries: num(env.OPENROUTER_RETRIES, 0),
+    },
+  },
+
   // provider 별 인증정보 존재 여부(값 자체는 노출 안 함).
   providers: {
     mock: { enabled: true },
@@ -97,6 +109,11 @@ export function describeConfig() {
     mode: config.mode,
     defaultProvider: config.defaultProvider,
     cache: config.cache,
+    reverseSearch: {
+      planner: has(config.llm.openrouter.apiKey) ? 'openrouter' : 'rules',
+      model: config.llm.openrouter.model,
+      configured: has(config.llm.openrouter.apiKey),
+    },
     providers: Object.fromEntries(
       Object.entries(cred).map(([id, ok]) => [id, ok ? 'configured' : 'unconfigured'])
     ),

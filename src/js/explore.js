@@ -4,47 +4,13 @@
 // 후속에 파이프라인을 연결할 수 있도록 어댑터 지점(getHoldings/getDividend)을 분리한다.
 import { loadData } from './dataSource.js';
 
-// ---------------------------------------------------------------------------
-// 분류 체계(프로토타입 유지) + 칩→필터 베스트에포트 매핑
-// ---------------------------------------------------------------------------
-const GROUPS = {
-  sector: ['게임/엔터/미디어', 'IT', '의료/제약/바이오', '반도체', '전기차/2차전지', '조선/조선기자재', '클린에너지', '원자재', '자율주행/모빌리티', '테크/기술', '금융', '우주항공/방산', 'AI전력/인프라'],
-  strategy: ['레버리지', '인버스', '성장주', '가치주', '부동산 리츠', '경기소비재', 'S&P500', '나스닥100', '밸류업'],
-  dividend: ['한국 고배당', '미국 배당성장', '커버드콜 배당', '월배당'],
-  assetClass: ['채권'],
-};
-const GROUP_LABELS = { sector: '섹터 부문', strategy: '전략 부문', dividend: '배당 부문', assetClass: '자산군' };
-
-// 칩 라벨 → ETF 이름에서 찾을 키워드(별칭). 매칭되면 실 ETF 로 필터.
-const CHIP_KEYWORDS = {
-  '게임/엔터/미디어': ['게임', '엔터', '미디어', 'K-POP', '콘텐츠'],
-  'IT': ['IT', '소프트웨어', '인터넷', '테크'],
-  '의료/제약/바이오': ['바이오', '헬스', '제약', '의료'],
-  '반도체': ['반도체', 'AI반도체', '시스템반도체'],
-  '전기차/2차전지': ['2차전지', '배터리', '전기차', '2차전지소부장'],
-  '조선/조선기자재': ['조선', '조선기자재', '선박'],
-  '클린에너지': ['친환경', '태양광', '수소', '신재생', '클린'],
-  '원자재': ['원유', '골드', '금', '구리', '원자재', '천연가스'],
-  '자율주행/모빌리티': ['모빌리티', '자율주행', '로봇'],
-  '테크/기술': ['테크', '나스닥', '빅테크'],
-  '금융': ['은행', '금융', '증권', '보험'],
-  '우주항공/방산': ['방산', '우주', '항공', 'K-방산'],
-  'AI전력/인프라': ['AI', '전력', '인프라', '데이터센터', '원자력'],
-  '레버리지': ['레버리지'],
-  '인버스': ['인버스'],
-  '성장주': ['성장'],
-  '가치주': ['가치', '밸류'],
-  '부동산 리츠': ['리츠', 'REIT', '부동산'],
-  '경기소비재': ['소비재', '컨슈머'],
-  'S&P500': ['S&P', 'S&P500'],
-  '나스닥100': ['나스닥', '나스닥100'],
-  '밸류업': ['밸류업', 'Value-up'],
-  '한국 고배당': ['고배당', '배당'],
-  '미국 배당성장': ['배당성장', '배당다우'],
-  '커버드콜 배당': ['커버드콜'],
-  '월배당': ['월배당'],
-  '채권': ['채권', '국채', '회사채'],
-};
+// UI 노출 구조와 ETF 소속은 taxonomy v2 산출물을 사용한다.
+const EXPLORE_TAG_MAP_URL = '/config/etf-tagging/explore-tag-map.json';
+const ETF_FILTER_MAP_URL = '/data/tagging/etf-filter-map.json';
+let GROUPS = {};
+let GROUP_LABELS = {};
+let TAG_MAP = null;
+let tagMembershipById = new Map();
 
 const SORTS = [
   { key: 'marketCap', label: '시가총액순', dir: -1 },
@@ -60,7 +26,7 @@ const PAGE = 5; // 리스트 5개씩 노출
 // ---------------------------------------------------------------------------
 const state = {
   group: 'sector',
-  chip: '반도체', // null 이면 필터 없음(전체)
+  chip: 'sector.semiconductor', // taxonomy tagId. null이면 필터 없음(전체)
   chipsExpanded: false,
   sortIdx: 1, // 초기: 수익률순(칩 활성)
   visibleCount: PAGE,
@@ -120,12 +86,10 @@ function issuerOf(e) {
 }
 
 // ---------------------------------------------------------------------------
-// 칩 필터 + 정렬
+// 택소노미 필터 + 정렬
 // ---------------------------------------------------------------------------
-function chipMatches(e, chip) {
-  const kws = CHIP_KEYWORDS[chip] || [chip];
-  const name = String(e.name || '');
-  return kws.some((k) => name.toUpperCase().includes(String(k).toUpperCase()));
+function chipMatches(e, tagId) {
+  return tagMembershipById.get(tagId)?.has(String(e.code)) || false;
 }
 function sortVal(e, key) {
   if (key === 'marketCap') {
@@ -214,14 +178,49 @@ function getEtfMeta(code) {
   return META.etfs[normalizeEtfId(code)] || null;
 }
 
+async function loadExploreTagMap() {
+  try {
+    const [configRes, filterRes] = await Promise.all([
+      fetch(EXPLORE_TAG_MAP_URL, { headers: { Accept: 'application/json' } }),
+      fetch(ETF_FILTER_MAP_URL, { headers: { Accept: 'application/json' } }),
+    ]);
+    if (!configRes.ok || !filterRes.ok) return false;
+    const [config, filterMap] = await Promise.all([configRes.json(), filterRes.json()]);
+    if (!config.taxonomyVersion || config.taxonomyVersion !== filterMap.taxonomyVersion) return false;
+
+    const groups = {};
+    const labels = {};
+    const memberships = new Map();
+    for (const facet of config.facets || []) {
+      groups[facet.id] = (facet.filters || []).map((filter) => ({ ...filter }));
+      labels[facet.id] = facet.label;
+      for (const filter of facet.filters || []) {
+        const entries = filterMap.filters?.[filter.tagId] || [];
+        memberships.set(filter.tagId, new Set(entries.map((entry) => String(entry.etfCode))));
+      }
+    }
+    if (!Object.keys(groups).length) return false;
+
+    TAG_MAP = config;
+    GROUPS = groups;
+    GROUP_LABELS = labels;
+    tagMembershipById = memberships;
+    state.group = config.defaultSelection?.facetId || Object.keys(groups)[0];
+    state.chip = config.defaultSelection?.tagId || groups[state.group]?.[0]?.tagId || null;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 // 태그 브리핑은 발행된 fixture만 소비한다. 실패해도 ETF 탐색은 그대로 동작한다.
 let TAG_BRIEFS = null;
 async function getTagBriefs() {
   if (TAG_BRIEFS) return TAG_BRIEFS;
   TAG_BRIEFS = fetch('/data/fixtures/tag-briefs.json', { headers: { Accept: 'application/json' } })
     .then((res) => (res.ok ? res.json() : null))
-    .then((payload) => (Array.isArray(payload?.briefs) ? payload.briefs : []))
-    .catch(() => []);
+    .then((payload) => (Array.isArray(payload?.briefs) ? payload : { briefs: [], taxonomyVersion: null }))
+    .catch(() => ({ briefs: [], taxonomyVersion: null }));
   return TAG_BRIEFS;
 }
 
@@ -240,57 +239,114 @@ function getDividend() {
 // ---------------------------------------------------------------------------
 const $ = (id) => document.getElementById(id);
 
-function sparkPath(seed, up) {
-  // 결정적 pseudo 스파크라인(장식용). 실 시세 아님.
+function sparkStroke(start, end) {
+  if (!isNum(start) || !isNum(end)) return 'var(--color-neutral)';
+  if (end > start) return 'var(--color-up)';
+  if (end < start) return 'var(--color-down)';
+  return 'var(--color-neutral)';
+}
+
+function sparkPath(seed) {
+  // 결정적 pseudo 스파크라인(장식용). 실 시세가 오면 최근 2영업일 10분봉으로 교체된다.
   let x = Math.abs(hash(seed)) % 1000;
   const rand = () => ((x = (x * 9301 + 49297) % 233280) / 233280);
   const pts = [];
+  const values = [];
   let y = 14;
   for (let i = 0; i <= 9; i++) {
-    y += (rand() - (up ? 0.62 : 0.38)) * 6;
+    y += (rand() - 0.5) * 6;
     y = Math.max(3, Math.min(23, y));
+    values.push(-y); // SVG y축은 아래로 증가하므로 가격 방향 비교용으로 반전한다.
     pts.push(`${(i * 72) / 9},${y.toFixed(1)}`);
   }
-  const stroke = up ? 'var(--color-up)' : 'var(--color-down)';
-  return `<svg viewBox="0 0 72 26"><polyline points="${pts.join(' ')}" fill="none" stroke="${stroke}" stroke-width="2"/></svg>`;
+  const firstStroke = sparkStroke(values[0], values[4]);
+  const secondStroke = sparkStroke(values[5], values[9]);
+  return `<svg viewBox="0 0 72 26" role="img" aria-label="최근 2영업일 가격 흐름">
+    <line x1="36" y1="2" x2="36" y2="24" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="2 2"/>
+    <polyline points="${pts.slice(0, 5).join(' ')}" fill="none" stroke="${firstStroke}" stroke-width="2"/>
+    <polyline points="${pts.slice(5).join(' ')}" fill="none" stroke="${secondStroke}" stroke-width="2"/>
+  </svg>`;
 }
 function hash(s) { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return h; }
 
-// 실 스파크라인: Toss 1D 분봉(인트라데이) 종가로 그린다. 노출 행만 조회 후 캐시.
-const sparkCache = new Map(); // code -> number[] | null(데이터 없음)
+// 실 스파크라인: 최근 2영업일 정규장 1분봉을 날짜별 10분봉으로 축약한다. 노출 행만 조회 후 캐시.
+const sparkCache = new Map(); // code -> { days: [{ date, closes }] } | null
 const r1mCache = new Map();   // code -> 1M 수익률(number) | null
-// N개마다 1개 추출(+마지막 보존)해 5분봉 등으로 솎아낸다.
-function downsample(arr, step) {
-  const out = [];
-  for (let i = 0; i < arr.length; i += step) out.push(arr[i]);
-  const last = arr[arr.length - 1];
-  if (out[out.length - 1] !== last) out.push(last);
-  return out;
+
+const SEOUL_TIME = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit',
+  hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+});
+const REGULAR_OPEN_MINUTE = 9 * 60;
+const REGULAR_CLOSE_MINUTE = 15 * 60 + 30;
+const SPARK_INTERVAL_MINUTE = 10;
+
+function regularSessionTime(timestamp) {
+  const date = new Date(timestamp);
+  if (Number.isNaN(date.getTime())) return null;
+  const parts = Object.fromEntries(SEOUL_TIME.formatToParts(date).map((part) => [part.type, part.value]));
+  const minute = Number(parts.hour) * 60 + Number(parts.minute);
+  if (minute < REGULAR_OPEN_MINUTE || minute > REGULAR_CLOSE_MINUTE) return null;
+  return { date: `${parts.year}-${parts.month}-${parts.day}`, minute };
 }
-// up 을 넘기면 그 방향색을 쓰고(옆의 오늘 등락률과 일치), 없으면 선 자체 추세로 판단.
-function realSparkSvg(closes, up) {
+
+function buildTwoDaySpark(points) {
+  const rows = points
+    .map((point) => ({ point, session: regularSessionTime(point.t) }))
+    .filter(({ point, session }) => session && isNum(point.c));
+  const allDates = [...new Set(rows.map(({ session }) => session.date))];
+  const dates = allDates.slice(-2);
+  const closeByDate = new Map();
+  rows.forEach(({ point, session }) => closeByDate.set(session.date, point.c));
+  const days = dates.map((date) => {
+    const buckets = new Map();
+    rows.filter(({ session }) => session.date === date).forEach(({ point, session }) => {
+      const bucket = Math.floor((session.minute - REGULAR_OPEN_MINUTE) / SPARK_INTERVAL_MINUTE);
+      buckets.set(bucket, point.c); // 각 10분 구간의 마지막 체결가
+    });
+    const dateIndex = allDates.indexOf(date);
+    const previousDate = dateIndex > 0 ? allDates[dateIndex - 1] : null;
+    return {
+      date,
+      previousClose: previousDate ? closeByDate.get(previousDate) : null,
+      closes: [...buckets.entries()].sort((a, b) => a[0] - b[0]).map(([, close]) => close),
+    };
+  }).filter((day) => day.closes.length >= 2);
+  return days.length ? { days } : null;
+}
+// 각 거래일은 전 거래일 종가와 해당 날짜의 마지막 10분봉을 비교해 독립적으로 색을 정한다.
+function realSparkSvg(series) {
   const W = 72, H = 24, p = 2;
+  const closes = series.days.flatMap((day) => day.closes);
   const min = Math.min(...closes), max = Math.max(...closes), span = (max - min) || 1;
   const x = (i) => p + (i * (W - 2 * p)) / (closes.length - 1);
   const y = (v) => p + (1 - (v - min) / span) * (H - 2 * p);
-  const u = typeof up === 'boolean' ? up : closes[closes.length - 1] >= closes[0];
-  const stroke = u ? 'var(--color-up)' : 'var(--color-down)';
-  const pts = closes.map((v, i) => `${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
-  return `<svg viewBox="0 0 ${W} ${H}"><polyline points="${pts}" fill="none" stroke="${stroke}" stroke-width="2"/></svg>`;
+  let offset = 0;
+  const paths = series.days.map((day) => {
+    const pts = day.closes.map((v, i) => `${x(offset + i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    const stroke = sparkStroke(day.previousClose, day.closes[day.closes.length - 1]);
+    offset += day.closes.length;
+    return `<polyline points="${pts}" fill="none" stroke="${stroke}" stroke-width="2"/>`;
+  }).join('');
+  const firstDayCount = series.days[0].closes.length;
+  const divider = series.days.length === 2
+    ? (x(firstDayCount - 1) + x(firstDayCount)) / 2
+    : null;
+  const dividerLine = divider == null ? ''
+    : `<line x1="${divider.toFixed(1)}" y1="${p}" x2="${divider.toFixed(1)}" y2="${H - p}" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="2 2"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="최근 2영업일 10분봉 가격 흐름, 색상은 전 거래일 종가 대비">${dividerLine}${paths}</svg>`;
 }
 async function fillSparklines(list) {
   await Promise.all(list.map(async (e) => {
-    // 스파크라인: 1D 인트라데이. 토스는 1m/1d 만 지원하므로 1분봉을 5분 단위로 다운샘플(깔끔하게).
+    // 토스는 1m/1d만 지원하므로 1분봉을 받아 서울 정규장 기준 10분봉으로 축약한다.
     if (!sparkCache.has(e.code)) {
-      const pts = await fetchCandles(e.code, '1m', 200);
-      const closes = pts.map((p) => p.c).filter(isNum);
-      sparkCache.set(e.code, closes.length >= 2 ? downsample(closes, 5) : null);
+      const pts = await fetchCandles(e.code, '1m', 800);
+      sparkCache.set(e.code, buildTwoDaySpark(pts));
     }
-    const closes = sparkCache.get(e.code);
-    if (closes) {
+    const series = sparkCache.get(e.code);
+    if (series) {
       const cell = document.querySelector('.spark[data-spark="' + e.code + '"]');
-      // 색은 오늘 등락률(changeRate1d)에 맞춰 옆 % 와 일치시킨다.
-      if (cell) cell.innerHTML = realSparkSvg(closes, isNum(e.changeRate1d) ? e.changeRate1d >= 0 : undefined);
+      if (cell) cell.innerHTML = realSparkSvg(series);
     }
     // 1M 수익률: 일봉 22개(별도 조회, 캐시). 스파크라인(1D)과 기간이 다르므로 분리.
     if (!r1mCache.has(e.code)) {
@@ -309,7 +365,7 @@ async function fillSparklines(list) {
 
 function renderCategory() {
   $('categoryTabs').innerHTML = Object.keys(GROUPS)
-    .map((k) => `<button class="tab ${k === state.group && !state.watchOnly ? 'active' : ''}" data-group="${k}" role="tab">${GROUP_LABELS[k].replace(' 부문', '')}</button>`)
+    .map((k) => `<button class="tab ${k === state.group && !state.watchOnly ? 'active' : ''}" data-group="${k}" role="tab">${esc(GROUP_LABELS[k])}</button>`)
     .join('');
 }
 function renderChips() {
@@ -321,8 +377,8 @@ function renderChips() {
     toggle.classList.add('hidden');
     return;
   }
-  container.innerHTML = GROUPS[state.group]
-    .map((c, i) => `<button class="chip ${c === state.chip ? 'active' : ''}" data-idx="${i}" role="tab">${esc(c)}</button>`)
+  container.innerHTML = (GROUPS[state.group] || [])
+    .map((c, i) => `<button class="chip ${c.tagId === state.chip ? 'active' : ''}" data-idx="${i}" role="tab">${esc(c.label)}</button>`)
     .join('');
   container.classList.toggle('collapsed', !state.chipsExpanded);
   // 접힘 상태에서 넘칠 때만 '전체 필터' 토글 노출.
@@ -338,9 +394,10 @@ function renderChips() {
 }
 function renderList() {
   const list = currentList();
+  const selected = selectedChipConfig();
   const title = state.watchOnly ? '관심 ETF'
     : state.query.trim() ? `"${esc(state.query.trim())}" 검색`
-    : state.chip ? `${esc(state.chip)} 관련 ETF`
+    : selected ? `${esc(selected.label)} 관련 ETF`
     : '전체 ETF';
   $('listTitle').innerHTML = `${title} <span class="sub">(총 ${list.length}개)</span>`;
   $('sortBtn').textContent = SORTS[state.sortIdx].label + ' ⌄';
@@ -358,7 +415,7 @@ function renderList() {
           <div class="meta">${regionOf(e)} · 1M <span class="r1m ${r1m.cls}" data-r1m="${esc(e.code)}">${r1m.text}</span> · 거래대금 ${eok(e.tradingValue)}</div>
         </div>
         <div class="rowRight">
-          <div class="spark" data-spark="${esc(e.code)}">${sparkPath(e.code, isNum(e.changeRate1d) ? e.changeRate1d >= 0 : true)}</div>
+          <div class="spark" data-spark="${esc(e.code)}">${sparkPath(e.code)}</div>
           <div class="perf ${p.cls}">${p.text}</div>
           <div class="price">${won(e.currentPrice)}</div>
         </div>
@@ -375,56 +432,35 @@ function renderList() {
     more.classList.add('hidden');
   }
 }
-const TAG_CATEGORY_LABELS = { assetClass: '자산군', sector: '섹터', strategy: '전략', dividend: '배당' };
-const BRIEF_CHIP_LIMIT = 8;
-const TAG_ID_BY_CHIP = {
-  '반도체': 'sector.semiconductor',
-  '우주항공/방산': 'sector.aerospace_defense',
-  '전기차/2차전지': 'sector.ev_battery',
-  '조선/조선기자재': 'sector.shipbuilding',
-  'S&P500': 'strategy.benchmark.sp500',
-  '채권': 'asset.bond',
-};
+function selectedChipConfig() {
+  return (GROUPS[state.group] || []).find((chip) => chip.tagId === state.chip) || null;
+}
 
 function renderTagBriefs() {
   const section = $('briefSection');
   const container = $('tagBriefList');
-  const tagId = TAG_ID_BY_CHIP[state.chip];
-  const brief = !state.watchOnly && !state.query.trim() && tagId
-    ? tagBriefs.find((item) => item.tagId === tagId)
+  const selected = !state.watchOnly && !state.query.trim() ? selectedChipConfig() : null;
+  const brief = selected
+    ? tagBriefs.find((item) => item.tagId === selected.tagId && item.taxonomyVersion === TAG_MAP?.taxonomyVersion)
     : null;
-  section.classList.toggle('hidden', !brief);
-  if (!brief) {
+  section.classList.toggle('hidden', !selected);
+  if (!selected) {
     container.innerHTML = '';
+    return;
+  }
+  $('brief-heading').textContent = 'AI 브리핑';
+  if (!brief) {
+    container.innerHTML = `<article class="briefCard briefCardEmpty">
+      <h3>아직 발행된 브리핑이 없어요.</h3>
+    </article>`;
     return;
   }
 
   container.innerHTML = [brief].map((brief) => {
-    const related = Array.isArray(brief.relatedEtfIds) ? brief.relatedEtfIds : [];
-    const visible = related.slice(0, BRIEF_CHIP_LIMIT);
-    const extraCount = Math.max(0, related.length - visible.length);
     const points = (brief.keyPoints || []).map((point) => `<li>${esc(point)}</li>`).join('');
-    const sources = (brief.sourceArticles || [])
-      .map((source) => `<li>${esc(source.title)} <span>${esc(source.source)}</span></li>`)
-      .join('');
-    const chips = visible.map((code) => {
-      const etf = etfByCode.get(String(code).trim());
-      return etf
-        ? `<button type="button" class="briefChip" data-brief-etf="${esc(etf.code)}">${esc(etf.name)}</button>`
-        : `<span class="briefChip briefChipMuted">${esc(code)}</span>`;
-    }).join('');
-    const extra = extraCount ? `<span class="briefMore">외 ${extraCount}개</span>` : '';
-    const category = TAG_CATEGORY_LABELS[brief.tagCategory] || esc(brief.tagCategory || '분류');
     return `<article class="briefCard">
-      <div class="briefMeta"><span class="briefBadge">${category}</span></div>
-      <h3>${esc(brief.title)}</h3>
-      <p class="briefSummary">${esc(brief.summary)}</p>
+      <h3>${esc(brief.summary)}</h3>
       <ul class="briefPoints">${points}</ul>
-      <details class="briefSources">
-        <summary>근거 기사 ${(brief.sourceArticles || []).length}건</summary>
-        <ul>${sources}</ul>
-      </details>
-      <div class="briefChips">${chips}${extra}</div>
     </article>`;
   }).join('');
 }
@@ -727,21 +763,21 @@ function wire() {
   $('categoryTabs').addEventListener('click', (ev) => {
     const t = ev.target.closest('[data-group]'); if (!t) return;
     state.group = t.dataset.group; state.watchOnly = false; state.query = ''; $('search-input').value = '';
-    state.chip = GROUPS[state.group][0]; state.chipsExpanded = false; state.visibleCount = PAGE;
+    state.chip = GROUPS[state.group]?.[0]?.tagId || null; state.chipsExpanded = false; state.visibleCount = PAGE;
     renderHome();
   });
   $('chips').addEventListener('click', (ev) => {
     const t = ev.target.closest('[data-idx]'); if (!t) return;
     const clicked = GROUPS[state.group][Number(t.dataset.idx)];
-    if (state.chip === clicked) {
+    if (state.chip === clicked.tagId) {
       // 활성 칩 재클릭 → 필터 해제(전체) + 시가총액순 재정렬
       state.chip = null;
       state.sortIdx = SORT_MARKETCAP;
     } else {
-      state.chip = clicked;
+      state.chip = clicked.tagId;
     }
     state.visibleCount = PAGE;
-    renderChips(); renderList();
+    renderChips(); renderTagBriefs(); renderList();
   });
   $('chipsToggle').addEventListener('click', () => { state.chipsExpanded = !state.chipsExpanded; renderChips(); });
   $('search-input').addEventListener('input', (ev) => {
@@ -760,10 +796,6 @@ function wire() {
     if (star) { ev.stopPropagation(); toggleWatch(star.dataset.star); renderList(); return; }
     const row = ev.target.closest('[data-code]');
     if (row) openDetail(row.dataset.code);
-  });
-  $('tagBriefList').addEventListener('click', (ev) => {
-    const chip = ev.target.closest('[data-brief-etf]');
-    if (chip) openDetail(chip.dataset.briefEtf);
   });
   $('periods').addEventListener('click', (ev) => {
     const t = ev.target.closest('[data-period]'); if (!t) return;
@@ -797,8 +829,9 @@ function ctaNoticeHome(msg) {
 window.__explore = { showHome };
 
 async function main() {
-  DATA = await loadData();
-  tagBriefs = await getTagBriefs();
+  const [data, tagMapLoaded, briefPayload] = await Promise.all([loadData(), loadExploreTagMap(), getTagBriefs()]);
+  DATA = data;
+  tagBriefs = briefPayload.taxonomyVersion === TAG_MAP?.taxonomyVersion ? briefPayload.briefs : [];
   etfByCode = new Map(DATA.etfs.map((e) => [e.code, e]));
   stockById = new Map((DATA.stocks || []).map((s) => [s.id, s]));
   holdingsByEtfId = new Map();
@@ -806,10 +839,9 @@ async function main() {
     if (!holdingsByEtfId.has(h.etfId)) holdingsByEtfId.set(h.etfId, []);
     holdingsByEtfId.get(h.etfId).push(h);
   });
-  // 기본 칩에 매칭 ETF 가 없으면 매칭되는 첫 칩으로 이동(빈 화면 방지).
-  if (!DATA.etfs.some((e) => chipMatches(e, state.chip))) {
-    const found = GROUPS.sector.find((c) => DATA.etfs.some((e) => chipMatches(e, c)));
-    if (found) state.chip = found;
+  if (!tagMapLoaded) {
+    state.group = null;
+    state.chip = null;
   }
   wire();
   renderHome();

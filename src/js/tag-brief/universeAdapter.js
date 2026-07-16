@@ -1,15 +1,12 @@
-// TagUniverse adapter — THE ONLY file in this session's code that reads
-// config/etf-tagging/etf-taxonomy.json, data/tagging/etf-filter-map.json,
-// data/tagging/etf-filter-candidates.json, or data/normalized/etf-holdings.json.
+// TagUniverse adapter — ETF 속성 태그와 뉴스 앵커를 브리핑 채널로 연결한다.
+// UI와 이 어댑터는 같은 explore-tag-map.json을 소비한다.
 // Everything downstream (assign.js, generate.js, policyGate.js, build script,
 // rendering) consumes only the TagUniverse objects this module returns and
 // must treat tagId as an opaque key — never branch on what a tag "means".
 //
-// Taxonomy v2 (2026-07-16 cutover, 5 facets / 56 tags) is now in force. Only
-// TAG_DEFINITIONS / TAG_TOPIC_MAP / PROVISIONAL_CANDIDATE_ID below encode the
-// taxonomy mapping; buildTagUniverses()'s signature and return shape are
-// unchanged. Under v2 both formerly-provisional tags (shipbuilding, bond) were
-// promoted to official taxonomy tags, so PROVISIONAL_CANDIDATE_ID is now empty.
+// Taxonomy v2 (2026-07-16 cutover, 5 facets / 56 tags) is in force.
+// explore-tag-map.json alone defines which taxonomy tags become briefing
+// channels and which controlled news topics anchor each channel.
 
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -19,53 +16,22 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 
 const FILTER_MAP_PATH = path.join(REPO_ROOT, 'data', 'tagging', 'etf-filter-map.json');
-const FILTER_CANDIDATES_PATH = path.join(REPO_ROOT, 'data', 'tagging', 'etf-filter-candidates.json');
 const HOLDINGS_PATH = path.join(REPO_ROOT, 'data', 'normalized', 'etf-holdings.json');
+const EXPLORE_TAG_MAP_PATH = path.join(REPO_ROOT, 'config', 'etf-tagging', 'explore-tag-map.json');
 
 const CONFIDENCE_THRESHOLD = 0.5;
-const MAX_ANCHOR_STOCKS = 8;
-
-// This session's in-scope tags. tagCategory/provisional are declared here
-// (not derived from taxonomy) so the adapter stays a single, explicit
-// touchpoint. Real tagIds must exist in etf-taxonomy v2.0.0's filters
-// (data/tagging/etf-filter-map.json). No tag is provisional under v2 —
-// shipbuilding and bond were both promoted to official taxonomy tags.
-const TAG_DEFINITIONS = [
-  { tagId: 'sector.semiconductor', tagCategory: 'sector', label: '반도체', provisional: false },
-  { tagId: 'sector.aerospace_defense', tagCategory: 'sector', label: '방산/항공우주', provisional: false },
-  { tagId: 'sector.ev_battery', tagCategory: 'sector', label: '2차전지', provisional: false },
-  { tagId: 'sector.shipbuilding', tagCategory: 'sector', label: '조선/조선기자재', provisional: false },
-  { tagId: 'strategy.benchmark.sp500', tagCategory: 'strategy', label: 'S&P500', provisional: false },
-  { tagId: 'asset.bond', tagCategory: 'assetClass', label: '채권', provisional: false },
-];
-
-// tag -> topic anchor mapping (adapter-internal configuration; the only
-// place this session encodes what a tag "is about" for news-matching
-// purposes). Sector tags matched primarily via stock anchors still get a
-// broad topic as a secondary anchor for macro-flavored coverage.
-const TAG_TOPIC_MAP = {
-  'sector.semiconductor': [],
-  'sector.aerospace_defense': [],
-  'sector.ev_battery': [],
-  'sector.shipbuilding': [],
-  'strategy.benchmark.sp500': ['topic.us_index', 'topic.rates'],
-  'asset.bond': ['topic.rates', 'topic.credit'],
-};
-
-// Provisional-tag candidateId -> candidate source file's candidateId key.
-// Empty under taxonomy v2: shipbuilding and bond are now official filter-map
-// tags, so no in-scope tag resolves through etf-filter-candidates.json. Kept
-// as the sanctioned hook for any future provisional tag.
-const PROVISIONAL_CANDIDATE_ID = {};
 
 let cachedSources = null;
 
 function loadSources() {
   if (cachedSources) return cachedSources;
   const filterMap = JSON.parse(readFileSync(FILTER_MAP_PATH, 'utf8'));
-  const filterCandidates = JSON.parse(readFileSync(FILTER_CANDIDATES_PATH, 'utf8'));
   const holdings = JSON.parse(readFileSync(HOLDINGS_PATH, 'utf8'));
-  cachedSources = { filterMap, filterCandidates, holdings };
+  const exploreTagMap = JSON.parse(readFileSync(EXPLORE_TAG_MAP_PATH, 'utf8'));
+  if (filterMap.taxonomyVersion !== exploreTagMap.taxonomyVersion) {
+    throw new Error(`taxonomy version mismatch: filter-map=${filterMap.taxonomyVersion}, explore-map=${exploreTagMap.taxonomyVersion}`);
+  }
+  cachedSources = { filterMap, holdings, exploreTagMap };
   return cachedSources;
 }
 
@@ -74,21 +40,12 @@ function etfCodesForRealTag(filterMap, tagId) {
   return entries.filter((entry) => entry.confidence >= CONFIDENCE_THRESHOLD).map((entry) => entry.etfCode);
 }
 
-function etfCodesForProvisionalTag(filterCandidates, tagId) {
-  const candidateId = PROVISIONAL_CANDIDATE_ID[tagId];
-  const candidate = filterCandidates.candidates.find((entry) => entry.candidateId === candidateId);
-  return {
-    etfCodes: candidate ? candidate.sampleEtfs.slice() : [],
-    matchedEtfCount: candidate ? candidate.matchedEtfCount : 0,
-  };
-}
-
 // Top constituent stocks across a tag's ETF set, ranked by summed holding
 // weight, used as the tag's stock anchors for news matching. Foreign-index
 // / bond ETFs are absent from the domestic holdings pipeline, so this
 // naturally yields an empty list for those tags (matches spec: stockIds MAY
 // be empty for index/asset tags).
-function anchorStockIds(holdings, etfCodes) {
+function anchorStockIds(holdings, etfCodes, limit) {
   const weightByStock = new Map();
   for (const etfCode of etfCodes) {
     const etfHoldings = holdings.etfs[etfCode];
@@ -100,37 +57,44 @@ function anchorStockIds(holdings, etfCodes) {
   }
   return [...weightByStock.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, MAX_ANCHOR_STOCKS)
+    .slice(0, limit)
     .map(([code]) => code);
+}
+
+function filterDefinitionByTag(exploreTagMap) {
+  const definitions = new Map();
+  for (const facet of exploreTagMap.facets) {
+    for (const filter of facet.filters) {
+      definitions.set(filter.tagId, { ...filter, facetId: facet.id });
+    }
+  }
+  return definitions;
 }
 
 // Build all TagUniverse objects for this session's in-scope tags.
 // Returns a Map<tagId, TagUniverse>.
 export function buildTagUniverses() {
-  const { filterMap, filterCandidates, holdings } = loadSources();
+  const { filterMap, holdings, exploreTagMap } = loadSources();
+  const definitions = filterDefinitionByTag(exploreTagMap);
   const universes = new Map();
 
-  for (const def of TAG_DEFINITIONS) {
-    let etfCodes;
-    let etfCountBasis;
-    if (def.provisional) {
-      const result = etfCodesForProvisionalTag(filterCandidates, def.tagId);
-      etfCodes = result.etfCodes;
-      etfCountBasis = result.matchedEtfCount;
-    } else {
-      etfCodes = etfCodesForRealTag(filterMap, def.tagId);
-      etfCountBasis = etfCodes.length;
-    }
+  for (const channel of exploreTagMap.briefChannels) {
+    const def = definitions.get(channel.targetTagId);
+    if (!def) throw new Error(`brief channel target is not an Explore filter: ${channel.targetTagId}`);
+    const etfCodes = etfCodesForRealTag(filterMap, channel.targetTagId);
+    const stockIds = channel.stockAnchorMode === 'top_holdings'
+      ? anchorStockIds(holdings, etfCodes, channel.stockAnchorLimit)
+      : [];
 
-    universes.set(def.tagId, {
-      tagId: def.tagId,
-      tagCategory: def.tagCategory,
+    universes.set(channel.targetTagId, {
+      tagId: channel.targetTagId,
+      tagCategory: def.facetId,
       label: def.label,
-      stockIds: anchorStockIds(holdings, etfCodes),
-      topicIds: TAG_TOPIC_MAP[def.tagId] || [],
+      stockIds,
+      topicIds: channel.newsTopicIds.slice(),
       etfIds: etfCodes,
-      provisional: def.provisional,
-      matchedEtfCount: etfCountBasis,
+      provisional: false,
+      matchedEtfCount: etfCodes.length,
     });
   }
 
@@ -138,8 +102,8 @@ export function buildTagUniverses() {
 }
 
 export function getTaxonomyVersion() {
-  const { filterMap } = loadSources();
-  return filterMap.taxonomyVersion;
+  const { exploreTagMap } = loadSources();
+  return exploreTagMap.taxonomyVersion;
 }
 
 export function resetCacheForTest() {

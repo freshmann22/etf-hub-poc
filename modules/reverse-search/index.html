@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=390, initial-scale=1" />
+<title>ETF 역검색 (모듈 PoC)</title>
+<link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+<div class="screen">
+  <header class="header">
+    <h1>ETF 역검색</h1>
+    <p class="header-sub">종목·테마·시황으로 원하는 ETF를 찾아보세요</p>
+  </header>
+
+  <form id="searchForm" class="search-form">
+    <input
+      id="queryInput"
+      class="search-input"
+      type="text"
+      inputmode="search"
+      placeholder="예: SK하이닉스 비중높은 ETF?"
+      aria-label="ETF 역검색 질의 입력"
+    />
+    <button type="submit" class="search-submit">검색</button>
+  </form>
+
+  <p id="statusBanner" class="status-banner" role="status" hidden></p>
+
+  <ul id="resultList" class="result-list"></ul>
+
+  <p id="emptyState" class="empty-state">
+    종목명, 섹터·전략 이름, 또는 "거래량 많은" 같은 표현으로 질문해보세요.<br />
+    예: "삼성전자 비중 높은 ETF", "고배당 ETF", "반도체 중에서 거래량 많은 ETF"
+  </p>
+</div>
+<script type="module" src="./src/app.js"></script>
+</body>
+</html>

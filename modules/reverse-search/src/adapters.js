@@ -1,0 +1,82 @@
+// 데이터 어댑터 — 기존 파이프라인 산출물을 읽기 전용으로 fetch 만 한다.
+// UI/로직은 이 파일이 반환하는 모양만 알고, 원본 JSON 스키마·경로를 직접 알지 못한다.
+// 이 모듈은 서버(server/**)를 전혀 건드리지 않는다 — 저장소 루트가 이미 정적으로 서빙되고 있어
+// 아래 세 경로는 npm run serve 상태에서 그대로 fetch 가능하다(별도 API 추가 없음).
+import { normalizeText } from './text.js';
+
+const TAG_MAP_URL = '/data/tagging/etf-filter-map.json';
+const MASTER_URL = '/data/tagging/etf-universe-index-names.json';
+const HOLDINGS_URL = '/public/data/etf-holdings.json';
+const BUNDLE_URL = '/api/bundle';
+
+async function fetchJson(url, fetchImpl) {
+  try {
+    const res = await fetchImpl(url, { headers: { Accept: 'application/json' } });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
+export async function loadTagUniverse(fetchImpl = fetch) {
+  const payload = await fetchJson(TAG_MAP_URL, fetchImpl);
+  if (!payload || !payload.etfs) return { taxonomyVersion: null, etfs: {} };
+  return { taxonomyVersion: payload.taxonomyVersion || null, etfs: payload.etfs };
+}
+
+export async function loadEtfMaster(fetchImpl = fetch) {
+  const payload = await fetchJson(MASTER_URL, fetchImpl);
+  const byCode = {};
+  for (const item of payload?.items || []) {
+    if (item?.etfCode) byCode[item.etfCode] = { code: item.etfCode, name: item.name, indexName: item.indexName || null };
+  }
+  return byCode;
+}
+
+export async function loadHoldingsUniverse(fetchImpl = fetch) {
+  const payload = await fetchJson(HOLDINGS_URL, fetchImpl);
+  return payload?.etfs || {};
+}
+
+// 시황 정렬 질의용. 커버리지가 좁다(큐레이션 종목 + Toss 실시간 연동 종목) — 정직하게 없는 값은 null 로 둔다.
+export async function loadMarketSnapshot(fetchImpl = fetch) {
+  const payload = await fetchJson(BUNDLE_URL, fetchImpl);
+  return (payload?.etfsRaw || []).map((e) => ({
+    code: e.code,
+    name: e.name,
+    tradingValue: typeof e.tradingValue === 'number' ? e.tradingValue : null,
+    return1m: typeof e.return1m === 'number' ? e.return1m : null,
+    volatilityScore: typeof e.volatilityScore === 'number' ? e.volatilityScore : null,
+    totalFee: typeof e.totalFee === 'number' ? e.totalFee : null,
+  }));
+}
+
+// 순수 함수 — 네트워크 없이 단위테스트 가능. 종목명(정규화) -> {code, name} 정본 사전.
+// 동일 정규화명이 여러 티커에 걸리는 경우는 실무상 드물어 첫 등장을 우선한다.
+export function buildStockNameIndex(holdingsUniverse) {
+  const index = new Map();
+  for (const etfCode of Object.keys(holdingsUniverse || {})) {
+    for (const h of holdingsUniverse[etfCode].holdings || []) {
+      const key = normalizeText(h.name);
+      if (key && !index.has(key)) index.set(key, { code: h.ticker, name: h.name });
+    }
+  }
+  return index;
+}
+
+export async function loadReverseSearchContext(fetchImpl = fetch) {
+  const [tagUniverse, master, holdingsUniverse, marketSnapshot] = await Promise.all([
+    loadTagUniverse(fetchImpl),
+    loadEtfMaster(fetchImpl),
+    loadHoldingsUniverse(fetchImpl),
+    loadMarketSnapshot(fetchImpl),
+  ]);
+  return {
+    tagUniverse,
+    master,
+    holdingsUniverse,
+    marketSnapshot,
+    stockNameIndex: buildStockNameIndex(holdingsUniverse),
+  };
+}

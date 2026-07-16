@@ -5,9 +5,11 @@
 // rendering) consumes only the TagUniverse objects this module returns and
 // must treat tagId as an opaque key — never branch on what a tag "means".
 //
-// When the taxonomy redesign lands, only TAG_TOPIC_MAP below and the two
-// PROVISIONAL_* constants need updating; buildTagUniverses()'s signature and
-// return shape stay the same.
+// Taxonomy v2 (2026-07-16 cutover, 5 facets / 56 tags) is now in force. Only
+// TAG_DEFINITIONS / TAG_TOPIC_MAP / PROVISIONAL_CANDIDATE_ID below encode the
+// taxonomy mapping; buildTagUniverses()'s signature and return shape are
+// unchanged. Under v2 both formerly-provisional tags (shipbuilding, bond) were
+// promoted to official taxonomy tags, so PROVISIONAL_CANDIDATE_ID is now empty.
 
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -25,15 +27,16 @@ const MAX_ANCHOR_STOCKS = 8;
 
 // This session's in-scope tags. tagCategory/provisional are declared here
 // (not derived from taxonomy) so the adapter stays a single, explicit
-// touchpoint. Real tagIds must exist in etf-taxonomy v1.0.0's filters;
-// provisional ids are candidateIds from etf-filter-candidates.json.
+// touchpoint. Real tagIds must exist in etf-taxonomy v2.0.0's filters
+// (data/tagging/etf-filter-map.json). No tag is provisional under v2 —
+// shipbuilding and bond were both promoted to official taxonomy tags.
 const TAG_DEFINITIONS = [
   { tagId: 'sector.semiconductor', tagCategory: 'sector', label: '반도체', provisional: false },
   { tagId: 'sector.aerospace_defense', tagCategory: 'sector', label: '방산/항공우주', provisional: false },
   { tagId: 'sector.ev_battery', tagCategory: 'sector', label: '2차전지', provisional: false },
-  { tagId: 'sector.shipbuilding', tagCategory: 'sector', label: '조선/조선기자재', provisional: true },
-  { tagId: 'strategy.sp500', tagCategory: 'strategy', label: 'S&P500', provisional: false },
-  { tagId: 'provisional.bond_krw', tagCategory: 'provisional', label: '국내 채권', provisional: true },
+  { tagId: 'sector.shipbuilding', tagCategory: 'sector', label: '조선/조선기자재', provisional: false },
+  { tagId: 'strategy.benchmark.sp500', tagCategory: 'strategy', label: 'S&P500', provisional: false },
+  { tagId: 'asset.bond', tagCategory: 'assetClass', label: '채권', provisional: false },
 ];
 
 // tag -> topic anchor mapping (adapter-internal configuration; the only
@@ -45,17 +48,15 @@ const TAG_TOPIC_MAP = {
   'sector.aerospace_defense': [],
   'sector.ev_battery': [],
   'sector.shipbuilding': [],
-  'strategy.sp500': ['topic.us_index', 'topic.rates'],
-  'provisional.bond_krw': ['topic.rates', 'topic.credit'],
+  'strategy.benchmark.sp500': ['topic.us_index', 'topic.rates'],
+  'asset.bond': ['topic.rates', 'topic.credit'],
 };
 
-// Provisional-tag candidateId -> candidate source file's candidateId key,
-// since this session may label a tag differently from the audit report
-// (e.g. bond candidate is filed under 'strategy.bond_credit_domestic').
-const PROVISIONAL_CANDIDATE_ID = {
-  'sector.shipbuilding': 'sector.shipbuilding',
-  'provisional.bond_krw': 'strategy.bond_credit_domestic',
-};
+// Provisional-tag candidateId -> candidate source file's candidateId key.
+// Empty under taxonomy v2: shipbuilding and bond are now official filter-map
+// tags, so no in-scope tag resolves through etf-filter-candidates.json. Kept
+// as the sanctioned hook for any future provisional tag.
+const PROVISIONAL_CANDIDATE_ID = {};
 
 let cachedSources = null;
 

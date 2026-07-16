@@ -22,7 +22,6 @@ import {
   renderComparisonTable,
   renderCompareChips,
   renderContentList,
-  renderTagBriefList,
   renderBottomSheet,
 } from './render.js';
 
@@ -51,21 +50,6 @@ const REQUIRED_STOCK_NAMES = [
 const themeById = new Map(themes.map((t) => [t.id, t]));
 const stockById = new Map(stocks.map((s) => [s.id, s]));
 const etfById = new Map(etfs.map((e) => [e.id, e]));
-const etfByCode = new Map(etfs.map((e) => [e.code, e]));
-
-// 태그 브리핑(tag_brief)은 별도 파이프라인(scripts/build-tag-briefs.js)의 산출물이라
-// 서버 부재 시(예: file://) 조용히 빈 배열로 폴백한다.
-async function loadTagBriefs() {
-  try {
-    const response = await fetch('/data/fixtures/tag-briefs.json');
-    if (!response.ok) return [];
-    const payload = await response.json();
-    return Array.isArray(payload.briefs) ? payload.briefs : [];
-  } catch {
-    return [];
-  }
-}
-const tagBriefs = await loadTagBriefs();
 
 const chipStocks = REQUIRED_STOCK_NAMES.map((name) => stocks.find((s) => s.name === name)).filter(
   Boolean
@@ -112,7 +96,6 @@ const compareThemeSelectEl = document.getElementById('compare-theme-select');
 const compareEtfSelectEl = document.getElementById('compare-etf-select');
 const compareTableEl = document.getElementById('compare-table');
 const contentListEl = document.getElementById('content-list');
-const tagBriefListEl = document.getElementById('tag-brief-list');
 const bottomSheetEl = document.getElementById('bottom-sheet');
 const bottomSheetBackdropEl = document.getElementById('bottom-sheet-backdrop');
 
@@ -240,10 +223,6 @@ function renderContentSection() {
     btn.setAttribute('aria-selected', String(isActive));
     btn.classList.toggle('active', isActive);
   });
-}
-
-function renderTagBriefSection() {
-  renderTagBriefList(tagBriefListEl, tagBriefs, { etfByCode, onSelectEtf: openBottomSheet });
 }
 
 function renderSearchSection() {
@@ -388,7 +367,6 @@ renderThemeSection();
 renderCompareThemeOptions();
 renderCompareSection();
 renderContentSection();
-renderTagBriefSection();
 }
 
 main();

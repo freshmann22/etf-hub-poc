@@ -8,11 +8,12 @@ import { loadData } from './dataSource.js';
 // 분류 체계(프로토타입 유지) + 칩→필터 베스트에포트 매핑
 // ---------------------------------------------------------------------------
 const GROUPS = {
-  sector: ['게임/엔터/미디어', 'IT', '의료/제약/바이오', '반도체', '전기차/2차전지', '클린에너지', '원자재', '자율주행/모빌리티', '테크/기술', '금융', '우주항공/방산', 'AI전력/인프라'],
+  sector: ['게임/엔터/미디어', 'IT', '의료/제약/바이오', '반도체', '전기차/2차전지', '조선/조선기자재', '클린에너지', '원자재', '자율주행/모빌리티', '테크/기술', '금융', '우주항공/방산', 'AI전력/인프라'],
   strategy: ['레버리지', '인버스', '성장주', '가치주', '부동산 리츠', '경기소비재', 'S&P500', '나스닥100', '밸류업'],
   dividend: ['한국 고배당', '미국 배당성장', '커버드콜 배당', '월배당'],
+  assetClass: ['채권'],
 };
-const GROUP_LABELS = { sector: '섹터 부문', strategy: '전략 부문', dividend: '배당 부문' };
+const GROUP_LABELS = { sector: '섹터 부문', strategy: '전략 부문', dividend: '배당 부문', assetClass: '자산군' };
 
 // 칩 라벨 → ETF 이름에서 찾을 키워드(별칭). 매칭되면 실 ETF 로 필터.
 const CHIP_KEYWORDS = {
@@ -21,6 +22,7 @@ const CHIP_KEYWORDS = {
   '의료/제약/바이오': ['바이오', '헬스', '제약', '의료'],
   '반도체': ['반도체', 'AI반도체', '시스템반도체'],
   '전기차/2차전지': ['2차전지', '배터리', '전기차', '2차전지소부장'],
+  '조선/조선기자재': ['조선', '조선기자재', '선박'],
   '클린에너지': ['친환경', '태양광', '수소', '신재생', '클린'],
   '원자재': ['원유', '골드', '금', '구리', '원자재', '천연가스'],
   '자율주행/모빌리티': ['모빌리티', '자율주행', '로봇'],
@@ -41,6 +43,7 @@ const CHIP_KEYWORDS = {
   '미국 배당성장': ['배당성장', '배당다우'],
   '커버드콜 배당': ['커버드콜'],
   '월배당': ['월배당'],
+  '채권': ['채권', '국채', '회사채'],
 };
 
 const SORTS = [
@@ -73,6 +76,7 @@ let DATA = null;
 let etfByCode = new Map();
 let holdingsByEtfId = new Map();
 let stockById = new Map();
+let tagBriefs = [];
 
 // ---------------------------------------------------------------------------
 // 포매팅/파생 유틸
@@ -208,6 +212,17 @@ async function loadEtfMeta() {
 function getEtfMeta(code) {
   if (!META || !META.etfs) return null;
   return META.etfs[normalizeEtfId(code)] || null;
+}
+
+// 태그 브리핑은 발행된 fixture만 소비한다. 실패해도 ETF 탐색은 그대로 동작한다.
+let TAG_BRIEFS = null;
+async function getTagBriefs() {
+  if (TAG_BRIEFS) return TAG_BRIEFS;
+  TAG_BRIEFS = fetch('/data/fixtures/tag-briefs.json', { headers: { Accept: 'application/json' } })
+    .then((res) => (res.ok ? res.json() : null))
+    .then((payload) => (Array.isArray(payload?.briefs) ? payload.briefs : []))
+    .catch(() => []);
+  return TAG_BRIEFS;
 }
 
 // 배당: 대부분 소스 없음 → 더미. (분배 지급기준은 메타데이터에 있으면 실값 사용)
@@ -360,7 +375,61 @@ function renderList() {
     more.classList.add('hidden');
   }
 }
-function renderHome() { renderCategory(); renderChips(); renderList(); renderNav(); }
+const TAG_CATEGORY_LABELS = { assetClass: '자산군', sector: '섹터', strategy: '전략', dividend: '배당' };
+const BRIEF_CHIP_LIMIT = 8;
+const TAG_ID_BY_CHIP = {
+  '반도체': 'sector.semiconductor',
+  '우주항공/방산': 'sector.aerospace_defense',
+  '전기차/2차전지': 'sector.ev_battery',
+  '조선/조선기자재': 'sector.shipbuilding',
+  'S&P500': 'strategy.benchmark.sp500',
+  '채권': 'asset.bond',
+};
+
+function renderTagBriefs() {
+  const section = $('briefSection');
+  const container = $('tagBriefList');
+  const tagId = TAG_ID_BY_CHIP[state.chip];
+  const brief = !state.watchOnly && !state.query.trim() && tagId
+    ? tagBriefs.find((item) => item.tagId === tagId)
+    : null;
+  section.classList.toggle('hidden', !brief);
+  if (!brief) {
+    container.innerHTML = '';
+    return;
+  }
+
+  container.innerHTML = [brief].map((brief) => {
+    const related = Array.isArray(brief.relatedEtfIds) ? brief.relatedEtfIds : [];
+    const visible = related.slice(0, BRIEF_CHIP_LIMIT);
+    const extraCount = Math.max(0, related.length - visible.length);
+    const points = (brief.keyPoints || []).map((point) => `<li>${esc(point)}</li>`).join('');
+    const sources = (brief.sourceArticles || [])
+      .map((source) => `<li>${esc(source.title)} <span>${esc(source.source)}</span></li>`)
+      .join('');
+    const chips = visible.map((code) => {
+      const etf = etfByCode.get(String(code).trim());
+      return etf
+        ? `<button type="button" class="briefChip" data-brief-etf="${esc(etf.code)}">${esc(etf.name)}</button>`
+        : `<span class="briefChip briefChipMuted">${esc(code)}</span>`;
+    }).join('');
+    const extra = extraCount ? `<span class="briefMore">외 ${extraCount}개</span>` : '';
+    const category = TAG_CATEGORY_LABELS[brief.tagCategory] || esc(brief.tagCategory || '분류');
+    return `<article class="briefCard">
+      <div class="briefMeta"><span class="briefBadge">${category}</span></div>
+      <h3>${esc(brief.title)}</h3>
+      <p class="briefSummary">${esc(brief.summary)}</p>
+      <ul class="briefPoints">${points}</ul>
+      <details class="briefSources">
+        <summary>근거 기사 ${(brief.sourceArticles || []).length}건</summary>
+        <ul>${sources}</ul>
+      </details>
+      <div class="briefChips">${chips}${extra}</div>
+    </article>`;
+  }).join('');
+}
+
+function renderHome() { renderCategory(); renderChips(); renderList(); renderTagBriefs(); renderNav(); }
 
 function renderNav() {
   const items = [['home', '⌂', '홈'], ['watch', '◎', '관심'], ['compare', '⇄', '비교'], ['menu', '☰', '메뉴']];
@@ -692,6 +761,10 @@ function wire() {
     const row = ev.target.closest('[data-code]');
     if (row) openDetail(row.dataset.code);
   });
+  $('tagBriefList').addEventListener('click', (ev) => {
+    const chip = ev.target.closest('[data-brief-etf]');
+    if (chip) openDetail(chip.dataset.briefEtf);
+  });
   $('periods').addEventListener('click', (ev) => {
     const t = ev.target.closest('[data-period]'); if (!t) return;
     state.period = t.dataset.period; renderPeriods(); renderChart();
@@ -725,6 +798,7 @@ window.__explore = { showHome };
 
 async function main() {
   DATA = await loadData();
+  tagBriefs = await getTagBriefs();
   etfByCode = new Map(DATA.etfs.map((e) => [e.code, e]));
   stockById = new Map((DATA.stocks || []).map((s) => [s.id, s]));
   holdingsByEtfId = new Map();

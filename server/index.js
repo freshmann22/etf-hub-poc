@@ -1,4 +1,4 @@
-// 통합 서버 — 정적 파일(index.html·src/**) + /api 데이터 공급 API.
+// 통합 서버 — 정적 파일(etf-explore.html·src/**) + /api 데이터 공급 API.
 // 외부 의존성 없음(node: 내장만). `npm run serve` 진입점.
 // mock 모드에서는 자격 없이도 전 기능 동작하고, .env 에 자격을 넣으면 live/hybrid 로 승격된다.
 import http from 'node:http';
@@ -25,7 +25,7 @@ const MIME = {
 async function serveStatic(req, res) {
   try {
     const urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-    const rel = urlPath === '/' ? 'index.html' : urlPath.replace(/^\/+/, '');
+    const rel = urlPath === '/' ? 'etf-explore.html' : urlPath.replace(/^\/+/, '');
     const filePath = normalize(join(root, rel));
     if (!filePath.startsWith(normalize(root))) {
       res.writeHead(403).end('Forbidden');

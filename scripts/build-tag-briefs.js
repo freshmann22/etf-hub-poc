@@ -75,7 +75,7 @@ const MANUAL_CONTENT_BY_TAG = {
     mentionedStockIds: ['329180', '010140', '009540', '443060', '042660'],
     mentionedTopicIds: [],
   },
-  'strategy.sp500': {
+  'strategy.benchmark.sp500': {
     title: 'S&P500 브리핑',
     summary: 'S&P500 지수 등락 소식이 있었어요.',
     keyPoints: [
@@ -86,9 +86,9 @@ const MANUAL_CONTENT_BY_TAG = {
     mentionedStockIds: [],
     mentionedTopicIds: ['topic.us_index', 'topic.rates', 'topic.credit'],
   },
-  'provisional.bond_krw': {
-    title: '국내 채권 브리핑',
-    summary: '국내 채권금리·크레딧 소식이 있었어요.',
+  'asset.bond': {
+    title: '채권 브리핑',
+    summary: '국내외 채권금리·크레딧 소식이 있었어요.',
     keyPoints: [
       '국내 국고채 금리 상승과 크레딧 스프레드 확대가 함께 나타났어요.',
       '회사채 발행 규모는 늘었지만 크레딧 스프레드는 큰 변화 없이 유지됐어요.',

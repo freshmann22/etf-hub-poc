@@ -8,8 +8,8 @@ const EXPECTED_TAG_IDS = [
   'sector.aerospace_defense',
   'sector.ev_battery',
   'sector.shipbuilding',
-  'strategy.sp500',
-  'provisional.bond_krw',
+  'strategy.benchmark.sp500',
+  'asset.bond',
 ];
 
 test('buildTagUniverses returns exactly the 6 in-scope tags', () => {
@@ -17,24 +17,25 @@ test('buildTagUniverses returns exactly the 6 in-scope tags', () => {
   assert.deepEqual([...universes.keys()].sort(), [...EXPECTED_TAG_IDS].sort());
 });
 
-test('provisional tags are flagged and non-provisional tags are not', () => {
+test('no in-scope tag is provisional under taxonomy v2 (shipbuilding and bond were promoted to official)', () => {
   const universes = buildTagUniverses();
-  assert.equal(universes.get('sector.shipbuilding').provisional, true);
-  assert.equal(universes.get('provisional.bond_krw').provisional, true);
-  assert.equal(universes.get('sector.semiconductor').provisional, false);
-  assert.equal(universes.get('strategy.sp500').provisional, false);
+  for (const universe of universes.values()) {
+    assert.equal(universe.provisional, false, `${universe.tagId} should not be provisional under v2`);
+  }
 });
 
 test('index/asset tags may have empty stockIds while still having ETFs and topics', () => {
   const universes = buildTagUniverses();
-  const sp500 = universes.get('strategy.sp500');
+  const sp500 = universes.get('strategy.benchmark.sp500');
   assert.deepEqual(sp500.stockIds, []);
   assert.ok(sp500.etfIds.length > 0);
   assert.ok(sp500.topicIds.length > 0);
 
-  const bond = universes.get('provisional.bond_krw');
-  assert.deepEqual(bond.stockIds, []);
+  // asset.bond is topic-anchored; its ETFs carry few/no domestic-holdings so
+  // stockIds may be near-empty, but it always has ETFs and topic anchors.
+  const bond = universes.get('asset.bond');
   assert.ok(bond.etfIds.length > 0);
+  assert.ok(bond.topicIds.length > 0);
 });
 
 test('sector tags carry non-empty stock anchors sourced from real holdings data', () => {

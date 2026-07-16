@@ -18,12 +18,12 @@ const REQUIRED_FIELDS = [
 test('tag-briefs.json contains a brief for each of the 6 in-scope tags (all had >=2 assigned articles)', () => {
   const tagIds = fixture.briefs.map((brief) => brief.tagId).sort();
   assert.deepEqual(tagIds, [
-    'provisional.bond_krw',
+    'asset.bond',
     'sector.aerospace_defense',
     'sector.ev_battery',
     'sector.semiconductor',
     'sector.shipbuilding',
-    'strategy.sp500',
+    'strategy.benchmark.sp500',
   ]);
   assert.deepEqual(fixture.unpublished, []);
 });
@@ -43,17 +43,18 @@ test('every brief conforms to the §4 output schema', () => {
   }
 });
 
-test('provisional tags in the fixture are flagged provisional; non-provisional are not', () => {
+test('no fixture brief is flagged provisional under taxonomy v2 (shipbuilding and bond were promoted)', () => {
   const byTag = new Map(fixture.briefs.map((b) => [b.tagId, b]));
-  assert.equal(byTag.get('sector.shipbuilding').universeSnapshot.provisional, true);
-  assert.equal(byTag.get('provisional.bond_krw').universeSnapshot.provisional, true);
-  assert.equal(byTag.get('sector.semiconductor').universeSnapshot.provisional, false);
-  assert.equal(byTag.get('strategy.sp500').universeSnapshot.provisional, false);
+  for (const brief of fixture.briefs) {
+    assert.equal(brief.universeSnapshot.provisional, false, `${brief.tagId} should not be provisional under v2`);
+  }
+  assert.ok(byTag.has('sector.shipbuilding'));
+  assert.ok(byTag.has('asset.bond'));
 });
 
 test('index/asset-class briefs (empty stockIds universes) still publish with topic-based evidence', () => {
   const byTag = new Map(fixture.briefs.map((b) => [b.tagId, b]));
-  const sp500 = byTag.get('strategy.sp500');
+  const sp500 = byTag.get('strategy.benchmark.sp500');
   assert.equal(sp500.universeSnapshot.stockCount, 0);
   assert.ok(sp500.mentionedTopicIds.length > 0);
   assert.deepEqual(sp500.mentionedStockIds, []);

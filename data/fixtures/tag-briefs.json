@@ -1,0 +1,434 @@
+{
+  "generatedAt": "2026-07-16T09:00:00+09:00",
+  "briefDate": "2026-07-16",
+  "taxonomyVersion": "1.0.0",
+  "briefs": [
+    {
+      "id": "tag-brief-sector.semiconductor-20260716",
+      "type": "tag_brief",
+      "tagId": "sector.semiconductor",
+      "tagCategory": "sector",
+      "briefDate": "2026-07-16",
+      "title": "반도체 브리핑",
+      "summary": "HBM·파운드리 수주 소식이 이어졌어요.",
+      "keyPoints": [
+        "SK하이닉스와 삼성전자가 각각 HBM 공급 계약과 파운드리 신규 수주 계약을 체결했어요.",
+        "메모리 반도체 현물가격 상승과 함께 관련 ETF 거래대금이 증가했어요.",
+        "한미반도체·원익IPS 등 반도체 장비주에서도 수주·출하량 증가 소식이 있었어요."
+      ],
+      "sourceArticles": [
+        {
+          "id": "news-101",
+          "title": "SK하이닉스, HBM 공급 계약 체결 소식에 반도체 ETF 거래대금 증가",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-14T08:20:00+09:00"
+        },
+        {
+          "id": "news-102",
+          "title": "삼성전자, 파운드리 신규 수주 계약 체결",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-14T10:05:00+09:00"
+        },
+        {
+          "id": "news-103",
+          "title": "메모리 반도체 현물가격 상승, 관련 ETF 거래대금 증가",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-13T09:15:00+09:00"
+        },
+        {
+          "id": "news-104",
+          "title": "한미반도체, 반도체 후공정 장비 신규 수주 발표",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-13T14:40:00+09:00"
+        },
+        {
+          "id": "news-105",
+          "title": "원익IPS, 국내 반도체 장비 출하량 증가 발표",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-12T11:30:00+09:00"
+        }
+      ],
+      "relatedEtfIds": [
+        "091160",
+        "396500",
+        "0093A0",
+        "0177R0",
+        "395160",
+        "469150",
+        "475300",
+        "475310",
+        "0005G0",
+        "455850",
+        "474590",
+        "476260",
+        "091230",
+        "395270",
+        "0182R0",
+        "0190G0",
+        "471990",
+        "0167A0",
+        "0176P0",
+        "388420",
+        "471760",
+        "488080",
+        "494310",
+        "0210A0",
+        "488210",
+        "494220",
+        "0192L0",
+        "0193T0",
+        "0194T0",
+        "0195S0",
+        "0197W0",
+        "243880",
+        "261060",
+        "487750",
+        "0204S0",
+        "266370",
+        "471780",
+        "367760",
+        "365040",
+        "482030",
+        "486240",
+        "139260",
+        "363580",
+        "380340",
+        "487130"
+      ],
+      "mentionedStockIds": [
+        "000660",
+        "005930",
+        "042700",
+        "240810"
+      ],
+      "mentionedTopicIds": [],
+      "taxonomyVersion": "1.0.0",
+      "universeSnapshot": {
+        "stockCount": 8,
+        "etfCount": 45,
+        "provisional": false
+      },
+      "generatedAt": "2026-07-16T09:00:00+09:00",
+      "generator": "manual-sample"
+    },
+    {
+      "id": "tag-brief-sector.aerospace_defense-20260716",
+      "type": "tag_brief",
+      "tagId": "sector.aerospace_defense",
+      "tagCategory": "sector",
+      "briefDate": "2026-07-16",
+      "title": "방산/항공우주 브리핑",
+      "summary": "방산 수출·수주 계약 소식이 이어졌어요.",
+      "keyPoints": [
+        "한화에어로스페이스·한국항공우주가 해외向 방산 수출 계약을 체결했어요.",
+        "한화오션은 특수선 건조 계약과 함정 유지보수 계약을 함께 체결했어요."
+      ],
+      "sourceArticles": [
+        {
+          "id": "news-106",
+          "title": "한화에어로스페이스, 중동向 방산 수출 계약 체결",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-15T09:10:00+09:00"
+        },
+        {
+          "id": "news-107",
+          "title": "한국항공우주, 완제기 수출 계약 체결 발표",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-11T13:20:00+09:00"
+        },
+        {
+          "id": "news-108",
+          "title": "한화오션, 특수선 수주와 함정 유지보수 계약 동시 체결",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-10T15:00:00+09:00"
+        }
+      ],
+      "relatedEtfIds": [
+        "0080G0",
+        "449450",
+        "463250",
+        "490480",
+        "421320",
+        "0100K0",
+        "0104G0",
+        "0216Z0",
+        "0090B0",
+        "0207G0"
+      ],
+      "mentionedStockIds": [
+        "012450",
+        "047810",
+        "042660"
+      ],
+      "mentionedTopicIds": [],
+      "taxonomyVersion": "1.0.0",
+      "universeSnapshot": {
+        "stockCount": 8,
+        "etfCount": 10,
+        "provisional": false
+      },
+      "generatedAt": "2026-07-16T09:00:00+09:00",
+      "generator": "manual-sample"
+    },
+    {
+      "id": "tag-brief-sector.ev_battery-20260716",
+      "type": "tag_brief",
+      "tagId": "sector.ev_battery",
+      "tagCategory": "sector",
+      "briefDate": "2026-07-16",
+      "title": "2차전지 브리핑",
+      "summary": "2차전지 공급·소재 소식이 엇갈렸어요.",
+      "keyPoints": [
+        "LG에너지솔루션이 북미向 배터리 공급 계약을 체결했어요.",
+        "에코프로비엠 양극재 출하량은 늘었지만 리튬 등 소재 가격은 하락세를 이어갔어요."
+      ],
+      "sourceArticles": [
+        {
+          "id": "news-109",
+          "title": "LG에너지솔루션, 북미向 배터리 공급 계약 체결",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-14T09:45:00+09:00"
+        },
+        {
+          "id": "news-110",
+          "title": "에코프로비엠, 양극재 출하량 증가 발표",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-12T10:00:00+09:00"
+        },
+        {
+          "id": "news-111",
+          "title": "리튬 등 배터리 소재 가격 하락, 관련 종목 약세",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-09T16:20:00+09:00"
+        }
+      ],
+      "relatedEtfIds": [
+        "461950",
+        "455860",
+        "0005D0",
+        "364980",
+        "305540",
+        "305720",
+        "422420",
+        "465330",
+        "412570",
+        "466810",
+        "462010",
+        "462330",
+        "0209D0",
+        "446700",
+        "385600",
+        "0150K0",
+        "381560",
+        "488200",
+        "482030",
+        "387280"
+      ],
+      "mentionedStockIds": [
+        "373220",
+        "247540",
+        "051910",
+        "086520"
+      ],
+      "mentionedTopicIds": [],
+      "taxonomyVersion": "1.0.0",
+      "universeSnapshot": {
+        "stockCount": 8,
+        "etfCount": 20,
+        "provisional": false
+      },
+      "generatedAt": "2026-07-16T09:00:00+09:00",
+      "generator": "manual-sample"
+    },
+    {
+      "id": "tag-brief-sector.shipbuilding-20260716",
+      "type": "tag_brief",
+      "tagId": "sector.shipbuilding",
+      "tagCategory": "sector",
+      "briefDate": "2026-07-16",
+      "title": "조선/조선기자재 브리핑",
+      "summary": "조선 수주잔고 확대 소식이 있었어요.",
+      "keyPoints": [
+        "HD현대중공업·삼성중공업이 각각 대형 선박, 해양플랜트 수주를 발표했어요.",
+        "HD한국조선해양의 수주잔고와 신조선가 지수가 함께 상승했어요.",
+        "한화오션은 특수선 건조·함정 유지보수 계약을 동시에 체결했어요."
+      ],
+      "sourceArticles": [
+        {
+          "id": "news-108",
+          "title": "한화오션, 특수선 수주와 함정 유지보수 계약 동시 체결",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-10T15:00:00+09:00"
+        },
+        {
+          "id": "news-112",
+          "title": "HD현대중공업, 대형 컨테이너선 수주 계약 체결",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-15T11:00:00+09:00"
+        },
+        {
+          "id": "news-113",
+          "title": "삼성중공업, 해양플랜트 신규 수주 발표",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-11T09:30:00+09:00"
+        },
+        {
+          "id": "news-114",
+          "title": "HD한국조선해양, 신조선가 상승과 수주잔고 확대 발표",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-08T10:40:00+09:00"
+        }
+      ],
+      "relatedEtfIds": [
+        "0080Y0",
+        "0115D0",
+        "0141S0",
+        "102960",
+        "139230",
+        "441540",
+        "445150",
+        "466920",
+        "494670"
+      ],
+      "mentionedStockIds": [
+        "329180",
+        "010140",
+        "009540",
+        "443060",
+        "042660"
+      ],
+      "mentionedTopicIds": [],
+      "taxonomyVersion": "1.0.0",
+      "universeSnapshot": {
+        "stockCount": 8,
+        "etfCount": 9,
+        "provisional": true
+      },
+      "generatedAt": "2026-07-16T09:00:00+09:00",
+      "generator": "manual-sample"
+    },
+    {
+      "id": "tag-brief-strategy.sp500-20260716",
+      "type": "tag_brief",
+      "tagId": "strategy.sp500",
+      "tagCategory": "strategy",
+      "briefDate": "2026-07-16",
+      "title": "S&P500 브리핑",
+      "summary": "S&P500 지수 등락 소식이 있었어요.",
+      "keyPoints": [
+        "S&P500은 기술주 강세와 금리 동결 발표에 각각 상승 마감했어요.",
+        "이후 미 국채 금리 상승과 함께 S&P500이 하락 마감했어요.",
+        "같은 기간 국내 국고채 금리 상승과 크레딧 스프레드 확대가 함께 나타났어요."
+      ],
+      "sourceArticles": [
+        {
+          "id": "news-115",
+          "title": "미국 S&P500 지수, 기술주 강세에 힘입어 상승 마감",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-14T22:30:00+09:00"
+        },
+        {
+          "id": "news-116",
+          "title": "미 연준 기준금리 동결, S&P500·나스닥100 동반 상승",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-10T05:10:00+09:00"
+        },
+        {
+          "id": "news-118",
+          "title": "국내 국고채 금리 상승, 크레딧 스프레드 확대",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-15T07:50:00+09:00"
+        },
+        {
+          "id": "news-119",
+          "title": "미 국채 금리 상승에 S&P500 하락 마감",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-09T09:00:00+09:00"
+        }
+      ],
+      "relatedEtfIds": [
+        "0026S0",
+        "360750",
+        "379800",
+        "441640"
+      ],
+      "mentionedStockIds": [],
+      "mentionedTopicIds": [
+        "topic.us_index",
+        "topic.rates",
+        "topic.credit"
+      ],
+      "taxonomyVersion": "1.0.0",
+      "universeSnapshot": {
+        "stockCount": 0,
+        "etfCount": 4,
+        "provisional": false
+      },
+      "generatedAt": "2026-07-16T09:00:00+09:00",
+      "generator": "manual-sample"
+    },
+    {
+      "id": "tag-brief-provisional.bond_krw-20260716",
+      "type": "tag_brief",
+      "tagId": "provisional.bond_krw",
+      "tagCategory": "provisional",
+      "briefDate": "2026-07-16",
+      "title": "국내 채권 브리핑",
+      "summary": "국내 채권금리·크레딧 소식이 있었어요.",
+      "keyPoints": [
+        "국내 국고채 금리 상승과 크레딧 스프레드 확대가 함께 나타났어요.",
+        "회사채 발행 규모는 늘었지만 크레딧 스프레드는 큰 변화 없이 유지됐어요.",
+        "미 연준의 금리 동결과 미 국채 금리 상승 소식이 함께 전해졌어요."
+      ],
+      "sourceArticles": [
+        {
+          "id": "news-116",
+          "title": "미 연준 기준금리 동결, S&P500·나스닥100 동반 상승",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-10T05:10:00+09:00"
+        },
+        {
+          "id": "news-118",
+          "title": "국내 국고채 금리 상승, 크레딧 스프레드 확대",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-15T07:50:00+09:00"
+        },
+        {
+          "id": "news-119",
+          "title": "미 국채 금리 상승에 S&P500 하락 마감",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-09T09:00:00+09:00"
+        },
+        {
+          "id": "news-120",
+          "title": "국내 회사채 발행 증가, 크레딧 시장 자금 조달 활발",
+          "source": "샘플 뉴스",
+          "publishedAt": "2026-07-07T10:10:00+09:00"
+        }
+      ],
+      "relatedEtfIds": [
+        "0000Y0",
+        "0049K0"
+      ],
+      "mentionedStockIds": [],
+      "mentionedTopicIds": [
+        "topic.rates",
+        "topic.credit",
+        "topic.us_index"
+      ],
+      "taxonomyVersion": "1.0.0",
+      "universeSnapshot": {
+        "stockCount": 0,
+        "etfCount": 2,
+        "provisional": true
+      },
+      "generatedAt": "2026-07-16T09:00:00+09:00",
+      "generator": "manual-sample"
+    }
+  ],
+  "unpublished": [],
+  "unassignedArticleIds": [
+    "news-117",
+    "news-121"
+  ]
+}

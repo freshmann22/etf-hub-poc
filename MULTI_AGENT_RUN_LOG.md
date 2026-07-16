@@ -423,3 +423,34 @@ WORKPLAN §1 버전전략대로 **v1과 완전 병행**(신규 파일만 생성,
 - **검증**: canonical `etf-tag-scores.json`/`etf-filter-map.json` 의 모든 tagId 가 canonical
   `etf-taxonomy.json`(2.0.0) 에 존재(고아 참조 0), `etf-unclassified.json` count=0, `npm test` **98/98 유지**.
 - **UI 무변경**(explore.js 는 여전히 filter-map 미사용, `chipMatches` 그대로). UI 연결은 WORKPLAN §6 대로 별도 승인 대상.
+
+### 유니버스 확장(1,141종 전체로 규칙 태깅) — 완료 (사용자 승인, 2026-07-16)
+
+사용자 질문("나머지 종목은 왜 태깅이 안 되나")에서 출발 — 태깅 파이프라인이 메타데이터 커버 470종만 입력으로
+썼기 때문(유니버스 1,141종 중 나머지 671종은 애초에 입력에 없었음). 조사 후 "이름 기반 규칙(assetClass/region
+등)만이라도 전체 확장 + 공공데이터 기초지수명 확보"(옵션 1~2)를 사용자가 선택, 섹터/전략 신규 스코어링(구성종목
+있는 124종 대상 `etf-scoring-worker` 재호출, 옵션 3)은 보류.
+
+- **기초지수명 확보**: `scripts/tagging/fetch-universe-index-names.mjs`(신규) — 서버의 `PublicDataProvider`를
+  그대로 재사용해 공공데이터포털에서 전종목(1,147건, 유니버스 1,141 전부 매칭) 기초지수명(`indexName`)을
+  1회 조회 → `data/tagging/etf-universe-index-names.json` 에 스냅샷(이 provider 는 런타임 캐시만 유지하고
+  파일로 저장하지 않아 오프라인 배치용 스냅샷이 별도 필요).
+- **미커버 671종 입력 생성**: `scripts/tagging/prepare-universe-input.mjs`(신규) — `etf-master.json`(1,141종
+  이름) 중 `etf-metadata.json`(470종, 기존 커버)에 없는 671종만 추려 이름+기초지수명 최소 입력 생성
+  (`data/tagging/etf-universe-rule-input.jsonl`). 구성종목·상품설명 없음 — 그런 축(섹터)은 이 방식으로 불가.
+- **규칙 태깅**: 기존 `run-rule-classifier.mjs`(인자만 override, 로직 무변경)로 671종 전부 assetClass/region
+  (+레버리지/인버스/커버드콜/월배당/벤치마크 등 이름 기반 태그) 부여 → `etf-universe-rule-scores.json`(671/671).
+- **병합**: `scripts/tagging/merge-universe-tags.mjs`(신규) — 신규 671종만 canonical `etf-tag-scores.json`에
+  추가(기존 470종의 worker 스코어링 결과는 무변경). primary facet(assetClass/region) 복수매칭 시 최고
+  score/confidence 하나만 유지(컷오버 때와 동일 원칙) — 예: "SOL 미국S&P500미국채혼합50" 처럼 채권+혼합
+  신호가 동시에 뜨는 경우.
+- **회귀 중 발견한 임계값 불일치 1건**: `region.emerging` 규칙 점수(0.75/0.6)가 taxonomy 최소 기준(0.8/0.65)
+  보다 낮아 "PLUS 신흥국MSCI(합성 H)" 등 2종이 region 미분류로 빠짐 → 임계값을 0.7/0.55로 조정(컷오버 때
+  region.us/china 등에서 있었던 동일 유형의 결함).
+- **결과**: ETF 1,141종 **전체** 최소 assetClass+region 태깅(미분류 0), 필터 49→54개(신규: region.emerging
+  임계값 조정 외 신규 태그 추가는 없음 — 이미 v2 taxonomy 에 있던 태그로 커버). primary facet(assetClass/region)
+  cardinality 위반 1,141종 중 0건. `npm test` **98/98 유지**.
+- **한계(그대로 남음)**: 신규 671종은 섹터(조선/반도체 등)·전략(그룹주/ESG 등)·배당 태그가 없다 — 구성종목이
+  없어서다. 그중 124종은 `naver_top10_holdings_full.csv`에 구성종목이 있어 `etf-scoring-worker` 로 섹터 태깅
+  가능(보류, 사용자 승인 시 진행). 나머지 547종은 이름 외 근거가 없어 이 규칙 방식이 한계.
+- **UI 무변경**.

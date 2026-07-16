@@ -325,8 +325,8 @@
         "명칭/기초지수에 신흥국·EM·이머징 명시"
       ],
       "negativeSignals": [],
-      "minimumScore": 0.8,
-      "minimumConfidence": 0.65,
+      "minimumScore": 0.7,
+      "minimumConfidence": 0.55,
       "aliasOf_v1": null,
       "enabled": true,
       "version": "2.0.0"

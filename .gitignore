@@ -35,6 +35,9 @@ Thumbs.db
 *.temp
 .cache/
 
+# Review archive (large, not needed in source)
+etf-hub-main-poc-review.zip
+
 # Spike secrets (session cookies/tokens — never commit)
 spikes/krx-direct/config.json
 spikes/**/*.session.json

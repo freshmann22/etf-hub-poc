@@ -1,0 +1,1023 @@
+{
+  "batchNumber": 18,
+  "status": "success",
+  "startedAt": "2026-07-20T04:34:48.393Z",
+  "completedAt": "2026-07-20T04:37:38.862Z",
+  "modelRequested": "sonnet",
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 12688,
+      "outputTokens": 30,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.012838,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 1,
+      "outputTokens": 17656,
+      "cacheReadInputTokens": 10443,
+      "cacheCreationInputTokens": 20024,
+      "webSearchRequests": 0,
+      "costUSD": 0.38811989999999996,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000
+    }
+  },
+  "durationMs": 167938,
+  "promptHash": "0f0e715b674767b879d39d5e3851d790d303e96d48d6e1264714b48f3f6059a9",
+  "inputEtfCodes": [
+    "0194M0",
+    "0194N0",
+    "0194R0",
+    "0195R0",
+    "0198B0",
+    "0198D0",
+    "0199C0",
+    "0098N0",
+    "0103T0",
+    "0111J0"
+  ],
+  "blindInput": [
+    {
+      "etfCode": "0194M0",
+      "name": "ACE 삼성전자단일종목레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX 삼성전자 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 71.3
+          },
+          {
+            "name": "RISE 삼성전자단일종목레버리지",
+            "code": "0192M0",
+            "weight": 11.34
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0194N0",
+      "name": "KIWOOM 삼성전자선물단일종목레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX 삼성전자 선물 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 17.23
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0194R0",
+      "name": "KIWOOM SK하이닉스선물단일종목레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX SK하이닉스 선물 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 14.45
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0195R0",
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX 삼성전자 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 76.06
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0198B0",
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX 삼성전자 선물 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 31.93
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0198D0",
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX SK하이닉스 선물 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 28.61
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0199C0",
+      "name": "ACE 고배당주Plus커버드콜액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX-Akros 고배당주 20 위클리 고정 30% 커버드콜 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 8.85
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 8.79
+          },
+          {
+            "name": "삼성화재",
+            "code": "000810",
+            "weight": 6.48
+          },
+          {
+            "name": "한국타이어앤테크놀로지",
+            "code": "161390",
+            "weight": 6.38
+          },
+          {
+            "name": "코리안리",
+            "code": "003690",
+            "weight": 5.15
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 5.14
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 4.78
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 4.68
+          },
+          {
+            "name": "한국앤컴퍼니",
+            "code": "000240",
+            "weight": 4.62
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 4.57
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0098N0",
+      "name": "PLUS 자사주매입고배당주",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 고배당주 플러스 자사주 지수 (PR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 5.69
+          },
+          {
+            "name": "메리츠금융지주",
+            "code": "138040",
+            "weight": 5.6
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 5.18
+          },
+          {
+            "name": "미스토홀딩스",
+            "code": "081660",
+            "weight": 5.06
+          },
+          {
+            "name": "HMM",
+            "code": "011200",
+            "weight": 5.02
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 4.89
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 4.27
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 4.16
+          },
+          {
+            "name": "KT&G",
+            "code": "033780",
+            "weight": 4.13
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 3.96
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0103T0",
+      "name": "1Q K소버린AI",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "iSelect K소버린AI 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 28.65
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 23.86
+          },
+          {
+            "name": "삼성에스디에스",
+            "code": "018260",
+            "weight": 15.33
+          },
+          {
+            "name": "LG씨엔에스",
+            "code": "064400",
+            "weight": 6.76
+          },
+          {
+            "name": "현대오토에버",
+            "code": "307950",
+            "weight": 6.15
+          },
+          {
+            "name": "NHN",
+            "code": "181710",
+            "weight": 2.37
+          },
+          {
+            "name": "플리토",
+            "code": "300080",
+            "weight": 2.24
+          },
+          {
+            "name": "우리기술투자",
+            "code": "041190",
+            "weight": 2.13
+          },
+          {
+            "name": "한글과컴퓨터",
+            "code": "030520",
+            "weight": 2.07
+          },
+          {
+            "name": "포스코DX",
+            "code": "022100",
+            "weight": 2.04
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0111J0",
+      "name": "HANARO 증권고배당TOP3플러스",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 증권 고배당 TOP3 플러스 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "한국금융지주",
+            "code": "071050",
+            "weight": 21.87
+          },
+          {
+            "name": "키움증권",
+            "code": "039490",
+            "weight": 20.09
+          },
+          {
+            "name": "미래에셋증권",
+            "code": "006800",
+            "weight": 16.61
+          },
+          {
+            "name": "NH투자증권",
+            "code": "005940",
+            "weight": 15.89
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 15.49
+          },
+          {
+            "name": "신영증권",
+            "code": "001720",
+            "weight": 4.43
+          },
+          {
+            "name": "대신증권",
+            "code": "003540",
+            "weight": 2.29
+          },
+          {
+            "name": "유안타증권",
+            "code": "003470",
+            "weight": 1.51
+          },
+          {
+            "name": "유진투자증권",
+            "code": "001200",
+            "weight": 0.73
+          },
+          {
+            "name": "DB증권",
+            "code": "016610",
+            "weight": 0.7
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "etfCode": "0194M0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "보유종목 71.3%가 삼성전자(주식)이며 채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "기초지수 'KRX 삼성전자 지수', 국내 상장 종목 기준"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "최상위 보유종목 삼성전자 71.3%(대표 반도체 기업)"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "펀드명에 '레버리지' 명시",
+            "기초지수는 삼성전자 단일종목 지수"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브/커버드콜 등 초과수익 신호 없이 단일종목 지수를 배수로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "보유종목 중 11.34%가 동일 유형의 타사 레버리지 ETF(RISE 삼성전자단일종목레버리지, 0192M0)로 재간접 구조일 가능성 있으나 상세 근거 없음"
+      ]
+    },
+    {
+      "etfCode": "0194N0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.7,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목은 삼성전자"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "기초지수 'KRX 삼성전자 선물 지수', 국내 종목 기반"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "기초지수가 삼성전자 단일종목 선물 지수",
+            "보유종목 삼성전자 17.23%"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "펀드명에 '레버리지' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브 신호 없이 단일종목 선물 지수를 배수로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "선물 기반 상품으로 실제 보유종목 비중(17.23%)이 낮아 나머지 구성은 증거금/현금성 자산으로 추정되나 evidence상 확인 불가"
+      ]
+    },
+    {
+      "etfCode": "0194R0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.7,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목은 SK하이닉스"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "기초지수 'KRX SK하이닉스 선물 지수', 국내 종목 기반"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "기초지수가 SK하이닉스 단일종목 선물 지수",
+            "보유종목 SK하이닉스 14.45%"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "펀드명에 '레버리지' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브 신호 없이 단일종목 선물 지수를 배수로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "선물 기반 상품으로 실제 보유종목 비중(14.45%)이 낮아 나머지 구성 근거 확인 불가"
+      ]
+    },
+    {
+      "etfCode": "0195R0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "보유종목 76.06%가 삼성전자(주식)이며 채권/원자재/리츠 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "기초지수 'KRX 삼성전자 지수', 국내 종목 기반"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.88,
+          "confidence": 0.75,
+          "evidence": [
+            "최상위 보유종목 삼성전자 76.06%"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "펀드명에 '레버리지' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브 신호 없이 단일종목 지수를 배수로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
+    },
+    {
+      "etfCode": "0198B0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.7,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목은 삼성전자"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "기초지수 'KRX 삼성전자 선물 지수', 국내 종목 기반"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.75,
+          "confidence": 0.62,
+          "evidence": [
+            "기초지수가 삼성전자 단일종목 선물 지수",
+            "보유종목 삼성전자 31.93%"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "펀드명에 '레버리지' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브 신호 없이 단일종목 선물 지수를 배수로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "보유종목 비중(31.93%)이 다른 유사상품 대비 상대적으로 높은 편이나 나머지 구성 근거는 확인 불가"
+      ]
+    },
+    {
+      "etfCode": "0198D0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.7,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목은 SK하이닉스"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "기초지수 'KRX SK하이닉스 선물 지수', 국내 종목 기반"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.72,
+          "confidence": 0.6,
+          "evidence": [
+            "기초지수가 SK하이닉스 단일종목 선물 지수",
+            "보유종목 SK하이닉스 28.61%"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "펀드명에 '레버리지' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브 신호 없이 단일종목 선물 지수를 배수로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
+    },
+    {
+      "etfCode": "0199C0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "보유종목이 국내 주식(20종목) 위주, 채권/원자재/리츠 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "보유종목 전량 국내 상장 종목, 기초지수 KRX-Akros 고배당주 20"
+          ]
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.72,
+          "confidence": 0.62,
+          "evidence": [
+            "보험/은행/증권 보유종목 합산 약 30.8%(삼성화재6.48, 코리안리5.15, 삼성증권5.14, KB금융4.78, DB손해보험4.68, JB금융지주4.57)"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "펀드명에 '고배당주Plus' 명시",
+            "기초지수명에 '고배당주 20' 명시"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.92,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '커버드콜' 명시",
+            "기초지수명에 '위클리 고정 30% 커버드콜' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.85,
+          "confidence": 0.78,
+          "evidence": [
+            "펀드명에 '액티브' 명시"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.semiconductor"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "삼성전자(8.85%)·SK하이닉스(8.79%) 합산 17.64%로 반도체 익스포저가 있으나 단독 대표 섹터로 보기엔 비중이 낮아 후보로만 표기"
+      ]
+    },
+    {
+      "etfCode": "0098N0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "보유종목이 국내 주식 위주, 채권/원자재/리츠 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "보유종목 전량 국내 상장 종목, 기초지수 FnGuide 고배당주 플러스 자사주 지수"
+          ]
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.72,
+          "confidence": 0.6,
+          "evidence": [
+            "은행/금융지주 보유종목 합산 약 29.79%(KB금융5.69, 메리츠금융지주5.6, 신한지주5.18, 하나금융지주4.89, JB금융지주4.27, 우리금융지주4.16)"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "펀드명에 '고배당주' 명시",
+            "기초지수명에 '고배당주 플러스' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브/레버리지/인버스 신호 없음, PR(가격지수) 기초지수를 그대로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
+    },
+    {
+      "etfCode": "0103T0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "보유종목이 국내 상장 IT/인터넷 기업, 채권/원자재/리츠 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "보유종목 전량 국내 상장 종목"
+          ]
+        },
+        {
+          "tagId": "sector.it",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "보유종목 상위 다수가 IT서비스/소프트웨어 기업(삼성에스디에스15.33, LG씨엔에스6.76, 현대오토에버6.15, 한글과컴퓨터2.07, 포스코DX2.04)"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브 신호 없이 'iSelect K소버린AI 지수'를 그대로 추종하는 것으로 보임"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "펀드명에 'AI' 포함되나 구성종목은 인터넷 플랫폼(NAVER 28.65%, 카카오 23.86%)·IT서비스 위주로 sector.ai_power_infrastructure의 negativeSignal(반도체/소프트웨어 위주)에 해당해 제외하고 sector.it로 분류함",
+        "분배 관련 evidence(distributionSchedule 등) 전무하여 dividend facet 판단 근거 부족"
+      ]
+    },
+    {
+      "etfCode": "0111J0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "보유종목이 국내 증권사 주식으로 구성, 채권/원자재/리츠 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "보유종목 전량 국내 상장 증권사, 기초지수 FnGuide 증권 고배당 TOP3 플러스 지수"
+          ]
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.95,
+          "confidence": 0.88,
+          "evidence": [
+            "보유종목 거의 전량이 증권사(한국금융지주21.87, 키움증권20.09, 미래에셋증권16.61, NH투자증권15.89, 삼성증권15.49 등, 합산 약 99.6%)"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "펀드명에 '증권고배당TOP3플러스' 명시",
+            "기초지수명에 '증권 고배당 TOP3 플러스' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.62,
+          "confidence": 0.52,
+          "evidence": [
+            "액티브/레버리지/인버스 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
+    }
+  ]
+}

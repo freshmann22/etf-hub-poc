@@ -1,0 +1,1091 @@
+{
+  "batchNumber": 2,
+  "status": "success",
+  "startedAt": "2026-07-20T04:16:23.528Z",
+  "completedAt": "2026-07-20T04:19:51.131Z",
+  "modelRequested": "sonnet",
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 12867,
+      "outputTokens": 27,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.013002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 1,
+      "outputTokens": 21319,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 25911,
+      "webSearchRequests": 0,
+      "costUSD": 0.47670270000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000
+    }
+  },
+  "durationMs": 205091,
+  "promptHash": "315ab70fb6af8ec42cc847fc264352e7a1dfb7b2e2a6040da1bda5222f3b32a7",
+  "inputEtfCodes": [
+    "132030",
+    "145670",
+    "152500",
+    "166400",
+    "225800",
+    "230480",
+    "233160",
+    "233740",
+    "243880",
+    "243890"
+  ],
+  "blindInput": [
+    {
+      "etfCode": "132030",
+      "name": "KODEX 골드선물(H)",
+      "evidence": {
+        "issuer": "삼성자산운용(주)",
+        "benchmarkName": "S&P GSCI Gold Index(TR)",
+        "rawTypeText": "해외상품",
+        "nameHints": [
+          "name_contains=(H) 환헤지 표기"
+        ],
+        "holdings": [],
+        "distributionSchedule": "회계기간 종료일(종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 10
+      },
+      "knownMissingFields": [
+        "상품 설명·투자 목적",
+        "구성종목",
+        "산업·국가 비중",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "145670",
+      "name": "ACE 인버스",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "KODEX 인버스",
+            "code": "114800",
+            "weight": 17.13
+          },
+          {
+            "name": "TIGER 인버스",
+            "code": "123310",
+            "weight": 0.14
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "152500",
+      "name": "ACE 레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 23.04
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 19.61
+          },
+          {
+            "name": "KODEX 레버리지",
+            "code": "122630",
+            "weight": 9.88
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 2.05
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 1.38
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 1.17
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 1.14
+          },
+          {
+            "name": "ACE 200",
+            "code": "105190",
+            "weight": 0.99
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 0.86
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 0.67
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "166400",
+      "name": "TIGER 200커버드콜OTM",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 커버드콜 5% OTM",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 25.03
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 21.58
+          },
+          {
+            "name": "TIGER 200",
+            "code": "102110",
+            "weight": 8.95
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 2.28
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 1.53
+          },
+          {
+            "name": "TIGER 200TR",
+            "code": "310960",
+            "weight": 1.48
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 1.28
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 1.2
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 0.94
+          },
+          {
+            "name": "삼성물산",
+            "code": "028260",
+            "weight": 0.74
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "225800",
+      "name": "KIWOOM 미국달러선물레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "미국달러선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "KIWOOM 미국달러선물",
+            "code": "138230",
+            "weight": 21.39
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "230480",
+      "name": "KIWOOM 미국달러선물인버스2X",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "미국달러선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "KIWOOM 미국달러선물인버스",
+            "code": "139660",
+            "weight": 19.27
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "233160",
+      "name": "TIGER 코스닥150 레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스닥 150",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "TIGER 코스닥150",
+            "code": "232080",
+            "weight": 23.46
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 6.08
+          },
+          {
+            "name": "에코프로",
+            "code": "086520",
+            "weight": 3.83
+          },
+          {
+            "name": "에코프로비엠",
+            "code": "247540",
+            "weight": 3.03
+          },
+          {
+            "name": "주성엔지니어링",
+            "code": "036930",
+            "weight": 2.66
+          },
+          {
+            "name": "원익IPS",
+            "code": "240810",
+            "weight": 1.92
+          },
+          {
+            "name": "피에스케이",
+            "code": "319660",
+            "weight": 1.72
+          },
+          {
+            "name": "리노공업",
+            "code": "058470",
+            "weight": 1.69
+          },
+          {
+            "name": "에이비엘바이오",
+            "code": "298380",
+            "weight": 1.54
+          },
+          {
+            "name": "레인보우로보틱스",
+            "code": "277810",
+            "weight": 1.48
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스닥 150",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "KODEX 코스닥150",
+            "code": "229200",
+            "weight": 27.04
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 4.98
+          },
+          {
+            "name": "에코프로",
+            "code": "086520",
+            "weight": 3.16
+          },
+          {
+            "name": "에코프로비엠",
+            "code": "247540",
+            "weight": 2.48
+          },
+          {
+            "name": "주성엔지니어링",
+            "code": "036930",
+            "weight": 2.19
+          },
+          {
+            "name": "원익IPS",
+            "code": "240810",
+            "weight": 1.58
+          },
+          {
+            "name": "피에스케이",
+            "code": "319660",
+            "weight": 1.39
+          },
+          {
+            "name": "리노공업",
+            "code": "058470",
+            "weight": 1.39
+          },
+          {
+            "name": "에이비엘바이오",
+            "code": "298380",
+            "weight": 1.26
+          },
+          {
+            "name": "레인보우로보틱스",
+            "code": "277810",
+            "weight": 1.23
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "243880",
+      "name": "TIGER 200IT레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 정보기술",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 37.17
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 36.47
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 27.86
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 24.52
+          },
+          {
+            "name": "TIGER 200 IT",
+            "code": "139260",
+            "weight": 15.05
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 8.55
+          },
+          {
+            "name": "LG전자",
+            "code": "066570",
+            "weight": 6.42
+          },
+          {
+            "name": "LG이노텍",
+            "code": "011070",
+            "weight": 3.02
+          },
+          {
+            "name": "LG",
+            "code": "003550",
+            "weight": 2.85
+          },
+          {
+            "name": "한미반도체",
+            "code": "042700",
+            "weight": 2.77
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "243890",
+      "name": "TIGER 200에너지화학레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 에너지/화학",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "SK",
+            "code": "034730",
+            "weight": 44.7
+          },
+          {
+            "name": "LG화학",
+            "code": "051910",
+            "weight": 25.76
+          },
+          {
+            "name": "HD현대",
+            "code": "267250",
+            "weight": 19.23
+          },
+          {
+            "name": "SK이노베이션",
+            "code": "096770",
+            "weight": 17.65
+          },
+          {
+            "name": "TIGER 200 에너지화학",
+            "code": "139250",
+            "weight": 14.37
+          },
+          {
+            "name": "S-Oil",
+            "code": "010950",
+            "weight": 12.52
+          },
+          {
+            "name": "한화솔루션",
+            "code": "009830",
+            "weight": 9.75
+          },
+          {
+            "name": "GS",
+            "code": "078930",
+            "weight": 7.64
+          },
+          {
+            "name": "OCI홀딩스",
+            "code": "010060",
+            "weight": 5.83
+          },
+          {
+            "name": "한솔케미칼",
+            "code": "014680",
+            "weight": 5.46
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "etfCode": "132030",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.commodity",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=S&P GSCI Gold Index(TR)",
+            "rawTypeText=해외상품",
+            "name_contains=(H) 환헤지 표기"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "기초지수(S&P GSCI Gold Index)를 그대로 추종하는 골드선물형 상품, 액티브 운용 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "region"
+      ],
+      "notes": [
+        "rawTypeText=해외상품으로 해외 신호는 있으나 특정 국가/시장이 명시되지 않아 region 확정 보류",
+        "distributionSchedule=회계기간 종료일 기준으로 월배당 등 특정 dividend 태그 근거 없음(고의로 미분류)",
+        "sector는 원자재(금) 상품 특성상 개념적으로 해당 없어 미부여"
+      ]
+    },
+    {
+      "etfCode": "145670",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "name_contains=인버스",
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "strategy.benchmark.kospi200"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "holdings이 KODEX 인버스(17.13%)/TIGER 인버스(0.14%) 등 타 인버스 ETF로 구성된 재간접 구조로, KOSPI200 직접 구성종목 근거가 없어 benchmark.kospi200은 후보로만 표기",
+        "sourceCount=2로 데이터 커버리지 낮음",
+        "distributionSchedule 결측, 명칭에도 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "152500",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스피 200"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스피 200",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "name_contains=레버리지",
+            "benchmarkName=코스피 200"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.75,
+          "confidence": 0.6,
+          "evidence": [
+            "benchmarkName=코스피 200",
+            "holdings=삼성전자, SK하이닉스, KB금융, 신한지주 등 코스피200 대형주 구성"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "코스피200 지수를 그대로 복제한 위에 레버리지 구조 결합"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "holdings가 코스피200 대형주 위주로 분산되어 있어 특정 sector 태그는 부여하지 않음",
+        "distributionSchedule 결측, 명칭에도 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "166400",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스피 200 커버드콜 5% OTM"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스피 200 커버드콜 5% OTM",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.75,
+          "confidence": 0.6,
+          "evidence": [
+            "benchmarkName=코스피 200 커버드콜 5% OTM",
+            "holdings=TIGER 200, TIGER 200TR, 삼성전자, SK하이닉스 등 코스피200 대형주"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "코스피200 지수를 그대로 복제하며 커버드콜 옵션 전략 결합"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "name_contains=커버드콜",
+            "benchmarkName=코스피 200 커버드콜 5% OTM"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "holdings가 코스피200 대형주 위주로 분산되어 있어 특정 sector 태그는 부여하지 않음",
+        "distributionSchedule은 결측이나 명칭·benchmark의 커버드콜 명시로 dividend.covered_call은 판단 가능"
+      ]
+    },
+    {
+      "etfCode": "225800",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.currency",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "benchmarkName=미국달러선물지수",
+            "name_contains=미국달러"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "name_contains=레버리지"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "기초지수(미국달러선물지수)를 추종하는 구조에 레버리지 결합"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "region",
+        "dividend"
+      ],
+      "notes": [
+        "명칭의 '미국'은 통화(달러) 표기이며 주식/채권 시장 지역 신호가 아니라서 region 판단 보류",
+        "sector는 통화선물 상품 특성상 개념적으로 해당 없어 미부여",
+        "distributionSchedule 결측, 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "230480",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.currency",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "benchmarkName=미국달러선물지수",
+            "name_contains=미국달러"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "name_contains=인버스",
+            "nameHints=leverage=2X(명칭 표기)"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "nameHints=leverage=2X(명칭 표기), 인버스2X 배수 구조"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "기초지수(미국달러선물지수)를 역방향으로 추종하는 구조"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "region",
+        "dividend"
+      ],
+      "notes": [
+        "명칭의 '미국'은 통화(달러) 표기이며 주식/채권 시장 지역 신호가 아니라서 region 판단 보류",
+        "sector는 통화선물 상품 특성상 개념적으로 해당 없어 미부여",
+        "distributionSchedule 결측, 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "233160",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스닥 150"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스닥 150",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "name_contains=레버리지",
+            "benchmarkName=코스닥 150"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "코스닥150 지수를 그대로 복제한 위에 레버리지 구조 결합"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.ev_battery",
+        "sector.semiconductor",
+        "sector.healthcare_bio_pharma"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "holdings에 에코프로/에코프로비엠(2차전지), 주성엔지니어링/원익IPS/피에스케이(반도체장비), 알테오젠/에이비엘바이오(바이오)가 있으나 각 3~7% 내외로 분산되어 단일 sector 기준(0.65) 미달, 후보로만 표기",
+        "distributionSchedule 결측, 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "233740",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스닥 150"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스닥 150",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "name_contains=레버리지",
+            "benchmarkName=코스닥 150"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "코스닥150 지수를 그대로 복제한 위에 레버리지 구조 결합"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.ev_battery",
+        "sector.semiconductor",
+        "sector.healthcare_bio_pharma"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "holdings에 에코프로/에코프로비엠(2차전지), 주성엔지니어링/원익IPS/피에스케이(반도체장비), 알테오젠/에이비엘바이오(바이오)가 있으나 각 1~5% 내외로 분산되어 단일 sector 기준(0.65) 미달, 후보로만 표기",
+        "distributionSchedule 결측, 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "243880",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스피 200 정보기술"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스피 200 정보기술",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "name_contains=레버리지",
+            "benchmarkName=코스피 200 정보기술"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "코스피200 정보기술 지수를 그대로 복제한 위에 레버리지 구조 결합"
+          ]
+        },
+        {
+          "tagId": "sector.it",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "benchmarkName=코스피 200 정보기술",
+            "holdings=SK스퀘어, SK하이닉스, 삼성전자, 삼성전기, TIGER 200 IT, 삼성SDI, LG전자, LG이노텍, LG, 한미반도체"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.semiconductor"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "benchmark가 세부 반도체지수가 아닌 'IT' 섹터 지수이며 홀딩스도 IT/전자 대기업 전반이라 sector.it을 우선 선택, 반도체 비중(SK하이닉스·삼성전자·한미반도체)이 커서 sector.semiconductor는 후보로 표기",
+        "distributionSchedule 결측, 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    },
+    {
+      "etfCode": "243890",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재",
+            "benchmarkName=코스피 200 에너지/화학"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName=코스피 200 에너지/화학",
+            "해외 지역 신호 부재"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "name_contains=레버리지",
+            "benchmarkName=코스피 200 에너지/화학"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "코스피200 에너지/화학 지수를 그대로 복제한 위에 레버리지 구조 결합"
+          ]
+        },
+        {
+          "tagId": "sector.energy_chemicals",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "benchmarkName=코스피 200 에너지/화학",
+            "holdings=SK, LG화학, HD현대, SK이노베이션, S-Oil, 한화솔루션, GS, OCI홀딩스, 한솔케미칼"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "distributionSchedule 결측, 배당 관련 신호 없어 dividend 판단 보류"
+      ]
+    }
+  ]
+}

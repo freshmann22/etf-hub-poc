@@ -1,0 +1,1226 @@
+{
+  "batchNumber": 13,
+  "status": "success",
+  "startedAt": "2026-07-20T04:35:11.014Z",
+  "completedAt": "2026-07-20T04:38:36.454Z",
+  "modelRequested": "sonnet",
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 13421,
+      "outputTokens": 25,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.013546,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 1,
+      "outputTokens": 21608,
+      "cacheReadInputTokens": 10443,
+      "cacheCreationInputTokens": 20941,
+      "webSearchRequests": 0,
+      "costUSD": 0.45290189999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000
+    }
+  },
+  "durationMs": 203167,
+  "promptHash": "b8ad029bd67bc6e2dd5ddee6be52053d69835c105cdb643ed6fe2794d0a8683c",
+  "inputEtfCodes": [
+    "329200",
+    "133690",
+    "150460",
+    "364960",
+    "0192T0",
+    "213610",
+    "368190",
+    "368680",
+    "381570",
+    "469790"
+  ],
+  "blindInput": [
+    {
+      "etfCode": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 리츠부동산인프라",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "SK리츠",
+            "code": "395400",
+            "weight": 15.85
+          },
+          {
+            "name": "맥쿼리인프라",
+            "code": "088980",
+            "weight": 15.5
+          },
+          {
+            "name": "KB발해인프라",
+            "code": "415640",
+            "weight": 12.02
+          },
+          {
+            "name": "롯데리츠",
+            "code": "330590",
+            "weight": 9.34
+          },
+          {
+            "name": "한화리츠",
+            "code": "451800",
+            "weight": 7.78
+          },
+          {
+            "name": "ESR켄달스퀘어리츠",
+            "code": "365550",
+            "weight": 7.36
+          },
+          {
+            "name": "신한알파리츠",
+            "code": "293940",
+            "weight": 5.85
+          },
+          {
+            "name": "맵스리얼티",
+            "code": "094800",
+            "weight": 5.17
+          },
+          {
+            "name": "삼성FN리츠",
+            "code": "448730",
+            "weight": 4.57
+          },
+          {
+            "name": "코람코더원리츠",
+            "code": "417310",
+            "weight": 3.77
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "133690",
+      "name": "TIGER 미국나스닥100",
+      "evidence": {
+        "issuer": "미래에셋자산운용(주)",
+        "benchmarkName": "NASDAQ 100",
+        "rawTypeText": "해외주식형, 시장대표",
+        "nameHints": [],
+        "holdings": [],
+        "distributionSchedule": "매 1, 4, 7, 10월의 마지막 영업일 및 회계기간 종료일(종료일이 영업일이 아닌 경우 종료일의 직전 영업일)",
+        "sourceCount": 10
+      },
+      "knownMissingFields": [
+        "상품 설명·투자 목적",
+        "구성종목",
+        "산업·국가 비중",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "150460",
+      "name": "TIGER 중국소비테마",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 중국내수테마 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "한국콜마",
+            "code": "161890",
+            "weight": 5.95
+          },
+          {
+            "name": "파마리서치",
+            "code": "214450",
+            "weight": 5.11
+          },
+          {
+            "name": "코스맥스",
+            "code": "192820",
+            "weight": 4.94
+          },
+          {
+            "name": "아모레퍼시픽",
+            "code": "090430",
+            "weight": 4.81
+          },
+          {
+            "name": "LG생활건강",
+            "code": "051900",
+            "weight": 4.63
+          },
+          {
+            "name": "롯데웰푸드",
+            "code": "280360",
+            "weight": 4.56
+          },
+          {
+            "name": "미스토홀딩스",
+            "code": "081660",
+            "weight": 4.56
+          },
+          {
+            "name": "클래시스",
+            "code": "214150",
+            "weight": 4.49
+          },
+          {
+            "name": "CJ제일제당",
+            "code": "097950",
+            "weight": 4.36
+          },
+          {
+            "name": "빙그레",
+            "code": "005180",
+            "weight": 4.35
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "364960",
+      "name": "TIGER BBIG",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX BBIG 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "NC",
+            "code": "036570",
+            "weight": 10.89
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 10.67
+          },
+          {
+            "name": "크래프톤",
+            "code": "259960",
+            "weight": 9.85
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 8.6
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 8.5
+          },
+          {
+            "name": "셀트리온",
+            "code": "068270",
+            "weight": 8.49
+          },
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 8.47
+          },
+          {
+            "name": "삼성바이오로직스",
+            "code": "207940",
+            "weight": 8.15
+          },
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 8.03
+          },
+          {
+            "name": "넷마블",
+            "code": "251270",
+            "weight": 6.81
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0192T0",
+      "name": "SOL 코스닥TOP10",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스닥 TOP 10 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 24.59
+          },
+          {
+            "name": "에코프로",
+            "code": "086520",
+            "weight": 16.78
+          },
+          {
+            "name": "에코프로비엠",
+            "code": "247540",
+            "weight": 13.21
+          },
+          {
+            "name": "원익IPS",
+            "code": "240810",
+            "weight": 8.44
+          },
+          {
+            "name": "리노공업",
+            "code": "058470",
+            "weight": 7.35
+          },
+          {
+            "name": "에이비엘바이오",
+            "code": "298380",
+            "weight": 6.73
+          },
+          {
+            "name": "레인보우로보틱스",
+            "code": "277810",
+            "weight": 6.65
+          },
+          {
+            "name": "이오테크닉스",
+            "code": "039030",
+            "weight": 6.18
+          },
+          {
+            "name": "HLB",
+            "code": "028300",
+            "weight": 6.17
+          },
+          {
+            "name": "우리기술",
+            "code": "032820",
+            "weight": 3.46
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "213610",
+      "name": "KODEX 삼성그룹밸류",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "WISE 삼성그룹 밸류 인덱스",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 23.51
+          },
+          {
+            "name": "삼성물산",
+            "code": "028260",
+            "weight": 8.15
+          },
+          {
+            "name": "삼성생명",
+            "code": "032830",
+            "weight": 7.69
+          },
+          {
+            "name": "삼성E&A",
+            "code": "028050",
+            "weight": 7.13
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 5.81
+          },
+          {
+            "name": "삼성바이오로직스",
+            "code": "207940",
+            "weight": 5.59
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 5.56
+          },
+          {
+            "name": "삼성화재",
+            "code": "000810",
+            "weight": 5.13
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 5.07
+          },
+          {
+            "name": "에스원",
+            "code": "012750",
+            "weight": 4.68
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "368190",
+      "name": "HANARO Fn K-뉴딜디지털플러스",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide K-뉴딜 디지털 플러스 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "셀트리온",
+            "code": "068270",
+            "weight": 11.61
+          },
+          {
+            "name": "삼성바이오로직스",
+            "code": "207940",
+            "weight": 9.97
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 9.76
+          },
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 9.45
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 9.36
+          },
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 9.22
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 8.41
+          },
+          {
+            "name": "LG화학",
+            "code": "051910",
+            "weight": 7.56
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 6.96
+          },
+          {
+            "name": "크래프톤",
+            "code": "259960",
+            "weight": 4.04
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "368680",
+      "name": "KODEX K-뉴딜디지털플러스",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide K-뉴딜 디지털 플러스 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "셀트리온",
+            "code": "068270",
+            "weight": 11.66
+          },
+          {
+            "name": "삼성바이오로직스",
+            "code": "207940",
+            "weight": 10.08
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 9.74
+          },
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 9.54
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 9.46
+          },
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 9.3
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 8.47
+          },
+          {
+            "name": "LG화학",
+            "code": "051910",
+            "weight": 7.57
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 7.01
+          },
+          {
+            "name": "크래프톤",
+            "code": "259960",
+            "weight": 4.04
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "381570",
+      "name": "HANARO Fn친환경에너지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 친환경에너지 지수 (시장가격)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "한화솔루션",
+            "code": "009830",
+            "weight": 11
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 10.59
+          },
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 10.4
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 10.4
+          },
+          {
+            "name": "OCI홀딩스",
+            "code": "010060",
+            "weight": 8.81
+          },
+          {
+            "name": "한화",
+            "code": "000880",
+            "weight": 7.95
+          },
+          {
+            "name": "포스코인터내셔널",
+            "code": "047050",
+            "weight": 7.64
+          },
+          {
+            "name": "서진시스템",
+            "code": "178320",
+            "weight": 5.94
+          },
+          {
+            "name": "두산퓨얼셀",
+            "code": "336260",
+            "weight": 5.91
+          },
+          {
+            "name": "솔브레인",
+            "code": "357780",
+            "weight": 4.3
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "469790",
+      "name": "KIWOOM 코리아테크TOP10",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "Solactive K-TechTOP10 Index(PR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 27.09
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 26.7
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 12.27
+          },
+          {
+            "name": "크래프톤",
+            "code": "259960",
+            "weight": 6.24
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 5.59
+          },
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 5.42
+          },
+          {
+            "name": "한미반도체",
+            "code": "042700",
+            "weight": 4.92
+          },
+          {
+            "name": "삼성에스디에스",
+            "code": "018260",
+            "weight": 4.29
+          },
+          {
+            "name": "LG전자",
+            "code": "066570",
+            "weight": 4.28
+          },
+          {
+            "name": "LG이노텍",
+            "code": "011070",
+            "weight": 3.05
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "etfCode": "329200",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "SK리츠 15.85%",
+            "롯데리츠 9.34%",
+            "한화리츠 7.78%",
+            "ESR켄달스퀘어리츠 7.36%",
+            "신한알파리츠 5.85%",
+            "삼성FN리츠 4.57%",
+            "코람코더원리츠 3.77%",
+            "맥쿼리인프라 15.5%(인프라펀드)"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내 리츠/인프라펀드",
+            "해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: FnGuide 리츠부동산인프라, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "리츠+인프라펀드 혼합 구성으로 asset.reit 정의(부동산 관련 유가증권)에 부합",
+        "분배 스케줄·실제 분배금 이력 모두 결측이어서 배당 facet 판단 보류(REIT 상품 특성상 배당이 핵심 정보)"
+      ]
+    },
+    {
+      "etfCode": "133690",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.9,
+          "confidence": 0.75,
+          "evidence": [
+            "rawTypeText: 해외주식형, 시장대표"
+          ]
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "benchmarkName: NASDAQ 100"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.nasdaq100",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "benchmarkName: NASDAQ 100"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "sector"
+      ],
+      "notes": [
+        "구성종목 데이터가 없어(holdings 빈 배열) 섹터 판단 불가",
+        "분배 스케줄은 1,4,7,10월 분기형으로 월배당·고배당·커버드콜·배당성장 등 특정 배당 태그 요건에는 해당하지 않음"
+      ]
+    },
+    {
+      "etfCode": "150460",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 한국콜마·아모레퍼시픽 등 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "구성종목 10개 전부 KRX 상장 국내기업 코드"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: FnGuide 중국내수테마 지수, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.beauty_cosmetics"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "펀드명은 '중국소비테마'이나 실제 구성종목은 전부 국내 상장 화장품·식품기업이므로 region은 명칭이 아닌 보유종목 근거상 domestic_kr로 판단",
+        "화장품 관련 종목(한국콜마+파마리서치+코스맥스+아모레퍼시픽+LG생활건강+클래시스) 합산 비중이 top10 기준 약 30%로, taxonomy에 명시된 '중국소비테마 화장품 비중 30% 내외, 과반 미달' negative signal에 정확히 해당해 sector.beauty_cosmetics는 선택하지 않고 candidate로만 표시"
+      ]
+    },
+    {
+      "etfCode": "364960",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 NC·삼성SDI·크래프톤 등 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내기업",
+            "benchmarkName: KRX BBIG 지수"
+          ]
+        },
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "NC 10.89%",
+            "크래프톤 9.85%",
+            "넷마블 6.81%",
+            "합산 약 27.6%"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "삼성SDI 10.67%",
+            "LG에너지솔루션 8.5%",
+            "합산 약 19.2%"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "알테오젠 8.6%",
+            "셀트리온 8.49%",
+            "삼성바이오로직스 8.15%",
+            "합산 약 25.2%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: KRX BBIG 지수, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "BBIG(배터리·바이오·인터넷·게임) 테마 특성상 3개 섹터 태그가 고르게 임계치를 충족"
+      ]
+    },
+    {
+      "etfCode": "0192T0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 알테오젠·에코프로 등 코스닥 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "benchmarkName: 코스닥 TOP 10 지수",
+            "구성종목 전부 KRX(코스닥) 상장"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "알테오젠 24.59%",
+            "에이비엘바이오 6.73%",
+            "HLB 6.17%",
+            "합산 약 37.5%"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "에코프로 16.78%",
+            "에코프로비엠 13.21%",
+            "합산 약 30%"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "원익IPS 8.44%",
+            "리노공업 7.35%",
+            "이오테크닉스 6.18%",
+            "합산 약 22%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: 코스닥 TOP 10 지수, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.robotics"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "레인보우로보틱스(6.65%) 단독 비중으로는 sector.robotics 근거가 다소 약해 candidate로만 표시",
+        "표준 KRX 코드 결측(0192T0)은 자산군/지역/섹터 판단에 영향 없음"
+      ]
+    },
+    {
+      "etfCode": "213610",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 삼성전자·삼성물산 등 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "strategy.large_conglomerate_group",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "top10 전종목이 삼성그룹 계열사",
+            "합산 비중 약 78.3%",
+            "benchmarkName/펀드명에 '삼성그룹' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: WISE 삼성그룹 밸류 인덱스, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "strategy.value"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "benchmarkName에 '밸류'가 포함되나 PER/PBR 등 구체적 가치 팩터 방법론 설명이 없어 strategy.value는 candidate로만 표시",
+        "계열사 집중도가 매우 높고 업종이 분산되어 있어 개별 섹터 태그 대신 strategy.large_conglomerate_group으로 분류"
+      ]
+    },
+    {
+      "etfCode": "368190",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 셀트리온·삼성SDI 등 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "셀트리온 11.61%",
+            "삼성바이오로직스 9.97%",
+            "알테오젠 8.41%",
+            "합산 약 30%"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "삼성SDI 9.76%",
+            "LG에너지솔루션 9.36%",
+            "LG화학 7.56%",
+            "합산 약 26.7%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: FnGuide K-뉴딜 디지털 플러스 지수, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.it"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "NAVER 9.22%+카카오 6.96%=약 16.2%로 인터넷/IT 익스포저가 있으나 임계치에는 못미쳐 candidate로 표시",
+        "368680(KODEX 동일지수 상품)과 구성종목·비중이 거의 동일한 쌍둥이 상품"
+      ]
+    },
+    {
+      "etfCode": "368680",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 셀트리온·삼성SDI 등 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "셀트리온 11.66%",
+            "삼성바이오로직스 10.08%",
+            "알테오젠 8.47%",
+            "합산 약 30.2%"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "삼성SDI 9.74%",
+            "LG에너지솔루션 9.46%",
+            "LG화학 7.57%",
+            "합산 약 26.8%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: FnGuide K-뉴딜 디지털 플러스 지수, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.it"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "NAVER 9.3%+카카오 7.01%=약 16.3%로 인터넷/IT 익스포저가 있으나 임계치 근거는 부족해 candidate로 표시",
+        "368190(HANARO Fn 동일지수 상품)과 구성종목·비중이 거의 동일한 쌍둥이 상품"
+      ]
+    },
+    {
+      "etfCode": "381570",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 한화솔루션·삼성SDI 등 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "한화솔루션 11%(태양광)",
+            "OCI홀딩스 8.81%(태양광)",
+            "두산퓨얼셀 5.91%(수소연료전지)"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "삼성SDI 10.59%",
+            "LG에너지솔루션 10.4%",
+            "합산 약 21%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: FnGuide 친환경에너지 지수, 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "신재생에너지(태양광·수소연료전지)와 2차전지 밸류체인이 함께 구성되어 두 섹터 태그 동시 부여"
+      ]
+    },
+    {
+      "etfCode": "469790",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목이 삼성전자·SK하이닉스 등 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.85,
+          "confidence": 0.7,
+          "evidence": [
+            "구성종목 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "삼성전자 27.09%",
+            "SK하이닉스 26.7%",
+            "한미반도체 4.92%",
+            "합산 약 58.7%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "benchmarkName: Solactive K-TechTOP10 Index(PR), 액티브 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "반도체 비중이 압도적(약 58.7%)이어서 sector.it/tech_general 대신 sector.semiconductor로 집중 분류"
+      ]
+    }
+  ]
+}

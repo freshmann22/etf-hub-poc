@@ -1,0 +1,1233 @@
+{
+  "batchNumber": 11,
+  "status": "success",
+  "startedAt": "2026-07-20T04:45:30.548Z",
+  "completedAt": "2026-07-20T04:48:17.570Z",
+  "modelRequested": "sonnet",
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 13537,
+      "outputTokens": 27,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.013672,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 1,
+      "outputTokens": 17825,
+      "cacheReadInputTokens": 10443,
+      "cacheCreationInputTokens": 21094,
+      "webSearchRequests": 0,
+      "costUSD": 0.3970749,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000
+    }
+  },
+  "durationMs": 164780,
+  "promptHash": "79b76184179cb1cf0348a28e2f76a70f8a329ab265081d4e871f7292317f189e",
+  "inputEtfCodes": [
+    "494310",
+    "494330",
+    "494890",
+    "495060",
+    "495230",
+    "496130",
+    "498050",
+    "498400",
+    "498410",
+    "140710"
+  ],
+  "blindInput": [
+    {
+      "etfCode": "494310",
+      "name": "KODEX 반도체레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX 반도체",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 45.6
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 24.94
+          },
+          {
+            "name": "KODEX 반도체",
+            "code": "091160",
+            "weight": 22.25
+          },
+          {
+            "name": "한미반도체",
+            "code": "042700",
+            "weight": 3.01
+          },
+          {
+            "name": "DB하이텍",
+            "code": "000990",
+            "weight": 2.94
+          },
+          {
+            "name": "주성엔지니어링",
+            "code": "036930",
+            "weight": 2.94
+          },
+          {
+            "name": "이오테크닉스",
+            "code": "039030",
+            "weight": 2.63
+          },
+          {
+            "name": "심텍",
+            "code": "222800",
+            "weight": 2.33
+          },
+          {
+            "name": "파두",
+            "code": "440110",
+            "weight": 2.22
+          },
+          {
+            "name": "제주반도체",
+            "code": "080220",
+            "weight": 2.04
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "494330",
+      "name": "ACE 라이프자산주주가치액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 기업가치 지수(시장가격)",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 6.42
+          },
+          {
+            "name": "한국금융지주",
+            "code": "071050",
+            "weight": 5.33
+          },
+          {
+            "name": "DN오토모티브",
+            "code": "007340",
+            "weight": 4.08
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 3.94
+          },
+          {
+            "name": "한국전력",
+            "code": "015760",
+            "weight": 3.91
+          },
+          {
+            "name": "코리안리",
+            "code": "003690",
+            "weight": 3.16
+          },
+          {
+            "name": "GS",
+            "code": "078930",
+            "weight": 3
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 2.82
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 2.17
+          },
+          {
+            "name": "팬오션",
+            "code": "028670",
+            "weight": 2.12
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "494890",
+      "name": "KODEX 200액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 33.03
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 27.95
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 3.24
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 2.13
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 1.71
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 1.65
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 1.23
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 0.97
+          },
+          {
+            "name": "삼성물산",
+            "code": "028260",
+            "weight": 0.96
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 0.91
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "495060",
+      "name": "TIME 코리아밸류업액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코리아 밸류업 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 22.02
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 18
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 10.89
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 4.76
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 3.64
+          },
+          {
+            "name": "한국금융지주",
+            "code": "071050",
+            "weight": 3.31
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 3
+          },
+          {
+            "name": "한화에어로스페이스",
+            "code": "012450",
+            "weight": 2.88
+          },
+          {
+            "name": "테스",
+            "code": "095610",
+            "weight": 2.7
+          },
+          {
+            "name": "SK",
+            "code": "034730",
+            "weight": 2.45
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "495230",
+      "name": "KoAct 코리아밸류업액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코리아 밸류업 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 23.29
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 15.86
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 4.84
+          },
+          {
+            "name": "SK",
+            "code": "034730",
+            "weight": 4.13
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 3.83
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 3.81
+          },
+          {
+            "name": "현대모비스",
+            "code": "012330",
+            "weight": 3.61
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 3.09
+          },
+          {
+            "name": "한화에어로스페이스",
+            "code": "012450",
+            "weight": 2.5
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 2.47
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "496130",
+      "name": "TRUSTON 코리아밸류업액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코리아 밸류업 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 22.68
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 18.82
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 3.69
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 3.54
+          },
+          {
+            "name": "삼성물산",
+            "code": "028260",
+            "weight": 3.33
+          },
+          {
+            "name": "LS",
+            "code": "006260",
+            "weight": 3.27
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 3.13
+          },
+          {
+            "name": "CJ",
+            "code": "001040",
+            "weight": 3.02
+          },
+          {
+            "name": "GS리테일",
+            "code": "007070",
+            "weight": 2.98
+          },
+          {
+            "name": "삼성생명",
+            "code": "032830",
+            "weight": 2.95
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "498050",
+      "name": "HANARO 바이오코리아액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "iSelect K-바이오헬스케어",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "에이비엘바이오",
+            "code": "298380",
+            "weight": 10.72
+          },
+          {
+            "name": "리가켐바이오",
+            "code": "141080",
+            "weight": 7.98
+          },
+          {
+            "name": "한올바이오파마",
+            "code": "009420",
+            "weight": 7.24
+          },
+          {
+            "name": "에스티팜",
+            "code": "237690",
+            "weight": 5.65
+          },
+          {
+            "name": "올릭스",
+            "code": "226950",
+            "weight": 4.76
+          },
+          {
+            "name": "한미약품",
+            "code": "128940",
+            "weight": 4.7
+          },
+          {
+            "name": "셀트리온",
+            "code": "068270",
+            "weight": 3.94
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 3.9
+          },
+          {
+            "name": "파마리서치",
+            "code": "214450",
+            "weight": 3.66
+          },
+          {
+            "name": "엘앤씨바이오",
+            "code": "290650",
+            "weight": 3.61
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "498400",
+      "name": "KODEX 200타겟위클리커버드콜",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 타겟 15% 위클리 커버드콜 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 27.52
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 23.74
+          },
+          {
+            "name": "KODEX 200",
+            "code": "069500",
+            "weight": 15.01
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 2.54
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 1.71
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 1.43
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 1.33
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 1.05
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 0.82
+          },
+          {
+            "name": "삼성물산",
+            "code": "028260",
+            "weight": 0.82
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "498410",
+      "name": "KODEX 금융고배당TOP10타겟위클리커버드콜",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 금융 고배당 TOP 10 타겟 15%분배 위클리 커버드콜 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ],
+        "holdings": [
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 21.77
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 14.49
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 11.65
+          },
+          {
+            "name": "기업은행",
+            "code": "024110",
+            "weight": 9.48
+          },
+          {
+            "name": "삼성화재",
+            "code": "000810",
+            "weight": 9.42
+          },
+          {
+            "name": "KODEX 금융고배당TOP10",
+            "code": "0089D0",
+            "weight": 7.58
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 5.78
+          },
+          {
+            "name": "한국금융지주",
+            "code": "071050",
+            "weight": 5.74
+          },
+          {
+            "name": "NH투자증권",
+            "code": "005940",
+            "weight": 5.58
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 3.81
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "140710",
+      "name": "KODEX 운송",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "KRX 운송",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "현대글로비스",
+            "code": "086280",
+            "weight": 25.79
+          },
+          {
+            "name": "대한항공",
+            "code": "003490",
+            "weight": 21.71
+          },
+          {
+            "name": "HMM",
+            "code": "011200",
+            "weight": 15.41
+          },
+          {
+            "name": "팬오션",
+            "code": "028670",
+            "weight": 11.2
+          },
+          {
+            "name": "CJ대한통운",
+            "code": "000120",
+            "weight": 7.67
+          },
+          {
+            "name": "아시아나항공",
+            "code": "020560",
+            "weight": 5.03
+          },
+          {
+            "name": "롯데렌탈",
+            "code": "089860",
+            "weight": 4.25
+          },
+          {
+            "name": "대한해운",
+            "code": "005880",
+            "weight": 3.02
+          },
+          {
+            "name": "한진",
+            "code": "002320",
+            "weight": 1.38
+          },
+          {
+            "name": "세방",
+            "code": "004360",
+            "weight": 1.15
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "etfCode": "494310",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음, 구성종목 전량 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "전 종목 KRX 상장 국내기업(SK하이닉스,삼성전자 등), 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "벤치마크명 'KRX 반도체'",
+            "상위10종목 전량 반도체 밸류체인(SK하이닉스45.6%,삼성전자24.94%,한미반도체,DB하이텍,주성엔지니어링 등)"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "펀드명에 '레버리지' 명시",
+            "nameHints=name_contains=레버리지"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "분배 일정/실제 분배금 이력 데이터 없음(knownMissingFields)"
+      ]
+    },
+    {
+      "etfCode": "494330",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음, 구성종목 전량 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "전 종목 국내기업(삼성전자,한국금융지주,BNK금융지주 등), 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '액티브' 명시",
+            "벤치마크가 표준지수가 아닌 자체 산출 지수(FnGuide 기업가치 지수)"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "strategy.value",
+        "sector.financials"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "상위10종목 중 금융주(한국금융지주,BNK금융지주,우리금융지주,하나금융지주) 합산 비중 약 17%로 sector.financials 임계값에 부족",
+        "'주주가치/기업가치' 벤치마크명은 가치주 팩터 후보이나 PER/PBR 등 저평가 지표 직접 근거 없음"
+      ]
+    },
+    {
+      "etfCode": "494890",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '액티브' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "벤치마크명 '코스피 200'",
+            "상위 구성종목이 삼성전자·SK하이닉스 등 코스피200 대형주 중심"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.semiconductor"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "삼성전자33.03%+SK하이닉스27.95%=약61%로 반도체 비중이 높으나, 벤치마크가 코스피200 전체 지수이므로 섹터 테마로 단정하기보다 후보로 처리"
+      ]
+    },
+    {
+      "etfCode": "495060",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '액티브' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "벤치마크명 '코리아 밸류업 지수'"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.semiconductor",
+        "sector.financials"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "SK하이닉스22.02%+삼성전자18%+SK스퀘어10.89%=약51%로 반도체/반도체 관련주 비중 높으나 밸류업 지수 특성상 섹터 테마 단정 어려움",
+        "금융주(KB금융,신한지주,한국금융지주,하나금융지주) 합산 약 14.7%로 임계값 미달"
+      ]
+    },
+    {
+      "etfCode": "495230",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '액티브' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "벤치마크명 '코리아 밸류업 지수'"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.semiconductor",
+        "sector.financials"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "SK하이닉스23.29%+삼성전자15.86%=약39%로 반도체 비중 상당하나 벤치마크 특성상 섹터 테마 단정 어려움",
+        "금융주(KB금융,신한지주,하나금융지주) 합산 약 10.4%로 임계값 미달"
+      ]
+    },
+    {
+      "etfCode": "496130",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '액티브' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.value_up",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "벤치마크명 '코리아 밸류업 지수'"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.semiconductor",
+        "sector.financials"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "삼성전자22.68%+SK하이닉스18.82%=약41.5%로 반도체 비중 상당하나 벤치마크 특성상 섹터 테마 단정 어려움",
+        "금융주(KB금융,삼성증권,삼성생명) 합산 약 10.2%로 임계값 미달"
+      ]
+    },
+    {
+      "etfCode": "498050",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "벤치마크명 'iSelect K-바이오헬스케어'",
+            "상위10종목 전량 바이오/제약(에이비엘바이오,리가켐바이오,한올바이오파마,에스티팜,셀트리온 등)"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명에 '액티브' 명시"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "분배 일정/이력 데이터 없음"
+      ]
+    },
+    {
+      "etfCode": "498400",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.75,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "펀드명 및 벤치마크명 '코스피 200 타겟 15% 위클리 커버드콜 지수'에 커버드콜 명시"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "strategy.benchmark.kospi200",
+        "sector.semiconductor"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "'위클리' 분배 구조가 명시되어 있어 dividend.monthly는 해당하지 않음",
+        "커버드콜 파생구조이므로 strategy.passive_index는 부여하지 않음(negativeSignal: 파생 구조는 별도 전략 태그로 처리)",
+        "삼성전자27.52%+SK하이닉스23.74%=약51%로 반도체 비중 높으나 코스피200 기반 구조상 섹터 테마 단정 보류"
+      ]
+    },
+    {
+      "etfCode": "498410",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "벤치마크명에 '금융' 명시",
+            "상위10종목 전량 금융업(KB금융21.77%,하나금융지주14.49%,우리금융지주11.65%,기업은행,삼성화재,DB손해보험,NH투자증권 등)"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "벤치마크명에 '위클리 커버드콜 지수' 명시"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "벤치마크명에 '금융 고배당 TOP 10' 명시"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": [
+        "'위클리' 분배 구조가 명시되어 있어 dividend.monthly는 해당하지 않음"
+      ]
+    },
+    {
+      "etfCode": "140710",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "전 종목 국내기업, 해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "sector.transportation_logistics",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "벤치마크명 'KRX 운송'",
+            "상위10종목 전량 운송/물류업(현대글로비스25.79%,대한항공21.71%,HMM15.41%,팬오션11.2%,CJ대한통운7.67% 등), 합산 비중 약 97%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "명칭/힌트에 액티브·레버리지·인버스·커버드콜 등 신호 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "taxonomy상 sector.transportation_logistics는 표본 1건으로 REVIEW 대상 명시되어 있으나, 본 건은 운송기업 비중 약 97%로 근거가 뚜렷함"
+      ]
+    }
+  ]
+}

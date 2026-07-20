@@ -1,0 +1,837 @@
+{
+  "batchNumber": 3,
+  "status": "success",
+  "startedAt": "2026-07-20T04:19:51.139Z",
+  "completedAt": "2026-07-20T04:21:40.843Z",
+  "modelRequested": "sonnet",
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 12219,
+      "outputTokens": 27,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.012354,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 1,
+      "outputTokens": 11887,
+      "cacheReadInputTokens": 10443,
+      "cacheCreationInputTokens": 19487,
+      "webSearchRequests": 0,
+      "costUSD": 0.2983629,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000
+    }
+  },
+  "durationMs": 107258,
+  "promptHash": "b714e7159f9485feb0eb78efeac5c3d51a8262ecb319f1947c3c6671af610831",
+  "inputEtfCodes": [
+    "244580",
+    "252400",
+    "252410",
+    "252420",
+    "252670",
+    "252710",
+    "253150",
+    "253160",
+    "253230",
+    "253240"
+  ],
+  "blindInput": [
+    {
+      "etfCode": "244580",
+      "name": "KODEX 바이오",
+      "evidence": {
+        "issuer": "삼성자산운용(주)",
+        "benchmarkName": "FnGuide 바이오 지수",
+        "rawTypeText": "국내주식형, 시장테마",
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "파마리서치",
+            "code": "214450",
+            "weight": 2.74
+          },
+          {
+            "name": "씨어스",
+            "code": "458870",
+            "weight": 2.69
+          },
+          {
+            "name": "한미사이언스",
+            "code": "008930",
+            "weight": 2.65
+          },
+          {
+            "name": "삼성바이오로직스",
+            "code": "207940",
+            "weight": 2.58
+          },
+          {
+            "name": "셀트리온",
+            "code": "068270",
+            "weight": 2.53
+          },
+          {
+            "name": "한올바이오파마",
+            "code": "009420",
+            "weight": 2.49
+          },
+          {
+            "name": "올릭스",
+            "code": "226950",
+            "weight": 2.45
+          },
+          {
+            "name": "에스티팜",
+            "code": "237690",
+            "weight": 2.43
+          },
+          {
+            "name": "동국제약",
+            "code": "086450",
+            "weight": 2.42
+          },
+          {
+            "name": "클래시스",
+            "code": "214150",
+            "weight": 2.42
+          }
+        ],
+        "distributionSchedule": "1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일(다만 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 11
+      },
+      "knownMissingFields": [
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "252400",
+      "name": "RISE 200선물레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "RISE 200",
+            "code": "148020",
+            "weight": 12.54
+          },
+          {
+            "name": "RISE 200TR",
+            "code": "361580",
+            "weight": 9.78
+          },
+          {
+            "name": "TIGER 200선물레버리지",
+            "code": "267770",
+            "weight": 6.42
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "252410",
+      "name": "RISE 200선물인버스",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "RISE 200선물인버스2X",
+            "code": "252420",
+            "weight": 0.64
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "252420",
+      "name": "RISE 200선물인버스2X",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "RISE 200선물인버스",
+            "code": "252410",
+            "weight": 14.39
+          },
+          {
+            "name": "TIGER 200선물인버스2X",
+            "code": "252710",
+            "weight": 11.26
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "KODEX 인버스",
+            "code": "114800",
+            "weight": 24.11
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "252710",
+      "name": "TIGER 200선물인버스2X",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "TIGER 인버스",
+            "code": "123310",
+            "weight": 35.62
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "253150",
+      "name": "PLUS 200선물레버리지",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=레버리지"
+        ],
+        "holdings": [
+          {
+            "name": "PLUS 200TR",
+            "code": "491220",
+            "weight": 5.6
+          },
+          {
+            "name": "ACE 레버리지",
+            "code": "152500",
+            "weight": 4.73
+          },
+          {
+            "name": "TIGER 레버리지",
+            "code": "123320",
+            "weight": 3.98
+          },
+          {
+            "name": "KODEX 레버리지",
+            "code": "122630",
+            "weight": 0.43
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "253160",
+      "name": "PLUS 200선물인버스2X",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "KODEX 200선물인버스2X",
+            "code": "252670",
+            "weight": 13.35
+          },
+          {
+            "name": "TIGER 200선물인버스2X",
+            "code": "252710",
+            "weight": 6.37
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "253230",
+      "name": "KIWOOM 200선물인버스2X",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "leverage=2X(명칭 표기)",
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "KODEX 200선물인버스2X",
+            "code": "252670",
+            "weight": 11.39
+          },
+          {
+            "name": "KIWOOM 200선물인버스",
+            "code": "253240",
+            "weight": 2.32
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "253240",
+      "name": "KIWOOM 200선물인버스",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 선물지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=인버스"
+        ],
+        "holdings": [
+          {
+            "name": "KODEX 인버스",
+            "code": "114800",
+            "weight": 6.36
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "etfCode": "244580",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.9,
+          "evidence": [
+            "rawTypeText=국내주식형"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "rawTypeText=국내주식형",
+            "해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.92,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=FnGuide 바이오 지수",
+            "top10 구성종목 전부 제약/바이오 기업(파마리서치·삼성바이오로직스·셀트리온·한올바이오파마 등)"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "액티브 운용 신호 부재",
+            "FnGuide 바이오 지수를 추종하는 시장테마형 상품"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "knownMissingFields에 '실제 분배금 이력' 명시되어 배당 관련 태그(고배당/월배당 등) 판단 근거 부족. distributionSchedule은 분기 지급으로 월배당은 배제됨"
+      ]
+    },
+    {
+      "etfCode": "252400",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=레버리지",
+            "구성종목이 RISE 200TR·TIGER 200선물레버리지 등 레버리지 계열 상품"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "운용사/분배일정/실제 분배금 이력 모두 결측",
+        "구성종목이 타 ETF(재간접 구조)로만 이루어져 산업 섹터 판단 대상 아님"
+      ]
+    },
+    {
+      "etfCode": "252410",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스",
+            "2X 표기 없음(1배수 인버스)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "운용사/분배일정/실제 분배금 이력 결측",
+        "구성종목이 RISE 200선물인버스2X 소량 편입(재간접 구조)"
+      ]
+    },
+    {
+      "etfCode": "252420",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "nameHints=leverage=2X(명칭 표기)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "명칭에 인버스+2X가 함께 표기되어 인버스·레버리지 태그 동시 부여",
+        "운용사/분배일정/실제 분배금 이력 결측"
+      ]
+    },
+    {
+      "etfCode": "252670",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "nameHints=leverage=2X(명칭 표기)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "구성종목에 KODEX 인버스(24.11%) 편입",
+        "운용사/분배일정/실제 분배금 이력 결측"
+      ]
+    },
+    {
+      "etfCode": "252710",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "nameHints=leverage=2X(명칭 표기)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "구성종목에 TIGER 인버스(35.62%) 편입",
+        "운용사/분배일정/실제 분배금 이력 결측"
+      ]
+    },
+    {
+      "etfCode": "253150",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=레버리지",
+            "구성종목이 ACE 레버리지·TIGER 레버리지·KODEX 레버리지 등 레버리지 계열 상품"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "운용사/분배일정/실제 분배금 이력 결측",
+        "구성종목이 타 레버리지 ETF로만 이루어짐(재간접 구조)"
+      ]
+    },
+    {
+      "etfCode": "253160",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "nameHints=leverage=2X(명칭 표기)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "구성종목에 KODEX 200선물인버스2X·TIGER 200선물인버스2X 편입(재간접 구조)",
+        "운용사/분배일정/실제 분배금 이력 결측"
+      ]
+    },
+    {
+      "etfCode": "253230",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스"
+          ]
+        },
+        {
+          "tagId": "strategy.leverage",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "nameHints=leverage=2X(명칭 표기)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "구성종목에 KODEX 200선물인버스2X·KIWOOM 200선물인버스 편입(재간접 구조)",
+        "운용사/분배일정/실제 분배금 이력 결측"
+      ]
+    },
+    {
+      "etfCode": "253240",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.65,
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 부재"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 200 선물지수"
+          ]
+        },
+        {
+          "tagId": "strategy.inverse",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "name_contains=인버스",
+            "2X 표기 없음(1배수 인버스)"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "구성종목에 KODEX 인버스(6.36%) 편입",
+        "운용사/분배일정/실제 분배금 이력 결측"
+      ]
+    }
+  ]
+}

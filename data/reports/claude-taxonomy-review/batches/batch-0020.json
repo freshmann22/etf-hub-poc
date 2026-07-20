@@ -1,0 +1,1126 @@
+{
+  "batchNumber": 20,
+  "status": "success",
+  "startedAt": "2026-07-20T04:40:39.647Z",
+  "completedAt": "2026-07-20T04:44:12.484Z",
+  "modelRequested": "sonnet",
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 13284,
+      "outputTokens": 26,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.013414,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 3,
+      "outputTokens": 22667,
+      "cacheReadInputTokens": 41653,
+      "cacheCreationInputTokens": 39236,
+      "webSearchRequests": 0,
+      "costUSD": 0.5879259,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000
+    }
+  },
+  "durationMs": 210633,
+  "promptHash": "04f510ac4609cc49d01e24ee295b11f1e415db773ef5432286007db7c37f3ebc",
+  "inputEtfCodes": [
+    "0018C0",
+    "0177R0",
+    "211900",
+    "0150K0",
+    "360750",
+    "379810",
+    "139220",
+    "139240",
+    "227560",
+    "228790"
+  ],
+  "blindInput": [
+    {
+      "etfCode": "0018C0",
+      "name": "PLUS 고배당주위클리고정커버드콜",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 고배당 위클리 고정 커버드콜 지수",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=커버드콜"
+        ],
+        "holdings": [
+          {
+            "name": "기업은행",
+            "code": "024110",
+            "weight": 5.23
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 5.19
+          },
+          {
+            "name": "NH투자증권",
+            "code": "005940",
+            "weight": 5.14
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 4.9
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 4.5
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 4.5
+          },
+          {
+            "name": "삼성카드",
+            "code": "029780",
+            "weight": 4.46
+          },
+          {
+            "name": "제일기획",
+            "code": "030000",
+            "weight": 4.23
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 4.03
+          },
+          {
+            "name": "KT",
+            "code": "030200",
+            "weight": 3.91
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0177R0",
+      "name": "TIGER 반도체TOP10커버드콜액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 반도체 TOP10 Capped 지수(Price Return)",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브",
+          "name_contains=커버드콜"
+        ],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 20.94
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 20.74
+          },
+          {
+            "name": "TIGER 반도체TOP10",
+            "code": "396500",
+            "weight": 12.41
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 7.64
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 7
+          },
+          {
+            "name": "원익IPS",
+            "code": "240810",
+            "weight": 2.91
+          },
+          {
+            "name": "LG이노텍",
+            "code": "011070",
+            "weight": 2.61
+          },
+          {
+            "name": "DB하이텍",
+            "code": "000990",
+            "weight": 2.47
+          },
+          {
+            "name": "이오테크닉스",
+            "code": "039030",
+            "weight": 2.22
+          },
+          {
+            "name": "한미반도체",
+            "code": "042700",
+            "weight": 2.1
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "211900",
+      "name": "KODEX 코리아배당성장",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 배당성장 50",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성카드",
+            "code": "029780",
+            "weight": 4.99
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 4.7
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 4.19
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 3.96
+          },
+          {
+            "name": "오리온홀딩스",
+            "code": "001800",
+            "weight": 3.72
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 3.4
+          },
+          {
+            "name": "NH투자증권",
+            "code": "005940",
+            "weight": 3.36
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 3.34
+          },
+          {
+            "name": "iM금융지주",
+            "code": "139130",
+            "weight": 3.26
+          },
+          {
+            "name": "다우기술",
+            "code": "023590",
+            "weight": 3.25
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "0150K0",
+      "name": "KoAct 수소전력ESS인프라액티브",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "FnGuide 수소전력ESS인프라 지수(PR)",
+        "rawTypeText": null,
+        "nameHints": [
+          "name_contains=액티브"
+        ],
+        "holdings": [
+          {
+            "name": "지엔씨에너지",
+            "code": "119850",
+            "weight": 7.92
+          },
+          {
+            "name": "SK이터닉스",
+            "code": "475150",
+            "weight": 7.51
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 6.1
+          },
+          {
+            "name": "상신이디피",
+            "code": "091580",
+            "weight": 6.06
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 5.56
+          },
+          {
+            "name": "LS ELECTRIC",
+            "code": "010120",
+            "weight": 5.19
+          },
+          {
+            "name": "신성에스티",
+            "code": "416180",
+            "weight": 4.83
+          },
+          {
+            "name": "비나텍",
+            "code": "126340",
+            "weight": 4.59
+          },
+          {
+            "name": "한중엔시에스",
+            "code": "107640",
+            "weight": 4.58
+          },
+          {
+            "name": "LS머트리얼즈",
+            "code": "417200",
+            "weight": 4.52
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "표준 KRX 코드",
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "360750",
+      "name": "TIGER 미국S&P500",
+      "evidence": {
+        "issuer": "미래에셋자산운용(주)",
+        "benchmarkName": "S&P 500",
+        "rawTypeText": "해외주식형, 시장대표",
+        "nameHints": [],
+        "holdings": [],
+        "distributionSchedule": "매 1월, 4월, 7월, 10월의 마지막 영업일 및 회계기간 종료일(다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 10
+      },
+      "knownMissingFields": [
+        "상품 설명·투자 목적",
+        "구성종목",
+        "산업·국가 비중",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "379810",
+      "name": "KODEX 미국나스닥100",
+      "evidence": {
+        "issuer": "삼성자산운용(주)",
+        "benchmarkName": "NASDAQ-100 Total Return Index",
+        "rawTypeText": "해외주식형, 시장대표",
+        "nameHints": [],
+        "holdings": [],
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일(다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 10
+      },
+      "knownMissingFields": [
+        "상품 설명·투자 목적",
+        "구성종목",
+        "산업·국가 비중",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "139220",
+      "name": "TIGER 200 건설",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 건설",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성물산",
+            "code": "028260",
+            "weight": 26.79
+          },
+          {
+            "name": "삼성E&A",
+            "code": "028050",
+            "weight": 22.09
+          },
+          {
+            "name": "현대건설",
+            "code": "000720",
+            "weight": 15.58
+          },
+          {
+            "name": "대우건설",
+            "code": "047040",
+            "weight": 10.83
+          },
+          {
+            "name": "한전기술",
+            "code": "052690",
+            "weight": 6.26
+          },
+          {
+            "name": "DL이앤씨",
+            "code": "375500",
+            "weight": 6.08
+          },
+          {
+            "name": "KCC",
+            "code": "002380",
+            "weight": 5.94
+          },
+          {
+            "name": "한전KPS",
+            "code": "051600",
+            "weight": 3.33
+          },
+          {
+            "name": "DL",
+            "code": "000210",
+            "weight": 1.67
+          },
+          {
+            "name": "한일시멘트",
+            "code": "300720",
+            "weight": 1.04
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "139240",
+      "name": "TIGER 200 철강소재",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 철강/소재",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 23.2
+          },
+          {
+            "name": "현대제철",
+            "code": "004020",
+            "weight": 20.65
+          },
+          {
+            "name": "고려아연",
+            "code": "010130",
+            "weight": 19.43
+          },
+          {
+            "name": "풍산",
+            "code": "103140",
+            "weight": 17.53
+          },
+          {
+            "name": "세아베스틸지주",
+            "code": "001430",
+            "weight": 6.12
+          },
+          {
+            "name": "영풍",
+            "code": "000670",
+            "weight": 2.83
+          },
+          {
+            "name": "율촌화학",
+            "code": "008730",
+            "weight": 2.41
+          },
+          {
+            "name": "세아제강지주",
+            "code": "003030",
+            "weight": 2.35
+          },
+          {
+            "name": "아세아",
+            "code": "002030",
+            "weight": 2.34
+          },
+          {
+            "name": "동원시스템즈",
+            "code": "014820",
+            "weight": 1.82
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "227560",
+      "name": "TIGER 200 생활소비재",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "코스피 200 생활소비재",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "KT&G",
+            "code": "033780",
+            "weight": 20.78
+          },
+          {
+            "name": "한국전력",
+            "code": "015760",
+            "weight": 16.08
+          },
+          {
+            "name": "에이피알",
+            "code": "278470",
+            "weight": 13.82
+          },
+          {
+            "name": "삼양식품",
+            "code": "003230",
+            "weight": 6.28
+          },
+          {
+            "name": "아모레퍼시픽",
+            "code": "090430",
+            "weight": 5.6
+          },
+          {
+            "name": "오리온",
+            "code": "271560",
+            "weight": 4.32
+          },
+          {
+            "name": "LG생활건강",
+            "code": "051900",
+            "weight": 3.41
+          },
+          {
+            "name": "달바글로벌",
+            "code": "483650",
+            "weight": 2.98
+          },
+          {
+            "name": "한국콜마",
+            "code": "161890",
+            "weight": 2.95
+          },
+          {
+            "name": "CJ",
+            "code": "001040",
+            "weight": 2.94
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    },
+    {
+      "etfCode": "228790",
+      "name": "TIGER 화장품",
+      "evidence": {
+        "issuer": null,
+        "benchmarkName": "WISE 화장품 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "에이피알",
+            "code": "278470",
+            "weight": 10.77
+          },
+          {
+            "name": "실리콘투",
+            "code": "257720",
+            "weight": 10.6
+          },
+          {
+            "name": "코스맥스",
+            "code": "192820",
+            "weight": 10.29
+          },
+          {
+            "name": "한국콜마",
+            "code": "161890",
+            "weight": 10.26
+          },
+          {
+            "name": "파마리서치",
+            "code": "214450",
+            "weight": 9.96
+          },
+          {
+            "name": "LG생활건강",
+            "code": "051900",
+            "weight": 9.25
+          },
+          {
+            "name": "달바글로벌",
+            "code": "483650",
+            "weight": 9.19
+          },
+          {
+            "name": "아모레퍼시픽",
+            "code": "090430",
+            "weight": 9.16
+          },
+          {
+            "name": "코스메카코리아",
+            "code": "241710",
+            "weight": 7.23
+          },
+          {
+            "name": "브이티",
+            "code": "018290",
+            "weight": 3.14
+          }
+        ],
+        "distributionSchedule": null,
+        "sourceCount": 2
+      },
+      "knownMissingFields": [
+        "운용사",
+        "상품 설명·투자 목적",
+        "산업·국가 비중",
+        "분배 일정",
+        "실제 분배금 이력"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "etfCode": "0018C0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.75,
+          "evidence": [
+            "holdings가 모두 국내 상장주식(기업은행, DB손해보험, NH투자증권 등)",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업",
+            "해외 지역 신호 없음"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName '코스피 고배당 위클리 고정 커버드콜 지수'",
+            "nameHints: name_contains=커버드콜"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.75,
+          "confidence": 0.6,
+          "evidence": [
+            "펀드명에 '고배당주' 명시",
+            "benchmarkName에 '고배당' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "'고정 커버드콜' 지수 방식으로 재량적 종목선정 근거 없음"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.financials"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "분배주기가 '위클리(주간)'로 명시되어 월배당 태그는 미적용"
+      ]
+    },
+    {
+      "etfCode": "0177R0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장 반도체 관련주"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "SK하이닉스 20.94%+삼성전자 20.74% 합산 41.68%",
+            "TIGER 반도체TOP10 서브펀드 12.41% 추가 편입",
+            "원익IPS·DB하이텍·이오테크닉스·한미반도체 등 반도체 밸류체인 다수"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "펀드명에 '액티브' 명시",
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "펀드명에 '커버드콜' 명시"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
+    },
+    {
+      "etfCode": "211900",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "dividend.dividend_growth",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "benchmarkName '코스피 배당성장 50' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "'코스피 배당성장 50' 지수 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.financials"
+      ],
+      "insufficientFacets": [],
+      "notes": [
+        "금융업종 비중 합산 약 28%로 sector.financials 임계치 미달, 후보로만 표기"
+      ]
+    },
+    {
+      "etfCode": "0150K0",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "펀드명 '수소전력ESS인프라'에 수소 명시",
+            "비나텍(수소연료전지) 4.59%, 지엔씨에너지·SK이터닉스(전력/ESS인프라) 합산 약 15.4%"
+          ]
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "펀드명에 '액티브' 명시",
+            "nameHints: name_contains=액티브"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.ev_battery"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "2차전지 관련주(삼성SDI·상신이디피·LG에너지솔루션 등) 합산 약 32%로 ev_battery도 후보 가치 있으나 clean_energy와 혼재, 더 명확한 신호인 clean_energy 채택"
+      ]
+    },
+    {
+      "etfCode": "360750",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "rawTypeText '해외주식형, 시장대표'"
+          ]
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName 'S&P 500'"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.sp500",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "benchmarkName 'S&P 500' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "rawTypeText '시장대표'로 지수 그대로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "sector"
+      ],
+      "notes": [
+        "holdings 데이터 미제공으로 섹터 구성 판단 불가"
+      ]
+    },
+    {
+      "etfCode": "379810",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.8,
+          "evidence": [
+            "rawTypeText '해외주식형, 시장대표'"
+          ]
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName 'NASDAQ-100 Total Return Index'"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.nasdaq100",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "benchmarkName에 나스닥100 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "rawTypeText '시장대표'로 지수 그대로 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "sector"
+      ],
+      "notes": [
+        "holdings 데이터 미제공으로 섹터 구성 판단 불가"
+      ]
+    },
+    {
+      "etfCode": "139220",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.construction",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "삼성물산+삼성E&A+현대건설+대우건설+DL이앤씨+DL 합산 약 83%",
+            "benchmarkName '코스피 200 건설'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "'코스피 200 건설' 섹터지수 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": []
+    },
+    {
+      "etfCode": "139240",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.steel_metals",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "POSCO홀딩스+현대제철+고려아연+풍산+세아베스틸지주+영풍+세아제강지주+아세아 합산 약 94%",
+            "benchmarkName '코스피 200 철강/소재'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "'코스피 200 철강/소재' 섹터지수 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": []
+    },
+    {
+      "etfCode": "227560",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "'코스피 200 생활소비재' 섹터지수 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [
+        "sector.consumer_staples_food",
+        "sector.beauty_cosmetics"
+      ],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "구성종목이 화장품(에이피알·아모레퍼시픽 등 약 29%), 식품/필수소비재(KT&G·삼양식품 등 약 34%), 전력(한국전력 16%)으로 분산되어 단일 섹터 태그 기준 미달"
+      ]
+    },
+    {
+      "etfCode": "228790",
+      "selectedClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings가 모두 국내 상장주식"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 0.95,
+          "confidence": 0.8,
+          "evidence": [
+            "holdings 전부 KRX 상장 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.beauty_cosmetics",
+          "score": 0.95,
+          "confidence": 0.85,
+          "evidence": [
+            "상위 10종목이 거의 전부 화장품 제조·유통사(에이피알, 실리콘투, 코스맥스, 한국콜마, 아모레퍼시픽 등)로 합산 약 99%",
+            "benchmarkName 'WISE 화장품 지수'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "액티브 신호 없음",
+            "'WISE 화장품 지수' 추종"
+          ]
+        }
+      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": []
+    }
+  ]
+}

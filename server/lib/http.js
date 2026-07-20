@@ -17,6 +17,7 @@ export const DEFAULT_ALLOWLIST = [
   'opendart.fss.or.kr',
   'openapi.tossinvest.com',
   'apis.data.go.kr',
+  'investments.miraeasset.com',
 ];
 
 function hostAllowed(urlStr, allowlist) {

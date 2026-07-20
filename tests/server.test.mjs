@@ -21,6 +21,7 @@ import { createEtfService } from '../server/services/etf-service.js';
 import { handleApiRequest } from '../server/routes/api.js';
 import { createReverseSearchQueryPlanner } from '../server/services/reverse-search-query-planner.js';
 import { OpenRouterQueryPlannerClient } from '../server/llm/openrouter-query-planner.js';
+import { IssuerProvider, buildKoreanIsin, parseTigerHoldingsHtml } from '../server/providers/issuer/index.js';
 
 // ---------------------------------------------------------------------------
 // 공용 픽스처
@@ -40,7 +41,7 @@ function makeConfig(o = {}) {
       seibro: { enabled: false },
       dart: { apiKey: '' },
       broker: { baseUrl: '', apiKey: '', apiSecret: '', accountProfile: '' },
-      issuer: { configUrl: '' },
+        issuer: { enabled: false },
     },
   };
 }
@@ -220,6 +221,43 @@ test('registry: builds all providers; mock available, disabled krx unavailable',
   const desc = reg.describeAll();
   assert.equal(desc.length, 9);
   assert.ok(desc.every((d) => 'available' in d && 'capabilities' in d));
+});
+
+test('issuer: derives Korean ETF ISIN and parses TIGER holdings rows', () => {
+  assert.equal(buildKoreanIsin('102110'), 'KR7102110004');
+  assert.equal(buildKoreanIsin('069500'), 'KR7069500007');
+  const html = `<tr data-tot-cnt="1">
+    <td>1</td><td>005930</td><td class="subject">삼성전자</td>
+    <td class="price">6,984</td><td class="price">1,777,428,000</td>
+    <td class="price">32.72</td><td class="price">-21.09</td>
+  </tr>`;
+  const parsed = parseTigerHoldingsHtml(html);
+  assert.equal(parsed.declaredCount, 1);
+  assert.deepEqual(parsed.rows[0], {
+    stockCode: '005930', stockName: '삼성전자', weight: 32.72,
+    shares: 6984, marketValue: 1777428000, rank: 1, asOfDate: null,
+  });
+});
+
+test('issuer: fetches official TIGER holdings and rejects unsupported codes honestly', async () => {
+  const oldFetch = globalThis.fetch;
+  const html = '<tr data-tot-cnt="1"><td>1</td><td>005930</td><td>삼성전자</td><td>10</td><td>1000</td><td>25.5</td><td>0</td></tr>';
+  globalThis.fetch = async (_url, init) => {
+    assert.match(String(init.body), /ksdFund=KR7102110004/);
+    return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=UTF-8' } });
+  };
+  try {
+    const provider = new IssuerProvider({ enabled: true, retries: 0 });
+    const env = await provider.getEtfHoldings('102110');
+    assert.equal(env.meta.source, 'issuer_tiger');
+    assert.equal(env.data.length, 1);
+    assert.equal(env.data[0].stockName, '삼성전자');
+    const unsupported = await provider.getEtfHoldings('0000D0');
+    assert.deepEqual(unsupported.data, []);
+    assert.equal(unsupported.meta.status, Status.UNAVAILABLE);
+  } finally {
+    globalThis.fetch = oldFetch;
+  }
 });
 
 // ---------------------------------------------------------------------------

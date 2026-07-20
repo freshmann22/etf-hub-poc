@@ -114,7 +114,8 @@ function currentList() {
 }
 
 // ---------------------------------------------------------------------------
-// 구성종목 데이터 어댑터 (CSV → build:data → JSON → 조회).
+// 구성종목 데이터 어댑터. 공식 운용사 API를 먼저 조회하고, 제공되지 않는 종목은
+// CSV → build:data → JSON 스냅샷으로 폴백한다.
 // UI 는 오직 getEtfHoldings(코드[, 이름]) 만 사용하며 CSV 경로/컬럼을 알지 못한다.
 // 향후 CSV 대신 API/DB 로 바뀌어도 이 어댑터만 교체하면 된다.
 // ---------------------------------------------------------------------------
@@ -155,6 +156,32 @@ function getEtfHoldings(etfId, etfName) {
     if (code) return HOLDINGS.etfs[code];
   }
   return null;
+}
+
+async function fetchOfficialEtfHoldings(code) {
+  try {
+    const res = await fetch(`/api/etf/${encodeURIComponent(code)}/holdings`, {
+      headers: { Accept: 'application/json' },
+    });
+    if (!res.ok) return null;
+    const env = await res.json();
+    // mock/fixture 응답은 아래 정적 스냅샷과 중복되므로 공식 운용사 응답만 채택한다.
+    if (env?.meta?.source !== 'issuer_tiger' || !Array.isArray(env.data) || !env.data.length) return null;
+    return {
+      source: env.meta.source,
+      asOfDate: env.meta.asOfDate || null,
+      holdings: env.data.map((row, index) => ({
+        rank: isNum(row.rank) ? row.rank : index + 1,
+        ticker: row.stockCode || null,
+        name: row.stockName || null,
+        weight: row.weight,
+        quantity: row.shares,
+        marketValue: row.marketValue,
+      })).filter((row) => row.name && isNum(row.weight)),
+    };
+  } catch {
+    return null;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -656,13 +683,14 @@ async function renderDividendTab(e) {
     `<div class="divChart">${d.bars.map((hh) => `<div class="divBar" style="height:${hh}px"></div>`).join('')}</div>` +
     `${d.history.map((x) => `<div class="history"><span>${x[0]}</span><b>${x[1]}</b></div>`).join('')}</div>`;
 }
-// 구성종목 탭 — CSV 기반 실데이터(어댑터). 없으면 명확한 빈 상태.
+// 구성종목 탭 — 운용사 공식 데이터 우선, CSV 스냅샷 폴백. 없으면 명확한 빈 상태.
 async function renderHoldingsTab(e) {
   const b = $('detailBody');
   b.innerHTML = '<div class="card"><div class="cardTitle">구성종목</div><div class="empty-state">불러오는 중…</div></div>';
-  await loadEtfHoldingsData();
+  const official = await fetchOfficialEtfHoldings(e.code);
+  if (!official) await loadEtfHoldingsData();
   if (state.detailTab !== 'holdings' || !state.etf || state.etf.code !== e.code) return; // 탭/종목 바뀌면 무시
-  const data = getEtfHoldings(e.code, e.name);
+  const data = official || getEtfHoldings(e.code, e.name);
   if (!data || !Array.isArray(data.holdings) || !data.holdings.length) {
     b.innerHTML =
       `<div class="card"><div class="cardTitle">구성종목</div>` +
@@ -671,10 +699,11 @@ async function renderHoldingsTab(e) {
   }
   const rows = data.holdings.slice().sort((a, x) => x.weight - a.weight).slice(0, 10);
   const sum = rows.reduce((s, h) => s + (isNum(h.weight) ? h.weight : 0), 0);
-  const asOf = data.asOfDate || (HOLDINGS && HOLDINGS.generatedAt ? HOLDINGS.generatedAt.slice(0, 10) : null);
+  const asOf = data.asOfDate || (!official && HOLDINGS && HOLDINGS.generatedAt ? HOLDINGS.generatedAt.slice(0, 10) : null);
+  const sourceLabel = official ? '<span class="sub">운용사 공식</span>' : '';
   b.innerHTML =
     `<div class="card">
-      <div class="holdings-head"><div class="cardTitle">구성종목 상위 10</div>${asOf ? `<span class="sub">기준 ${esc(asOf)}</span>` : ''}</div>
+      <div class="holdings-head"><div class="cardTitle">구성종목 상위 10</div>${sourceLabel}${asOf ? `<span class="sub">기준 ${esc(asOf)}</span>` : ''}</div>
       ${rows
         .map((h) => {
           const w = isNum(h.weight) ? h.weight : 0;

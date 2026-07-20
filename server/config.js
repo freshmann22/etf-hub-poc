@@ -76,7 +76,10 @@ export const config = {
       apiSecret: env.BROKER_API_SECRET || '',
       accountProfile: env.BROKER_ACCOUNT_PROFILE || '',
     },
-    issuer: { configUrl: env.ISSUER_DATA_BASE_URL || '' },
+    issuer: {
+      enabled: env.ISSUER_ENABLED === 'true',
+      tigerPdfUrl: env.ISSUER_TIGER_PDF_URL || '',
+    },
     // 공공데이터포털(data.go.kr) — ETF 전종목 목록/스냅샷(T+1).
     publicdata: {
       serviceKey: env.PUBLICDATA_SERVICE_KEY || '',
@@ -97,7 +100,7 @@ export function providerCredentialStatus() {
     dart: has(p.dart.apiKey),
     toss: has(p.toss.clientId) && has(p.toss.clientSecret),
     broker: has(p.broker.baseUrl) && has(p.broker.apiKey) && has(p.broker.apiSecret),
-    issuer: has(p.issuer.configUrl),
+    issuer: !!p.issuer.enabled,
     publicdata: !!p.publicdata.enabled && has(p.publicdata.serviceKey),
   };
 }

@@ -95,3 +95,34 @@ export function generateBrief({ tagUniverse, articles, briefDate, taxonomyVersio
     violations: lastViolations,
   };
 }
+
+// Live providers are asynchronous. Keep the synchronous function above for
+// deterministic fixture/tests, and expose the same policy contract for API clients.
+export async function generateBriefAsync({ tagUniverse, articles, briefDate, taxonomyVersion, generatedAt, generator, contentProvider }) {
+  if (articles.length < MIN_ARTICLES_TO_PUBLISH) {
+    return {
+      tagId: tagUniverse.tagId,
+      briefDate,
+      unpublished: true,
+      reason: 'insufficient_articles',
+      articleCount: articles.length,
+    };
+  }
+
+  let lastViolations = [];
+  for (let attempt = 1; attempt <= MAX_GENERATION_ATTEMPTS; attempt += 1) {
+    const content = await contentProvider(attempt);
+    const brief = assembleBrief({ tagUniverse, articles, briefDate, taxonomyVersion, content, generatedAt, generator });
+    const { valid, violations } = validateBrief(brief, articles);
+    if (valid) return brief;
+    lastViolations = violations;
+  }
+
+  return {
+    tagId: tagUniverse.tagId,
+    briefDate,
+    unpublished: true,
+    reason: 'policy_gate_failed',
+    violations: lastViolations,
+  };
+}

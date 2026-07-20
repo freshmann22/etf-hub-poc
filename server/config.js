@@ -21,6 +21,7 @@ const num = (v, d) => {
   return Number.isFinite(n) ? n : d;
 };
 const has = (v) => typeof v === 'string' && v.trim() !== '';
+const TAG_BRIEF_MODES = Object.freeze(['manual', 'hybrid', 'live']);
 
 export const MODES = Object.freeze(['mock', 'live', 'hybrid']);
 
@@ -53,6 +54,10 @@ export const config = {
       appName: env.OPENROUTER_APP_NAME || 'ETF Hub Reverse Search',
       timeoutMs: num(env.OPENROUTER_TIMEOUT_MS, 30000),
       retries: num(env.OPENROUTER_RETRIES, 0),
+    },
+    tagBrief: {
+      mode: TAG_BRIEF_MODES.includes(env.TAG_BRIEF_MODE) ? env.TAG_BRIEF_MODE : 'manual',
+      model: env.TAG_BRIEF_MODEL || env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash',
     },
   },
 
@@ -115,6 +120,11 @@ export function describeConfig() {
     reverseSearch: {
       planner: has(config.llm.openrouter.apiKey) ? 'openrouter' : 'rules',
       model: config.llm.openrouter.model,
+      configured: has(config.llm.openrouter.apiKey),
+    },
+    tagBrief: {
+      mode: config.llm.tagBrief.mode,
+      model: config.llm.tagBrief.model,
       configured: has(config.llm.openrouter.apiKey),
     },
     providers: Object.fromEntries(

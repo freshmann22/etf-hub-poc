@@ -1,13 +1,9 @@
 // Batch generation script for the tag_brief content type.
 //
-// This environment has no live LLM API wired up for this pipeline, so per
-// the session brief's fallback instruction, generation content below is
-// hand-authored (by the Claude Code session) rather than produced by an
-// automated model call, and every output brief is honestly stamped
-// generator: 'manual-sample'. The pipeline shape (universe -> assign ->
-// generate -> policy gate -> fixture) is otherwise exactly what an
-// automated run would go through: swap MANUAL_CONTENT_BY_TAG for a real
-// contentProvider(attempt) that calls a model, and nothing else changes.
+// TAG_BRIEF_MODE controls generation:
+// - manual (default): deterministic hand-authored sample, no external cost
+// - hybrid: OpenRouter first, honest manual-sample fallback on error/policy failure
+// - live: OpenRouter only; failed tags remain unpublished
 //
 // Usage: node scripts/build-tag-briefs.js
 
@@ -17,7 +13,9 @@ import path from 'node:path';
 
 import { buildTagUniverses, getTaxonomyVersion } from '../src/js/tag-brief/universeAdapter.js';
 import { assignArticles, validateTopicRegistry } from '../src/js/tag-brief/assign.js';
-import { generateBrief } from '../src/js/tag-brief/generate.js';
+import { generateBrief, generateBriefAsync } from '../src/js/tag-brief/generate.js';
+import { config } from '../server/config.js';
+import { OpenRouterTagBriefClient } from '../server/llm/openrouter-tag-brief.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
@@ -27,7 +25,7 @@ const OUTPUT_PATH = path.join(REPO_ROOT, 'data', 'fixtures', 'tag-briefs.json');
 
 const BRIEF_DATE = '2026-07-16';
 const GENERATED_AT = '2026-07-16T09:00:00+09:00';
-const GENERATOR = 'manual-sample';
+const MANUAL_GENERATOR = 'manual-sample';
 
 // Hand-authored per-tag content. Every number/fact/stock/topic used here was
 // checked by hand against that tag's assigned articles before being written
@@ -99,7 +97,7 @@ const MANUAL_CONTENT_BY_TAG = {
   },
 };
 
-function main() {
+async function main() {
   const articles = JSON.parse(readFileSync(NEWS_PATH, 'utf8')).articles;
   const registry = JSON.parse(readFileSync(TOPIC_REGISTRY_PATH, 'utf8'));
 
@@ -114,20 +112,24 @@ function main() {
 
   const briefs = [];
   const unpublished = [];
+  const mode = config.llm.tagBrief.mode;
+  const client = new OpenRouterTagBriefClient({
+    ...config.llm.openrouter,
+    model: config.llm.tagBrief.model,
+    appName: 'ETF Hub Tag Brief',
+  });
+
+  if (mode === 'live' && !client.isAvailable()) {
+    throw new Error('TAG_BRIEF_MODE=live requires OPENROUTER_API_KEY');
+  }
 
   for (const [tagId, universe] of universes) {
     const assignedArticles = byTag.get(tagId) || [];
     const manualContent = MANUAL_CONTENT_BY_TAG[tagId];
     if (!manualContent) throw new Error('no manual content authored for tag: ' + tagId);
 
-    const result = generateBrief({
-      tagUniverse: universe,
-      articles: assignedArticles,
-      briefDate: BRIEF_DATE,
-      taxonomyVersion,
-      generatedAt: GENERATED_AT,
-      generator: GENERATOR,
-      contentProvider: () => manualContent,
+    const result = await generateForMode({
+      mode, client, universe, assignedArticles, manualContent, taxonomyVersion,
     });
 
     if (result.unpublished) {
@@ -143,6 +145,7 @@ function main() {
     generatedAt: GENERATED_AT,
     briefDate: BRIEF_DATE,
     taxonomyVersion,
+    generationMode: mode,
     briefs,
     unpublished,
     unassignedArticleIds: unassigned.map((article) => article.id),
@@ -152,4 +155,47 @@ function main() {
   console.log(`\nWrote ${briefs.length} brief(s), ${unpublished.length} unpublished, ${unassigned.length} unassigned article(s) -> ${path.relative(REPO_ROOT, OUTPUT_PATH)}`);
 }
 
-main();
+async function generateForMode({ mode, client, universe, assignedArticles, manualContent, taxonomyVersion }) {
+  const common = {
+    tagUniverse: universe,
+    articles: assignedArticles,
+    briefDate: BRIEF_DATE,
+    taxonomyVersion,
+    generatedAt: GENERATED_AT,
+  };
+  const manual = () => generateBrief({
+    ...common,
+    generator: MANUAL_GENERATOR,
+    contentProvider: () => manualContent,
+  });
+  if (mode === 'manual' || !client.isAvailable()) return manual();
+
+  try {
+    const live = await generateBriefAsync({
+      ...common,
+      generator: client.model,
+      contentProvider: (attempt) => client.createContent({
+        tagUniverse: universe,
+        articles: assignedArticles,
+        attempt,
+      }),
+    });
+    if (!live.unpublished || mode === 'live') return live;
+  } catch (error) {
+    if (mode === 'live') {
+      return {
+        tagId: universe.tagId,
+        briefDate: BRIEF_DATE,
+        unpublished: true,
+        reason: 'generation_error',
+        errorCode: error?.code || 'UNKNOWN',
+      };
+    }
+  }
+  return manual();
+}
+
+main().catch((error) => {
+  console.error(error.message);
+  process.exitCode = 1;
+});

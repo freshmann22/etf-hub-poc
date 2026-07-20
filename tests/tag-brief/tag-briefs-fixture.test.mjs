@@ -16,6 +16,7 @@ const REQUIRED_FIELDS = [
 ];
 
 test('tag-briefs.json contains a brief for each of the 6 in-scope tags (all had >=2 assigned articles)', () => {
+  assert.equal(fixture.generationMode, 'manual');
   const tagIds = fixture.briefs.map((brief) => brief.tagId).sort();
   assert.deepEqual(tagIds, [
     'asset.bond',

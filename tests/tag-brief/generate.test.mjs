@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { generateBrief } from '../../src/js/tag-brief/generate.js';
+import { generateBrief, generateBriefAsync } from '../../src/js/tag-brief/generate.js';
 
 const tagUniverse = {
   tagId: 'sector.semiconductor',
@@ -93,4 +93,25 @@ test('a policy-gate failure on both attempts marks the tag unpublished', () => {
   assert.equal(result.unpublished, true);
   assert.equal(result.reason, 'policy_gate_failed');
   assert.ok(result.violations.length > 0);
+});
+
+test('async provider uses the same retry and policy-gate contract', async () => {
+  let calls = 0;
+  const result = await generateBriefAsync({
+    tagUniverse,
+    articles: twoArticles,
+    briefDate: '2026-07-16',
+    taxonomyVersion: '2.0.0',
+    generatedAt: '2026-07-16T00:00:00+09:00',
+    generator: 'test-model',
+    contentProvider: async () => {
+      calls += 1;
+      return calls === 1
+        ? { ...validContentProvider(), summary: '지금 사야 할 시점이에요.' }
+        : validContentProvider();
+    },
+  });
+  assert.equal(calls, 2);
+  assert.equal(result.generator, 'test-model');
+  assert.equal(result.summary, 'HBM 공급 소식이 있었어요.');
 });

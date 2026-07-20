@@ -22,6 +22,7 @@ import { handleApiRequest } from '../server/routes/api.js';
 import { createReverseSearchQueryPlanner } from '../server/services/reverse-search-query-planner.js';
 import { OpenRouterQueryPlannerClient } from '../server/llm/openrouter-query-planner.js';
 import { IssuerProvider, buildKoreanIsin, parseTigerHoldingsHtml } from '../server/providers/issuer/index.js';
+import { OpenRouterTagBriefClient } from '../server/llm/openrouter-tag-brief.js';
 
 // ---------------------------------------------------------------------------
 // 공용 픽스처
@@ -431,6 +432,35 @@ test('openrouter query planner sends a structured request and parses JSON conten
     assert.deepEqual(body.response_format, { type: 'json_object' });
   } finally {
     globalThis.fetch = originalFetch;
+  }
+});
+
+test('openrouter tag-brief client sends evidence and validates JSON content', async () => {
+  const oldFetch = globalThis.fetch;
+  let requestBody;
+  globalThis.fetch = async (_url, init) => {
+    requestBody = JSON.parse(init.body);
+    return new Response(JSON.stringify({
+      choices: [{ message: { content: JSON.stringify({
+        title: '반도체 브리핑',
+        summary: '공급 계약 소식이 있었어요.',
+        keyPoints: ['공급 계약이 발표됐어요.'],
+        mentionedStockIds: ['005930', '005930'],
+        mentionedTopicIds: [],
+      }) } }],
+    }), { status: 200, headers: { 'content-type': 'application/json' } });
+  };
+  try {
+    const client = new OpenRouterTagBriefClient({ apiKey: 'secret', model: 'test/model', retries: 0 });
+    const content = await client.createContent({
+      tagUniverse: { tagId: 'sector.semiconductor', label: '반도체', stockIds: ['005930'], topicIds: [], etfIds: [] },
+      articles: [{ id: 'n1', title: '계약 발표', summary: '공급 계약 체결', source: '테스트', publishedAt: '2026-07-16', mentionedStockIds: ['005930'], mentionedTopicIds: [] }],
+    });
+    assert.equal(requestBody.model, 'test/model');
+    assert.ok(requestBody.messages[1].content.includes('n1'));
+    assert.deepEqual(content.mentionedStockIds, ['005930']);
+  } finally {
+    globalThis.fetch = oldFetch;
   }
 });
 

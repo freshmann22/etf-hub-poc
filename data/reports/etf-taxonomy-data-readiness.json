@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T03:19:48.846Z",
+  "generatedAt": "2026-07-20T05:19:48.973Z",
   "purpose": "ETF taxonomy review input-data readiness audit",
   "scoringVersion": "1.0.0",
   "scopeNote": "점수는 분류 결과의 정확도가 아니라, 사람이 택소노미 분류를 검토할 때 사용할 근거 데이터의 준비도를 뜻한다.",
@@ -22,7 +22,7 @@
     },
     "tagScores": {
       "path": "data/tagging/etf-tag-scores.json",
-      "generatedAt": "2026-07-16T02:58:58.067Z"
+      "generatedAt": "2026-07-20T05:19:47.472Z"
     }
   },
   "scoring": {
@@ -1034,7 +1034,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 1
@@ -3926,7 +3926,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -5693,7 +5693,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -6621,7 +6621,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -7110,7 +7110,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -7487,7 +7487,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -11064,7 +11064,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -15142,7 +15142,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -15354,7 +15354,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -16191,7 +16191,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -16347,7 +16347,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -17147,7 +17147,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -17894,7 +17894,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -17946,7 +17946,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -17998,7 +17998,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18050,7 +18050,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18102,7 +18102,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18154,7 +18154,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18206,7 +18206,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18258,7 +18258,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18842,7 +18842,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -18998,7 +18998,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -19157,7 +19157,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -19264,7 +19264,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -19316,7 +19316,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -19845,7 +19845,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -20719,7 +20719,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -22182,7 +22182,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 2
@@ -22665,7 +22665,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -22717,7 +22717,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -22769,7 +22769,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -22821,7 +22821,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -24041,7 +24041,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -24093,7 +24093,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -24953,7 +24953,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25005,7 +25005,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25057,7 +25057,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25109,7 +25109,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25161,7 +25161,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25213,7 +25213,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25265,7 +25265,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25317,7 +25317,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25369,7 +25369,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25421,7 +25421,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25473,7 +25473,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -25525,7 +25525,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -27017,7 +27017,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -28582,7 +28582,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -29279,7 +29279,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -29594,7 +29594,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -29701,7 +29701,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -30447,7 +30447,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -30499,7 +30499,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -30661,7 +30661,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -31349,7 +31349,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -32095,7 +32095,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -32306,7 +32306,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -33315,7 +33315,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -33477,7 +33477,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -33850,7 +33850,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -33902,7 +33902,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -34440,7 +34440,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -34650,7 +34650,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -34812,7 +34812,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 5,
+        "tagCount": 6,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -37739,7 +37739,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -39439,7 +39439,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -39870,7 +39870,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -42153,7 +42153,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -42584,7 +42584,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -44108,7 +44108,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -44212,7 +44212,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -45288,7 +45288,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -46429,7 +46429,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -52664,7 +52664,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -52826,7 +52826,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -52933,7 +52933,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -54348,7 +54348,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -59021,7 +59021,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -59345,7 +59345,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -60262,7 +60262,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 3,
+        "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -61540,7 +61540,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 4,
+        "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0
@@ -61592,7 +61592,7 @@
         "hasSectorCountryWeights": false
       },
       "classification": {
-        "tagCount": 6,
+        "tagCount": 7,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
         "reviewIssueCount": 0

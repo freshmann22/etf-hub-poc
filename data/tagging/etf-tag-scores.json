@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-16T02:58:58.067Z",
-  "taxonomyVersion": "2.0.0",
+  "generatedAt": "2026-07-20T05:19:47.472Z",
+  "taxonomyVersion": "2.0.1",
   "sourceNote": "v1 etf-tag-scores.json 이관 + v2 rule classifier(assetClass/region) + auditor 승격 태그(원본 worker evidence 재사용, 신규 subagent 호출 없음)",
   "etfCount": 1141,
   "conflictCount": 6,
@@ -489,6 +489,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [
@@ -604,6 +616,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -1437,6 +1461,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -2114,6 +2150,18 @@
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 건설\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [
@@ -2166,6 +2214,18 @@
           "source": "auditor_promoted(reused_worker_evidence)",
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 중공업\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -2220,6 +2280,18 @@
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 철강/소재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [
@@ -2272,6 +2344,18 @@
           "source": "auditor_promoted(reused_worker_evidence)",
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 에너지/화학\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -2326,6 +2410,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 정보기술\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -2371,6 +2467,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -2406,6 +2514,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 경기방어소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -2459,6 +2579,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 경기소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -2969,6 +3101,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -3093,6 +3237,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -3231,6 +3387,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -3334,6 +3502,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -3369,6 +3549,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -3814,6 +4006,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커버드콜 5% OTM\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -4635,6 +4839,18 @@
           "source": "auditor_promoted(reused_worker_evidence)",
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 고배당지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -6041,6 +6257,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 가치저변동성\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -6552,6 +6780,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 중소형주지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -6596,6 +6836,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 헬스케어\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -6642,6 +6894,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 산업재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -6686,6 +6950,18 @@
           "source": "auditor_promoted(reused_worker_evidence)",
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 생활소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -7740,6 +8016,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 정보기술\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -7794,6 +8082,18 @@
           "source": "auditor_promoted(reused_worker_evidence)",
           "mergedFrom": [
             "auditor_promoted(reused_worker_evidence)"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 에너지/화학\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -8536,6 +8836,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 동일가중지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [
@@ -8590,6 +8902,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -8635,6 +8959,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -8692,6 +9028,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -8727,6 +9075,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 동일가중지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -8792,6 +9152,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -8848,6 +9220,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -8893,6 +9277,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -8950,6 +9346,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -9006,6 +9414,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -9052,6 +9472,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -9097,6 +9529,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -10470,6 +10914,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -11776,6 +12232,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -12423,6 +12891,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -12738,6 +13218,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커버드콜 ATM 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -12840,6 +13332,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 고배당커버드콜 ATM 지수(시장가격지수)\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -13474,6 +13978,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -13509,6 +14025,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -13671,6 +14199,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -14269,6 +14809,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -14943,6 +15495,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -15112,6 +15676,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커뮤니케이션서비스\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -15939,6 +16515,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -16088,6 +16676,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -16380,6 +16980,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 초대형제외 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -16415,6 +17027,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 ESG 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -16855,6 +17479,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피200 롱 100% 코스닥150 숏 100% 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [
@@ -17056,6 +17692,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -17223,6 +17871,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피200 정보기술 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -19914,6 +20574,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -21365,6 +22037,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 Top 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -21766,6 +22450,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 Top 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -23777,6 +24473,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -24155,6 +24863,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -25606,6 +26326,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -25677,6 +26409,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -26578,6 +27322,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -27616,6 +28372,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -33476,6 +34244,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커버드콜 5% OTM\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -33602,6 +34382,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -33706,6 +34498,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -35041,6 +35845,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 위클리 커버드콜 ATM 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -39429,6 +40245,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -39736,6 +40564,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -40593,6 +41433,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -41699,6 +42551,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 타겟 15% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -41762,6 +42626,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융 고배당 TOP 10 타겟 15%분배 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -42383,6 +43259,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -42694,6 +43582,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 중소형주지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -43024,6 +43924,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융 고배당 TOP 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -43425,6 +44337,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -43685,6 +44609,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 타겟 7% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -43919,6 +44855,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -44903,6 +45851,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 타겟 15% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -46936,6 +47896,18 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 위클리 고정 30% 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ]
         }
       ],
       "candidateTags": [],
@@ -47061,6 +48033,18 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
           ]
         }
       ],
@@ -56137,5 +57121,587 @@
       "hasLlmContribution": false
     }
   },
-  "universeExpansionNote": "메타데이터 미커버 ETF 671종을 이름/기초지수명 규칙태깅(assetClass/region/일부 strategy)으로 추가. 구성종목 없어 sector 태그는 미부여. 기존 0종(메타데이터 커버, worker 스코어링 포함)은 무변경."
+  "universeExpansionNote": "메타데이터 미커버 ETF 671종을 이름/기초지수명 규칙태깅(assetClass/region/일부 strategy)으로 추가. 구성종목 없어 sector 태그는 미부여. 기존 0종(메타데이터 커버, worker 스코어링 포함)은 무변경.",
+  "benchmarkEnrichment": {
+    "appliedAt": "2026-07-20T05:19:47.472Z",
+    "source": "data/tagging/etf-universe-index-names.json",
+    "addedCount": 82,
+    "additions": [
+      {
+        "etfCode": "0007N0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0053M0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 중소형주지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0089D0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 금융 고배당 TOP 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0098Z0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0104N0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 타겟 7% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0112X0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0167B0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 타겟 15% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "0210E0",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 위클리 고정 30% 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "069660",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "105190",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "108590",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "123320",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139220",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 건설\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139230",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 중공업\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139240",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 철강/소재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139250",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 에너지/화학\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139260",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 정보기술\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139270",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 금융\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139280",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 경기방어소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "139290",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 경기소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "145670",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "148020",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "152100",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "152500",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "152870",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "166400",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 커버드콜 5% OTM\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "192720",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 고배당지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "223190",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 가치저변동성\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "226980",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 중소형주지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "227540",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 헬스케어\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "227550",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 산업재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "227560",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 생활소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "243880",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 정보기술\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "243890",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 에너지/화학\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252000",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 동일가중지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252400",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252410",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252420",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252650",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 동일가중지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252670",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "252710",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "253150",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "253160",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "253230",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "253240",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "253250",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "267770",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "278530",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "284980",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 금융\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "289480",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 커버드콜 ATM 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "290080",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 고배당커버드콜 ATM 지수(시장가격지수)\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "293180",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "294400",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "295040",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "304780",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "310960",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "315270",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 커뮤니케이션서비스\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "332500",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "332930",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "337150",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 초대형제외 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "337160",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 ESG 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "360140",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피200 롱 100% 코스닥150 숏 100% 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "361580",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "363580",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피200 정보기술 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "391670",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "407310",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 Top 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "411540",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 Top 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "433250",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "434960",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "441800",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "442260",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "448100",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "451060",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "472150",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 커버드콜 5% OTM\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "472720",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "472840",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "475720",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 위클리 커버드콜 ATM 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "491220",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "491700",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "494890",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "498400",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 타겟 15% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      },
+      {
+        "etfCode": "498410",
+        "tagId": "strategy.benchmark.kospi200",
+        "evidence": [
+          "benchmarkName=\"코스피 200 금융 고배당 TOP 10 타겟 15%분배 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+        ]
+      }
+    ],
+    "note": "기존 검토·auditor 승격 분류는 보존하고 공공데이터 기초지수명에서 규칙으로 확정된 benchmark 태그만 추가"
+  }
 }

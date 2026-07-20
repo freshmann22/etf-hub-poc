@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "_note": "v2.0.0(2026-07-16 컷오버) — assetClass/region 축 포함 정규식 규칙. 정규식은 ETF명·기초지수명 원문에만 적용(추측 금지). impliesTags 는 규칙 매칭 시 함께 부여할 태그. defaultFacetValues 는 규칙 매칭이 없을 때 채우는 facet 기본값(예: asset.equity/region.domestic_kr). 구 v1 규칙은 git 히스토리에 보존.",
   "tagRules": [
     {
@@ -307,7 +307,7 @@
       "tagId": "strategy.passive_index",
       "score": 0.6,
       "confidence": 0.5,
-      "note": "액티브 신호 없음 → 패시브 지수추종 기본값"
+      "note": "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
     }
   ],
   "factRules": {

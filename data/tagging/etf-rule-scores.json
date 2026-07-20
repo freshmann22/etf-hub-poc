@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-16T02:09:58.789Z",
-  "rulesVersion": "2.0.0",
+  "generatedAt": "2026-07-20T05:15:47.114Z",
+  "rulesVersion": "2.0.1",
   "recordCount": 470,
   "taggedByRuleCount": 470,
   "results": [
@@ -59,7 +59,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -100,7 +100,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -276,7 +276,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -314,7 +314,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -329,6 +329,24 @@
       "name": "아이엠에셋 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -338,21 +356,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -390,7 +399,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -437,7 +446,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -486,7 +495,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -533,7 +542,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -571,7 +580,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -595,21 +604,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200 중소형주지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -689,7 +707,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -736,7 +754,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -874,7 +892,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -889,6 +907,24 @@
       "name": "KODEX 금융고배당TOP10",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융 고배당 TOP 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -898,21 +934,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -950,7 +977,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -988,7 +1015,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1026,7 +1053,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1064,7 +1091,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1111,7 +1138,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1151,7 +1178,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1189,7 +1216,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1204,6 +1231,24 @@
       "name": "FOCUS 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -1213,21 +1258,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1274,7 +1310,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1314,7 +1350,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1352,7 +1388,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1399,7 +1435,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1415,6 +1451,24 @@
       "etfCode": "0104N0",
       "name": "TIGER 200타겟위클리커버드콜",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 타겟 7% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -1434,21 +1488,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1497,7 +1542,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1537,7 +1582,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1575,7 +1620,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1613,7 +1658,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1628,6 +1673,24 @@
       "name": "마이티 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -1637,21 +1700,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1689,7 +1743,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1727,7 +1781,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1765,7 +1819,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1803,7 +1857,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1841,7 +1895,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1879,7 +1933,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1917,7 +1971,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -1955,7 +2009,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2113,7 +2167,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2191,7 +2245,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2229,7 +2283,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2427,7 +2481,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2441,6 +2495,24 @@
       "etfCode": "0167B0",
       "name": "SOL 200타겟위클리커버드콜",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 타겟 15% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -2460,21 +2532,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2594,7 +2657,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2641,7 +2704,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2681,7 +2744,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2769,7 +2832,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2807,7 +2870,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2885,7 +2948,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2923,7 +2986,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -2970,7 +3033,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3050,7 +3113,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3097,7 +3160,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3146,7 +3209,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3186,7 +3249,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3273,7 +3336,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3331,7 +3394,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3381,7 +3444,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3430,7 +3493,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3479,7 +3542,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3528,7 +3591,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3577,7 +3640,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3626,7 +3689,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3675,7 +3738,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3724,7 +3787,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3773,7 +3836,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3872,7 +3935,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -3921,7 +3984,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4051,7 +4114,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4129,7 +4192,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4167,7 +4230,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4205,7 +4268,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4229,6 +4292,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 위클리 고정 30% 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "dividend.covered_call",
           "score": 1,
           "confidence": 1,
@@ -4244,15 +4325,6 @@
           "source": "rule-default",
           "evidence": [
             "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ]
-        },
-        {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
           ]
         }
       ],
@@ -4293,7 +4365,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4340,7 +4412,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4355,6 +4427,24 @@
       "name": "KIWOOM 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -4364,21 +4454,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4416,7 +4497,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4454,7 +4535,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4492,7 +4573,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4530,7 +4611,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4568,7 +4649,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4615,7 +4696,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4662,7 +4743,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4700,7 +4781,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4738,7 +4819,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4776,7 +4857,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4814,7 +4895,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4852,7 +4933,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4867,6 +4948,24 @@
       "name": "ACE 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -4876,21 +4975,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4928,7 +5018,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4966,7 +5056,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -4981,6 +5071,24 @@
       "name": "TREX 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -4990,21 +5098,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5060,7 +5159,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5100,7 +5199,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5138,7 +5237,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5176,7 +5275,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5223,7 +5322,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5279,7 +5378,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5305,6 +5404,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5314,21 +5431,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5368,7 +5476,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5406,7 +5514,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5455,7 +5563,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5493,7 +5601,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5531,7 +5639,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5569,7 +5677,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5584,6 +5692,24 @@
       "name": "TIGER 200 건설",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 건설\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5593,21 +5719,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5622,6 +5739,24 @@
       "name": "TIGER 200 중공업",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 중공업\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5631,21 +5766,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5660,6 +5786,24 @@
       "name": "TIGER 200 철강소재",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 철강/소재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5669,21 +5813,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5698,6 +5833,24 @@
       "name": "TIGER 200 에너지화학",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 에너지/화학\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5707,21 +5860,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5736,6 +5880,24 @@
       "name": "TIGER 200 IT",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 정보기술\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5745,21 +5907,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5774,6 +5927,24 @@
       "name": "TIGER 200 금융",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5783,21 +5954,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5812,6 +5974,24 @@
       "name": "TIGER 경기방어",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 경기방어소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5821,21 +6001,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5850,6 +6021,24 @@
       "name": "TIGER 200 경기소비재",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 경기소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -5859,21 +6048,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5911,7 +6091,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5949,7 +6129,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -5987,7 +6167,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6025,7 +6205,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6063,7 +6243,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6101,7 +6281,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6125,6 +6305,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -6134,21 +6332,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6188,7 +6377,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6226,7 +6415,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6241,6 +6430,24 @@
       "name": "RISE 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -6250,21 +6457,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6302,7 +6500,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6317,6 +6515,24 @@
       "name": "PLUS 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -6326,21 +6542,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6364,6 +6571,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -6373,21 +6598,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6404,6 +6620,24 @@
       "name": "파워 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -6413,21 +6647,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6465,7 +6690,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6503,7 +6728,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6541,7 +6766,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6579,7 +6804,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6617,7 +6842,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6655,7 +6880,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6669,6 +6894,24 @@
       "etfCode": "166400",
       "name": "TIGER 200커버드콜OTM",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커버드콜 5% OTM\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -6688,21 +6931,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6742,7 +6976,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6757,6 +6991,24 @@
       "name": "파워 고배당저변동성",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 고배당지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -6766,21 +7018,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6818,7 +7061,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6856,7 +7099,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6894,7 +7137,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6932,7 +7175,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -6970,7 +7213,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7008,7 +7251,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7023,6 +7266,24 @@
       "name": "KODEX 200가치저변동",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 가치저변동성\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7032,21 +7293,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7093,7 +7345,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7133,7 +7385,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7171,7 +7423,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7186,6 +7438,24 @@
       "name": "KODEX 200 중소형",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 중소형주지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7195,21 +7465,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7224,6 +7485,24 @@
       "name": "TIGER 200 헬스케어",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 헬스케어\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7233,21 +7512,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7262,6 +7532,24 @@
       "name": "TIGER 200 산업재",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 산업재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7271,21 +7559,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7300,6 +7579,24 @@
       "name": "TIGER 200 생활소비재",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 생활소비재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7309,21 +7606,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7361,7 +7649,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7399,7 +7687,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7437,7 +7725,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7475,7 +7763,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7513,7 +7801,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7551,7 +7839,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7589,7 +7877,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7627,7 +7915,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7683,7 +7971,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7724,7 +8012,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7771,7 +8059,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7820,7 +8108,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7860,7 +8148,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7898,7 +8186,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7922,6 +8210,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 정보기술\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7931,21 +8237,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -7971,6 +8268,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 에너지/화학\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -7980,21 +8295,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8034,7 +8340,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8072,7 +8378,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8110,7 +8416,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8148,7 +8454,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8186,7 +8492,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8201,6 +8507,24 @@
       "name": "TIGER 200동일가중",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 동일가중지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8210,21 +8534,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8248,6 +8563,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8257,21 +8590,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8297,6 +8621,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8306,21 +8648,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8355,6 +8688,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8364,21 +8715,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8396,6 +8738,24 @@
       "name": "KODEX 200동일가중",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 동일가중지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8405,21 +8765,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8452,6 +8803,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8461,21 +8830,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8511,6 +8871,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8520,21 +8898,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8561,6 +8930,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8570,21 +8957,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8619,6 +8997,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8628,21 +9024,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8678,6 +9065,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8687,21 +9092,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8728,6 +9124,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8737,21 +9151,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8777,6 +9182,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -8786,21 +9209,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8840,7 +9254,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8878,7 +9292,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8916,7 +9330,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -8963,7 +9377,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9021,7 +9435,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9062,7 +9476,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9109,7 +9523,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9167,7 +9581,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9208,7 +9622,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9246,7 +9660,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9284,7 +9698,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9322,7 +9736,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9360,7 +9774,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9398,7 +9812,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9436,7 +9850,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9460,6 +9874,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -9469,21 +9901,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9523,7 +9946,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9561,7 +9984,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9599,7 +10022,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9637,7 +10060,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9675,7 +10098,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9713,7 +10136,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9751,7 +10174,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9789,7 +10212,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9836,7 +10259,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9853,6 +10276,24 @@
       "name": "KODEX 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -9862,21 +10303,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9914,7 +10346,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9952,7 +10384,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -9990,7 +10422,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10028,7 +10460,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10066,7 +10498,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10081,6 +10513,24 @@
       "name": "RISE 200금융",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -10090,21 +10540,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10142,7 +10583,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10180,7 +10621,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10218,7 +10659,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10256,7 +10697,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10270,6 +10711,24 @@
       "etfCode": "289480",
       "name": "TIGER 200커버드콜",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커버드콜 ATM 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -10289,21 +10748,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10319,6 +10769,24 @@
       "etfCode": "290080",
       "name": "RISE 200고배당커버드콜ATM",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 고배당커버드콜 ATM 지수(시장가격지수)\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -10338,21 +10806,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10392,7 +10851,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10439,7 +10898,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10479,7 +10938,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10517,7 +10976,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10555,7 +11014,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10593,7 +11052,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10631,7 +11090,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10646,6 +11105,24 @@
       "name": "HANARO 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -10655,21 +11132,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10684,6 +11152,24 @@
       "name": "KIWOOM 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -10693,21 +11179,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10722,6 +11199,24 @@
       "name": "SOL 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -10731,21 +11226,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10792,7 +11278,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10830,7 +11316,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10868,7 +11354,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10906,7 +11392,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10944,7 +11430,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -10982,7 +11468,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11020,7 +11506,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11058,7 +11544,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11082,6 +11568,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -11091,21 +11595,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11145,7 +11640,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11183,7 +11678,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11221,7 +11716,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11268,7 +11763,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11317,7 +11812,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11357,7 +11852,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11395,7 +11890,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11410,6 +11905,24 @@
       "name": "TIGER 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -11419,21 +11932,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11471,7 +11975,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11509,7 +12013,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11524,6 +12028,24 @@
       "name": "TIGER 200커뮤니케이션서비스",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커뮤니케이션서비스\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -11533,21 +12055,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11585,7 +12098,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11623,7 +12136,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11661,7 +12174,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11699,7 +12212,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11737,7 +12250,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11775,7 +12288,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11813,7 +12326,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11851,7 +12364,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11889,7 +12402,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11927,7 +12440,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11965,7 +12478,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -11980,6 +12493,24 @@
       "name": "ACE 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -11989,21 +12520,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12018,6 +12540,24 @@
       "name": "HANARO 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -12027,21 +12567,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12079,7 +12610,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12117,7 +12648,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12155,7 +12686,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12170,6 +12701,24 @@
       "name": "KODEX 200exTOP",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 초대형제외 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -12179,21 +12728,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12208,6 +12748,24 @@
       "name": "KODEX 200ESG",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 ESG 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -12217,21 +12775,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12278,7 +12827,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12316,7 +12865,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12354,7 +12903,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12369,6 +12918,24 @@
       "name": "KODEX 200롱코스닥150숏선물",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피200 롱 100% 코스닥150 숏 100% 선물지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -12378,21 +12945,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12439,7 +12997,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12486,7 +13044,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12501,6 +13059,24 @@
       "name": "RISE 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -12510,21 +13086,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12539,6 +13106,24 @@
       "name": "KODEX 200IT TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피200 정보기술 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -12548,21 +13133,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12640,7 +13216,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12678,7 +13254,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12716,7 +13292,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12754,7 +13330,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12792,7 +13368,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12870,7 +13446,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12908,7 +13484,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12946,7 +13522,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -12984,7 +13560,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13022,7 +13598,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13100,7 +13676,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13138,7 +13714,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13176,7 +13752,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13214,7 +13790,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13261,7 +13837,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13308,7 +13884,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13346,7 +13922,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13384,7 +13960,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13422,7 +13998,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13740,7 +14316,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13804,21 +14380,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -13858,7 +14443,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13896,7 +14481,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13934,7 +14519,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -13972,7 +14557,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14010,7 +14595,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14048,7 +14633,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14166,7 +14751,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14204,7 +14789,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14242,7 +14827,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14320,7 +14905,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14438,7 +15023,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14476,7 +15061,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14514,7 +15099,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14552,7 +15137,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14567,6 +15152,24 @@
       "name": "HANARO 200 TOP10",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 Top 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -14576,21 +15179,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14685,6 +15279,24 @@
       "name": "SOL 200 Top10",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 Top 10 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -14694,21 +15306,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14755,7 +15358,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14804,7 +15407,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14884,7 +15487,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -14922,7 +15525,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15000,7 +15603,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15038,7 +15641,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15062,21 +15665,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -15116,7 +15728,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15154,7 +15766,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15169,6 +15781,24 @@
       "name": "DAISHIN343 K200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -15178,21 +15808,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15270,7 +15891,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15308,7 +15929,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15391,21 +16012,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -15471,21 +16101,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -15685,7 +16324,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15723,7 +16362,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15778,6 +16417,24 @@
       "name": "WON 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -15787,21 +16444,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15879,7 +16527,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15917,7 +16565,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -15941,21 +16589,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -15995,7 +16652,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16033,7 +16690,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16071,7 +16728,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16149,7 +16806,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16164,6 +16821,15 @@
       "name": "KODEX 코스닥글로벌",
       "classifications": [
         {
+          "tagId": "region.developed",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스닥 글로벌 지수\" matched /선진국|MSCI\\s*World|(?<!코스닥)(?<!K-)글로벌/i"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -16173,21 +16839,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16242,6 +16899,15 @@
       "name": "TIGER 코스닥글로벌",
       "classifications": [
         {
+          "tagId": "region.developed",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스닥 글로벌 지수\" matched /선진국|MSCI\\s*World|(?<!코스닥)(?<!K-)글로벌/i"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -16251,21 +16917,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16303,7 +16960,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16341,7 +16998,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16388,7 +17045,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16508,7 +17165,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16546,7 +17203,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16584,7 +17241,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16622,7 +17279,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16660,7 +17317,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16698,7 +17355,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16736,7 +17393,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16774,7 +17431,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16812,7 +17469,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16850,7 +17507,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16888,7 +17545,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -16926,7 +17583,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17004,7 +17661,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17082,7 +17739,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17106,6 +17763,24 @@
           ]
         },
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 커버드콜 5% OTM\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "dividend.covered_call",
           "score": 1,
           "confidence": 1,
@@ -17121,15 +17796,6 @@
           "source": "rule-default",
           "evidence": [
             "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ]
-        },
-        {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
           ]
         }
       ],
@@ -17156,21 +17822,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -17187,6 +17862,24 @@
       "name": "IBK 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -17196,21 +17889,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17288,7 +17972,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17326,7 +18010,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17364,7 +18048,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17378,6 +18062,24 @@
       "etfCode": "475720",
       "name": "RISE 200위클리커버드콜",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 위클리 커버드콜 ATM 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -17397,21 +18099,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17491,7 +18184,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17529,7 +18222,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17607,7 +18300,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17645,7 +18338,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17723,7 +18416,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17761,7 +18454,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17879,7 +18572,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17917,7 +18610,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -17964,7 +18657,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18004,7 +18697,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18042,7 +18735,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18089,7 +18782,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18129,7 +18822,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18144,6 +18837,24 @@
       "name": "PLUS 200TR",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 TR\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -18153,21 +18864,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18222,6 +18924,24 @@
       "name": "HK 200",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -18231,21 +18951,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18283,7 +18994,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18370,7 +19081,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18450,7 +19161,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18474,21 +19185,30 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+            "benchmarkName=\"코스피 200\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
           "source": "rule-default",
           "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
           ]
         }
       ],
@@ -18528,7 +19248,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18566,7 +19286,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18684,7 +19404,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18722,7 +19442,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18760,7 +19480,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18798,7 +19518,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18836,7 +19556,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18874,7 +19594,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -18912,7 +19632,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -19007,6 +19727,24 @@
       "name": "KODEX 200타겟위클리커버드콜",
       "classifications": [
         {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 타겟 15% 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
+        {
           "tagId": "dividend.covered_call",
           "score": 1,
           "confidence": 1,
@@ -19025,21 +19763,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -19055,6 +19784,24 @@
       "etfCode": "498410",
       "name": "KODEX 금융고배당TOP10타겟위클리커버드콜",
       "classifications": [
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 금융 고배당 TOP 10 타겟 15%분배 위클리 커버드콜 지수\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by strategy.benchmark.kospi200"
+          ]
+        },
         {
           "tagId": "dividend.covered_call",
           "score": 1,
@@ -19074,21 +19821,12 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],
@@ -19128,7 +19866,7 @@
           "confidence": 0.5,
           "source": "rule-default",
           "evidence": [
-            "액티브 신호 없음 → 패시브 지수추종 기본값"
+            "액티브 신호 없음 → 규칙 기반 패시브 기본값(레버리지·인버스·커버드콜과 동시 부여 가능)"
           ]
         }
       ],

@@ -29,11 +29,12 @@
     "tagging:validate": "node scripts/tagging/run-validate-batches.mjs",
     "tagging:resume": "node scripts/tagging/build-batches.mjs",
     "tagging:merge": "node scripts/tagging/merge-scores.mjs && node scripts/tagging/build-filter-map.mjs",
+    "tagging:enrich-benchmarks": "node scripts/tagging/apply-benchmark-enrichment.mjs && node scripts/tagging/build-filter-map.mjs",
     "tagging:candidates": "node -e \"const c=require('./data/tagging/etf-candidate-tags-raw.json'); console.log(c.count+'건 → data/tagging/etf-candidate-tags-raw.json (정규화/추천은 etf-taxonomy-auditor 서브에이전트 실행 필요, 결과는 data/tagging/etf-filter-candidates.json)')\"",
     "tagging:report": "node scripts/tagging/build-tagging-report.mjs",
     "audit:taxonomy-data": "node scripts/tagging/build-data-readiness-report.mjs",
     "review:taxonomy-sample": "npm run audit:taxonomy-data && node scripts/tagging/build-taxonomy-review-sample.mjs",
     "review:taxonomy-claude": "node scripts/tagging/run-claude-taxonomy-review.mjs",
-    "tagging:all": "npm run tagging:prepare && npm run tagging:rules && npm run tagging:merge && npm run tagging:report"
+    "tagging:all": "npm run tagging:prepare && npm run tagging:rules && npm run tagging:enrich-benchmarks && npm run tagging:report"
   }
 }

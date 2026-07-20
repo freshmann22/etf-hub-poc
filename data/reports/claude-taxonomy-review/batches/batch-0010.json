@@ -1,33 +1,33 @@
 {
   "batchNumber": 10,
   "status": "success",
-  "startedAt": "2026-07-20T04:41:34.986Z",
-  "completedAt": "2026-07-20T04:45:30.545Z",
+  "startedAt": "2026-07-20T05:27:10.399Z",
+  "completedAt": "2026-07-20T05:29:15.487Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13599,
-      "outputTokens": 26,
+      "inputTokens": 13902,
+      "outputTokens": 27,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013729,
+      "costUSD": 0.014036999999999999,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 24926,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 21181,
+      "outputTokens": 13416,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 27670,
       "webSearchRequests": 0,
-      "costUSD": 0.5041119,
+      "costUSD": 0.3687117,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 233115,
-  "promptHash": "f8da97aca5bb542a94fb3f9d7adbebe54f9c559e743fe0079f30b574e9d3be16",
+  "durationMs": 122651,
+  "promptHash": "4824f895870da48177ac06e81986ec523d68acedcfab2d6af110e57996bcc648",
   "inputEtfCodes": [
     "475720",
     "476000",
@@ -779,51 +779,48 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.9,
           "evidence": [
-            "채권·원자재·리츠·혼합 신호 없음, 전 구성종목이 삼성전자 등 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 전 종목 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.9,
           "evidence": [
-            "기초지수 '코스피 200 위클리 커버드콜 ATM 지수', 구성종목 전량 국내 상장 종목코드"
+            "기초지수 '코스피 200 위클리 커버드콜 ATM 지수', 구성종목 전부 KRX 코드"
           ]
         },
         {
-          "tagId": "dividend.covered_call",
-          "score": 1,
-          "confidence": 0.9,
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "기초지수명에 '위클리 커버드콜 ATM' 명시",
-            "펀드명에 '커버드콜' 포함"
+            "benchmarkName에 '코스피 200' 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.6,
-          "confidence": 0.55,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "액티브 신호 없음, 커버드콜 ATM 지수를 그대로 추종하는 구조"
+            "코스피200 위클리 커버드콜 ATM 지수를 추종하는 구조, 액티브 신호 없음"
           ]
         },
         {
-          "tagId": "sector.semiconductor",
-          "score": 0.7,
-          "confidence": 0.6,
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "삼성전자27.22%+SK하이닉스24.6%+SK스퀘어2.73%+삼성전기1.82% 합산 약56%"
+            "이름/benchmarkName에 '커버드콜' 명시"
           ]
         }
       ],
-      "candidateTagIds": [
-        "strategy.benchmark.kospi200"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [],
       "notes": [
-        "반도체 비중은 코스피200 지수 자체의 대형주 쏠림에서 기인, 명시적 테마형 의도 근거는 없음"
+        "삼성전자/SK하이닉스 비중이 높으나 코스피200 대형주 시가총액 가중 특성으로 판단, 반도체 섹터 테마로 분류하지 않음"
       ]
     },
     {
@@ -832,37 +829,38 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "보유종목 전량 개별 주식 코드로 구성, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 전 종목 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.7,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "전 구성종목이 국내 상장 종목코드(6자리 및 영숫자 코드 포함)"
+            "구성종목 전부 KRX 코드(신규 영숫자 코드 포함)"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브, 펀드명에 '액티브' 명시"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.healthcare_bio_pharma",
-        "sector.robotics"
+        "sector.healthcare_bio_pharma"
       ],
       "insufficientFacets": [
-        "sector"
+        "sector",
+        "dividend"
       ],
       "notes": [
-        "산업·국가 비중 데이터 결측, 리센스메디컬·마키나락스·코스모로보틱스 등 신규상장 소형주의 업종을 확정할 근거 부족"
+        "산업·국가 비중 데이터 결측(knownMissingFields). 구성종목명(씨어스/아이엠바이오로직스/카나프테라퓨틱스/알지노믹스 등)이 바이오 계열로 보이나 이는 명칭 추정이라 확정 분류하지 않고 후보로만 표기",
+        "포스트IPO 테마로 로보틱스(코스모로보틱스)·반도체소재(세미티에스) 등 이질적 산업이 섞여 단일 섹터로 보기 어려움"
       ]
     },
     {
@@ -871,49 +869,44 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 '코스피', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
           "tagId": "dividend.dividend_growth",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.7,
+          "confidence": 0.55,
           "evidence": [
-            "펀드명에 '배당성장' 명시"
-          ]
-        },
-        {
-          "tagId": "sector.semiconductor",
-          "score": 0.75,
-          "confidence": 0.65,
-          "evidence": [
-            "삼성전자우22.91%+SK하이닉스20.44%+삼성전기2.14%+SK스퀘어3.11% 합산 약48.6%"
+            "펀드명 'KoAct 배당성장액티브'에 '배당성장' 명시"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.financials"
+        "sector.semiconductor"
       ],
       "insufficientFacets": [],
-      "notes": []
+      "notes": [
+        "삼성전자우+SK하이닉스+SK스퀘어 비중이 46%대로 높으나 금융(KB금융/한국금융지주/키움증권)·조선(HD현대중공업/HD한국조선해양) 등도 섞여 단일 섹터 확정은 보류",
+        "benchmarkName이 '코스피'로 일반적이라 배당성장 관련 기초지수 근거는 약하고 펀드명 근거만 사용"
+      ]
     },
     {
       "etfCode": "482030",
@@ -921,46 +914,48 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 'iSelect 반도체&2차전지핵심소재 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.semiconductor",
           "score": 0.8,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "기초지수명 '반도체&2차전지핵심소재', 한솔케미칼·솔브레인·에스앤에스텍·동진쎄미켐·후성 합산 약29.3%"
+            "benchmarkName '반도체&2차전지핵심소재', 한솔케미칼/솔브레인/에스앤에스텍/동진쎄미켐 등 반도체 소재 상위 구성"
           ]
         },
         {
           "tagId": "sector.ev_battery",
           "score": 0.75,
-          "confidence": 0.65,
+          "confidence": 0.7,
           "evidence": [
-            "대주전자재료·에코프로·엘앤에프·포스코퓨처엠 합산 약17.7%, 펀드명에 '2차전지핵심소재' 명시"
+            "benchmarkName '반도체&2차전지핵심소재', 에코프로/엘앤에프/포스코퓨처엠/후성 등 2차전지 소재 상위 구성"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": []
     },
     {
@@ -969,46 +964,48 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 'FnGuide AI반도체&인프라 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.85,
+          "score": 0.8,
           "confidence": 0.75,
           "evidence": [
-            "삼성전자21.39%+SK하이닉스15.87%+피에스케이5.27%+브이엠5.18%+티에스이4.9%+삼성전기4.03% 합산 약56.6%"
+            "삼성전자/SK하이닉스/피에스케이/티에스이/삼성전기 등 반도체 관련 상위 구성 합산 약 51%"
           ]
         },
         {
           "tagId": "sector.ai_power_infrastructure",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "기초지수명 'AI반도체&인프라', LS ELECTRIC6.75%+효성중공업3.9% 전력설비주 포함"
+            "benchmarkName 'FnGuide AI반도체&인프라 지수', LS ELECTRIC/효성중공업 등 전력설비 기업 포함"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": []
     },
     {
@@ -1017,33 +1014,33 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 'Solactive AI인프라 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.semiconductor",
           "score": 0.8,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "SK하이닉스18.29%+삼성전자11.97%+테스9.12%+피에스케이5.5%+원익IPS3.38%+삼성전기3.08% 합산 약51.3%"
+            "SK하이닉스/삼성전자/테스/피에스케이/원익IPS/삼성전기 등 반도체 관련 상위 구성 합산 약 51%"
           ]
         },
         {
@@ -1051,12 +1048,14 @@
           "score": 0.7,
           "confidence": 0.6,
           "evidence": [
-            "기초지수명 'AI인프라', LS ELECTRIC5.11%+HD현대일렉트릭3.93% 전력설비주 포함"
+            "benchmarkName 'Solactive AI인프라 지수', LS ELECTRIC/HD현대일렉트릭 등 전력설비 기업 포함"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": []
     },
     {
@@ -1065,38 +1064,48 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
+          "score": 0.95,
           "confidence": 0.8,
           "evidence": [
-            "기초지수 'FnGuide 반도체TOP10 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 1,
+          "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "펀드명·기초지수명에 '반도체TOP10레버리지' 명시"
+            "nameHints=name_contains=레버리지, 구성종목 비중 합산이 100% 초과(레버리지 구조 반영)"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "FnGuide 반도체TOP10 지수를 배수 추종하는 구조, 액티브 신호 없음"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.95,
+          "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "삼성전자32.85%+SK하이닉스30.69%+DB하이텍3.56%+한미반도체3.39%+주성엔지니어링2.14%+원익IPS1.82%+리노공업1.38% 등 전량 반도체 종목"
+            "펀드명 '반도체TOP10', 상위 구성종목 전부 반도체 관련(삼성전자/SK하이닉스/DB하이텍/한미반도체/주성엔지니어링 등)"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": []
     },
     {
@@ -1105,55 +1114,51 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 '코스피 고배당 위클리 콜매도 ATM 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "dividend.covered_call",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "기초지수명 '위클리 콜매도 ATM 지수', 펀드명에 '커버드콜' 명시"
+            "benchmarkName '코스피 고배당 위클리 콜매도 ATM 지수'에 '콜매도' 명시"
           ]
         },
         {
           "tagId": "dividend.korea_high_dividend",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.8,
+          "confidence": 0.7,
           "evidence": [
-            "기초지수명에 '코스피 고배당' 명시"
+            "펀드명/benchmarkName에 '고배당' 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.6,
-          "confidence": 0.55,
+          "score": 0.8,
+          "confidence": 0.7,
           "evidence": [
-            "액티브 신호 없음, 고배당 콜매도 ATM 지수를 그대로 추종"
-          ]
-        },
-        {
-          "tagId": "sector.financials",
-          "score": 0.7,
-          "confidence": 0.6,
-          "evidence": [
-            "기업은행·DB손해보험·NH투자증권·우리금융지주·하나금융지주·삼성카드·삼성증권 등 은행/증권/보험 7종목 합산 약31.7%"
+            "고배당 위클리 콜매도 ATM 지수를 추종하는 구조, 액티브 신호 없음"
           ]
         }
       ],
-      "candidateTagIds": [],
+      "candidateTagIds": [
+        "sector.financials"
+      ],
       "insufficientFacets": [],
-      "notes": []
+      "notes": [
+        "기업은행/DB손해보험/NH투자증권/우리금융지주/하나금융지주/삼성카드/삼성증권 등 금융 비중이 높으나 기아/제일기획/KT 등도 섞여 있어 고배당 전략 펀드로 우선 판단"
+      ]
     },
     {
       "etfCode": "491510",
@@ -1161,25 +1166,25 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 'FnGuide K-주주가치 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         }
       ],
@@ -1187,10 +1192,13 @@
         "strategy.value_up",
         "sector.financials"
       ],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "sector",
+        "dividend"
+      ],
       "notes": [
-        "'K-주주가치' 명칭이 밸류업 테마를 시사하나 기초지수명에 '밸류업' 명시가 없어 확정 보류",
-        "보험·은행 비중이 top10 기준 약17%로 단일 섹터 확정에는 부족"
+        "benchmarkName 'FnGuide K-주주가치 지수'는 밸류업 프로그램을 명시적으로 언급하지 않아 strategy.value_up은 후보로만 표기",
+        "상위 10종목 비중이 최대 3.58%로 매우 분산되어 있어 특정 섹터 집중도가 낮음(금융·보험 비중이 상대적으로 크나 단정 어려움)"
       ]
     },
     {
@@ -1199,38 +1207,40 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠 신호 없음, 전 구성종목 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.75,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수 'FnGuide SK하이닉스밸류체인 지수', 구성종목 전량 국내 상장 종목"
+            "구성종목 전부 KRX 코드"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 1,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.semiconductor",
           "score": 0.85,
-          "confidence": 0.75,
+          "confidence": 0.8,
           "evidence": [
-            "SK하이닉스20.61%+피에스케이5.81%+브이엠5.56%+피에스케이홀딩스5%+LG이노텍4.05%+삼성전기3.72%+샘씨엔에스3.57%+티씨케이3.53%+유진테크3.5% 합산 약55.4%"
+            "benchmarkName 'FnGuide SK하이닉스밸류체인 지수', 상위 구성종목 전부 반도체 밸류체인(SK하이닉스/SK스퀘어/피에스케이/브이엠/피에스케이홀딩스/LG이노텍/삼성전기/샘씨엔에스/티씨케이/유진테크)"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": []
     }
   ]

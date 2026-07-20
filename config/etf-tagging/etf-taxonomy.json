@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "_note": "v2.0.0(2026-07-16 컷오버, docs/ETF_TAXONOMY_V2_FACET_DESIGN.md 승인본) — 5 facet(assetClass/region=primary, sector/strategy/dividend=multi) · 56태그. 구 v1(3대분류·25태그) 은 git 히스토리에 보존. aliasOf_v1 은 v1에서 id가 바뀐 태그의 구 id(하위호환 매핑용, id 불변 태그는 null). impliesTags 는 규칙 매칭 시 함께 부여할 태그(예: S&P500 매칭 → region.us 자동부여). 마이그레이션 방법론은 MULTI_AGENT_RUN_LOG.md S18 참조.",
   "facets": [
     {
@@ -778,19 +778,21 @@
       "facet": "strategy",
       "parent": null,
       "label": "지수추종(패시브)",
-      "definition": "기초지수를 그대로 복제하는 패시브 인덱스 ETF(액티브 신호 없음이 기본값)",
+      "definition": "운용자의 재량적 종목선정 없이 사전에 정한 지수 또는 산식의 수익률을 규칙 기반으로 추종하는 ETF. 1배 현물 복제뿐 아니라 레버리지·인버스·커버드콜 지수형 상품도 패시브에 포함하며 해당 구조 태그를 함께 부여한다.",
       "positiveSignals": [
         "명칭/상품 설명에 액티브 신호 없음",
-        "기초지수를 명시적으로 그대로 추종한다는 설명"
+        "기초지수 또는 사전에 정한 산식을 추종한다는 설명",
+        "레버리지·인버스·커버드콜 구조라도 운용자 재량 없이 지수 산식을 추종"
       ],
       "negativeSignals": [
-        "레버리지/인버스/커버드콜 등 파생 구조는 별도 전략 태그 동시 부여"
+        "명칭 또는 상품 설명에 액티브 운용·재량적 종목선정이 명시된 경우",
+        "레버리지/인버스/커버드콜은 배제 사유가 아니며 각각의 구조 태그를 동시 부여"
       ],
       "minimumScore": 0.6,
       "minimumConfidence": 0.5,
       "aliasOf_v1": null,
       "enabled": true,
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "id": "strategy.growth",
@@ -852,7 +854,7 @@
       "facet": "strategy",
       "parent": null,
       "label": "S&P500",
-      "definition": "S&P500 지수를 그대로 추종하는 ETF(레버리지/인버스/커버드콜 파생상품은 각 전략 태그 동시 부여)",
+      "definition": "S&P500 지수 계열을 노출 대상 벤치마크로 사용하는 ETF. 1배 추종뿐 아니라 레버리지·인버스·커버드콜 상품도 포함하고 각 구조 태그를 함께 부여한다.",
       "positiveSignals": [
         "기초지수명에 S&P500 명시"
       ],
@@ -864,14 +866,14 @@
         "region.us"
       ],
       "enabled": true,
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "id": "strategy.benchmark.nasdaq100",
       "facet": "strategy",
       "parent": null,
       "label": "나스닥100",
-      "definition": "나스닥100 지수를 그대로 추종하는 ETF",
+      "definition": "나스닥100 지수 계열을 노출 대상 벤치마크로 사용하는 ETF. 1배 추종뿐 아니라 레버리지·인버스·커버드콜 상품도 포함하고 각 구조 태그를 함께 부여한다.",
       "positiveSignals": [
         "기초지수명에 나스닥100 명시"
       ],
@@ -883,20 +885,20 @@
         "region.us"
       ],
       "enabled": true,
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "id": "strategy.benchmark.kospi200",
       "facet": "strategy",
       "parent": null,
       "label": "코스피200",
-      "definition": "코스피200/코스피50/KRX100 등 국내 대표 대형주 지수를 그대로 추종하는 ETF(S&P500/나스닥100의 국내판 대응 태그)",
+      "definition": "코스피200/코스피50/KRX100 등 국내 대표 대형주 지수 계열을 노출 대상 벤치마크로 사용하는 ETF. 1배 추종뿐 아니라 레버리지·인버스·커버드콜 상품도 포함하고 각 구조 태그를 함께 부여한다.",
       "positiveSignals": [
         "기초지수명에 코스피200/코스피50/KRX100 명시",
         "대형주 시가총액 가중 분산 구성이 해당 지수와 유사"
       ],
       "negativeSignals": [
-        "benchmark 필드 결측으로 명칭만으로 추정한 사례 다수 — 승격 시 confidence threshold를 다소 높게 설정"
+        "benchmark 필드 결측 상태에서 상품명의 숫자 '200'만으로 추정하지 않음"
       ],
       "minimumScore": 0.6,
       "minimumConfidence": 0.5,
@@ -905,7 +907,7 @@
         "region.domestic_kr"
       ],
       "enabled": true,
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "id": "strategy.value_up",

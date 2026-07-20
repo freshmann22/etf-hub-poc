@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-07-16T09:00:00+09:00",
   "briefDate": "2026-07-16",
-  "taxonomyVersion": "2.0.0",
+  "taxonomyVersion": "2.0.1",
   "generationMode": "manual",
   "briefs": [
     {
@@ -103,7 +103,7 @@
         "240810"
       ],
       "mentionedTopicIds": [],
-      "taxonomyVersion": "2.0.0",
+      "taxonomyVersion": "2.0.1",
       "universeSnapshot": {
         "stockCount": 8,
         "etfCount": 45,
@@ -162,7 +162,7 @@
         "042660"
       ],
       "mentionedTopicIds": [],
-      "taxonomyVersion": "2.0.0",
+      "taxonomyVersion": "2.0.1",
       "universeSnapshot": {
         "stockCount": 8,
         "etfCount": 10,
@@ -232,7 +232,7 @@
         "086520"
       ],
       "mentionedTopicIds": [],
-      "taxonomyVersion": "2.0.0",
+      "taxonomyVersion": "2.0.1",
       "universeSnapshot": {
         "stockCount": 8,
         "etfCount": 20,
@@ -298,7 +298,7 @@
         "042660"
       ],
       "mentionedTopicIds": [],
-      "taxonomyVersion": "2.0.0",
+      "taxonomyVersion": "2.0.1",
       "universeSnapshot": {
         "stockCount": 8,
         "etfCount": 8,
@@ -411,7 +411,7 @@
         "topic.rates",
         "topic.credit"
       ],
-      "taxonomyVersion": "2.0.0",
+      "taxonomyVersion": "2.0.1",
       "universeSnapshot": {
         "stockCount": 0,
         "etfCount": 57,
@@ -688,7 +688,7 @@
         "topic.credit",
         "topic.us_index"
       ],
-      "taxonomyVersion": "2.0.0",
+      "taxonomyVersion": "2.0.1",
       "universeSnapshot": {
         "stockCount": 1,
         "etfCount": 221,

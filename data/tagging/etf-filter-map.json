@@ -1,8 +1,43 @@
 {
-  "generatedAt": "2026-07-16T03:00:04.748Z",
-  "taxonomyVersion": "2.0.0",
+  "generatedAt": "2026-07-20T05:19:47.570Z",
+  "taxonomyVersion": "2.0.1",
   "filters": {
     "strategy.benchmark.kospi200": [
+      {
+        "etfCode": "0007N0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0053M0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0089D0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0098Z0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0104N0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0112X0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0167B0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
       {
         "etfCode": "0184E0",
         "score": 0.7,
@@ -19,7 +54,17 @@
         "confidence": 0.55
       },
       {
+        "etfCode": "0210E0",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
         "etfCode": "069500",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "069660",
         "score": 0.7,
         "confidence": 0.55
       },
@@ -30,6 +75,16 @@
       },
       {
         "etfCode": "102110",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "105190",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "108590",
         "score": 0.7,
         "confidence": 0.55
       },
@@ -54,7 +109,192 @@
         "confidence": 0.55
       },
       {
+        "etfCode": "123320",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139220",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139230",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139240",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139250",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139260",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139270",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139280",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "139290",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "145670",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "148020",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "152100",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "152500",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "152870",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "166400",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
         "etfCode": "183700",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "192720",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "223190",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "226980",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "227540",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "227550",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "227560",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "243880",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "243890",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252000",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252400",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252410",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252420",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252650",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252670",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "252710",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "253150",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "253160",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "253230",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "253240",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "253250",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "267770",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "278530",
         "score": 0.7,
         "confidence": 0.55
       },
@@ -64,12 +304,182 @@
         "confidence": 0.55
       },
       {
+        "etfCode": "284980",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "289480",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "290080",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "293180",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "294400",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "295040",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "304780",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
         "etfCode": "306520",
         "score": 0.7,
         "confidence": 0.55
       },
       {
+        "etfCode": "310960",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "315270",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "332500",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "332930",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "337150",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "337160",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "360140",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
         "etfCode": "360150",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "361580",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "363580",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "391670",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "407310",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "411540",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "433250",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "434960",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "441800",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "442260",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "448100",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "451060",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "472150",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "472720",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "472840",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "475720",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "491220",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "491700",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "494890",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "498400",
+        "score": 0.7,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "498410",
         "score": 0.7,
         "confidence": 0.55
       }
@@ -20789,6 +21199,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -20846,6 +21261,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21201,6 +21621,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21507,6 +21932,11 @@
           "tagId": "sector.construction",
           "score": 0.85,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21531,6 +21961,11 @@
           "tagId": "sector.shipbuilding",
           "score": 0.85,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21555,6 +21990,11 @@
           "tagId": "sector.steel_metals",
           "score": 0.85,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21579,6 +22019,11 @@
           "tagId": "sector.energy_chemicals",
           "score": 0.8,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21603,6 +22048,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21627,6 +22077,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21646,6 +22101,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21670,6 +22130,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21909,6 +22374,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -21966,6 +22436,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -22028,6 +22503,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -22076,6 +22556,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -22095,6 +22580,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -22310,6 +22800,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -22659,6 +23154,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -23262,6 +23762,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -23473,6 +23978,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -23497,6 +24007,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -23516,6 +24031,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -23539,6 +24059,11 @@
         {
           "tagId": "sector.consumer_staples_food",
           "score": 0.75,
+          "confidence": 0.55
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
           "confidence": 0.55
         }
       ]
@@ -24037,6 +24562,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24064,6 +24594,11 @@
         },
         {
           "tagId": "sector.energy_chemicals",
+          "score": 0.7,
+          "confidence": 0.55
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
         }
@@ -24395,6 +24930,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24419,6 +24959,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24443,6 +24988,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24472,6 +25022,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24491,6 +25046,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24520,6 +25080,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24549,6 +25114,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24573,6 +25143,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24602,6 +25177,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24631,6 +25211,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24655,6 +25240,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -24679,6 +25269,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -25316,6 +25911,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -25902,6 +26502,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -26194,6 +26799,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -26338,6 +26948,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -26386,6 +27001,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -26682,6 +27302,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -26701,6 +27326,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -26773,6 +27403,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -27065,6 +27700,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -27381,6 +28021,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -27462,6 +28107,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -27843,6 +28493,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -27910,6 +28565,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -28048,6 +28708,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -28067,6 +28732,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -28267,6 +28937,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -28358,6 +29033,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -28435,6 +29115,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -29600,6 +30285,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -30263,6 +30953,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -30440,6 +31135,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -31328,6 +32028,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -31495,6 +32200,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -32122,6 +32832,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -32160,6 +32875,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -32565,6 +33285,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -33019,6 +33744,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -35579,6 +36309,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -35636,6 +36371,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -35684,6 +36424,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -36268,6 +37013,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -38187,6 +38937,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -38321,6 +39076,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -38699,6 +39459,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -39220,6 +39985,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -39254,6 +40024,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -39552,6 +40327,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -39696,6 +40476,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -39854,6 +40639,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -40046,6 +40836,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -40171,6 +40966,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -40286,6 +41086,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -40740,6 +41545,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -41715,6 +42525,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },
@@ -41782,6 +42597,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55
         }
       ]
     },

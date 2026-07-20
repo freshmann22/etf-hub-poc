@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "taxonomyVersion": "2.0.0",
+  "taxonomyVersion": "2.0.1",
   "defaultSelection": {
     "facetId": "sector",
     "tagId": "sector.semiconductor"

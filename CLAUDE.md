@@ -14,13 +14,13 @@ The original CLAUDE guidance said "all local sample data, no external APIs" — 
 ## Commands
 
 ```bash
-npm test                 # all unit tests (node --test, no runner dependency) — 98 tests across 6 files
+npm test                 # all unit tests (node --test, no runner dependency; reverse-search 포함)
 npm run serve            # integrated server (static + /api) at http://localhost:4173  (server/index.js)
 npm run explore          # same server + auto-opens the 탐색 page in a browser (scripts/launch.mjs)
 npm run serve:static     # legacy static-only server (scripts/dev-server.js), also mounts /api
 ```
 
-- **Run one test file:** `node --test tests/server.test.mjs`. The `test` script lists all 6 files explicitly on purpose — `node --test tests/` (directory arg) fails on Windows.
+- **Run one test file:** `node --test tests/server.test.mjs`. The `test` script lists files explicitly on purpose — `node --test tests/` (directory arg) fails on Windows.
 - **Windows launcher:** double-click **`start-etf.cmd`** to start (server + opens `etf-explore.html`); close the window / Ctrl+C to stop (single process, no orphan). `stop-etf.cmd` force-frees port 4173.
 - **`etf-explore.html` must be served over http** — opening the file directly (`file://`) shows a blank page because ES modules and `/api` are blocked. Screen verification is done with the Playwright MCP against the running server (the MCP browser is shared with the user's real browsing).
 - **Data pipelines** (Node scripts that emit `public/data/*.json` consumed by `explore.js`):

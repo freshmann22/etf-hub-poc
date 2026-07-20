@@ -2,6 +2,11 @@
 
 작성일: 2026-07-16 / 짝 문서: [`ETF_TAXONOMY_V2_FACET_DESIGN.md`](./ETF_TAXONOMY_V2_FACET_DESIGN.md)
 
+> **완료 상태(2026-07-20 현행화)**: v2 컷오버와 1,141종 전체 규칙 태깅, Explore facet 연결까지 완료됐다.
+> 정본은 `config/etf-tagging/etf-taxonomy.json` v2.0.0과 `data/tagging/etf-filter-map.json`이며,
+> 아래 내용은 당시의 병행 개발·충돌 방지 계획을 기록으로 보존한다. 상세 실행 이력은
+> `MULTI_AGENT_RUN_LOG.md` S18 및 후속 항목을 참조한다.
+
 > **목적**: v2 facet 재설계를 **다른 세션(또는 다른 담당)** 이 이어받아도 현재 진행 중인 작업과
 > 충돌하지 않도록, 파일 소유·버전 전략·실행 순서·금지 영역을 못 박는다.
 > 이 문서를 먼저 읽고 시작할 것. 설계 세부는 짝 문서 참조.
@@ -14,7 +19,7 @@
 REVIEW 섹터(철강·건설·로봇·운송)=함께 승격, **버전=새 파일 병행**, UI연결=별도 승인. 세부는 설계안 §7 표 참조.
 → 이 워크플랜대로 바로 실행 가능(컷오버·UI연결만 각각 재승인).
 
-## 0. 현재 상태 스냅샷 (2026-07-16 기준)
+## 0. 착수 당시 상태 스냅샷 (2026-07-16 기준, 현재 상태 아님)
 
 - 브랜치: `feat/etf-metadata-pipeline`. 마지막 커밋 `ef23d52` (태깅 커버리지 105→243 확장).
 - **워킹트리 clean** (playwright/PNG 만 gitignore).
@@ -73,13 +78,13 @@ REVIEW 섹터(철강·건설·로봇·운송)=함께 승격, **버전=새 파일
 
 ## 5. 검증 체크리스트 (v2 세션 완료 조건)
 
-- [ ] v1 산출물(`config/etf-tagging/etf-taxonomy.json`, `data/tagging/etf-filter-map.json`) **변경 0** (`git diff` 로 증명).
-- [ ] v2 filter-map: 채권/해외 종목이 assetClass/region facet에 실제로 분류됨(샘플 검증).
-- [ ] 미분류 종수 v1 대비 감소(수치 기록).
-- [ ] facet cardinality 준수: assetClass/region 은 ETF당 primary 1개(+세부).
-- [ ] "추정 생성 금지" — 근거 없는 태그 0, 모든 태그 evidence 보유.
-- [ ] `npm test` 98/98 유지(태깅은 유닛테스트 밖이지만 회귀 확인).
-- [ ] RUN_LOG 에 S18 append.
+- [x] 병행 개발 단계에서 v1 산출물 변경 0을 확인.
+- [x] v2 filter-map에서 채권/해외 종목의 assetClass/region 분류를 표본 검증.
+- [x] 미분류 227→0종을 기록.
+- [x] assetClass/region primary cardinality 위반 0을 확인.
+- [x] 근거 없는 태그 0, 모든 신규 태그 evidence 보유를 확인.
+- [x] 전체 회귀 테스트 유지.
+- [x] RUN_LOG S18 및 컷오버·유니버스 확장 이력 기록.
 
 ## 6. UI 연결은 별도 승인 단계
 

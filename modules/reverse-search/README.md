@@ -103,7 +103,7 @@ npm run review:reverse-search
 # http://localhost:4174/modules/reverse-search/index.html  (390px 뷰포트로 확인)
 ```
 
-단위 테스트(순수 함수만, 루트 `npm test`에는 포함하지 않음 — 통합 여부는 별도 논의):
+단위 테스트(순수 함수)는 루트 `npm test` 회귀에도 포함된다. 모듈만 빠르게 확인하려면:
 ```bash
 npm run test:reverse-search
 ```
@@ -118,12 +118,12 @@ npm run test:reverse-search
 
 ## 수용 기준 / 검증 결과
 
-- [x] `npm test` 136/136 green 유지(기존 파이프라인 테스트 영향 없음).
-- [x] 모듈 자체 단위테스트 9/9 pass(`nlu.js` intent 분류, `ranker.js` 랭킹/근거/폴백).
+- [x] `npm test`에 모듈 테스트를 편입해 전체 회귀에서 함께 실행.
+- [x] 모듈 자체 단위테스트 17/17 pass(질의 계획 검증 포함).
 - [x] 파트너 초기 버전 Playwright 390×844 실측 완료.
 - [ ] 거래량 계약 변경 후 390×844 브라우저 재검증. 현재 자동 브라우저 연결 불가로 보류.
 - [x] 가로 스크롤 0 (`document.documentElement.scrollWidth === 390` = 뷰포트 너비와 정확히 일치).
-- [x] 콘텐츠 정책: 유인·행동유도 표현 없음(수동 점검 — `tests/content-policy.test.mjs`는 현재 `src/js/*.js`만 스캔해 이 모듈은 대상 밖이지만 프로젝트 공통 원칙을 그대로 준수).
+- [x] 콘텐츠 정책: `tests/content-policy.test.mjs`가 모듈 HTML/JavaScript도 자동 스캔.
 - [ ] Explore 화면 통합 — 범위 밖. 승인 후 별도 `feat/integrate-reverse-search` PR에서 진행.
 
 ## 알려진 한계 / 후속 과제

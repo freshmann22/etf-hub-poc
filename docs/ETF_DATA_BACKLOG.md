@@ -26,7 +26,7 @@
 | BL-09 | repository ↔ ETF UI 연결 | High | **PARTIAL(TIGER)** |
 | BL-10 | 국내 ETF 전수 dry-run | Blocked | OPEN |
 | BL-11 | SEIBro 실연동 | Low(조건부) | OPEN |
-| BL-12 | 운용사별 수집기 | High | **IN PROGRESS(TIGER 완료)** |
+| BL-12 | 운용사별 수집기 | High | **IN PROGRESS(KODEX/TIGER 완료)** |
 | BL-13 | KRX Data Marketplace 웹 직접 수집(스파이크) | Low(재검토) | **중단** |
 
 ---
@@ -115,7 +115,10 @@
   한국 ETF ISIN check digit 계산, HTML 표 파싱, 500행 상한, timeout/재시도/호스트 allowlist,
   명시적 `ISSUER_ENABLED` opt-in을 적용했다. 숫자 단축코드 대표 10종 100% 성공.
   신규 영문 혼합 단축코드는 단축코드만으로 ISIN을 계산할 수 없어 공공데이터 ISIN 매핑이 필요하다.
-  KODEX는 상품코드→`fId` 매핑 확보 후 다음 provider로 추가한다.
+  삼성자산운용 KODEX도 공식 상품검색 API(`srchVal=단축코드`)로 `fId`를 동적 해석한 뒤
+  공식 JSON PDF API를 조회하도록 구현했다. 숫자·영문 혼합 대표 10종 10/10 성공했으며,
+  500행 초과 ETF 3종도 상한 조정 후 505~510행 전체 반환을 확인했다.
+  남은 범위는 KBSTAR/RISE·ACE·SOL·HANARO·KOSEF 등 다른 운용사다.
 
 ### BL-13 · KRX Data Marketplace 웹 직접 수집(스파이크) — Low(재검토), **중단**
 - 배경: `data.krx.co.kr` ETF PDF 메뉴(웹 화면) 요청을 직접 재현할 수 있는지 별도 브랜치

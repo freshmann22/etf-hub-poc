@@ -21,7 +21,7 @@ import { createEtfService } from '../server/services/etf-service.js';
 import { handleApiRequest } from '../server/routes/api.js';
 import { createReverseSearchQueryPlanner } from '../server/services/reverse-search-query-planner.js';
 import { OpenRouterQueryPlannerClient } from '../server/llm/openrouter-query-planner.js';
-import { IssuerProvider, buildKoreanIsin, parseTigerHoldingsHtml } from '../server/providers/issuer/index.js';
+import { IssuerProvider, buildKoreanIsin, parseKodexHoldingsPayload, parseTigerHoldingsHtml } from '../server/providers/issuer/index.js';
 import { OpenRouterTagBriefClient } from '../server/llm/openrouter-tag-brief.js';
 
 // ---------------------------------------------------------------------------
@@ -240,10 +240,50 @@ test('issuer: derives Korean ETF ISIN and parses TIGER holdings rows', () => {
   });
 });
 
+test('issuer: parses KODEX official JSON holdings including base date', () => {
+  const parsed = parseKodexHoldingsPayload({ data: { pdf: {
+    gijunYMD: '20260716', totalCnt: 1,
+    list: [{ itmNo: '005930', secNm: '삼성전자', ratio: '33.31', applyQ: '6,978', evalA: '1,950,351,000' }],
+  } } });
+  assert.equal(parsed.declaredCount, 1);
+  assert.equal(parsed.baseDate, '20260716');
+  assert.deepEqual(parsed.rows[0], {
+    stockCode: '005930', stockName: '삼성전자', weight: 33.31,
+    shares: 6978, marketValue: 1950351000, rank: 1,
+    asOfDate: '2026-07-16T00:00:00+09:00',
+  });
+});
+
+test('issuer: resolves KODEX ticker to fund id and fetches official JSON holdings', async () => {
+  const oldFetch = globalThis.fetch;
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('/product.do?')) {
+      return new Response(JSON.stringify({ data: [{ stkTicker: '069500', fId: '2ETF01', gijunYMD: '20260716' }] }), { status: 200 });
+    }
+    assert.match(String(url), /product-pdf\/2ETF01\.do\?gijunYMD=20260716/);
+    return new Response(JSON.stringify({ data: { pdf: {
+      gijunYMD: '20260716', totalCnt: 1,
+      list: [{ itmNo: '005930', secNm: '삼성전자', ratio: '33.31', applyQ: '6978', evalA: '1950351000' }],
+    } } }), { status: 200 });
+  };
+  try {
+    const provider = new IssuerProvider({ enabled: true, retries: 0 });
+    const env = await provider.getEtfHoldings('069500');
+    assert.equal(env.meta.source, 'issuer_kodex');
+    assert.equal(env.data.length, 1);
+    assert.equal(env.data[0].weight, 33.31);
+  } finally {
+    globalThis.fetch = oldFetch;
+  }
+});
+
 test('issuer: fetches official TIGER holdings and rejects unsupported codes honestly', async () => {
   const oldFetch = globalThis.fetch;
   const html = '<tr data-tot-cnt="1"><td>1</td><td>005930</td><td>삼성전자</td><td>10</td><td>1000</td><td>25.5</td><td>0</td></tr>';
-  globalThis.fetch = async (_url, init) => {
+  globalThis.fetch = async (url, init) => {
+    if (String(url).includes('samsungfund.com')) {
+      return new Response(JSON.stringify({ data: [] }), { status: 200 });
+    }
     assert.match(String(init.body), /ksdFund=KR7102110004/);
     return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=UTF-8' } });
   };

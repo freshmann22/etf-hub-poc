@@ -166,7 +166,7 @@ async function fetchOfficialEtfHoldings(code) {
     if (!res.ok) return null;
     const env = await res.json();
     // mock/fixture 응답은 아래 정적 스냅샷과 중복되므로 공식 운용사 응답만 채택한다.
-    if (env?.meta?.source !== 'issuer_tiger' || !Array.isArray(env.data) || !env.data.length) return null;
+    if (!['issuer_tiger', 'issuer_kodex'].includes(env?.meta?.source) || !Array.isArray(env.data) || !env.data.length) return null;
     return {
       source: env.meta.source,
       asOfDate: env.meta.asOfDate || null,

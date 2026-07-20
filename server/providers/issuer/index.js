@@ -5,12 +5,16 @@ import { BaseProvider } from '../types.js';
 import { ProviderError, ErrorCodes, Status } from '../../lib/errors.js';
 import { safeFetchText } from '../../lib/http.js';
 import { makeMeta, envelope } from '../../schemas/etf.js';
-import { cleanText, parseNumber } from '../../lib/normalize.js';
+import { cleanText, parseNumber, toSeoulIso } from '../../lib/normalize.js';
 
 const TIGER_PDF_URL =
   'https://investments.miraeasset.com/tigeretf/ko/reference/pdf-status-list.ajax';
 const TIGER_HOST = 'investments.miraeasset.com';
-const MAX_ROWS = 500;
+const KODEX_HOST = 'www.samsungfund.com';
+const KODEX_API_ROOT = 'https://www.samsungfund.com/api/v1/kodex';
+// 해외·파생 ETF는 현금/선물/스왑을 포함해 500행을 넘을 수 있다.
+// 응답 크기 제한(8MB)과 별도로 비정상 무한 목록만 막는 넉넉한 상한을 둔다.
+const MAX_ROWS = 2000;
 
 export class IssuerProvider extends BaseProvider {
   constructor(config = {}) {
@@ -25,6 +29,7 @@ export class IssuerProvider extends BaseProvider {
       getEtfDisclosures: false,
     };
     this._tigerUrl = config.tigerPdfUrl || TIGER_PDF_URL;
+    this._kodexApiRoot = (config.kodexApiRoot || KODEX_API_ROOT).replace(/\/$/, '');
   }
 
   isAvailable() {
@@ -35,15 +40,20 @@ export class IssuerProvider extends BaseProvider {
     if (!this.isAvailable()) {
       throw new ProviderError(ErrorCodes.UNAVAILABLE, 'issuer provider disabled', { provider: 'issuer' });
     }
-    if (!/^\d{6}$/.test(String(code || ''))) {
-      return envelope([], issuerMeta(Status.UNAVAILABLE));
+    const target = String(code || '').trim().toUpperCase();
+    if (!/^[0-9A-Z]{6}$/.test(target)) {
+      return envelope([], issuerMeta('issuer', Status.UNAVAILABLE));
     }
+
+    const kodex = await this._getKodexHoldings(target);
+    if (kodex) return kodex;
+    if (!/^\d{6}$/.test(target)) return envelope([], issuerMeta('issuer', Status.UNAVAILABLE));
 
     const body = new URLSearchParams({
       pageIndex: '1',
       firstIndex: '0',
       listCnt: String(MAX_ROWS),
-      ksdFund: buildKoreanIsin(code),
+      ksdFund: buildKoreanIsin(target),
       jongName: '',
     }).toString();
     const html = await safeFetchText(this._tigerUrl, {
@@ -62,12 +72,71 @@ export class IssuerProvider extends BaseProvider {
       : declaredCount != null && rows.length < declaredCount
         ? Status.PARTIAL
         : Status.OK;
-    return envelope(rows, issuerMeta(status));
+    return envelope(rows, issuerMeta('issuer_tiger', status));
+  }
+
+  async _getKodexHoldings(code) {
+    const query = new URLSearchParams({
+      ordrColm: 'NAV', ordrSort: 'DESC', pageNo: '1', srchTerm: 'w', srchVal: code,
+    });
+    const productText = await safeFetchText(`${this._kodexApiRoot}/product.do?${query}`, this._kodexOpts());
+    const products = parseJson(productText, 'kodex product list');
+    const product = (Array.isArray(products?.data) ? products.data : Array.isArray(products) ? products : [])
+      .find((item) => cleanText(item?.stkTicker)?.toUpperCase() === code && cleanText(item?.fId));
+    if (!product) return null;
+
+    const baseDate = cleanText(product.gijunYMD);
+    const pdfUrl = `${this._kodexApiRoot}/product-pdf/${encodeURIComponent(product.fId)}.do` +
+      (baseDate ? `?gijunYMD=${encodeURIComponent(baseDate)}` : '');
+    const pdfText = await safeFetchText(pdfUrl, this._kodexOpts());
+    const parsed = parseKodexHoldingsPayload(parseJson(pdfText, 'kodex holdings'));
+    const status = parsed.rows.length === 0
+      ? Status.UNAVAILABLE
+      : parsed.declaredCount != null && parsed.rows.length < parsed.declaredCount
+        ? Status.PARTIAL
+        : Status.OK;
+    return envelope(parsed.rows, issuerMeta('issuer_kodex', status, parsed.baseDate || baseDate));
+  }
+
+  _kodexOpts() {
+    return {
+      provider: 'issuer',
+      allowlist: [KODEX_HOST],
+      timeoutMs: this.config.timeoutMs || 8000,
+      retries: this.config.retries ?? 2,
+      maxBytes: 8 * 1024 * 1024,
+    };
   }
 }
 
-function issuerMeta(status) {
-  return makeMeta({ source: 'issuer_tiger', status, quality: 0.95 });
+function issuerMeta(source, status, asOfDate = null) {
+  return makeMeta({ source, status, asOfDate: asOfDate ? toSeoulIso(asOfDate) : null, quality: 0.95 });
+}
+
+function parseJson(text, label) {
+  try { return JSON.parse(text); } catch {
+    throw new ProviderError(ErrorCodes.PARSE_ERROR, `${label} json`, { provider: 'issuer' });
+  }
+}
+
+export function parseKodexHoldingsPayload(payload) {
+  const pdf = payload?.data?.pdf || payload?.pdf || null;
+  const list = Array.isArray(pdf?.list) ? pdf.list.slice(0, MAX_ROWS) : [];
+  const baseDate = cleanText(pdf?.gijunYMD);
+  const rows = list.map((item, index) => ({
+    stockCode: cleanText(item?.itmNo) || null,
+    stockName: cleanText(item?.secNm) || null,
+    weight: parseNumber(item?.ratio),
+    shares: parseNumber(item?.applyQ),
+    marketValue: parseNumber(item?.evalA),
+    rank: index + 1,
+    asOfDate: baseDate ? toSeoulIso(baseDate) : null,
+  })).filter((row) => row.stockName);
+  return {
+    rows,
+    declaredCount: parseNumber(pdf?.totalCnt),
+    baseDate,
+  };
 }
 
 // 한국 ETF 표준코드: KR7 + 단축코드 + 00 + ISO 6166(Luhn) check digit.

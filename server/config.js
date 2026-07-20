@@ -84,6 +84,7 @@ export const config = {
     issuer: {
       enabled: env.ISSUER_ENABLED === 'true',
       tigerPdfUrl: env.ISSUER_TIGER_PDF_URL || '',
+      kodexApiRoot: env.ISSUER_KODEX_API_ROOT || '',
     },
     // 공공데이터포털(data.go.kr) — ETF 전종목 목록/스냅샷(T+1).
     publicdata: {

@@ -16,15 +16,15 @@
 | **dart** | 전자공시 OpenAPI | API 키 | ✅ 실호출 확인 | – | – | – | – | – | ✅ |
 | **krx** | 거래소 공개 데이터 | 불필요(베스트에포트) | ⚠ 400 발생 | ✅ | ✅ | – | – | – | – |
 | **broker** | 범용 증권사 오픈API | 키·시크릿 | – | – | ✅ | – | – | – | – |
-| **issuer** | 운용사 공식 공개자료 | 명시적 활성화 | ✅ TIGER 10종 실호출 | – | – | ✅ TIGER | – | – | – |
+| **issuer** | 운용사 공식 공개자료 | 명시적 활성화 | ✅ KODEX/TIGER 각 10종 | – | – | ✅ KODEX/TIGER | – | – | – |
 | **kind** | KRX 기업공시(스크래핑) | 활성화 플래그 | – | – | – | – | – | – | ✅※ |
 | **seibro** | 예탁결제원(스크래핑) | 활성화 플래그 | – | – | – | ✅※ | – | ✅※ | – |
 
 ※ = 파서/약관 확인 전까지 "설정되면 시도, 미구현이면 NOT_SUPPORTED 로 정직 표기".
 
-**운용사 공식 구성종목(issuer)**: `ISSUER_ENABLED=true`일 때 미래에셋 TIGER 공개 PDF 조회를 사용한다.
-숫자형 ETF 단축코드에서 표준 ISIN을 계산하고 공식 HTML 표를 공통 holdings envelope로 정규화한다.
-대표 10종 10/10 성공을 확인했으며, 미지원 운용사·영문 혼합 단축코드는 빈 응답으로 정직하게 폴백한다.
+**운용사 공식 구성종목(issuer)**: `ISSUER_ENABLED=true`일 때 삼성 KODEX와 미래에셋 TIGER 공개 PDF 조회를 사용한다.
+KODEX는 공식 상품검색으로 `fId`를 해석해 JSON 목록을 받고, TIGER 숫자형 단축코드는 표준 ISIN을 계산해 HTML 표를 받는다.
+각 대표 10종 10/10 성공을 확인했으며, 미지원 운용사·TIGER 영문 혼합 단축코드는 빈 응답으로 정직하게 폴백한다.
 Explore 구성종목 탭은 이 공식 응답을 우선 사용한다.
 
 **토스증권(toss)**: `POST /oauth2/token`(client_credentials) → Bearer 토큰(캐시), `GET /api/v1/prices`(현재가 배치),

@@ -18,6 +18,7 @@ export const DEFAULT_ALLOWLIST = [
   'openapi.tossinvest.com',
   'apis.data.go.kr',
   'investments.miraeasset.com',
+  'www.samsungfund.com',
 ];
 
 function hostAllowed(urlStr, allowlist) {

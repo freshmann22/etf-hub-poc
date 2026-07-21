@@ -1,33 +1,33 @@
 {
   "batchNumber": 8,
   "status": "success",
-  "startedAt": "2026-07-20T04:35:29.393Z",
-  "completedAt": "2026-07-20T04:38:23.005Z",
+  "startedAt": "2026-07-21T03:26:58.253Z",
+  "completedAt": "2026-07-21T03:30:30.179Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13600,
-      "outputTokens": 27,
+      "inputTokens": 13903,
+      "outputTokens": 25,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013734999999999999,
+      "costUSD": 0.014028,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 18057,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 21161,
+      "outputTokens": 20601,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 27270,
       "webSearchRequests": 0,
-      "costUSD": 0.40095689999999995,
+      "costUSD": 0.4740867,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 171233,
-  "promptHash": "9faf5eeb91560ef9730b5d6e3f13c48d42fa54abd98c745f41ddde5329512caa",
+  "durationMs": 209124,
+  "promptHash": "66edc673d58ef3d14b973274925098af6c510dd053f12efdf234f26acfed011f",
   "inputEtfCodes": [
     "442090",
     "442260",
@@ -775,26 +775,27 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음",
-            "보유종목 전량 국내 상장 개별주식"
+            "보유 상위10종목 전부 국내 개별주식(SK하이닉스, SK가스, 삼성전기 등)",
+            "채권/원자재/리츠/혼합 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "구성종목 10개 전부 KRX 상장 국내기업(SK하이닉스, 현대차 등)"
+            "보유종목 전부 국내 상장사",
+            "해외 지역 신호 없음"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         }
       ],
@@ -805,8 +806,8 @@
         "dividend"
       ],
       "notes": [
-        "보유종목이 반도체(SK하이닉스·주성엔지니어링·이엔에프테크놀로지 합산 약23.4%)·에너지(SK가스)·자동차·화학(송원산업)·정유(S-Oil) 등에 분산되어 단일 섹터 태그 기준(0.65) 미충족",
-        "distributionSchedule null, 실제 분배금 이력 없음"
+        "반도체 관련(SK하이닉스·삼성전기·주성엔지니어링·이엔에프테크놀로지) 합산 약28.9%로 단일 섹터 기준 미달, 자동차·에너지·2차전지·화학까지 분산되어 특정 섹터 태그 보류",
+        "분배 일정·이력 데이터 없음(knownMissingFields)"
       ]
     },
     {
@@ -815,45 +816,50 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 대부분 국내 개별주식, 채권/원자재 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장(삼성전자, SK하이닉스 등)"
+            "보유종목 전부 국내 상장사 또는 국내지수 추종 ETF(마이티 200TR)"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "strategy.benchmark.kospi200",
-          "score": 0.8,
-          "confidence": 0.7,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "benchmarkName='코스피 200' 명시",
-            "구성종목에 코스피200 연동 상품 '마이티 200TR' 17.02% 포함"
+            "benchmarkName '코스피 200' 명시"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "개별주식 비중 중 삼성전자25.7%+SK하이닉스23.41%+SK스퀘어5.11%+삼성전기1.27%로 반도체 관련 비중이 큼"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "삼성전자+SK하이닉스 합산 비중 49.11%는 코스피200 대형주 구조 자체의 특성으로 판단되어 섹터 테마 근거로 보기 어려움"
+        "'마이티 200TR'(17.02%)은 타 ETF(KOSPI200TR 추종) 편입분이라 개별 종목 익스포저로 보지 않음"
       ]
     },
     {
@@ -862,25 +868,25 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장(삼성전자, SK하이닉스, 카카오 등)"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
@@ -888,8 +894,8 @@
           "score": 0.72,
           "confidence": 0.58,
           "evidence": [
-            "benchmarkName='KEDI 메가테크지수(PR)'로 기술주 테마 명시",
-            "삼성전자·SK하이닉스·카카오·삼성전기·삼성에스디에스 등 기술 관련 종목 합산 top10 내 약55.8%"
+            "기초지수 'KEDI 메가테크지수'",
+            "상위종목 삼성전자·SK하이닉스·카카오·삼성전기·삼성에스디에스 등 기술주 합산 약55.8%"
           ]
         }
       ],
@@ -900,7 +906,7 @@
         "dividend"
       ],
       "notes": [
-        "두산에너빌리티·한화에어로스페이스·HD현대일렉트릭 등 비기술 종목도 포함되어 순수 반도체 테마로 보기는 어려움"
+        "두산에너빌리티·한화에어로스페이스·HD현대일렉트릭 등 비(非)IT 산업재 비중도 있어 반도체 단일 태그보다 광범위 테크로 판단"
       ]
     },
     {
@@ -909,34 +915,34 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 조선/조선기자재 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "evidence": [
-            "전 종목 국내 조선사"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.shipbuilding",
           "score": 0.9,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "evidence": [
-            "benchmarkName='FnGuide K-친환경 선박 지수'",
-            "HD현대중공업·삼성중공업·HD한국조선해양·한화오션 등 조선/조선기자재 기업 top10 합산 비중 70.29%(≥70%)"
+            "기초지수 'FnGuide K-친환경 선박 지수'",
+            "상위10종목 전부 조선/조선기자재, 합산 비중 70.29%"
           ]
         }
       ],
@@ -952,34 +958,34 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.robotics",
-          "score": 0.78,
-          "confidence": 0.65,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "benchmarkName='iSelect K-로봇테마 지수'",
-            "로보티즈·레인보우로보틱스·두산로보틱스 등 로봇 전문기업 합산 약19.83%"
+            "기초지수 'iSelect K-로봇테마 지수'",
+            "로보티즈·레인보우로보틱스·두산로보틱스 등 로봇 전문기업 다수 포함"
           ]
         }
       ],
@@ -990,7 +996,7 @@
         "dividend"
       ],
       "notes": [
-        "현대모비스·현대오토에버 등 모빌리티 부품/SW 기업도 포함되어 자율주행 태그 후보로 함께 검토 가능"
+        "현대모비스·현대오토에버·현대차 비중이 있어 모빌리티 겸용 가능성 있으나 지수명은 로봇 테마 명시"
       ]
     },
     {
@@ -999,37 +1005,38 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         }
       ],
       "candidateTagIds": [
+        "sector.semiconductor",
         "strategy.value"
       ],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "benchmarkName='FnGuide 주주가치 지수'는 PER/PBR 기반 가치주 정의와 정확히 일치하지 않아 strategy.value는 후보로만 판단",
-        "보유종목이 반도체·자동차·금융·게임·소비재 등에 분산되어 단일 섹터 태그 기준 미충족"
+        "기초지수명 'FnGuide 주주가치 지수'는 밸류업/가치주(PER·PBR) 명시적 언급이 아니라 strategy.value 확정 보류",
+        "SK하이닉스+삼성전자 합산 37.89%로 반도체 후보이나 기준 미달"
       ]
     },
     {
@@ -1038,45 +1045,42 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "strategy.value",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.8,
+          "confidence": 0.7,
           "evidence": [
-            "benchmarkName='FnGuide 올라운드 가치주 지수'에 '가치주' 명시"
+            "기초지수명 'FnGuide 올라운드 가치주 지수'에 가치주 명시"
           ]
         }
       ],
-      "candidateTagIds": [
-        "dividend.korea_high_dividend"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "보유종목이 게임·의류·건설·에너지·해운·가전·2차전지·철강 등에 고르게 분산되어 단일 섹터 태그 기준 미충족",
-        "펀드명 '주주환원'은 배당 근거를 시사하나 distributionSchedule null, 분배금 이력 없음 — dividend는 후보로만 판단"
+        "보유종목이 게임·의류·건설·에너지·해운·가전·2차전지·철강 등으로 고르게 분산되어 단일 섹터 태그 근거 부족"
       ]
     },
     {
@@ -1085,36 +1089,39 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.semiconductor"
+        "sector.financials",
+        "sector.healthcare_bio_pharma",
+        "sector.aerospace_defense"
       ],
       "insufficientFacets": [
+        "sector",
         "dividend"
       ],
       "notes": [
-        "펀드명 'AI코리아'와 달리 benchmarkName은 단순 '코스피'이며, 보유종목도 반도체(29.85%)·금융(19.45%)·바이오(11.48%)·방산(11.02%) 등에 분산되어 AI/반도체 관련 섹터 태그를 확정할 근거 부족"
+        "펀드명은 'AI코리아'이나 기초지수는 광범위 시장지수 '코스피'이고 보유종목도 반도체·금융·바이오·방산으로 분산되어 AI 관련 섹터 근거 부족(sector.ai_power_infrastructure 등 어떤 섹터도 확정 불가)"
       ]
     },
     {
@@ -1123,17 +1130,17 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 방산/조선 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "evidence": [
-            "전 종목 국내 방산기업"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
@@ -1141,24 +1148,24 @@
           "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "issuer=한화자산운용, benchmarkName='FnGuide K-방위산업 지수'",
-            "한화에어로스페이스·현대로템·한화오션·한국항공우주·LIG디펜스앤에어로스페이스·한화시스템 등 방산기업 top10 합산 비중 99.92%"
+            "기초지수 'FnGuide K-방위산업 지수'",
+            "상위5종목(한화에어로스페이스·현대로템·한화오션·한국항공우주·LIG디펜스앤에어로스페이스) 합산 89.08%"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.7,
+          "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "rawTypeText='국내주식형, 시장테마'로 액티브 신호 없음",
-            "펀드명에 '액티브' 표기 없음"
+            "rawTypeText '국내주식형, 시장테마', 액티브 명시 없음",
+            "기초지수(FnGuide K-방위산업 지수) 추종 구조로 추정"
           ]
         }
       ],
       "candidateTagIds": [],
       "insufficientFacets": [],
       "notes": [
-        "distributionSchedule='1월,4월,7월,10월 마지막 영업일'로 분기 지급 확인 — 월배당 요건 미충족, 고배당/배당성장/커버드콜 근거도 없어 배당 태그 미부여"
+        "분배 스케줄은 1·4·7·10월 분기 지급으로 월배당(dividend.monthly) 요건 미충족, 고배당/배당성장/커버드콜 근거도 없음"
       ]
     },
     {
@@ -1167,46 +1174,49 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/혼합/통화 신호 없음"
+            "보유종목 전부 국내 개별주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "전 종목 국내 상장"
+            "보유종목 전부 국내 상장사"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.9,
+          "score": 0.95,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "strategy.benchmark.kospi200",
-          "score": 0.8,
-          "confidence": 0.7,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "benchmarkName='코스피 200' 명시",
-            "펀드명에 '200' 포함"
+            "benchmarkName '코스피 200' 명시"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.78,
+          "confidence": 0.68,
+          "evidence": [
+            "상위4종목(삼성전자32.67%·SK하이닉스28.14%·SK스퀘어2.93%·삼성전기1.97%) 합산 65.71%"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
-      "notes": [
-        "삼성전자+SK하이닉스 합산 비중 60.81%로 코스피200 대비 반도체 비중이 확대된 액티브 운용으로 보이나, benchmarkName이 명시적으로 코스피200이라 섹터 테마보다 지수 추종형 액티브로 판단"
-      ]
+      "notes": []
     }
   ]
 }

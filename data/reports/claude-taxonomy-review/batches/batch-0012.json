@@ -1,33 +1,33 @@
 {
   "batchNumber": 12,
   "status": "success",
-  "startedAt": "2026-07-20T04:31:52.140Z",
-  "completedAt": "2026-07-20T04:35:11.012Z",
+  "startedAt": "2026-07-21T03:33:26.993Z",
+  "completedAt": "2026-07-21T03:36:16.551Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13194,
-      "outputTokens": 28,
+      "inputTokens": 13497,
+      "outputTokens": 24,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013334,
+      "costUSD": 0.013617,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 20253,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 20662,
+      "outputTokens": 16890,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 26829,
       "webSearchRequests": 0,
-      "costUSD": 0.4309029,
+      "costUSD": 0.41577569999999997,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 195809,
-  "promptHash": "beb488ecd70d4f2c902b13ce938a4dd69cdfc71146862a74de6467c23f450517",
+  "durationMs": 166782,
+  "promptHash": "7566ce294402af2e45cc8197caf411702934ab49b399d52256a59b8f26d4e313",
   "inputEtfCodes": [
     "0000D0",
     "117680",
@@ -664,8 +664,8 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
-            "rawTypeText=해외혼합형",
-            "benchmarkName에 '...타겟커버드콜혼합지수(TR)' 명시"
+            "benchmarkName에 '혼합지수' 포함",
+            "rawTypeText=해외혼합형"
           ]
         },
         {
@@ -673,7 +673,8 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
-            "benchmarkName='KEDI 엔비디아미국채30년타겟커버드콜혼합지수(TR)'에 미국 국채30년 및 엔비디아(미국 주식) 명시"
+            "benchmarkName에 '엔비디아미국채30년' 명시(NVDA+미국채 모두 미국)",
+            "rawTypeText=해외혼합형"
           ]
         },
         {
@@ -682,29 +683,36 @@
           "confidence": 0.85,
           "evidence": [
             "nameHints=name_contains=커버드콜",
-            "benchmarkName에 '타겟커버드콜혼합지수' 명시"
+            "benchmarkName에 '커버드콜' 명시"
           ]
         },
         {
           "tagId": "dividend.monthly",
-          "score": 0.9,
-          "confidence": 0.85,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
             "distributionSchedule=매월 마지막 영업일"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "benchmarkName의 지수(KEDI 엔비디아미국채30년타겟커버드콜혼합지수)를 추종",
+            "nameHints=합성(스왑) 구조, 액티브 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.semiconductor",
-        "strategy.passive_index"
+        "sector.semiconductor"
       ],
       "insufficientFacets": [
-        "sector",
-        "strategy"
+        "sector"
       ],
       "notes": [
-        "구성종목 데이터가 없어 엔비디아 실제 편입비중을 확인할 수 없음 (benchmarkName만으로 sector 후보 처리)",
-        "합성(스왑) 구조 및 커버드콜 오버레이로 인해 액티브/패시브 여부를 판단할 직접 근거 부족"
+        "holdings 데이터가 비어있어 구성종목 기반 섹터 판단 불가",
+        "명칭상 엔비디아 단일 종목+미국채 결합 구조로 일반 섹터 분산 ETF와 성격이 다름"
       ]
     },
     {
@@ -713,34 +721,36 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 상장 제조기업 주식(POSCO홀딩스 등)"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "benchmarkName=KRX 철강",
+            "구성종목 전부 KRX 상장 국내기업"
           ]
         },
         {
           "tagId": "sector.steel_metals",
-          "score": 0.85,
-          "confidence": 0.7,
+          "score": 0.9,
+          "confidence": 0.8,
           "evidence": [
             "benchmarkName=KRX 철강",
-            "상위10종목 POSCO홀딩스·현대제철·고려아연·풍산·세아베스틸지주 등 철강/비철금속 기업, 합산비중 약 87.6%"
+            "홀딩스: POSCO홀딩스 23.32%, 현대제철 20.08%, 고려아연 18.65%, 풍산 9.41% 등 철강/비철금속 기업 집중"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.6,
           "evidence": [
-            "액티브 명시 없음, 'KRX 철강' 지수를 그대로 추종하는 명칭 구조"
+            "benchmarkName=KRX 철강 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
@@ -749,7 +759,7 @@
         "dividend"
       ],
       "notes": [
-        "distributionSchedule 정보 없음, 배당 관련 근거 부재"
+        "운용사/분배일정 정보 없음"
       ]
     },
     {
@@ -758,34 +768,36 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 건설사 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "benchmarkName=KRX 건설",
+            "구성종목 전부 국내 건설사"
           ]
         },
         {
           "tagId": "sector.construction",
-          "score": 0.85,
-          "confidence": 0.7,
+          "score": 0.9,
+          "confidence": 0.8,
           "evidence": [
             "benchmarkName=KRX 건설",
-            "상위10종목 삼성E&A·현대건설·대우건설·GS건설·DL이앤씨 등 건설사, 합산비중 약 88.7%"
+            "홀딩스: 삼성E&A 22.33%, 현대건설 19.85%, 대우건설 12.88%, GS건설 7.71% 등 건설사 집중"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.6,
           "evidence": [
-            "액티브 명시 없음, 'KRX 건설' 지수를 그대로 추종하는 명칭 구조"
+            "benchmarkName=KRX 건설 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
@@ -794,7 +806,7 @@
         "dividend"
       ],
       "notes": [
-        "distributionSchedule 정보 없음, 배당 관련 근거 부재"
+        "운용사/분배일정 정보 없음"
       ]
     },
     {
@@ -803,17 +815,26 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 국내 상장 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName=코스피 배당성장 50",
+            "구성종목 전부 국내기업"
+          ]
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.8,
           "confidence": 0.7,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "홀딩스: 삼성카드 4.98%, DB손해보험 4.68%, JB금융지주 4.18%, BNK금융지주 3.95%, 하나금융지주 3.4%, NH투자증권 3.35%, iM금융지주 3.25% 등 top10 중 금융업 비중 과반 이상"
           ]
         },
         {
@@ -821,24 +842,26 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
+            "펀드명=TIGER 배당성장",
             "benchmarkName=코스피 배당성장 50"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.6,
           "evidence": [
-            "액티브 명시 없음, '코스피 배당성장 50' 지수를 추종하는 명칭 구조"
+            "benchmarkName=코스피 배당성장 50 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.financials"
+        "dividend.korea_high_dividend"
       ],
       "insufficientFacets": [],
       "notes": [
-        "상위10 중 금융업종(삼성카드·DB손해보험·JB금융지주·BNK금융지주·하나금융지주·NH투자증권·iM금융지주) 합산 비중 약 27.8%로 유의미하나, 지수 구성 50종목 중 상위10(합계 38.1%)만 확인 가능해 전체 비중 단정은 유보"
+        "분배 일정 데이터는 없으나 명칭/기초지수의 배당성장 신호가 명확하여 dividend facet은 판단 가능"
       ]
     },
     {
@@ -847,39 +870,39 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 소비재/화장품/식품/게임 관련 상장 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "구성종목 전부 국내기업, benchmarkName=FnGuide 성장소비주도 지수"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
+          "score": 0.7,
           "confidence": 0.55,
           "evidence": [
-            "액티브 명시 없음, 'FnGuide 성장소비주도 지수'를 추종하는 명칭 구조"
+            "benchmarkName=FnGuide 성장소비주도 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [
         "sector.beauty_cosmetics",
         "sector.consumer_discretionary",
+        "sector.consumer_staples_food",
         "strategy.growth"
       ],
-      "insufficientFacets": [
-        "sector"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "상위10 종목이 화장품(한국콜마·아모레퍼시픽·코스맥스·LG생활건강·아모레퍼시픽홀딩스 합산 약 11.3%)·식품(약 6.4%)·게임(약 4.3%)으로 고르게 분산되어 70% 임계값에 크게 미달, 단일 섹터 확정 어려움",
-        "benchmarkName에 '성장'이 포함되나 팩터전략(strategy.growth)인지 소비테마인지 구분할 직접 근거 부족"
+        "화장품 관련 종목(한국콜마·아모레퍼시픽·코스맥스·LG생활건강·아모레퍼시픽홀딩스) 합산 비중이 top10 내 약 54%로 sector.beauty_cosmetics 기준(70% 이상)에 미달",
+        "식품(롯데웰푸드·동원산업)·게임(시프트업·데브시스터즈) 종목도 혼재되어 단일 섹터로 특정하기 어려움"
       ]
     },
     {
@@ -888,36 +911,46 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 현대차그룹 계열사 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "구성종목 전부 국내 상장 현대차그룹 계열사"
           ]
         },
         {
           "tagId": "strategy.large_conglomerate_group",
           "score": 0.95,
-          "confidence": 0.85,
+          "confidence": 0.9,
           "evidence": [
-            "펀드명에 '현대차그룹플러스' 명시",
-            "상위10종목 전량 기아·현대차·현대모비스·현대제철·현대글로비스 등 현대차/HD현대 계열사, 합산비중 약 93.8%"
+            "펀드명=TIGER 현대차그룹플러스",
+            "top10 합산 비중 약 93.8%(기아 27.26%+현대차 22.05%+현대모비스 15.06%+현대제철 8.89%+현대글로비스 6.9%+현대건설 4.04%+HD한국조선해양 3.62%+HD현대 2.4%+현대로템 1.87%+현대위아 1.75%)가 모두 현대차그룹 계열사"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.55,
+          "evidence": [
+            "benchmarkName=MKF 현대차그룹+ FW 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
-      "candidateTagIds": [],
+      "candidateTagIds": [
+        "sector.consumer_discretionary"
+      ],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "계열사가 자동차·철강·조선·건설·물류 등 다업종에 걸쳐 있어 단일 sector 태그는 부적합",
-        "distributionSchedule 정보 없음, 배당 관련 근거 부재"
+        "자동차(기아·현대차·현대모비스·현대글로비스·현대위아) 외에 철강(현대제철)·건설(현대건설)·조선(HD한국조선해양·HD현대) 등 그룹 내 다업종이 혼재되어 단일 섹터 태그로 특정하지 않음"
       ]
     },
     {
@@ -926,17 +959,17 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 다양한 업종의 국내 상장 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "구성종목 전부 국내기업"
           ]
         },
         {
@@ -944,8 +977,18 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
-            "펀드명 'TIGER 로우볼', benchmarkName=FnGuide Low Vol 지수",
-            "상위10종목 비중이 2.70~3.46%로 매우 균등 분산"
+            "펀드명=TIGER 로우볼",
+            "benchmarkName=FnGuide Low Vol 지수",
+            "개별 종목 비중이 2.7~3.46%로 매우 균등"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.55,
+          "evidence": [
+            "benchmarkName=FnGuide Low Vol 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
@@ -954,8 +997,7 @@
         "dividend"
       ],
       "notes": [
-        "구성종목이 광고·식품·통신·카드·유통·재보험·주류 등 다업종에 분산되어 특정 sector 태그는 부적합",
-        "distributionSchedule 정보 없음, 배당 관련 근거 부재"
+        "구성종목이 광고·식품·담배·통신·카드·유통·재보험·주류 등으로 분산되어 단일 섹터 태그 없음"
       ]
     },
     {
@@ -964,34 +1006,36 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 원자력 밸류체인 관련 상장 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "구성종목 전부 국내기업"
           ]
         },
         {
           "tagId": "sector.nuclear_power",
-          "score": 0.95,
+          "score": 0.9,
           "confidence": 0.85,
           "evidence": [
+            "펀드명=ACE 원자력TOP10",
             "benchmarkName=DeepSearch 원자력 TOP 10지수",
-            "상위10종목 두산에너빌리티·현대건설·두산·대우건설·한전기술·비에이치아이·우리기술·한전KPS 등 원전 설비/EPC/전력 기업, 합산비중 약 99.1%"
+            "홀딩스: 두산에너빌리티 25.2%, 현대건설 20.66%, 두산 11.54%, 대우건설 10.32%, 한전기술 7.86%, 비에이치아이 7.49%, 우리기술 6.96%, 한전KPS 4.49%, 삼성물산 2.29%, 한국전력 2.29% — 합산 약 99%"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.6,
           "evidence": [
-            "액티브 명시 없음, 'DeepSearch 원자력 TOP 10지수'를 추종하는 명칭 구조"
+            "benchmarkName=DeepSearch 원자력 TOP 10지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
@@ -1000,7 +1044,7 @@
         "dividend"
       ],
       "notes": [
-        "distributionSchedule 정보 없음, 배당 관련 근거 부재"
+        "운용사/분배일정 정보 없음"
       ]
     },
     {
@@ -1009,17 +1053,17 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, holdings 전량 국내 상장 주식"
+            "구성종목이 모두 소프트웨어/IT/게임 관련 상장 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전량 6자리 KRX 종목코드, 해외 지역 신호 부재"
+            "구성종목 전부 국내기업"
           ]
         },
         {
@@ -1027,24 +1071,26 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
+            "펀드명=TIGER 소프트웨어",
             "benchmarkName=FnGuide 소프트웨어 지수",
-            "NAVER·카카오·삼성에스디에스·LG씨엔에스·현대오토에버·포스코DX 등 인터넷/IT서비스 상위비중, 합산 약 69.4%"
+            "홀딩스: NAVER 24.7%, 카카오 19.78%, 삼성에스디에스 12.74%, LG씨엔에스 5.82%, 현대오토에버 4.7%, 포스코DX 1.66% 등 IT서비스/플랫폼 기업 다수"
           ]
         },
         {
           "tagId": "sector.game_entertainment_media",
-          "score": 0.68,
+          "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "크래프톤·NC·펄어비스·넷마블 등 게임기업 4종 합산비중 약 23.2%"
+            "홀딩스: 크래프톤 11.43%, NC 7.44%, 펄어비스 2.31%, 넷마블 2.05% — 합산 약 23.2%"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.6,
           "evidence": [
-            "액티브 명시 없음, 'FnGuide 소프트웨어 지수'를 추종하는 명칭 구조"
+            "benchmarkName=FnGuide 소프트웨어 지수 추종",
+            "액티브 신호 없음"
           ]
         }
       ],
@@ -1053,7 +1099,7 @@
         "dividend"
       ],
       "notes": [
-        "distributionSchedule 정보 없음, 배당 관련 근거 부재"
+        "운용사/분배일정 정보 없음"
       ]
     },
     {
@@ -1062,18 +1108,19 @@
         {
           "tagId": "asset.bond",
           "score": 0.9,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "evidence": [
             "rawTypeText=국내채권형, 일반",
-            "benchmarkName에 '크레딧 채권 총수익지수' 명시"
+            "benchmarkName=KAP 26-12 크레딧 채권 총수익지수(AA-이상)"
           ]
         },
         {
           "tagId": "asset.bond.corporate",
           "score": 0.85,
-          "confidence": 0.75,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName='KAP 26-12 크레딧 채권 총수익지수(AA-이상)'로 신용등급 AA-이상 크레딧 채권 명시"
+            "펀드명에 '회사채(AA-이상)' 명시",
+            "benchmarkName에 '크레딧 채권' 및 신용등급(AA-이상) 명시"
           ]
         },
         {
@@ -1081,23 +1128,24 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "펀드명 'HK 26-12 회사채(AA-이상)액티브' 및 benchmarkName에 연-월 표기 '26-12' 명시"
+            "펀드명에 연-월 표기 '26-12' 명시",
+            "benchmarkName에 '26-12' 명시"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.8,
           "evidence": [
             "rawTypeText=국내채권형, 일반"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시",
+            "펀드명=HK 26-12 회사채(AA-이상)액티브",
             "nameHints=name_contains=액티브"
           ]
         }
@@ -1108,8 +1156,8 @@
         "dividend"
       ],
       "notes": [
-        "채권형 상품으로 sector 태그 해당사항 없음 및 구성종목 데이터 부재",
-        "distributionSchedule이 '회계기간 종료일'로 월배당 등 정형 배당 패턴과 불일치, 배당 관련 태그 근거 부족"
+        "채권형 상품으로 구성종목/산업 비중 데이터가 없어 섹터 판단 불가",
+        "distributionSchedule=회계기간 종료일로, 월배당 여부를 명확히 판단하기 어려움"
       ]
     }
   ]

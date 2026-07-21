@@ -1,33 +1,33 @@
 {
   "batchNumber": 19,
   "status": "success",
-  "startedAt": "2026-07-20T04:37:38.865Z",
-  "completedAt": "2026-07-20T04:40:39.644Z",
+  "startedAt": "2026-07-21T03:49:55.859Z",
+  "completedAt": "2026-07-21T03:52:45.942Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13246,
-      "outputTokens": 27,
+      "inputTokens": 13549,
+      "outputTokens": 24,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013381,
+      "costUSD": 0.013669,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 17476,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 20735,
+      "outputTokens": 17795,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 27076,
       "webSearchRequests": 0,
-      "costUSD": 0.3896858999999999,
+      "costUSD": 0.43083269999999996,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 178509,
-  "promptHash": "292143f712934cca3e44f047cb000ece574fbcf47da6342a33a576b36700555e",
+  "durationMs": 166031,
+  "promptHash": "417cb99488e9653cccec4870709dbc2edd5315c16eae6213fd79361c2cd65df6",
   "inputEtfCodes": [
     "0115E0",
     "0120J0",
@@ -671,46 +671,47 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.75,
           "evidence": [
-            "보유 종목 전부 국내 주식(NAVER, SK텔레콤 등), 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.95,
+          "confidence": 0.8,
           "evidence": [
-            "기초지수명 'KRX 코리아 소버린 AI 지수', 보유종목 전부 국내 상장사"
+            "KRX 코리아 소버린 AI 지수 추종",
+            "전 종목이 국내 상장기업(NAVER, SK텔레콤 등)"
           ]
         },
         {
           "tagId": "sector.it",
-          "score": 0.7,
-          "confidence": 0.55,
+          "score": 0.72,
+          "confidence": 0.6,
           "evidence": [
-            "NAVER 22.67%, NHN 6.1%, LG씨엔에스 5.97%, 한글과컴퓨터 4.63%, 삼성에스디에스 3.44% 등 소프트웨어/IT서비스 상위 비중 다수"
+            "NAVER+NHN+LG씨엔에스+한글과컴퓨터+삼성에스디에스 소프트웨어/IT서비스 합산 약 42.8%",
+            "SK텔레콤+LG유플러스 통신 합산 약 12.1%"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "명시적 액티브/레버리지/인버스 신호 없음, 지수(KRX 소버린 AI 지수) 추종형"
+            "KRX 코리아 소버린 AI 지수를 추종, 액티브 운용 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.tech_general",
         "sector.semiconductor"
       ],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "보유종목이 IT서비스/소프트웨어 위주지만 SK하이닉스·삼성전자 비중이 낮아 반도체 태그는 후보로만 처리"
+        "SK하이닉스+삼성전자 비중 약 8.6%로 반도체 단독 테마로 보기엔 부족해 후보로만 표기"
       ]
     },
     {
@@ -718,34 +719,27 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.75,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.75,
           "evidence": [
-            "FnGuide 카카오그룹 포커스 지수, 보유종목 전부 국내 상장사"
+            "전 종목이 국내 상장기업(카카오뱅크, 카카오 등)"
           ]
         },
         {
           "tagId": "strategy.large_conglomerate_group",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.9,
+          "confidence": 0.8,
           "evidence": [
-            "카카오뱅크+카카오+카카오페이+에스엠+카카오게임즈+디어유+SM C&C 합산 비중 약 85.8%, 펀드명에 '카카오그룹' 명시"
-          ]
-        },
-        {
-          "tagId": "sector.game_entertainment_media",
-          "score": 0.7,
-          "confidence": 0.55,
-          "evidence": [
-            "에스엠 14.36%+카카오게임즈 5.84%+디어유 4.29%+SM C&C 1.09%+크래프톤 0.96% 등 엔터/게임 비중 합산 약 26.6%"
+            "펀드명 'BNK 카카오그룹포커스'",
+            "카카오 계열사(카카오뱅크·카카오·카카오페이·카카오게임즈·디어유·에스엠·SM C&C) 합산 비중 약 85.8%"
           ]
         },
         {
@@ -753,18 +747,19 @@
           "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "명시적 액티브/레버리지/인버스 신호 없음, 지수 추종형"
+            "FnGuide 카카오그룹 포커스 지수 추종"
           ]
         }
       ],
       "candidateTagIds": [
+        "sector.game_entertainment_media",
         "sector.financials"
       ],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "카카오뱅크+KB금융 합산 32.1%로 금융 섹터 비중도 있으나 그룹주 테마가 우선이라 후보로만 처리"
+        "엔터(에스엠·디어유·카카오게임즈·SM C&C ≈25.6%)와 금융(카카오뱅크+KB금융 ≈32.1%)이 혼재되어 단일 섹터 확정 대신 후보로 표기"
       ]
     },
     {
@@ -772,34 +767,35 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.75,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
-          "evidence": [
-            "Akros 주주환원 고배당 지수, 보유종목 전부 국내 상장사"
-          ]
-        },
-        {
-          "tagId": "dividend.korea_high_dividend",
-          "score": 0.85,
+          "score": 0.9,
           "confidence": 0.75,
           "evidence": [
-            "기초지수명 '주주환원 고배당 지수', 금융/통신/담배 등 전통 고배당 업종 상위 구성"
+            "전 종목이 국내 상장기업"
           ]
         },
         {
           "tagId": "sector.financials",
-          "score": 0.65,
-          "confidence": 0.5,
+          "score": 0.68,
+          "confidence": 0.55,
           "evidence": [
-            "KB금융 8.42%+하나금융지주 8.32%+신한지주 7.84%+우리금융지주 7.76%+JB금융지주 6.76%+BNK금융지주 4.27% 합산 약 43.4%"
+            "KB금융·하나금융지주·신한지주·우리금융지주·JB금융지주·BNK금융지주 합산 비중 약 43.4%"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "펀드명에 '고배당주' 명시",
+            "Akros 주주환원 고배당 지수(Price Return) 추종"
           ]
         },
         {
@@ -807,7 +803,7 @@
           "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "명시적 액티브 신호 없음, 'Price Return' 지수 추종형"
+            "Akros 지수를 추종, 액티브 신호 없음"
           ]
         }
       ],
@@ -820,26 +816,27 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.85,
+          "confidence": 0.7,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.85,
+          "confidence": 0.7,
           "evidence": [
-            "KEDI 현대차고정피지컬AI 지수, 보유종목 전부 국내 상장사"
+            "전 종목이 국내 상장기업"
           ]
         },
         {
           "tagId": "sector.robotics",
-          "score": 0.7,
-          "confidence": 0.6,
+          "score": 0.68,
+          "confidence": 0.55,
           "evidence": [
-            "펀드/지수명에 '피지컬AI' 명시, 레인보우로보틱스 6.16%+두산로보틱스 3.14%+로보티즈 2.31% 로봇 관련주 포함"
+            "펀드명 '현대차고정피지컬AI'에 피지컬AI(로봇) 명시",
+            "레인보우로보틱스+두산로보틱스+로보티즈 로봇 전문기업 합산 비중 약 11.6%"
           ]
         },
         {
@@ -847,19 +844,20 @@
           "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "명시적 액티브/레버리지/인버스 신호 없음, 지수 추종형"
+            "KEDI 현대차고정피지컬AI 지수를 추종"
           ]
         }
       ],
       "candidateTagIds": [
-        "strategy.large_conglomerate_group",
-        "sector.autonomous_mobility"
+        "sector.autonomous_mobility",
+        "strategy.large_conglomerate_group"
       ],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "현대차+현대모비스+기아+현대오토에버 합산 약 64.3%로 그룹주 임계치(80%) 미달, 완성차 비중이 높아 자율주행 모빌리티도 후보로만 처리"
+        "현대차그룹 계열(현대차·현대모비스·기아·현대오토에버) 합산 약 64.3%로 그룹주 80% 기준에 미달, 로보틱스社 다수가 비계열이라 후보로만 표기",
+        "완성차 비중이 높으나 자율주행 기술 익스포저 근거는 약해 autonomous_mobility는 후보로만 표기"
       ]
     },
     {
@@ -870,31 +868,32 @@
           "score": 0.9,
           "confidence": 0.8,
           "evidence": [
-            "rawTypeText '해외혼합형', 기초지수명이 미국 배당주+KRW 채권 50:50 구조를 명시"
+            "rawTypeText='해외혼합형'",
+            "펀드명 '채권혼합50', 벤치마크가 배당주+채권 50:50 혼합지수"
           ]
         },
         {
           "tagId": "region.us",
-          "score": 0.75,
-          "confidence": 0.65,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "기초지수명 'Bloomberg WisdomTree U.S. Quality Dividend...', rawTypeText '해외혼합형'"
+            "벤치마크명에 'U.S. Quality Dividend' 명시"
           ]
         },
         {
           "tagId": "dividend.monthly",
           "score": 0.9,
-          "confidence": 0.8,
+          "confidence": 0.85,
           "evidence": [
-            "distributionSchedule '매월의 마지막 영업일'"
+            "분배 기준일 '매월의 마지막 영업일' 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.6,
+          "confidence": 0.5,
           "evidence": [
-            "명시적 액티브 신호 없음, TR Index 추종형"
+            "Bloomberg WisdomTree 지수를 추종, 액티브 신호 없음"
           ]
         }
       ],
@@ -905,7 +904,8 @@
         "sector"
       ],
       "notes": [
-        "구성종목 데이터가 없어 배당성장 여부는 'Quality Dividend' 명칭만으로 단정하지 않고 후보로 남김"
+        "구성종목 데이터가 없어 섹터 판단 불가",
+        "'Quality Dividend' 지수이나 연속 배당 증액 요건 명시가 없어 dividend_growth는 후보로만 표기"
       ]
     },
     {
@@ -913,46 +913,59 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.75,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.8,
           "evidence": [
-            "'코스피 200 가치저변동성' 지수, 보유종목 전부 국내 상장사"
+            "벤치마크명에 '코스피 200' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "벤치마크명 '코스피 200 가치저변동성'에 코스피 200 명시"
           ]
         },
         {
           "tagId": "strategy.value",
-          "score": 0.75,
-          "confidence": 0.65,
+          "score": 0.72,
+          "confidence": 0.6,
           "evidence": [
-            "기초지수명에 '가치' 명시"
+            "펀드명·벤치마크명에 '가치' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.low_volatility",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "펀드명·벤치마크명에 '저변동성' 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "명시적 액티브 신호 없음, 지수 추종형"
+            "코스피 200 가치저변동성 지수를 추종"
           ]
         }
       ],
       "candidateTagIds": [
-        "strategy.low_volatility",
-        "strategy.benchmark.kospi200"
+        "sector.financials"
       ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "삼성전자 비중 23.23%로 개별종목 집중도가 높아 '저변동성' 방법론 근거가 약해 후보로만 처리"
+        "금융(14.2%)·자동차(9.6%)·전자(23.2%) 등 분산되어 단일 섹터 확정 대신 후보로만 표기"
       ]
     },
     {
@@ -960,26 +973,26 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.85,
+          "confidence": 0.7,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.85,
+          "confidence": 0.7,
           "evidence": [
-            "'코리아 밸류업 위클리 커버드콜 30% 지수', 보유종목 전부 국내 상장사"
+            "전 종목이 국내 상장기업"
           ]
         },
         {
-          "tagId": "dividend.covered_call",
-          "score": 0.9,
-          "confidence": 0.8,
+          "tagId": "sector.semiconductor",
+          "score": 0.66,
+          "confidence": 0.55,
           "evidence": [
-            "nameHint 'name_contains=커버드콜', 기초지수명에 '커버드콜' 명시"
+            "SK하이닉스+삼성전자+SK스퀘어 반도체 관련 합산 비중 약 42.6%"
           ]
         },
         {
@@ -987,23 +1000,24 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
-            "기초지수명에 '밸류업' 명시"
-          ]
-        },
-        {
-          "tagId": "sector.semiconductor",
-          "score": 0.7,
-          "confidence": 0.6,
-          "evidence": [
-            "SK하이닉스 19.23%+삼성전자 15.1%+SK스퀘어 8.24% 합산 약 42.6%"
+            "벤치마크명 '코리아 밸류업 위클리 커버드콜 30% 지수'에 밸류업 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.6,
-          "confidence": 0.5,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "명시적 액티브 신호 없음, 룰기반 위클리 커버드콜 지수 추종형"
+            "위클리 커버드콜 지수 산식 기반, 재량적 종목선정 신호 없음"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "nameHints에 name_contains=커버드콜",
+            "벤치마크명에 '위클리 커버드콜 30%' 명시"
           ]
         }
       ],
@@ -1016,34 +1030,35 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.75,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.8,
           "evidence": [
-            "FnGuide 한화그룹주 지수, 보유종목 전부 국내 상장사"
+            "전 종목이 국내 상장기업"
           ]
         },
         {
           "tagId": "strategy.large_conglomerate_group",
           "score": 0.95,
-          "confidence": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "보유 상위 10종목 전부 한화 계열사, 합산 비중 약 99.1%, 펀드명에 '한화그룹주' 명시"
+            "펀드명 'PLUS 한화그룹주'",
+            "한화 계열사(한화에어로스페이스·한화오션·한화시스템·한화솔루션 등) 합산 비중 약 99.1%"
           ]
         },
         {
           "tagId": "sector.aerospace_defense",
-          "score": 0.75,
-          "confidence": 0.65,
+          "score": 0.72,
+          "confidence": 0.6,
           "evidence": [
-            "한화에어로스페이스 21.74%+한화시스템 15.77% 등 방산 계열사 비중 높음"
+            "한화에어로스페이스+한화시스템 방산 관련 합산 비중 약 37.5%"
           ]
         },
         {
@@ -1051,7 +1066,7 @@
           "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "명시적 액티브 신호 없음, FnGuide 지수 추종형"
+            "FnGuide 한화그룹주 지수를 추종"
           ]
         }
       ],
@@ -1062,7 +1077,7 @@
         "dividend"
       ],
       "notes": [
-        "한화오션+한화엔진 합산 약 26.2%로 조선 섹터 임계치(70%) 미달, 후보로만 처리"
+        "한화오션+한화엔진 조선 관련 합산 약 26.2%로 70% 기준에는 못 미쳐 후보로만 표기"
       ]
     },
     {
@@ -1070,18 +1085,18 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.78,
           "evidence": [
-            "보유종목 전부 국내 주식, 채권/원자재 신호 없음"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 전 종목이 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.9,
+          "confidence": 0.78,
           "evidence": [
-            "KRX-Akros AI 전력인프라 지수, 보유종목 전부 국내 상장사"
+            "전 종목이 국내 상장기업"
           ]
         },
         {
@@ -1089,15 +1104,16 @@
           "score": 0.85,
           "confidence": 0.75,
           "evidence": [
-            "기초지수명에 'AI 전력인프라' 명시, 가온전선/LS ELECTRIC/HD현대일렉트릭 등 전력설비·전선 기업 상위 구성"
+            "펀드명·벤치마크명(KRX-Akros AI 전력인프라 지수)에 'AI 전력인프라' 명시",
+            "가온전선·LS ELECTRIC·산일전기·효성중공업 등 전력설비/전선 기업이 상위 구성"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "명시적 액티브 신호 없음, 지수 추종형"
+            "KRX-Akros AI 전력인프라 지수를 추종"
           ]
         }
       ],
@@ -1112,43 +1128,45 @@
       "selectedClassifications": [
         {
           "tagId": "asset.bond",
-          "score": 0.9,
-          "confidence": 0.8,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "펀드명 '국채선물3년', 기초지수명 '국채선물지수'"
+            "펀드명 'PLUS 국채선물3년', 벤치마크 '국채선물지수'"
           ]
         },
         {
           "tagId": "asset.bond.government",
-          "score": 0.9,
-          "confidence": 0.8,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "펀드명/기초지수명에 '국채' 명시"
+            "펀드명·벤치마크에 '국채' 명시"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.85,
+          "score": 0.85,
+          "confidence": 0.7,
           "evidence": [
-            "국채선물지수는 국내 국채선물 기초, 보유종목 'PLUS KOFR금리'도 국내 상품"
+            "국내 3년 국채선물지수를 추종"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "명시적 액티브/레버리지/인버스 신호 없음, 국채선물지수 추종형"
+            "국채선물지수를 추종, 재량 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [],
       "insufficientFacets": [
+        "sector",
         "dividend"
       ],
       "notes": [
-        "구성종목이 'PLUS KOFR금리' 소액 보유만 확인되어 섹터 facet은 해당 없음으로 처리(미기재)"
+        "채권 파생(선물) 상품으로 섹터 해당 없음, 분배 관련 근거 없음",
+        "PLUS KOFR금리 보유비중 0.93%는 단순 현금성 유동성 관리분으로 판단, money_market 태그는 미부여"
       ]
     }
   ]

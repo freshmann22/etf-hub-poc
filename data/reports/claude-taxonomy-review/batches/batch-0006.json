@@ -1,33 +1,33 @@
 {
   "batchNumber": 6,
   "status": "success",
-  "startedAt": "2026-07-20T04:26:57.959Z",
-  "completedAt": "2026-07-20T04:29:21.268Z",
+  "startedAt": "2026-07-21T03:20:21.100Z",
+  "completedAt": "2026-07-21T03:23:34.004Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13494,
-      "outputTokens": 27,
+      "inputTokens": 13797,
+      "outputTokens": 25,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013629,
+      "costUSD": 0.013922,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 14478,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 21060,
+      "outputTokens": 20633,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 27111,
       "webSearchRequests": 0,
-      "costUSD": 0.34666589999999997,
+      "costUSD": 0.4736127,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 140949,
-  "promptHash": "1c2221b04d74d07717c985428b22604cf5175e9995df0904d20bab146dadaa2f",
+  "durationMs": 190150,
+  "promptHash": "9b57b643a9bf32ac571823644074dd2833520a372570847fa141797cbfc546de",
   "inputEtfCodes": [
     "385710",
     "385720",
@@ -781,8 +781,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 10개 전부 국내 주식(006400, 196170, 373220 등)",
-            "채권/원자재/리츠/혼합 신호 부재"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -790,24 +789,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=KRX BBIG 지수",
-            "전 종목이 KR 상장 종목 코드"
-          ]
-        },
-        {
-          "tagId": "sector.ev_battery",
-          "score": 0.7,
-          "confidence": 0.6,
-          "evidence": [
-            "삼성SDI 10.98%+LG에너지솔루션 9.35%=20.33% 배터리 밸류체인 비중"
-          ]
-        },
-        {
-          "tagId": "sector.healthcare_bio_pharma",
-          "score": 0.68,
-          "confidence": 0.58,
-          "evidence": [
-            "알테오젠 10.24%+삼성바이오로직스 5.17%+셀트리온 4.03%=19.44% 바이오 비중"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'KRX BBIG 지수'"
           ]
         },
         {
@@ -815,7 +798,23 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "삼성SDI 10.98%+LG에너지솔루션 9.35%=20.33% 배터리 비중"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "알테오젠 10.24%+삼성바이오로직스 5.17%+셀트리온 4.03%=19.44% 바이오 비중"
           ]
         }
       ],
@@ -826,8 +825,8 @@
         "dividend"
       ],
       "notes": [
-        "KRX BBIG 지수 특성상 배터리·바이오 비중이 고르게 분산되어 있으나 인터넷/게임 관련 종목 근거는 부족함",
-        "SK하이닉스+피에스케이 반도체 비중은 10.23%로 임계치 미만이라 후보로만 표시"
+        "벤치마크 'KRX BBIG 지수'명과 부합하는 배터리·바이오 비중을 확인, 반도체(SK하이닉스+삼성전자+피에스케이 14.96%)는 상대적으로 비중이 낮아 후보로만 고려",
+        "운용사/상품설명/분배일정 결측"
       ]
     },
     {
@@ -838,7 +837,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -846,8 +845,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=코스피",
-            "전 종목 KR 상장"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 '코스피'"
           ]
         },
         {
@@ -855,20 +854,25 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.55,
+          "evidence": [
+            "SK하이닉스 24.23%+삼성전자 21.67%=45.9%로 반도체 비중이 매우 높음"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor",
-        "strategy.benchmark.kospi200"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "SK하이닉스 24.23%+삼성전자 21.67%=45.9%로 반도체 비중이 크지만 벤치마크가 코스피(광범위 지수)이고 나머지 보유종목이 식품/금융/뷰티/그룹주 등으로 분산되어 있어 테마펀드로 단정하기 어려움 — 후보로만 표시",
-        "benchmarkName이 '코스피'로만 표기되어 코스피200과 정확히 일치하지 않음"
+        "벤치마크명이 '코스피'로만 명시되어 코스피200 전용 벤치마크 태그는 보류",
+        "나머지 보유종목(식품·금융·뷰티·2차전지·지주사·유통)은 분산되어 있어 추가 섹터 태그 없음"
       ]
     },
     {
@@ -879,7 +883,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -887,24 +891,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=FnGuide 퓨처모빌리티 지수",
-            "전 종목 KR 상장"
-          ]
-        },
-        {
-          "tagId": "sector.autonomous_mobility",
-          "score": 0.85,
-          "confidence": 0.7,
-          "evidence": [
-            "현대모비스 8.85%+현대오토에버 5.96%+로보티즈 5.79%+현대글로비스 5.62%+현대차 6.04%=32.26% 모빌리티 밸류체인 비중"
-          ]
-        },
-        {
-          "tagId": "sector.ev_battery",
-          "score": 0.68,
-          "confidence": 0.58,
-          "evidence": [
-            "삼성SDI 8.38%+LG에너지솔루션 7.45%+엘앤에프 3.22%=19.05% 배터리 비중"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'FnGuide 퓨처모빌리티 지수'"
           ]
         },
         {
@@ -912,7 +900,24 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.autonomous_mobility",
+          "score": 0.9,
+          "confidence": 0.8,
+          "evidence": [
+            "벤치마크명 'FnGuide 퓨처모빌리티 지수' 명시",
+            "현대모비스+현대차+현대오토에버+로보티즈+현대글로비스=32.26%"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "삼성SDI+LG에너지솔루션+엘앤에프=19.05% 배터리 밸류체인"
           ]
         }
       ],
@@ -930,7 +935,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -938,17 +943,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=iSelect 비메모리반도체 지수",
-            "전 종목 KR 상장"
-          ]
-        },
-        {
-          "tagId": "sector.semiconductor",
-          "score": 0.95,
-          "confidence": 0.85,
-          "evidence": [
-            "삼성전자 24.72%+SK하이닉스 17.21%+심텍/브이엠/피에스케이/삼성전기/원익QnC/대덕전자/네패스아크/리노공업 등 반도체 공급망 상위10 합산 약 82.9%",
-            "benchmarkName에 비메모리반도체 명시"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'iSelect 비메모리반도체 지수'"
           ]
         },
         {
@@ -956,7 +952,16 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "벤치마크명 'iSelect 비메모리반도체 지수' 명시",
+            "삼성전자·SK하이닉스·심텍·브이엠·피에스케이·원익QnC·대덕전자·네패스아크·리노공업 등 반도체 밸류체인 전종목"
           ]
         }
       ],
@@ -974,7 +979,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -982,8 +987,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=코스피 200",
-            "전 종목 KR 상장"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 '코스피 200'"
           ]
         },
         {
@@ -991,20 +996,32 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "벤치마크명 '코스피 200' 명시"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.72,
+          "confidence": 0.58,
+          "evidence": [
+            "삼성전자 25.92%+SK하이닉스 21.6%+삼성전기 8%=55.52% 반도체 비중"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor",
-        "strategy.benchmark.kospi200"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "삼성전자+SK하이닉스+삼성전기 합산 55.5%로 반도체 비중이 높으나 '베스트일레븐'이라는 이름과 삼성물산/SK스퀘어/한화솔루션/한국전력 등 이질적 그룹 혼합 보유로 볼 때 반도체 테마펀드가 아닌 집중 종목선정형 액티브펀드로 판단 — 후보로만 표시",
-        "벤치마크가 코스피200이나 액티브 운용(집중 11종목)이라 '그대로 추종'이라는 태그 정의와 상충하여 후보로만 표시"
+        "펀드명 '베스트일레븐'은 특정 섹터 테마명이 아니나 보유종목 구성상 반도체 비중이 과반"
       ]
     },
     {
@@ -1015,7 +1032,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -1023,8 +1040,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=FnGuide 한화 ESG 가치 지수",
-            "전 종목 KR 상장"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'FnGuide 한화 ESG 가치 지수'"
           ]
         },
         {
@@ -1032,35 +1049,40 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
-          ]
-        },
-        {
-          "tagId": "strategy.esg_screening",
-          "score": 0.8,
-          "confidence": 0.7,
-          "evidence": [
-            "benchmarkName에 ESG 명시"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "strategy.value",
-          "score": 0.75,
-          "confidence": 0.65,
+          "score": 0.8,
+          "confidence": 0.7,
           "evidence": [
-            "펀드명에 '가치주' 명시",
-            "benchmarkName에 '가치' 명시"
+            "펀드명 'ESG가치주액티브' 및 벤치마크명 'FnGuide 한화 ESG 가치 지수'에 '가치' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.esg_screening",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "벤치마크명에 'ESG' 명시"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.55,
+          "evidence": [
+            "삼성전자 24.95%+SK하이닉스 20.09%=45.04% 반도체 비중"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "삼성전자 24.95%+SK하이닉스 20.09%=45%로 반도체 비중이 높으나 ESG 가치 팩터 지수 설계로 특정 섹터 테마로 보기 어려워 후보로만 표시"
+        "보유 상위종목이 삼성전자·SK하이닉스 등 KOSPI 대형주와 거의 동일해 ESG 스크리닝 효과는 제한적일 수 있어 신뢰도를 낮게 반영"
       ]
     },
     {
@@ -1071,7 +1093,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -1079,8 +1101,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=FnGuide 한화 ESG 성장 지수",
-            "전 종목 KR 상장"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'FnGuide 한화 ESG 성장 지수'"
           ]
         },
         {
@@ -1088,35 +1110,40 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
-          ]
-        },
-        {
-          "tagId": "strategy.esg_screening",
-          "score": 0.8,
-          "confidence": 0.7,
-          "evidence": [
-            "benchmarkName에 ESG 명시"
+            "nameHints: name_contains=액티브"
           ]
         },
         {
           "tagId": "strategy.growth",
-          "score": 0.75,
-          "confidence": 0.65,
+          "score": 0.8,
+          "confidence": 0.7,
           "evidence": [
-            "펀드명에 '성장주' 명시",
-            "benchmarkName에 '성장' 명시"
+            "펀드명 'ESG성장주액티브' 및 벤치마크명 'FnGuide 한화 ESG 성장 지수'에 '성장' 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.esg_screening",
+          "score": 0.6,
+          "confidence": 0.5,
+          "evidence": [
+            "벤치마크명에 'ESG' 명시"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.72,
+          "confidence": 0.56,
+          "evidence": [
+            "삼성전자 26.33%+SK하이닉스 15.74%+삼성전기 4.03%=46.1% 반도체 비중"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "삼성전자 26.33%+SK하이닉스 15.74%=42.07%로 반도체 비중이 높으나 ESG 성장 팩터 지수 설계로 특정 섹터 테마로 보기 어려워 후보로만 표시"
+        "조선(삼성중공업 2.4%)·원자력(두산에너빌리티+한전기술 3.38%)·바이오(알테오젠 2.01%)·뷰티(에이피알 2.45%)는 개별 비중이 낮아 섹터 태그로 채택하지 않음"
       ]
     },
     {
@@ -1127,7 +1154,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -1135,17 +1162,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=FnGuide K-메타버스 지수",
-            "전 종목 KR 상장"
-          ]
-        },
-        {
-          "tagId": "sector.game_entertainment_media",
-          "score": 0.85,
-          "confidence": 0.75,
-          "evidence": [
-            "하이브 7.64%+와이지엔터테인먼트 5.13%+에스엠 5.05%+JYP Ent. 4.92%=22.74% 엔터 비중",
-            "크래프톤 6.7%+NC 6.52%+NHN 5.62%+넷마블 4.54%=23.38% 게임 비중"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'FnGuide K-메타버스 지수'"
           ]
         },
         {
@@ -1153,7 +1171,16 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "벤치마크명 'FnGuide K-메타버스 지수' 명시",
+            "하이브+크래프톤+NC+NHN+와이지엔터테인먼트+에스엠+JYP+넷마블=46.12%"
           ]
         }
       ],
@@ -1171,7 +1198,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -1179,8 +1206,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=코스피",
-            "전 종목 KR 상장"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 '코스피'"
           ]
         },
         {
@@ -1188,18 +1215,24 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.73,
+          "confidence": 0.57,
+          "evidence": [
+            "삼성전자 27.5%+SK하이닉스 22.4%+삼성전기 1.61%=51.51% 반도체 비중"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [
         "dividend"
       ],
       "notes": [
-        "삼성전자 27.5%+SK하이닉스 22.4%=49.9%로 반도체 비중이 높으나 벤치마크가 광범위 코스피이고 나머지 보유종목이 SK스퀘어/현대차/KB금융/삼성생명 등으로 분산되어 있어 테마펀드로 단정하기 어려워 후보로만 표시"
+        "벤치마크명이 '코스피'로만 명시되어 코스피200 전용 벤치마크 태그는 보류"
       ]
     },
     {
@@ -1210,7 +1243,7 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "보유종목 전부 국내 주식"
+            "채권/원자재/리츠/혼합 신호 없음, 보유종목 전량 개별 주식"
           ]
         },
         {
@@ -1218,17 +1251,8 @@
           "score": 1,
           "confidence": 0.85,
           "evidence": [
-            "benchmarkName=KRX 기후변화 솔루션지수",
-            "전 종목 KR 상장"
-          ]
-        },
-        {
-          "tagId": "sector.clean_energy",
-          "score": 0.72,
-          "confidence": 0.6,
-          "evidence": [
-            "한화솔루션 9.45%+두산퓨얼셀 7.41%+씨에스윈드 7.15%+한화 4.57%=28.58% 신재생에너지 밸류체인 비중",
-            "펀드명에 '신재생에너지' 명시"
+            "보유종목 전부 KRX 상장 국내주식",
+            "벤치마크 'KRX 기후변화 솔루션지수'"
           ]
         },
         {
@@ -1236,7 +1260,16 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=액티브"
+            "nameHints: name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.clean_energy",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "펀드명 'K신재생에너지' 및 벤치마크명 'KRX 기후변화 솔루션지수' 명시",
+            "한화솔루션+두산퓨얼셀+씨에스윈드=24.01%(태양광·수소연료전지·풍력)"
           ]
         }
       ],
@@ -1247,7 +1280,7 @@
         "dividend"
       ],
       "notes": [
-        "삼성SDI 8.34% 단독으로는 배터리 테마 임계치에 다소 못 미쳐 후보로만 표시"
+        "삼성SDI 8.34%는 배터리·저장장치로 신재생에너지 밸류체인과 연관되나 단독 태그로 채택하기엔 비중이 낮아 후보로만 고려"
       ]
     }
   ]

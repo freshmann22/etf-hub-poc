@@ -1,33 +1,33 @@
 {
   "batchNumber": 7,
   "status": "success",
-  "startedAt": "2026-07-20T04:31:52.136Z",
-  "completedAt": "2026-07-20T04:35:29.390Z",
+  "startedAt": "2026-07-21T03:23:34.027Z",
+  "completedAt": "2026-07-21T03:26:58.237Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13364,
-      "outputTokens": 25,
+      "inputTokens": 13667,
+      "outputTokens": 26,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013489,
+      "costUSD": 0.013797,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 20706,
-      "cacheReadInputTokens": 31343,
-      "cacheCreationInputTokens": 0,
+      "outputTokens": 21103,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 26980,
       "webSearchRequests": 0,
-      "costUSD": 0.31999589999999994,
+      "costUSD": 0.47987670000000004,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 214136,
-  "promptHash": "90cd6fefe3d48f55567347479ff07f9d351ca073cc8b462f3bbf2448ac468c63",
+  "durationMs": 201377,
+  "promptHash": "627bdb222716058ba7d4f3976c156238c0ab47dd83393873aad8bb06deb1a5c3",
   "inputEtfCodes": [
     "407820",
     "410870",
@@ -727,18 +727,18 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음, 구성종목 전량 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 10종목 전부 6자리 국내 종목코드, 해외 지역 신호 부재"
+            "전 보유종목이 KRX 상장 국내기업(한국금융지주 071050, NAVER 035420, 인바디 041830 등)"
           ]
         },
         {
@@ -746,18 +746,21 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브",
+            "benchmarkName이 'Price Return' 참조지수로 표기됨(액티브 통상 표기)"
           ]
         }
       ],
       "candidateTagIds": [
         "sector.it",
-        "sector.financials",
         "sector.beauty_cosmetics"
       ],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": [
-        "FnGuide 플랫폼 지수 기반이나 구성종목이 지주회사(한국금융지주,SK,SK스퀘어,LS)/플랫폼(NAVER)/뷰티(한국콜마)/유통(현대백화점)/의료기기(인바디)/의류(영원무역)로 넓게 분산되어 단일 섹터 태그를 확정할 근거 부족"
+        "보유종목이 금융지주/IT플랫폼/헬스케어기기/반도체파운드리/유통/화장품ODM 등으로 분산되어 단일 섹터 임계치를 충족하지 못함",
+        "분배 스케줄·이력 데이터 없음"
       ]
     },
     {
@@ -765,37 +768,47 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식, 채권/원자재 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 10종목 전부 국내 종목코드"
+            "전 보유종목 KRX 상장(삼양식품 003230, 휴젤 145020 등)"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.88,
-          "confidence": 0.8,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "펄어비스5.55+NC5.5+하이브5.08+에스엠4.46=20.59% 상위10 합산",
+            "benchmarkName 'FnGuide K-컬처 지수'"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.game_entertainment_media",
         "sector.beauty_cosmetics",
         "sector.consumer_staples_food"
       ],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": [
-        "FnGuide K-컬처 지수: 엔터/게임(NC,하이브,에스엠,펄어비스 합산 약20.6%), 뷰티/에스테틱(휴젤,에이피알,파마리서치 합산 약16.7%), 식품(삼양식품 6.62%), 유통(현대백화점,롯데쇼핑 합산 약9.3%)이 혼재해 단일 섹터가 우세하지 않음"
+        "K-컬처 지수 특성상 게임/엔터·뷰티·식품 등 복합 소비테마로 구성, 게임/엔터가 상대적으로 우세"
       ]
     },
     {
@@ -803,47 +816,67 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식(자체 BBIG ETF 편입 포함)"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드, KRX BBIG 지수 기반"
+            "전 보유종목 KRX 상장, TIGER BBIG(364960) 자체 편입"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 1,
+          "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "nameHints: name_contains=레버리지",
-            "benchmarkName=KRX BBIG 지수"
+            "nameHints=name_contains=레버리지"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.5,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "명칭에 액티브 신호 없음, 레버리지형은 기초지수(KRX BBIG) 일간수익률 배수를 기계적으로 추종"
+            "KRX BBIG 지수를 추종하는 레버리지 구조형 상품, 액티브 신호 없음"
+          ]
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "삼성SDI8.99+LG에너지솔루션7.16+POSCO홀딩스7.14=23.29%"
+          ]
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "알테오젠7.24+셀트리온7.21+삼성바이오로직스6.86=21.31%"
+          ]
+        },
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.68,
+          "confidence": 0.55,
+          "evidence": [
+            "NC9.24+크래프톤8.37+NAVER6.81=24.42%"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.ev_battery",
-        "sector.healthcare_bio_pharma",
-        "sector.game_entertainment_media"
+      "candidateTagIds": [],
+      "insufficientFacets": [
+        "dividend"
       ],
-      "insufficientFacets": [],
       "notes": [
-        "BBIG(배터리·바이오·인터넷·게임) 지수 특성상 삼성SDI+LG에너지솔루션(약16.2%), 알테오젠+셀트리온+삼성바이오로직스(약21.3%), NC+크래프톤(약17.6%)이 고르게 분산되어 단일 섹터 태그 확정 보류",
-        "구성종목에 기초 ETF 'TIGER BBIG'(364960) 자체가 6.83% 포함"
+        "BBIG(배터리·바이오·인터넷·게임) 복합테마 레버리지 상품, 3개 섹터가 20~24%대로 균형 편입"
       ]
     },
     {
@@ -851,83 +884,78 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식(자체 2차전지TOP10 ETF 편입 포함)"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드"
+            "전 보유종목 KRX 상장"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 1,
+          "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "nameHints: name_contains=레버리지",
-            "benchmarkName=KRX 2차전지 TOP 10 지수"
+            "nameHints=name_contains=레버리지"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.5,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "명칭에 액티브 신호 없음, 레버리지형 지수 배수 기계적 추종"
+            "KRX 2차전지 TOP10 지수를 추종하는 레버리지 구조형 상품"
           ]
         },
         {
           "tagId": "sector.ev_battery",
-          "score": 0.95,
+          "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "상위 10종목 전부 2차전지 밸류체인(TIGER 2차전지TOP10,삼성SDI,POSCO홀딩스,LG에너지솔루션,LG화학,SK이노베이션,에코프로,에코프로비엠,포스코퓨처엠,엘앤에프)"
+            "TIGER 2차전지TOP10(23.55%, 기초 1배 ETF)+삼성SDI16.61+POSCO홀딩스15.87+LG에너지솔루션12.73 등 상위10 거의 전량 2차전지 밸류체인"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
-      "notes": []
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "benchmarkName 'KRX 2차전지 TOP 10 지수', 구성종목 거의 전부 배터리 밸류체인"
+      ]
     },
     {
       "etfCode": "413930",
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드"
+            "전 보유종목 KRX 상장(삼성전자 005930, SK하이닉스 000660 등)"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.85,
-          "confidence": 0.8,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
-          ]
-        },
-        {
-          "tagId": "sector.semiconductor",
-          "score": 0.75,
-          "confidence": 0.6,
-          "evidence": [
-            "삼성전자26.65%+SK하이닉스22.3%+SK스퀘어6.45%+삼성전기4.35%≈59.75% 반도체 밸류체인 집중"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
@@ -935,15 +963,25 @@
           "score": 0.55,
           "confidence": 0.48,
           "evidence": [
-            "펀드명 'WON AI ESG액티브', benchmarkName 'MK-iSelect AI ESG 지수'에 ESG 명시"
+            "benchmarkName 'MK-iSelect AI ESG 지수'에 ESG 명시"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "삼성전자26.65+SK하이닉스22.3+삼성전기4.35=53.3% 상위10 합산"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": [
-        "taxonomy에 'AI' 전용 섹터 태그 없음(sector.ai_power_infrastructure는 전력/인프라 한정)이라 상위 반도체 집중도로 대체 판단",
-        "ESG 태그는 positiveSignal(명칭 ESG 명시)은 충족하나 구성종목이 삼성전자·SK하이닉스·KB금융 등 대형주 중심으로 ESG 스크리닝 효과가 낮아 보이는 negativeSignal도 동시 존재 — 낮은 신뢰도로 선정"
+        "펀드명은 'AI'를 표방하나 실제 구성은 삼성전자·SK하이닉스 중심 반도체 집중(negativeSignal 부합)",
+        "상위종목이 대형주 위주라 ESG 스크리닝 실효성은 제한적일 수 있음"
       ]
     },
     {
@@ -951,84 +989,98 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드"
+            "전 보유종목 KRX 상장"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.88,
-          "confidence": 0.8,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
           "tagId": "sector.ev_battery",
-          "score": 0.95,
+          "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "상위 10종목 전부 2차전지 밸류체인(삼성SDI,LG에너지솔루션,엘앤에프,포스코퓨처엠,에코프로비엠,대주전자재료,에코프로,LS,롯데에너지머티리얼즈,SKC)"
+            "삼성SDI15.03+LG에너지솔루션10.18+엘앤에프10.06+포스코퓨처엠9.7+에코프로비엠7.23+대주전자재료6.88+에코프로6.57+롯데에너지머티리얼즈5.38+SKC4.61=75.64% 상위10 합산"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
-      "notes": []
+      "insufficientFacets": [
+        "dividend"
+      ],
+      "notes": [
+        "benchmarkName 'iSelect 2차전지 지수', 구성종목 대부분 2차전지 밸류체인"
+      ]
     },
     {
       "etfCode": "433250",
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드"
+            "전 보유종목 KRX 상장"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.65,
+          "confidence": 0.55,
+          "evidence": [
+            "benchmarkName '코스피 200' 명시"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.8,
-          "confidence": 0.65,
+          "score": 0.68,
+          "confidence": 0.55,
           "evidence": [
-            "SK하이닉스22.81%+삼성전자16.57%+삼성전기3.12%+LG이노텍2.63%≈45.1% 반도체 밸류체인 집중"
+            "SK하이닉스22.81+삼성전자16.57+삼성전기3.12+LG이노텍2.63=45.13% 상위10 합산"
           ]
         }
       ],
       "candidateTagIds": [
         "sector.aerospace_defense"
       ],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": [
-        "benchmarkName은 '코스피 200'이나 상위2종목(SK하이닉스+삼성전자) 합산 비중이 약39%로 실제 코스피200 시가총액 가중 구성과 크게 괴리되어 있어 액티브 운용에 의한 편중으로 판단, strategy.benchmark.kospi200 태그는 미부여",
-        "한화에어로스페이스(5.99%) 단일종목만으로는 방산 섹터 태그 확정 근거 부족"
+        "'R&D' 액티브 펀드이나 벤치마크는 코스피200, 상위종목은 반도체/전자부품 편중",
+        "한화에어로스페이스 5.99%는 단일 비중이 낮아 방산 후보로만 검토"
       ]
     },
     {
@@ -1036,34 +1088,35 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드"
+            "benchmarkName '코스피 중형주', 전 보유종목 국내 상장"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": [
-        "benchmarkName '코스피 중형주' 대응 태그 taxonomy에 없음",
-        "상위 10종목 최대 비중이 삼성전기 4.33%로 매우 분산되어 있어 단일 섹터 태그 근거 없음"
+        "중소형주 분산 액티브 펀드, 상위종목 최대비중 4.33%로 특정 섹터 집중 없음"
       ]
     },
     {
@@ -1071,44 +1124,50 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "rawTypeText=해외주식형, 채권/원자재/리츠/혼합/통화 신호 없음"
+            "rawTypeText '해외주식형'"
           ]
         },
         {
           "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.8,
+          "score": 0.95,
+          "confidence": 0.9,
           "evidence": [
-            "benchmarkName=S&P 500",
-            "rawTypeText=해외주식형",
-            "펀드명에 '미국' 명시"
+            "benchmarkName 'S&P 500'"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.sp500",
+          "score": 0.95,
+          "confidence": 0.9,
+          "evidence": [
+            "benchmarkName 'S&P 500' 명시"
           ]
         },
         {
           "tagId": "dividend.covered_call",
-          "score": 0.95,
+          "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=커버드콜"
+            "nameHints=name_contains=커버드콜"
           ]
         },
         {
           "tagId": "dividend.monthly",
-          "score": 0.9,
+          "score": 0.88,
           "confidence": 0.8,
           "evidence": [
-            "distributionSchedule=매월 마지막 영업일"
+            "distributionSchedule '매월 마지막 영업일'"
           ]
         }
       ],
@@ -1117,8 +1176,8 @@
         "sector"
       ],
       "notes": [
-        "holdings 데이터가 빈 배열로 제공되어 섹터 판단 근거 전무",
-        "benchmarkName이 S&P 500이나 실제 투자대상은 미국 배당주+커버드콜 옵션전략이라 strategy.benchmark.sp500 태그는 미부여"
+        "구성종목 데이터 없음(knownMissingFields에 '구성종목' 명시)으로 섹터 판단 불가",
+        "issuer=삼성자산운용, benchmark/분배스케줄로 나머지 facet은 판단 가능"
       ]
     },
     {
@@ -1126,44 +1185,47 @@
       "selectedClassifications": [
         {
           "tagId": "asset.equity",
-          "score": 0.95,
-          "confidence": 0.7,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음"
+            "보유종목 전부 국내 상장주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.9,
-          "confidence": 0.65,
+          "score": 1,
+          "confidence": 0.85,
           "evidence": [
-            "holdings 전부 국내 종목코드"
+            "전 보유종목 KRX 상장"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.85,
-          "confidence": 0.75,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints: name_contains=액티브"
+            "nameHints=name_contains=액티브"
           ]
         },
         {
-          "tagId": "dividend.korea_high_dividend",
-          "score": 0.68,
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.65,
           "confidence": 0.55,
           "evidence": [
-            "펀드명 'TIME Korea플러스배당액티브'에 배당 명시",
-            "상위 10종목 중 증권/금융지주 5종목(키움증권,메리츠금융지주,NH투자증권,한국금융지주,삼성증권) 합산 약19.5%"
+            "benchmarkName '코스피 200' 명시"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.financials"
+        "sector.financials",
+        "dividend.korea_high_dividend"
       ],
-      "insufficientFacets": [],
+      "insufficientFacets": [
+        "dividend"
+      ],
       "notes": [
-        "benchmarkName '코스피 200'이나 SK하이닉스+삼성전자 합산 비중(약28.7%)이 금융주 비중(약19.5%)보다 높아 순수 배당주 펀드로 단정하긴 어려워 낮은 신뢰도로 선정, strategy.benchmark.kospi200은 액티브 운용 특성상 미부여"
+        "펀드명에 '배당' 포함되나 distributionSchedule/배당수익률 근거 데이터 없어 dividend 태그 보류",
+        "상위종목은 반도체(SK하이닉스15.7+삼성전자12.95)와 증권/금융지주(키움증권4.86+메리츠금융지주3.9+NH투자증권3.89+한국금융지주3.56+삼성증권3.27=19.48%) 혼재"
       ]
     }
   ]

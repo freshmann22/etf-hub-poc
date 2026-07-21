@@ -1,33 +1,33 @@
 {
   "batchNumber": 3,
   "status": "success",
-  "startedAt": "2026-07-20T04:19:51.139Z",
-  "completedAt": "2026-07-20T04:21:40.843Z",
+  "startedAt": "2026-07-21T03:12:15.737Z",
+  "completedAt": "2026-07-21T03:14:37.343Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 12219,
+      "inputTokens": 12522,
       "outputTokens": 27,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.012354,
+      "costUSD": 0.012657,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 11887,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 19487,
+      "outputTokens": 16692,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 25418,
       "webSearchRequests": 0,
-      "costUSD": 0.2983629,
+      "costUSD": 0.40433969999999997,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 107258,
-  "promptHash": "b714e7159f9485feb0eb78efeac5c3d51a8262ecb319f1947c3c6671af610831",
+  "durationMs": 139122,
+  "promptHash": "da5f6e919eb1da24f0e2992024cea303af0f2cef52ce0236a389c683a30116db",
   "inputEtfCodes": [
     "244580",
     "252400",
@@ -415,45 +415,43 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.9,
+          "confidence": 0.8,
           "evidence": [
-            "rawTypeText=국내주식형"
+            "rawTypeText=국내주식형, 시장테마",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.85,
+          "confidence": 0.8,
           "evidence": [
             "rawTypeText=국내주식형",
-            "해외 지역 신호 없음"
+            "holdings 전부 국내 상장 종목코드(파마리서치·삼성바이오로직스·셀트리온 등)"
           ]
         },
         {
           "tagId": "sector.healthcare_bio_pharma",
-          "score": 0.92,
+          "score": 0.9,
           "confidence": 0.85,
           "evidence": [
             "benchmarkName=FnGuide 바이오 지수",
-            "top10 구성종목 전부 제약/바이오 기업(파마리서치·삼성바이오로직스·셀트리온·한올바이오파마 등)"
+            "top10 구성종목 전부 제약·바이오 기업(파마리서치, 삼성바이오로직스, 셀트리온, 한미사이언스, 한올바이오파마, 에스티팜 등)"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "액티브 운용 신호 부재",
-            "FnGuide 바이오 지수를 추종하는 시장테마형 상품"
+            "FnGuide 바이오 지수 추종, 액티브 운용 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "knownMissingFields에 '실제 분배금 이력' 명시되어 배당 관련 태그(고배당/월배당 등) 판단 근거 부족. distributionSchedule은 분기 지급으로 월배당은 배제됨"
+        "분배 일정은 분기(1,4,7,10월 및 회계기간 종료일)로 확인되나 고배당/배당성장 테마 근거가 없어 dividend 태그 미부여"
       ]
     },
     {
@@ -462,36 +460,52 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings 전부 국내 ETF(RISE 200, RISE 200TR, TIGER 200선물레버리지)"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=레버리지",
-            "구성종목이 RISE 200TR·TIGER 200선물레버리지 등 레버리지 계열 상품"
+            "nameHints=name_contains=레버리지",
+            "펀드명 'RISE 200선물레버리지'에 레버리지 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 산식 추종, 재량적 종목선정(액티브) 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재(결측 아님)"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "운용사/분배일정/실제 분배금 이력 모두 결측",
-        "구성종목이 타 ETF(재간접 구조)로만 이루어져 산업 섹터 판단 대상 아님"
+        "광범위 코스피200 선물 레버리지 상품으로 섹터/배당 특화 근거 없음",
+        "issuer·분배 일정 등 메타데이터 결측"
       ]
     },
     {
@@ -500,36 +514,52 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings=RISE 200선물인버스2X(국내 ETF)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스",
-            "2X 표기 없음(1배수 인버스)"
+            "nameHints=name_contains=인버스",
+            "펀드명 'RISE 200선물인버스'에 인버스 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "운용사/분배일정/실제 분배금 이력 결측",
-        "구성종목이 RISE 200선물인버스2X 소량 편입(재간접 구조)"
+        "명칭에 2X 표기 없음(nameHints에 leverage 힌트 부재) — 레버리지 태그는 미부여",
+        "섹터/배당 facet은 광범위 지수형 인버스 상품 특성상 해당 없음"
       ]
     },
     {
@@ -538,25 +568,28 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings 전부 국내 ETF(RISE 200선물인버스, TIGER 200선물인버스2X)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.92,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "펀드명 'RISE 200선물인버스2X'에 인버스 명시"
           ]
         },
         {
@@ -564,17 +597,31 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=leverage=2X(명칭 표기)"
+            "nameHints=leverage=2X(명칭 표기)",
+            "펀드명에 2배 배수 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 2배 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "명칭에 인버스+2X가 함께 표기되어 인버스·레버리지 태그 동시 부여",
-        "운용사/분배일정/실제 분배금 이력 결측"
+        "섹터/배당 facet은 광범위 지수형 레버리지·인버스 상품 특성상 해당 없음"
       ]
     },
     {
@@ -583,25 +630,28 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings=KODEX 인버스(국내 ETF)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.92,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "펀드명 'KODEX 200선물인버스2X'에 인버스 명시"
           ]
         },
         {
@@ -609,17 +659,31 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=leverage=2X(명칭 표기)"
+            "nameHints=leverage=2X(명칭 표기)",
+            "펀드명에 2배 배수 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 2배 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "구성종목에 KODEX 인버스(24.11%) 편입",
-        "운용사/분배일정/실제 분배금 이력 결측"
+        "섹터/배당 facet은 광범위 지수형 레버리지·인버스 상품 특성상 해당 없음"
       ]
     },
     {
@@ -628,25 +692,28 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings=TIGER 인버스(국내 ETF)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.92,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "펀드명 'TIGER 200선물인버스2X'에 인버스 명시"
           ]
         },
         {
@@ -654,17 +721,31 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=leverage=2X(명칭 표기)"
+            "nameHints=leverage=2X(명칭 표기)",
+            "펀드명에 2배 배수 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 2배 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "구성종목에 TIGER 인버스(35.62%) 편입",
-        "운용사/분배일정/실제 분배금 이력 결측"
+        "섹터/배당 facet은 광범위 지수형 레버리지·인버스 상품 특성상 해당 없음"
       ]
     },
     {
@@ -673,36 +754,52 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings 전부 국내 ETF(PLUS 200TR, ACE 레버리지, TIGER 레버리지, KODEX 레버리지)"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=레버리지",
-            "구성종목이 ACE 레버리지·TIGER 레버리지·KODEX 레버리지 등 레버리지 계열 상품"
+            "nameHints=name_contains=레버리지",
+            "펀드명 'PLUS 200선물레버리지'에 레버리지 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "운용사/분배일정/실제 분배금 이력 결측",
-        "구성종목이 타 레버리지 ETF로만 이루어짐(재간접 구조)"
+        "명칭에 2X 표기 없음(nameHints에 leverage=2X 힌트 부재) — 배수 관련 추가 근거 없이 레버리지 단일 태그만 부여",
+        "섹터/배당 facet은 광범위 지수형 레버리지 상품 특성상 해당 없음"
       ]
     },
     {
@@ -711,25 +808,28 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings 전부 국내 ETF(KODEX 200선물인버스2X, TIGER 200선물인버스2X)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.92,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "펀드명 'PLUS 200선물인버스2X'에 인버스 명시"
           ]
         },
         {
@@ -737,17 +837,31 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=leverage=2X(명칭 표기)"
+            "nameHints=leverage=2X(명칭 표기)",
+            "펀드명에 2배 배수 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 2배 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "구성종목에 KODEX 200선물인버스2X·TIGER 200선물인버스2X 편입(재간접 구조)",
-        "운용사/분배일정/실제 분배금 이력 결측"
+        "섹터/배당 facet은 광범위 지수형 레버리지·인버스 상품 특성상 해당 없음"
       ]
     },
     {
@@ -756,25 +870,28 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings 전부 국내 ETF(KODEX 200선물인버스2X, KIWOOM 200선물인버스)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.92,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "펀드명 'KIWOOM 200선물인버스2X'에 인버스 명시"
           ]
         },
         {
@@ -782,17 +899,31 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=leverage=2X(명칭 표기)"
+            "nameHints=leverage=2X(명칭 표기)",
+            "펀드명에 2배 배수 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 2배 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "구성종목에 KODEX 200선물인버스2X·KIWOOM 200선물인버스 편입(재간접 구조)",
-        "운용사/분배일정/실제 분배금 이력 결측"
+        "섹터/배당 facet은 광범위 지수형 레버리지·인버스 상품 특성상 해당 없음"
       ]
     },
     {
@@ -801,36 +932,52 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
-          "score": 0.95,
-          "confidence": 0.85,
+          "score": 1,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings=KODEX 인버스(국내 ETF)"
           ]
         },
         {
           "tagId": "strategy.inverse",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "name_contains=인버스",
-            "2X 표기 없음(1배수 인버스)"
+            "nameHints=name_contains=인버스",
+            "펀드명 'KIWOOM 200선물인버스'에 인버스 명시"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "코스피 200 선물지수 역방향 산식 추종, 액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.85,
+          "confidence": 0.8,
+          "evidence": [
+            "benchmarkName 필드에 '코스피 200 선물지수' 명시적으로 존재"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "구성종목에 KODEX 인버스(6.36%) 편입",
-        "운용사/분배일정/실제 분배금 이력 결측"
+        "명칭에 2X 표기 없음 — 레버리지 태그는 미부여",
+        "섹터/배당 facet은 광범위 지수형 인버스 상품 특성상 해당 없음"
       ]
     }
   ]

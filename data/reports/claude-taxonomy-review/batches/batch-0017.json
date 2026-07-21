@@ -1,33 +1,33 @@
 {
   "batchNumber": 17,
   "status": "success",
-  "startedAt": "2026-07-20T04:31:52.143Z",
-  "completedAt": "2026-07-20T04:34:48.391Z",
+  "startedAt": "2026-07-21T03:44:40.222Z",
+  "completedAt": "2026-07-21T03:47:18.595Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 13193,
-      "outputTokens": 24,
+      "inputTokens": 13496,
+      "outputTokens": 27,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.013313,
+      "costUSD": 0.013630999999999999,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 17928,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 20636,
+      "outputTokens": 16629,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 26919,
       "webSearchRequests": 0,
-      "costUSD": 0.39587189999999994,
+      "costUSD": 0.4124007,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 173347,
-  "promptHash": "d0b3723537cf1d26d0390cf4ee06e66b477f541781898bd3f71aa6103acf406a",
+  "durationMs": 154219,
+  "promptHash": "f3dfeacaa90183b5163927d01282656efb3f8effe53fa5aa05c66423247afa65",
   "inputEtfCodes": [
     "0104P0",
     "0151P0",
@@ -666,59 +666,59 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 배당주"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크명 'KRX 다우존스 코리아 배당 30'",
-            "보유종목 전부 국내 상장사"
+            "KRX 다우존스 코리아 배당 30 지수 기반",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.financials",
           "score": 0.75,
-          "confidence": 0.6,
+          "confidence": 0.65,
           "evidence": [
-            "상위10 중 JB금융지주·하나금융지주·DB손해보험·BNK금융지주·우리금융지주·기업은행·삼성화재 합산 비중 약 71.8%(30.14/42.0)"
-          ]
-        },
-        {
-          "tagId": "dividend.covered_call",
-          "score": 0.92,
-          "confidence": 0.85,
-          "evidence": [
-            "펀드명에 '위클리커버드콜' 명시",
-            "벤치마크명에 '위클리 커버드콜 지수' 명시"
-          ]
-        },
-        {
-          "tagId": "dividend.korea_high_dividend",
-          "score": 0.8,
-          "confidence": 0.7,
-          "evidence": [
-            "벤치마크명 'KRX 다우존스 코리아 배당 30 타겟 7%'",
-            "고배당 은행/보험주 위주 구성"
+            "JB금융지주 4.7%, 하나금융지주 4.53%, DB손해보험 4.37%, BNK금융지주 4.23%, 우리금융지주 4.17%, 기업은행 4.16%, 삼성화재 3.98% 등 금융주가 상위 10종목 비중의 대부분 차지"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.62,
-          "confidence": 0.5,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "명시적 액티브 신호 없음",
-            "특정 커버드콜 지수를 그대로 추종하는 구조"
+            "명칭에 액티브 신호 없음, KRX 다우존스 코리아 배당 30 타겟 7% 위클리 커버드콜 지수라는 사전 산식을 추종"
+          ]
+        },
+        {
+          "tagId": "dividend.covered_call",
+          "score": 0.9,
+          "confidence": 0.85,
+          "evidence": [
+            "benchmarkName에 '커버드콜' 명시",
+            "nameHints=name_contains=커버드콜"
+          ]
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.7,
+          "confidence": 0.6,
+          "evidence": [
+            "기초지수명 'KRX 다우존스 코리아 배당 30' — 국내 고배당 지수",
+            "보유 상위종목이 은행/보험 등 전통적 고배당 업종"
           ]
         }
       ],
-      "candidateTagIds": [],
+      "candidateTagIds": [
+        "dividend.monthly"
+      ],
       "insufficientFacets": [],
       "notes": [
-        "분배 스케줄(scheduleText) 데이터 없어 월배당 여부는 판단 보류",
-        "섹터는 배당지수의 결과적 구성이며 펀드 목적 자체가 금융섹터 테마는 아님을 참고"
+        "운용사·분배 일정·실제 분배금 이력 데이터 없음(knownMissingFields). 위클리 커버드콜이라는 근거는 있으나 월배당 여부는 distributionSchedule 결측으로 확정 불가"
       ]
     },
     {
@@ -729,41 +729,41 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크명 'KAP 코리아전략산업지수'",
-            "보유종목 전부 국내 상장사"
+            "KAP 코리아전략산업지수 기반",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.75,
-          "confidence": 0.62,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "상위10 중 SK하이닉스·테스·브이엠 등 반도체 관련 종목 합산 비중 약 61%(31.0/50.85, 삼성전자 제외 시)"
+            "삼성전자 30.25%+SK하이닉스 19.55%=49.8%, 반도체 장비주 테스 6.02%까지 합산 시 상위 비중 절반 이상이 반도체 밸류체인"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시"
+            "펀드명 및 nameHints에 '액티브' 명시"
           ]
         }
       ],
-      "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
+      "candidateTagIds": [
+        "sector.tech_general"
       ],
+      "insufficientFacets": [],
       "notes": [
-        "분배 관련 데이터(scheduleText, 명칭 힌트) 전무"
+        "운용사·상품설명·업종비중 등 원천 데이터 없음, 보유종목명 기반 판단"
       ]
     },
     {
@@ -774,43 +774,41 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크 '코스닥'",
-            "보유종목 전부 국내 상장사"
+            "기초지수 코스닥",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.8,
-          "confidence": 0.68,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "상위10 중 인텍플러스·테스·주성엔지니어링·피에스케이·심텍·피에스케이홀딩스·기가비스 합산 비중 약 76%(32.42/42.75)"
+            "인텍플러스 8.26%, 테스 8.05%, 주성엔지니어링 4.73%, 피에스케이 3.7%, 심텍 2.72%, 피에스케이홀딩스 2.49%, 기가비스 2.47% 등 반도체 장비/소재주가 상위 10종목 비중의 상당 부분(약 32%p) 차지"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시"
+            "펀드명 및 nameHints에 '액티브' 명시"
           ]
         }
       ],
       "candidateTagIds": [
         "sector.healthcare_bio_pharma"
       ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "알테오젠·파마리서치·엘앤씨바이오 등 바이오 관련 비중 합산 약 22%로 섹터 태그 기준에는 못 미쳐 후보로만 등록"
+        "알테오젠·파마리서치·엘앤씨바이오 등 바이오주 합산 약 9.3%로 sector.healthcare_bio_pharma 기준에는 미달"
       ]
     },
     {
@@ -821,43 +819,41 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크 '코스닥'",
-            "보유종목 전부 국내 상장사"
+            "기초지수 코스닥",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.8,
-          "confidence": 0.68,
+          "score": 0.7,
+          "confidence": 0.6,
           "evidence": [
-            "상위10 중 테스·리노공업·피에스케이홀딩스·심텍·티엘비·코미코·피에스케이 합산 비중 약 76%(32.84/43.03)"
+            "테스 10.02%, 리노공업 6.16%, 피에스케이홀딩스 3.99%, 심텍 3.89%, 티엘비 3.17%, 코미코 2.92%, 피에스케이 2.69% 등 반도체 장비/소재/부품주가 상위 10종목 비중의 상당 부분(약 33%p) 차지"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시"
+            "펀드명 및 nameHints에 '액티브' 명시"
           ]
         }
       ],
       "candidateTagIds": [
         "sector.healthcare_bio_pharma"
       ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "알테오젠·파마리서치 합산 비중 약 16%로 섹터 태그 기준 미달, 후보로만 등록"
+        "알테오젠·파마리서치 합산 약 7%로 sector.healthcare_bio_pharma 기준에는 미달"
       ]
     },
     {
@@ -868,45 +864,42 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목(ETF 1종목 포함) 전부 국내 주식형"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크명 'Akros K제조업 50 지수'",
-            "보유종목 전부 국내 상장사"
+            "Akros K제조업 50 지수 기반",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.68,
-          "confidence": 0.52,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "상위10 중 삼성전자·SK하이닉스·삼성전자우·SK스퀘어 합산 비중 약 59%(58.98/75.71)"
+            "삼성전자 25.39%+SK하이닉스 23.43%+삼성전자우 5.67%+SK스퀘어 4.49% 합산 약 59%로 상위 비중 절반 이상이 반도체 관련"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시"
+            "펀드명 및 nameHints에 '액티브' 명시"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.ev_battery",
-        "sector.shipbuilding"
+        "sector.tech_general"
       ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "벤치마크 자체는 'K제조업 50'으로 반도체 특화가 아닌 제조업 광범위 지수이나, 시총가중 특성상 반도체 대형주 비중이 과반을 차지",
-        "LG에너지솔루션(배터리)·한화오션(조선) 비중은 각 3%대로 낮아 후보로만 등록"
+        "'K제조업핵심기업'이라는 광범위 제조업 테마명이지만 실제 상위 비중은 반도체 대형주에 집중",
+        "한화오션(조선)·LG에너지솔루션(2차전지)·두산에너빌리티(원전) 등은 개별 비중 3% 내외로 별도 섹터 태그 기준 미달"
       ]
     },
     {
@@ -917,43 +910,39 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크 '코스닥'",
-            "보유종목 전부 국내 상장사"
+            "기초지수 코스닥",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.88,
-          "confidence": 0.78,
+          "score": 0.85,
+          "confidence": 0.72,
           "evidence": [
-            "상위10 중 브이엠·테스·인텍플러스·피에스케이·기가비스·엘티씨·심텍·네오티스·티엘비 합산 비중 약 92%(46.34/50.52)"
+            "브이엠 7.76%, 테스 7.5%, 인텍플러스 6.97%, 피에스케이 4.87%, 기가비스 4.81%, 엘티씨 4.49%, 심텍 3.85%, 네오티스 3.39%, 티엘비 2.7% 등 반도체 장비/소재주 합산 약 46%로 상위 10종목의 대다수 차지"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시"
+            "펀드명 및 nameHints에 '액티브' 명시"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.healthcare_bio_pharma"
-      ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
       "notes": [
-        "알테오젠 비중 약 4.18%에 그쳐 바이오 섹터 태그 기준 미달, 후보로만 등록"
+        "보유 상위 10종목 중 사실상 전부가 반도체 장비/소재 밸류체인"
       ]
     },
     {
@@ -964,45 +953,47 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 유일 보유종목이 삼성전자 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 단일 종목(삼성전자) 주식형"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크명 'KRX 삼성전자 지수'",
-            "보유종목 삼성전자(국내 상장)"
+            "KRX 삼성전자 지수 기반",
+            "삼성전자는 국내 상장 종목"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "삼성전자 단일 종목 68.68% 편입, 반도체가 핵심 사업"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 0.97,
-          "confidence": 0.92,
+          "score": 0.95,
+          "confidence": 0.9,
           "evidence": [
-            "펀드명에 '레버리지' 명시",
-            "벤치마크명 'KRX 삼성전자 지수' 기반 단일종목 레버리지 구조"
+            "펀드명 및 nameHints에 '레버리지' 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "명시적 액티브 신호 없음",
-            "특정 지수(KRX 삼성전자 지수)의 배수 추종 구조"
+            "KRX 삼성전자 지수를 배수 추종하는 구조로 운용자 재량적 종목선정 신호 없음"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
       "notes": [
-        "삼성전자 단일종목 레버리지 상품으로 다각화된 반도체 섹터 테마펀드로 보기 어려워 섹터 태그는 후보로만 등록"
+        "보유비중 합계가 68.68%에 그쳐 나머지는 레버리지 구현을 위한 파생상품/현금성 자산으로 추정(직접 근거는 없음)"
       ]
     },
     {
@@ -1013,41 +1004,41 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목 전부 국내 상장주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 보유종목 전부 국내 주식"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크 '코스피'",
-            "보유종목 전부 국내 상장사"
+            "기초지수 코스피",
+            "보유종목 전부 국내 상장 종목"
           ]
         },
         {
           "tagId": "sector.semiconductor",
-          "score": 0.82,
-          "confidence": 0.7,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "상위10 중 삼성전자·SK하이닉스·SK스퀘어·삼성전기 합산 비중 약 81%(61.27/75.27)"
+            "삼성전자 30.28%+SK하이닉스 23.91%+SK스퀘어 4.65%+삼성전기 2.43% 합산 약 61%로 상위 비중 압도적 다수가 반도체 관련"
           ]
         },
         {
           "tagId": "strategy.active",
-          "score": 0.95,
-          "confidence": 0.9,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "펀드명에 '액티브' 명시"
+            "펀드명 및 nameHints에 '액티브' 명시"
           ]
         }
       ],
-      "candidateTagIds": [],
-      "insufficientFacets": [
-        "dividend"
+      "candidateTagIds": [
+        "sector.tech_general"
       ],
+      "insufficientFacets": [],
       "notes": [
-        "벤치마크는 광범위 '코스피'이나 시총가중 특성상 반도체 대형주 비중이 과반 이상"
+        "기초지수가 '코스피'로만 표기되어 코스피200 등 특정 벤치마크 태그는 부여하지 않음(negativeSignal 준수)"
       ]
     },
     {
@@ -1058,46 +1049,48 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 보유종목이 삼성전자 및 타 삼성전자 레버리지 ETF"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 삼성전자 및 동일 테마 레버리지 ETF로 구성"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크명 'KRX 삼성전자 지수'",
-            "보유종목 삼성전자(국내 상장)"
+            "KRX 삼성전자 지수 기반",
+            "보유 자산(삼성전자, RISE/TIGER 삼성전자단일종목레버리지) 전부 국내 상장"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "삼성전자 85.65% 직접 편입 + 동일 종목 추종 레버리지 ETF 2종(RISE 8.33%, TIGER 4.55%)까지 합산 시 약 98.5%가 삼성전자 익스포저"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 0.97,
-          "confidence": 0.92,
+          "score": 0.95,
+          "confidence": 0.9,
           "evidence": [
-            "펀드명에 '레버리지' 명시",
-            "벤치마크명 'KRX 삼성전자 지수' 기반 단일종목 레버리지 구조"
+            "펀드명 및 nameHints에 '레버리지' 명시",
+            "보유자산 자체도 삼성전자 레버리지 ETF 2종으로 구성"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "명시적 액티브 신호 없음",
-            "특정 지수(KRX 삼성전자 지수)의 배수 추종 구조"
+            "KRX 삼성전자 지수를 배수 추종하는 구조로 운용자 재량적 종목선정 신호 없음"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
       "notes": [
-        "삼성전자 85.65%에 더해 RISE·TIGER 삼성전자단일종목레버리지 ETF를 보유하는 특이 구조(레버리지 확대 목적으로 추정)",
-        "단일종목 레버리지 상품으로 섹터 태그는 후보로만 등록"
+        "삼성전자 직접 보유 + 타 삼성전자 레버리지 ETF 재간접 보유 구조"
       ]
     },
     {
@@ -1108,45 +1101,47 @@
           "score": 1,
           "confidence": 0.65,
           "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 부재, 유일 보유종목이 삼성전자 주식"
+            "채권/원자재/리츠/혼합/통화 신호 없음, 단일 종목(삼성전자) 주식형"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.65,
+          "confidence": 0.75,
           "evidence": [
-            "벤치마크명 'KRX 삼성전자 지수'",
-            "보유종목 삼성전자(국내 상장)"
+            "KRX 삼성전자 지수 기반",
+            "삼성전자는 국내 상장 종목"
+          ]
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "삼성전자 단일 종목 90.87% 편입, 반도체가 핵심 사업"
           ]
         },
         {
           "tagId": "strategy.leverage",
-          "score": 0.97,
-          "confidence": 0.92,
+          "score": 0.95,
+          "confidence": 0.9,
           "evidence": [
-            "펀드명에 '레버리지' 명시",
-            "벤치마크명 'KRX 삼성전자 지수' 기반 단일종목 레버리지 구조"
+            "펀드명 및 nameHints에 '레버리지' 명시"
           ]
         },
         {
           "tagId": "strategy.passive_index",
-          "score": 0.65,
-          "confidence": 0.55,
+          "score": 0.75,
+          "confidence": 0.65,
           "evidence": [
-            "명시적 액티브 신호 없음",
-            "특정 지수(KRX 삼성전자 지수)의 배수 추종 구조"
+            "KRX 삼성전자 지수를 배수 추종하는 구조로 운용자 재량적 종목선정 신호 없음"
           ]
         }
       ],
-      "candidateTagIds": [
-        "sector.semiconductor"
-      ],
-      "insufficientFacets": [
-        "dividend"
-      ],
+      "candidateTagIds": [],
+      "insufficientFacets": [],
       "notes": [
-        "삼성전자 단일종목 레버리지 상품으로 다각화된 반도체 섹터 테마펀드로 보기 어려워 섹터 태그는 후보로만 등록"
+        "세 삼성전자 레버리지 ETF(0192M0/0193K0/0193W0) 중 편입비중이 가장 높음"
       ]
     }
   ]

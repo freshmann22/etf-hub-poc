@@ -1,33 +1,33 @@
 {
   "batchNumber": 4,
   "status": "success",
-  "startedAt": "2026-07-20T04:21:40.855Z",
-  "completedAt": "2026-07-20T04:24:21.199Z",
+  "startedAt": "2026-07-21T03:14:37.356Z",
+  "completedAt": "2026-07-21T03:17:18.344Z",
   "modelRequested": "sonnet",
   "modelUsage": {
     "claude-haiku-4-5-20251001": {
-      "inputTokens": 12529,
-      "outputTokens": 24,
+      "inputTokens": 12832,
+      "outputTokens": 27,
       "cacheReadInputTokens": 0,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
-      "costUSD": 0.012649,
+      "costUSD": 0.012967,
       "contextWindow": 200000,
       "maxOutputTokens": 32000
     },
     "claude-sonnet-5": {
       "inputTokens": 1,
-      "outputTokens": 17502,
-      "cacheReadInputTokens": 10443,
-      "cacheCreationInputTokens": 19866,
+      "outputTokens": 17574,
+      "cacheReadInputTokens": 4829,
+      "cacheCreationInputTokens": 25826,
       "webSearchRequests": 0,
-      "costUSD": 0.3848619,
+      "costUSD": 0.42001770000000005,
       "contextWindow": 1000000,
       "maxOutputTokens": 64000
     }
   },
-  "durationMs": 158043,
-  "promptHash": "410a310be71bd52c7ccb05764dc8e0e578482f4b07fe622c625eb104c9d6c42d",
+  "durationMs": 155318,
+  "promptHash": "d760c091504dd69ae17abafecbb1f9d4aecccd12f483e4d1aa52dec7e96324d3",
   "inputEtfCodes": [
     "253250",
     "261110",
@@ -488,15 +488,18 @@
           "score": 1,
           "confidence": 0.7,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수 — 채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수(주식지수 선물)",
+            "holdings에 KIWOOM 200(국내 주식형 ETF) 19.76% 포함",
+            "채권/원자재/리츠/혼합/통화 신호 없음"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수(국내 지수), 해외 지역 신호 부재"
+            "benchmarkName에 '코스피 200' 명시",
+            "holdings KIWOOM 200(국내 지수) 19.76%"
           ]
         },
         {
@@ -505,33 +508,42 @@
           "confidence": 0.9,
           "evidence": [
             "nameHints=name_contains=레버리지",
-            "name=KIWOOM 200선물레버리지"
+            "상품명 'KIWOOM 200선물레버리지'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "코스피200 선물지수를 배수로 규칙기반 추종",
+            "액티브 운용 신호 없음"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName='코스피 200 선물지수'"
           ]
         }
       ],
-      "candidateTagIds": [
-        "strategy.benchmark.kospi200"
-      ],
-      "insufficientFacets": [
-        "sector",
-        "dividend"
-      ],
-      "notes": [
-        "레버리지 상품은 '그대로 추종'이 아니므로 benchmark.kospi200는 후보로만 표시",
-        "보유내역이 유사 ETF 1건뿐이라 섹터 근거 없음",
-        "분배 일정 정보 없음"
-      ]
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
     },
     {
       "etfCode": "261110",
       "selectedClassifications": [
         {
           "tagId": "asset.currency",
-          "score": 0.9,
-          "confidence": 0.8,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "name=TIGER 미국달러선물레버리지 — 명칭에 달러 명시",
-            "benchmarkName=미국달러선물지수"
+            "benchmarkName=미국달러선물지수",
+            "nameHints=name_contains=레버리지, 상품명에 '미국달러' 명시",
+            "holdings TIGER 미국달러SOFR금리액티브(합성) 6.89%, TIGER 미국달러단기채권액티브 6.03%"
           ]
         },
         {
@@ -539,19 +551,25 @@
           "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "nameHints=name_contains=레버리지"
+            "nameHints=name_contains=레버리지",
+            "상품명 'TIGER 미국달러선물레버리지'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "미국달러선물지수를 배수로 규칙기반 추종, 액티브 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [],
       "insufficientFacets": [
-        "region",
-        "sector",
-        "dividend"
+        "region"
       ],
       "notes": [
-        "통화선물 상품으로 region facet은 국가 주식시장 개념과 부합하지 않아 판단 보류",
-        "보유내역이 미국달러 관련 채권/합성ETF뿐이라 섹터·배당 근거 없음"
+        "기초자산이 미국달러선물(통화)이며 국내 상장 상품이라 지역 태그를 domestic_kr로 기계적으로 부여하지 않고 보류함"
       ]
     },
     {
@@ -559,11 +577,11 @@
       "selectedClassifications": [
         {
           "tagId": "asset.currency",
-          "score": 0.9,
-          "confidence": 0.8,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "name=TIGER 미국달러선물인버스2X",
-            "benchmarkName=미국달러선물지수"
+            "benchmarkName=미국달러선물지수",
+            "holdings KIWOOM 미국달러선물인버스2X 4.5%, KIWOOM 미국달러선물인버스 2.01%"
           ]
         },
         {
@@ -571,7 +589,8 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "상품명 'TIGER 미국달러선물인버스2X'"
           ]
         },
         {
@@ -581,17 +600,22 @@
           "evidence": [
             "nameHints=leverage=2X(명칭 표기)"
           ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "미국달러선물지수 역배수를 규칙기반으로 추종, 액티브 신호 없음"
+          ]
         }
       ],
       "candidateTagIds": [],
       "insufficientFacets": [
-        "region",
-        "sector",
-        "dividend"
+        "region"
       ],
       "notes": [
-        "'인버스2X' 명칭은 역방향(inverse)과 배수(leverage) 신호를 동시에 충족",
-        "통화선물 상품으로 region facet 판단 보류"
+        "통화(달러) 인버스2X 상품으로 지역 태그 보류"
       ]
     },
     {
@@ -599,11 +623,11 @@
       "selectedClassifications": [
         {
           "tagId": "asset.currency",
-          "score": 0.9,
-          "confidence": 0.8,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "name=KODEX 미국달러선물레버리지",
-            "benchmarkName=미국달러선물지수"
+            "benchmarkName=미국달러선물지수",
+            "holdings KODEX 미국달러선물 20.08%, KODEX 미국달러SOFR금리액티브(합성) 16.83%"
           ]
         },
         {
@@ -611,18 +635,25 @@
           "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "nameHints=name_contains=레버리지"
+            "nameHints=name_contains=레버리지",
+            "상품명 'KODEX 미국달러선물레버리지'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "미국달러선물지수를 배수로 규칙기반 추종"
           ]
         }
       ],
       "candidateTagIds": [],
       "insufficientFacets": [
-        "region",
-        "sector",
-        "dividend"
+        "region"
       ],
       "notes": [
-        "보유내역이 KODEX/KIWOOM 미국달러선물·SOFR액티브·ETN 등 통화 관련 상품뿐이라 섹터·배당 근거 없음"
+        "통화(달러) 레버리지 상품으로 지역 태그 보류"
       ]
     },
     {
@@ -630,11 +661,11 @@
       "selectedClassifications": [
         {
           "tagId": "asset.currency",
-          "score": 0.9,
-          "confidence": 0.8,
+          "score": 0.85,
+          "confidence": 0.75,
           "evidence": [
-            "name=KODEX 미국달러선물인버스2X",
-            "benchmarkName=미국달러선물지수"
+            "benchmarkName=미국달러선물지수",
+            "holdings KODEX 미국달러선물인버스 13.33%, 키움 인버스 미국달러선물 ETN 7.19%"
           ]
         },
         {
@@ -642,7 +673,8 @@
           "score": 0.9,
           "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=인버스"
+            "nameHints=name_contains=인버스",
+            "상품명 'KODEX 미국달러선물인버스2X'"
           ]
         },
         {
@@ -652,16 +684,22 @@
           "evidence": [
             "nameHints=leverage=2X(명칭 표기)"
           ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "미국달러선물지수 역배수를 규칙기반으로 추종"
+          ]
         }
       ],
       "candidateTagIds": [],
       "insufficientFacets": [
-        "region",
-        "sector",
-        "dividend"
+        "region"
       ],
       "notes": [
-        "'인버스2X' 명칭은 역방향과 배수 신호를 동시에 충족"
+        "통화(달러) 인버스2X 상품으로 지역 태그 보류"
       ]
     },
     {
@@ -672,15 +710,17 @@
           "score": 1,
           "confidence": 0.7,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수 — 채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=코스피 200 선물지수",
+            "holdings TIGER 200(국내 주식형) 16.93%"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "benchmarkName=코스피 200 선물지수(국내 지수)"
+            "benchmarkName에 '코스피 200' 명시",
+            "holdings TIGER 200 16.93%"
           ]
         },
         {
@@ -689,21 +729,29 @@
           "confidence": 0.9,
           "evidence": [
             "nameHints=name_contains=레버리지",
-            "name=TIGER 200선물레버리지"
+            "holdings TIGER 레버리지 5.5%, RISE 200선물레버리지 4.41%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "코스피200 선물지수를 배수로 규칙기반 추종"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.75,
+          "confidence": 0.65,
+          "evidence": [
+            "benchmarkName='코스피 200 선물지수'"
           ]
         }
       ],
-      "candidateTagIds": [
-        "strategy.benchmark.kospi200"
-      ],
-      "insufficientFacets": [
-        "sector",
-        "dividend"
-      ],
-      "notes": [
-        "레버리지 상품이라 benchmark.kospi200는 후보로만 표시",
-        "보유내역이 TIGER 200/TIGER 레버리지/RISE 200선물레버리지 등 유사 ETF뿐이라 섹터 근거 없음"
-      ]
+      "candidateTagIds": [],
+      "insufficientFacets": [],
+      "notes": []
     },
     {
       "etfCode": "278240",
@@ -713,15 +761,17 @@
           "score": 1,
           "confidence": 0.7,
           "evidence": [
-            "benchmarkName=F-코스닥150 지수 — 채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=F-코스닥150 지수",
+            "holdings RISE 코스닥150(국내 주식형) 32.94%"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "benchmarkName=F-코스닥150 지수(국내 코스닥 지수)"
+            "benchmarkName에 '코스닥150'(국내 지수) 명시",
+            "holdings RISE 코스닥150 32.94%"
           ]
         },
         {
@@ -729,17 +779,23 @@
           "score": 0.95,
           "confidence": 0.9,
           "evidence": [
-            "nameHints=name_contains=레버리지"
+            "nameHints=name_contains=레버리지",
+            "holdings KODEX 코스닥150레버리지 3.92%"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "F-코스닥150 지수를 배수로 규칙기반 추종"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "sector",
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "보유내역이 RISE 코스닥150/KODEX 코스닥150레버리지/PLUS 코스닥150 등 유사 ETF뿐이라 섹터 근거 없음"
+        "코스닥150 기초지수로 strategy.benchmark.kospi200(코스피200/코스피50/KRX100 계열 전용)은 해당 없음"
       ]
     },
     {
@@ -748,45 +804,52 @@
         {
           "tagId": "asset.equity",
           "score": 1,
-          "confidence": 0.7,
+          "confidence": 0.75,
           "evidence": [
-            "holdings에 삼성전자·SK하이닉스 등 개별주식 포함, 채권/원자재/리츠/혼합/통화 신호 부재"
+            "holdings 삼성전자 23.31%, SK하이닉스 20.09%, TIGER 200 19.99% 등 주식형 구성"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "benchmarkName=코스피 200 커버드콜 ATM 지수, holdings=삼성전자·SK하이닉스·현대차 등 국내종목"
-          ]
-        },
-        {
-          "tagId": "strategy.passive_index",
-          "score": 0.62,
-          "confidence": 0.55,
-          "evidence": [
-            "기초자산이 코스피200 지수를 기반으로 하며 옵션 오버레이만 추가(파생구조는 별도 전략 태그 병기)"
+            "benchmarkName에 '코스피 200' 명시",
+            "holdings 국내 대형주(삼성전자, 현대차, KB금융 등)"
           ]
         },
         {
           "tagId": "dividend.covered_call",
-          "score": 0.92,
-          "confidence": 0.87,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=커버드콜",
-            "benchmarkName=코스피 200 커버드콜 ATM 지수"
+            "benchmarkName=코스피 200 커버드콜 ATM 지수",
+            "nameHints=name_contains=커버드콜"
+          ]
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.8,
+          "confidence": 0.7,
+          "evidence": [
+            "benchmarkName에 '코스피 200' 명시(커버드콜 구조 포함)"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "코스피200 커버드콜 ATM 지수를 규칙 기반으로 추종, 액티브 신호 없음"
           ]
         }
       ],
       "candidateTagIds": [
-        "sector.semiconductor",
-        "strategy.benchmark.kospi200"
+        "sector.semiconductor"
       ],
       "insufficientFacets": [],
       "notes": [
-        "상위 2종목(삼성전자+SK하이닉스) 합산 43.4%는 코스피200 지수 자체의 반도체 편중을 반영한 것으로 보여 섹터 태그로 확정하지 않고 후보로만 표시",
-        "옵션 오버레이 상품이라 '그대로 추종'인 benchmark.kospi200은 후보로만 표시"
+        "상위 2종목(삼성전자·SK하이닉스) 합산 43.4%가 반도체 대형주이나, 코스피200 전체를 추종하는 광범위 지수 기반 상품이라 반도체 테마 특화 근거는 약해 후보로만 표시"
       ]
     },
     {
@@ -797,59 +860,63 @@
           "score": 1,
           "confidence": 0.7,
           "evidence": [
-            "holdings에 DB손해보험·삼성카드 등 개별주식 포함, 채권/원자재/리츠/혼합/통화 신호 부재"
+            "holdings DB손해보험, 삼성카드, 기업은행 등 국내 주식형 구성"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.8,
           "evidence": [
-            "benchmarkName=코스피 200 고배당커버드콜 ATM 지수, holdings 전부 국내종목"
-          ]
-        },
-        {
-          "tagId": "strategy.passive_index",
-          "score": 0.62,
-          "confidence": 0.52,
-          "evidence": [
-            "기초자산이 코스피200 고배당 지수를 기반으로 하며 옵션 오버레이만 추가"
+            "benchmarkName에 '코스피 200' 명시",
+            "holdings 전량 국내 상장 종목"
           ]
         },
         {
           "tagId": "dividend.covered_call",
-          "score": 0.92,
-          "confidence": 0.87,
+          "score": 0.9,
+          "confidence": 0.85,
           "evidence": [
-            "nameHints=name_contains=커버드콜",
-            "benchmarkName=코스피 200 고배당커버드콜 ATM 지수"
+            "benchmarkName=코스피 200 고배당커버드콜 ATM 지수",
+            "nameHints=name_contains=커버드콜"
           ]
         },
         {
           "tagId": "dividend.korea_high_dividend",
           "score": 0.75,
-          "confidence": 0.6,
+          "confidence": 0.65,
           "evidence": [
-            "name=RISE 200고배당커버드콜ATM",
             "benchmarkName에 '고배당' 명시"
           ]
         },
         {
-          "tagId": "sector.financials",
-          "score": 0.68,
-          "confidence": 0.52,
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.65,
+          "confidence": 0.55,
           "evidence": [
-            "top10 중 DB손해보험·삼성카드·기업은행·JB금융지주·BNK금융지주·우리금융지주 6종목이 금융업"
+            "benchmarkName에 '코스피 200' 명시(고배당 서브지수)"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "고배당커버드콜 ATM 지수를 규칙 기반으로 추종"
+          ]
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.7,
+          "confidence": 0.55,
+          "evidence": [
+            "상위10종목 중 DB손해보험 3.07%, 삼성카드 2.81%, 기업은행 2.8%, JB금융지주 2.71%, BNK금융지주 2.55%, 우리금융지주 2.51% 등 금융업종 비중 과반"
           ]
         }
       ],
-      "candidateTagIds": [
-        "strategy.benchmark.kospi200"
-      ],
+      "candidateTagIds": [],
       "insufficientFacets": [],
-      "notes": [
-        "옵션 오버레이 상품이라 benchmark.kospi200은 후보로만 표시"
-      ]
+      "notes": []
     },
     {
       "etfCode": "291630",
@@ -859,15 +926,17 @@
           "score": 1,
           "confidence": 0.7,
           "evidence": [
-            "benchmarkName=F-코스닥150 지수 — 채권/원자재/리츠/혼합/통화 신호 부재"
+            "benchmarkName=F-코스닥150 지수",
+            "holdings KIWOOM 코스닥150(국내 주식형) 20.66%"
           ]
         },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
-          "confidence": 0.75,
+          "confidence": 0.85,
           "evidence": [
-            "benchmarkName=F-코스닥150 지수(국내 코스닥 지수)"
+            "benchmarkName에 '코스닥150'(국내 지수) 명시",
+            "holdings KIWOOM 코스닥150 20.66%"
           ]
         },
         {
@@ -876,17 +945,22 @@
           "confidence": 0.9,
           "evidence": [
             "nameHints=name_contains=레버리지",
-            "name=KIWOOM 코스닥150선물레버리지"
+            "상품명 'KIWOOM 코스닥150선물레버리지'"
+          ]
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.85,
+          "confidence": 0.75,
+          "evidence": [
+            "F-코스닥150 지수를 배수로 규칙기반 추종"
           ]
         }
       ],
       "candidateTagIds": [],
-      "insufficientFacets": [
-        "sector",
-        "dividend"
-      ],
+      "insufficientFacets": [],
       "notes": [
-        "보유내역이 KIWOOM 코스닥150 1건뿐이라 섹터 근거 없음"
+        "코스닥150 기초지수로 strategy.benchmark.kospi200은 해당 없음"
       ]
     }
   ]

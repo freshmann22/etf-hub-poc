@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:21:06.673Z",
+  "decision": "allowed_low_rate_official_api",
+  "apiCallsBeforeDecision": 0,
+  "robots": {
+    "observed": "User-agent: *\nAllow:/\n\n\n\n#DaumWebMasterTool:0f80fabe1debe0f37b2a42088a5c18d1bb9c229e78663610d96e7dd91c25cff7:AiTQ4MTfBfXSm5vnQQzFNw==",
+    "raw": {
+      "path": "data/raw/metadata-v2/sol-distribution-history/policy/2026-07-21/robots/2026-07-21T07-21-05-359Z.b712b77f1bca3afb.txt",
+      "hash": "b712b77f1bca3afbc4c39619c1173f8e7dc305089505110261c88453910acd1f",
+      "bytes": 134,
+      "url": "https://www.soletf.com/robots.txt"
+    }
+  },
+  "terms": {
+    "observableActiveTermsLink": false,
+    "observation": "The product-page footer has the customer01 terms link commented out; the only active policy link observed is the privacy policy.",
+    "decisionBasis": "Proceed only with the same public, unauthenticated endpoint invoked by the official popup, at 1200ms intervals and with an immediate 403/persistent-429 circuit breaker."
+  },
+  "officialUiContract": {
+    "endpointTemplate": "/api/etf/pds/dividend/{fundCode}",
+    "recordDateField": "WORK_DT",
+    "payDateField": "DIVIDEND_DT",
+    "amountField": "DIVIDEND_PRI",
+    "currency": "KRW",
+    "perUnit": null,
+    "raw": {
+      "path": "data/raw/metadata-v2/sol-distribution-history/contract/2026-07-21/etf_pds/2026-07-21T07-21-06-673Z.d790c51b42d44d19.js",
+      "hash": "d790c51b42d44d198b1da1ac4d3bf9f149259bab98b4726c6599ea4f585b4585",
+      "bytes": 18445,
+      "url": "https://www.soletf.com/static/pc/js/ko/etf_pds.js"
+    }
+  },
+  "interpretation": {
+    "dateFields": "WORK_DT is 지급기준일; DIVIDEND_DT is 실제지급일",
+    "amountCurrency": "DIVIDEND_PRI under popup header 분배금액(원), therefore KRW",
+    "perUnit": "not explicit; stored null and record status partial",
+    "scheduleExcluded": true
+  },
+  "guardrails": {
+    "intervalMs": 1200,
+    "sameOriginOnly": true,
+    "authentication": false,
+    "circuitBreaker": [
+      "403",
+      "persistent_429"
+    ]
+  }
+}

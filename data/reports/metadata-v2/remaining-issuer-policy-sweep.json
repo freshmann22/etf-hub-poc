@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:45:00.000Z",
+  "scope": {
+    "networkMode": "policy_only_low_volume",
+    "issuerCount": 14,
+    "inventoryCount": 54,
+    "perDomainHttpRequestLimit": 3,
+    "productDetailCalls": 0,
+    "authenticationUsed": false,
+    "certificateBypassUsed": false,
+    "robotsBypassUsed": false
+  },
+  "summary": {
+    "eligible_for_canary": { "issuerCount": 3, "inventoryCount": 6 },
+    "blocked": { "issuerCount": 4, "inventoryCount": 18 },
+    "unresolved": { "issuerCount": 7, "inventoryCount": 30 }
+  },
+  "issuers": [
+    {
+      "issuerId": "midas-asset-management",
+      "brand": "MIDAS",
+      "inventoryCount": 4,
+      "domain": "midasasset.com",
+      "httpRequests": 3,
+      "tls": { "status": "authorized", "protocol": "TLSv1.2", "validTo": "2027-04-09T23:59:59Z", "commonName": "www.midasasset.com" },
+      "robots": { "status": 200, "rule": "Disallow: /wp-admin/; Allow: /wp-admin/admin-ajax.php", "publicProductPathAllowed": true },
+      "publicList": { "exists": true, "status": 200, "url": "https://midasasset.com/투자상품/펀드맵/?ma_cat_fund=103", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "eligible_for_canary",
+      "reason": "TLS is valid, robots restrict only the administrative path, and a public ETF-filtered fund map is available."
+    },
+    {
+      "issuerId": "thej-asset-management",
+      "brand": "더제이",
+      "inventoryCount": 1,
+      "domain": "www.thejasset.com",
+      "httpRequests": 3,
+      "tls": { "status": "authorized", "protocol": "TLSv1.3", "validTo": "2027-01-21T09:07:13Z", "commonName": "www.thejasset.com" },
+      "robots": { "status": 200, "rule": "Allow: /; Disallow: /_site_manager/", "publicProductPathAllowed": true },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.thejasset.com/", "etfMarkerObserved": true, "note": "ETF entry/content is present on the public site; exact list routing should be mapped during discovery." },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "eligible_for_canary",
+      "reason": "TLS is valid, robots explicitly allow public paths, and the public site exposes ETF content."
+    },
+    {
+      "issuerId": "kcgi-asset-management",
+      "brand": "KCGI",
+      "inventoryCount": 1,
+      "domain": "www.kcgiam.com",
+      "httpRequests": 3,
+      "tls": { "status": "authorized", "protocol": "TLSv1.3", "validTo": "2027-01-02T23:59:59Z", "commonName": "kcgiam.com" },
+      "robots": { "status": 200, "rule": "Allow: /", "publicProductPathAllowed": true },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.kcgiam.com/fund/etf-product.php?goPage=List", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "eligible_for_canary",
+      "reason": "TLS is valid, robots explicitly allow all public paths, and a dedicated public ETF list is available."
+    },
+    {
+      "issuerId": "db-asset-management",
+      "brand": "마이티",
+      "inventoryCount": 6,
+      "domain": "db-asset.com",
+      "httpRequests": 3,
+      "tls": { "status": "authorized", "protocol": "TLSv1.2", "validTo": "2027-02-23T08:51:05Z", "commonName": "*.db-asset.com" },
+      "robots": { "status": 200, "rule": "User-Agent: * Disallow: /; selected named bots Allow: /", "publicProductPathAllowed": false },
+      "publicList": { "exists": true, "status": 200, "url": "https://db-asset.com/front/kr/fund/etf", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": true, "privacyLinkObserved": true },
+      "decision": "blocked",
+      "reason": "The generic collector is covered by the explicit all-path Disallow rule; named-bot exceptions do not apply."
+    },
+    {
+      "issuerId": "heungkuk-asset-management",
+      "brand": "HK",
+      "inventoryCount": 6,
+      "domain": "www.hkfund.co.kr",
+      "httpRequests": 2,
+      "tls": { "status": "unavailable", "error": "TLS handshake timeout" },
+      "robots": { "status": "unavailable", "error": "fetch failed" },
+      "publicList": { "exists": false, "status": "unavailable", "url": "https://www.hkfund.co.kr/" },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": false },
+      "decision": "blocked",
+      "reason": "TLS and HTTPS access did not complete; no certificate or robots bypass was attempted."
+    },
+    {
+      "issuerId": "vi-asset-management",
+      "brand": "FOCUS",
+      "inventoryCount": 5,
+      "domain": "www.hi-am.com",
+      "httpRequests": 2,
+      "tls": { "status": "unavailable", "error": "TLS connection failed" },
+      "robots": { "status": "unavailable", "error": "fetch failed" },
+      "publicList": { "exists": false, "status": "unavailable", "url": "https://www.hi-am.com/web/kr/fund/etf/all/list" },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": false },
+      "decision": "blocked",
+      "reason": "Current official-site TLS/HTTPS access failed; cached search visibility is not sufficient for a canary."
+    },
+    {
+      "issuerId": "im-asset-management",
+      "brand": "아이엠에셋",
+      "inventoryCount": 1,
+      "domain": "www.im-fund.com",
+      "httpRequests": 2,
+      "tls": { "status": "unavailable", "error": "TLS handshake timeout" },
+      "robots": { "status": "unavailable", "error": "fetch failed" },
+      "publicList": { "exists": false, "status": "unavailable", "url": "https://www.im-fund.com/main.do?language=ko" },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": false },
+      "decision": "blocked",
+      "reason": "TLS and HTTPS access did not complete; no bypass was attempted."
+    },
+    {
+      "issuerId": "bnk-asset-management",
+      "brand": "BNK",
+      "inventoryCount": 6,
+      "domain": "www.bnkasset.co.kr",
+      "httpRequests": 2,
+      "tls": { "status": "authorized", "protocol": "TLSv1.2", "validTo": "2027-01-24T23:59:59Z", "commonName": "*.bnkasset.co.kr" },
+      "robots": { "status": 404, "rule": null, "publicProductPathAllowed": null },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.bnkasset.co.kr/product/etf.aspx", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": false },
+      "decision": "unresolved",
+      "reason": "A public ETF list exists, but robots and a public-use terms contract were not observable."
+    },
+    {
+      "issuerId": "ibk-asset-management",
+      "brand": "IBK",
+      "inventoryCount": 6,
+      "domain": "www.ibkasset.com",
+      "httpRequests": 2,
+      "tls": { "status": "authorized", "protocol": "TLSv1.3", "validTo": "2026-11-16T04:30:19Z", "commonName": "*.ibkasset.com" },
+      "robots": { "status": 400, "rule": null, "publicProductPathAllowed": null },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.ibkasset.com/etf", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "unresolved",
+      "reason": "The public ETF list is available, but robots returned HTTP 400 and no general site-use terms link was observed."
+    },
+    {
+      "issuerId": "hyundai-asset-management",
+      "brand": "UNICORN",
+      "inventoryCount": 5,
+      "domain": "www.hyundaiam.com",
+      "httpRequests": 2,
+      "tls": { "status": "authorized", "protocol": "TLSv1.2", "validTo": "2026-09-27T01:44:24Z", "commonName": "*.hyundaiam.com" },
+      "robots": { "status": "error_document", "httpStatus": 200, "finalUrl": "http://errdoc.gabia.io/404.html", "publicProductPathAllowed": null },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.hyundaiam.com/kor/HD-KP-FG/HD-KP-FG-07-D.html", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": true, "privacyLinkObserved": true },
+      "decision": "unresolved",
+      "reason": "ETF list and terms links exist, but robots resolves to a third-party error document rather than an observable policy."
+    },
+    {
+      "issuerId": "kyobo-axa-investment-managers",
+      "brand": "파워",
+      "inventoryCount": 5,
+      "domain": "www.kyoboaxa-im.co.kr",
+      "httpRequests": 2,
+      "tls": { "status": "inconsistent", "error": "Direct TLS probe timed out while HTTPS sitemap returned HTTP 200" },
+      "robots": { "status": 404, "rule": null, "publicProductPathAllowed": null },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.kyoboaxa-im.co.kr/cmmAct.do?act=sitemap", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "unresolved",
+      "reason": "The public sitemap is reachable, but TLS probing was inconsistent and robots was absent."
+    },
+    {
+      "issuerId": "daishin-asset-management",
+      "brand": "DAISHIN343",
+      "inventoryCount": 4,
+      "domain": "asset.daishin.com",
+      "httpRequests": 2,
+      "tls": { "status": "authorized", "protocol": "TLSv1.3", "validTo": "2026-11-29T23:59:59Z", "commonName": "asset.daishin.com" },
+      "robots": { "status": 404, "rule": null, "publicProductPathAllowed": null },
+      "publicList": { "exists": true, "status": 200, "url": "https://asset.daishin.com/ko/?m=list&pages=etf", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "unresolved",
+      "reason": "A dedicated public ETF list exists, but robots and general public-use terms were not observable."
+    },
+    {
+      "issuerId": "truston-asset-management",
+      "brand": "TRUSTON",
+      "inventoryCount": 2,
+      "domain": "www.trustonasset.com",
+      "httpRequests": 2,
+      "tls": { "status": "authorized", "protocol": "TLSv1.2", "validTo": "2026-09-13T00:06:12Z", "commonName": "*.trustonasset.com" },
+      "robots": { "status": 404, "rule": null, "publicProductPathAllowed": null },
+      "publicList": { "exists": true, "status": 200, "url": "https://www.trustonasset.com/?taxonomy=ta_fund_cat&term=all", "etfMarkerObserved": true },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": true },
+      "decision": "unresolved",
+      "reason": "A public fund list with ETF entries exists, but robots and general public-use terms were not observable."
+    },
+    {
+      "issuerId": "yurie-asset-management",
+      "brand": "TREX",
+      "inventoryCount": 2,
+      "domain": "www.yurieasset.co.kr",
+      "httpRequests": 2,
+      "tls": { "status": "authorized", "protocol": "TLSv1.2", "validTo": "2026-12-22T06:45:37Z", "commonName": "www.yurieasset.co.kr" },
+      "robots": { "status": 404, "rule": null, "publicProductPathAllowed": null },
+      "publicList": { "exists": false, "status": 200, "url": "https://www.yurieasset.co.kr/", "etfMarkerObserved": false, "note": "The 406-byte public response did not expose a static ETF entry point." },
+      "publicTerms": { "generalTermsLinkObserved": false, "privacyLinkObserved": false },
+      "decision": "unresolved",
+      "reason": "TLS works, but neither robots nor a static public ETF list/terms entry point was observable in the low-volume sweep."
+    }
+  ],
+  "recommendedExecutionPriority": [
+    {
+      "rank": 1,
+      "issuerId": "kcgi-asset-management",
+      "inventoryCount": 1,
+      "action": "Run list mapping and one-product canary.",
+      "basis": "Explicit robots Allow:/ and a dedicated ETF list provide the clearest contract at the lowest request volume."
+    },
+    {
+      "rank": 2,
+      "issuerId": "midas-asset-management",
+      "inventoryCount": 4,
+      "action": "Map the ETF-filtered fund map, then use all four products as the canary set before full conversion.",
+      "basis": "Robots only restricts WordPress administration and the public list is directly observable."
+    },
+    {
+      "rank": 3,
+      "issuerId": "thej-asset-management",
+      "inventoryCount": 1,
+      "action": "Resolve the ETF entry route from the homepage and run a one-product canary.",
+      "basis": "Public paths are explicitly allowed, but discovery routing is less direct than KCGI or MIDAS."
+    },
+    {
+      "rank": 4,
+      "issuerIds": ["hyundai-asset-management", "daishin-asset-management", "ibk-asset-management", "bnk-asset-management", "truston-asset-management", "kyobo-axa-investment-managers"],
+      "action": "Perform a terms/robots clarification pass only; do not call product detail pages yet.",
+      "basis": "Public lists exist, but policy evidence is incomplete or inconsistent."
+    },
+    {
+      "rank": 5,
+      "issuerIds": ["db-asset-management", "heungkuk-asset-management", "vi-asset-management", "im-asset-management", "yurie-asset-management"],
+      "action": "Keep blocked/unresolved until robots changes, access recovers, or explicit permission/list routing is obtained.",
+      "basis": "Explicit generic robots denial, failed TLS/HTTPS, or no observable static product entry point."
+    }
+  ]
+}

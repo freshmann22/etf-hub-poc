@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "2.0.0",
+  "generatedAt": "2026-07-21T06:03:01.981Z",
+  "source": {
+    "sourceId": "publicdata",
+    "asOfDate": "20260720",
+    "rawSnapshotPath": "publicdata/2026-07-21/etf-price-20260720.0320f3747127a6a5457fea8bd79dd61e5bc56c0b5c2ff2e549a6a4cd3db7cd56.json",
+    "contentHash": "0320f3747127a6a5457fea8bd79dd61e5bc56c0b5c2ff2e549a6a4cd3db7cd56"
+  },
+  "summary": {
+    "projectUniverse": 1141,
+    "officialUniverse": 1146,
+    "resolved": 1140,
+    "quarantined": 1,
+    "officialOnly": 6,
+    "verifiedAlphanumeric": 274,
+    "isinCandidateMismatches": 0
+  },
+  "officialOnly": [
+    {
+      "shortCode": "0215T0",
+      "isin": "KR70215T0002",
+      "officialName": "HANARO 미국AI광통신TOP10"
+    },
+    {
+      "shortCode": "0218J0",
+      "isin": "KR70218J0001",
+      "officialName": "RISE 미국우주&로봇TOP2미국채혼합50"
+    },
+    {
+      "shortCode": "0219B0",
+      "isin": "KR70219B0008",
+      "officialName": "KoAct 광통신&위성네트워크액티브"
+    },
+    {
+      "shortCode": "0219E0",
+      "isin": "KR70219E0005",
+      "officialName": "KODEX 200커버드콜액티브"
+    },
+    {
+      "shortCode": "0220A0",
+      "isin": "KR70220A0006",
+      "officialName": "KIWOOM 현대차그룹TOP3채권혼합50"
+    },
+    {
+      "shortCode": "0220B0",
+      "isin": "KR70220B0005",
+      "officialName": "DS 코스닥액티브"
+    }
+  ],
+  "quarantined": [
+    {
+      "universeKey": "424460",
+      "name": "HANARO 글로벌워터MSCI(합성)",
+      "reason": "not_in_publicdata_snapshot"
+    }
+  ],
+  "isinCandidateMismatches": []
+}

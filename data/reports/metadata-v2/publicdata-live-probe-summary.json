@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "financial_services_commission_publicdata_etf_price",
+  "sourceUrl": "https://www.data.go.kr/data/15094806/openapi.do",
+  "probeMode": "aggregate_and_code_delta_only_no_credentials_no_raw_response",
+  "officialUniverse": {
+    "basDt": "2026-07-20",
+    "etfCount": 1146,
+    "alphanumericShortCodeCount": 280
+  },
+  "localUniverse": {
+    "etfCount": 1141,
+    "alphanumericShortCodeCount": 274
+  },
+  "delta": {
+    "exactCodeOverlapCount": 1140,
+    "officialOnlyCodes": ["0215T0", "0218J0", "0219B0", "0219E0", "0220A0", "0220B0"],
+    "localOnlyCodes": ["424460"]
+  }
+}

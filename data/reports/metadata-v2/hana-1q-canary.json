@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:03:51.986Z",
+  "pass": true,
+  "fieldCoverage": {
+    "productDescription": 4,
+    "investmentObjective": 4,
+    "benchmarkName": 4,
+    "benchmarkDescription": 4,
+    "distributionPolicy": 4
+  },
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T07:03:26.750Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0004G0",
+      "isin": "KR70004G0002",
+      "name": "1Q 미국배당TOP30",
+      "productId": "12",
+      "sourceName": "1Q 미국배당TOP30",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=12",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+        "investmentObjective": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+        "benchmarkName": "Solactive U.S. Dividend TOP 30 Index PR",
+        "benchmarkDescription": "Solactive U.S. Dividend TOP 30 Index는 미국 주식 시장에서 우수한 퀄리티와 일관된 배당 성장 및 지급 실적을 보이는 30개 주식에 투자합니다.",
+        "distributionPolicy": "매월 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "Solactive U.S. Dividend TOP 30 Index PR",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "Solactive U.S. Dividend TOP 30 Index는 미국 주식 시장에서 우수한 퀄리티와 일관된 배당 성장 및 지급 실적을 보이는 30개 주식에 투자합니다.",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "매월 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach1",
+            "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach2",
+            "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach3",
+            "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0004G0/2026-07-21T07-03-26-750Z.c6d499c2458aa907.html",
+        "hash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f",
+        "bytes": 27376,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=12"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:27.016Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0026S0",
+      "isin": "KR70026S0002",
+      "name": "1Q 미국S&P500",
+      "productId": "14",
+      "sourceName": "1Q 미국S&P500",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=14",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+        "investmentObjective": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+        "benchmarkName": "S&P500 Price Return Index",
+        "benchmarkDescription": "최고의 미국 대형주 측정지표로 널리 알려진 지수입니다. 이 지수는 500대 기업을 포함하며 가용 시가총액의 약 80%를 포함합니다.",
+        "distributionPolicy": "3,6,9,12월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "S&P500 Price Return Index",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "최고의 미국 대형주 측정지표로 널리 알려진 지수입니다. 이 지수는 500대 기업을 포함하며 가용 시가총액의 약 80%를 포함합니다.",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "3,6,9,12월의 15일 및 회계기간 종료일",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach1",
+            "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach2",
+            "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach3",
+            "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0026S0/2026-07-21T07-03-27-016Z.c3e30ba0f5a19422.html",
+        "hash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48",
+        "bytes": 27304,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=14"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:28.175Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "451060",
+      "isin": "KR7451060008",
+      "name": "1Q 200액티브",
+      "productId": "1",
+      "sourceName": "1Q 200액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=1",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+        "investmentObjective": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+        "benchmarkName": "코스피200",
+        "benchmarkDescription": "국내 코스피 시장에 상장된 종목 중에서 시장대표성, 산업대표성, 유동성 등 기준으로 선정된 200 종목을 유동주식수 가중 시가총액방식으로 구성하여 한국거래소에서 산출한 지수",
+        "distributionPolicy": "분배금 지급 가능",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "코스피200",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "국내 코스피 시장에 상장된 종목 중에서 시장대표성, 산업대표성, 유동성 등 기준으로 선정된 200 종목을 유동주식수 가중 시가총액방식으로 구성하여 한국거래소에서 산출한 지수",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "분배금 지급 가능",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach1",
+            "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach2",
+            "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach3",
+            "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/451060/2026-07-21T07-03-28-175Z.4ab83a5133981f53.html",
+        "hash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42",
+        "bytes": 27812,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=1"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:29.424Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "491610",
+      "isin": "KR7491610002",
+      "name": "1Q CD금리액티브(합성)",
+      "productId": "8",
+      "sourceName": "1Q CD금리액티브(합성)",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=8",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+        "investmentObjective": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+        "benchmarkName": "KIS 하나 CD금리 총수익지수",
+        "benchmarkDescription": "양도성예금증서(Certificate of Deposit) 3개월물에 대한 투자성과를 추적하는 것을 목표로 하여, KIS자산평가가 고시하는 CD수익률(AAA등급)의 성과를 지수화한 지수",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KIS 하나 CD금리 총수익지수",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "양도성예금증서(Certificate of Deposit) 3개월물에 대한 투자성과를 추적하는 것을 목표로 하여, KIS자산평가가 고시하는 CD수익률(AAA등급)의 성과를 지수화한 지수",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach1",
+            "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach2",
+            "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach3",
+            "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/491610/2026-07-21T07-03-29-424Z.6af941d14ae63018.html",
+        "hash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3",
+        "bytes": 28547,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=8"
+      }
+    }
+  ]
+}

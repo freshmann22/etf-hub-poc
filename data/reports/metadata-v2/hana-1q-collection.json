@@ -1,0 +1,2375 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:04:17.527Z",
+  "targetCount": 26,
+  "mappedCount": 26,
+  "canaryPass": true,
+  "fullRequested": true,
+  "completedCount": 26,
+  "pendingCount": 0,
+  "statusCounts": {
+    "ok": 26,
+    "partial": 0,
+    "validation_failed": 0,
+    "failed": 0,
+    "source_stopped": 0
+  },
+  "fieldCoverage": {
+    "productDescription": 26,
+    "investmentObjective": 26,
+    "benchmarkName": 26,
+    "benchmarkDescription": 26,
+    "distributionPolicy": 26
+  },
+  "health": {
+    "missingFieldCounts": {
+      "productDescription": 0,
+      "investmentObjective": 0,
+      "benchmarkName": 0,
+      "benchmarkDescription": 0,
+      "distributionPolicy": 0
+    }
+  },
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T07:03:26.750Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0004G0",
+      "isin": "KR70004G0002",
+      "name": "1Q 미국배당TOP30",
+      "productId": "12",
+      "sourceName": "1Q 미국배당TOP30",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=12",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+        "investmentObjective": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+        "benchmarkName": "Solactive U.S. Dividend TOP 30 Index PR",
+        "benchmarkDescription": "Solactive U.S. Dividend TOP 30 Index는 미국 주식 시장에서 우수한 퀄리티와 일관된 배당 성장 및 지급 실적을 보이는 30개 주식에 투자합니다.",
+        "distributionPolicy": "매월 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "시가총액이 크고, 유동성이 풍부한 미국 주식 중 높은 배당률과 배당성장률 등이 우수한 특성을 보이는 30종목 선정; 꾸준한 현금흐름 제공을 위한 월분배 추구 ETF",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "Solactive U.S. Dividend TOP 30 Index PR",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "Solactive U.S. Dividend TOP 30 Index는 미국 주식 시장에서 우수한 퀄리티와 일관된 배당 성장 및 지급 실적을 보이는 30개 주식에 투자합니다.",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "매월 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach1",
+            "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach2",
+            "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=12&fld=attach3",
+            "rawHash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0004G0/2026-07-21T07-03-26-750Z.c6d499c2458aa907.html",
+        "hash": "c6d499c2458aa907cbb5b246fbc21ffcd81f4844b9808d681781b29a8acbcb8f",
+        "bytes": 27376,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=12"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:27.016Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0026S0",
+      "isin": "KR70026S0002",
+      "name": "1Q 미국S&P500",
+      "productId": "14",
+      "sourceName": "1Q 미국S&P500",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=14",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+        "investmentObjective": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+        "benchmarkName": "S&P500 Price Return Index",
+        "benchmarkDescription": "최고의 미국 대형주 측정지표로 널리 알려진 지수입니다. 이 지수는 500대 기업을 포함하며 가용 시가총액의 약 80%를 포함합니다.",
+        "distributionPolicy": "3,6,9,12월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "미국 경제를 대표하는 미국 우량주 500개 기업 투자; S&P500에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "S&P500 Price Return Index",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "최고의 미국 대형주 측정지표로 널리 알려진 지수입니다. 이 지수는 500대 기업을 포함하며 가용 시가총액의 약 80%를 포함합니다.",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "3,6,9,12월의 15일 및 회계기간 종료일",
+          "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach1",
+            "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach2",
+            "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=14&fld=attach3",
+            "rawHash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0026S0/2026-07-21T07-03-27-016Z.c3e30ba0f5a19422.html",
+        "hash": "c3e30ba0f5a1942270f1311863b2e382a853c86d86ad86f2c2869418b496bc48",
+        "bytes": 27304,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=14"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:28.175Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "451060",
+      "isin": "KR7451060008",
+      "name": "1Q 200액티브",
+      "productId": "1",
+      "sourceName": "1Q 200액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=1",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+        "investmentObjective": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+        "benchmarkName": "코스피200",
+        "benchmarkDescription": "국내 코스피 시장에 상장된 종목 중에서 시장대표성, 산업대표성, 유동성 등 기준으로 선정된 200 종목을 유동주식수 가중 시가총액방식으로 구성하여 한국거래소에서 산출한 지수",
+        "distributionPolicy": "분배금 지급 가능",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스피200 지수 변동률을 추종하는 동시에 포트폴리오 및 이벤트드리븐 전략 등을 통해 비교지수 대비 초과수익 추구; 계량적 분석과 AI 모델 및 펀드매니저의 종목 선택 능력의 시너지를 통해 포트폴리오 구성; 공격적이고 단기적인 베팅보다는 장기수익률 극대화를 위한 운용전략 활용",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "코스피200",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "국내 코스피 시장에 상장된 종목 중에서 시장대표성, 산업대표성, 유동성 등 기준으로 선정된 200 종목을 유동주식수 가중 시가총액방식으로 구성하여 한국거래소에서 산출한 지수",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "분배금 지급 가능",
+          "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach1",
+            "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach2",
+            "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=1&fld=attach3",
+            "rawHash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/451060/2026-07-21T07-03-28-175Z.4ab83a5133981f53.html",
+        "hash": "4ab83a5133981f53b5d6a18bef3d78acedb30222dbb66a105d38549a6f037b42",
+        "bytes": 27812,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=1"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:29.424Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "491610",
+      "isin": "KR7491610002",
+      "name": "1Q CD금리액티브(합성)",
+      "productId": "8",
+      "sourceName": "1Q CD금리액티브(합성)",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=8",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+        "investmentObjective": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+        "benchmarkName": "KIS 하나 CD금리 총수익지수",
+        "benchmarkDescription": "양도성예금증서(Certificate of Deposit) 3개월물에 대한 투자성과를 추적하는 것을 목표로 하여, KIS자산평가가 고시하는 CD수익률(AAA등급)의 성과를 지수화한 지수",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "공신력있는 CD(양도성예금증서) 금리를 추종하는 단기 자금 관리용 ETF; CD금리를 일 단위로 쌓아주는 ETF로, 고금리 국면에서 단기자금 운용에 유리; 개인 및 퇴직연금에서 투자 가능",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KIS 하나 CD금리 총수익지수",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "양도성예금증서(Certificate of Deposit) 3개월물에 대한 투자성과를 추적하는 것을 목표로 하여, KIS자산평가가 고시하는 CD수익률(AAA등급)의 성과를 지수화한 지수",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach1",
+            "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach2",
+            "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=8&fld=attach3",
+            "rawHash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/491610/2026-07-21T07-03-29-424Z.6af941d14ae63018.html",
+        "hash": "6af941d14ae630186d567de4fbb759a0f9dce16142a887e257c4cb2b5addc7a3",
+        "bytes": 28547,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=8"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:51.987Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0017Y0",
+      "isin": "KR70017Y0005",
+      "name": "1Q 종합채권(AA-이상)액티브",
+      "productId": "13",
+      "sourceName": "1Q 종합채권(AA-이상)액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=13",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "KIS종합채권형 지수(AA-이상)(총수익)를 비교지수로 하여 초과성과를 추구하는 액티브 ETF; 소액으로 국내 전체 채권시장을 반영한 지수에 투자; 퇴직연금 계좌에서 100% 비중으로 투자가능한 채권형 ETF",
+        "investmentObjective": "KIS종합채권형 지수(AA-이상)(총수익)를 비교지수로 하여 초과성과를 추구하는 액티브 ETF; 소액으로 국내 전체 채권시장을 반영한 지수에 투자; 퇴직연금 계좌에서 100% 비중으로 투자가능한 채권형 ETF",
+        "benchmarkName": "KIS종합채권형 지수(AA-이상)(총수익)",
+        "benchmarkDescription": "KIS자산평가의 KIS종합채권지수 구성종 목중 신용등급 AA-이상의 국채, 지방채, 특수채(한전, 도로수자원, 예금보 험채 포함), 통안채, 은행채, 기타금융채, 회사채(보증회사채, ABS포함)의 종목들로 구성된 지수",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=13&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=13&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=13&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "KIS종합채권형 지수(AA-이상)(총수익)를 비교지수로 하여 초과성과를 추구하는 액티브 ETF; 소액으로 국내 전체 채권시장을 반영한 지수에 투자; 퇴직연금 계좌에서 100% 비중으로 투자가능한 채권형 ETF",
+          "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "KIS종합채권형 지수(AA-이상)(총수익)를 비교지수로 하여 초과성과를 추구하는 액티브 ETF; 소액으로 국내 전체 채권시장을 반영한 지수에 투자; 퇴직연금 계좌에서 100% 비중으로 투자가능한 채권형 ETF",
+          "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KIS종합채권형 지수(AA-이상)(총수익)",
+          "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "KIS자산평가의 KIS종합채권지수 구성종 목중 신용등급 AA-이상의 국채, 지방채, 특수채(한전, 도로수자원, 예금보 험채 포함), 통안채, 은행채, 기타금융채, 회사채(보증회사채, ABS포함)의 종목들로 구성된 지수",
+          "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=13&fld=attach1",
+            "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=13&fld=attach2",
+            "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=13&fld=attach3",
+            "rawHash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0017Y0/2026-07-21T07-03-51-987Z.b859104ab25e3e18.html",
+        "hash": "b859104ab25e3e185718cbea46eafcb1f02d184b355778c53378b576d316c1e5",
+        "bytes": 28624,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=13"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:52.241Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0052S0",
+      "isin": "KR70052S0009",
+      "name": "1Q 미국S&P500미국채혼합50액티브",
+      "productId": "15",
+      "sourceName": "1Q 미국S&P500미국채혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=15",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "S&P500 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+        "investmentObjective": "S&P500 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+        "benchmarkName": "S&P 500 and Short-Term Treasury 50/50 Blend Index",
+        "benchmarkDescription": "S&P 500® 및 단기 국채 50/50 블렌드 지수는 S&P 500(주식 구성 지수)과 S&P 미국 초단기 국채 및 채권 지수(채권 구성 지수) 간의 50/50 주식/채권 배분 성과를 추적합니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=15&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=15&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=15&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "S&P500 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+          "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "S&P500 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+          "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "S&P 500 and Short-Term Treasury 50/50 Blend Index",
+          "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "S&P 500® 및 단기 국채 50/50 블렌드 지수는 S&P 500(주식 구성 지수)과 S&P 미국 초단기 국채 및 채권 지수(채권 구성 지수) 간의 50/50 주식/채권 배분 성과를 추적합니다.",
+          "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=15&fld=attach1",
+            "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=15&fld=attach2",
+            "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=15&fld=attach3",
+            "rawHash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0052S0/2026-07-21T07-03-52-241Z.de4388c1098ee8cd.html",
+        "hash": "de4388c1098ee8cdf0ac67da8555b6245444a1c6ce72c18b43fdc92127b9f2f9",
+        "bytes": 27398,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=15"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:53.413Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0052T0",
+      "isin": "KR70052T0008",
+      "name": "1Q 중단기회사채(A-이상)액티브",
+      "productId": "16",
+      "sourceName": "1Q 중단기회사채(A-이상)액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=16",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "신용등급 A-이상 우량 크레딧 채권에 투자하여 안정적 이자수익 기대; 잔존만기 3개월 초과, 3년 이하 채권에 투자하여 금리 변동에 따른 위험 최소화 추구; 퇴직연금 계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+        "investmentObjective": "신용등급 A-이상 우량 크레딧 채권에 투자하여 안정적 이자수익 기대; 잔존만기 3개월 초과, 3년 이하 채권에 투자하여 금리 변동에 따른 위험 최소화 추구; 퇴직연금 계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+        "benchmarkName": "KEDI 중단기크레딧플러스채권(AAA~A-)지수(총수익)",
+        "benchmarkDescription": "KEDI 중단기크레딧플러스채권(AAA~A-)지수는 잔존만기 3개월 초과 3년 이하 신용등급 A- 이상의 회사채, 카드채, 기타금융채로 구성된 지수입니다.",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=16&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=16&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=16&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "신용등급 A-이상 우량 크레딧 채권에 투자하여 안정적 이자수익 기대; 잔존만기 3개월 초과, 3년 이하 채권에 투자하여 금리 변동에 따른 위험 최소화 추구; 퇴직연금 계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+          "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "신용등급 A-이상 우량 크레딧 채권에 투자하여 안정적 이자수익 기대; 잔존만기 3개월 초과, 3년 이하 채권에 투자하여 금리 변동에 따른 위험 최소화 추구; 퇴직연금 계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+          "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KEDI 중단기크레딧플러스채권(AAA~A-)지수(총수익)",
+          "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "KEDI 중단기크레딧플러스채권(AAA~A-)지수는 잔존만기 3개월 초과 3년 이하 신용등급 A- 이상의 회사채, 카드채, 기타금융채로 구성된 지수입니다.",
+          "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=16&fld=attach1",
+            "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=16&fld=attach2",
+            "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=16&fld=attach3",
+            "rawHash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0052T0/2026-07-21T07-03-53-413Z.168f90785ae882d2.html",
+        "hash": "168f90785ae882d238986deb928cfb647bd79371393032d3575cb779d3137a7c",
+        "bytes": 28591,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=16"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:54.589Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0069M0",
+      "isin": "KR70069M0006",
+      "name": "1Q 미국나스닥100",
+      "productId": "17",
+      "sourceName": "1Q 미국나스닥100",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=17",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "미국 기술주 중심 100개 기업으로 구성된 나스닥100; 나스닥100에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+        "investmentObjective": "미국 기술주 중심 100개 기업으로 구성된 나스닥100; 나스닥100에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+        "benchmarkName": "NASDAQ100 Index",
+        "benchmarkDescription": "Nasdaq-100 지수(Nasdaq-100 Index®)는 나스닥에 상장된 비금융 분야 상위 100개 대형 기업의 성과를 측정하도록 설계되었 습니다.",
+        "distributionPolicy": "3,6,9,12월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=17&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=17&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=17&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "미국 기술주 중심 100개 기업으로 구성된 나스닥100; 나스닥100에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+          "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "미국 기술주 중심 100개 기업으로 구성된 나스닥100; 나스닥100에 연 0.0055% 저보수로 투자; 3,6,9,12월의 15일 및 회계기간 종료일 기준 분기분배 추구",
+          "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "NASDAQ100 Index",
+          "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "Nasdaq-100 지수(Nasdaq-100 Index®)는 나스닥에 상장된 비금융 분야 상위 100개 대형 기업의 성과를 측정하도록 설계되었 습니다.",
+          "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "3,6,9,12월의 15일 및 회계기간 종료일",
+          "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=17&fld=attach1",
+            "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=17&fld=attach2",
+            "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=17&fld=attach3",
+            "rawHash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0069M0/2026-07-21T07-03-54-589Z.244a09c3ae341653.html",
+        "hash": "244a09c3ae341653d3036232e5803c97a41ae5ed6a3a5d33dbe68da76348c959",
+        "bytes": 27246,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=17"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:55.756Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0083S0",
+      "isin": "KR70083S0002",
+      "name": "1Q 미국메디컬AI",
+      "productId": "18",
+      "sourceName": "1Q 미국메디컬 AI",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=18",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "AI도입으로 혁신 성장이 기대되는 메디컬 분야; 진단, 신약개발, 치료까지 AI가 접목되어 오진가능성 감소, 정밀도 향상, 시간 단축; 미국 메디컬 AI 대표기업에 집중 투자하는 ETF",
+        "investmentObjective": "AI도입으로 혁신 성장이 기대되는 메디컬 분야; 진단, 신약개발, 치료까지 AI가 접목되어 오진가능성 감소, 정밀도 향상, 시간 단축; 미국 메디컬 AI 대표기업에 집중 투자하는 ETF",
+        "benchmarkName": "KEDI 미국메디컬AI지수",
+        "benchmarkDescription": "미국에 상장된 메디컬AI 산업관련 대표 주식으로 구성된 주식 전략 지수(PR)입니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=18&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=18&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=18&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "AI도입으로 혁신 성장이 기대되는 메디컬 분야; 진단, 신약개발, 치료까지 AI가 접목되어 오진가능성 감소, 정밀도 향상, 시간 단축; 미국 메디컬 AI 대표기업에 집중 투자하는 ETF",
+          "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "AI도입으로 혁신 성장이 기대되는 메디컬 분야; 진단, 신약개발, 치료까지 AI가 접목되어 오진가능성 감소, 정밀도 향상, 시간 단축; 미국 메디컬 AI 대표기업에 집중 투자하는 ETF",
+          "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KEDI 미국메디컬AI지수",
+          "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "미국에 상장된 메디컬AI 산업관련 대표 주식으로 구성된 주식 전략 지수(PR)입니다.",
+          "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=18&fld=attach1",
+            "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=18&fld=attach2",
+            "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=18&fld=attach3",
+            "rawHash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0083S0/2026-07-21T07-03-55-756Z.01d1c7d829d7f15c.html",
+        "hash": "01d1c7d829d7f15cee273eb7d41e54161ab517e86c06d556630a326cb050b513",
+        "bytes": 27296,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=18"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:56.989Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0094X0",
+      "isin": "KR70094X0002",
+      "name": "1Q 샤오미밸류체인액티브",
+      "productId": "19",
+      "sourceName": "1Q 샤오미밸류체인액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=19",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "샤오미 25% 수준 투자, 관련 밸류체인 기업에서 초과성과 추구; 스마트폰, 로봇청소기 그리고 전기차까지 진출한 샤오미; 샤오미 최소 매매단위 200주 제한없이 소액으로 중국 주식 투자",
+        "investmentObjective": "샤오미 25% 수준 투자, 관련 밸류체인 기업에서 초과성과 추구; 스마트폰, 로봇청소기 그리고 전기차까지 진출한 샤오미; 샤오미 최소 매매단위 200주 제한없이 소액으로 중국 주식 투자",
+        "benchmarkName": "Solactive-Kedi Xiaomi Focus China Tech Index(원화환산)",
+        "benchmarkDescription": "Xiaomi Corp.를 고정 구성 요소로 포함하여 중국 주요 기업을 대표합니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=19&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=19&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=19&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "샤오미 25% 수준 투자, 관련 밸류체인 기업에서 초과성과 추구; 스마트폰, 로봇청소기 그리고 전기차까지 진출한 샤오미; 샤오미 최소 매매단위 200주 제한없이 소액으로 중국 주식 투자",
+          "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "샤오미 25% 수준 투자, 관련 밸류체인 기업에서 초과성과 추구; 스마트폰, 로봇청소기 그리고 전기차까지 진출한 샤오미; 샤오미 최소 매매단위 200주 제한없이 소액으로 중국 주식 투자",
+          "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "Solactive-Kedi Xiaomi Focus China Tech Index(원화환산)",
+          "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "Xiaomi Corp.를 고정 구성 요소로 포함하여 중국 주요 기업을 대표합니다.",
+          "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=19&fld=attach1",
+            "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=19&fld=attach2",
+            "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=19&fld=attach3",
+            "rawHash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0094X0/2026-07-21T07-03-56-989Z.de74fd89127077dc.html",
+        "hash": "de74fd89127077dc751c7a3d475908c371d90a420c2db96b3bcd18a196b0df2f",
+        "bytes": 27309,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=19"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:58.214Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0103T0",
+      "isin": "KR70103T0007",
+      "name": "1Q K소버린AI",
+      "productId": "21",
+      "sourceName": "1Q K소버린AI",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=21",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국가 전략 산업으로서의 강력한 소버린AI 정책 드라이브; 글로벌 AI 경쟁 가속되는 중, 국산 AI의 전략적 가치 부각; AI 수요의 전방위 확산으로 매출/실적 가시화 기대",
+        "investmentObjective": "국가 전략 산업으로서의 강력한 소버린AI 정책 드라이브; 글로벌 AI 경쟁 가속되는 중, 국산 AI의 전략적 가치 부각; AI 수요의 전방위 확산으로 매출/실적 가시화 기대",
+        "benchmarkName": "iSelect K소버린AI 지수",
+        "benchmarkDescription": "국내 상장 기업 중에서 AI소프트웨어, AI플랫폼, AI검색엔진, 클라우드, 모바일서비스, 데이터분석 등 다양한 영역에서 자체AI기술을 개발하고 상용화를 추진하는 기업 및 AI 관련 기업의 성장을 지원하는 전문 투자기업을 NLP(자연어처리, Natural Language Procossing)기법으로 관련성을 기준으로 15개 한도 내로 선정, 이후 유동 시가총액 가중 방식으로 비중을 부여한 지수입니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=21&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=21&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=21&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국가 전략 산업으로서의 강력한 소버린AI 정책 드라이브; 글로벌 AI 경쟁 가속되는 중, 국산 AI의 전략적 가치 부각; AI 수요의 전방위 확산으로 매출/실적 가시화 기대",
+          "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국가 전략 산업으로서의 강력한 소버린AI 정책 드라이브; 글로벌 AI 경쟁 가속되는 중, 국산 AI의 전략적 가치 부각; AI 수요의 전방위 확산으로 매출/실적 가시화 기대",
+          "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "iSelect K소버린AI 지수",
+          "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "국내 상장 기업 중에서 AI소프트웨어, AI플랫폼, AI검색엔진, 클라우드, 모바일서비스, 데이터분석 등 다양한 영역에서 자체AI기술을 개발하고 상용화를 추진하는 기업 및 AI 관련 기업의 성장을 지원하는 전문 투자기업을 NLP(자연어처리, Natural Language Procossing)기법으로 관련성을 기준으로 15개 한도 내로 선정, 이후 유동 시가총액 가중 방식으로 비중을 부여한 지수입니다.",
+          "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=21&fld=attach1",
+            "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=21&fld=attach2",
+            "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=21&fld=attach3",
+            "rawHash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0103T0/2026-07-21T07-03-58-214Z.4c37c5351be7f4b8.html",
+        "hash": "4c37c5351be7f4b8446aa8ac47c1760b0ea6fd9565468017db5e2affbc0cbfd1",
+        "bytes": 27613,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=21"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:03:59.411Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0111P0",
+      "isin": "KR70111P0001",
+      "name": "1Q 미국나스닥100미국채혼합50액티브",
+      "productId": "20",
+      "sourceName": "1Q 미국나스닥100미국채혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=20",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "나스닥100 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 총보수 0.05%의 저보수로 장기투자에 용이; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+        "investmentObjective": "나스닥100 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 총보수 0.05%의 저보수로 장기투자에 용이; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+        "benchmarkName": "Nasdaq -100 US T-bills 0-6 Month 50/50 Index(원화환산)",
+        "benchmarkDescription": "Nasdaq-100 US T-Bills 0-6 Month 50/50 Index는 Nasdaq-100 Index와 Nasdaq US T-Bill V2 Index에 투자하여 혼합 주식 및 단기 이자 수익 전략을 제공하도록 설계되었습니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=20&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=20&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=20&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "나스닥100 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 총보수 0.05%의 저보수로 장기투자에 용이; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+          "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "나스닥100 지수에 50% 미만, 잔여자산을 미국 국채에 투자하는 ETF; 총보수 0.05%의 저보수로 장기투자에 용이; 퇴직연금에 100% 한도로 투자할 수 있는 채권혼합형 ETF",
+          "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "Nasdaq -100 US T-bills 0-6 Month 50/50 Index(원화환산)",
+          "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "Nasdaq-100 US T-Bills 0-6 Month 50/50 Index는 Nasdaq-100 Index와 Nasdaq US T-Bill V2 Index에 투자하여 혼합 주식 및 단기 이자 수익 전략을 제공하도록 설계되었습니다.",
+          "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=20&fld=attach1",
+            "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=20&fld=attach2",
+            "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=20&fld=attach3",
+            "rawHash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0111P0/2026-07-21T07-03-59-411Z.293b6e1c337c46dc.html",
+        "hash": "293b6e1c337c46dc1015218ce27effd8600657759fbe85239b363367ea0b35af",
+        "bytes": 27377,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=20"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:00.597Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0131V0",
+      "isin": "KR70131V0009",
+      "name": "1Q 미국우주항공테크",
+      "productId": "22",
+      "sourceName": "1Q 미국우주항공테크",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=22",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "뉴스페이스와 UAM 산업의 성장성에 주목; 중형 로켓 상업 발사, UAM 운항 인증 임박 등 눈 앞으로 다가온 상용화; 국내 최초의 미국 우주/항공테크 핵심 기업에 집중 투자하는 ETF",
+        "investmentObjective": "뉴스페이스와 UAM 산업의 성장성에 주목; 중형 로켓 상업 발사, UAM 운항 인증 임박 등 눈 앞으로 다가온 상용화; 국내 최초의 미국 우주/항공테크 핵심 기업에 집중 투자하는 ETF",
+        "benchmarkName": "Akros U.S. Aerospace Tech Index",
+        "benchmarkDescription": "해당 지수는 우주 인프라, 위성 통신, 첨단 항공 모빌리티에 걸쳐 구성 종목을 포함하며, 항공우주 기술 혁신을 주도하는 미국 상장 기업들에 대한 투자 노출을 제공합니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=22&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=22&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=22&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "뉴스페이스와 UAM 산업의 성장성에 주목; 중형 로켓 상업 발사, UAM 운항 인증 임박 등 눈 앞으로 다가온 상용화; 국내 최초의 미국 우주/항공테크 핵심 기업에 집중 투자하는 ETF",
+          "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "뉴스페이스와 UAM 산업의 성장성에 주목; 중형 로켓 상업 발사, UAM 운항 인증 임박 등 눈 앞으로 다가온 상용화; 국내 최초의 미국 우주/항공테크 핵심 기업에 집중 투자하는 ETF",
+          "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "Akros U.S. Aerospace Tech Index",
+          "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "해당 지수는 우주 인프라, 위성 통신, 첨단 항공 모빌리티에 걸쳐 구성 종목을 포함하며, 항공우주 기술 혁신을 주도하는 미국 상장 기업들에 대한 투자 노출을 제공합니다.",
+          "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=22&fld=attach1",
+            "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=22&fld=attach2",
+            "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=22&fld=attach3",
+            "rawHash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0131V0/2026-07-21T07-04-00-597Z.f555db6e6e242157.html",
+        "hash": "f555db6e6e242157fdb58772060087056a4f267df1195ac2ad17d1dccdbb1092",
+        "bytes": 27385,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=22"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:01.808Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0131W0",
+      "isin": "KR70131W0008",
+      "name": "1Q 단기특수은행채액티브",
+      "productId": "23",
+      "sourceName": "1Q 단기특수은행채액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=23",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국채급 신용등급인 특수은행채에 투자하여 안정적 이자수익 기대; 평균 듀레이션 0.25년으로 시황에 따른 영향 최소화 추구; 퇴직연금계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+        "investmentObjective": "국채급 신용등급인 특수은행채에 투자하여 안정적 이자수익 기대; 평균 듀레이션 0.25년으로 시황에 따른 영향 최소화 추구; 퇴직연금계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+        "benchmarkName": "KIS 단기특수은행채지수(총수익)",
+        "benchmarkDescription": "KIS 단기특수은행채지수는 발행잔액이 500억 이상이며, 잔존만기가 6개월 이하인 특수은행(산업은행, 중소기업은행, 수출입은행)이 발행한 할인채로 바스켓종목을 구성하여 단기금융시장의 성과를 나타내는 지수",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=23&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=23&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=23&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국채급 신용등급인 특수은행채에 투자하여 안정적 이자수익 기대; 평균 듀레이션 0.25년으로 시황에 따른 영향 최소화 추구; 퇴직연금계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+          "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국채급 신용등급인 특수은행채에 투자하여 안정적 이자수익 기대; 평균 듀레이션 0.25년으로 시황에 따른 영향 최소화 추구; 퇴직연금계좌에서 100% 비중으로 투자 가능한 채권형 ETF",
+          "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KIS 단기특수은행채지수(총수익)",
+          "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "KIS 단기특수은행채지수는 발행잔액이 500억 이상이며, 잔존만기가 6개월 이하인 특수은행(산업은행, 중소기업은행, 수출입은행)이 발행한 할인채로 바스켓종목을 구성하여 단기금융시장의 성과를 나타내는 지수",
+          "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=23&fld=attach1",
+            "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=23&fld=attach2",
+            "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=23&fld=attach3",
+            "rawHash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0131W0/2026-07-21T07-04-01-808Z.db254519850ee3d6.html",
+        "hash": "db254519850ee3d681546364e5bfe8291c3d4d8f21c87737402cd6d1612bed0b",
+        "bytes": 28624,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=23"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:03.031Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0172V0",
+      "isin": "KR70172V0009",
+      "name": "1Q 은액티브",
+      "productId": "24",
+      "sourceName": "1Q 은액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=24",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "대표적인 귀금속으로서 실물가치를 인정받은 은; 태양광, 반도체, 배터리 등 첨단산업의 필수재; 퇴직연금 계좌에서 투자가능한 은 ETF",
+        "investmentObjective": "대표적인 귀금속으로서 실물가치를 인정받은 은; 태양광, 반도체, 배터리 등 첨단산업의 필수재; 퇴직연금 계좌에서 투자가능한 은 ETF",
+        "benchmarkName": "Bloomberg Blended Silver Spot USD Index",
+        "benchmarkDescription": "Bloomberg Blended Silver Spot USD Index는 은(silver) 현물 가격에 대한 롱 포지션으로 구성된 고정 비중 바스켓의 성과를 나타내는 지수입니다.",
+        "distributionPolicy": "회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=24&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=24&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=24&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "대표적인 귀금속으로서 실물가치를 인정받은 은; 태양광, 반도체, 배터리 등 첨단산업의 필수재; 퇴직연금 계좌에서 투자가능한 은 ETF",
+          "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "대표적인 귀금속으로서 실물가치를 인정받은 은; 태양광, 반도체, 배터리 등 첨단산업의 필수재; 퇴직연금 계좌에서 투자가능한 은 ETF",
+          "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "Bloomberg Blended Silver Spot USD Index",
+          "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "Bloomberg Blended Silver Spot USD Index는 은(silver) 현물 가격에 대한 롱 포지션으로 구성된 고정 비중 바스켓의 성과를 나타내는 지수입니다.",
+          "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "회계기간 종료일",
+          "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=24&fld=attach1",
+            "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=24&fld=attach2",
+            "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=24&fld=attach3",
+            "rawHash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0172V0/2026-07-21T07-04-03-031Z.bd08a5ad96105b41.html",
+        "hash": "bd08a5ad96105b4182738c8bc43e802c380689e2366f77b561c043706a5bdb67",
+        "bytes": 27199,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=24"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:04.218Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0182R0",
+      "isin": "KR70182R0003",
+      "name": "1Q K반도체TOP2+",
+      "productId": "25",
+      "sourceName": "1Q K반도체TOP2+",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=25",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "삼성전자와 SK하이닉스에 집중하는 국내 반도체 ETF; 국내 반도체 ETF에 저렴한 총 보수로 투자; AI 확산에 따른 메모리 반도체 메가사이클 본격 진입",
+        "investmentObjective": "삼성전자와 SK하이닉스에 집중하는 국내 반도체 ETF; 국내 반도체 ETF에 저렴한 총 보수로 투자; AI 확산에 따른 메모리 반도체 메가사이클 본격 진입",
+        "benchmarkName": "NICE K반도체 TOP2 MAX+ 지수",
+        "benchmarkDescription": "유가증권 시장 및 코스닥에 상장된 반도체, 전자 장비 및 기기에 해당하는 시가총액 상위 10개 기업으로 구성된 지수로, 상위 2종목에 27.5% 가중치를 부여",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=25&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=25&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=25&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "삼성전자와 SK하이닉스에 집중하는 국내 반도체 ETF; 국내 반도체 ETF에 저렴한 총 보수로 투자; AI 확산에 따른 메모리 반도체 메가사이클 본격 진입",
+          "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "삼성전자와 SK하이닉스에 집중하는 국내 반도체 ETF; 국내 반도체 ETF에 저렴한 총 보수로 투자; AI 확산에 따른 메모리 반도체 메가사이클 본격 진입",
+          "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "NICE K반도체 TOP2 MAX+ 지수",
+          "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "유가증권 시장 및 코스닥에 상장된 반도체, 전자 장비 및 기기에 해당하는 시가총액 상위 10개 기업으로 구성된 지수로, 상위 2종목에 27.5% 가중치를 부여",
+          "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=25&fld=attach1",
+            "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=25&fld=attach2",
+            "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=25&fld=attach3",
+            "rawHash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0182R0/2026-07-21T07-04-04-218Z.864333a6b604d12e.html",
+        "hash": "864333a6b604d12ed04c2a34fb88a1de91728b4f42d4636f3f476786975c2b8e",
+        "bytes": 27290,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=25"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:05.434Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0182S0",
+      "isin": "KR70182S0002",
+      "name": "1Q K반도체TOP2채권혼합50",
+      "productId": "27",
+      "sourceName": "1Q K반도체TOP2채권혼합50",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=27",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국내반도체 대장주와 국내 채권에 50%:50% 비중 투자; AI확산에 따른 메모리 반도체 메가사이클 본격 진입; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "investmentObjective": "국내반도체 대장주와 국내 채권에 50%:50% 비중 투자; AI확산에 따른 메모리 반도체 메가사이클 본격 진입; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "benchmarkName": "KEDI K반도체TOP2채권혼합지수",
+        "benchmarkDescription": "KEDI K반도체TOP2채권혼합 지수는 한국 반도체를 대표하는 두 종목과 하위 지수인 KAP단기국고통안채6M총수익 지수가 혼합된 채권혼합지수입니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=27&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=27&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=27&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국내반도체 대장주와 국내 채권에 50%:50% 비중 투자; AI확산에 따른 메모리 반도체 메가사이클 본격 진입; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국내반도체 대장주와 국내 채권에 50%:50% 비중 투자; AI확산에 따른 메모리 반도체 메가사이클 본격 진입; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KEDI K반도체TOP2채권혼합지수",
+          "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "KEDI K반도체TOP2채권혼합 지수는 한국 반도체를 대표하는 두 종목과 하위 지수인 KAP단기국고통안채6M총수익 지수가 혼합된 채권혼합지수입니다.",
+          "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=27&fld=attach1",
+            "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=27&fld=attach2",
+            "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=27&fld=attach3",
+            "rawHash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0182S0/2026-07-21T07-04-05-434Z.e9b4749eb4361b14.html",
+        "hash": "e9b4749eb4361b149735f138323dae6570279d810aa245521f21c1c2f2647422",
+        "bytes": 27329,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=27"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:06.627Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0184E0",
+      "isin": "KR70184E0006",
+      "name": "1Q 200채권혼합50액티브",
+      "productId": "28",
+      "sourceName": "1Q 200채권혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=28",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "코스피200지수와 국내 단기 채권에 50%:50% 비중 투자; 환율과 메모리 업황은 IT비중이 높은 코스피에 긍정적 영향 기대; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "investmentObjective": "코스피200지수와 국내 단기 채권에 50%:50% 비중 투자; 환율과 메모리 업황은 IT비중이 높은 코스피에 긍정적 영향 기대; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "benchmarkName": "코스피200 단기국공채혼합지수",
+        "benchmarkDescription": "코스피 200 단기국공채 혼합지수는 코스피 200과 KIS 단기국공채 지수 수익률을 5:5로 혼합하는 지수입니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=28&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=28&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=28&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스피200지수와 국내 단기 채권에 50%:50% 비중 투자; 환율과 메모리 업황은 IT비중이 높은 코스피에 긍정적 영향 기대; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스피200지수와 국내 단기 채권에 50%:50% 비중 투자; 환율과 메모리 업황은 IT비중이 높은 코스피에 긍정적 영향 기대; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "코스피200 단기국공채혼합지수",
+          "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "코스피 200 단기국공채 혼합지수는 코스피 200과 KIS 단기국공채 지수 수익률을 5:5로 혼합하는 지수입니다.",
+          "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=28&fld=attach1",
+            "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=28&fld=attach2",
+            "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=28&fld=attach3",
+            "rawHash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0184E0/2026-07-21T07-04-06-627Z.f9f1dffdd6b743b9.html",
+        "hash": "f9f1dffdd6b743b96ba5f8ab1549f6b3c2b6f34c01b62e70f21242a6bbaf5615",
+        "bytes": 27379,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=28"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:07.843Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0186S0",
+      "isin": "KR70186S0008",
+      "name": "1Q 코스닥150채권혼합50액티브",
+      "productId": "30",
+      "sourceName": "1Q 코스닥150채권혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=30",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "코스닥150지수와 국내 단기 채권에 50%:50% 비중 투자; 코스닥 활성화 정책 기대감; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "investmentObjective": "코스닥150지수와 국내 단기 채권에 50%:50% 비중 투자; 코스닥 활성화 정책 기대감; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "benchmarkName": "코스닥150 단기국공채혼합지수",
+        "benchmarkDescription": "코스닥 150 단기국공채 혼합지수는 코스닥 150 지수와 KIS 단기국공채 지수 수익률을 5:5로 혼합하는 지수입니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=30&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=30&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=30&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스닥150지수와 국내 단기 채권에 50%:50% 비중 투자; 코스닥 활성화 정책 기대감; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "코스닥150지수와 국내 단기 채권에 50%:50% 비중 투자; 코스닥 활성화 정책 기대감; 퇴직연금 계좌 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "코스닥150 단기국공채혼합지수",
+          "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "코스닥 150 단기국공채 혼합지수는 코스닥 150 지수와 KIS 단기국공채 지수 수익률을 5:5로 혼합하는 지수입니다.",
+          "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=30&fld=attach1",
+            "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=30&fld=attach2",
+            "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=30&fld=attach3",
+            "rawHash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0186S0/2026-07-21T07-04-07-843Z.afc2d43f89cb705a.html",
+        "hash": "afc2d43f89cb705a9677a4ed0cfa923eeb3d2c55e79bfc02379758ad55078f2b",
+        "bytes": 27343,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=30"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:09.034Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0198B0",
+      "isin": "KR70198B0003",
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "productId": "31",
+      "sourceName": "1Q 삼성전자선물단일종목레버리지",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=31",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국내 대표 반도체 대형주에 집중하는 2배 레버리지 ETF; AI 인프라 확대 수혜가 기대되는 삼성전자 메모리 경쟁력; 국내에서도 가능해진 단일종목 레버리지 투자",
+        "investmentObjective": "국내 대표 반도체 대형주에 집중하는 2배 레버리지 ETF; AI 인프라 확대 수혜가 기대되는 삼성전자 메모리 경쟁력; 국내에서도 가능해진 단일종목 레버리지 투자",
+        "benchmarkName": "KRX 삼성전자 선물지수",
+        "benchmarkDescription": "KRX 단일종목 선물지수는 KRX 파생상품시장에 상장된 단일종목 주식선물 최근월물을 활용하여 산출하는 지수입니다. 다만, 최종거래일 직전 3거래일부터 최종거래일까지 총 4거래일 동안에는 차근월물로 종목 교체(Rollover)를 실시하며, 최종거래일의 장 종료시점에는 차근월물로 전량 교체되어 산출합니다.",
+        "distributionPolicy": "회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=31&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=31&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=31&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국내 대표 반도체 대형주에 집중하는 2배 레버리지 ETF; AI 인프라 확대 수혜가 기대되는 삼성전자 메모리 경쟁력; 국내에서도 가능해진 단일종목 레버리지 투자",
+          "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "국내 대표 반도체 대형주에 집중하는 2배 레버리지 ETF; AI 인프라 확대 수혜가 기대되는 삼성전자 메모리 경쟁력; 국내에서도 가능해진 단일종목 레버리지 투자",
+          "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KRX 삼성전자 선물지수",
+          "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "KRX 단일종목 선물지수는 KRX 파생상품시장에 상장된 단일종목 주식선물 최근월물을 활용하여 산출하는 지수입니다. 다만, 최종거래일 직전 3거래일부터 최종거래일까지 총 4거래일 동안에는 차근월물로 종목 교체(Rollover)를 실시하며, 최종거래일의 장 종료시점에는 차근월물로 전량 교체되어 산출합니다.",
+          "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "회계기간 종료일",
+          "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=31&fld=attach1",
+            "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=31&fld=attach2",
+            "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=31&fld=attach3",
+            "rawHash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0198B0/2026-07-21T07-04-09-034Z.bede1870535cbfef.html",
+        "hash": "bede1870535cbfef39159e383c03794e146e1261436f1fe85d137cb1dffc6319",
+        "bytes": 27591,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=31"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:10.240Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0198D0",
+      "isin": "KR70198D0001",
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "productId": "32",
+      "sourceName": "1Q SK하이닉스선물단일종목레버리지",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=32",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "AI 메모리 핵심 수혜주에 집중하는 2배 레버리지 ETF; HBM 리더십과 사상 최대 실적이 보여주는 강한 실적 모멘텀; AI 메모리 슈퍼사이클에 대한 방향성에 더 강하게 투자",
+        "investmentObjective": "AI 메모리 핵심 수혜주에 집중하는 2배 레버리지 ETF; HBM 리더십과 사상 최대 실적이 보여주는 강한 실적 모멘텀; AI 메모리 슈퍼사이클에 대한 방향성에 더 강하게 투자",
+        "benchmarkName": "KRX SK하이닉스 선물지수",
+        "benchmarkDescription": "KRX 단일종목 선물지수는 KRX 파생상품시장에 상장된 단일종목 주식선물 최근월물을 활용하여 산출하는 지수입니다. 다만, 최종거래일 직전 3거래일부터 최종거래일까지 총 4거래일 동안에는 차근월물로 종목 교체(Rollover)를 실시하며, 최종거래일의 장 종료시점에는 차근월물로 전량 교체되어 산출합니다.",
+        "distributionPolicy": "회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=32&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=32&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=32&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "AI 메모리 핵심 수혜주에 집중하는 2배 레버리지 ETF; HBM 리더십과 사상 최대 실적이 보여주는 강한 실적 모멘텀; AI 메모리 슈퍼사이클에 대한 방향성에 더 강하게 투자",
+          "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "AI 메모리 핵심 수혜주에 집중하는 2배 레버리지 ETF; HBM 리더십과 사상 최대 실적이 보여주는 강한 실적 모멘텀; AI 메모리 슈퍼사이클에 대한 방향성에 더 강하게 투자",
+          "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KRX SK하이닉스 선물지수",
+          "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "KRX 단일종목 선물지수는 KRX 파생상품시장에 상장된 단일종목 주식선물 최근월물을 활용하여 산출하는 지수입니다. 다만, 최종거래일 직전 3거래일부터 최종거래일까지 총 4거래일 동안에는 차근월물로 종목 교체(Rollover)를 실시하며, 최종거래일의 장 종료시점에는 차근월물로 전량 교체되어 산출합니다.",
+          "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "회계기간 종료일",
+          "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=32&fld=attach1",
+            "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=32&fld=attach2",
+            "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=32&fld=attach3",
+            "rawHash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0198D0/2026-07-21T07-04-10-240Z.fd4f5d59b9bc0469.html",
+        "hash": "fd4f5d59b9bc04692d28dcaa26bae9eaa97b981aa0f09bb3cb7e1e70cc28380a",
+        "bytes": 27585,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=32"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:11.426Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "0206G0",
+      "isin": "KR70206G0008",
+      "name": "1Q 현대차기아채권혼합50",
+      "productId": "33",
+      "sourceName": "1Q 현대차기아채권혼합50",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=33",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "현대차, 기아 주식과 국내 채권에 50%:50% 비중 투자; 완성차 업체에서 피지컬AI 분야로 사업을 확대하고 있는 현대차, 기아; 퇴직연금 계좌에서 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "investmentObjective": "현대차, 기아 주식과 국내 채권에 50%:50% 비중 투자; 완성차 업체에서 피지컬AI 분야로 사업을 확대하고 있는 현대차, 기아; 퇴직연금 계좌에서 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+        "benchmarkName": "KEDI 현대차&기아채권혼합50지수",
+        "benchmarkDescription": "현대차(005380), 기아(000270) 두 종목과 하위 지수인 KAP단기국고통안채6M총수익 지수가 혼합된 채권혼합지수입니다.",
+        "distributionPolicy": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=33&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=33&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=33&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "현대차, 기아 주식과 국내 채권에 50%:50% 비중 투자; 완성차 업체에서 피지컬AI 분야로 사업을 확대하고 있는 현대차, 기아; 퇴직연금 계좌에서 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "현대차, 기아 주식과 국내 채권에 50%:50% 비중 투자; 완성차 업체에서 피지컬AI 분야로 사업을 확대하고 있는 현대차, 기아; 퇴직연금 계좌에서 100%까지 투자 가능한 2세대 채권혼합형 ETF",
+          "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KEDI 현대차&기아채권혼합50지수",
+          "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "현대차(005380), 기아(000270) 두 종목과 하위 지수인 KAP단기국고통안채6M총수익 지수가 혼합된 채권혼합지수입니다.",
+          "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+          "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=33&fld=attach1",
+            "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=33&fld=attach2",
+            "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=33&fld=attach3",
+            "rawHash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/0206G0/2026-07-21T07-04-11-426Z.2be5ddb4e4165382.html",
+        "hash": "2be5ddb4e4165382df50aeb1b3bc06782bca9df328896c8214622e196b20e70c",
+        "bytes": 27313,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=33"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:12.647Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "463290",
+      "isin": "KR7463290007",
+      "name": "1Q 단기금융채액티브",
+      "productId": "2",
+      "sourceName": "1Q 단기금융채액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=2",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "단기자금시장 대표지수 중 하나인 KIS MK 머니마켓 지수의 변동률을 추종하는 동시에 마켓타이밍/크레딧 전략 등을 통해 일정 수준 초과수익 추구; 특수은행채, 시중은행채, 금융지주 계열 캐피탈채 등을 편입해 경쟁력 있는 YTM 추구; 업계 1위 규모의 단기 자산 운용 경험을 보유한 역량 보유",
+        "investmentObjective": "단기자금시장 대표지수 중 하나인 KIS MK 머니마켓 지수의 변동률을 추종하는 동시에 마켓타이밍/크레딧 전략 등을 통해 일정 수준 초과수익 추구; 특수은행채, 시중은행채, 금융지주 계열 캐피탈채 등을 편입해 경쟁력 있는 YTM 추구; 업계 1위 규모의 단기 자산 운용 경험을 보유한 역량 보유",
+        "benchmarkName": "MK Money Market Index(총수익지수)",
+        "benchmarkDescription": "통안증권 및 AAA등급 이상의 채권 12종목을 동일비중으로 구성하여 KIS자산평가가 산출 및 제공하는 총수익지수",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=2&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=2&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=2&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "단기자금시장 대표지수 중 하나인 KIS MK 머니마켓 지수의 변동률을 추종하는 동시에 마켓타이밍/크레딧 전략 등을 통해 일정 수준 초과수익 추구; 특수은행채, 시중은행채, 금융지주 계열 캐피탈채 등을 편입해 경쟁력 있는 YTM 추구; 업계 1위 규모의 단기 자산 운용 경험을 보유한 역량 보유",
+          "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "단기자금시장 대표지수 중 하나인 KIS MK 머니마켓 지수의 변동률을 추종하는 동시에 마켓타이밍/크레딧 전략 등을 통해 일정 수준 초과수익 추구; 특수은행채, 시중은행채, 금융지주 계열 캐피탈채 등을 편입해 경쟁력 있는 YTM 추구; 업계 1위 규모의 단기 자산 운용 경험을 보유한 역량 보유",
+          "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "MK Money Market Index(총수익지수)",
+          "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "통안증권 및 AAA등급 이상의 채권 12종목을 동일비중으로 구성하여 KIS자산평가가 산출 및 제공하는 총수익지수",
+          "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=2&fld=attach1",
+            "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=2&fld=attach2",
+            "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=2&fld=attach3",
+            "rawHash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/463290/2026-07-21T07-04-12-647Z.ec14512441962a2d.html",
+        "hash": "ec14512441962a2d5f3d44d657482708e53242d0c4768cca729565cc82163a80",
+        "bytes": 28576,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=2"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:13.849Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "479080",
+      "isin": "KR7479080004",
+      "name": "1Q 머니마켓액티브",
+      "productId": "7",
+      "sourceName": "1Q 머니마켓액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=7",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "KIS 하나 MMF지수의 변동률를 추종하는 가운데 마켓타이밍 및 크레딧 전략 등을 통해 비교지수 대비 초과수익을 추구; 평균 듀레이션 0.15년 내외로 운용하여 가격하락 위험을 최소화하고, 잔존만기 1~3개월 이내의 전단채 및 CP를 주로 투자하여 유동성 관리; 업계 최상위권 규모의 MMF를 운용하며 차별화된 역량 보유",
+        "investmentObjective": "KIS 하나 MMF지수의 변동률를 추종하는 가운데 마켓타이밍 및 크레딧 전략 등을 통해 비교지수 대비 초과수익을 추구; 평균 듀레이션 0.15년 내외로 운용하여 가격하락 위험을 최소화하고, 잔존만기 1~3개월 이내의 전단채 및 CP를 주로 투자하여 유동성 관리; 업계 최상위권 규모의 MMF를 운용하며 차별화된 역량 보유",
+        "benchmarkName": "KIS 하나MMF지수(총수익지수)",
+        "benchmarkDescription": "- 초단기형 ETF 추적지수 사용을 목적으로 개발한 지수로, 듀레이션 0.15년 내외인 기업어음증권(CP)과 단기사채(STB), 발행잔액이 500억 이상이며 잔존만기가 3개월 이하인 국고, 통안, 지역개발채 및 국내 신용등급 AA-이상의 단기 채권으로 구성",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=7&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=7&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=7&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "KIS 하나 MMF지수의 변동률를 추종하는 가운데 마켓타이밍 및 크레딧 전략 등을 통해 비교지수 대비 초과수익을 추구; 평균 듀레이션 0.15년 내외로 운용하여 가격하락 위험을 최소화하고, 잔존만기 1~3개월 이내의 전단채 및 CP를 주로 투자하여 유동성 관리; 업계 최상위권 규모의 MMF를 운용하며 차별화된 역량 보유",
+          "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "KIS 하나 MMF지수의 변동률를 추종하는 가운데 마켓타이밍 및 크레딧 전략 등을 통해 비교지수 대비 초과수익을 추구; 평균 듀레이션 0.15년 내외로 운용하여 가격하락 위험을 최소화하고, 잔존만기 1~3개월 이내의 전단채 및 CP를 주로 투자하여 유동성 관리; 업계 최상위권 규모의 MMF를 운용하며 차별화된 역량 보유",
+          "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KIS 하나MMF지수(총수익지수)",
+          "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "- 초단기형 ETF 추적지수 사용을 목적으로 개발한 지수로, 듀레이션 0.15년 내외인 기업어음증권(CP)과 단기사채(STB), 발행잔액이 500억 이상이며 잔존만기가 3개월 이하인 국고, 통안, 지역개발채 및 국내 신용등급 AA-이상의 단기 채권으로 구성",
+          "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=7&fld=attach1",
+            "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=7&fld=attach2",
+            "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=7&fld=attach3",
+            "rawHash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/479080/2026-07-21T07-04-13-849Z.4e0f2ff8489425d9.html",
+        "hash": "4e0f2ff8489425d9fea655187d9d07209b961293aca77c9919c510675d1e2c90",
+        "bytes": 28939,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=7"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:15.032Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "492500",
+      "isin": "KR7492500004",
+      "name": "1Q 현대차그룹채권(A+이상)&국고통안",
+      "productId": "9",
+      "sourceName": "1Q현대차그룹채권(A+이상)&국고통안",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "현대차그룹 계열사 채권에 주로 투자하는 국내 최초 테마형 채권 ETF; 현대차, 기아, 현대모비스, 현대카드, 현대캐피탈, 현대커머셜 등 현대차그룹을 기반으로 발행사별 동일비중 구성(75%), 나머지는 유동성을 목표로 3개월 이내 국고/통안채로 구성한 바벨형 지수 추종 ETF",
+        "investmentObjective": "현대차그룹 계열사 채권에 주로 투자하는 국내 최초 테마형 채권 ETF; 현대차, 기아, 현대모비스, 현대카드, 현대캐피탈, 현대커머셜 등 현대차그룹을 기반으로 발행사별 동일비중 구성(75%), 나머지는 유동성을 목표로 3개월 이내 국고/통안채로 구성한 바벨형 지수 추종 ETF",
+        "benchmarkName": "KIS-하나 현대차그룹채권(A+이상)&국고통안 총수익지수",
+        "benchmarkDescription": "현대자동차그룹의 채권과 국고/통안채권을 바스켓 종목으로 구성하여 현대자동차그룹의 성과를 나타내는 지수",
+        "distributionPolicy": "2,5,8,11월의 15일 및 회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=9&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=9&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=9&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "현대차그룹 계열사 채권에 주로 투자하는 국내 최초 테마형 채권 ETF; 현대차, 기아, 현대모비스, 현대카드, 현대캐피탈, 현대커머셜 등 현대차그룹을 기반으로 발행사별 동일비중 구성(75%), 나머지는 유동성을 목표로 3개월 이내 국고/통안채로 구성한 바벨형 지수 추종 ETF",
+          "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "현대차그룹 계열사 채권에 주로 투자하는 국내 최초 테마형 채권 ETF; 현대차, 기아, 현대모비스, 현대카드, 현대캐피탈, 현대커머셜 등 현대차그룹을 기반으로 발행사별 동일비중 구성(75%), 나머지는 유동성을 목표로 3개월 이내 국고/통안채로 구성한 바벨형 지수 추종 ETF",
+          "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "KIS-하나 현대차그룹채권(A+이상)&국고통안 총수익지수",
+          "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "현대자동차그룹의 채권과 국고/통안채권을 바스켓 종목으로 구성하여 현대자동차그룹의 성과를 나타내는 지수",
+          "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "2,5,8,11월의 15일 및 회계기간 종료일",
+          "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=9&fld=attach1",
+            "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=9&fld=attach2",
+            "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=9&fld=attach3",
+            "rawHash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/492500/2026-07-21T07-04-15-032Z.725b2950b8b9d76b.html",
+        "hash": "725b2950b8b9d76b88b6015dfd71ffac2f7d151e8869804ddf201b266b9452ae",
+        "bytes": 28608,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=9"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:04:16.336Z",
+      "sourceId": "hana_1q_official_product_html",
+      "issuerId": "hana-asset-management",
+      "shortCode": "495330",
+      "isin": "KR7495330003",
+      "name": "1Q 코리아밸류업",
+      "productId": "11",
+      "sourceName": "1Q 코리아밸류업",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=11",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "한국거래소가 산출하는 '코리아밸류업지수’를 추종하는 국내주식 ETF; 수익성, 주주환원, 시장평가, 자본효율성을 기준으로 선정된 국내 밸류업 기업 100개 종목에 투자; 월 배당 지급 추구로 지속적인 현금흐름 제공 목표",
+        "investmentObjective": "한국거래소가 산출하는 '코리아밸류업지수’를 추종하는 국내주식 ETF; 수익성, 주주환원, 시장평가, 자본효율성을 기준으로 선정된 국내 밸류업 기업 100개 종목에 투자; 월 배당 지급 추구로 지속적인 현금흐름 제공 목표",
+        "benchmarkName": "코리아밸류업 지수",
+        "benchmarkDescription": "기업 밸류업 프로그램 및 한국 증시에서의 기업가치 중시 선순환 구조 정착을 지원하기 위한 목적으로 ’24.9월 개발되었으며, 시장대표성, 유동성과 같은 규모요건 이외에 수익성, 주주환원, 시장평가, 자본효율성 등 다양한 질적요건과 상품성을 종합적으로 고려하여 선정된 100종목으로 구성된 지수",
+        "distributionPolicy": "분배금 지급 가능",
+        "officialDocumentLinks": [
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=11&fld=attach1",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=11&fld=attach2",
+          "https://www.1qetf.com/inc/lib/etf.file.download.php?no=11&fld=attach3"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "한국거래소가 산출하는 '코리아밸류업지수’를 추종하는 국내주식 ETF; 수익성, 주주환원, 시장평가, 자본효율성을 기준으로 선정된 국내 밸류업 기업 100개 종목에 투자; 월 배당 지급 추구로 지속적인 현금흐름 제공 목표",
+          "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+        },
+        "investmentObjective": {
+          "selector": ".no-etfInfo__cnt.etfInfo",
+          "snippet": "한국거래소가 산출하는 '코리아밸류업지수’를 추종하는 국내주식 ETF; 수익성, 주주환원, 시장평가, 자본효율성을 기준으로 선정된 국내 밸류업 기업 100개 종목에 투자; 월 배당 지급 추구로 지속적인 현금흐름 제공 목표",
+          "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+        },
+        "benchmarkName": {
+          "selector": ".no-etfInfo__index-title",
+          "snippet": "코리아밸류업 지수",
+          "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+        },
+        "benchmarkDescription": {
+          "selector": ".no-etfInfo__desc",
+          "snippet": "기업 밸류업 프로그램 및 한국 증시에서의 기업가치 중시 선순환 구조 정착을 지원하기 위한 목적으로 ’24.9월 개발되었으며, 시장대표성, 유동성과 같은 규모요건 이외에 수익성, 주주환원, 시장평가, 자본효율성 등 다양한 질적요건과 상품성을 종합적으로 고려하여 선정된 100종목으로 구성된 지수",
+          "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+        },
+        "distributionPolicy": {
+          "selector": ".no-etfInfo__item-data",
+          "snippet": "분배금 지급 가능",
+          "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=11&fld=attach1",
+            "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "집합투자규약",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=11&fld=attach2",
+            "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+          },
+          {
+            "selector": "a[href*=\"etf.file.download.php\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.1qetf.com/inc/lib/etf.file.download.php?no=11&fld=attach3",
+            "rawHash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/hana-1q-product/pages/2026-07-21/495330/2026-07-21T07-04-16-336Z.518aa5da42c7bf3e.html",
+        "hash": "518aa5da42c7bf3ed7c7df69465525e3e85761ceff3e06c05d7edfd2e1d9d1a3",
+        "bytes": 27561,
+        "url": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=11"
+      }
+    }
+  ]
+}

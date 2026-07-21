@@ -1,0 +1,1673 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:46:09.051Z",
+  "issuer": {
+    "id": "samsung-active-asset-management",
+    "brand": "KoAct"
+  },
+  "contract": {
+    "targetCount": 23,
+    "excludedOfficialOnlyTickers": [
+      "0219B0"
+    ],
+    "intervalMs": 1200,
+    "authenticationUsed": false,
+    "bypassUsed": false,
+    "rawAppendOnly": true,
+    "resumableLedger": true,
+    "circuitBreaker": [
+      "403",
+      "429",
+      "cloudflare_challenge"
+    ],
+    "fullRequested": true
+  },
+  "gate": {
+    "status": "four_canary_passed_awaiting_full_run_approval",
+    "mapping": "23/23",
+    "canaryRequests": 4
+  },
+  "networkRequestsThisRun": 0,
+  "networkOriginatedArtifactCount": 19,
+  "canaryCacheArtifactCount": 4,
+  "attemptedUniqueCount": 23,
+  "completedCount": 23,
+  "pendingCount": 0,
+  "statusCounts": {
+    "ok": 23,
+    "partial": 0,
+    "validation_failed": 0,
+    "failed": 0,
+    "source_stopped": 0
+  },
+  "fieldCoverage": {
+    "productDescription": 23,
+    "investmentObjective": 23,
+    "benchmarkName": 23,
+    "benchmarkDescription": 23,
+    "distributionPolicy": 23
+  },
+  "circuit": {
+    "open": false,
+    "reason": null,
+    "shortCode": null,
+    "httpStatus": null
+  },
+  "decision": "local_23_collection_completed",
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T07:45:15.988Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0015B0",
+      "isin": "KR70015B0004",
+      "name": "KoAct 미국나스닥성장기업액티브",
+      "productId": "2ETFQ1",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0015B0",
+          "productId": "2ETFQ1",
+          "productName": "KoAct 미국나스닥성장기업액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "나스닥 지수 대비 더 빠른 성장을 기대할 수 있는 고성장 혁신 기업 집중 ETF",
+        "investmentObjective": "AI, 전력 인프라, Next Bio 등 메가트렌드 주도주에 집중 투자: AI&로봇, 글로벌 에너지 전환, 차세대 항암제 등 구조적 성장 산업 내 리딩 기업에 집중 투자; 글로벌 혁신 기업이 모여 있는 미국 나스닥 지수: 미국 뿐 아니라 글로벌 혁신 기업들이 모두 모이는 미국 나스닥 시장에 집중 투자; 액티브 운용 전문 운용사, 삼성액티브자산운용: 운용역과 리서치의 협업을 통한 선택과 집중 포트폴리오로 나스닥 지수 대비 초과 성과 추구 나스닥 IPO 기업에 대한 탄력적이고 발빠른 대응 추구",
+        "benchmarkName": "나스닥 종합주가지수",
+        "benchmarkDescription": "미국 나스닥에 상장한 종목으로 구성된 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "나스닥 지수 대비 더 빠른 성장을 기대할 수 있는 고성장 혁신 기업 집중 ETF",
+          "rawHash": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "AI, 전력 인프라, Next Bio 등 메가트렌드 주도주에 집중 투자: AI&로봇, 글로벌 에너지 전환, 차세대 항암제 등 구조적 성장 산업 내 리딩 기업에 집중 투자; 글로벌 혁신 기업이 모여 있는 미국 나스닥 지수: 미국 뿐 아니라 글로벌 혁신 기업들이 모두 모이는 미국 나스닥 시장에 집중 투자; 액티브 운용 전문 운용사, 삼성액티브자산운용: 운용역과 리서치의 협업을 통한 선택과 집중 포트폴리오로 나스닥 지수 대비 초과 성과 추구 나스닥 IPO 기업에 대한 탄력적이고 발빠른 대응 추구",
+          "rawHash": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "나스닥 종합주가지수",
+          "rawHash": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "미국 나스닥에 상장한 종목으로 구성된 지수",
+          "rawHash": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0015B0.b8965af41dc2.json",
+        "hash": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6",
+        "bytes": 95881,
+        "retrievedAt": "2026-07-21T07:42:58.369Z",
+        "reusedFromCanary": true,
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFQ1.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:15.996Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0020H0",
+      "isin": "KR70020H0001",
+      "name": "KoAct 글로벌양자컴퓨팅액티브",
+      "productId": "2ETFQ5",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0020H0",
+          "productId": "2ETFQ5",
+          "productName": "KoAct 글로벌양자컴퓨팅액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "글로벌 양자컴퓨팅 주도 기업에 투자하는 액티브 ETF",
+        "investmentObjective": "양자컴퓨팅 글로벌 선도기업에 투자: 양자컴퓨팅 기술발전 초입 단계로 글로벌 기술 경쟁 예상 미국 외 국가에서도 양자컴퓨팅 기술 리더쉽을 가진 선도기업을 포함해 투자; 양자컴퓨팅 구현에 필수적인 초전도체 기술에 주목: 구현 기술을 세밀히 분석하고 투자 현재 포트폴리오 Top3 종목은 초전도체 기술을 보유한 Rigetti (투자비중 13.9%), Alphabet(12.8%) > Ion Q (12.0%) * 2025.03.11 기준; 액티브 장점 살려 신규 상장기업에 발빠르게 대응: 산업개화 초기인만큼 신규 상장 활발할 것, 액티브ETF 장점을 살려 바로 편입 대응",
+        "benchmarkName": "Factset 글로벌양자컴퓨팅 PR 지수",
+        "benchmarkDescription": "기초적인 투자 적정성을 충족하는 종목에 대하여 Factset의 RBICS와 QCCK(양자 컴퓨팅 복합 키워드)를 활용하여 (1) 양자컴퓨팅 관련 퓨어플레이 기업, (2) 관련 기술 기업, (3) 수혜 기업들로 구성한 테마 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "글로벌 양자컴퓨팅 주도 기업에 투자하는 액티브 ETF",
+          "rawHash": "f2b3347212354852ace7783ad173861cb1a950e75902bcb8281d1fb751be5226"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "양자컴퓨팅 글로벌 선도기업에 투자: 양자컴퓨팅 기술발전 초입 단계로 글로벌 기술 경쟁 예상 미국 외 국가에서도 양자컴퓨팅 기술 리더쉽을 가진 선도기업을 포함해 투자; 양자컴퓨팅 구현에 필수적인 초전도체 기술에 주목: 구현 기술을 세밀히 분석하고 투자 현재 포트폴리오 Top3 종목은 초전도체 기술을 보유한 Rigetti (투자비중 13.9%), Alphabet(12.8%) > Ion Q (12.0%) * 2025.03.11 기준; 액티브 장점 살려 신규 상장기업에 발빠르게 대응: 산업개화 초기인만큼 신규 상장 활발할 것, 액티브ETF 장점을 살려 바로 편입 대응",
+          "rawHash": "f2b3347212354852ace7783ad173861cb1a950e75902bcb8281d1fb751be5226"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Factset 글로벌양자컴퓨팅 PR 지수",
+          "rawHash": "f2b3347212354852ace7783ad173861cb1a950e75902bcb8281d1fb751be5226"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "기초적인 투자 적정성을 충족하는 종목에 대하여 Factset의 RBICS와 QCCK(양자 컴퓨팅 복합 키워드)를 활용하여 (1) 양자컴퓨팅 관련 퓨어플레이 기업, (2) 관련 기술 기업, (3) 수혜 기업들로 구성한 테마 지수",
+          "rawHash": "f2b3347212354852ace7783ad173861cb1a950e75902bcb8281d1fb751be5226"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "f2b3347212354852ace7783ad173861cb1a950e75902bcb8281d1fb751be5226"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0020H0/2026-07-21T07-42-59-053Z.f2b3347212354852.json",
+        "hash": "f2b3347212354852ace7783ad173861cb1a950e75902bcb8281d1fb751be5226",
+        "bytes": 57072,
+        "retrievedAt": "2026-07-21T07:42:59.053Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFQ5.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:15.999Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0051A0",
+      "isin": "KR70051A0000",
+      "name": "KoAct 브로드컴밸류체인액티브",
+      "productId": "2ETFR2",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0051A0",
+          "productId": "2ETFR2",
+          "productName": "KoAct 브로드컴밸류체인액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "브로드컴 중심으로 밸류체인에 투자하는 액티브 ETF",
+        "investmentObjective": "브로드컴 is 넥스트 엔비디아: AI 설계, 인프라와 고속 네트워킹 칩 시장에서 선두에 위치 ASIC 설계, AI 및 소프트웨어, 반도체 등의 밸류체인으로 이루어진 브로드컴 공급망; DeepSeek 이후 주목받는 가성비 AI, ASIC: 최근의 AI 개발 트랜드, ‘저전력’, ‘가성비’, ‘효율’, ‘최적화’ 이에, Nvidia의 GPU 에 국한되지 않은, 하이퍼스케일러들의 자체 Custom Chip 설계 가속화; ASIC(주문형반도체)의 1등 기업, 브로드컴: ASIC 시장 점유율 50% 이상의 1등 기업, 출처 : Morgan Stanley(2024.12.19)",
+        "benchmarkName": "Factset 브로드컴밸류체인 지수",
+        "benchmarkDescription": "브로드컴밸류체인 관련 미국 상장 종목들로 구성된 테마 지수",
+        "distributionPolicy": "분기배당 (매 1,4,7,10월의 마지막 영업일 및 회계기간 종료일(종료일이 영업일이 아닌 경우 종료일의 직전영업일))"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "브로드컴 중심으로 밸류체인에 투자하는 액티브 ETF",
+          "rawHash": "0a56bf2e437e30aaa5018b7cf5d3dc048bea16f8db323a76ff231d2f28432b79"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "브로드컴 is 넥스트 엔비디아: AI 설계, 인프라와 고속 네트워킹 칩 시장에서 선두에 위치 ASIC 설계, AI 및 소프트웨어, 반도체 등의 밸류체인으로 이루어진 브로드컴 공급망; DeepSeek 이후 주목받는 가성비 AI, ASIC: 최근의 AI 개발 트랜드, ‘저전력’, ‘가성비’, ‘효율’, ‘최적화’ 이에, Nvidia의 GPU 에 국한되지 않은, 하이퍼스케일러들의 자체 Custom Chip 설계 가속화; ASIC(주문형반도체)의 1등 기업, 브로드컴: ASIC 시장 점유율 50% 이상의 1등 기업, 출처 : Morgan Stanley(2024.12.19)",
+          "rawHash": "0a56bf2e437e30aaa5018b7cf5d3dc048bea16f8db323a76ff231d2f28432b79"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Factset 브로드컴밸류체인 지수",
+          "rawHash": "0a56bf2e437e30aaa5018b7cf5d3dc048bea16f8db323a76ff231d2f28432b79"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "브로드컴밸류체인 관련 미국 상장 종목들로 구성된 테마 지수",
+          "rawHash": "0a56bf2e437e30aaa5018b7cf5d3dc048bea16f8db323a76ff231d2f28432b79"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "분기배당 (매 1,4,7,10월의 마지막 영업일 및 회계기간 종료일(종료일이 영업일이 아닌 경우 종료일의 직전영업일))",
+          "rawHash": "0a56bf2e437e30aaa5018b7cf5d3dc048bea16f8db323a76ff231d2f28432b79"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0051A0/2026-07-21T07-43-00-547Z.0a56bf2e437e30aa.json",
+        "hash": "0a56bf2e437e30aaa5018b7cf5d3dc048bea16f8db323a76ff231d2f28432b79",
+        "bytes": 67145,
+        "retrievedAt": "2026-07-21T07:43:00.547Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFR2.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.001Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0074K0",
+      "isin": "KR70074K0001",
+      "name": "KoAct K수출핵심기업TOP30액티브",
+      "productId": "2ETFR6",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0074K0",
+          "productId": "2ETFR6",
+          "productName": "KoAct K수출핵심기업TOP30액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "세계적으로 경쟁력 있는 한국의 대표기업에 투자하는 액티브 ETF",
+        "investmentObjective": "수출입 데이터를 활용해 수출 성장 기업 선제적으로 투자: 월별 수출입데이터 상승 지표를 활용해 yoy 연속 성장폭이 큰 한국 기업을 발굴 수출 매출액의 성장으로 실적이 개선되는 기업을 선제적으로 발굴; 독보적인 글로벌 경쟁력을 갖춘 기업에 투자: 방산, 원전, 항공/우주, 조선에 이르는 수출핵심산업군에서 가장 경쟁력 있는 한국 기업을 선별 K-컬처는 글로벌 브랜드화 되고 있음. K-미디어, 웹툰, 엔터테인먼트, 뷰티, 푸드 산업의 Top업체에 투자; 수출 유망주로 성장할 수 있는 Rising Star 기업 발굴: 구글, 유투브 등 글로벌 플랫폼의 검색 트렌드를 활용해 발굴하는 ‘Trendy’한 한국 기업 매출액에서 수출 비중이 크게 증가하고 있는 한국 기업을 발굴",
+        "benchmarkName": "KEDI K수출핵심기업TOP30지수",
+        "benchmarkDescription": "KEDI K수출핵심기업TOP30 지수는 최근 1년 롤링 수출 증가율과 시가총액을 반영하여 최종 30종목으로 구성한 주식 전략 지수임.",
+        "distributionPolicy": "분기배당 (매 1,4,7,10월의 마지막 영업일 및 회계기간 종료일(종료일이 영업일이 아닌 경우 종료일의 직전영업일))"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "세계적으로 경쟁력 있는 한국의 대표기업에 투자하는 액티브 ETF",
+          "rawHash": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "수출입 데이터를 활용해 수출 성장 기업 선제적으로 투자: 월별 수출입데이터 상승 지표를 활용해 yoy 연속 성장폭이 큰 한국 기업을 발굴 수출 매출액의 성장으로 실적이 개선되는 기업을 선제적으로 발굴; 독보적인 글로벌 경쟁력을 갖춘 기업에 투자: 방산, 원전, 항공/우주, 조선에 이르는 수출핵심산업군에서 가장 경쟁력 있는 한국 기업을 선별 K-컬처는 글로벌 브랜드화 되고 있음. K-미디어, 웹툰, 엔터테인먼트, 뷰티, 푸드 산업의 Top업체에 투자; 수출 유망주로 성장할 수 있는 Rising Star 기업 발굴: 구글, 유투브 등 글로벌 플랫폼의 검색 트렌드를 활용해 발굴하는 ‘Trendy’한 한국 기업 매출액에서 수출 비중이 크게 증가하고 있는 한국 기업을 발굴",
+          "rawHash": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "KEDI K수출핵심기업TOP30지수",
+          "rawHash": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "KEDI K수출핵심기업TOP30 지수는 최근 1년 롤링 수출 증가율과 시가총액을 반영하여 최종 30종목으로 구성한 주식 전략 지수임.",
+          "rawHash": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "분기배당 (매 1,4,7,10월의 마지막 영업일 및 회계기간 종료일(종료일이 영업일이 아닌 경우 종료일의 직전영업일))",
+          "rawHash": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0074K0.ded7d39fd890.json",
+        "hash": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047",
+        "bytes": 90616,
+        "retrievedAt": "2026-07-21T07:43:00.555Z",
+        "reusedFromCanary": true,
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFR6.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.004Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0093D0",
+      "isin": "KR70093D0007",
+      "name": "KoAct 팔란티어밸류체인액티브",
+      "productId": "2ETFR9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0093D0",
+          "productId": "2ETFR9",
+          "productName": "KoAct 팔란티어밸류체인액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "팔란티어 하나로는 부족해, 이제는 '팀 팔란티어'에 주목할 때",
+        "investmentObjective": "AI소프트웨어 선두주자, 팔란티어에 집중 투자: 보안, 국방 분야에 AI를 접목한 독보적 플레이어 팔란티어 비중 25% 극대화 팔란티어 의장 ‘피터 틸’의 강력한 정치적 영향력 : 팔란티어의 미국 내 독점적 지위 견고히 구축; 팔란티어와 함께 날아오르는 혁신기업: 엔비디아(AI칩), 테슬라(AI모델), 오라클(AI클라우드) 등 글로벌 혁신 기업들이 함께하는 팀 팔란티어! 팔란티어의 기술적 강점과 빅테크의 시장 접근성 결합 : 팔란티어는 고객 접근성↑ 빅테크는 AI 생태계 활성화; 팔란티어 생태계의 라이징 스타까지 선별 투자: 팔란티어 밸류체인에 투자한다는 것 = AI 방산 생태계 전체에 투자 한다는 것 드론 전쟁 현실화, AI 활용 전술 시스템 등 방위 산업 패러다임 전환을 이끄는 라이징 종목으로 선별",
+        "benchmarkName": "KEDI 팔란티어밸류체인 지수 (PR)",
+        "benchmarkDescription": "팔란티어밸류체인 관련 한국, 미국, 일본, 독일 상장 종목들로 구성된 테마 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "팔란티어 하나로는 부족해, 이제는 '팀 팔란티어'에 주목할 때",
+          "rawHash": "82ac090e94356ceb454b9614f9586f5b70426f4069bdf7e1bedf27e5163ccb38"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "AI소프트웨어 선두주자, 팔란티어에 집중 투자: 보안, 국방 분야에 AI를 접목한 독보적 플레이어 팔란티어 비중 25% 극대화 팔란티어 의장 ‘피터 틸’의 강력한 정치적 영향력 : 팔란티어의 미국 내 독점적 지위 견고히 구축; 팔란티어와 함께 날아오르는 혁신기업: 엔비디아(AI칩), 테슬라(AI모델), 오라클(AI클라우드) 등 글로벌 혁신 기업들이 함께하는 팀 팔란티어! 팔란티어의 기술적 강점과 빅테크의 시장 접근성 결합 : 팔란티어는 고객 접근성↑ 빅테크는 AI 생태계 활성화; 팔란티어 생태계의 라이징 스타까지 선별 투자: 팔란티어 밸류체인에 투자한다는 것 = AI 방산 생태계 전체에 투자 한다는 것 드론 전쟁 현실화, AI 활용 전술 시스템 등 방위 산업 패러다임 전환을 이끄는 라이징 종목으로 선별",
+          "rawHash": "82ac090e94356ceb454b9614f9586f5b70426f4069bdf7e1bedf27e5163ccb38"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "KEDI 팔란티어밸류체인 지수 (PR)",
+          "rawHash": "82ac090e94356ceb454b9614f9586f5b70426f4069bdf7e1bedf27e5163ccb38"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "팔란티어밸류체인 관련 한국, 미국, 일본, 독일 상장 종목들로 구성된 테마 지수",
+          "rawHash": "82ac090e94356ceb454b9614f9586f5b70426f4069bdf7e1bedf27e5163ccb38"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "82ac090e94356ceb454b9614f9586f5b70426f4069bdf7e1bedf27e5163ccb38"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0093D0/2026-07-21T07-43-02-149Z.82ac090e94356ceb.json",
+        "hash": "82ac090e94356ceb454b9614f9586f5b70426f4069bdf7e1bedf27e5163ccb38",
+        "bytes": 61095,
+        "retrievedAt": "2026-07-21T07:43:02.149Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFR9.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.006Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0104H0",
+      "isin": "KR70104H0000",
+      "name": "KoAct 미국나스닥채권혼합50액티브",
+      "productId": "2ETFS3",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0104H0",
+          "productId": "2ETFS3",
+          "productName": "KoAct 미국나스닥채권혼합50액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "공격적인 미국 혁신 주도 기업과 방어적인 국내 단기 채권을 조합한 투자 솔루션",
+        "investmentObjective": "미국 혁신 기업 집중 투자로 공격적인 알파 수익 추구: AI, 로봇 등 혁신 기술 산업의 승자 독식 구조가 강화되고 있어 공격적인 압축 투자 전략 유효할 전망; 단기 국내 채권 투자로 꾸준한 이자 수익 확보 추구: 환율 변동 리스크 없고 금리 변동성 낮은 단기 국내 채권에 투자하여 미국 주식 변동성을 완화 예상; 연금(퇴직&개인), ISA계좌에서 100% 투자 가능: 퇴직연금 패러다임이 저축서 투자로 바뀌면서 비위험 자산 의무 비중 30%까지 활용한 투자 확대",
+        "benchmarkName": "FnGuide 미국나스닥 금융채권 혼합지수",
+        "benchmarkDescription": "FnGuide 미국나스닥 금융채권혼합 지수는 NASDAQ Composite(PR) 지수와 FnGuide 금융채권 지수를 Constant Mix 방식으로 혼합하여 산출하는 지수입니다. 주식/채권 비율을 일간 단위로 5:5이 되도록 유지하여 혼합 지수값을 산출합니다.",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "공격적인 미국 혁신 주도 기업과 방어적인 국내 단기 채권을 조합한 투자 솔루션",
+          "rawHash": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "미국 혁신 기업 집중 투자로 공격적인 알파 수익 추구: AI, 로봇 등 혁신 기술 산업의 승자 독식 구조가 강화되고 있어 공격적인 압축 투자 전략 유효할 전망; 단기 국내 채권 투자로 꾸준한 이자 수익 확보 추구: 환율 변동 리스크 없고 금리 변동성 낮은 단기 국내 채권에 투자하여 미국 주식 변동성을 완화 예상; 연금(퇴직&개인), ISA계좌에서 100% 투자 가능: 퇴직연금 패러다임이 저축서 투자로 바뀌면서 비위험 자산 의무 비중 30%까지 활용한 투자 확대",
+          "rawHash": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "FnGuide 미국나스닥 금융채권 혼합지수",
+          "rawHash": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "FnGuide 미국나스닥 금융채권혼합 지수는 NASDAQ Composite(PR) 지수와 FnGuide 금융채권 지수를 Constant Mix 방식으로 혼합하여 산출하는 지수입니다. 주식/채권 비율을 일간 단위로 5:5이 되도록 유지하여 혼합 지수값을 산출합니다.",
+          "rawHash": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0104H0.3454eef4a4c0.json",
+        "hash": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3",
+        "bytes": 83756,
+        "retrievedAt": "2026-07-21T07:43:02.153Z",
+        "reusedFromCanary": true,
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFS3.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.008Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0113G0",
+      "isin": "KR70113G0000",
+      "name": "KoAct 미국바이오헬스케어액티브",
+      "productId": "2ETFS9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0113G0",
+          "productId": "2ETFS9",
+          "productName": "KoAct 미국바이오헬스케어액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "기술력을 보유한 미국 바이오헬스케어 기업을 선별하여 투자하는 액티브 ETF",
+        "investmentObjective": "KoAct 바이오헬스케어 액티브 ETF의 미국 버전!: 순자산 규모 3,000억원을 돌파한 국내 대표 바이오 ETF 운용사가 선보이는 미국 바이오 ETF (한국거래소, 2025. 10. 31 기준); 빅파마보다는 M&A 가능성이 높은 기업에 투자: 성장성이 높고 신약개발 파이프라인이 유망한 기업을 바이오 전문 운용역이 리서치를 통해 선별할 예정; AI와의 시너지로 떠오르는 종목을 발빠르게 편입: 액티브 운용의 장점을 살려, AI와의 융합으로 새롭게 등장하는 바이오 기업에 신속하게 대응할 예정",
+        "benchmarkName": "Solactive 미국바이오헬스케어 지수 PR",
+        "benchmarkDescription": "미국바이오헬스케어 산업과 관련된 미국 상장 종목들로 구성된 테마 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "기술력을 보유한 미국 바이오헬스케어 기업을 선별하여 투자하는 액티브 ETF",
+          "rawHash": "e50e8362876f881719f108c19b01305a363a62258ec42c9d827c83afa88c7b79"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "KoAct 바이오헬스케어 액티브 ETF의 미국 버전!: 순자산 규모 3,000억원을 돌파한 국내 대표 바이오 ETF 운용사가 선보이는 미국 바이오 ETF (한국거래소, 2025. 10. 31 기준); 빅파마보다는 M&A 가능성이 높은 기업에 투자: 성장성이 높고 신약개발 파이프라인이 유망한 기업을 바이오 전문 운용역이 리서치를 통해 선별할 예정; AI와의 시너지로 떠오르는 종목을 발빠르게 편입: 액티브 운용의 장점을 살려, AI와의 융합으로 새롭게 등장하는 바이오 기업에 신속하게 대응할 예정",
+          "rawHash": "e50e8362876f881719f108c19b01305a363a62258ec42c9d827c83afa88c7b79"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive 미국바이오헬스케어 지수 PR",
+          "rawHash": "e50e8362876f881719f108c19b01305a363a62258ec42c9d827c83afa88c7b79"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "미국바이오헬스케어 산업과 관련된 미국 상장 종목들로 구성된 테마 지수",
+          "rawHash": "e50e8362876f881719f108c19b01305a363a62258ec42c9d827c83afa88c7b79"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "e50e8362876f881719f108c19b01305a363a62258ec42c9d827c83afa88c7b79"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0113G0/2026-07-21T07-43-03-669Z.e50e8362876f8817.json",
+        "hash": "e50e8362876f881719f108c19b01305a363a62258ec42c9d827c83afa88c7b79",
+        "bytes": 58280,
+        "retrievedAt": "2026-07-21T07:43:03.669Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFS9.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.010Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0132D0",
+      "isin": "KR70132D0000",
+      "name": "KoAct 글로벌K컬처밸류체인액티브",
+      "productId": "2ETFT2",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0132D0",
+          "productId": "2ETFT2",
+          "productName": "KoAct 글로벌K컬처밸류체인액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "K컬처 핵심기업과 K컬처 판매 플랫폼 핵심기업들에 투자하는 액티브 ETF",
+        "investmentObjective": "글로벌 시장에서 활약 중인 K컬처 핵심기업에 투자: K-POP, K콘텐츠, K푸드, K웹툰, K뷰티의 대표주자인 우량기업에 투자; K컬처 밸류체인 플랫폼 핵심기업에 투자: K컬처의 확산에는 글로벌 플랫폼 기업들의 밸류체인 역할이 크게 작용한다고 판단 콘텐츠, 음원, 웹툰, 푸드, 뷰티 등에서 선도적인 위치를 자리잡은 독과점적 플랫폼 기업의 안정성에 투자할 예정; 한국과 미국의 비중을 액티브하게 투자: 플랫폼과 컨텐츠 기업 간에 투자 매력도를 비교하여, 액티브하게 비중 교체 예정",
+        "benchmarkName": "KEDI 글로벌K컬처밸류체인 지수 (PR)",
+        "benchmarkDescription": "KEDI 글로벌K컬처밸류체인 지수는 한국과 미국의 거래소에 상장된 종목 중 Large Language Model (LLM) 기술을 공시보고서 등에 적용하여 키워드 'K컬처밸류체인'과 유사도 점수가 높은 종목을 선정하여 구성한 지수로, 한국과 미국 각각 시가총액 상위 종목을 최대 15개까지 편입하여 산출합니다.",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "K컬처 핵심기업과 K컬처 판매 플랫폼 핵심기업들에 투자하는 액티브 ETF",
+          "rawHash": "d3f83ddd10e070309d33bc8abef280c11da155b67a0861848634d021d5a337be"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "글로벌 시장에서 활약 중인 K컬처 핵심기업에 투자: K-POP, K콘텐츠, K푸드, K웹툰, K뷰티의 대표주자인 우량기업에 투자; K컬처 밸류체인 플랫폼 핵심기업에 투자: K컬처의 확산에는 글로벌 플랫폼 기업들의 밸류체인 역할이 크게 작용한다고 판단 콘텐츠, 음원, 웹툰, 푸드, 뷰티 등에서 선도적인 위치를 자리잡은 독과점적 플랫폼 기업의 안정성에 투자할 예정; 한국과 미국의 비중을 액티브하게 투자: 플랫폼과 컨텐츠 기업 간에 투자 매력도를 비교하여, 액티브하게 비중 교체 예정",
+          "rawHash": "d3f83ddd10e070309d33bc8abef280c11da155b67a0861848634d021d5a337be"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "KEDI 글로벌K컬처밸류체인 지수 (PR)",
+          "rawHash": "d3f83ddd10e070309d33bc8abef280c11da155b67a0861848634d021d5a337be"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "KEDI 글로벌K컬처밸류체인 지수는 한국과 미국의 거래소에 상장된 종목 중 Large Language Model (LLM) 기술을 공시보고서 등에 적용하여 키워드 'K컬처밸류체인'과 유사도 점수가 높은 종목을 선정하여 구성한 지수로, 한국과 미국 각각 시가총액 상위 종목을 최대 15개까지 편입하여 산출합니다.",
+          "rawHash": "d3f83ddd10e070309d33bc8abef280c11da155b67a0861848634d021d5a337be"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "d3f83ddd10e070309d33bc8abef280c11da155b67a0861848634d021d5a337be"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0132D0/2026-07-21T07-43-05-103Z.d3f83ddd10e07030.json",
+        "hash": "d3f83ddd10e070309d33bc8abef280c11da155b67a0861848634d021d5a337be",
+        "bytes": 62128,
+        "retrievedAt": "2026-07-21T07:43:05.103Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFT2.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.012Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0150K0",
+      "isin": "KR70150K0008",
+      "name": "KoAct 수소전력ESS인프라액티브",
+      "productId": "2ETFT9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0150K0",
+          "productId": "2ETFT9",
+          "productName": "KoAct 수소전력ESS인프라액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "미국 전력망 부족의 새로운 해결책, 온사이트 발전 솔루션! ESS & 수소연료전지",
+        "investmentObjective": "전력망 부족이 불러온 빅테크 전력 수급 대란: 전력망 연결에 걸리는 시간이 증가하면서 빅테크 업체들에게 전력 확보가 시급한 과제로 부상할 것으로 전망 ’25년 8월 버클리 랩에 따르면 미국 발전소 계통연결 소요시간은 2000년대 평균 2.3년 → 2024년 4.8년; 전력이 급한 빅테크의 현실적 대안, 온사이트 발전: ’24년 11월 AEP의 대규모 발주 이후 블룸에너지 SOFC(고체산화물연료전지)에 대한 빅테크들의 러브콜 쇄도 데이터센터향 ESS의 수요 역시 태양광과 함께 빠르게 증가하고 있는 것으로 파악 * AEP(American Electric Power)는 블룸에너지에 연료전지 1GW 발주 (출처 : AEP홈페이지, 2024.11.14) ※ 상기 내용에서 언급한 기업은 편입 여부와 무관하며, 단순 시장 이해를 돕기 위한 산업 사례입니다.; '25년 7월 IRA 수정안, 국내 업체들에게 기회 요인 전망: ’25년 7월 IRA 수정안에서 해외우려기관 조항이 강화됨에 따라 한국 등 비중국계 업체들의 점유율 상승 전망 국내 업체들은 미국 현지 공장 증설을 확대하는 등 적극적으로 대응에 나서고 있는 상황 ※ 상기 내용은 정책·시장 환경 변화에 따라 달라질 수 있습니다.",
+        "benchmarkName": "FnGuide 수소전력ESS인프라 지수 (PR)",
+        "benchmarkDescription": "FnGuide 수소전력ESS인프라 지수는 기초 요건을 충족하는 유가증권 및 코스닥 상장 종목 중 ESS 부문과 수소발전설비 부문에서 각각 키워드 기반 키워드 검색을 통하여 유니버스를 구성하고, 각 부문에서 핵심 기업을 선정하여 각 10종목씩 총 20종목을 동일가중 방식으로 편입하여 지수를 산출합니다.",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "미국 전력망 부족의 새로운 해결책, 온사이트 발전 솔루션! ESS & 수소연료전지",
+          "rawHash": "d3c225a5a3d247bafc3eb910ee09fbfb554452a2b74d0d1bb55de668c837e6f4"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "전력망 부족이 불러온 빅테크 전력 수급 대란: 전력망 연결에 걸리는 시간이 증가하면서 빅테크 업체들에게 전력 확보가 시급한 과제로 부상할 것으로 전망 ’25년 8월 버클리 랩에 따르면 미국 발전소 계통연결 소요시간은 2000년대 평균 2.3년 → 2024년 4.8년; 전력이 급한 빅테크의 현실적 대안, 온사이트 발전: ’24년 11월 AEP의 대규모 발주 이후 블룸에너지 SOFC(고체산화물연료전지)에 대한 빅테크들의 러브콜 쇄도 데이터센터향 ESS의 수요 역시 태양광과 함께 빠르게 증가하고 있는 것으로 파악 * AEP(American Electric Power)는 블룸에너지에 연료전지 1GW 발주 (출처 : AEP홈페이지, 2024.11.14) ※ 상기 내용에서 언급한 기업은 편입 여부와 무관하며, 단순 시장 이해를 돕기 위한 산업 사례입니다.; '25년 7월 IRA 수정안, 국내 업체들에게 기회 요인 전망: ’25년 7월 IRA 수정안에서 해외우려기관 조항이 강화됨에 따라 한국 등",
+          "rawHash": "d3c225a5a3d247bafc3eb910ee09fbfb554452a2b74d0d1bb55de668c837e6f4"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "FnGuide 수소전력ESS인프라 지수 (PR)",
+          "rawHash": "d3c225a5a3d247bafc3eb910ee09fbfb554452a2b74d0d1bb55de668c837e6f4"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "FnGuide 수소전력ESS인프라 지수는 기초 요건을 충족하는 유가증권 및 코스닥 상장 종목 중 ESS 부문과 수소발전설비 부문에서 각각 키워드 기반 키워드 검색을 통하여 유니버스를 구성하고, 각 부문에서 핵심 기업을 선정하여 각 10종목씩 총 20종목을 동일가중 방식으로 편입하여 지수를 산출합니다.",
+          "rawHash": "d3c225a5a3d247bafc3eb910ee09fbfb554452a2b74d0d1bb55de668c837e6f4"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "d3c225a5a3d247bafc3eb910ee09fbfb554452a2b74d0d1bb55de668c837e6f4"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0150K0/2026-07-21T07-43-06-548Z.d3c225a5a3d247ba.json",
+        "hash": "d3c225a5a3d247bafc3eb910ee09fbfb554452a2b74d0d1bb55de668c837e6f4",
+        "bytes": 57102,
+        "retrievedAt": "2026-07-21T07:43:06.548Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFT9.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.014Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0154H0",
+      "isin": "KR70154H0009",
+      "name": "KoAct 차이나바이오헬스케어액티브",
+      "productId": "2ETFT6",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0154H0",
+          "productId": "2ETFT6",
+          "productName": "KoAct 차이나바이오헬스케어액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "차이나는 바이오, 바이오는 KoAct",
+        "investmentObjective": "구조적인 변화로 성장이 기대되는 차이나 바이오: 큰 내수 시장, 저비용 고효율 임상 개발, 빅파마 출신 인재의 차이나 복귀로 발전하였다 판단; 높은 기술 경쟁력이 기대되는 종목을 선별하여 투자: 풍부한 R&D를 통해 향상된 기술력으로, 2025년 상반기 글로벌 BD/라이센싱 딜의 35% 이상이 차이나에서 유래 (모간스탠리, 2025. 08); 정부 정책 수혜가 기대되는 차이나 바이오 성장 가속화 전망: 글로벌 스탠다드 임상프로세스 도입, R&D 지원 정책, 직접투자, 인허가 프로세스 효율화로 산업 육성 기대 (골드만 삭스, 2025. 07) ※ 상기 내용은 향후 달라질 수 있습니다.",
+        "benchmarkName": "Solactive 차이나 바이오헬스케어 지수",
+        "benchmarkDescription": "차이나바이오헬스케어 산업과 관련된 기업들로 구성된 테마 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "차이나는 바이오, 바이오는 KoAct",
+          "rawHash": "c5f6796fb3b6ad7b3b1505fc2326292936eb203d2d8c3fba8daa86546a935b54"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "구조적인 변화로 성장이 기대되는 차이나 바이오: 큰 내수 시장, 저비용 고효율 임상 개발, 빅파마 출신 인재의 차이나 복귀로 발전하였다 판단; 높은 기술 경쟁력이 기대되는 종목을 선별하여 투자: 풍부한 R&D를 통해 향상된 기술력으로, 2025년 상반기 글로벌 BD/라이센싱 딜의 35% 이상이 차이나에서 유래 (모간스탠리, 2025. 08); 정부 정책 수혜가 기대되는 차이나 바이오 성장 가속화 전망: 글로벌 스탠다드 임상프로세스 도입, R&D 지원 정책, 직접투자, 인허가 프로세스 효율화로 산업 육성 기대 (골드만 삭스, 2025. 07) ※ 상기 내용은 향후 달라질 수 있습니다.",
+          "rawHash": "c5f6796fb3b6ad7b3b1505fc2326292936eb203d2d8c3fba8daa86546a935b54"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive 차이나 바이오헬스케어 지수",
+          "rawHash": "c5f6796fb3b6ad7b3b1505fc2326292936eb203d2d8c3fba8daa86546a935b54"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "차이나바이오헬스케어 산업과 관련된 기업들로 구성된 테마 지수",
+          "rawHash": "c5f6796fb3b6ad7b3b1505fc2326292936eb203d2d8c3fba8daa86546a935b54"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "c5f6796fb3b6ad7b3b1505fc2326292936eb203d2d8c3fba8daa86546a935b54"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0154H0/2026-07-21T07-43-07-988Z.c5f6796fb3b6ad7b.json",
+        "hash": "c5f6796fb3b6ad7b3b1505fc2326292936eb203d2d8c3fba8daa86546a935b54",
+        "bytes": 56373,
+        "retrievedAt": "2026-07-21T07:43:07.988Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFT6.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.017Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0163Y0",
+      "isin": "KR70163Y0007",
+      "name": "KoAct 코스닥액티브",
+      "productId": "2ETFU6",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0163Y0",
+          "productId": "2ETFU6",
+          "productName": "KoAct 코스닥액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "코스닥 주도주와 성장이 기대되는 산업에 투자하는 액티브 ETF",
+        "investmentObjective": "코스닥 유망산업 핵심주를 선별하여 집중 투자 예정: 제약바이오, 반도체소부장, 우주항공/방산 등 신성장 산업별 주도주를 선별하여 집중 투자 예정; 중소형주 운용의 강점과 리서치의 전문성: 중소형주 투자의 오랜 트랙레코드, 탄탄한 리서치 기반으로 풍부한 종목 유니버스 활용 가능; 코스닥 육성 정책 기대감: 정부가 ‘코스닥3000시대’를 위한 핵심 전략 발표, 코스닥 신뢰+혁신 제고로 기관 자금 유입 기대 * 금융위원회 보도자료 (’25.12.19) ‘코스닥 시장 신뢰+혁신 제고 방안’",
+        "benchmarkName": "코스닥 지수",
+        "benchmarkDescription": "코스닥 관련 상장 종목들로 구성된 테마 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "코스닥 주도주와 성장이 기대되는 산업에 투자하는 액티브 ETF",
+          "rawHash": "ba349f959492e9240e2e7a4da1ec25bc2f8bcbd35e7388dd787c39903c6ed7ac"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "코스닥 유망산업 핵심주를 선별하여 집중 투자 예정: 제약바이오, 반도체소부장, 우주항공/방산 등 신성장 산업별 주도주를 선별하여 집중 투자 예정; 중소형주 운용의 강점과 리서치의 전문성: 중소형주 투자의 오랜 트랙레코드, 탄탄한 리서치 기반으로 풍부한 종목 유니버스 활용 가능; 코스닥 육성 정책 기대감: 정부가 ‘코스닥3000시대’를 위한 핵심 전략 발표, 코스닥 신뢰+혁신 제고로 기관 자금 유입 기대 * 금융위원회 보도자료 (’25.12.19) ‘코스닥 시장 신뢰+혁신 제고 방안’",
+          "rawHash": "ba349f959492e9240e2e7a4da1ec25bc2f8bcbd35e7388dd787c39903c6ed7ac"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "코스닥 지수",
+          "rawHash": "ba349f959492e9240e2e7a4da1ec25bc2f8bcbd35e7388dd787c39903c6ed7ac"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "코스닥 관련 상장 종목들로 구성된 테마 지수",
+          "rawHash": "ba349f959492e9240e2e7a4da1ec25bc2f8bcbd35e7388dd787c39903c6ed7ac"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "ba349f959492e9240e2e7a4da1ec25bc2f8bcbd35e7388dd787c39903c6ed7ac"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0163Y0/2026-07-21T07-43-09-451Z.ba349f959492e924.json",
+        "hash": "ba349f959492e9240e2e7a4da1ec25bc2f8bcbd35e7388dd787c39903c6ed7ac",
+        "bytes": 55694,
+        "retrievedAt": "2026-07-21T07:43:09.451Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFU6.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.020Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0174B0",
+      "isin": "KR70174B0001",
+      "name": "KoAct 글로벌AI메모리반도체액티브",
+      "productId": "2ETFU5",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0174B0",
+          "productId": "2ETFU5",
+          "productName": "KoAct 글로벌AI메모리반도체액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "AI가 촉발한 메모리 반도체 수퍼사이클",
+        "investmentObjective": "AI가 촉발한 메모리 반도체 수퍼사이클 진입 평가: AI 확산에 따른 메모리 반도체 산업의 구조적 성장기 진입 판단 AI 추론 확산에 따라 메모리 수요 급증, 피지컬AI도 메모리반도체의 추가 수요 기대; 숏티지 심화로 메모리 증설 재개, 소부장 수혜 기대: HBM뿐 아니라 범용 메모리 (DRAM / NAND / HDD)도 수요 급증으로 공급 부족 전망 메모리반도체 증설 사이클 재개로 반도체 소부장 수혜 기대; AI고도화에 따라 차세대 메모리에 액티브 투자 추구: AI로 인해 범용 메모리 및 HBM 뿐만 아니라, 다양한 선단 메모리 제품 수요가 발생 기대 SoCAMM, HBF, LPW, PIM 등 향후 차세대 메모리 기술 로드맵에 따라 고속 성장하는 주도 기업에 액티브하게 투자 추구",
+        "benchmarkName": "Solactive 글로벌AI메모리반도체 PR 지수",
+        "benchmarkDescription": "Solactive 글로벌AI메모리반도체 PR 지수는 글로벌 AI 메모리 반도체 밸류체인 관련 산업을 영위하는 종목들로 구성된 테마 지수로, Factset의 RBICS 및 ARTIS 키워드 기반으로 종목 선정하여 지수를 산출함.",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "AI가 촉발한 메모리 반도체 수퍼사이클",
+          "rawHash": "e00a8153a19f8af4dc87d697bb4a144e377c8cc5df7d3774614f685af870b956"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "AI가 촉발한 메모리 반도체 수퍼사이클 진입 평가: AI 확산에 따른 메모리 반도체 산업의 구조적 성장기 진입 판단 AI 추론 확산에 따라 메모리 수요 급증, 피지컬AI도 메모리반도체의 추가 수요 기대; 숏티지 심화로 메모리 증설 재개, 소부장 수혜 기대: HBM뿐 아니라 범용 메모리 (DRAM / NAND / HDD)도 수요 급증으로 공급 부족 전망 메모리반도체 증설 사이클 재개로 반도체 소부장 수혜 기대; AI고도화에 따라 차세대 메모리에 액티브 투자 추구: AI로 인해 범용 메모리 및 HBM 뿐만 아니라, 다양한 선단 메모리 제품 수요가 발생 기대 SoCAMM, HBF, LPW, PIM 등 향후 차세대 메모리 기술 로드맵에 따라 고속 성장하는 주도 기업에 액티브하게 투자 추구",
+          "rawHash": "e00a8153a19f8af4dc87d697bb4a144e377c8cc5df7d3774614f685af870b956"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive 글로벌AI메모리반도체 PR 지수",
+          "rawHash": "e00a8153a19f8af4dc87d697bb4a144e377c8cc5df7d3774614f685af870b956"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "Solactive 글로벌AI메모리반도체 PR 지수는 글로벌 AI 메모리 반도체 밸류체인 관련 산업을 영위하는 종목들로 구성된 테마 지수로, Factset의 RBICS 및 ARTIS 키워드 기반으로 종목 선정하여 지수를 산출함.",
+          "rawHash": "e00a8153a19f8af4dc87d697bb4a144e377c8cc5df7d3774614f685af870b956"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "e00a8153a19f8af4dc87d697bb4a144e377c8cc5df7d3774614f685af870b956"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0174B0/2026-07-21T07-43-10-885Z.e00a8153a19f8af4.json",
+        "hash": "e00a8153a19f8af4dc87d697bb4a144e377c8cc5df7d3774614f685af870b956",
+        "bytes": 79954,
+        "retrievedAt": "2026-07-21T07:43:10.885Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFU5.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.022Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0186L0",
+      "isin": "KR70186L0005",
+      "name": "KoAct 미국로봇피지컬AI액티브",
+      "productId": "2ETFU7",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0186L0",
+          "productId": "2ETFU7",
+          "productName": "KoAct 미국로봇피지컬AI액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "AI 2.0, 피지컬 AI 산업에 보다 빠른 투자를 추구하는 ETF",
+        "investmentObjective": "휴머노이드, 그 이상으로 4배 확장되는 피지컬 AI 산업: 휴머노이드 로봇이 피지컬 AI 산업에서 차지하는 비중은 ¼ 수준으로 모빌리티, 건설장비, 물류로봇, 스마트 글라스 등 플랫폼 확장을 통해 피지컬 AI 시장은 ’24년 9억달러 → ’35년 2조달러로 약 2,000배 성장 전망 (산업자료, LS증권 2026.3.17); 기술 트렌드 및 주도 기업 변화에 맞춰 액티브 운용: ’23년 Nvidia → ’24년 Tesla → ’25년 SanDisk → ’26년 Teradyne 으로 이어질 것으로 기대되는 AI산업 주도 기업 변화에서 빠른 시장 대응을 추구하는 액티브 운용이 유리하다고 판단; 미국 증시 상장을 앞두고 있는 피지컬 AI 주요 기업들: Boston Dynamics, OpenAI, Anthropic 등 주요 피지컬 AI 기업들은 IPO 준비 작업 돌입 ※ 현재 해당 기업들은 지수 내 포함되지 않은 비상장 기업으로, 상장 후 지수 내 편입 예정이며, 상장 시점 및 여부는 시장상황에 따라 달라질 수 있습니다. (Reuters 2025.10.30, 디일렉 2026.1.12, Seeking Alpha 2026.1.20)",
+        "benchmarkName": "iSelect 미국로봇피지컬AI 지수",
+        "benchmarkDescription": "미국 주식시장 상장 기업 중 피지컬 AI 와 관련된 모바일 로봇 수술용 로봇, 휴머노이드로봇, 소프트웨어(AI 및 플랫폼 지능형 서비스로봇 부품 개발 및 생산하는 기업과 피지컬 AI 관련 회사에 투자한 기업으로 구성. NLP(자연어처리) 기법을 활용한 테마지수이며, NLP스코어를 기준으로 피지컬AI 테마와 관련성이 높은 종목을 선정.",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "AI 2.0, 피지컬 AI 산업에 보다 빠른 투자를 추구하는 ETF",
+          "rawHash": "97823d41d6d6df3fc3ec16aefc7c5a2e7bc788a9c4c4385dbf884b308c1e536b"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "휴머노이드, 그 이상으로 4배 확장되는 피지컬 AI 산업: 휴머노이드 로봇이 피지컬 AI 산업에서 차지하는 비중은 ¼ 수준으로 모빌리티, 건설장비, 물류로봇, 스마트 글라스 등 플랫폼 확장을 통해 피지컬 AI 시장은 ’24년 9억달러 → ’35년 2조달러로 약 2,000배 성장 전망 (산업자료, LS증권 2026.3.17); 기술 트렌드 및 주도 기업 변화에 맞춰 액티브 운용: ’23년 Nvidia → ’24년 Tesla → ’25년 SanDisk → ’26년 Teradyne 으로 이어질 것으로 기대되는 AI산업 주도 기업 변화에서 빠른 시장 대응을 추구하는 액티브 운용이 유리하다고 판단; 미국 증시 상장을 앞두고 있는 피지컬 AI 주요 기업들: Boston Dynamics, OpenAI, Anthropic 등 주요 피지컬 AI 기업들은 IPO 준비 작업 돌입 ※ 현재 해당 기업들은 지수 내 포함되지 않은 비상장 기업으로, 상장 후 지수 내 편입 예정이며, 상장 시점 및 여부는 시장",
+          "rawHash": "97823d41d6d6df3fc3ec16aefc7c5a2e7bc788a9c4c4385dbf884b308c1e536b"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "iSelect 미국로봇피지컬AI 지수",
+          "rawHash": "97823d41d6d6df3fc3ec16aefc7c5a2e7bc788a9c4c4385dbf884b308c1e536b"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "미국 주식시장 상장 기업 중 피지컬 AI 와 관련된 모바일 로봇 수술용 로봇, 휴머노이드로봇, 소프트웨어(AI 및 플랫폼 지능형 서비스로봇 부품 개발 및 생산하는 기업과 피지컬 AI 관련 회사에 투자한 기업으로 구성. NLP(자연어처리) 기법을 활용한 테마지수이며, NLP스코어를 기준으로 피지컬AI 테마와 관련성이 높은 종목을 선정.",
+          "rawHash": "97823d41d6d6df3fc3ec16aefc7c5a2e7bc788a9c4c4385dbf884b308c1e536b"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "97823d41d6d6df3fc3ec16aefc7c5a2e7bc788a9c4c4385dbf884b308c1e536b"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/0186L0/2026-07-21T07-43-12-367Z.97823d41d6d6df3f.json",
+        "hash": "97823d41d6d6df3fc3ec16aefc7c5a2e7bc788a9c4c4385dbf884b308c1e536b",
+        "bytes": 71360,
+        "retrievedAt": "2026-07-21T07:43:12.367Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFU7.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.024Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "0193G0",
+      "isin": "KR70193G0003",
+      "name": "KoAct 코스피액티브",
+      "productId": "2ETFV2",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "0193G0",
+          "productId": "2ETFV2",
+          "productName": "KoAct 코스피액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "글로벌 증시 중심에 선 코스피, 이제 선택과 집중 투자로 승부",
+        "investmentObjective": "우리나라 대표지수 코스피에 투자: 사상 최고치 경신에도 가파른 이익 성장이 기대되어 여전히 매력적이라 판단되는 코스피 자본시장 활성화 정책 등이 낮은 멀티플을 정상화하는 기폭제 될 것으로 전망; K자형 수익률 분포, 액티브 투자가 효율적 전략: 주도 업종 중심 상승으로 업종 간 극심한 수익률 편차를 보이는 코스피 유망 산업과 우량 종목을 선별하여 투자하는 액티브 전략이 필요; 리서치센터와 운용역이 함께 투자역량 집중: 인하우스 애널리스트와 장기 초과성과를 추구하는 운용역이 투자 역량 집중 저평가된 코스피의 흐름과 함께 그 이상의 초과성과를 추구",
+        "benchmarkName": "KOSPI 지수",
+        "benchmarkDescription": "코스피 관련 상장 종목들로 구성된 시장 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "글로벌 증시 중심에 선 코스피, 이제 선택과 집중 투자로 승부",
+          "rawHash": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "우리나라 대표지수 코스피에 투자: 사상 최고치 경신에도 가파른 이익 성장이 기대되어 여전히 매력적이라 판단되는 코스피 자본시장 활성화 정책 등이 낮은 멀티플을 정상화하는 기폭제 될 것으로 전망; K자형 수익률 분포, 액티브 투자가 효율적 전략: 주도 업종 중심 상승으로 업종 간 극심한 수익률 편차를 보이는 코스피 유망 산업과 우량 종목을 선별하여 투자하는 액티브 전략이 필요; 리서치센터와 운용역이 함께 투자역량 집중: 인하우스 애널리스트와 장기 초과성과를 추구하는 운용역이 투자 역량 집중 저평가된 코스피의 흐름과 함께 그 이상의 초과성과를 추구",
+          "rawHash": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "KOSPI 지수",
+          "rawHash": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "코스피 관련 상장 종목들로 구성된 시장 지수",
+          "rawHash": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0193G0.bc53f397e555.json",
+        "hash": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e",
+        "bytes": 88334,
+        "retrievedAt": "2026-07-21T07:43:12.372Z",
+        "reusedFromCanary": true,
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFV2.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.026Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "462900",
+      "isin": "KR7462900002",
+      "name": "KoAct 바이오헬스케어액티브",
+      "productId": "2ETFJ9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "462900",
+          "productId": "2ETFJ9",
+          "productName": "KoAct 바이오헬스케어액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "변화하는 바이오·헬스케어 산업, 이제 액티브하게 투자하세요!",
+        "investmentObjective": "차세대 바이오헬스케어 핵심 기업에 집중 투자: 인구고령화시대 AI시대 기술 융합으로 바이오 헬스 케어 산업은 새로운 국면 돌입; The Next Wave: 이제는 바이오 차례. 글로벌 트렌드와 맞물려 한국 바이오 헬스케어 투자 매력 상승; 세상의 변화를 담은 포트폴리오: 바이오를 넘어 의료기기와 디지털 헬스케어까지 당신의 내일을 위해 꼭 필요한 포트폴리오",
+        "benchmarkName": "iSelect 바이오헬스케어 PR",
+        "benchmarkDescription": "제약/바이오 산업과 관련된 국내 종목으로 구성된 지수로, 바이오/헬스케어 산업의 성장과 함께 고성장이 가능한 기업들의 성과를 추종하도록 설계",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "변화하는 바이오·헬스케어 산업, 이제 액티브하게 투자하세요!",
+          "rawHash": "823b6f05e3f33939c159f6f2ef562fc290a73fdaae54ab639efd0dc954a6e745"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "차세대 바이오헬스케어 핵심 기업에 집중 투자: 인구고령화시대 AI시대 기술 융합으로 바이오 헬스 케어 산업은 새로운 국면 돌입; The Next Wave: 이제는 바이오 차례. 글로벌 트렌드와 맞물려 한국 바이오 헬스케어 투자 매력 상승; 세상의 변화를 담은 포트폴리오: 바이오를 넘어 의료기기와 디지털 헬스케어까지 당신의 내일을 위해 꼭 필요한 포트폴리오",
+          "rawHash": "823b6f05e3f33939c159f6f2ef562fc290a73fdaae54ab639efd0dc954a6e745"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "iSelect 바이오헬스케어 PR",
+          "rawHash": "823b6f05e3f33939c159f6f2ef562fc290a73fdaae54ab639efd0dc954a6e745"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "제약/바이오 산업과 관련된 국내 종목으로 구성된 지수로, 바이오/헬스케어 산업의 성장과 함께 고성장이 가능한 기업들의 성과를 추종하도록 설계",
+          "rawHash": "823b6f05e3f33939c159f6f2ef562fc290a73fdaae54ab639efd0dc954a6e745"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "823b6f05e3f33939c159f6f2ef562fc290a73fdaae54ab639efd0dc954a6e745"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/462900/2026-07-21T07-43-13-825Z.823b6f05e3f33939.json",
+        "hash": "823b6f05e3f33939c159f6f2ef562fc290a73fdaae54ab639efd0dc954a6e745",
+        "bytes": 67117,
+        "retrievedAt": "2026-07-21T07:43:13.825Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFJ9.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.028Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "471040",
+      "isin": "KR7471040006",
+      "name": "KoAct 글로벌AI&로봇액티브",
+      "productId": "2ETFL3",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "471040",
+          "productId": "2ETFL3",
+          "productName": "KoAct 글로벌AI&로봇액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "AI와 로봇 산업의 미래에, 액티브하게 투자하세요!",
+        "investmentObjective": "AI와 로봇 산업 성장단계별 맞춤 액티브 투자 전략: 빠르게 성장중인 AI와 로봇 산업 기술에 발 빠른 대응을하는 액티브 ETF; 개화되는 AI와 로봇 산업 핵심 글로벌 기업에 집중 투자: 로봇과 AI 기술 적용을 통해 활용 분야가 대폭 확대되는 기업에 투자; 성장의 가능성 큰 AI와 로봇: 인공지능 기술이 만나 새로운 패러다임을 기대",
+        "benchmarkName": "iSelect 글로벌AI&로봇 PR",
+        "benchmarkDescription": "AI, 로봇 산업과 관련된 글로벌 종목으로 구성된 지수로, 산업의 성장과 함께 고성장이 가능한 기업들의 성과를 추종하도록 설계",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "AI와 로봇 산업의 미래에, 액티브하게 투자하세요!",
+          "rawHash": "2245aa45d49cba62a07ac4881b33774064103e8f5afa44df46b8d9fad02c2dbd"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "AI와 로봇 산업 성장단계별 맞춤 액티브 투자 전략: 빠르게 성장중인 AI와 로봇 산업 기술에 발 빠른 대응을하는 액티브 ETF; 개화되는 AI와 로봇 산업 핵심 글로벌 기업에 집중 투자: 로봇과 AI 기술 적용을 통해 활용 분야가 대폭 확대되는 기업에 투자; 성장의 가능성 큰 AI와 로봇: 인공지능 기술이 만나 새로운 패러다임을 기대",
+          "rawHash": "2245aa45d49cba62a07ac4881b33774064103e8f5afa44df46b8d9fad02c2dbd"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "iSelect 글로벌AI&로봇 PR",
+          "rawHash": "2245aa45d49cba62a07ac4881b33774064103e8f5afa44df46b8d9fad02c2dbd"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "AI, 로봇 산업과 관련된 글로벌 종목으로 구성된 지수로, 산업의 성장과 함께 고성장이 가능한 기업들의 성과를 추종하도록 설계",
+          "rawHash": "2245aa45d49cba62a07ac4881b33774064103e8f5afa44df46b8d9fad02c2dbd"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "2245aa45d49cba62a07ac4881b33774064103e8f5afa44df46b8d9fad02c2dbd"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/471040/2026-07-21T07-43-15-291Z.2245aa45d49cba62.json",
+        "hash": "2245aa45d49cba62a07ac4881b33774064103e8f5afa44df46b8d9fad02c2dbd",
+        "bytes": 53759,
+        "retrievedAt": "2026-07-21T07:43:15.291Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFL3.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.030Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "475070",
+      "isin": "KR7475070009",
+      "name": "KoAct 글로벌친환경전력인프라액티브",
+      "productId": "2ETFL9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "475070",
+          "productId": "2ETFL9",
+          "productName": "KoAct 글로벌친환경전력인프라액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "최첨단 기술 시대, 기후테크 인프라 산업 투자는 선택이 아닌 필수!",
+        "investmentObjective": "키워드 필터링과 삼성액티브자산의 리서치를 종합한 종목 선정: 키워드 기반 종목 필터링 > 리서치 > 액티브 포트폴리오 → 지수 대비 알파 추구 삼성액티브자산운용 ESG 평가 점수를 활용한 Negative Screening 적용; 액티브 운용의 강점: 기후테크 인프라 산업은 성장 초기 단계로 산업의 변화가 빠르며, 정책 변화에 민감하기 때문에 발 빠른 대응(액티브 운용)으로 알파 창출 추구; 글로벌 기후테크 인프라 기업에 집중 투자: 저탄소에너지(풍력, 태양광, 수소, 천연가스, 원자력), 전기차, ESS, 가상발전소, CCUS(탄소포집저장활용) 등 탄소 감축 기술을 가진 기후테크 기업에 투자 낙후된 선진국 인프라 재건과 전후 복구사업은 저탄소에너지를 중심으로 전개될 전망으로, 전력 인프라, 재생에너지 발전소 건설 등과 관련된 핵심 인프라 기업에 투자",
+        "benchmarkName": "Solactive 글로벌친환경전력인프라 PR 지수",
+        "benchmarkDescription": "신재생 등 기후테크와 인프라 산업과 관련된 글로벌 종목으로 구성된 지수로, 산업의 성장과 함께 고성장이 가능한 기업들의 성과를 추종하도록 설계",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "최첨단 기술 시대, 기후테크 인프라 산업 투자는 선택이 아닌 필수!",
+          "rawHash": "8dc39ffacb8b285202df5626484f6d0c092b58cac821efb312cf8dfe3c509db2"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "키워드 필터링과 삼성액티브자산의 리서치를 종합한 종목 선정: 키워드 기반 종목 필터링 > 리서치 > 액티브 포트폴리오 → 지수 대비 알파 추구 삼성액티브자산운용 ESG 평가 점수를 활용한 Negative Screening 적용; 액티브 운용의 강점: 기후테크 인프라 산업은 성장 초기 단계로 산업의 변화가 빠르며, 정책 변화에 민감하기 때문에 발 빠른 대응(액티브 운용)으로 알파 창출 추구; 글로벌 기후테크 인프라 기업에 집중 투자: 저탄소에너지(풍력, 태양광, 수소, 천연가스, 원자력), 전기차, ESS, 가상발전소, CCUS(탄소포집저장활용) 등 탄소 감축 기술을 가진 기후테크 기업에 투자 낙후된 선진국 인프라 재건과 전후 복구사업은 저탄소에너지를 중심으로 전개될 전망으로, 전력 인프라, 재생에너지 발전소 건설 등과 관련된 핵심 인프라 기업에 투자",
+          "rawHash": "8dc39ffacb8b285202df5626484f6d0c092b58cac821efb312cf8dfe3c509db2"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive 글로벌친환경전력인프라 PR 지수",
+          "rawHash": "8dc39ffacb8b285202df5626484f6d0c092b58cac821efb312cf8dfe3c509db2"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "신재생 등 기후테크와 인프라 산업과 관련된 글로벌 종목으로 구성된 지수로, 산업의 성장과 함께 고성장이 가능한 기업들의 성과를 추종하도록 설계",
+          "rawHash": "8dc39ffacb8b285202df5626484f6d0c092b58cac821efb312cf8dfe3c509db2"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "8dc39ffacb8b285202df5626484f6d0c092b58cac821efb312cf8dfe3c509db2"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/475070/2026-07-21T07-43-16-783Z.8dc39ffacb8b2852.json",
+        "hash": "8dc39ffacb8b285202df5626484f6d0c092b58cac821efb312cf8dfe3c509db2",
+        "bytes": 53852,
+        "retrievedAt": "2026-07-21T07:43:16.783Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFL9.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.032Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "476850",
+      "isin": "KR7476850003",
+      "name": "KoAct 배당성장액티브",
+      "productId": "2ETFM2",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "476850",
+          "productId": "2ETFM2",
+          "productName": "KoAct 배당성장액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "미래 배당의 확대 가능성에 더 주목하여 한국 배당성장주에 투자하는 ETF",
+        "investmentObjective": "배당이 지속 확대되는 배당성장주에 투자: 배당지급횟수 및 배당수익률 점검을 통해 주주환원 개선 의지가 있는 기업에 투자; 주주환원이 증가하는 기업 선별: 금융, 화학 전자 등 산업 전반의 수혜주에 투자하는 포트폴리오 구성; 현금흐름 개선 및 ROE 우수기업에 집중: 현금 흐름의 개선을 통해 주주환원율을 높일 의지와 역량을 바탕으로 ROE가 성장하는 기업에 투자",
+        "benchmarkName": "코스피 지수",
+        "benchmarkDescription": "한국거래소 유가증권시장에 상장된 기업의 주식가격에 주식수를 가중평균하여 시가총액방식으로 지수 산출",
+        "distributionPolicy": "지급 (월지급) *매월 마지막영업일 분배금지급 기준일"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "미래 배당의 확대 가능성에 더 주목하여 한국 배당성장주에 투자하는 ETF",
+          "rawHash": "1451e3c47e734c9c86cf76f29395c184ea4a76ec673ed4cebfa42f2bb079304f"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "배당이 지속 확대되는 배당성장주에 투자: 배당지급횟수 및 배당수익률 점검을 통해 주주환원 개선 의지가 있는 기업에 투자; 주주환원이 증가하는 기업 선별: 금융, 화학 전자 등 산업 전반의 수혜주에 투자하는 포트폴리오 구성; 현금흐름 개선 및 ROE 우수기업에 집중: 현금 흐름의 개선을 통해 주주환원율을 높일 의지와 역량을 바탕으로 ROE가 성장하는 기업에 투자",
+          "rawHash": "1451e3c47e734c9c86cf76f29395c184ea4a76ec673ed4cebfa42f2bb079304f"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "코스피 지수",
+          "rawHash": "1451e3c47e734c9c86cf76f29395c184ea4a76ec673ed4cebfa42f2bb079304f"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "한국거래소 유가증권시장에 상장된 기업의 주식가격에 주식수를 가중평균하여 시가총액방식으로 지수 산출",
+          "rawHash": "1451e3c47e734c9c86cf76f29395c184ea4a76ec673ed4cebfa42f2bb079304f"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (월지급) *매월 마지막영업일 분배금지급 기준일",
+          "rawHash": "1451e3c47e734c9c86cf76f29395c184ea4a76ec673ed4cebfa42f2bb079304f"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/476850/2026-07-21T07-43-18-262Z.1451e3c47e734c9c.json",
+        "hash": "1451e3c47e734c9c86cf76f29395c184ea4a76ec673ed4cebfa42f2bb079304f",
+        "bytes": 59264,
+        "retrievedAt": "2026-07-21T07:43:18.262Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFM2.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.034Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "482030",
+      "isin": "KR7482030004",
+      "name": "KoAct 반도체&2차전지핵심소재액티브",
+      "productId": "2ETFM8",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "482030",
+          "productId": "2ETFM8",
+          "productName": "KoAct 반도체&2차전지핵심소재액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "기술혁신과 함께 성장하는 반도체, 2차전지 산업 내 소재 및 공급망에 투자하는 ETF",
+        "investmentObjective": "국내 테크소재와 원재료 공급망에 투자: 반도체/IT, 2차전지 산업의 기술 발전에 따라 테크소재 수요 지속 증대 테크 소재의 원재료는 점차 다변화 되고 있으며, 관련 공급망도 확대 중 정부의 핵심소재 및 자원 자립화 정책 방향성과 일치; 삼성액티브자산의 리서치를 종합한 종목 선정: 리서치 > 액티브 포트폴리오 → 지수 대비 알파 추구; 액티브 운용의 강점: 업계 최고 수준의 인하우스 리서치 인력 보유 섹터 별 인하우스 리서치 인력을 활용해 광범위한 종목발굴과 발 빠른 대응(액티브 운용)으로 알파 창출",
+        "benchmarkName": "iSelect 반도체&2차전지핵심소재",
+        "benchmarkDescription": "반도체, 2차전지 산업 내 소재 및 공급망 관련 사업을 영위하는 종목들로 구성된 테마 지수입니다.",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "기술혁신과 함께 성장하는 반도체, 2차전지 산업 내 소재 및 공급망에 투자하는 ETF",
+          "rawHash": "82741b80eaf91525200144bda6ea63844a934495b8bcabc13a33446ab2e54297"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "국내 테크소재와 원재료 공급망에 투자: 반도체/IT, 2차전지 산업의 기술 발전에 따라 테크소재 수요 지속 증대 테크 소재의 원재료는 점차 다변화 되고 있으며, 관련 공급망도 확대 중 정부의 핵심소재 및 자원 자립화 정책 방향성과 일치; 삼성액티브자산의 리서치를 종합한 종목 선정: 리서치 > 액티브 포트폴리오 → 지수 대비 알파 추구; 액티브 운용의 강점: 업계 최고 수준의 인하우스 리서치 인력 보유 섹터 별 인하우스 리서치 인력을 활용해 광범위한 종목발굴과 발 빠른 대응(액티브 운용)으로 알파 창출",
+          "rawHash": "82741b80eaf91525200144bda6ea63844a934495b8bcabc13a33446ab2e54297"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "iSelect 반도체&2차전지핵심소재",
+          "rawHash": "82741b80eaf91525200144bda6ea63844a934495b8bcabc13a33446ab2e54297"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "반도체, 2차전지 산업 내 소재 및 공급망 관련 사업을 영위하는 종목들로 구성된 테마 지수입니다.",
+          "rawHash": "82741b80eaf91525200144bda6ea63844a934495b8bcabc13a33446ab2e54297"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "82741b80eaf91525200144bda6ea63844a934495b8bcabc13a33446ab2e54297"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/482030/2026-07-21T07-43-19-737Z.82741b80eaf91525.json",
+        "hash": "82741b80eaf91525200144bda6ea63844a934495b8bcabc13a33446ab2e54297",
+        "bytes": 56756,
+        "retrievedAt": "2026-07-21T07:43:19.737Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFM8.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.036Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "487130",
+      "isin": "KR7487130007",
+      "name": "KoAct AI인프라액티브",
+      "productId": "2ETFN8",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "487130",
+          "productId": "2ETFN8",
+          "productName": "KoAct AI인프라액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "AI산업 발전에 꼭 필요한 핵심 인프라에 투자하는 액티브 ETF",
+        "investmentObjective": "AI와 함께 새로운 사이클로 접어든 반도체: AI시대에서 반도체 수혜는 HBM을 넘어, 메모리 전반과 온디바이스 등으로 확대될 것; 일반 검색 대비 10배의 전력이 필요한 생성형 AI: 전력밀도가 큰 폭 증가하는 AI 데이터센터는 기존 데이터센터 대비 5배 이상의 변압기가 필요; 데이터센터의 성능을 좌우하는 네트워크 기술: 고성능 데이터센터의 상용화는 그에 걸맞는 네트워크 장비와 운영/보안에 대한 기술이 필요",
+        "benchmarkName": "Solactive AI인프라 지수",
+        "benchmarkDescription": "기반 인프라/반도체/네트워크 관련 산업을 영위하는 종목들로 구성된 테마 지수로, Factset의 RBICS 기반으로 종목 선정하여 구성한 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "AI산업 발전에 꼭 필요한 핵심 인프라에 투자하는 액티브 ETF",
+          "rawHash": "d8b5f6c672382b33a5384529b7958dd552e3dc097d33ffcb7485f3cdb4c49449"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "AI와 함께 새로운 사이클로 접어든 반도체: AI시대에서 반도체 수혜는 HBM을 넘어, 메모리 전반과 온디바이스 등으로 확대될 것; 일반 검색 대비 10배의 전력이 필요한 생성형 AI: 전력밀도가 큰 폭 증가하는 AI 데이터센터는 기존 데이터센터 대비 5배 이상의 변압기가 필요; 데이터센터의 성능을 좌우하는 네트워크 기술: 고성능 데이터센터의 상용화는 그에 걸맞는 네트워크 장비와 운영/보안에 대한 기술이 필요",
+          "rawHash": "d8b5f6c672382b33a5384529b7958dd552e3dc097d33ffcb7485f3cdb4c49449"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive AI인프라 지수",
+          "rawHash": "d8b5f6c672382b33a5384529b7958dd552e3dc097d33ffcb7485f3cdb4c49449"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "기반 인프라/반도체/네트워크 관련 산업을 영위하는 종목들로 구성된 테마 지수로, Factset의 RBICS 기반으로 종목 선정하여 구성한 지수",
+          "rawHash": "d8b5f6c672382b33a5384529b7958dd552e3dc097d33ffcb7485f3cdb4c49449"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "d8b5f6c672382b33a5384529b7958dd552e3dc097d33ffcb7485f3cdb4c49449"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/487130/2026-07-21T07-43-21-321Z.d8b5f6c672382b33.json",
+        "hash": "d8b5f6c672382b33a5384529b7958dd552e3dc097d33ffcb7485f3cdb4c49449",
+        "bytes": 53283,
+        "retrievedAt": "2026-07-21T07:43:21.321Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFN8.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.037Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "490330",
+      "isin": "KR7490330008",
+      "name": "KoAct 미국치매&뇌질환치료제액티브",
+      "productId": "2ETFO5",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "490330",
+          "productId": "2ETFO5",
+          "productName": "KoAct 미국치매&뇌질환치료제액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "고령화 시대에 필수적인 뇌질환 치료제에 투자하는 국내 유일 액티브 ETF",
+        "investmentObjective": "인구 고령화에 따라 뇌질환은 지속 증가할 전망: 퇴행성 뇌질환(치매, 파킨슨병)과 정신질환(조현병 등)은 60대 이상에서 발병률이 증가; 진단 기술 발전으로 앞당겨진 블록버스터 신약 개발: 뇌 이미징 기술과 AI의 발전으로 불가능했던 분야에 대한 임상 데이터를 빠르게 축적; 국내 최초로 상장하는 유일한 뇌질환 액티브 ETF: 바이오 분야에서도 새로운 뇌질환 치료제에 대한 투자는 액티브 ETF가 유리할 것으로 전망",
+        "benchmarkName": "Solactive 미국치매&뇌질환치료제 PR 지수",
+        "benchmarkDescription": "뇌질환 치료제와 관련된 산업을 영위하는 미국 상장 종목들로 구성된 테마 지수로, Factset RBICS와 ARTIS 키워드 방식으로 종목 선정하여 구성한 지수",
+        "distributionPolicy": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "고령화 시대에 필수적인 뇌질환 치료제에 투자하는 국내 유일 액티브 ETF",
+          "rawHash": "ca653e0b3cc0e996db57039057abb75e89c76f8df5dd6c5db8d6d4741b33a894"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "인구 고령화에 따라 뇌질환은 지속 증가할 전망: 퇴행성 뇌질환(치매, 파킨슨병)과 정신질환(조현병 등)은 60대 이상에서 발병률이 증가; 진단 기술 발전으로 앞당겨진 블록버스터 신약 개발: 뇌 이미징 기술과 AI의 발전으로 불가능했던 분야에 대한 임상 데이터를 빠르게 축적; 국내 최초로 상장하는 유일한 뇌질환 액티브 ETF: 바이오 분야에서도 새로운 뇌질환 치료제에 대한 투자는 액티브 ETF가 유리할 것으로 전망",
+          "rawHash": "ca653e0b3cc0e996db57039057abb75e89c76f8df5dd6c5db8d6d4741b33a894"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive 미국치매&뇌질환치료제 PR 지수",
+          "rawHash": "ca653e0b3cc0e996db57039057abb75e89c76f8df5dd6c5db8d6d4741b33a894"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "뇌질환 치료제와 관련된 산업을 영위하는 미국 상장 종목들로 구성된 테마 지수로, Factset RBICS와 ARTIS 키워드 방식으로 종목 선정하여 구성한 지수",
+          "rawHash": "ca653e0b3cc0e996db57039057abb75e89c76f8df5dd6c5db8d6d4741b33a894"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+          "rawHash": "ca653e0b3cc0e996db57039057abb75e89c76f8df5dd6c5db8d6d4741b33a894"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/490330/2026-07-21T07-43-22-802Z.ca653e0b3cc0e996.json",
+        "hash": "ca653e0b3cc0e996db57039057abb75e89c76f8df5dd6c5db8d6d4741b33a894",
+        "bytes": 55164,
+        "retrievedAt": "2026-07-21T07:43:22.802Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFO5.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.039Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "495230",
+      "isin": "KR7495230005",
+      "name": "KoAct 코리아밸류업액티브",
+      "productId": "2ETFP3",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "495230",
+          "productId": "2ETFP3",
+          "productName": "KoAct 코리아밸류업액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "코리아 밸류업 지수를 재해석한 코액트만의 '밸류업' 액티브 ETF",
+        "investmentObjective": "코리아 밸류업 지수의 재해석: 밸류업 지수를 명확하게 재해석한 사이다 같은 포트폴리오; Active한 밸류업 투자, 액티브 투자는 KoAct ETF: 세상의 변화에 투자하는 KoAct, 그 중 주주환원 확대/지배구조 개선 등 가치의 변화에 대한 투자를 목표; Active의 장점을 살린 과감한 종목 편입/편출: 산업 트렌드에 따른 업종 비중 조절과 지수 내 종목뿐만이 아닌 편입이 예상되는 종목도 포함하는 포트폴리오 구성",
+        "benchmarkName": "코리아 밸류업 PR 지수",
+        "benchmarkDescription": "코리아 밸류업 지수는 기업 밸류업 프로그램 및 한국 증시에서의 기업 가치 중시 선순환 구조 정착을 지원하기 위한 목적으로 개발된 지수로, 시가총액 및 거래대금 등 규모 요건 이외에 수익성, 주주환원, 시장평가, 자본효율성 등 다양한 질적요건을 충족하는 대표 기업들로 구성함. 주주가치 제고 및 주가 재평가가 기대되는 기업에 투자하며, 향후 국내 자본시장 선순환 구조 정착 및 코리아 디스카운트 해소에 따른 수익을 기대함.",
+        "distributionPolicy": "지급 (월지급)"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "코리아 밸류업 지수를 재해석한 코액트만의 '밸류업' 액티브 ETF",
+          "rawHash": "416a6ebddbef24e53eceb3a16be3569a7792c79df69f2ad3aab5fc9f938fe0f2"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "코리아 밸류업 지수의 재해석: 밸류업 지수를 명확하게 재해석한 사이다 같은 포트폴리오; Active한 밸류업 투자, 액티브 투자는 KoAct ETF: 세상의 변화에 투자하는 KoAct, 그 중 주주환원 확대/지배구조 개선 등 가치의 변화에 대한 투자를 목표; Active의 장점을 살린 과감한 종목 편입/편출: 산업 트렌드에 따른 업종 비중 조절과 지수 내 종목뿐만이 아닌 편입이 예상되는 종목도 포함하는 포트폴리오 구성",
+          "rawHash": "416a6ebddbef24e53eceb3a16be3569a7792c79df69f2ad3aab5fc9f938fe0f2"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "코리아 밸류업 PR 지수",
+          "rawHash": "416a6ebddbef24e53eceb3a16be3569a7792c79df69f2ad3aab5fc9f938fe0f2"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "코리아 밸류업 지수는 기업 밸류업 프로그램 및 한국 증시에서의 기업 가치 중시 선순환 구조 정착을 지원하기 위한 목적으로 개발된 지수로, 시가총액 및 거래대금 등 규모 요건 이외에 수익성, 주주환원, 시장평가, 자본효율성 등 다양한 질적요건을 충족하는 대표 기업들로 구성함. 주주가치 제고 및 주가 재평가가 기대되는 기업에 투자하며, 향후 국내 자본시장 선순환 구조 정착 및 코리아 디스카운트 해소에 따른 수익을 기대함.",
+          "rawHash": "416a6ebddbef24e53eceb3a16be3569a7792c79df69f2ad3aab5fc9f938fe0f2"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (월지급)",
+          "rawHash": "416a6ebddbef24e53eceb3a16be3569a7792c79df69f2ad3aab5fc9f938fe0f2"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/495230/2026-07-21T07-43-24-269Z.416a6ebddbef24e5.json",
+        "hash": "416a6ebddbef24e53eceb3a16be3569a7792c79df69f2ad3aab5fc9f938fe0f2",
+        "bytes": 55152,
+        "retrievedAt": "2026-07-21T07:43:24.269Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFP3.do",
+        "reusedFromCache": true
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:45:16.042Z",
+      "sourceId": "koact_official_product_api",
+      "issuerId": "samsung-active-asset-management",
+      "parserVersion": "koact-product-parser-1.1.0",
+      "shortCode": "497780",
+      "isin": "KR7497780007",
+      "name": "KoAct 미국천연가스인프라액티브",
+      "productId": "2ETFO9",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true
+        },
+        "identity": {
+          "shortCode": "497780",
+          "productId": "2ETFO9",
+          "productName": "KoAct 미국천연가스인프라액티브"
+        }
+      },
+      "metadata": {
+        "productDescription": "미국 천연가스 밸류체인에 투자하는 액티브 ETF",
+        "investmentObjective": "전력 수요 증가에 대응하는 가스 밸류체인에 투자: 전력 수요 증가로 가스 발전 활용 증가에 따라 수혜 받는 천연가스 산업에 투자; 화석연료 중 친환경적인 천연가스: 다른 화석연료 발전 대비 낮은 탄소 배출량으로 에너지 전환 국면 중간단계 에너지원으로 활용; 안정적인 현금흐름에 기반한 배당주 투자: 천연가스 가격이 아닌 물동량에 기반한 사업구조로 안정적인 이익 성장",
+        "benchmarkName": "Solactive 미국천연가스인프라 지수",
+        "benchmarkDescription": "미국 천연가스인프라와 관련된 산업을 영위하는 미국 상장 종목들로 구성된 테마 지수",
+        "distributionPolicy": "지급 (월지급)"
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": "$.info.product.fSummary",
+          "snippet": "미국 천연가스 밸류체인에 투자하는 액티브 ETF",
+          "rawHash": "be0751abc0d174c87b21296876ba7094791f06daee922aa89300204d1066af5f"
+        },
+        "investmentObjective": {
+          "selector": "$.point.investPoints[*].{title,cn,htmlContent}",
+          "snippet": "전력 수요 증가에 대응하는 가스 밸류체인에 투자: 전력 수요 증가로 가스 발전 활용 증가에 따라 수혜 받는 천연가스 산업에 투자; 화석연료 중 친환경적인 천연가스: 다른 화석연료 발전 대비 낮은 탄소 배출량으로 에너지 전환 국면 중간단계 에너지원으로 활용; 안정적인 현금흐름에 기반한 배당주 투자: 천연가스 가격이 아닌 물동량에 기반한 사업구조로 안정적인 이익 성장",
+          "rawHash": "be0751abc0d174c87b21296876ba7094791f06daee922aa89300204d1066af5f"
+        },
+        "benchmarkName": {
+          "selector": "$.info.product.bmIdx",
+          "snippet": "Solactive 미국천연가스인프라 지수",
+          "rawHash": "be0751abc0d174c87b21296876ba7094791f06daee922aa89300204d1066af5f"
+        },
+        "benchmarkDescription": {
+          "selector": "$.info.product.kodexinfoidxProperty",
+          "snippet": "미국 천연가스인프라와 관련된 산업을 영위하는 미국 상장 종목들로 구성된 테마 지수",
+          "rawHash": "be0751abc0d174c87b21296876ba7094791f06daee922aa89300204d1066af5f"
+        },
+        "distributionPolicy": {
+          "selector": "$.info.product.dividRemark",
+          "snippet": "지급 (월지급)",
+          "rawHash": "be0751abc0d174c87b21296876ba7094791f06daee922aa89300204d1066af5f"
+        }
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/koact-product/pages/2026-07-21/497780/2026-07-21T07-43-25-723Z.be0751abc0d174c8.json",
+        "hash": "be0751abc0d174c87b21296876ba7094791f06daee922aa89300204d1066af5f",
+        "bytes": 54501,
+        "retrievedAt": "2026-07-21T07:43:25.723Z",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFO9.do",
+        "reusedFromCache": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:13:38.383Z",
+  "pass": true,
+  "fieldCoverage": {
+    "productDescription": 4,
+    "investmentObjective": 4,
+    "benchmarkName": 4,
+    "benchmarkDescription": 4,
+    "distributionPolicy": 4
+  },
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T07:12:59.254Z",
+      "sourceId": "won_official_product_html",
+      "issuerId": "woori-asset-management",
+      "shortCode": "413930",
+      "isin": "KR7413930009",
+      "name": "WON AI ESG액티브",
+      "productId": "HaFalK34qahjFElR",
+      "sourceName": "WON AI ESG액티브",
+      "listDescription": "AI 기반 유니버스에 ESG 우수 기업을 선별해 편입하고, 액티브 전략을 통해 초과 성과를 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/HaFalK34qahjFElR",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "AI 기반 유니버스에 ESG 우수 기업을 선별해 편입하고, 액티브 전략을 통해 초과 성과를 추구합니다.",
+        "investmentObjective": "액티브상장지수펀드로 주식 및 주식관련 파생상품을 이용하여 ‘MK-iSelect AI ESG지수’를 비교지수로 하여 비교지수 대비 초과수익을 추구합니다. MK-iSelect AI ESG지수는 매일경제와 NH투자증권에서 개발한 지수로 국내 상장된 KOSPI, KOSDAQ 기업들로 이루어져 있으며, 지속가능발전소 AI기술을 활용하여 ESG점수 상위 종목들을 선별한 후 분기별로 ESG리스크를 반영한 지수입니다. * 지속가능발전소란? 2014년 설립 / 2015년 UN PRI 가입하였으며, 인공지능(AI)을 활용해 ESG를 분석하는 기업입니다.",
+        "benchmarkName": "iSelect AI ESG",
+        "benchmarkDescription": "액티브상장지수펀드로 주식 및 주식관련 파생상품을 이용하여 ‘MK-iSelect AI ESG지수’를 비교지수로 하여 비교지수 대비 초과수익을 추구합니다. MK-iSelect AI ESG지수는 매일경제와 NH투자증권에서 개발한 지수로 국내 상장된 KOSPI, KOSDAQ 기업들로 이루어져 있으며, 지속가능발전소 AI기술을 활용하여 ESG점수 상위 종목들을 선별한 후 분기별로 ESG리스크를 반영한 지수입니다. * 지속가능발전소란? 2014년 설립 / 2015년 UN PRI 가입하였으며, 인공지능(AI)을 활용해 ESG를 분석하는 기업입니다.",
+        "distributionPolicy": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.wooriam.kr/file-download?uid=ryKpCO5GojLFXQ8v",
+          "https://www.wooriam.kr/file-download?uid=RvpxhU7FhrgoVwSw",
+          "https://www.wooriam.kr/file-download?uid=FKb0Ap9DNLp87mft",
+          "https://www.wooriam.kr/file-download?uid=5TBRF6L385OlgAjQ"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fund-view__sub-title",
+          "snippet": "AI 기반 유니버스에 ESG 우수 기업을 선별해 편입하고, 액티브 전략을 통해 초과 성과를 추구합니다.",
+          "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+        },
+        "investmentObjective": {
+          "selector": ".investment__info",
+          "snippet": "액티브상장지수펀드로 주식 및 주식관련 파생상품을 이용하여 ‘MK-iSelect AI ESG지수’를 비교지수로 하여 비교지수 대비 초과수익을 추구합니다. MK-iSelect AI ESG지수는 매일경제와 NH투자증권에서 개발한 지수로 국내 상장된 KOSPI, KOSDAQ 기업들로 이루어져 있으며, 지속가능발전소 AI기술을 활용하여 ESG점수 상위 종목들을 선별한 후 분기별로 ESG리스크를 반영한 지수입니다. * 지속가능발전소란? 2014년 설립 / 2015년 UN PRI 가입하였으며, 인공지능(AI)을 활용해 ESG를 분석하는 기업입니다.",
+          "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+        },
+        "benchmarkName": {
+          "selector": ".notion__item .notion__right",
+          "snippet": "iSelect AI ESG",
+          "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+        },
+        "benchmarkDescription": {
+          "selector": ".investment__info",
+          "snippet": "액티브상장지수펀드로 주식 및 주식관련 파생상품을 이용하여 ‘MK-iSelect AI ESG지수’를 비교지수로 하여 비교지수 대비 초과수익을 추구합니다. MK-iSelect AI ESG지수는 매일경제와 NH투자증권에서 개발한 지수로 국내 상장된 KOSPI, KOSDAQ 기업들로 이루어져 있으며, 지속가능발전소 AI기술을 활용하여 ESG점수 상위 종목들을 선별한 후 분기별로 ESG리스크를 반영한 지수입니다. * 지속가능발전소란? 2014년 설립 / 2015년 UN PRI 가입하였으며, 인공지능(AI)을 활용해 ESG를 분석하는 기업입니다.",
+          "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+        },
+        "distributionPolicy": {
+          "selector": ".fund-view__grid dt + dd",
+          "snippet": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+          "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=ryKpCO5GojLFXQ8v', '_blank');\">집합투자규약",
+            "href": "https://www.wooriam.kr/file-download?uid=ryKpCO5GojLFXQ8v",
+            "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=RvpxhU7FhrgoVwSw', '_blank');\">투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=RvpxhU7FhrgoVwSw",
+            "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=FKb0Ap9DNLp87mft', '_blank');\">간이투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=FKb0Ap9DNLp87mft",
+            "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=5TBRF6L385OlgAjQ', '_blank');\">FACTSHEET",
+            "href": "https://www.wooriam.kr/file-download?uid=5TBRF6L385OlgAjQ",
+            "rawHash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/won-product/pages/2026-07-21/413930/2026-07-21T07-12-59-254Z.f418de3350ca9795.html",
+        "hash": "f418de3350ca97958e3b0807d8bfffcc79571f8714a4ee63ae6ec23f6a20a820",
+        "bytes": 163380,
+        "url": "https://www.wooriam.kr/investment/etf-view/HaFalK34qahjFElR"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:13:02.402Z",
+      "sourceId": "won_official_product_html",
+      "issuerId": "woori-asset-management",
+      "shortCode": "444490",
+      "isin": "KR7444490007",
+      "name": "WON 미국S&P500",
+      "productId": "6acWapbyV1JaJ7do",
+      "sourceName": "WON 미국S&P500",
+      "listDescription": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 운용합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/6acWapbyV1JaJ7do",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 운용합니다.",
+        "investmentObjective": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 투자신탁 재산을 운용함을 목적으로 합니다. S&P 500 Index(PR)(원화환산) 지수는 미국 주식시장에 상장된 500개의 우량 기업에 유동시가총액 가중으로 투자하는 지수로, 해당 지수에 편입된 종목들의 가치의 합이 미국 주식시장의 80% 가량에 해당합니다. 지수 관련 내용은 다음의 홈페이지에서 확인하실 수 있습니다. - WOORI ETF홈페이지: www.wooriam.kr - 한국거래소 ETF홈페이지: etf.krx.co.kr - 지수산출기관 홈페이지: https://www.spglobal.com/spdji/kr/indices/equity/sp-500/ #overview",
+        "benchmarkName": "S&P 500 Index PR",
+        "benchmarkDescription": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 투자신탁 재산을 운용함을 목적으로 합니다. S&P 500 Index(PR)(원화환산) 지수는 미국 주식시장에 상장된 500개의 우량 기업에 유동시가총액 가중으로 투자하는 지수로, 해당 지수에 편입된 종목들의 가치의 합이 미국 주식시장의 80% 가량에 해당합니다. 지수 관련 내용은 다음의 홈페이지에서 확인하실 수 있습니다. - WOORI ETF홈페이지: www.wooriam.kr - 한국거래소 ETF홈페이지: etf.krx.co.kr - 지수산출기관 홈페이지: https://www.spglobal.com/spdji/kr/indices/equity/sp-500/ #overview",
+        "distributionPolicy": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.wooriam.kr/file-download?uid=zbGVEMzSbu6J3x4w",
+          "https://www.wooriam.kr/file-download?uid=ZvJhSu3yNY5RvNmb",
+          "https://www.wooriam.kr/file-download?uid=epQqVuGohlZTW7oT",
+          "https://www.wooriam.kr/file-download?uid=JTlD0jVrLgCVVNdb"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fund-view__sub-title",
+          "snippet": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 운용합니다.",
+          "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+        },
+        "investmentObjective": {
+          "selector": ".investment__info",
+          "snippet": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 투자신탁 재산을 운용함을 목적으로 합니다. S&P 500 Index(PR)(원화환산) 지수는 미국 주식시장에 상장된 500개의 우량 기업에 유동시가총액 가중으로 투자하는 지수로, 해당 지수에 편입된 종목들의 가치의 합이 미국 주식시장의 80% 가량에 해당합니다. 지수 관련 내용은 다음의 홈페이지에서 확인하실 수 있습니다. - WOORI ETF홈페이지: www.wooriam.kr - 한국거래소 ETF홈페이지: etf.krx.co.kr - 지수산출기관 홈페이지: https://www.spglobal.com/spdji/kr/indices/equity/sp-500/ #overview",
+          "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+        },
+        "benchmarkName": {
+          "selector": ".notion__item .notion__right",
+          "snippet": "S&P 500 Index PR",
+          "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+        },
+        "benchmarkDescription": {
+          "selector": ".investment__info",
+          "snippet": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 투자신탁 재산을 운용함을 목적으로 합니다. S&P 500 Index(PR)(원화환산) 지수는 미국 주식시장에 상장된 500개의 우량 기업에 유동시가총액 가중으로 투자하는 지수로, 해당 지수에 편입된 종목들의 가치의 합이 미국 주식시장의 80% 가량에 해당합니다. 지수 관련 내용은 다음의 홈페이지에서 확인하실 수 있습니다. - WOORI ETF홈페이지: www.wooriam.kr - 한국거래소 ETF홈페이지: etf.krx.co.kr - 지수산출기관 홈페이지: https://www.spglobal.com/spdji/kr/indices/equity/sp-500/ #overview",
+          "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+        },
+        "distributionPolicy": {
+          "selector": ".fund-view__grid dt + dd",
+          "snippet": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+          "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=zbGVEMzSbu6J3x4w', '_blank');\">집합투자규약",
+            "href": "https://www.wooriam.kr/file-download?uid=zbGVEMzSbu6J3x4w",
+            "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=ZvJhSu3yNY5RvNmb', '_blank');\">투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=ZvJhSu3yNY5RvNmb",
+            "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=epQqVuGohlZTW7oT', '_blank');\">간이투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=epQqVuGohlZTW7oT",
+            "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=JTlD0jVrLgCVVNdb', '_blank');\">FACTSHEET",
+            "href": "https://www.wooriam.kr/file-download?uid=JTlD0jVrLgCVVNdb",
+            "rawHash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/won-product/pages/2026-07-21/444490/2026-07-21T07-13-02-402Z.5aa1330c71252489.html",
+        "hash": "5aa1330c71252489fd0879dd7e9da694eb2577e9bca135f236863a2e741f1bab",
+        "bytes": 151149,
+        "url": "https://www.wooriam.kr/investment/etf-view/6acWapbyV1JaJ7do"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:13:05.663Z",
+      "sourceId": "won_official_product_html",
+      "issuerId": "woori-asset-management",
+      "shortCode": "458030",
+      "isin": "KR7458030004",
+      "name": "WON 국공채머니마켓액티브",
+      "productId": "JJl6OfTA4PShrk14",
+      "sourceName": "WON 국공채머니마켓액티브",
+      "listDescription": "“KAP 국공채 머니마켓 총수익 지수” 를 비교지수로 하여 1좌당 순자산가치의 변동률이 비교지수의 변동률을 초과하도록 투자신탁재산을 운용함을 목적으로 하는 상장지수투자신탁입니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/JJl6OfTA4PShrk14",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "“KAP 국공채 머니마켓 총수익 지수” 를 비교지수로 하여 1좌당 순자산가치의 변동률이 비교지수의 변동률을 초과하도록 투자신탁재산을 운용함을 목적으로 하는 상장지수투자신탁입니다.",
+        "investmentObjective": "이 투자신탁은 한국자산평가가 산출하는 “KAP 국공채 머니마켓 총수익 지수”를 비교지수로 하는 상장지수집합투자기구로 잔존만기 6개월 이내 국고채, 통안증권, 특수은행채 등에 투자하여 안정적인 수익을 추구합니다. 또한, 다양한 초과수익 창출 전략을 사용하여 비교지수 대비 초과수익을 추구합니다. ‘KAP 국공채 머니마켓 총수익 지수’는 잔존만기가 6개월 이내인 국고채, 통안채, 특수은행채를 편입하는 지수입니다.",
+        "benchmarkName": "KAP 국공채 머니마켓 총수익 지수",
+        "benchmarkDescription": "이 투자신탁은 한국자산평가가 산출하는 “KAP 국공채 머니마켓 총수익 지수”를 비교지수로 하는 상장지수집합투자기구로 잔존만기 6개월 이내 국고채, 통안증권, 특수은행채 등에 투자하여 안정적인 수익을 추구합니다. 또한, 다양한 초과수익 창출 전략을 사용하여 비교지수 대비 초과수익을 추구합니다. ‘KAP 국공채 머니마켓 총수익 지수’는 잔존만기가 6개월 이내인 국고채, 통안채, 특수은행채를 편입하는 지수입니다.",
+        "distributionPolicy": "회계기간종료일",
+        "officialDocumentLinks": [
+          "https://www.wooriam.kr/file-download?uid=4x6vXpWepVrwYRSZ",
+          "https://www.wooriam.kr/file-download?uid=Fx3iVVU1hjpgs7sC",
+          "https://www.wooriam.kr/file-download?uid=zvHFSG47TkcmdABv",
+          "https://www.wooriam.kr/file-download?uid=sJrYsqJ9twX7jPFE"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fund-view__sub-title",
+          "snippet": "“KAP 국공채 머니마켓 총수익 지수” 를 비교지수로 하여 1좌당 순자산가치의 변동률이 비교지수의 변동률을 초과하도록 투자신탁재산을 운용함을 목적으로 하는 상장지수투자신탁입니다.",
+          "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+        },
+        "investmentObjective": {
+          "selector": ".investment__info",
+          "snippet": "이 투자신탁은 한국자산평가가 산출하는 “KAP 국공채 머니마켓 총수익 지수”를 비교지수로 하는 상장지수집합투자기구로 잔존만기 6개월 이내 국고채, 통안증권, 특수은행채 등에 투자하여 안정적인 수익을 추구합니다. 또한, 다양한 초과수익 창출 전략을 사용하여 비교지수 대비 초과수익을 추구합니다. ‘KAP 국공채 머니마켓 총수익 지수’는 잔존만기가 6개월 이내인 국고채, 통안채, 특수은행채를 편입하는 지수입니다.",
+          "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+        },
+        "benchmarkName": {
+          "selector": ".notion__item .notion__right",
+          "snippet": "KAP 국공채 머니마켓 총수익 지수",
+          "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+        },
+        "benchmarkDescription": {
+          "selector": ".investment__info",
+          "snippet": "이 투자신탁은 한국자산평가가 산출하는 “KAP 국공채 머니마켓 총수익 지수”를 비교지수로 하는 상장지수집합투자기구로 잔존만기 6개월 이내 국고채, 통안증권, 특수은행채 등에 투자하여 안정적인 수익을 추구합니다. 또한, 다양한 초과수익 창출 전략을 사용하여 비교지수 대비 초과수익을 추구합니다. ‘KAP 국공채 머니마켓 총수익 지수’는 잔존만기가 6개월 이내인 국고채, 통안채, 특수은행채를 편입하는 지수입니다.",
+          "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+        },
+        "distributionPolicy": {
+          "selector": ".fund-view__grid dt + dd",
+          "snippet": "회계기간종료일",
+          "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=4x6vXpWepVrwYRSZ', '_blank');\">집합투자규약",
+            "href": "https://www.wooriam.kr/file-download?uid=4x6vXpWepVrwYRSZ",
+            "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=Fx3iVVU1hjpgs7sC', '_blank');\">투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=Fx3iVVU1hjpgs7sC",
+            "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=zvHFSG47TkcmdABv', '_blank');\">간이투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=zvHFSG47TkcmdABv",
+            "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=sJrYsqJ9twX7jPFE', '_blank');\">FACTSHEET",
+            "href": "https://www.wooriam.kr/file-download?uid=sJrYsqJ9twX7jPFE",
+            "rawHash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/won-product/pages/2026-07-21/458030/2026-07-21T07-13-05-663Z.c84d7ff58cb94969.html",
+        "hash": "c84d7ff58cb94969054e41218b1a81ebbf3a1c69e3d57769463872f33a3f2495",
+        "bytes": 157551,
+        "url": "https://www.wooriam.kr/investment/etf-view/JJl6OfTA4PShrk14"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:13:08.165Z",
+      "sourceId": "won_official_product_html",
+      "issuerId": "woori-asset-management",
+      "shortCode": "474590",
+      "isin": "KR7474590007",
+      "name": "WON 반도체밸류체인액티브",
+      "productId": "ts8ym1V3HHeDnN9S",
+      "sourceName": "WON 반도체밸류체인액티브",
+      "listDescription": "SK하이닉스와 삼성전자에 약 50% 수준을 투자하고, 반도체 밸류체인 전반에 투자하여 수익을 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/ts8ym1V3HHeDnN9S",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "SK하이닉스와 삼성전자에 약 50% 수준을 투자하고, 반도체 밸류체인 전반에 투자하여 수익을 추구합니다.",
+        "investmentObjective": "이 투자신탁은 액티브상장지수펀드로 국내 주식을 주된 투자대상으로 하고, FnGuide가 산출 및 발표하는 “FnGuide 반도체 밸류체인(Price Return) 지수”를 비교지수로 하여 비교지수 대비 초과수익을 실현하는 것을 목적으로 합니다.",
+        "benchmarkName": "FnGuide 반도체 밸류체인 지수",
+        "benchmarkDescription": "이 투자신탁은 액티브상장지수펀드로 국내 주식을 주된 투자대상으로 하고, FnGuide가 산출 및 발표하는 “FnGuide 반도체 밸류체인(Price Return) 지수”를 비교지수로 하여 비교지수 대비 초과수익을 실현하는 것을 목적으로 합니다.",
+        "distributionPolicy": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+        "officialDocumentLinks": [
+          "https://www.wooriam.kr/file-download?uid=BmsQdDsiY9TuNJfm",
+          "https://www.wooriam.kr/file-download?uid=bg0mRa8mfTF2ekq7",
+          "https://www.wooriam.kr/file-download?uid=zO5u6P9tYavzXOxo",
+          "https://www.wooriam.kr/file-download?uid=kLKWH7M8L8B5l5a0"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fund-view__sub-title",
+          "snippet": "SK하이닉스와 삼성전자에 약 50% 수준을 투자하고, 반도체 밸류체인 전반에 투자하여 수익을 추구합니다.",
+          "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+        },
+        "investmentObjective": {
+          "selector": ".investment__info",
+          "snippet": "이 투자신탁은 액티브상장지수펀드로 국내 주식을 주된 투자대상으로 하고, FnGuide가 산출 및 발표하는 “FnGuide 반도체 밸류체인(Price Return) 지수”를 비교지수로 하여 비교지수 대비 초과수익을 실현하는 것을 목적으로 합니다.",
+          "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+        },
+        "benchmarkName": {
+          "selector": ".notion__item .notion__right",
+          "snippet": "FnGuide 반도체 밸류체인 지수",
+          "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+        },
+        "benchmarkDescription": {
+          "selector": ".investment__info",
+          "snippet": "이 투자신탁은 액티브상장지수펀드로 국내 주식을 주된 투자대상으로 하고, FnGuide가 산출 및 발표하는 “FnGuide 반도체 밸류체인(Price Return) 지수”를 비교지수로 하여 비교지수 대비 초과수익을 실현하는 것을 목적으로 합니다.",
+          "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+        },
+        "distributionPolicy": {
+          "selector": ".fund-view__grid dt + dd",
+          "snippet": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+          "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=BmsQdDsiY9TuNJfm', '_blank');\">집합투자규약",
+            "href": "https://www.wooriam.kr/file-download?uid=BmsQdDsiY9TuNJfm",
+            "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=bg0mRa8mfTF2ekq7', '_blank');\">투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=bg0mRa8mfTF2ekq7",
+            "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=zO5u6P9tYavzXOxo', '_blank');\">간이투자설명서",
+            "href": "https://www.wooriam.kr/file-download?uid=zO5u6P9tYavzXOxo",
+            "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+          },
+          {
+            "selector": "button[onclick*=\"/file-download?uid=\"]",
+            "snippet": "window.open('/file-download?uid=kLKWH7M8L8B5l5a0', '_blank');\">FACTSHEET",
+            "href": "https://www.wooriam.kr/file-download?uid=kLKWH7M8L8B5l5a0",
+            "rawHash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/won-product/pages/2026-07-21/474590/2026-07-21T07-13-08-165Z.a396276c97f85ef5.html",
+        "hash": "a396276c97f85ef5b76e987835f9869be89c9fc9071ac28f61256a4780d057c9",
+        "bytes": 164939,
+        "url": "https://www.wooriam.kr/investment/etf-view/ts8ym1V3HHeDnN9S"
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ETF 택소노미 200개 이견 진단과 메타데이터 보강 계획</title>
+  <style>
+    :root{--ink:#18231f;--muted:#66726d;--line:#dce5e1;--paper:#f4f7f6;--card:#fff;--mint:#00a98f;--mint-soft:#e3f6f2;--amber:#996100;--amber-soft:#fff1d2;--blue:#326fbd;--blue-soft:#e9f2ff;--red:#9d3d50;--red-soft:#ffe9ed}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6;word-break:keep-all}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}.hero{padding:54px 0 40px;background:#15332c;color:#fff}.hero small{color:#9dd9ce;font-weight:700}.hero h1{margin:8px 0 12px;font-size:clamp(32px,6vw,56px);line-height:1.12;letter-spacing:-.045em}.hero p{max-width:790px;color:#c9dbd6}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}.metric{padding:15px;border:1px solid rgba(255,255,255,.13);border-radius:14px;background:rgba(255,255,255,.07)}.metric b{display:block;font-size:27px}.metric span{font-size:12px;color:#c9dbd6}main{padding:24px 0 60px}.section{margin-top:28px}.panel,.card{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}.lead{border-left:6px solid var(--mint)}h2{margin:0 0 12px;font-size:23px;letter-spacing:-.025em}h3{margin:0 0 8px;font-size:17px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.two{grid-template-columns:repeat(2,1fr)}.muted{color:var(--muted)}.badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700}.green{background:var(--mint-soft);color:#087765}.amber{background:var(--amber-soft);color:var(--amber)}.blue{background:var(--blue-soft);color:var(--blue)}.red{background:var(--red-soft);color:var(--red)}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted)}ul,ol{margin:8px 0 0;padding-left:21px}li+li{margin-top:6px}.callout{padding:15px 17px;border-radius:13px;background:var(--amber-soft);color:#694700}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.step{padding:14px;border:1px solid var(--line);border-radius:13px;background:#fff}.step b{display:block;color:var(--mint);font-size:12px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.toolbar button{border:1px solid var(--line);border-radius:999px;background:#fff;padding:7px 11px;cursor:pointer}.toolbar button.active{background:#15332c;color:#fff}.item{margin-top:10px}.item summary{cursor:pointer;font-weight:700}.delta{font-size:13px;color:var(--muted)}.links{display:flex;flex-wrap:wrap;gap:8px}.links a{padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#176b5e;text-decoration:none;font-size:13px}.error{color:var(--red)}@media(max-width:760px){.metrics,.grid,.flow{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}table{font-size:12px}th,td{padding:8px 5px}}@media(max-width:480px){.metrics,.grid,.flow{grid-template-columns:1fr}.metric b{font-size:22px}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <small>TAXONOMY 2.0.1 · DIAGNOSIS BEFORE MUTATION</small>
+    <h1>69개를 고치는 대신<br>왜 달랐는지 먼저 분류했습니다</h1>
+    <p>Claude 제안을 자동 반영하지 않고, 200개 파일럿의 이견을 메타데이터·정책·규칙 문제로 나눴습니다. 결론은 전수조사보다 메타데이터 보강이 먼저라는 것입니다.</p>
+    <div class="metrics">
+      <div class="metric"><b>69</b><span>전체 이견</span></div>
+      <div class="metric"><b>16</b><span>메타데이터 직접 차단</span></div>
+      <div class="metric"><b>42</b><span>정책·정의 결정 필요</span></div>
+      <div class="metric"><b>11</b><span>규칙 보정 후보</span></div>
+    </div>
+  </div></header>
+  <main class="wrap">
+    <section class="panel lead">
+      <span class="badge green">권고: 태그 변경 0건</span>
+      <h2>메타데이터를 보강한 뒤 동일 200개를 다시 돌립니다</h2>
+      <p>지금 69건을 Claude 제안으로 바꾸면 데이터 공백과 정책 모호성을 분류값에 덮어쓰게 됩니다. 특히 전체 1,141개 중 D등급 671개는 이번 200개 표본에 한 건도 포함되지 않았으므로, 현재 상태의 전수 실행은 근거 부족을 대량 재확인하는 작업이 됩니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>1. 69개 1차 판정</h2>
+      <div class="grid">
+        <article class="card"><span class="badge red">16건</span><h3>메타데이터 보강 우선</h3><p>변경 대상 facet 자체가 부족하다고 판정됐습니다. 통화·원자재 지역, 멀티에셋 지역, 자동차·전력설비 섹터, 단일종목 선물의 underlying 섹터가 대표적입니다.</p></article>
+        <article class="card"><span class="badge amber">42건</span><h3>정책·정의 결정 우선</h3><p>현재 보유비중으로 섹터를 붙일지, 명시적 투자 테마만 쓸지와 코스피200 하위지수 범위가 핵심입니다. 메타데이터만 채워도 자동 해결되지 않습니다.</p></article>
+        <article class="card"><span class="badge blue">11건</span><h3>규칙 보정 후보</h3><p>상품명·기초지수·분배일정에 직접 근거가 있습니다. 고배당·월배당·배당성장·혼합자산·그룹주·저변동성 등이지만 재검증 전에는 반영하지 않습니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2. 먼저 정해야 할 네 가지 정책</h2>
+      <div class="grid two">
+        <article class="card"><h3>섹터: 투자 테마 vs 현재 익스포저</h3><p>권장안은 공식 sector 태그를 상품의 명시적 투자 테마 중심으로 안정화하고, 현재 보유종목 집중은 별도 exposure 신호로 분리하는 것입니다.</p></article>
+        <article class="card"><h3>코스피200 하위지수</h3><p>업종·고배당·가치 하위지수를 대표지수 태그에 포함할지 정의해야 합니다. 권장안은 모지수와 하위지수를 구분하는 것입니다.</p></article>
+        <article class="card"><h3>파생상품 중복 전략</h3><p>인버스 2X에 inverse와 leverage를 함께 부여하는 v2.0.1 정책은 구조적으로 타당하지만 UI 필터 의미를 명확히 해야 합니다.</p></article>
+        <article class="card"><h3>비주식 자산의 지역</h3><p>미국달러를 미국 지역으로, 국내 상장을 국내 투자지역으로 취급하면 오분류됩니다. region 적용 불가 또는 multi-region 상태가 필요합니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3. 유니버스 메타데이터 보강 순서</h2>
+      <div class="flow">
+        <div class="step"><b>P0 · 식별자</b>표준 ETF 코드, 운용사, 상품·필드별 출처와 기준일</div>
+        <div class="step"><b>P1 · 상품 정의</b>기초지수명, 지수 방법론, 투자 목적, underlying 자산</div>
+        <div class="step"><b>P2 · 익스포저</b>구성종목 코드·비중, 산업·국가 비중, 파생 참조자산</div>
+        <div class="step"><b>P3 · 배당</b>분배 일정, 실제 분배금 이력, 배당 정책</div>
+        <div class="step"><b>P4 · 품질</b>source, asOf, collectedAt, missing reason, 신뢰도</div>
+      </div>
+      <table style="margin-top:14px"><thead><tr><th>현재 누락</th><th>전체 1,141개 중</th><th>영향</th></tr></thead><tbody>
+        <tr><td>상품 설명·투자 목적</td><td>1,141개</td><td>strategy·sector의 명시적 상품 성격 판정 불가</td></tr>
+        <tr><td>산업·국가 비중</td><td>1,141개</td><td>sector·region 집중도 검증 불가</td></tr>
+        <tr><td>실제 분배금 이력</td><td>1,141개</td><td>dividend 태그 검증 불가</td></tr>
+        <tr><td>분배 일정·운용사</td><td>각 1,119개</td><td>월배당·출처 검증 취약</td></tr>
+        <tr><td>구성종목</td><td>682개</td><td>섹터·단일종목·그룹 노출 판정 제한</td></tr>
+        <tr><td>상세 메타데이터·필드 출처</td><td>671개</td><td>D등급, 전수 의미 검수에 부적합</td></tr>
+        <tr><td>표준 KRX 코드</td><td>274개</td><td>다른 소스와 안정적인 join 불가</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="section">
+      <h2>4. 보강 후 재검수 게이트</h2>
+      <ol>
+        <li>현재 200개 입력·결과를 고정 보존합니다.</li>
+        <li>우선 16개 직접 차단 사례에 필요한 underlying·region·sector 필드를 채웁니다.</li>
+        <li>동시에 전체 유니버스용 P0~P3 메타데이터 계약을 확정합니다.</li>
+        <li>동일 200개를 같은 taxonomy로 재검수해 이견 69개와 근거 부족 126개가 얼마나 감소하는지 측정합니다.</li>
+        <li>남은 반복 이견만 규칙 또는 taxonomy 변경 후보로 승격합니다.</li>
+        <li>그 다음 C등급 잔여 270개, 마지막으로 데이터가 보강된 D등급 671개를 처리합니다.</li>
+      </ol>
+      <div class="callout"><b>성공 기준:</b> metadata 보강 전후에 동일 표본의 insufficient 비율과 이견율이 명확히 감소해야 합니다. 감소하지 않으면 추가 Claude 호출보다 taxonomy 정의와 태깅 정책을 먼저 수정해야 합니다.</div>
+    </section>
+
+    <section class="section panel">
+      <h2>69개 상세 근거</h2>
+      <p class="muted">사용자 결정을 요구하기 위한 목록이 아니라, 위 1차 판정을 감사할 수 있는 부록입니다. 필요한 경우에만 펼쳐보면 됩니다.</p>
+      <div class="toolbar" id="filters"></div>
+      <div id="items"><p class="muted">상세 데이터를 불러오는 중…</p></div>
+    </section>
+
+    <section class="section links">
+      <a href="CLAUDE_TAXONOMY_REVIEW.html">200개 원본 리뷰</a>
+      <a href="ETF_TAXONOMY_DATA_READINESS.html">전수 데이터 준비도</a>
+      <a href="ETF_TAXONOMY_FULL_SCALE_DECISION_REPORT.html">전수 확장 리포트</a>
+    </section>
+  </main>
+  <script>
+    const esc=(s)=>String(s??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));
+    let rows=[],triage=null,active='all';
+    function categoryFor(n){return triage.categories.find(c=>c.sampleNumbers.includes(n));}
+    function render(){
+      const visible=rows.filter(r=>!r.exactMatch&&(active==='all'||categoryFor(r.sampleNumber)?.id===active));
+      document.querySelector('#items').innerHTML=visible.map(r=>{const c=categoryFor(r.sampleNumber);return `<details class="card item"><summary>#${r.sampleNumber} ${esc(r.name)} <span class="badge ${c.id==='metadata_blocked'?'red':c.id==='policy_definition'?'amber':'blue'}">${esc(c.label)}</span></summary><p class="delta">${esc(r.etfCode)} · 추가 ${esc(r.additions.join(', ')||'없음')} · 제외 ${esc(r.removals.join(', ')||'없음')} · 근거 부족 ${esc(r.insufficientFacets.join(', ')||'없음')}</p><p><b>권장:</b> ${esc(c.recommendedAction)}</p><p class="muted">${esc(r.notes.join(' · ')||'별도 메모 없음')}</p></details>`}).join('');
+    }
+    Promise.all([
+      fetch('../../data/reports/claude-taxonomy-review/claude-taxonomy-blind-review.json').then(r=>r.json()),
+      fetch('../../data/reports/claude-taxonomy-review/taxonomy-review-triage.json').then(r=>r.json())
+    ]).then(([review,t])=>{
+      rows=review.comparisons;triage=t;
+      const specs=[['all','전체 69'],...t.categories.map(c=>[c.id,`${c.label} ${c.sampleNumbers.length}`])];
+      document.querySelector('#filters').innerHTML=specs.map(([id,label])=>`<button data-id="${id}" class="${id==='all'?'active':''}">${esc(label)}</button>`).join('');
+      document.querySelector('#filters').addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(!b)return;active=b.dataset.id;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('active',x===b));render()});
+      render();
+    }).catch(e=>document.querySelector('#items').innerHTML=`<p class="error">상세 데이터 로드 실패: ${esc(e.message)}</p>`);
+  </script>
+</body>
+</html>

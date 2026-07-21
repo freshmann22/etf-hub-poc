@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "default": {
+    "strategy": "authority_then_confidence",
+    "sourcePriority": ["primary", "secondary", "derived"],
+    "staleAfterDays": 30
+  },
+  "fields": {
+    "identity.shortCode": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": ["krx", "publicdata", "issuer", "naver_master"],
+      "hardConflict": true,
+      "staleAfterDays": null
+    },
+    "identity.isin": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": ["krx", "publicdata", "issuer"],
+      "hardConflict": true,
+      "staleAfterDays": null
+    },
+    "identity.officialName": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": ["krx", "publicdata", "issuer", "naver_master"],
+      "hardConflict": false,
+      "staleAfterDays": 30
+    },
+    "product.description": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": ["issuer", "kind", "index_provider", "wisereport"],
+      "staleAfterDays": 30
+    },
+    "product.investmentObjective": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": ["issuer", "kind", "index_provider", "wisereport"],
+      "staleAfterDays": 30
+    },
+    "product.benchmark": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": ["issuer", "index_provider", "publicdata", "wisereport"],
+      "staleAfterDays": 30
+    },
+    "portfolio.holdings": {
+      "strategy": "recency_then_authority",
+      "sourceIds": ["issuer", "krx", "seibro", "wisereport", "naver_csv"],
+      "staleAfterDays": 7,
+      "numericTolerance": 0.1
+    },
+    "portfolio.sectorWeights": {
+      "strategy": "recency_then_authority",
+      "sourceIds": ["issuer", "derived_holdings"],
+      "staleAfterDays": 30,
+      "numericTolerance": 0.1
+    },
+    "portfolio.countryWeights": {
+      "strategy": "recency_then_authority",
+      "sourceIds": ["issuer", "derived_holdings"],
+      "staleAfterDays": 30,
+      "numericTolerance": 0.1
+    },
+    "distribution.history": {
+      "strategy": "recency_then_authority",
+      "sourceIds": ["seibro", "issuer", "kind", "wisereport"],
+      "staleAfterDays": 7
+    }
+  }
+}

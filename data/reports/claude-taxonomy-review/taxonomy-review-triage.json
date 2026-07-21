@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "createdAt": "2026-07-21T13:30:00+09:00",
+  "sourceReview": "claude-taxonomy-blind-review.json",
+  "status": "proposed_no_changes_applied",
+  "principle": "Claude 이견은 정답이 아니라 원인 진단 입력으로 사용한다. 메타데이터와 정책을 보강하기 전 ETF 분류 및 taxonomy를 자동 변경하지 않는다.",
+  "summary": {
+    "disagreementCount": 69,
+    "metadataBlockedCount": 16,
+    "policyDefinitionCount": 42,
+    "ruleCandidateCount": 11,
+    "appliedCount": 0
+  },
+  "categories": [
+    {
+      "id": "metadata_blocked",
+      "label": "메타데이터 보강 우선",
+      "recommendedAction": "현재 분류를 유지하고 부족한 underlying, region, sector 근거를 보강한 뒤 재검수한다.",
+      "sampleNumbers": [11, 15, 16, 32, 33, 34, 35, 82, 157, 160, 171, 172, 173, 174, 175, 176]
+    },
+    {
+      "id": "policy_definition",
+      "label": "정책·정의 결정 우선",
+      "recommendedAction": "자동 반영하지 않는다. 섹터 태그의 의미, 하위지수의 benchmark 포함 범위, 파생상품 중복 전략 태그 정책을 먼저 고정한다.",
+      "sampleNumbers": [4, 19, 20, 44, 52, 55, 56, 57, 59, 63, 65, 67, 72, 73, 80, 86, 109, 114, 115, 116, 130, 132, 136, 137, 139, 142, 144, 146, 148, 149, 150, 151, 156, 177, 178, 187, 188, 191, 193, 197, 198, 199]
+    },
+    {
+      "id": "rule_candidate",
+      "label": "규칙 보정 후보",
+      "recommendedAction": "직접적인 상품명·기초지수·분배일정 근거를 재검증한 뒤 규칙 테스트로 승격한다. 아직 실제 태그에는 반영하지 않는다.",
+      "sampleNumbers": [39, 69, 93, 111, 123, 131, 145, 161, 182, 185, 186]
+    }
+  ],
+  "policyQuestions": [
+    {
+      "id": "sector_mandate_vs_exposure",
+      "title": "섹터 태그는 상품의 명시적 투자 테마인가, 현재 보유 익스포저인가",
+      "recommendation": "Explore의 안정성을 위해 명시적 투자 테마를 기본으로 하고, 보유종목 집중은 별도 exposure 신호로 분리한다. 현재 비중만으로 공식 sector 태그를 자동 변경하지 않는다."
+    },
+    {
+      "id": "benchmark_subindex",
+      "title": "코스피200 업종·고배당 하위지수도 benchmark.kospi200인가",
+      "recommendation": "대표지수 자체와 하위 파생지수를 구분한다. 하위지수까지 포함하려면 정의와 UI 라벨을 먼저 수정하고 일괄 규칙 테스트를 수행한다."
+    },
+    {
+      "id": "derivative_strategy_overlap",
+      "title": "인버스 2X를 inverse와 leverage에 동시에 포함할 것인가",
+      "recommendation": "구조 태그와 방향 태그를 중복 허용한다는 기존 v2.0.1 정책을 유지하되, 사용자 필터 의미가 혼동되지 않는지 별도 확인한다."
+    },
+    {
+      "id": "region_for_non_equity",
+      "title": "통화·원자재·글로벌 혼합 상품에 region primary를 강제할 것인가",
+      "recommendation": "지역 적용 불가 상태 또는 global/multi-region 표현을 허용하도록 cardinality/default 정책을 재검토한다. 국내 상장 여부를 투자지역으로 사용하지 않는다."
+    }
+  ]
+}

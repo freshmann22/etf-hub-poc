@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:13:37.635Z",
+  "selected": "woori-asset-management",
+  "candidates": [
+    {
+      "issuer": "timefolio-asset-management",
+      "brand": "TIME",
+      "inventoryCount": 19,
+      "productCalls": 0,
+      "decision": "blocked_permission_unclear",
+      "evidence": [
+        "robots.txt allows crawling",
+        "no observable site-wide terms governing automated reuse",
+        "official report pages carry reproduction and redistribution restrictions"
+      ]
+    },
+    {
+      "issuer": "woori-asset-management",
+      "brand": "WON",
+      "inventoryCount": 16,
+      "decision": "allowed_low_volume_local_poc",
+      "evidence": [
+        "robots.txt explicitly Allow:/",
+        "public ETF list and product pages require no authentication",
+        "footer policies concern privacy, customer information, and credit information; no general automation prohibition observed"
+      ]
+    }
+  ],
+  "guardrails": {
+    "intervalMs": 1200,
+    "sameOriginOnly": true,
+    "authentication": false,
+    "circuitBreaker": [
+      "403",
+      "persistent_429"
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:45:16.042Z",
+  "scope": {
+    "networkRequests": 0,
+    "inputPolicy": "latest ok/partial raw HTML per sourceId+shortCode; content hash must match ledger",
+    "actualHistoryRule": "emit only rows with explicit valid record date, explicit valid pay date, and positive numeric amount; currency and perUnit remain null unless explicitly stated by the source",
+    "scheduleExclusion": "distribution schedule/policy prose is never interpreted as payment history",
+    "futurePaymentExclusion": "pay dates after raw retrieval are rejected as not-yet-actual"
+  },
+  "totals": {
+    "latestSuccessfulRawCount": 616,
+    "emittedRecordCount": 241,
+    "emittedEventCount": 1586,
+    "explicitPerShareRecordCount": 137,
+    "perShareBasisUnknownRecordCount": 104,
+    "recordCoveragePct": 39.12,
+    "quarantineCount": 0
+  },
+  "sources": {
+    "plus": {
+      "source": "PLUS",
+      "ledgerPath": "data/raw/metadata-v2/plus-product/ledger.jsonl",
+      "ledgerEntryCount": 99,
+      "latestSuccessfulRawCount": 84,
+      "rawValidatedCount": 84,
+      "matchingTableCount": 84,
+      "emittedRecordCount": 76,
+      "emittedEventCount": 465,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 76,
+      "unavailableCount": 8,
+      "unavailableReasons": {
+        "history_table_has_no_explicit_actual_rows": 8
+      },
+      "rejectedRowCount": 8
+    },
+    "rise": {
+      "source": "RISE",
+      "ledgerPath": "data/raw/metadata-v2/rise-product/ledger.jsonl",
+      "ledgerEntryCount": 423,
+      "latestSuccessfulRawCount": 140,
+      "rawValidatedCount": 140,
+      "matchingTableCount": 128,
+      "emittedRecordCount": 128,
+      "emittedEventCount": 888,
+      "explicitPerShareRecordCount": 128,
+      "perShareBasisUnknownRecordCount": 0,
+      "unavailableCount": 12,
+      "unavailableReasons": {
+        "no_history_table_in_saved_html": 12
+      },
+      "rejectedRowCount": 5
+    },
+    "tiger": {
+      "source": "TIGER",
+      "ledgerPath": "data/raw/metadata-v2/tiger-product/ledger.jsonl",
+      "ledgerEntryCount": 235,
+      "latestSuccessfulRawCount": 229,
+      "rawValidatedCount": 229,
+      "matchingTableCount": 0,
+      "emittedRecordCount": 0,
+      "emittedEventCount": 0,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 0,
+      "unavailableCount": 229,
+      "unavailableReasons": {
+        "history_is_external_popup_not_present_in_saved_html": 229
+      },
+      "rejectedRowCount": 0
+    },
+    "sol": {
+      "source": "SOL",
+      "ledgerPath": "data/raw/metadata-v2/sol-product/ledger.jsonl",
+      "ledgerEntryCount": 77,
+      "latestSuccessfulRawCount": 77,
+      "rawValidatedCount": 77,
+      "matchingTableCount": 0,
+      "emittedRecordCount": 0,
+      "emittedEventCount": 0,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 0,
+      "unavailableCount": 77,
+      "unavailableReasons": {
+        "history_is_external_popup_not_present_in_saved_html": 77
+      },
+      "rejectedRowCount": 0
+    },
+    "solApi": {
+      "source": "SOL API",
+      "ledgerPath": "data/raw/metadata-v2/sol-distribution-history/ledger.jsonl",
+      "ledgerEntryCount": 21,
+      "latestSuccessfulRawCount": 20,
+      "rawValidatedCount": 20,
+      "matchingTableCount": 20,
+      "emittedRecordCount": 20,
+      "emittedEventCount": 152,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 20,
+      "unavailableCount": 0,
+      "unavailableReasons": {},
+      "rejectedRowCount": 0
+    },
+    "hana1q": {
+      "source": "1Q",
+      "ledgerPath": "data/raw/metadata-v2/hana-1q-product/ledger.jsonl",
+      "ledgerEntryCount": 26,
+      "latestSuccessfulRawCount": 26,
+      "rawValidatedCount": 26,
+      "matchingTableCount": 0,
+      "emittedRecordCount": 0,
+      "emittedEventCount": 0,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 0,
+      "unavailableCount": 26,
+      "unavailableReasons": {
+        "no_history_table_in_saved_html": 26
+      },
+      "rejectedRowCount": 0
+    },
+    "won": {
+      "source": "WON",
+      "ledgerPath": "data/raw/metadata-v2/won-product/ledger.jsonl",
+      "ledgerEntryCount": 16,
+      "latestSuccessfulRawCount": 16,
+      "rawValidatedCount": 16,
+      "matchingTableCount": 16,
+      "emittedRecordCount": 9,
+      "emittedEventCount": 27,
+      "explicitPerShareRecordCount": 9,
+      "perShareBasisUnknownRecordCount": 0,
+      "unavailableCount": 7,
+      "unavailableReasons": {
+        "history_table_has_no_explicit_actual_rows": 7
+      },
+      "rejectedRowCount": 0
+    },
+    "koact": {
+      "source": "KoAct",
+      "ledgerPath": "data/raw/metadata-v2/koact-product/ledger.jsonl",
+      "ledgerEntryCount": 46,
+      "latestSuccessfulRawCount": 23,
+      "rawValidatedCount": 23,
+      "matchingTableCount": 8,
+      "emittedRecordCount": 8,
+      "emittedEventCount": 54,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 8,
+      "unavailableCount": 15,
+      "unavailableReasons": {
+        "koact_product_api_has_no_explicit_actual_distribution_rows": 15
+      },
+      "rejectedRowCount": 0
+    },
+    "thej": {
+      "source": "더제이",
+      "ledgerPath": "data/raw/metadata-v2/thej-product/ledger.jsonl",
+      "ledgerEntryCount": 1,
+      "latestSuccessfulRawCount": 1,
+      "rawValidatedCount": 1,
+      "matchingTableCount": 0,
+      "emittedRecordCount": 0,
+      "emittedEventCount": 0,
+      "explicitPerShareRecordCount": 0,
+      "perShareBasisUnknownRecordCount": 0,
+      "unavailableCount": 1,
+      "unavailableReasons": {
+        "no_history_table_in_saved_html": 1
+      },
+      "rejectedRowCount": 0
+    }
+  },
+  "interpretation": {
+    "rise": "Direct table includes record date, actual pay date, KRW amount, and explicit per-share basis in caption/header.",
+    "plus": "Direct table includes record date, actual pay date, and KRW amount. Per-share basis is not explicit in saved HTML, so perUnit remains null.",
+    "tiger": "All saved product HTML contains an empty JavaScript popup container; no actual payment-history rows are present in raw HTML.",
+    "sol": "Saved product HTML links to a JavaScript distribution-status popup; the actual history rows are not present in the saved raw HTML.",
+    "solApi": "Official popup JSON supplies record date, actual pay date, and KRW amount. Per-share basis is not explicit, so perUnit remains null and records are partial.",
+    "hana1q": "Saved product HTML contains distribution policy/schedule only; no actual payment-history table is present.",
+    "won": "Saved product HTML directly includes a three-year payment table with record date, actual pay date, explicit per-share KRW amount, or an empty table when no actual rows exist.",
+    "koact": "KoAct product API embeds explicit record date, actual pay date, and positive amount rows at $.info.divideList[*]. Currency and per-unit basis are not explicit, so both remain null.",
+    "thej": "Saved product HTML contains distribution schedule prose and a status button, but no explicit actual payment-history rows."
+  }
+}

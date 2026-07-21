@@ -1,0 +1,600 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T06:09:51.002Z",
+  "probeContract": {
+    "source": "OpenDART official API",
+    "sourceUrl": "https://opendart.fss.or.kr/guide/main.do?apiGrpCd=DS001",
+    "scope": "24 ETF canaries; issuer corp_code search; no full-universe collection",
+    "beginDate": "20260501",
+    "endDate": "20260721",
+    "canaryCount": 24,
+    "issuerCount": 8,
+    "maxApiCalls": 64,
+    "actualApiCalls": 50,
+    "rawResponsesStored": false,
+    "credentialsStoredOrLogged": false
+  },
+  "metrics": {
+    "corpCodeResolvedIssuerCount": 8,
+    "formalNameMatchedCount": 21,
+    "formalNameMatchRatio": 0.875,
+    "originalDocumentAccessibleCount": 16,
+    "originalDocumentAccessRatioOfAllCanaries": 0.666667,
+    "originalDocumentAccessRatioOfMatched": 0.761905
+  },
+  "limitations": [
+    "The probe reads at most eight 100-row pages per issuer in the bounded date window; truncation is reported per issuer.",
+    "Matching requires normalized containment of the local ETF name in a full investment prospectus report name.",
+    "Original ZIP files are opened only to verify the download contract; document bodies are not persisted or parsed.",
+    "No API key, request URL containing a key, or raw API response is written to this report."
+  ],
+  "issuerProbes": [
+    {
+      "brand": "KODEX",
+      "issuerId": "samsung-asset-management",
+      "corpName": "삼성자산운용",
+      "corpCode": "00260453",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 366,
+      "totalCount": 366,
+      "pagesFetched": 4,
+      "truncated": false
+    },
+    {
+      "brand": "TIGER",
+      "issuerId": "mirae-asset-global-investments",
+      "corpName": "미래에셋자산운용",
+      "corpCode": "00259776",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 795,
+      "totalCount": 795,
+      "pagesFetched": 8,
+      "truncated": false
+    },
+    {
+      "brand": "RISE",
+      "issuerId": "kb-asset-management",
+      "corpName": "KB자산운용",
+      "corpCode": "00104500",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 269,
+      "totalCount": 269,
+      "pagesFetched": 3,
+      "truncated": false
+    },
+    {
+      "brand": "ACE",
+      "issuerId": "korea-investment-management",
+      "corpName": "한국투자신탁운용",
+      "corpCode": "00324548",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 237,
+      "totalCount": 237,
+      "pagesFetched": 3,
+      "truncated": false
+    },
+    {
+      "brand": "PLUS",
+      "issuerId": "hanwha-asset-management",
+      "corpName": "한화자산운용",
+      "corpCode": "00243395",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 167,
+      "totalCount": 167,
+      "pagesFetched": 2,
+      "truncated": false
+    },
+    {
+      "brand": "SOL",
+      "issuerId": "shinhan-asset-management",
+      "corpName": "신한자산운용",
+      "corpCode": "00243553",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 358,
+      "totalCount": 358,
+      "pagesFetched": 4,
+      "truncated": false
+    },
+    {
+      "brand": "KIWOOM",
+      "issuerId": "kiwoom-asset-management",
+      "corpName": "키움투자자산운용",
+      "corpCode": "00120191",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 103,
+      "totalCount": 103,
+      "pagesFetched": 2,
+      "truncated": false
+    },
+    {
+      "brand": "HANARO",
+      "issuerId": "nh-amundi-asset-management",
+      "corpName": "엔에이치아문디자산운용",
+      "corpCode": "00453804",
+      "corpCodeResolved": true,
+      "disclosureCountFetched": 101,
+      "totalCount": 101,
+      "pagesFetched": 2,
+      "truncated": false
+    }
+  ],
+  "canaries": [
+    {
+      "etfCode": "0209D0",
+      "name": "KODEX 전고체배터리ESS TOP2플러스",
+      "brand": "KODEX",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(삼성KODEX전고체배터리ESSTOP2플러스증권상장지수투자신탁[주식])",
+        "receptionNo": "20260615000047",
+        "receptionDate": "20260615",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000047"
+      },
+      "documentProbe": {
+        "accessible": false,
+        "errorClass": "Error",
+        "errorCode": "dart_status_014"
+      }
+    },
+    {
+      "etfCode": "0204D0",
+      "name": "KODEX 현대차로보틱스밸류체인TOP3플러스",
+      "brand": "KODEX",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(삼성KODEX현대차로보틱스밸류체인TOP3플러스증권상장지수투자신탁[주식])",
+        "receptionNo": "20260520000053",
+        "receptionDate": "20260520",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000053"
+      },
+      "documentProbe": {
+        "accessible": false,
+        "errorClass": "Error",
+        "errorCode": "dart_status_014"
+      }
+    },
+    {
+      "etfCode": "0193W0",
+      "name": "KODEX 삼성전자단일종목레버리지",
+      "brand": "KODEX",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(삼성KODEX삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형])",
+        "receptionNo": "20260514000101",
+        "receptionDate": "20260514",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000101"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2940,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0204S0",
+      "name": "TIGER 코스닥액티브",
+      "brand": "TIGER",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식))",
+        "receptionNo": "20260602000038",
+        "receptionDate": "20260602",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000038"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3723,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0195S0",
+      "name": "TIGER SK하이닉스단일종목레버리지",
+      "brand": "TIGER",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGERSK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+        "receptionNo": "20260716000361",
+        "receptionDate": "20260716",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000361"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3758,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0195R0",
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "brand": "TIGER",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+        "receptionNo": "20260716000222",
+        "receptionDate": "20260716",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000222"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3397,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0192M0",
+      "name": "RISE 삼성전자단일종목레버리지",
+      "brand": "RISE",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "[기재정정]투자설명서(집합투자증권)(KBRISE삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+        "receptionNo": "20260522000007",
+        "receptionDate": "20260522",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000007"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3926,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0192L0",
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "brand": "RISE",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "[기재정정]투자설명서(집합투자증권)(KBRISESK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+        "receptionNo": "20260522000005",
+        "receptionDate": "20260522",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000005"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3943,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0190C0",
+      "name": "RISE 현대차고정피지컬AI",
+      "brand": "RISE",
+      "matched": false,
+      "matchMethod": "none",
+      "candidateCount": 0,
+      "report": null,
+      "documentProbe": null
+    },
+    {
+      "etfCode": "0216Z0",
+      "name": "ACE K방산TOP5+",
+      "brand": "ACE",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(한국투자ACEK방산TOP5+증권상장지수투자신탁(주식))",
+        "receptionNo": "20260618000201",
+        "receptionDate": "20260618",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000201"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2969,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0210A0",
+      "name": "ACE K반도체TOP2+",
+      "brand": "ACE",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(한국투자ACEK반도체TOP2+증권상장지수투자신탁(주식))",
+        "receptionNo": "20260612000022",
+        "receptionDate": "20260612",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000022"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2955,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0209Z0",
+      "name": "ACE 코리아AI전력TOP10",
+      "brand": "ACE",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(한국투자ACE코리아AI전력TOP10증권상장지수투자신탁(주식))",
+        "receptionNo": "20260612000017",
+        "receptionDate": "20260612",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000017"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2961,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0210E0",
+      "name": "PLUS 200커버드콜액티브",
+      "brand": "PLUS",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(한화PLUS200커버드콜액티브증권상장지수투자신탁(주식-파생형))",
+        "receptionNo": "20260615000021",
+        "receptionDate": "20260615",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000021"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2936,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0203D0",
+      "name": "PLUS 200위클리커버드콜채권혼합",
+      "brand": "PLUS",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(한화PLUS200위클리커버드콜채권혼합증권상장지수투자신탁(채권혼합-파생형))",
+        "receptionNo": "20260515000139",
+        "receptionDate": "20260515",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000139"
+      },
+      "documentProbe": {
+        "accessible": false,
+        "errorClass": "Error",
+        "errorCode": "dart_status_014"
+      }
+    },
+    {
+      "etfCode": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "brand": "PLUS",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(한화PLUS삼성전자선물단일종목인버스2X증권상장지수투자신탁(주식-파생형))",
+        "receptionNo": "20260514000271",
+        "receptionDate": "20260514",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000271"
+      },
+      "documentProbe": {
+        "accessible": false,
+        "errorClass": "Error",
+        "errorCode": "dart_status_014"
+      }
+    },
+    {
+      "etfCode": "0207G0",
+      "name": "SOL 우주항공밸류체인",
+      "brand": "SOL",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(신한SOL우주항공밸류체인증권상장지수투자신탁[주식])",
+        "receptionNo": "20260608000008",
+        "receptionDate": "20260608",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260608000008"
+      },
+      "documentProbe": {
+        "accessible": false,
+        "errorClass": "Error",
+        "errorCode": "dart_status_014"
+      }
+    },
+    {
+      "etfCode": "0197X0",
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "brand": "SOL",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(신한SOLSK하이닉스선물단일종목인버스2X증권상장지수신탁[주식-파생형])",
+        "receptionNo": "20260514000166",
+        "receptionDate": "20260514",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000166"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2912,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0197W0",
+      "name": "SOL SK하이닉스단일종목레버리지",
+      "brand": "SOL",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형])",
+        "receptionNo": "20260514000152",
+        "receptionDate": "20260514",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000152"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2907,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0216K0",
+      "name": "KIWOOM 미국우주테크TOP2채권혼합50",
+      "brand": "KIWOOM",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합])",
+        "receptionNo": "20260701000098",
+        "receptionDate": "20260701",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000098"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2974,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0207Z0",
+      "name": "KIWOOM 미국우주데이터센터인프라",
+      "brand": "KIWOOM",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(키움KIWOOM미국우주데이터센터인프라증권상장지수투자신탁[주식])",
+        "receptionNo": "20260601000160",
+        "receptionDate": "20260601",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601000160"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 2981,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0198A0",
+      "name": "KIWOOM 코스닥150커버드콜액티브",
+      "brand": "KIWOOM",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "투자설명서(집합투자증권)(키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형])",
+        "receptionNo": "20260520000005",
+        "receptionDate": "20260520",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000005"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3001,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0191W0",
+      "name": "HANARO 중기종합채권(A-이상)액티브",
+      "brand": "HANARO",
+      "matched": true,
+      "matchMethod": "normalized_full_name_containment",
+      "candidateCount": 1,
+      "report": {
+        "reportName": "[기재정정]투자설명서(집합투자증권)(NH-AmundiHANARO중기종합채권(A-이상)액티브증권상장지수투자신탁[채권])",
+        "receptionNo": "20260520000006",
+        "receptionDate": "20260520",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000006"
+      },
+      "documentProbe": {
+        "accessible": true,
+        "archiveBytes": 3842,
+        "entryCount": 1,
+        "entryExtensions": [
+          "xml"
+        ]
+      }
+    },
+    {
+      "etfCode": "0181B0",
+      "name": "HANARO 미국AI메모리반도체TOP4+",
+      "brand": "HANARO",
+      "matched": false,
+      "matchMethod": "none",
+      "candidateCount": 0,
+      "report": null,
+      "documentProbe": null
+    },
+    {
+      "etfCode": "0155N0",
+      "name": "HANARO K휴머노이드테마TOP10",
+      "brand": "HANARO",
+      "matched": false,
+      "matchMethod": "none",
+      "candidateCount": 0,
+      "report": null,
+      "documentProbe": null
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:13:38.379Z",
+  "raw": {
+    "path": "data/raw/metadata-v2/won-product/discovery/2026-07-21/list/2026-07-21T07-13-38-379Z.0f4cc0f33b96e60d.html",
+    "hash": "0f4cc0f33b96e60d71865ef600439d51973cc603537e90f237780c2a273f04ac",
+    "bytes": 71784,
+    "url": "https://www.wooriam.kr/investment/etf-list"
+  },
+  "mappings": [
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "0088N0",
+      "isin": "KR70088N0002",
+      "name": "WON K-글로벌수급상위",
+      "productId": "bFBwMeaMBUxyscOT",
+      "sourceName": "WON K-글로벌수급상위",
+      "listDescription": "한국 시장을 주도하는 외국인 순매수 상위 종목에 선별 투자합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/bFBwMeaMBUxyscOT",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "0154F0",
+      "isin": "KR70154F0001",
+      "name": "WON 초대형IB&금융지주",
+      "productId": "Gj1sVGSQRVH9n2om",
+      "sourceName": "WON 초대형IB&금융지주",
+      "listDescription": "자본시장 선진화 정책 수혜가 기대되는 대표 증권사·금융지주를 선별해 투자합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/Gj1sVGSQRVH9n2om",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "0177A0",
+      "isin": "KR70177A0009",
+      "name": "WON 두산그룹포커스",
+      "productId": "EyxRV5tq8bcirxah",
+      "sourceName": "WON두산그룹포커스",
+      "listDescription": "차세대 원전(SMR), 첨단 로봇, 반도체까지! 대한민국 미래 산업을 주도하는 두산그룹의 핵심 밸류체인과 시너지를 내는 파트너사를 한 번에 투자합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/EyxRV5tq8bcirxah",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "0203R0",
+      "isin": "KR70203R0008",
+      "name": "WON 중단기종합채권(A-이상)액티브",
+      "productId": "aYmxU4xH4ripARyy",
+      "sourceName": "WON 중단기종합채권(A-이상)액티브",
+      "listDescription": "신용등급 A- 이상의 저평가된 우량 채권을 발굴해 안정적인 이자수익을 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/aYmxU4xH4ripARyy",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "0203S0",
+      "isin": "KR70203S0007",
+      "name": "WON 삼성전자현대차채권혼합50",
+      "productId": "mVaDY8DzrSj59MlO",
+      "sourceName": "WON삼성전자현대차채권혼합50",
+      "listDescription": "피지컬 AI 테마에서 두뇌 역할을 하는 '삼성전자'와 바디를 담당하는 '현대차'에 각각 25%씩 투자하고, 나머지 50%는 채권을 담아 성장성과 안정성을 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/mVaDY8DzrSj59MlO",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "413930",
+      "isin": "KR7413930009",
+      "name": "WON AI ESG액티브",
+      "productId": "HaFalK34qahjFElR",
+      "sourceName": "WON AI ESG액티브",
+      "listDescription": "AI 기반 유니버스에 ESG 우수 기업을 선별해 편입하고, 액티브 전략을 통해 초과 성과를 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/HaFalK34qahjFElR",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "426150",
+      "isin": "KR7426150009",
+      "name": "WON 대한민국국고채액티브",
+      "productId": "xefmCmyX8rXA8WTP",
+      "sourceName": "WON 대한민국국고채액티브",
+      "listDescription": "액티브상장지수펀드로 국내 채권을 주된 투자대상자산으로 하며, “KAP 한국 국고채 총수익 지수”를 비교지수로 하여 비교지수 대비 초과수익을 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/xefmCmyX8rXA8WTP",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "440910",
+      "isin": "KR7440910008",
+      "name": "WON 미국우주항공방산",
+      "productId": "PTtueXizZ5VE5yl2",
+      "sourceName": "WON 미국우주항공방산",
+      "listDescription": "AI 최첨단 기술의 집약체인 우주항공 분야와 국가 안보 이슈로 수요 증가가 예상되는 방위산업 분야에서 전 세계 1위 점유율을 보유한 미국 기업에 투자합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/PTtueXizZ5VE5yl2",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "444490",
+      "isin": "KR7444490007",
+      "name": "WON 미국S&P500",
+      "productId": "6acWapbyV1JaJ7do",
+      "sourceName": "WON 미국S&P500",
+      "listDescription": "주식을 주된 투자대상자산으로 하며, “S&P 500 Index(PR)(원화환산)”의 1배수와 유사하도록 운용합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/6acWapbyV1JaJ7do",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "448100",
+      "isin": "KR7448100008",
+      "name": "WON 200",
+      "productId": "5B24GT7Kv9MqFAdv",
+      "sourceName": "WON 200",
+      "listDescription": "주식을 주된 투자대상자산으로하며, 1좌당 순자산가치의 일간변동률을 “KOSPI200 지수 (PR)”의 1배수와 유사하도록 투자신탁 재산을 운용합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/5B24GT7Kv9MqFAdv",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "458030",
+      "isin": "KR7458030004",
+      "name": "WON 국공채머니마켓액티브",
+      "productId": "JJl6OfTA4PShrk14",
+      "sourceName": "WON 국공채머니마켓액티브",
+      "listDescription": "“KAP 국공채 머니마켓 총수익 지수” 를 비교지수로 하여 1좌당 순자산가치의 변동률이 비교지수의 변동률을 초과하도록 투자신탁재산을 운용함을 목적으로 하는 상장지수투자신탁입니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/JJl6OfTA4PShrk14",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "474590",
+      "isin": "KR7474590007",
+      "name": "WON 반도체밸류체인액티브",
+      "productId": "ts8ym1V3HHeDnN9S",
+      "sourceName": "WON 반도체밸류체인액티브",
+      "listDescription": "SK하이닉스와 삼성전자에 약 50% 수준을 투자하고, 반도체 밸류체인 전반에 투자하여 수익을 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/ts8ym1V3HHeDnN9S",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "480460",
+      "isin": "KR7480460005",
+      "name": "WON 한국부동산TOP3플러스",
+      "productId": "8HmZjHHDBz5p7dLm",
+      "sourceName": "WON 한국부동산TOP3플러스",
+      "listDescription": "국내 핵심 리츠 10종목에 분산투자하고, 각 섹터별(인프라, 오피스, 물류센터 등) 최고 우량 자산 3종목에 집중투자하여 수익률 극대화를 추구합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/8HmZjHHDBz5p7dLm",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "488720",
+      "isin": "KR7488720004",
+      "name": "WON 종합채권(AA-이상)액티브",
+      "productId": "0qHP74yBzhAAAfta",
+      "sourceName": "WON 종합채권(AA-이상)액티브",
+      "listDescription": "액티브상장지수펀드로 국내 채권을 주된 투자대상으로 하고, “KIS 종합채권시장 총수익 지수(AA-이상)”를 비교지수로 하여 비교지수 대비 초과수익을 실현하는 것을 목적으로 합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/0qHP74yBzhAAAfta",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "489290",
+      "isin": "KR7489290007",
+      "name": "WON 미국빌리어네어",
+      "productId": "jBp15JQ0O52AGRBU",
+      "sourceName": "WON 미국빌리어네어",
+      "listDescription": "\"거인의 어깨 위에 올라타라!\" 美 최상위 빌리어네어의 성공적 포트폴리오를 복제하여 중장기 성장 가능 산업에 투자합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/jBp15JQ0O52AGRBU",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "woori-asset-management",
+      "shortCode": "496020",
+      "isin": "KR7496020009",
+      "name": "WON 전단채플러스액티브",
+      "productId": "htCL4xYXe0mA8Vy9",
+      "sourceName": "WON 전단채플러스액티브",
+      "listDescription": "단기자금을 효율적으로 운용하는 파킹형 ETF, 만기가 짧은 우량 전단채와 기업어음에 투자합니다.",
+      "productUrl": "https://www.wooriam.kr/investment/etf-view/htCL4xYXe0mA8Vy9",
+      "status": "mapped"
+    }
+  ],
+  "metrics": {
+    "inventoryCount": 16,
+    "discoveredCount": 16,
+    "mappedCount": 16,
+    "missingCount": 0,
+    "coverageRatio": 1
+  },
+  "scaleDecision": "mapping_pass"
+}

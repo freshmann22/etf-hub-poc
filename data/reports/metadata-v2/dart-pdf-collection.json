@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:41:58.617Z",
+  "sourceIndex": "data/reports/metadata-v2/dart-disclosure-index.json",
+  "sourceMappedCount": 911,
+  "collectionPolicy": {
+    "officialDartOnly": true,
+    "hostIntervalMs": 1200,
+    "cache": "content_addressed_sha256",
+    "resume": "append_only_latest_status",
+    "taxonomyMutation": false
+  },
+  "metrics": {
+    "ledgerCount": 3,
+    "ok": 3,
+    "quarantine": 0,
+    "pending_ocr": 0,
+    "error": 0,
+    "blocked": 0,
+    "remaining": 908
+  },
+  "rows": [
+    {
+      "schemaVersion": "1.0.0",
+      "collectedAt": "2026-07-21T07:41:48.757Z",
+      "universeKey": "0000H0",
+      "shortCode": "0000H0",
+      "officialName": "KODEX 인도Nifty미드캡100",
+      "receptionNo": "20260226004788",
+      "status": "ok",
+      "attachment": {
+        "rcpNo": "20260226004788",
+        "dcmNo": "11065439",
+        "label": "2026.02.26 [정정] 간이투자설명서(집합투자증권)"
+      },
+      "raw": {
+        "main": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000H0/99dca603b2d465fa263948eab87d39b54114712990afb7a1a5ddbcd31714a04d.main.html",
+          "sha256": "99dca603b2d465fa263948eab87d39b54114712990afb7a1a5ddbcd31714a04d",
+          "bytes": 41940,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260226004788",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        "attachment": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000H0/6ff380daa60e40b7c15484056a321bb6f64e95286ca77e3b5d1bced0617a4d7d.attachment.html",
+          "sha256": "6ff380daa60e40b7c15484056a321bb6f64e95286ca77e3b5d1bced0617a4d7d",
+          "bytes": 41809,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260226004788&dcmNo=11065439",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        "body": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000H0/c2d6f7d7350acebe99c771487cac5273a2445991c8ff0fffa6315adaa2d3e3a5.body.html",
+          "sha256": "c2d6f7d7350acebe99c771487cac5273a2445991c8ff0fffa6315adaa2d3e3a5",
+          "bytes": 1131,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260226004788&dcmNo=11065439&eleId=3&offset=8071&length=404&dtd=dart4.xsd",
+          "contentType": "text/html; charset=utf-8"
+        },
+        "pdf": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000H0/dbaf11586bbb49ba37bb08efe0f6568f1d9e415236b7ffd140c1dfb77b3c75a6.prospectus.pdf",
+          "sha256": "dbaf11586bbb49ba37bb08efe0f6568f1d9e415236b7ffd140c1dfb77b3c75a6",
+          "bytes": 217985,
+          "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11065439&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C%28%EA%B0%9C%ED%8E%B8%29_2etfp6_%EC%82%BC%EC%84%B1kodex+%EC%9D%B8%EB%8F%84nifty%EB%AF%B8%EB%93%9C%EC%BA%A1100%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%29_k55105eg1976.pdf",
+          "contentType": "application/pdf;charset=UTF-8"
+        }
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "collectedAt": "2026-07-21T07:41:53.808Z",
+      "universeKey": "0000J0",
+      "shortCode": "0000J0",
+      "officialName": "PLUS 한화그룹주",
+      "receptionNo": "20260305000001",
+      "status": "ok",
+      "attachment": {
+        "rcpNo": "20260305000001",
+        "dcmNo": "11090729",
+        "label": "2026.03.05 [정정] 간이투자설명서(집합투자증권)"
+      },
+      "raw": {
+        "main": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000J0/639138ff34f7de947fdd5de92636387370f162dfd2cb5ef48d6b965a5c3b4d44.main.html",
+          "sha256": "639138ff34f7de947fdd5de92636387370f162dfd2cb5ef48d6b965a5c3b4d44",
+          "bytes": 45156,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305000001",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        "attachment": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000J0/326b91020cc7cc973a24a3911fdbcddd332cfdf3f5172062ceb45038ee1147ec.attachment.html",
+          "sha256": "326b91020cc7cc973a24a3911fdbcddd332cfdf3f5172062ceb45038ee1147ec",
+          "bytes": 44893,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305000001&dcmNo=11090729",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        "body": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000J0/e0fa12e3c4dc1061dc0f131bd4c6059cbbb3541bd2fce5322903a3f9296762d7.body.html",
+          "sha256": "e0fa12e3c4dc1061dc0f131bd4c6059cbbb3541bd2fce5322903a3f9296762d7",
+          "bytes": 1037,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260305000001&dcmNo=11090729&eleId=3&offset=7146&length=384&dtd=dart4.xsd",
+          "contentType": "text/html; charset=utf-8"
+        },
+        "pdf": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000J0/c560166702eb3757e9584ecf8f7127d9ce68b8028c8736d0addacc2217168c5c.prospectus.pdf",
+          "sha256": "c560166702eb3757e9584ecf8f7127d9ce68b8028c8736d0addacc2217168c5c",
+          "bytes": 501265,
+          "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11090729&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94+plus+%ED%95%9C%ED%99%94%EA%B7%B8%EB%A3%B9%EC%A3%BC%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D%29-006380-20260305.pdf",
+          "contentType": "application/pdf;charset=UTF-8"
+        }
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "collectedAt": "2026-07-21T07:41:58.608Z",
+      "universeKey": "0000Y0",
+      "shortCode": "0000Y0",
+      "officialName": "HK 26-12 회사채(AA-이상)액티브",
+      "receptionNo": "20260721000031",
+      "status": "ok",
+      "attachment": {
+        "rcpNo": "20260721000031",
+        "dcmNo": "11483658",
+        "label": "2026.07.21 [정정] 간이투자설명서(집합투자증권)"
+      },
+      "raw": {
+        "main": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000Y0/7c02f26b361fddddee8858e7cff6217205f556ea9381eb84bfe28826a07447e0.main.html",
+          "sha256": "7c02f26b361fddddee8858e7cff6217205f556ea9381eb84bfe28826a07447e0",
+          "bytes": 45156,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721000031",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        "attachment": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000Y0/d42c3e78647311899349f06e448da803b43d34c0cae72f0bdd3cef36241c0b97.attachment.html",
+          "sha256": "d42c3e78647311899349f06e448da803b43d34c0cae72f0bdd3cef36241c0b97",
+          "bytes": 44893,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721000031&dcmNo=11483658",
+          "contentType": "text/html; charset=UTF-8"
+        },
+        "body": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000Y0/f6d92978df3671dd77f4b3f709008a4cef4c034786d24cb2bd06be37065d6e8a.body.html",
+          "sha256": "f6d92978df3671dd77f4b3f709008a4cef4c034786d24cb2bd06be37065d6e8a",
+          "bytes": 1163,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260721000031&dcmNo=11483658&eleId=3&offset=6583&length=425&dtd=dart4.xsd",
+          "contentType": "text/html; charset=utf-8"
+        },
+        "pdf": {
+          "path": "data/raw/metadata-v2/dart-pdf-batch/0000Y0/10af9562ea20ee0057b993d06e70755f40a89ce5a96068f109336e88859d7877.prospectus.pdf",
+          "sha256": "10af9562ea20ee0057b993d06e70755f40a89ce5a96068f109336e88859d7877",
+          "bytes": 525857,
+          "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11483658&flNm=%5B%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C%5D%ED%9D%A5%EA%B5%ADhk26-12%ED%9A%8C%EC%82%AC%EC%B1%84%28aa-%EC%9D%B4%EC%83%81%29%EC%95%A1%ED%8B%B0%EB%B8%8C%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%B1%84%EA%B6%8C%5D_20260721.pdf",
+          "contentType": "application/pdf;charset=UTF-8"
+        }
+      }
+    }
+  ]
+}

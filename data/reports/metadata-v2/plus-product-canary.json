@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T06:30:10.511Z",
+  "probeContract": {
+    "issuer": "hanwha-asset-management",
+    "brand": "PLUS",
+    "scope": "four public product-detail canaries; local-only metadata PoC",
+    "actualProductRequests": 4,
+    "authenticationUsed": false,
+    "bypassUsed": false,
+    "rawResponsesStored": false
+  },
+  "policyAudit": {
+    "decision": "allow_local_only_poc",
+    "checkedAt": "2026-07-21T06:30:10.513Z",
+    "robotsUrl": "https://www.plusetf.co.kr/robots.txt",
+    "robotsObserved": "User-agent: * / Allow: /",
+    "legalNoticeUrl": "https://www.plusetf.co.kr/",
+    "legalNoticeObserved": "site materials are owned by Hanwha Asset Management; no automated-access prohibition was displayed",
+    "guardrails": [
+      "public product detail pages only",
+      "low fixed request count",
+      "no login or bypass",
+      "do not republish raw HTML or documents"
+    ],
+    "blockedAlternatives": [
+      {
+        "issuer": "korea-investment-management",
+        "brand": "ACE",
+        "productRequests": 0,
+        "reason": "terms body not observable in server response; permission unclear"
+      },
+      {
+        "issuer": "nh-amundi-asset-management",
+        "brand": "HANARO",
+        "productRequests": 0,
+        "reason": "terms restrict reproduction/distribution/commercial use without prior consent"
+      }
+    ]
+  },
+  "discoveryContract": {
+    "productUrlPattern": "https://www.plusetf.co.kr/product/detail?n={internalProductId}",
+    "tickerIsNotProductId": true,
+    "scaleBlocker": "a documented or page-derived ticker-to-internalProductId discovery mapping is required before universe expansion"
+  },
+  "metrics": {
+    "canaryCount": 4,
+    "httpSuccessCount": 4,
+    "completeExtractionCount": 4,
+    "completeExtractionRatio": 1
+  },
+  "rows": [
+    {
+      "ticker": "161510",
+      "name": "PLUS 고배당주",
+      "productId": "006273",
+      "url": "https://www.plusetf.co.kr/product/detail?n=006273",
+      "access": {
+        "ok": true,
+        "httpStatus": 200,
+        "responseBytes": 262734,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extraction": {
+        "identity": {
+          "productName": "PLUS 고배당주",
+          "tickerVisible": true,
+          "expectedNameMatches": true,
+          "canonicalHref": "https://www.plusetf.co.kr/product/detail?n=006273"
+        },
+        "description": "배당성장률 연 10.5%(*2013~2025년); '순수 배당금(주식 배당)'만을 재원으로 분배 추구; 주주환원정책 강화에 따른 고배당주 수혜 기대",
+        "investmentObjective": "배당성장률 연 10.5%(*2013~2025년); '순수 배당금(주식 배당)'만을 재원으로 분배 추구; 주주환원정책 강화에 따른 고배당주 수혜 기대",
+        "investmentPoints": [
+          "배당성장률 연 10.5%(*2013~2025년)",
+          "'순수 배당금(주식 배당)'만을 재원으로 분배 추구",
+          "주주환원정책 강화에 따른 고배당주 수혜 기대"
+        ],
+        "benchmark": {
+          "name": "FnGuide 고배당주지수",
+          "description": "유동시가총액 상위 200 종목 중 예상 배당수익률이 높은 상위 30종목을 선별하여 지수 산출",
+          "provider": "FN-Guide"
+        },
+        "distributionPolicy": "매월 마지막 영업일 및 투자신탁회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일",
+        "prospectusLinks": [
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J260231052%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%A3%BC%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%A3%BC%EC%8B%9D)-006273-20260203.pdf",
+            "label": "투자설명서 다운로드"
+          },
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J260231052%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%A3%BC%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%A3%BC%EC%8B%9D)-006273-20260203.pdf",
+            "label": "간이투자설명서 다운로드"
+          }
+        ],
+        "complete": true,
+        "evidence": {
+          "description": [
+            "배당성장률 연 10.5%(*2013~2025년)",
+            "'순수 배당금(주식 배당)'만을 재원으로 분배 추구",
+            "주주환원정책 강화에 따른 고배당주 수혜 기대"
+          ],
+          "benchmark": [
+            "FnGuide 고배당주지수",
+            "유동시가총액 상위 200 종목 중 예상 배당수익률이 높은 상위 30종목을 선별하여 지수 산출",
+            "FN-Guide"
+          ],
+          "distributionPolicy": [
+            "매월 마지막 영업일 및 투자신탁회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일"
+          ]
+        }
+      }
+    },
+    {
+      "ticker": "251600",
+      "name": "PLUS 고배당주채권혼합",
+      "productId": "006298",
+      "url": "https://www.plusetf.co.kr/product/detail?n=006298",
+      "access": {
+        "ok": true,
+        "httpStatus": 200,
+        "responseBytes": 263448,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extraction": {
+        "identity": {
+          "productName": "PLUS 고배당주채권혼합",
+          "tickerVisible": true,
+          "expectedNameMatches": true,
+          "canonicalHref": "https://www.plusetf.co.kr/product/detail?n=006298"
+        },
+        "description": "고배당주:채권=5:5비중으로 수익성과 안정성 동시 추구; 월 배당으로 매월 안정적인 현금 흐름 창출 가능; 퇴직연금 100% 투자 가능",
+        "investmentObjective": "고배당주:채권=5:5비중으로 수익성과 안정성 동시 추구; 월 배당으로 매월 안정적인 현금 흐름 창출 가능; 퇴직연금 100% 투자 가능",
+        "investmentPoints": [
+          "고배당주:채권=5:5비중으로 수익성과 안정성 동시 추구",
+          "월 배당으로 매월 안정적인 현금 흐름 창출 가능",
+          "퇴직연금 100% 투자 가능"
+        ],
+        "benchmark": {
+          "name": "FnGuide 고배당채권혼합 지수",
+          "description": "FnGuide 고배당주지수 50%, 채권 50% 로 매일 조정하여 산출",
+          "provider": "FnGuide"
+        },
+        "distributionPolicy": "매월 마지막 영업일 및 투자신탁회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일",
+        "prospectusLinks": [
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J2601131624%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%A3%BC%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9-%ED%8C%8C%EC%83%9D%ED%98%95)-006298-20260113.pdf",
+            "label": "투자설명서 다운로드"
+          },
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J2601131624%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20%EA%B3%A0%EB%B0%B0%EB%8B%B9%EC%A3%BC%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9-%ED%8C%8C%EC%83%9D%ED%98%95)-006298-20260113.pdf",
+            "label": "간이투자설명서 다운로드"
+          }
+        ],
+        "complete": true,
+        "evidence": {
+          "description": [
+            "고배당주:채권=5:5비중으로 수익성과 안정성 동시 추구",
+            "월 배당으로 매월 안정적인 현금 흐름 창출 가능",
+            "퇴직연금 100% 투자 가능"
+          ],
+          "benchmark": [
+            "FnGuide 고배당채권혼합 지수",
+            "FnGuide 고배당주지수 50%, 채권 50% 로 매일 조정하여 산출",
+            "FnGuide"
+          ],
+          "distributionPolicy": [
+            "매월 마지막 영업일 및 투자신탁회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일"
+          ]
+        }
+      }
+    },
+    {
+      "ticker": "152100",
+      "name": "PLUS 200",
+      "productId": "006184",
+      "url": "https://www.plusetf.co.kr/product/detail?n=006184",
+      "access": {
+        "ok": true,
+        "httpStatus": 200,
+        "responseBytes": 262565,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extraction": {
+        "identity": {
+          "productName": "PLUS 200",
+          "tickerVisible": true,
+          "expectedNameMatches": true,
+          "canonicalHref": "https://www.plusetf.co.kr/product/detail?n=006184"
+        },
+        "description": "한국의 시장대표 지수 코스피 200 추종; 국내 대표 대형주 200개에 분산투자; 최저보수 : 연 0.017%",
+        "investmentObjective": "한국의 시장대표 지수 코스피 200 추종; 국내 대표 대형주 200개에 분산투자; 최저보수 : 연 0.017%",
+        "investmentPoints": [
+          "한국의 시장대표 지수 코스피 200 추종",
+          "국내 대표 대형주 200개에 분산투자",
+          "최저보수 : 연 0.017%"
+        ],
+        "benchmark": {
+          "name": "KOSPI 200",
+          "description": "주가지수선물 및 주가지수옵션의 거래대상으로 개발된 주가지수",
+          "provider": "한국거래소"
+        },
+        "distributionPolicy": "배당금 발생시 1,4,7,10월, 마지막 영업일 및 회계기간 종료일 기준 지급(회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "prospectusLinks": [
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J2602130800%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20200%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%A3%BC%EC%8B%9D)-006184-20260213.pdf",
+            "label": "투자설명서 다운로드"
+          },
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J2602130800%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20200%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%A3%BC%EC%8B%9D)-006184-20260213.pdf",
+            "label": "간이투자설명서 다운로드"
+          }
+        ],
+        "complete": true,
+        "evidence": {
+          "description": [
+            "한국의 시장대표 지수 코스피 200 추종",
+            "국내 대표 대형주 200개에 분산투자",
+            "최저보수 : 연 0.017%"
+          ],
+          "benchmark": [
+            "KOSPI 200",
+            "주가지수선물 및 주가지수옵션의 거래대상으로 개발된 주가지수",
+            "한국거래소"
+          ],
+          "distributionPolicy": [
+            "배당금 발생시 1,4,7,10월, 마지막 영업일 및 회계기간 종료일 기준 지급(회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)"
+          ]
+        }
+      }
+    },
+    {
+      "ticker": "457990",
+      "name": "PLUS 태양광&ESS",
+      "productId": "006279",
+      "url": "https://www.plusetf.co.kr/product/detail?n=006279",
+      "access": {
+        "ok": true,
+        "httpStatus": 200,
+        "responseBytes": 252826,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extraction": {
+        "identity": {
+          "productName": "PLUS 태양광&ESS",
+          "tickerVisible": true,
+          "expectedNameMatches": true,
+          "canonicalHref": "https://www.plusetf.co.kr/product/detail?n=006279"
+        },
+        "description": "친환경을 넘어 AI 핵심 전력원이 된 태양광; 태양광 패널부터 전력기기, ESS 배터리까지; K태양광 전력 밸류체인의 성장성에 투자",
+        "investmentObjective": "친환경을 넘어 AI 핵심 전력원이 된 태양광; 태양광 패널부터 전력기기, ESS 배터리까지; K태양광 전력 밸류체인의 성장성에 투자",
+        "investmentPoints": [
+          "친환경을 넘어 AI 핵심 전력원이 된 태양광",
+          "태양광 패널부터 전력기기, ESS 배터리까지",
+          "K태양광 전력 밸류체인의 성장성에 투자"
+        ],
+        "benchmark": {
+          "name": "FnGuide 태양광&ESS 지수",
+          "description": "코스피 및 코스닥 상장 기업 중 '태양광' 및 'ESS' 테마와 관련도가 높은 종목을 선정하여 구성",
+          "provider": "FnGuide"
+        },
+        "distributionPolicy": "매 1월, 4월, 7월, 10월 마지막 영업일",
+        "prospectusLinks": [
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J260231052%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20%ED%83%9C%EC%96%91%EA%B4%91%EF%BC%86ESS%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%A3%BC%EC%8B%9D)-006279-20260203.pdf",
+            "label": "투자설명서 다운로드"
+          },
+          {
+            "href": "https://www.plusetf.co.kr/upload/fund/J260231052%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C-%ED%95%9C%ED%99%94%20PLUS%20%ED%83%9C%EC%96%91%EA%B4%91%EF%BC%86ESS%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81(%EC%A3%BC%EC%8B%9D)-006279-20260203.pdf",
+            "label": "간이투자설명서 다운로드"
+          }
+        ],
+        "complete": true,
+        "evidence": {
+          "description": [
+            "친환경을 넘어 AI 핵심 전력원이 된 태양광",
+            "태양광 패널부터 전력기기, ESS 배터리까지",
+            "K태양광 전력 밸류체인의 성장성에 투자"
+          ],
+          "benchmark": [
+            "FnGuide 태양광&ESS 지수",
+            "코스피 및 코스닥 상장 기업 중 '태양광' 및 'ESS' 테마와 관련도가 높은 종목을 선정하여 구성",
+            "FnGuide"
+          ],
+          "distributionPolicy": [
+            "매 1월, 4월, 7월, 10월 마지막 영업일"
+          ]
+        }
+      }
+    }
+  ],
+  "decision": "issuer_parser_ready_discovery_mapping_required"
+}

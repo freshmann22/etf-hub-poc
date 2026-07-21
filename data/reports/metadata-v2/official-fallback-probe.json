@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T06:25:06.034Z",
+  "probeContract": {
+    "scope": "6 issuer-product canaries plus one DART viewer and KOFIA landing page",
+    "maxRequests": 8,
+    "actualRequests": 8,
+    "authenticationUsed": false,
+    "securityBypassUsed": false,
+    "rawResponsesStored": false
+  },
+  "metrics": {
+    "canaryCount": 6,
+    "programmaticallyAccessibleProductCount": 2,
+    "programmaticallyAccessibleProductRatio": 0.333333,
+    "allTargetFieldSignalsCount": 2
+  },
+  "dartViewer": {
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000101",
+    "access": {
+      "ok": true,
+      "httpStatus": 200,
+      "responseBytes": 40138
+    },
+    "contract": {
+      "tocNodes": [
+        {
+          "text": "투 자 설 명 서",
+          "eleId": "1",
+          "offset": 579,
+          "length": 7263
+        },
+        {
+          "text": "[ 본 문 ]",
+          "eleId": "2",
+          "offset": 8050,
+          "length": 399
+        }
+      ],
+      "bodyNode": {
+        "text": "[ 본 문 ]",
+        "eleId": "2",
+        "offset": 8050,
+        "length": 399
+      },
+      "substantiveBodyAdvertised": false,
+      "publicAttachmentLinkCount": 0
+    },
+    "decision": "no_substantive_body_or_public_attachment_contract"
+  },
+  "kofia": {
+    "url": "https://dis.kofia.or.kr/",
+    "access": {
+      "ok": true,
+      "httpStatus": 200,
+      "responseBytes": 536
+    },
+    "documentedBulkApiFound": false,
+    "decision": "manual_public_document_discovery_only_until_KOFIA_documents_or_permission_contract_is_identified"
+  },
+  "sourceMatrix": [
+    {
+      "source": "DART document.xml",
+      "identity": "yes",
+      "objectiveBenchmarkDistribution": "no_cover_only",
+      "automation": "official_API",
+      "priority": 1
+    },
+    {
+      "source": "DART public viewer",
+      "identity": "yes",
+      "objectiveBenchmarkDistribution": "no_for_tested_filing",
+      "automation": "no_attachment_contract_exposed",
+      "priority": 4
+    },
+    {
+      "source": "Issuer official product HTML",
+      "identity": "yes",
+      "objectiveBenchmarkDistribution": "varies_by_issuer_but_complete_for_RISE_canaries",
+      "automation": "issuer_specific_adapter_and_rate_policy_required",
+      "priority": 2
+    },
+    {
+      "source": "Issuer official factsheet/prospectus PDF",
+      "identity": "yes",
+      "objectiveBenchmarkDistribution": "generally_yes",
+      "automation": "prefer_public_download_links_discovered_from_product_page",
+      "priority": 1
+    },
+    {
+      "source": "KOFIA disclosure UI",
+      "identity": "yes",
+      "objectiveBenchmarkDistribution": "documents_expected",
+      "automation": "no_documented_bulk_API_confirmed",
+      "priority": 3
+    }
+  ],
+  "scaleDecision": {
+    "readyForSingleGenericAdapter": false,
+    "readyForIssuerAdapters": [
+      "kb-asset-management"
+    ],
+    "nextPriority": [
+      "Implement RISE official HTML/PDF adapter with conservative section provenance.",
+      "Use KODEX documented/public product list only for discovery; respect 429 and do not scrape product HTML.",
+      "Resolve KIWOOM runtime TLS/connectivity before adapter work; public URL contract itself is ticker-based.",
+      "Use official factsheet/prospectus download links where exposed; do not automate KOFIA UI without a documented contract or permission."
+    ]
+  },
+  "canaries": [
+    {
+      "etfCode": "0193W0",
+      "name": "KODEX 삼성전자단일종목레버리지",
+      "issuer": "samsung-asset-management",
+      "url": "https://www.samsungfund.com/etf/product/view.do?id=2ETFV5",
+      "discovery": "official product-list search by ticker then fId",
+      "access": {
+        "ok": false,
+        "httpStatus": 429,
+        "responseBytes": 5704,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extractionSignals": null,
+      "recommendation": "public_ui_only_rate_limited_do_not_scrape"
+    },
+    {
+      "etfCode": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "issuer": "samsung-asset-management",
+      "url": "https://www.samsungfund.com/etf/product/view.do?id=2ETFV6",
+      "discovery": "official product-list search by ticker then fId",
+      "access": {
+        "ok": false,
+        "httpStatus": 429,
+        "responseBytes": 5683,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extractionSignals": null,
+      "recommendation": "public_ui_only_rate_limited_do_not_scrape"
+    },
+    {
+      "etfCode": "0192M0",
+      "name": "RISE 삼성전자단일종목레버리지",
+      "issuer": "kb-asset-management",
+      "url": "https://riseetf.co.kr/prod/finderDetail/44K5",
+      "discovery": "official site product finder result",
+      "access": {
+        "ok": true,
+        "httpStatus": 200,
+        "responseBytes": 700218,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extractionSignals": {
+        "expectedProductVisible": true,
+        "fieldSignals": {
+          "productDescriptionOrObjective": true,
+          "benchmark": true,
+          "distributionPolicy": true,
+          "prospectusLinkLabel": true
+        }
+      },
+      "recommendation": "candidate_for_issuer_adapter"
+    },
+    {
+      "etfCode": "0192L0",
+      "name": "RISE SK하이닉스단일종목레버리지",
+      "issuer": "kb-asset-management",
+      "url": "https://riseetf.co.kr/prod/finderDetail/44K6",
+      "discovery": "official site product finder result",
+      "access": {
+        "ok": true,
+        "httpStatus": 200,
+        "responseBytes": 701095,
+        "errorClass": null,
+        "errorCode": null
+      },
+      "extractionSignals": {
+        "expectedProductVisible": true,
+        "fieldSignals": {
+          "productDescriptionOrObjective": true,
+          "benchmark": true,
+          "distributionPolicy": true,
+          "prospectusLinkLabel": true
+        }
+      },
+      "recommendation": "candidate_for_issuer_adapter"
+    },
+    {
+      "etfCode": "0198A0",
+      "name": "KIWOOM 코스닥150커버드콜액티브",
+      "issuer": "kiwoom-asset-management",
+      "url": "https://www.kiwoometf.com/service/etf/KO02010200M?gcode=0198A0",
+      "discovery": "documented public product URL with gcode ticker",
+      "access": {
+        "ok": false,
+        "httpStatus": null,
+        "responseBytes": 0,
+        "errorClass": "TypeError",
+        "errorCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      },
+      "extractionSignals": null,
+      "recommendation": "public_ui_visible_but_runtime_adapter_not_proven"
+    },
+    {
+      "etfCode": "0207Z0",
+      "name": "KIWOOM 미국우주데이터센터인프라",
+      "issuer": "kiwoom-asset-management",
+      "url": "https://www.kiwoometf.com/service/etf/KO02010200M?gcode=0207Z0",
+      "discovery": "documented public product URL with gcode ticker",
+      "access": {
+        "ok": false,
+        "httpStatus": null,
+        "responseBytes": 0,
+        "errorClass": "TypeError",
+        "errorCode": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      },
+      "extractionSignals": null,
+      "recommendation": "public_ui_visible_but_runtime_adapter_not_proven"
+    }
+  ]
+}

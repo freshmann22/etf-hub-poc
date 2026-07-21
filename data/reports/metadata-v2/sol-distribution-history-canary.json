@@ -1,0 +1,850 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:21:06.689Z",
+  "pass": true,
+  "expectedCount": 4,
+  "attemptedCount": 4,
+  "historyBearingCount": 4,
+  "fieldValidation": {
+    "recordDate": true,
+    "actualPayDate": true,
+    "positiveAmount": true,
+    "currency": "KRW",
+    "perUnit": null,
+    "perUnitReason": "not explicit in official UI contract"
+  },
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T07:20:48.959Z",
+      "sourceId": "sol_official_distribution_history_api",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "0005D0",
+      "isin": "KR70005D0004",
+      "name": "SOL 전고체배터리&실리콘음극재",
+      "productId": "211079",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/211079",
+      "status": "partial",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "eventCount": 1,
+        "rejectedRowCount": 0,
+        "currency": "KRW",
+        "perUnitBasis": null,
+        "nameMatches": true
+      },
+      "history": [
+        {
+          "exDate": null,
+          "recordDate": "2025-12-30",
+          "payDate": "2026-01-02",
+          "amount": 13,
+          "currency": "KRW",
+          "perUnit": null
+        }
+      ],
+      "evidence": {
+        "endpointFields": {
+          "recordDate": "WORK_DT",
+          "payDate": "DIVIDEND_DT",
+          "amount": "DIVIDEND_PRI"
+        },
+        "currencyBasis": "official popup JS header: 분배금액(원)",
+        "perUnitBasis": "not_explicit_in_official_popup_header_or_json",
+        "rows": [
+          "WORK_DT=20251230; DIVIDEND_DT=20260102; DIVIDEND_PRI=13; currency=KRW; perUnit=unknown"
+        ]
+      },
+      "rejectedRows": [],
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-distribution-history/responses/2026-07-21/0005D0/2026-07-21T07-20-48-959Z.457e94880759d372.json",
+        "hash": "457e94880759d3726aa7fe067c773f7614ca9e0fe3f309d4637d0b9e8e543aa2",
+        "bytes": 280,
+        "url": "https://www.soletf.com/api/etf/pds/dividend/211079",
+        "contract": {
+          "path": "data/raw/metadata-v2/sol-distribution-history/contract/2026-07-21/etf_pds/2026-07-21T07-20-48-940Z.d790c51b42d44d19.js",
+          "hash": "d790c51b42d44d198b1da1ac4d3bf9f149259bab98b4726c6599ea4f585b4585",
+          "bytes": 18445,
+          "url": "https://www.soletf.com/static/pc/js/ko/etf_pds.js"
+        }
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:20:50.161Z",
+      "sourceId": "sol_official_distribution_history_api",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "220130",
+      "isin": "KR7220130009",
+      "name": "SOL 차이나강소기업CSI500(합성 H)",
+      "productId": "210367",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/210367",
+      "status": "partial",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "eventCount": 1,
+        "rejectedRowCount": 0,
+        "currency": "KRW",
+        "perUnitBasis": null,
+        "nameMatches": true
+      },
+      "history": [
+        {
+          "exDate": null,
+          "recordDate": "2025-12-30",
+          "payDate": "2026-01-02",
+          "amount": 2,
+          "currency": "KRW",
+          "perUnit": null
+        }
+      ],
+      "evidence": {
+        "endpointFields": {
+          "recordDate": "WORK_DT",
+          "payDate": "DIVIDEND_DT",
+          "amount": "DIVIDEND_PRI"
+        },
+        "currencyBasis": "official popup JS header: 분배금액(원)",
+        "perUnitBasis": "not_explicit_in_official_popup_header_or_json",
+        "rows": [
+          "WORK_DT=20251230; DIVIDEND_DT=20260102; DIVIDEND_PRI=2; currency=KRW; perUnit=unknown"
+        ]
+      },
+      "rejectedRows": [],
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-distribution-history/responses/2026-07-21/220130/2026-07-21T07-20-50-161Z.d599d6bb354cf2d2.json",
+        "hash": "d599d6bb354cf2d2bebd351e929b6ac2f33510161dfb1dfcfff338fb85d2587f",
+        "bytes": 276,
+        "url": "https://www.soletf.com/api/etf/pds/dividend/210367",
+        "contract": {
+          "path": "data/raw/metadata-v2/sol-distribution-history/contract/2026-07-21/etf_pds/2026-07-21T07-20-48-940Z.d790c51b42d44d19.js",
+          "hash": "d790c51b42d44d198b1da1ac4d3bf9f149259bab98b4726c6599ea4f585b4585",
+          "bytes": 18445,
+          "url": "https://www.soletf.com/static/pc/js/ko/etf_pds.js"
+        }
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:20:51.357Z",
+      "sourceId": "sol_official_distribution_history_api",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "292500",
+      "isin": "KR7292500006",
+      "name": "SOL KRX300",
+      "productId": "210728",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/210728",
+      "status": "partial",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "eventCount": 22,
+        "rejectedRowCount": 0,
+        "currency": "KRW",
+        "perUnitBasis": null,
+        "nameMatches": true
+      },
+      "history": [
+        {
+          "exDate": null,
+          "recordDate": "2026-04-30",
+          "payDate": "2026-05-04",
+          "amount": 200,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2026-01-30",
+          "payDate": "2026-02-02",
+          "amount": 75,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-10-31",
+          "payDate": "2025-11-03",
+          "amount": 28,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-07-31",
+          "payDate": "2025-08-01",
+          "amount": 40,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-04-30",
+          "payDate": "2025-05-02",
+          "amount": 135,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-01-31",
+          "payDate": "2025-02-03",
+          "amount": 41,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-10-31",
+          "payDate": "2024-11-01",
+          "amount": 32,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-07-31",
+          "payDate": "2024-08-01",
+          "amount": 30,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-04-30",
+          "payDate": "2024-05-02",
+          "amount": 144,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-01-31",
+          "payDate": "2024-02-01",
+          "amount": 30,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-10-31",
+          "payDate": "2023-11-01",
+          "amount": 25,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-07-31",
+          "payDate": "2023-08-01",
+          "amount": 30,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-04-28",
+          "payDate": "2023-05-02",
+          "amount": 155,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-01-31",
+          "payDate": "2023-02-01",
+          "amount": 37,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-10-31",
+          "payDate": "2022-11-01",
+          "amount": 23,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-07-29",
+          "payDate": "2022-08-01",
+          "amount": 31,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-04-29",
+          "payDate": "2022-05-03",
+          "amount": 185,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2021-04-30",
+          "payDate": "2021-05-04",
+          "amount": 200,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2020-10-30",
+          "payDate": "2020-11-03",
+          "amount": 150,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2020-04-29",
+          "payDate": "2020-05-06",
+          "amount": 100,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2019-10-31",
+          "payDate": "2019-11-04",
+          "amount": 100,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2019-04-30",
+          "payDate": "2019-05-03",
+          "amount": 200,
+          "currency": "KRW",
+          "perUnit": null
+        }
+      ],
+      "evidence": {
+        "endpointFields": {
+          "recordDate": "WORK_DT",
+          "payDate": "DIVIDEND_DT",
+          "amount": "DIVIDEND_PRI"
+        },
+        "currencyBasis": "official popup JS header: 분배금액(원)",
+        "perUnitBasis": "not_explicit_in_official_popup_header_or_json",
+        "rows": [
+          "WORK_DT=20260430; DIVIDEND_DT=20260504; DIVIDEND_PRI=200; currency=KRW; perUnit=unknown",
+          "WORK_DT=20260130; DIVIDEND_DT=20260202; DIVIDEND_PRI=75; currency=KRW; perUnit=unknown",
+          "WORK_DT=20251031; DIVIDEND_DT=20251103; DIVIDEND_PRI=28; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250731; DIVIDEND_DT=20250801; DIVIDEND_PRI=40; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250430; DIVIDEND_DT=20250502; DIVIDEND_PRI=135; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250131; DIVIDEND_DT=20250203; DIVIDEND_PRI=41; currency=KRW; perUnit=unknown",
+          "WORK_DT=20241031; DIVIDEND_DT=20241101; DIVIDEND_PRI=32; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240731; DIVIDEND_DT=20240801; DIVIDEND_PRI=30; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240430; DIVIDEND_DT=20240502; DIVIDEND_PRI=144; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240131; DIVIDEND_DT=20240201; DIVIDEND_PRI=30; currency=KRW; perUnit=unknown",
+          "WORK_DT=20231031; DIVIDEND_DT=20231101; DIVIDEND_PRI=25; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230731; DIVIDEND_DT=20230801; DIVIDEND_PRI=30; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230428; DIVIDEND_DT=20230502; DIVIDEND_PRI=155; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230131; DIVIDEND_DT=20230201; DIVIDEND_PRI=37; currency=KRW; perUnit=unknown",
+          "WORK_DT=20221031; DIVIDEND_DT=20221101; DIVIDEND_PRI=23; currency=KRW; perUnit=unknown",
+          "WORK_DT=20220729; DIVIDEND_DT=20220801; DIVIDEND_PRI=31; currency=KRW; perUnit=unknown",
+          "WORK_DT=20220429; DIVIDEND_DT=20220503; DIVIDEND_PRI=185; currency=KRW; perUnit=unknown",
+          "WORK_DT=20210430; DIVIDEND_DT=20210504; DIVIDEND_PRI=200; currency=KRW; perUnit=unknown",
+          "WORK_DT=20201030; DIVIDEND_DT=20201103; DIVIDEND_PRI=150; currency=KRW; perUnit=unknown",
+          "WORK_DT=20200429; DIVIDEND_DT=20200506; DIVIDEND_PRI=100; currency=KRW; perUnit=unknown",
+          "WORK_DT=20191031; DIVIDEND_DT=20191104; DIVIDEND_PRI=100; currency=KRW; perUnit=unknown",
+          "WORK_DT=20190430; DIVIDEND_DT=20190503; DIVIDEND_PRI=200; currency=KRW; perUnit=unknown"
+        ]
+      },
+      "rejectedRows": [],
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-distribution-history/responses/2026-07-21/292500/2026-07-21T07-20-51-357Z.95fd060cdce5293b.json",
+        "hash": "95fd060cdce5293b61d30bb60b269d266ff7c17c7b052e3b46f0d731dce87277",
+        "bytes": 4011,
+        "url": "https://www.soletf.com/api/etf/pds/dividend/210728",
+        "contract": {
+          "path": "data/raw/metadata-v2/sol-distribution-history/contract/2026-07-21/etf_pds/2026-07-21T07-20-48-940Z.d790c51b42d44d19.js",
+          "hash": "d790c51b42d44d198b1da1ac4d3bf9f149259bab98b4726c6599ea4f585b4585",
+          "bytes": 18445,
+          "url": "https://www.soletf.com/static/pc/js/ko/etf_pds.js"
+        }
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:20:52.655Z",
+      "sourceId": "sol_official_distribution_history_api",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "433330",
+      "isin": "KR7433330008",
+      "name": "SOL 미국S&P500",
+      "productId": "210930",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/210930",
+      "status": "partial",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "eventCount": 48,
+        "rejectedRowCount": 0,
+        "currency": "KRW",
+        "perUnitBasis": null,
+        "nameMatches": true
+      },
+      "history": [
+        {
+          "exDate": null,
+          "recordDate": "2026-06-30",
+          "payDate": "2026-07-01",
+          "amount": 24,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2026-05-29",
+          "payDate": "2026-06-01",
+          "amount": 18,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2026-04-30",
+          "payDate": "2026-05-04",
+          "amount": 10,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2026-03-31",
+          "payDate": "2026-04-01",
+          "amount": 21,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2026-02-27",
+          "payDate": "2026-03-03",
+          "amount": 14,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2026-01-30",
+          "payDate": "2026-02-02",
+          "amount": 12,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-12-30",
+          "payDate": "2026-01-02",
+          "amount": 19,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-11-28",
+          "payDate": "2025-12-01",
+          "amount": 17,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-10-31",
+          "payDate": "2025-11-03",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-09-30",
+          "payDate": "2025-10-01",
+          "amount": 19,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-08-29",
+          "payDate": "2025-09-01",
+          "amount": 16,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-07-31",
+          "payDate": "2025-08-01",
+          "amount": 10,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-06-30",
+          "payDate": "2025-07-01",
+          "amount": 17,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-05-30",
+          "payDate": "2025-06-02",
+          "amount": 16,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-04-30",
+          "payDate": "2025-05-02",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-03-31",
+          "payDate": "2025-04-01",
+          "amount": 18,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-02-28",
+          "payDate": "2025-03-04",
+          "amount": 16,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2025-01-31",
+          "payDate": "2025-02-03",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-12-30",
+          "payDate": "2025-01-02",
+          "amount": 17,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-11-29",
+          "payDate": "2024-12-02",
+          "amount": 18,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-10-31",
+          "payDate": "2024-11-01",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-09-30",
+          "payDate": "2024-10-02",
+          "amount": 12,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-08-30",
+          "payDate": "2024-09-02",
+          "amount": 17,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-07-31",
+          "payDate": "2024-08-01",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-06-28",
+          "payDate": "2024-07-01",
+          "amount": 15,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-05-31",
+          "payDate": "2024-06-03",
+          "amount": 18,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-04-30",
+          "payDate": "2024-05-02",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-03-29",
+          "payDate": "2024-04-01",
+          "amount": 13,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-02-29",
+          "payDate": "2024-03-04",
+          "amount": 19,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2024-01-31",
+          "payDate": "2024-02-01",
+          "amount": 9,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-12-28",
+          "payDate": "2024-01-02",
+          "amount": 14,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-11-30",
+          "payDate": "2023-12-01",
+          "amount": 20,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-10-31",
+          "payDate": "2023-11-01",
+          "amount": 9,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-09-27",
+          "payDate": "2023-10-04",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-08-31",
+          "payDate": "2023-09-01",
+          "amount": 18,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-07-31",
+          "payDate": "2023-08-01",
+          "amount": 10,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-06-30",
+          "payDate": "2023-07-03",
+          "amount": 13,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-05-31",
+          "payDate": "2023-06-01",
+          "amount": 16,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-04-28",
+          "payDate": "2023-05-02",
+          "amount": 10,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-03-31",
+          "payDate": "2023-04-03",
+          "amount": 14,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-02-28",
+          "payDate": "2023-03-02",
+          "amount": 14,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2023-01-31",
+          "payDate": "2023-02-01",
+          "amount": 10,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-12-29",
+          "payDate": "2023-01-02",
+          "amount": 12,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-11-30",
+          "payDate": "2022-12-01",
+          "amount": 15,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-10-31",
+          "payDate": "2022-11-01",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-09-30",
+          "payDate": "2022-10-04",
+          "amount": 13,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-08-31",
+          "payDate": "2022-09-01",
+          "amount": 13,
+          "currency": "KRW",
+          "perUnit": null
+        },
+        {
+          "exDate": null,
+          "recordDate": "2022-07-29",
+          "payDate": "2022-08-01",
+          "amount": 11,
+          "currency": "KRW",
+          "perUnit": null
+        }
+      ],
+      "evidence": {
+        "endpointFields": {
+          "recordDate": "WORK_DT",
+          "payDate": "DIVIDEND_DT",
+          "amount": "DIVIDEND_PRI"
+        },
+        "currencyBasis": "official popup JS header: 분배금액(원)",
+        "perUnitBasis": "not_explicit_in_official_popup_header_or_json",
+        "rows": [
+          "WORK_DT=20260630; DIVIDEND_DT=20260701; DIVIDEND_PRI=24; currency=KRW; perUnit=unknown",
+          "WORK_DT=20260529; DIVIDEND_DT=20260601; DIVIDEND_PRI=18; currency=KRW; perUnit=unknown",
+          "WORK_DT=20260430; DIVIDEND_DT=20260504; DIVIDEND_PRI=10; currency=KRW; perUnit=unknown",
+          "WORK_DT=20260331; DIVIDEND_DT=20260401; DIVIDEND_PRI=21; currency=KRW; perUnit=unknown",
+          "WORK_DT=20260227; DIVIDEND_DT=20260303; DIVIDEND_PRI=14; currency=KRW; perUnit=unknown",
+          "WORK_DT=20260130; DIVIDEND_DT=20260202; DIVIDEND_PRI=12; currency=KRW; perUnit=unknown",
+          "WORK_DT=20251230; DIVIDEND_DT=20260102; DIVIDEND_PRI=19; currency=KRW; perUnit=unknown",
+          "WORK_DT=20251128; DIVIDEND_DT=20251201; DIVIDEND_PRI=17; currency=KRW; perUnit=unknown",
+          "WORK_DT=20251031; DIVIDEND_DT=20251103; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250930; DIVIDEND_DT=20251001; DIVIDEND_PRI=19; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250829; DIVIDEND_DT=20250901; DIVIDEND_PRI=16; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250731; DIVIDEND_DT=20250801; DIVIDEND_PRI=10; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250630; DIVIDEND_DT=20250701; DIVIDEND_PRI=17; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250530; DIVIDEND_DT=20250602; DIVIDEND_PRI=16; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250430; DIVIDEND_DT=20250502; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250331; DIVIDEND_DT=20250401; DIVIDEND_PRI=18; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250228; DIVIDEND_DT=20250304; DIVIDEND_PRI=16; currency=KRW; perUnit=unknown",
+          "WORK_DT=20250131; DIVIDEND_DT=20250203; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20241230; DIVIDEND_DT=20250102; DIVIDEND_PRI=17; currency=KRW; perUnit=unknown",
+          "WORK_DT=20241129; DIVIDEND_DT=20241202; DIVIDEND_PRI=18; currency=KRW; perUnit=unknown",
+          "WORK_DT=20241031; DIVIDEND_DT=20241101; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240930; DIVIDEND_DT=20241002; DIVIDEND_PRI=12; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240830; DIVIDEND_DT=20240902; DIVIDEND_PRI=17; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240731; DIVIDEND_DT=20240801; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240628; DIVIDEND_DT=20240701; DIVIDEND_PRI=15; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240531; DIVIDEND_DT=20240603; DIVIDEND_PRI=18; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240430; DIVIDEND_DT=20240502; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240329; DIVIDEND_DT=20240401; DIVIDEND_PRI=13; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240229; DIVIDEND_DT=20240304; DIVIDEND_PRI=19; currency=KRW; perUnit=unknown",
+          "WORK_DT=20240131; DIVIDEND_DT=20240201; DIVIDEND_PRI=9; currency=KRW; perUnit=unknown",
+          "WORK_DT=20231228; DIVIDEND_DT=20240102; DIVIDEND_PRI=14; currency=KRW; perUnit=unknown",
+          "WORK_DT=20231130; DIVIDEND_DT=20231201; DIVIDEND_PRI=20; currency=KRW; perUnit=unknown",
+          "WORK_DT=20231031; DIVIDEND_DT=20231101; DIVIDEND_PRI=9; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230927; DIVIDEND_DT=20231004; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230831; DIVIDEND_DT=20230901; DIVIDEND_PRI=18; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230731; DIVIDEND_DT=20230801; DIVIDEND_PRI=10; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230630; DIVIDEND_DT=20230703; DIVIDEND_PRI=13; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230531; DIVIDEND_DT=20230601; DIVIDEND_PRI=16; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230428; DIVIDEND_DT=20230502; DIVIDEND_PRI=10; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230331; DIVIDEND_DT=20230403; DIVIDEND_PRI=14; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230228; DIVIDEND_DT=20230302; DIVIDEND_PRI=14; currency=KRW; perUnit=unknown",
+          "WORK_DT=20230131; DIVIDEND_DT=20230201; DIVIDEND_PRI=10; currency=KRW; perUnit=unknown",
+          "WORK_DT=20221229; DIVIDEND_DT=20230102; DIVIDEND_PRI=12; currency=KRW; perUnit=unknown",
+          "WORK_DT=20221130; DIVIDEND_DT=20221201; DIVIDEND_PRI=15; currency=KRW; perUnit=unknown",
+          "WORK_DT=20221031; DIVIDEND_DT=20221101; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown",
+          "WORK_DT=20220930; DIVIDEND_DT=20221004; DIVIDEND_PRI=13; currency=KRW; perUnit=unknown",
+          "WORK_DT=20220831; DIVIDEND_DT=20220901; DIVIDEND_PRI=13; currency=KRW; perUnit=unknown",
+          "WORK_DT=20220729; DIVIDEND_DT=20220801; DIVIDEND_PRI=11; currency=KRW; perUnit=unknown"
+        ]
+      },
+      "rejectedRows": [],
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-distribution-history/responses/2026-07-21/433330/2026-07-21T07-20-52-655Z.9cbbfdf64f4cdfe1.json",
+        "hash": "9cbbfdf64f4cdfe1bd5aa4f35aa3a4054ac10a65238c651f4b910afea39edc8f",
+        "bytes": 8712,
+        "url": "https://www.soletf.com/api/etf/pds/dividend/210930",
+        "contract": {
+          "path": "data/raw/metadata-v2/sol-distribution-history/contract/2026-07-21/etf_pds/2026-07-21T07-20-48-940Z.d790c51b42d44d19.js",
+          "hash": "d790c51b42d44d198b1da1ac4d3bf9f149259bab98b4726c6599ea4f585b4585",
+          "bytes": 18445,
+          "url": "https://www.soletf.com/static/pc/js/ko/etf_pds.js"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "schemaVersion": "metadata-source-result-v1",
+  "source": {
+    "sourceId": "opendart_extraction_canary",
+    "sourceType": "primary",
+    "retrievedAt": "2026-07-21T06:15:46.640Z",
+    "parserVersion": "dart-extraction-converter-1.0.0",
+    "documentType": "multi_document_dart_source_result",
+    "confidence": 0.85
+  },
+  "records": [
+    {
+      "shortCode": "0193W0",
+      "status": "partial",
+      "asOfDate": "2026-05-14",
+      "fields": {
+        "identity.officialName": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+        "identity.issuerName": "삼성자산운용주식회사",
+        "product.derivative.direction": "long"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260514000101.xml"
+          ],
+          "receptionNo": "20260514000101",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "삼성자산운용주식회사",
+          "sourceEntries": [
+            "20260514000101.xml"
+          ],
+          "receptionNo": "20260514000101",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260514000101.xml"
+          ],
+          "receptionNo": "20260514000101",
+          "extractionRule": "explicit_leveraged_true_without_inverse"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000101",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-14",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/6d82317397fbc4385bcda6e581bf1cb7240fbce656dcce943248b6d19d9bcf94.zip",
+        "contentHash": "6d82317397fbc4385bcda6e581bf1cb7240fbce656dcce943248b6d19d9bcf94",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0204S0",
+      "status": "partial",
+      "asOfDate": "2026-06-02",
+      "fields": {
+        "identity.officialName": "미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식)",
+        "identity.issuerName": "미래에셋자산운용(주)"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식)",
+          "sourceEntries": [
+            "20260602000038.xml"
+          ],
+          "receptionNo": "20260602000038",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋자산운용(주)",
+          "sourceEntries": [
+            "20260602000038.xml"
+          ],
+          "receptionNo": "20260602000038",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000038",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-06-02",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/6be7462cc49738a5e5ba3643ceb472d600c50e6f3d1125909f254ccbd3d88757.zip",
+        "contentHash": "6be7462cc49738a5e5ba3643ceb472d600c50e6f3d1125909f254ccbd3d88757",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0195S0",
+      "status": "partial",
+      "asOfDate": "2026-07-16",
+      "fields": {
+        "identity.officialName": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+        "identity.issuerName": "미래에셋자산운용(주)",
+        "product.derivative.direction": "long"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260716000361.xml"
+          ],
+          "receptionNo": "20260716000361",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋자산운용(주)",
+          "sourceEntries": [
+            "20260716000361.xml"
+          ],
+          "receptionNo": "20260716000361",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260716000361.xml"
+          ],
+          "receptionNo": "20260716000361",
+          "extractionRule": "explicit_leveraged_true_without_inverse"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000361",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-07-16",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/dbcb186b2ce5baccf0a686f94db200b15f52237bfa7a121b660f40f5e5162ee3.zip",
+        "contentHash": "dbcb186b2ce5baccf0a686f94db200b15f52237bfa7a121b660f40f5e5162ee3",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0195R0",
+      "status": "partial",
+      "asOfDate": "2026-07-16",
+      "fields": {
+        "identity.officialName": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+        "identity.issuerName": "미래에셋자산운용㈜",
+        "product.derivative.direction": "long"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260716000222.xml"
+          ],
+          "receptionNo": "20260716000222",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋자산운용㈜",
+          "sourceEntries": [
+            "20260716000222.xml"
+          ],
+          "receptionNo": "20260716000222",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260716000222.xml"
+          ],
+          "receptionNo": "20260716000222",
+          "extractionRule": "explicit_leveraged_true_without_inverse"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000222",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-07-16",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/a337a02d085c76bc8d7bceb62d6455a8a5babe13cf5cf7e7e717151f9163ec06.zip",
+        "contentHash": "a337a02d085c76bc8d7bceb62d6455a8a5babe13cf5cf7e7e717151f9163ec06",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0192M0",
+      "status": "partial",
+      "asOfDate": "2026-05-22",
+      "fields": {
+        "identity.officialName": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+        "identity.issuerName": "KB자산운용주식회사(☎ 02-2167-8200)",
+        "product.derivative.direction": "long"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260522000007.xml"
+          ],
+          "receptionNo": "20260522000007",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "KB자산운용주식회사(☎ 02-2167-8200)",
+          "sourceEntries": [
+            "20260522000007.xml"
+          ],
+          "receptionNo": "20260522000007",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260522000007.xml"
+          ],
+          "receptionNo": "20260522000007",
+          "extractionRule": "explicit_leveraged_true_without_inverse"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000007",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-22",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/21b146101ffe52f442bbb47c4129063967443bc2f5531efeba9c7653177d8fc8.zip",
+        "contentHash": "21b146101ffe52f442bbb47c4129063967443bc2f5531efeba9c7653177d8fc8",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0192L0",
+      "status": "partial",
+      "asOfDate": "2026-05-22",
+      "fields": {
+        "identity.officialName": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+        "identity.issuerName": "KB자산운용주식회사(☎ 02-2167-8200)",
+        "product.derivative.direction": "long"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260522000005.xml"
+          ],
+          "receptionNo": "20260522000005",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "KB자산운용주식회사(☎ 02-2167-8200)",
+          "sourceEntries": [
+            "20260522000005.xml"
+          ],
+          "receptionNo": "20260522000005",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260522000005.xml"
+          ],
+          "receptionNo": "20260522000005",
+          "extractionRule": "explicit_leveraged_true_without_inverse"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000005",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-22",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/a6d526a48924c48097818d16499bae2f059ff3f1916dcea100030e2790b875d8.zip",
+        "contentHash": "a6d526a48924c48097818d16499bae2f059ff3f1916dcea100030e2790b875d8",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0216Z0",
+      "status": "partial",
+      "asOfDate": "2026-06-18",
+      "fields": {
+        "identity.officialName": "한국투자 ACE K방산TOP5+ 증권 상장지수투자신탁(주식)",
+        "identity.issuerName": "한국투자신탁운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한국투자 ACE K방산TOP5+ 증권 상장지수투자신탁(주식)",
+          "sourceEntries": [
+            "20260618000201.xml"
+          ],
+          "receptionNo": "20260618000201",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한국투자신탁운용주식회사",
+          "sourceEntries": [
+            "20260618000201.xml"
+          ],
+          "receptionNo": "20260618000201",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000201",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-06-18",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/16d90da577fbe9cadda2340ddf61d60c3488db26d8bd572464e03c9757b1fd92.zip",
+        "contentHash": "16d90da577fbe9cadda2340ddf61d60c3488db26d8bd572464e03c9757b1fd92",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0210A0",
+      "status": "partial",
+      "asOfDate": "2026-06-12",
+      "fields": {
+        "identity.officialName": "한국투자 ACE K반도체TOP2+ 증권 상장지수투자신탁(주식)",
+        "identity.issuerName": "한국투자신탁운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한국투자 ACE K반도체TOP2+ 증권 상장지수투자신탁(주식)",
+          "sourceEntries": [
+            "20260612000022.xml"
+          ],
+          "receptionNo": "20260612000022",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한국투자신탁운용주식회사",
+          "sourceEntries": [
+            "20260612000022.xml"
+          ],
+          "receptionNo": "20260612000022",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000022",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-06-12",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/98438b0f39895efffb8c8089a32cbcc70ab390ef1ad5dd3431b9ab395ff3e856.zip",
+        "contentHash": "98438b0f39895efffb8c8089a32cbcc70ab390ef1ad5dd3431b9ab395ff3e856",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0209Z0",
+      "status": "partial",
+      "asOfDate": "2026-06-12",
+      "fields": {
+        "identity.officialName": "한국투자 ACE 코리아AI전력TOP10 증권 상장지수투자신탁(주식)",
+        "identity.issuerName": "한국투자신탁운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한국투자 ACE 코리아AI전력TOP10 증권 상장지수투자신탁(주식)",
+          "sourceEntries": [
+            "20260612000017.xml"
+          ],
+          "receptionNo": "20260612000017",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한국투자신탁운용주식회사",
+          "sourceEntries": [
+            "20260612000017.xml"
+          ],
+          "receptionNo": "20260612000017",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000017",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-06-12",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/def901b5fc8f8101a6874e135f5dae030d33df85616679d76ed5539e1b077f9e.zip",
+        "contentHash": "def901b5fc8f8101a6874e135f5dae030d33df85616679d76ed5539e1b077f9e",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0210E0",
+      "status": "partial",
+      "asOfDate": "2026-06-15",
+      "fields": {
+        "identity.officialName": "한화 PLUS 200커버드콜액티브증권상장지수투자신탁(주식-파생형)",
+        "identity.issuerName": "한화자산운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한화 PLUS 200커버드콜액티브증권상장지수투자신탁(주식-파생형)",
+          "sourceEntries": [
+            "20260615000021.xml"
+          ],
+          "receptionNo": "20260615000021",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "한화자산운용주식회사",
+          "sourceEntries": [
+            "20260615000021.xml"
+          ],
+          "receptionNo": "20260615000021",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000021",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-06-15",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/af4f0cb9d62a3df3d3894775e678d9afbf3a6cccd298bca6cc5b2e5110873a77.zip",
+        "contentHash": "af4f0cb9d62a3df3d3894775e678d9afbf3a6cccd298bca6cc5b2e5110873a77",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0197X0",
+      "status": "partial",
+      "asOfDate": "2026-05-14",
+      "fields": {
+        "identity.officialName": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]",
+        "identity.issuerName": "신한자산운용(주)",
+        "product.derivative.direction": "inverse"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260514000166.xml"
+          ],
+          "receptionNo": "20260514000166",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "신한자산운용(주)",
+          "sourceEntries": [
+            "20260514000166.xml"
+          ],
+          "receptionNo": "20260514000166",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260514000166.xml"
+          ],
+          "receptionNo": "20260514000166",
+          "extractionRule": "explicit_inverse_true"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000166",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-14",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/494fb0a03b6a5ca5e1de2079927ac610b38b73b7e7ebf7d27fd04182b892b166.zip",
+        "contentHash": "494fb0a03b6a5ca5e1de2079927ac610b38b73b7e7ebf7d27fd04182b892b166",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0197W0",
+      "status": "partial",
+      "asOfDate": "2026-05-14",
+      "fields": {
+        "identity.officialName": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+        "identity.issuerName": "신한자산운용(주)",
+        "product.derivative.direction": "long"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260514000152.xml"
+          ],
+          "receptionNo": "20260514000152",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "신한자산운용(주)",
+          "sourceEntries": [
+            "20260514000152.xml"
+          ],
+          "receptionNo": "20260514000152",
+          "extractionRule": "dart_issuer"
+        },
+        "product.derivative.direction": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260514000152.xml"
+          ],
+          "receptionNo": "20260514000152",
+          "extractionRule": "explicit_leveraged_true_without_inverse"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000152",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-14",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/174eb07206f6ea94b8f21810d1839d39e29f57bba834d79015dfcc881dcca2c8.zip",
+        "contentHash": "174eb07206f6ea94b8f21810d1839d39e29f57bba834d79015dfcc881dcca2c8",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0216K0",
+      "status": "partial",
+      "asOfDate": "2026-07-01",
+      "fields": {
+        "identity.officialName": "키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합]",
+        "identity.issuerName": "키움투자자산운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합]",
+          "sourceEntries": [
+            "20260701000098.xml"
+          ],
+          "receptionNo": "20260701000098",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "키움투자자산운용주식회사",
+          "sourceEntries": [
+            "20260701000098.xml"
+          ],
+          "receptionNo": "20260701000098",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000098",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-07-01",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/71fc66ce352117585d02421e7997b2d88e43d34648827377e56ebaf5d0fc1584.zip",
+        "contentHash": "71fc66ce352117585d02421e7997b2d88e43d34648827377e56ebaf5d0fc1584",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0207Z0",
+      "status": "partial",
+      "asOfDate": "2026-06-01",
+      "fields": {
+        "identity.officialName": "키움KIWOOM미국우주데이터센터인프라증권상장지수투자신탁[주식]",
+        "identity.issuerName": "키움투자자산운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "키움KIWOOM미국우주데이터센터인프라증권상장지수투자신탁[주식]",
+          "sourceEntries": [
+            "20260601000160.xml"
+          ],
+          "receptionNo": "20260601000160",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "키움투자자산운용주식회사",
+          "sourceEntries": [
+            "20260601000160.xml"
+          ],
+          "receptionNo": "20260601000160",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601000160",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-06-01",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/eba53fb9eac3cbc48b8ed23d4be05e24e4dffddd3589f33f6f3023cd3a91c2e8.zip",
+        "contentHash": "eba53fb9eac3cbc48b8ed23d4be05e24e4dffddd3589f33f6f3023cd3a91c2e8",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0198A0",
+      "status": "partial",
+      "asOfDate": "2026-05-20",
+      "fields": {
+        "identity.officialName": "키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형]",
+        "identity.issuerName": "키움투자자산운용 주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형]",
+          "sourceEntries": [
+            "20260520000005.xml"
+          ],
+          "receptionNo": "20260520000005",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "키움투자자산운용 주식회사",
+          "sourceEntries": [
+            "20260520000005.xml"
+          ],
+          "receptionNo": "20260520000005",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000005",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-20",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/7213b7cbf4741d0b0aee7b6e51eb794f457c0b6ad6c0bb8a8259228f7083e688.zip",
+        "contentHash": "7213b7cbf4741d0b0aee7b6e51eb794f457c0b6ad6c0bb8a8259228f7083e688",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    },
+    {
+      "shortCode": "0191W0",
+      "status": "partial",
+      "asOfDate": "2026-05-20",
+      "fields": {
+        "identity.officialName": "NH-Amundi HANARO 중기종합채권(A-이상) 액티브증권상장지수투자신탁[채권]",
+        "identity.issuerName": "NH-Amundi자산운용주식회사"
+      },
+      "evidence": {
+        "identity.officialName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "NH-Amundi HANARO 중기종합채권(A-이상) 액티브증권상장지수투자신탁[채권]",
+          "sourceEntries": [
+            "20260520000006.xml"
+          ],
+          "receptionNo": "20260520000006",
+          "extractionRule": "dart_officialName"
+        },
+        "identity.issuerName": {
+          "sectionHeading": "투자설명서 표지",
+          "snippet": "NH-Amundi자산운용주식회사",
+          "sourceEntries": [
+            "20260520000006.xml"
+          ],
+          "receptionNo": "20260520000006",
+          "extractionRule": "dart_issuer"
+        }
+      },
+      "provenance": {
+        "sourceId": "opendart_document_xml",
+        "sourceType": "primary",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000006",
+        "documentType": "investment_prospectus_xml",
+        "retrievedAt": "2026-07-21T06:15:46.640Z",
+        "asOfDate": "2026-05-20",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/3654da43e14de2df0e1e6f1b60f13b26f1ea4c6fe3d6a831119b52032eedbbfb.zip",
+        "contentHash": "3654da43e14de2df0e1e6f1b60f13b26f1ea4c6fe3d6a831119b52032eedbbfb",
+        "parserVersion": "dart-extraction-1.0.0",
+        "status": "partial",
+        "confidence": 0.85
+      }
+    }
+  ],
+  "health": {
+    "inputRowCount": 16,
+    "emittedRecordCount": 16,
+    "fieldCounts": {
+      "identity.officialName": 16,
+      "identity.issuerName": 16,
+      "product.derivative.direction": 7
+    },
+    "nullOrAbsentValuesEmittedAsFalseCount": 0,
+    "skippedExplicitFlags": [
+      {
+        "shortCode": "0210E0",
+        "flag": "derivative",
+        "reason": "canonical_derivative_requires_direction_or_multiple"
+      },
+      {
+        "shortCode": "0198A0",
+        "flag": "derivative",
+        "reason": "canonical_derivative_requires_direction_or_multiple"
+      }
+    ],
+    "warnings": [],
+    "limitation": "The API contract is suitable for official name and issuer provenance, but the returned XML lacks the body needed for investment objective, benchmark, and distribution-policy enrichment."
+  },
+  "quarantine": {
+    "count": 0,
+    "items": []
+  }
+}

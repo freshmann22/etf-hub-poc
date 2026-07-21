@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://etf-hub.local/schemas/etf-metadata-v2.schema.json",
+  "title": "ETF Metadata v2",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "universeCount", "records"],
+  "properties": {
+    "schemaVersion": { "const": "2.0.0" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "universeCount": { "type": "integer", "minimum": 0 },
+    "records": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/record" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "record": {
+      "type": "object",
+      "required": ["universeKey", "identity", "product", "portfolio", "distribution", "fieldCandidates", "conflicts", "status"],
+      "properties": {
+        "universeKey": { "type": "string", "minLength": 1 },
+        "identity": {
+          "type": "object",
+          "required": ["shortCode", "isin", "officialName", "aliases", "issuerId", "issuerName", "listingDate", "listingStatus"],
+          "properties": {
+            "shortCode": { "type": ["string", "null"], "pattern": "^[0-9A-Z]{6}$" },
+            "isin": { "type": ["string", "null"], "pattern": "^[A-Z]{2}[A-Z0-9]{9}[0-9]$" },
+            "officialName": { "type": ["string", "null"] },
+            "aliases": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "issuerId": { "type": ["string", "null"] },
+            "issuerName": { "type": ["string", "null"] },
+            "listingDate": { "type": ["string", "null"], "format": "date" },
+            "listingStatus": { "enum": ["listed", "delisted", "pending", "unknown"] }
+          },
+          "additionalProperties": false
+        },
+        "product": {
+          "type": "object",
+          "required": ["description", "investmentObjective", "benchmark", "assetClasses", "targetRegions", "active", "replication", "derivative", "currencyHedged", "fundOfFunds"],
+          "properties": {
+            "description": { "type": ["string", "null"] },
+            "investmentObjective": { "type": ["string", "null"] },
+            "benchmark": {
+              "type": "object",
+              "required": ["name", "provider", "indexCode", "description"],
+              "properties": {
+                "name": { "type": ["string", "null"] },
+                "provider": { "type": ["string", "null"] },
+                "indexCode": { "type": ["string", "null"] },
+                "description": { "type": ["string", "null"] }
+              },
+              "additionalProperties": false
+            },
+            "assetClasses": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "targetRegions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "active": { "type": ["boolean", "null"] },
+            "replication": { "enum": ["physical", "synthetic", "mixed", "unknown", null] },
+            "derivative": {
+              "type": "object",
+              "required": ["direction", "multiple"],
+              "properties": {
+                "direction": { "enum": ["long", "inverse", "neutral", "unknown", null] },
+                "multiple": { "type": ["number", "null"] }
+              },
+              "additionalProperties": false
+            },
+            "currencyHedged": { "type": ["boolean", "null"] },
+            "fundOfFunds": { "type": ["boolean", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "portfolio": {
+          "type": "object",
+          "required": ["asOfDate", "holdings", "sectorWeights", "countryWeights"],
+          "properties": {
+            "asOfDate": { "type": ["string", "null"], "format": "date" },
+            "holdings": { "type": "array", "items": { "$ref": "#/$defs/holding" } },
+            "sectorWeights": { "type": "array", "items": { "$ref": "#/$defs/weight" } },
+            "countryWeights": { "type": "array", "items": { "$ref": "#/$defs/weight" } }
+          },
+          "additionalProperties": false
+        },
+        "distribution": {
+          "type": "object",
+          "required": ["applicability", "schedule", "frequency", "history"],
+          "properties": {
+            "applicability": { "enum": ["applicable", "not_applicable", "unknown"] },
+            "schedule": { "type": ["string", "null"] },
+            "frequency": { "type": ["string", "null"] },
+            "history": { "type": "array", "items": { "$ref": "#/$defs/distributionEvent" } }
+          },
+          "additionalProperties": false
+        },
+        "fieldCandidates": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/candidate" }
+          }
+        },
+        "conflicts": { "type": "array", "items": { "$ref": "#/$defs/conflict" } },
+        "status": { "enum": ["complete", "partial", "quarantined", "unavailable"] }
+      },
+      "additionalProperties": false
+    },
+    "holding": {
+      "type": "object",
+      "required": ["shortCode", "isin", "ticker", "name", "instrumentType", "weight"],
+      "properties": {
+        "shortCode": { "type": ["string", "null"] },
+        "isin": { "type": ["string", "null"] },
+        "ticker": { "type": ["string", "null"] },
+        "name": { "type": "string" },
+        "instrumentType": { "type": ["string", "null"] },
+        "weight": { "type": ["number", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "weight": {
+      "type": "object",
+      "required": ["key", "label", "weight"],
+      "properties": {
+        "key": { "type": ["string", "null"] },
+        "label": { "type": "string" },
+        "weight": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "distributionEvent": {
+      "type": "object",
+      "required": ["exDate", "recordDate", "payDate", "amount", "currency", "perUnit"],
+      "properties": {
+        "exDate": { "type": ["string", "null"], "format": "date" },
+        "recordDate": { "type": ["string", "null"], "format": "date" },
+        "payDate": { "type": ["string", "null"], "format": "date" },
+        "amount": { "type": ["number", "null"] },
+        "currency": { "type": ["string", "null"] },
+        "perUnit": { "type": ["number", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "required": ["candidateId", "field", "value", "provenance"],
+      "properties": {
+        "candidateId": { "type": "string", "minLength": 12 },
+        "field": { "type": "string", "minLength": 1 },
+        "value": {},
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "evidence": { "$ref": "#/$defs/evidence" }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "sectionHeading": { "type": ["string", "null"] },
+        "selector": { "type": ["string", "null"] },
+        "snippet": { "type": ["string", "null"], "maxLength": 1000 },
+        "sourceEntries": { "type": "array", "items": { "type": "string" } },
+        "receptionNo": { "type": ["string", "null"] },
+        "extractionRule": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["sourceId", "sourceType", "url", "documentType", "retrievedAt", "asOfDate", "rawSnapshotPath", "contentHash", "parserVersion", "status", "confidence"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "sourceType": { "enum": ["primary", "secondary", "derived"] },
+        "url": { "type": ["string", "null"] },
+        "documentType": { "type": ["string", "null"] },
+        "retrievedAt": { "type": "string", "format": "date-time" },
+        "asOfDate": { "type": ["string", "null"] },
+        "rawSnapshotPath": { "type": ["string", "null"] },
+        "contentHash": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
+        "parserVersion": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["ok", "partial", "stale", "unavailable"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "conflict": {
+      "type": "object",
+      "required": ["field", "severity", "candidateIds", "selectedCandidateId", "resolutionRule", "reason"],
+      "properties": {
+        "field": { "type": "string" },
+        "severity": { "enum": ["info", "warning", "hard"] },
+        "candidateIds": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+        "selectedCandidateId": { "type": ["string", "null"] },
+        "resolutionRule": { "type": ["string", "null"] },
+        "reason": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

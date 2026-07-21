@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:03:51.983Z",
+  "raw": {
+    "path": "data/raw/metadata-v2/hana-1q-product/discovery/2026-07-21/list/2026-07-21T07-03-51-983Z.ca3b5ba338aaa7f4.html",
+    "hash": "ca3b5ba338aaa7f4c555e1bffd064f214f17f0e28ba8f5c33aaa942d7d2b2fb7",
+    "bytes": 62869,
+    "url": "https://www.1qetf.com/pages/ETFproducts/ETF.list.php"
+  },
+  "mappings": [
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0004G0",
+      "isin": "KR70004G0002",
+      "name": "1Q 미국배당TOP30",
+      "productId": "12",
+      "sourceName": "1Q 미국배당TOP30",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=12",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0017Y0",
+      "isin": "KR70017Y0005",
+      "name": "1Q 종합채권(AA-이상)액티브",
+      "productId": "13",
+      "sourceName": "1Q 종합채권(AA-이상)액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=13",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0026S0",
+      "isin": "KR70026S0002",
+      "name": "1Q 미국S&P500",
+      "productId": "14",
+      "sourceName": "1Q 미국S&P500",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=14",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0052S0",
+      "isin": "KR70052S0009",
+      "name": "1Q 미국S&P500미국채혼합50액티브",
+      "productId": "15",
+      "sourceName": "1Q 미국S&P500미국채혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=15",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0052T0",
+      "isin": "KR70052T0008",
+      "name": "1Q 중단기회사채(A-이상)액티브",
+      "productId": "16",
+      "sourceName": "1Q 중단기회사채(A-이상)액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=16",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0069M0",
+      "isin": "KR70069M0006",
+      "name": "1Q 미국나스닥100",
+      "productId": "17",
+      "sourceName": "1Q 미국나스닥100",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=17",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0083S0",
+      "isin": "KR70083S0002",
+      "name": "1Q 미국메디컬AI",
+      "productId": "18",
+      "sourceName": "1Q 미국메디컬 AI",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=18",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0094X0",
+      "isin": "KR70094X0002",
+      "name": "1Q 샤오미밸류체인액티브",
+      "productId": "19",
+      "sourceName": "1Q 샤오미밸류체인액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=19",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0103T0",
+      "isin": "KR70103T0007",
+      "name": "1Q K소버린AI",
+      "productId": "21",
+      "sourceName": "1Q K소버린AI",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=21",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0111P0",
+      "isin": "KR70111P0001",
+      "name": "1Q 미국나스닥100미국채혼합50액티브",
+      "productId": "20",
+      "sourceName": "1Q 미국나스닥100미국채혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=20",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0131V0",
+      "isin": "KR70131V0009",
+      "name": "1Q 미국우주항공테크",
+      "productId": "22",
+      "sourceName": "1Q 미국우주항공테크",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=22",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0131W0",
+      "isin": "KR70131W0008",
+      "name": "1Q 단기특수은행채액티브",
+      "productId": "23",
+      "sourceName": "1Q 단기특수은행채액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=23",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0172V0",
+      "isin": "KR70172V0009",
+      "name": "1Q 은액티브",
+      "productId": "24",
+      "sourceName": "1Q 은액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=24",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0182R0",
+      "isin": "KR70182R0003",
+      "name": "1Q K반도체TOP2+",
+      "productId": "25",
+      "sourceName": "1Q K반도체TOP2+",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=25",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0182S0",
+      "isin": "KR70182S0002",
+      "name": "1Q K반도체TOP2채권혼합50",
+      "productId": "27",
+      "sourceName": "1Q K반도체TOP2채권혼합50",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=27",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0184E0",
+      "isin": "KR70184E0006",
+      "name": "1Q 200채권혼합50액티브",
+      "productId": "28",
+      "sourceName": "1Q 200채권혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=28",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0186S0",
+      "isin": "KR70186S0008",
+      "name": "1Q 코스닥150채권혼합50액티브",
+      "productId": "30",
+      "sourceName": "1Q 코스닥150채권혼합50액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=30",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0198B0",
+      "isin": "KR70198B0003",
+      "name": "1Q 삼성전자선물단일종목레버리지",
+      "productId": "31",
+      "sourceName": "1Q 삼성전자선물단일종목레버리지",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=31",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0198D0",
+      "isin": "KR70198D0001",
+      "name": "1Q SK하이닉스선물단일종목레버리지",
+      "productId": "32",
+      "sourceName": "1Q SK하이닉스선물단일종목레버리지",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=32",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "0206G0",
+      "isin": "KR70206G0008",
+      "name": "1Q 현대차기아채권혼합50",
+      "productId": "33",
+      "sourceName": "1Q 현대차기아채권혼합50",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=33",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "451060",
+      "isin": "KR7451060008",
+      "name": "1Q 200액티브",
+      "productId": "1",
+      "sourceName": "1Q 200액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=1",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "463290",
+      "isin": "KR7463290007",
+      "name": "1Q 단기금융채액티브",
+      "productId": "2",
+      "sourceName": "1Q 단기금융채액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=2",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "479080",
+      "isin": "KR7479080004",
+      "name": "1Q 머니마켓액티브",
+      "productId": "7",
+      "sourceName": "1Q 머니마켓액티브",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=7",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "491610",
+      "isin": "KR7491610002",
+      "name": "1Q CD금리액티브(합성)",
+      "productId": "8",
+      "sourceName": "1Q CD금리액티브(합성)",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=8",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "492500",
+      "isin": "KR7492500004",
+      "name": "1Q 현대차그룹채권(A+이상)&국고통안",
+      "productId": "9",
+      "sourceName": "1Q현대차그룹채권(A+이상)&국고통안",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=9",
+      "status": "mapped"
+    },
+    {
+      "issuerId": "hana-asset-management",
+      "shortCode": "495330",
+      "isin": "KR7495330003",
+      "name": "1Q 코리아밸류업",
+      "productId": "11",
+      "sourceName": "1Q 코리아밸류업",
+      "productUrl": "https://www.1qetf.com/pages/ETFproducts/ETF_info.view.php?etf_no=11",
+      "status": "mapped"
+    }
+  ],
+  "metrics": {
+    "inventoryCount": 26,
+    "discoveredCount": 26,
+    "mappedCount": 26,
+    "missingCount": 0,
+    "coverageRatio": 1
+  },
+  "scaleDecision": "mapping_pass"
+}

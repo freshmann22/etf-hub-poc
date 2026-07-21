@@ -1,0 +1,1431 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-07-21T07:24:32.367Z",
+  "canaryCount": 4,
+  "sourcePolicy": {
+    "officialSourcesOnly": true,
+    "openDartArchiveInspected": true,
+    "officialViewerAndDownloadContractUsed": true,
+    "nonOfficialScrapingUsed": false,
+    "requestIntervalMs": 1200
+  },
+  "metrics": {
+    "archiveCoverOnlyCount": 4,
+    "substantiveAttachmentSummaryCount": 4,
+    "publicAttachmentContractCount": 4,
+    "validOfficialPdfCount": 4
+  },
+  "decision": "official_attachment_pdf_parser_candidate",
+  "rows": [
+    {
+      "etfCode": "0193W0",
+      "receptionNo": "20260514000101",
+      "reportName": "투자설명서(집합투자증권)(삼성KODEX삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형])",
+      "priorCoverOnly": true,
+      "archive": {
+        "zipBytes": 2940,
+        "entryCount": 1,
+        "entryNames": [
+          "20260514000101.xml"
+        ],
+        "documentName": "투자설명서(집합투자증권)",
+        "sectionApartSource": "SOURCE",
+        "sectionTitle": "[ 본 문 ]",
+        "sectionPayloadTextLength": 0,
+        "attachmentLikeXmlReferences": []
+      },
+      "viewerMain": {
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "nodes": [
+            {
+              "text": "투 자 설 명 서",
+              "rcpNo": "20260514000101",
+              "dcmNo": "11377251",
+              "eleId": "1",
+              "offset": 579,
+              "length": 7263,
+              "dtd": "dart4.xsd"
+            },
+            {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260514000101",
+              "dcmNo": "11377251",
+              "eleId": "2",
+              "offset": 8050,
+              "length": 399,
+              "dtd": "dart4.xsd"
+            }
+          ],
+          "bodyNode": {
+            "text": "[ 본 문 ]",
+            "rcpNo": "20260514000101",
+            "dcmNo": "11377251",
+            "eleId": "2",
+            "offset": 8050,
+            "length": 399,
+            "dtd": "dart4.xsd"
+          },
+          "dcmNos": [
+            "11377251",
+            "11377252"
+          ],
+          "viewerPaths": [],
+          "attachmentLinks": [],
+          "attachments": [
+            {
+              "rcpNo": "20260514000101",
+              "dcmNo": "11377252",
+              "label": "2026.05.14 간이투자설명서(집합투자증권)"
+            }
+          ],
+          "attachmentLabelCount": 4,
+          "apartSourceMentioned": false
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000101/48d747734650384cff466e6816ebf38a63117d003d27a0aa8e04984c6eb57208.main.html",
+          "hash": "48d747734650384cff466e6816ebf38a63117d003d27a0aa8e04984c6eb57208",
+          "bytes": 40138,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000101",
+          "status": 200
+        }
+      },
+      "viewerBody": {
+        "node": {
+          "text": "[ 본 문 ]",
+          "rcpNo": "20260514000101",
+          "dcmNo": "11377251",
+          "eleId": "2",
+          "offset": 8050,
+          "length": 399,
+          "dtd": "dart4.xsd"
+        },
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "textLength": 86,
+          "keywordHits": {
+            "투자목적": false,
+            "운용목적": false,
+            "투자전략": false,
+            "운용전략": false,
+            "비교지수": false,
+            "기초지수": false,
+            "분배금": false,
+            "이익분배": false
+          },
+          "substantiveSignals": {
+            "investmentMandate": false,
+            "benchmark": false,
+            "distribution": false
+          },
+          "downloadPaths": [
+            "/report/download.do?dcmNo=11377251&flNm=%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C%28%EA%B0%9C%ED%8E%B8%29_2etfv5_%EC%82%BC%EC%84%B1kodex+%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%29_k55105ev6349.pdf"
+          ],
+          "snippet": "[ 본 문 ] 투자설명서 투자설명서(개편)_2etfv5_삼성kodex 삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)_k55105ev6349.pdf"
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000101/c08fbced778fe945cf882688d495f86ebd5d46e0dd83cdeb9f2c8e16b99fd22a.body-11377251-2.html",
+          "hash": "c08fbced778fe945cf882688d495f86ebd5d46e0dd83cdeb9f2c8e16b99fd22a",
+          "bytes": 1169,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260514000101&dcmNo=11377251&eleId=2&offset=8050&length=399&dtd=dart4.xsd",
+          "status": 200
+        }
+      },
+      "attachmentDocuments": [
+        {
+          "attachment": {
+            "rcpNo": "20260514000101",
+            "dcmNo": "11377252",
+            "label": "2026.05.14 간이투자설명서(집합투자증권)"
+          },
+          "access": {
+            "ok": true,
+            "status": 200
+          },
+          "contract": {
+            "nodes": [
+              {
+                "text": "간이투자설명서",
+                "rcpNo": "20260514000101",
+                "dcmNo": "11377252",
+                "eleId": "1",
+                "offset": 581,
+                "length": 3884,
+                "dtd": "dart4.xsd"
+              },
+              {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260514000101",
+                "dcmNo": "11377252",
+                "eleId": "2",
+                "offset": 4673,
+                "length": 403,
+                "dtd": "dart4.xsd"
+              }
+            ],
+            "bodyNode": {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260514000101",
+              "dcmNo": "11377252",
+              "eleId": "2",
+              "offset": 4673,
+              "length": 403,
+              "dtd": "dart4.xsd"
+            },
+            "dcmNos": [
+              "11377252"
+            ],
+            "viewerPaths": [],
+            "attachmentLinks": [],
+            "attachments": [
+              {
+                "rcpNo": "20260514000101",
+                "dcmNo": "11377252",
+                "label": "2026.05.14 간이투자설명서(집합투자증권)"
+              }
+            ],
+            "attachmentLabelCount": 4,
+            "apartSourceMentioned": false
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000101/8341cf4527f426d3b8385b82e58540630cd04cfcc0b0f8c339dac0c741a5eded.attachment-11377252.html",
+            "hash": "8341cf4527f426d3b8385b82e58540630cd04cfcc0b0f8c339dac0c741a5eded",
+            "bytes": 40074,
+            "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000101&dcmNo=11377252",
+            "status": 200
+          },
+          "sections": [
+            {
+              "node": {
+                "text": "간이투자설명서",
+                "rcpNo": "20260514000101",
+                "dcmNo": "11377252",
+                "eleId": "1",
+                "offset": 581,
+                "length": 3884,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 616,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": true,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [],
+                "snippet": "간이투자설명서 (작성기준일 : 2026.4.24 ) 삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형] (펀드 코드 : EV634 ) 투자위험등급 1등급[ 매우 높은 위험 ] 삼성자산운용주식회사는 이 투자신탁의 투자대상 자산의 종류 및 위험도 를 감안하여 1등급 으로 분류하였습니다. 집합투자증권은 『예금자보호법』에 따라 보호하지 않는 실적배당상품 입니다. 해당 집합투자기구는 주식, 주식 관련 집합투자증권 및 주식 관련 파생상품 을 주된 투자대상으로 하고 신탁재산의 60% 이상 을 투자하되, 신탁재산의 10%를 초과하여 위험회피 외의 목적으로 파생상품에 투자하는 레버리지 전략을 실행함에 따라 주식등 가격변동 위험, 레버리지투자위험, 파생상품 투자위험 등이 있으므로 투자에 신중 을 기하여 주시기 바랍니다. 1 2 3 4 5 6 매우 높은 위험 높은 위험 다소 높은 위험 보통 위험 낮은 위험 매우 낮은 위험 이 요약정보는 삼성KODEX 삼성전자단일종목레버리지증권상장지수투"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000101/f58c9d95a4e9dcb88b71a19a920ce2610b6f1dbdb76a4445e179256695b39f5e.body-11377252-1.html",
+                "hash": "f58c9d95a4e9dcb88b71a19a920ce2610b6f1dbdb76a4445e179256695b39f5e",
+                "bytes": 4795,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260514000101&dcmNo=11377252&eleId=1&offset=581&length=3884&dtd=dart4.xsd",
+                "status": 200
+              }
+            },
+            {
+              "node": {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260514000101",
+                "dcmNo": "11377252",
+                "eleId": "2",
+                "offset": 4673,
+                "length": 403,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 90,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": false,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [
+                  "/report/download.do?dcmNo=11377252&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C%28%EA%B0%9C%ED%8E%B8%29_2etfv5_%EC%82%BC%EC%84%B1kodex+%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%29_k55105ev6349.pdf"
+                ],
+                "snippet": "[ 본 문 ] 간이투자설명서 간이투자설명서(개편)_2etfv5_삼성kodex 삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)_k55105ev6349.pdf"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000101/d82c3fe6518e3c5d96567359076e718c26e442033925195e3409f601fb26ff94.body-11377252-2.html",
+                "hash": "d82c3fe6518e3c5d96567359076e718c26e442033925195e3409f601fb26ff94",
+                "bytes": 1199,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260514000101&dcmNo=11377252&eleId=2&offset=4673&length=403&dtd=dart4.xsd",
+                "status": 200
+              }
+            }
+          ],
+          "downloads": [
+            {
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "validPdfHeader": true,
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000101/aafb17feaf667025eda0477c166b48f7258a9aec084385ea6d28ca2346d576cf.attachment-11377252.pdf",
+                "hash": "aafb17feaf667025eda0477c166b48f7258a9aec084385ea6d28ca2346d576cf",
+                "bytes": 324516,
+                "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11377252&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C%28%EA%B0%9C%ED%8E%B8%29_2etfv5_%EC%82%BC%EC%84%B1kodex+%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%29_k55105ev6349.pdf",
+                "status": 200,
+                "contentType": "application/pdf;charset=UTF-8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "etfCode": "0204S0",
+      "receptionNo": "20260602000038",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식))",
+      "priorCoverOnly": true,
+      "archive": {
+        "zipBytes": 3723,
+        "entryCount": 1,
+        "entryNames": [
+          "20260602000038.xml"
+        ],
+        "documentName": "투자설명서(집합투자증권)",
+        "sectionApartSource": "SOURCE",
+        "sectionTitle": "[ 본 문 ]",
+        "sectionPayloadTextLength": 0,
+        "attachmentLikeXmlReferences": []
+      },
+      "viewerMain": {
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "nodes": [
+            {
+              "text": "정 정 신 고 (보고)",
+              "rcpNo": "20260602000038",
+              "dcmNo": "11415372",
+              "eleId": "1",
+              "offset": 630,
+              "length": 4290,
+              "dtd": "dart4.xsd"
+            },
+            {
+              "text": "투 자 설 명 서",
+              "rcpNo": "20260602000038",
+              "dcmNo": "11415372",
+              "eleId": "2",
+              "offset": 4950,
+              "length": 7279,
+              "dtd": "dart4.xsd"
+            },
+            {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260602000038",
+              "dcmNo": "11415372",
+              "eleId": "3",
+              "offset": 12437,
+              "length": 388,
+              "dtd": "dart4.xsd"
+            }
+          ],
+          "bodyNode": {
+            "text": "[ 본 문 ]",
+            "rcpNo": "20260602000038",
+            "dcmNo": "11415372",
+            "eleId": "3",
+            "offset": 12437,
+            "length": 388,
+            "dtd": "dart4.xsd"
+          },
+          "dcmNos": [
+            "11415372",
+            "11415373",
+            "11398555"
+          ],
+          "viewerPaths": [],
+          "attachmentLinks": [],
+          "attachments": [
+            {
+              "rcpNo": "20260602000038",
+              "dcmNo": "11415373",
+              "label": "2026.06.02 [정정] 간이투자설명서(집합투자증권)"
+            },
+            {
+              "rcpNo": "20260526000002",
+              "dcmNo": "11398555",
+              "label": "2026.05.26 간이투자설명서(집합투자증권)"
+            }
+          ],
+          "attachmentLabelCount": 4,
+          "apartSourceMentioned": false
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/55a8c0734539e02c1e6f8e0b7dc0f07d0646f71f91682074ecb1b5a8afda2497.main.html",
+          "hash": "55a8c0734539e02c1e6f8e0b7dc0f07d0646f71f91682074ecb1b5a8afda2497",
+          "bytes": 41842,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000038",
+          "status": 200
+        }
+      },
+      "viewerBody": {
+        "node": {
+          "text": "[ 본 문 ]",
+          "rcpNo": "20260602000038",
+          "dcmNo": "11415372",
+          "eleId": "3",
+          "offset": 12437,
+          "length": 388,
+          "dtd": "dart4.xsd"
+        },
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "textLength": 75,
+          "keywordHits": {
+            "투자목적": false,
+            "운용목적": false,
+            "투자전략": false,
+            "운용전략": false,
+            "비교지수": false,
+            "기초지수": false,
+            "분배금": false,
+            "이익분배": false
+          },
+          "substantiveSignals": {
+            "investmentMandate": false,
+            "benchmark": false,
+            "distribution": false
+          },
+          "downloadPaths": [
+            "/report/download.do?dcmNo=11415372&flNm=%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8Btiger%EC%BD%94%EC%8A%A4%EB%8B%A5%EC%95%A1%ED%8B%B0%EB%B8%8C%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D%29_20260602_k55301eu5260.pdf"
+          ],
+          "snippet": "[ 본 문 ] 투자설명서 투자설명서_미래에셋tiger코스닥액티브증권상장지수투자신탁(주식)_20260602_k55301eu5260.pdf"
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/a3fdcf902cf590ba3c0354e2e1467bd3ac58705df9a4c8e14872bfb482ba79b5.body-11415372-3.html",
+          "hash": "a3fdcf902cf590ba3c0354e2e1467bd3ac58705df9a4c8e14872bfb482ba79b5",
+          "bytes": 1053,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260602000038&dcmNo=11415372&eleId=3&offset=12437&length=388&dtd=dart4.xsd",
+          "status": 200
+        }
+      },
+      "attachmentDocuments": [
+        {
+          "attachment": {
+            "rcpNo": "20260602000038",
+            "dcmNo": "11415373",
+            "label": "2026.06.02 [정정] 간이투자설명서(집합투자증권)"
+          },
+          "access": {
+            "ok": true,
+            "status": 200
+          },
+          "contract": {
+            "nodes": [
+              {
+                "text": "정 정 신 고 (보고)",
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "eleId": "1",
+                "offset": 632,
+                "length": 4142,
+                "dtd": "dart4.xsd"
+              },
+              {
+                "text": "간이투자설명서",
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "eleId": "2",
+                "offset": 4804,
+                "length": 3626,
+                "dtd": "dart4.xsd"
+              },
+              {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "eleId": "3",
+                "offset": 8638,
+                "length": 392,
+                "dtd": "dart4.xsd"
+              }
+            ],
+            "bodyNode": {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260602000038",
+              "dcmNo": "11415373",
+              "eleId": "3",
+              "offset": 8638,
+              "length": 392,
+              "dtd": "dart4.xsd"
+            },
+            "dcmNos": [
+              "11415373",
+              "11398555"
+            ],
+            "viewerPaths": [],
+            "attachmentLinks": [],
+            "attachments": [
+              {
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "label": "2026.06.02 [정정] 간이투자설명서(집합투자증권)"
+              },
+              {
+                "rcpNo": "20260526000002",
+                "dcmNo": "11398555",
+                "label": "2026.05.26 간이투자설명서(집합투자증권)"
+              }
+            ],
+            "attachmentLabelCount": 4,
+            "apartSourceMentioned": false
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/c3626afc4d256cb3345dc3e9249f202d380d2ef240728e996b643f87748fd2e0.attachment-11415373.html",
+            "hash": "c3626afc4d256cb3345dc3e9249f202d380d2ef240728e996b643f87748fd2e0",
+            "bytes": 41711,
+            "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000038&dcmNo=11415373",
+            "status": 200
+          },
+          "sections": [
+            {
+              "node": {
+                "text": "정 정 신 고 (보고)",
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "eleId": "1",
+                "offset": 632,
+                "length": 4142,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 444,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": false,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [],
+                "snippet": "정 정 신 고 (보고) 2026년 06월 02일 1. 정정대상 공시서류 : 간이투자설명서 미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식) 2. 정정대상 공시서류의 최초제출일 : 2026년 05월 23일 3. 정정사항 [투자설명서] 항 목 정정요구ㆍ명령 관련 여부 정정사유 정 정 전 정 정 후 제2부. 11. 가. (4) 설정절차 아니오 오기 정정 [지정참가회사] T+2일: 인수도명세확정 및 투자자 통보 , 신탁업자에게 납부금등 이체 [지정참가회사] T+1일: 인수도명세확정 및 투자자 통보 T+2일: 신탁업자에게 납부금등 이체 제2부. 11. 나. (2) 환매절차 아니오 [지정참가회사] T+2일: 인수도명세확정 및 투자자 통보 , 투자자 계좌에서 수익증권 인출 및 자산입고 [지정참가회사] T+1일: 인수도명세확정 및 투자자 통보 T+2일: 투자자 계좌에서 수익증권 인출 및 자산입고"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/54883f57d27ba5a338992b2ad38ac35710cf632a59be904cba28e0da11a68e19.body-11415373-1.html",
+                "hash": "54883f57d27ba5a338992b2ad38ac35710cf632a59be904cba28e0da11a68e19",
+                "bytes": 5042,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260602000038&dcmNo=11415373&eleId=1&offset=632&length=4142&dtd=dart4.xsd",
+                "status": 200
+              }
+            },
+            {
+              "node": {
+                "text": "간이투자설명서",
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "eleId": "2",
+                "offset": 4804,
+                "length": 3626,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 479,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": true,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [],
+                "snippet": "간이투자설명서 (작성기준일 : 2026. 06. 01. ) 미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식) (펀드 코드 : EU526 ) 투자위험등급 2등급[ 높은 위험 ] 미래에셋자산운용㈜ 는 이 투자신탁의 투자대상 자산의 종류 및 위험도 를 감안하여 2등급 으로 분류하였습니다. 집합투자증권은 「예금자보호법」에 따라 보호되지 않는 실적배당상품 이며, 집합투자기구 재산을 주로 국내 주식 에 투자함으로 주식가격변동위험, 액티브ETF투자위험 등이 있으므로 투자에 신중 을 기하여 주시기 바랍니다. 1 2 3 4 5 6 매우 높은 위험 높은 위험 다소 높은 위험 보통 위험 낮은 위험 매우 낮은 위험 이 요약정보는 '미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식)'의 투자설명서의 내용 중 중요사항을 발췌ㆍ요약한 정보를 담고 있습니다. 따라서자세한 정보가 필요하신 경우에는 동 집합투자증권을 매입하기 이전에 투자설명서를 반드시 참고하시기 바랍니다."
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/5537f0c2884c24994f0ac8b816fa5ef77bd8217893464d550829a9f795a0ffcb.body-11415373-2.html",
+                "hash": "5537f0c2884c24994f0ac8b816fa5ef77bd8217893464d550829a9f795a0ffcb",
+                "bytes": 4366,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260602000038&dcmNo=11415373&eleId=2&offset=4804&length=3626&dtd=dart4.xsd",
+                "status": 200
+              }
+            },
+            {
+              "node": {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "eleId": "3",
+                "offset": 8638,
+                "length": 392,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 79,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": false,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [
+                  "/report/download.do?dcmNo=11415373&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8Btiger%EC%BD%94%EC%8A%A4%EB%8B%A5%EC%95%A1%ED%8B%B0%EB%B8%8C%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D%29_20260602_k55301eu5260.pdf"
+                ],
+                "snippet": "[ 본 문 ] 간이투자설명서 간이투자설명서_미래에셋tiger코스닥액티브증권상장지수투자신탁(주식)_20260602_k55301eu5260.pdf"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/ec4d45299c9d8416074161ebbc07cf67f588bfa6301a4e2f26cd1ed99bea8539.body-11415373-3.html",
+                "hash": "ec4d45299c9d8416074161ebbc07cf67f588bfa6301a4e2f26cd1ed99bea8539",
+                "bytes": 1083,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260602000038&dcmNo=11415373&eleId=3&offset=8638&length=392&dtd=dart4.xsd",
+                "status": 200
+              }
+            }
+          ],
+          "downloads": [
+            {
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "validPdfHeader": true,
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/3c50f472aa3d07415c17618f9111d7d68b4ceb3161478bd47b427b7be857fefb.attachment-11415373.pdf",
+                "hash": "3c50f472aa3d07415c17618f9111d7d68b4ceb3161478bd47b427b7be857fefb",
+                "bytes": 209797,
+                "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11415373&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8Btiger%EC%BD%94%EC%8A%A4%EB%8B%A5%EC%95%A1%ED%8B%B0%EB%B8%8C%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D%29_20260602_k55301eu5260.pdf",
+                "status": 200,
+                "contentType": "application/pdf;charset=UTF-8"
+              }
+            }
+          ]
+        },
+        {
+          "attachment": {
+            "rcpNo": "20260526000002",
+            "dcmNo": "11398555",
+            "label": "2026.05.26 간이투자설명서(집합투자증권)"
+          },
+          "access": {
+            "ok": true,
+            "status": 200
+          },
+          "contract": {
+            "nodes": [
+              {
+                "text": "간이투자설명서",
+                "rcpNo": "20260526000002",
+                "dcmNo": "11398555",
+                "eleId": "1",
+                "offset": 583,
+                "length": 3727,
+                "dtd": "dart4.xsd"
+              },
+              {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260526000002",
+                "dcmNo": "11398555",
+                "eleId": "2",
+                "offset": 4518,
+                "length": 392,
+                "dtd": "dart4.xsd"
+              }
+            ],
+            "bodyNode": {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260526000002",
+              "dcmNo": "11398555",
+              "eleId": "2",
+              "offset": 4518,
+              "length": 392,
+              "dtd": "dart4.xsd"
+            },
+            "dcmNos": [
+              "11398555",
+              "11415373"
+            ],
+            "viewerPaths": [],
+            "attachmentLinks": [],
+            "attachments": [
+              {
+                "rcpNo": "20260602000038",
+                "dcmNo": "11415373",
+                "label": "2026.06.02 [정정] 간이투자설명서(집합투자증권)"
+              },
+              {
+                "rcpNo": "20260526000002",
+                "dcmNo": "11398555",
+                "label": "2026.05.26 간이투자설명서(집합투자증권)"
+              }
+            ],
+            "attachmentLabelCount": 4,
+            "apartSourceMentioned": false
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/12282025a1092038012fd1292ea63f65f869c915ac3f161361c520f4049a16d7.attachment-11398555.html",
+            "hash": "12282025a1092038012fd1292ea63f65f869c915ac3f161361c520f4049a16d7",
+            "bytes": 41535,
+            "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260526000002&dcmNo=11398555",
+            "status": 200
+          },
+          "sections": [
+            {
+              "node": {
+                "text": "간이투자설명서",
+                "rcpNo": "20260526000002",
+                "dcmNo": "11398555",
+                "eleId": "1",
+                "offset": 583,
+                "length": 3727,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 480,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": true,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [],
+                "snippet": "간이투자설명서 (작성기준일 : 2026. 05. 07. ) 미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식) (펀드 코드 : EU526 ) 투자위험등급 2등급 [ 높은 위험 ] 미래에셋자산운용㈜ 는 이 투자신탁의 투자대상 자산의 종류 및 위험도 를 감안하여 2등급 으로 분류하였습니다. 집합투자증권은 「예금자보호법」에 따라 보호되지 않는 실적배당상품 이며, 집합투자기구 재산을 주로 국내 주식 에 투자함으로 주식가격변동위험, 액티브ETF투자위험 등이 있으므로 투자에 신중 을 기하여 주시기 바랍니다. 1 2 3 4 5 6 매우 높은 위험 높은 위험 다소 높은 위험 보통 위험 낮은 위험 매우 낮은 위험 이 요약정보는 '미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식)'의 투자설명서의 내용 중 중요사항을 발췌ㆍ요약한 정보를 담고 있습니다. 따라서자세한 정보가 필요하신 경우에는 동 집합투자증권을 매입하기 이전에 투자설명서를 반드시 참고하시기 바랍니다."
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/3cf1c3006df4f5030924e2f23b3222f761393abf09cc78ab2c4c375b851beb70.body-11398555-1.html",
+                "hash": "3cf1c3006df4f5030924e2f23b3222f761393abf09cc78ab2c4c375b851beb70",
+                "bytes": 4478,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260526000002&dcmNo=11398555&eleId=1&offset=583&length=3727&dtd=dart4.xsd",
+                "status": 200
+              }
+            },
+            {
+              "node": {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260526000002",
+                "dcmNo": "11398555",
+                "eleId": "2",
+                "offset": 4518,
+                "length": 392,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 79,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": false,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [
+                  "/report/download.do?dcmNo=11398555&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8Btiger%EC%BD%94%EC%8A%A4%EB%8B%A5%EC%95%A1%ED%8B%B0%EB%B8%8C%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D%29_20260523_k55301eu5260.pdf"
+                ],
+                "snippet": "[ 본 문 ] 간이투자설명서 간이투자설명서_미래에셋tiger코스닥액티브증권상장지수투자신탁(주식)_20260523_k55301eu5260.pdf"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/6820021833ca338c0a65373ced39fc265a68e3ff23e929bd206b8a4db9dcd045.body-11398555-2.html",
+                "hash": "6820021833ca338c0a65373ced39fc265a68e3ff23e929bd206b8a4db9dcd045",
+                "bytes": 1083,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260526000002&dcmNo=11398555&eleId=2&offset=4518&length=392&dtd=dart4.xsd",
+                "status": 200
+              }
+            }
+          ],
+          "downloads": [
+            {
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "validPdfHeader": true,
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260602000038/111c47c7e3d4f4f68b8c3fe135c4ac1daece619e282e2c791e4f550f607d4328.attachment-11398555.pdf",
+                "hash": "111c47c7e3d4f4f68b8c3fe135c4ac1daece619e282e2c791e4f550f607d4328",
+                "bytes": 209798,
+                "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11398555&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8Btiger%EC%BD%94%EC%8A%A4%EB%8B%A5%EC%95%A1%ED%8B%B0%EB%B8%8C%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%28%EC%A3%BC%EC%8B%9D%29_20260523_k55301eu5260.pdf",
+                "status": 200,
+                "contentType": "application/pdf;charset=UTF-8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "etfCode": "0197X0",
+      "receptionNo": "20260514000166",
+      "reportName": "투자설명서(집합투자증권)(신한SOLSK하이닉스선물단일종목인버스2X증권상장지수신탁[주식-파생형])",
+      "priorCoverOnly": true,
+      "archive": {
+        "zipBytes": 2912,
+        "entryCount": 1,
+        "entryNames": [
+          "20260514000166.xml"
+        ],
+        "documentName": "투자설명서(집합투자증권)",
+        "sectionApartSource": "SOURCE",
+        "sectionTitle": "[ 본 문 ]",
+        "sectionPayloadTextLength": 0,
+        "attachmentLikeXmlReferences": []
+      },
+      "viewerMain": {
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "nodes": [
+            {
+              "text": "투 자 설 명 서",
+              "rcpNo": "20260514000166",
+              "dcmNo": "11377372",
+              "eleId": "1",
+              "offset": 579,
+              "length": 7134,
+              "dtd": "dart4.xsd"
+            },
+            {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260514000166",
+              "dcmNo": "11377372",
+              "eleId": "2",
+              "offset": 7921,
+              "length": 390,
+              "dtd": "dart4.xsd"
+            }
+          ],
+          "bodyNode": {
+            "text": "[ 본 문 ]",
+            "rcpNo": "20260514000166",
+            "dcmNo": "11377372",
+            "eleId": "2",
+            "offset": 7921,
+            "length": 390,
+            "dtd": "dart4.xsd"
+          },
+          "dcmNos": [
+            "11377372",
+            "11377373"
+          ],
+          "viewerPaths": [],
+          "attachmentLinks": [],
+          "attachments": [
+            {
+              "rcpNo": "20260514000166",
+              "dcmNo": "11377373",
+              "label": "2026.05.14 간이투자설명서(집합투자증권)"
+            }
+          ],
+          "attachmentLabelCount": 4,
+          "apartSourceMentioned": false
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000166/035fd6495f907980444203e9f2550bdf7969bbdbd97e39664392e37ddf8544fd.main.html",
+          "hash": "035fd6495f907980444203e9f2550bdf7969bbdbd97e39664392e37ddf8544fd",
+          "bytes": 40138,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000166",
+          "status": 200
+        }
+      },
+      "viewerBody": {
+        "node": {
+          "text": "[ 본 문 ]",
+          "rcpNo": "20260514000166",
+          "dcmNo": "11377372",
+          "eleId": "2",
+          "offset": 7921,
+          "length": 390,
+          "dtd": "dart4.xsd"
+        },
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "textLength": 77,
+          "keywordHits": {
+            "투자목적": false,
+            "운용목적": false,
+            "투자전략": false,
+            "운용전략": false,
+            "비교지수": false,
+            "기초지수": false,
+            "분배금": false,
+            "이익분배": false
+          },
+          "substantiveSignals": {
+            "investmentMandate": false,
+            "benchmark": false,
+            "distribution": false
+          },
+          "downloadPaths": [
+            "/report/download.do?dcmNo=11377372&flNm=%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EC%8B%A0%ED%95%9Csolsk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%EC%84%A0%EB%AC%BC%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%EC%9D%B8%EB%B2%84%EC%8A%A42x%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%5D%282026%EB%85%8405%EC%9B%9414%EC%9D%BC%29.pdf"
+          ],
+          "snippet": "[ 본 문 ] 투자설명서 투자설명서_신한solsk하이닉스선물단일종목인버스2x증권상장지수투자신탁[주식-파생형](2026년05월14일).pdf"
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000166/508a684fa7b9aeab5b643836056cc4541aab3ffbf0dedc8f0e9c5377d46e9721.body-11377372-2.html",
+          "hash": "508a684fa7b9aeab5b643836056cc4541aab3ffbf0dedc8f0e9c5377d46e9721",
+          "bytes": 1171,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260514000166&dcmNo=11377372&eleId=2&offset=7921&length=390&dtd=dart4.xsd",
+          "status": 200
+        }
+      },
+      "attachmentDocuments": [
+        {
+          "attachment": {
+            "rcpNo": "20260514000166",
+            "dcmNo": "11377373",
+            "label": "2026.05.14 간이투자설명서(집합투자증권)"
+          },
+          "access": {
+            "ok": true,
+            "status": 200
+          },
+          "contract": {
+            "nodes": [
+              {
+                "text": "간이투자설명서",
+                "rcpNo": "20260514000166",
+                "dcmNo": "11377373",
+                "eleId": "1",
+                "offset": 581,
+                "length": 4505,
+                "dtd": "dart4.xsd"
+              },
+              {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260514000166",
+                "dcmNo": "11377373",
+                "eleId": "2",
+                "offset": 5294,
+                "length": 394,
+                "dtd": "dart4.xsd"
+              }
+            ],
+            "bodyNode": {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260514000166",
+              "dcmNo": "11377373",
+              "eleId": "2",
+              "offset": 5294,
+              "length": 394,
+              "dtd": "dart4.xsd"
+            },
+            "dcmNos": [
+              "11377373"
+            ],
+            "viewerPaths": [],
+            "attachmentLinks": [],
+            "attachments": [
+              {
+                "rcpNo": "20260514000166",
+                "dcmNo": "11377373",
+                "label": "2026.05.14 간이투자설명서(집합투자증권)"
+              }
+            ],
+            "attachmentLabelCount": 4,
+            "apartSourceMentioned": false
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000166/267dd4ee15a793d8337bd44a9fd416c969be721e04c68ac165adaced752037ff.attachment-11377373.html",
+            "hash": "267dd4ee15a793d8337bd44a9fd416c969be721e04c68ac165adaced752037ff",
+            "bytes": 40074,
+            "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000166&dcmNo=11377373",
+            "status": 200
+          },
+          "sections": [
+            {
+              "node": {
+                "text": "간이투자설명서",
+                "rcpNo": "20260514000166",
+                "dcmNo": "11377373",
+                "eleId": "1",
+                "offset": 581,
+                "length": 4505,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 818,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": true,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": true,
+                  "benchmark": true,
+                  "distribution": false
+                },
+                "downloadPaths": [],
+                "snippet": "간이투자설명서 (작성기준일 : 2026.04.28 ) 신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형] (펀드 코드 : EV596 ) 투자위험등급 1등급[매우 높은 위험] 신한자산운용㈜는 이 투자신탁의 투자대상자산의 종류 및 위험도 를 감안하여 1등급으로 분류 하였습니다. 집합투자증권은 [예금자보호법]에 따라 보호되지 않는 실적배당상품이며, 이 투자신탁은 주식 및 주식관련 파생상품을 법 시행령 제94조제2항제4호에서 규정하는 주된 투자대상자산으로 하며, KRX SK 하이닉스 선물 지수(PR) 를 기초지수로 하여 1좌당 순자산가치의 일간변동률을 기초지수의 일간변동률의 음(陰)의 2배수로 연동하여 투자신탁재산을 운용함을 목적으로 합니다. 따라서 원본손실위험, 시장위험 및 개별위험, 파생상품 투자위험, 상장폐지위험, 추적오차(Tracking Error) 발생위험, 거래 정지에 따른 위험, 단일종목 집중투자에 따른 위험, 단일종목 인버스 레버리지 투자에 따른 원금손실"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000166/52353071e53cf0ec8b339b10a640947738a2dd33b5bea13a568be518643131c6.body-11377373-1.html",
+                "hash": "52353071e53cf0ec8b339b10a640947738a2dd33b5bea13a568be518643131c6",
+                "bytes": 6136,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260514000166&dcmNo=11377373&eleId=1&offset=581&length=4505&dtd=dart4.xsd",
+                "status": 200
+              }
+            },
+            {
+              "node": {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260514000166",
+                "dcmNo": "11377373",
+                "eleId": "2",
+                "offset": 5294,
+                "length": 394,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 81,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": false,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [
+                  "/report/download.do?dcmNo=11377373&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EC%8B%A0%ED%95%9Csolsk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%EC%84%A0%EB%AC%BC%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%EC%9D%B8%EB%B2%84%EC%8A%A42x%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%5D%282026%EB%85%8405%EC%9B%9414%EC%9D%BC%29.pdf"
+                ],
+                "snippet": "[ 본 문 ] 간이투자설명서 간이투자설명서_신한solsk하이닉스선물단일종목인버스2x증권상장지수투자신탁[주식-파생형](2026년05월14일).pdf"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000166/aefd63e55ebf5cb9a3aa4c9f840af2e356ad6738713f63ed4bd6d2e7caef8d57.body-11377373-2.html",
+                "hash": "aefd63e55ebf5cb9a3aa4c9f840af2e356ad6738713f63ed4bd6d2e7caef8d57",
+                "bytes": 1201,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260514000166&dcmNo=11377373&eleId=2&offset=5294&length=394&dtd=dart4.xsd",
+                "status": 200
+              }
+            }
+          ],
+          "downloads": [
+            {
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "validPdfHeader": true,
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260514000166/cf270d9e6f482830a2b8f6be6031f73984a3e12f62c2754ac48e2f5b53d5a373.attachment-11377373.pdf",
+                "hash": "cf270d9e6f482830a2b8f6be6031f73984a3e12f62c2754ac48e2f5b53d5a373",
+                "bytes": 485770,
+                "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11377373&flNm=%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%EC%8B%A0%ED%95%9Csolsk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%EC%84%A0%EB%AC%BC%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%EC%9D%B8%EB%B2%84%EC%8A%A42x%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%A3%BC%EC%8B%9D-%ED%8C%8C%EC%83%9D%ED%98%95%5D%282026%EB%85%8405%EC%9B%9414%EC%9D%BC%29.pdf",
+                "status": 200,
+                "contentType": "application/pdf;charset=UTF-8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "etfCode": "0216K0",
+      "receptionNo": "20260701000098",
+      "reportName": "투자설명서(집합투자증권)(키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합])",
+      "priorCoverOnly": true,
+      "archive": {
+        "zipBytes": 2974,
+        "entryCount": 1,
+        "entryNames": [
+          "20260701000098.xml"
+        ],
+        "documentName": "투자설명서(집합투자증권)",
+        "sectionApartSource": "SOURCE",
+        "sectionTitle": "[ 본 문 ]",
+        "sectionPayloadTextLength": 0,
+        "attachmentLikeXmlReferences": []
+      },
+      "viewerMain": {
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "nodes": [
+            {
+              "text": "투 자 설 명 서",
+              "rcpNo": "20260701000098",
+              "dcmNo": "11457154",
+              "eleId": "1",
+              "offset": 585,
+              "length": 7392,
+              "dtd": "dart4.xsd"
+            },
+            {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260701000098",
+              "dcmNo": "11457154",
+              "eleId": "2",
+              "offset": 8185,
+              "length": 391,
+              "dtd": "dart4.xsd"
+            }
+          ],
+          "bodyNode": {
+            "text": "[ 본 문 ]",
+            "rcpNo": "20260701000098",
+            "dcmNo": "11457154",
+            "eleId": "2",
+            "offset": 8185,
+            "length": 391,
+            "dtd": "dart4.xsd"
+          },
+          "dcmNos": [
+            "11457154",
+            "11457155"
+          ],
+          "viewerPaths": [],
+          "attachmentLinks": [],
+          "attachments": [
+            {
+              "rcpNo": "20260701000098",
+              "dcmNo": "11457155",
+              "label": "2026.07.01 간이투자설명서(집합투자증권)"
+            }
+          ],
+          "attachmentLabelCount": 4,
+          "apartSourceMentioned": false
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260701000098/505d53612e321d79f95385b94fbeaea416f5d021cb52488ef007830add09c6cd.main.html",
+          "hash": "505d53612e321d79f95385b94fbeaea416f5d021cb52488ef007830add09c6cd",
+          "bytes": 40140,
+          "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000098",
+          "status": 200
+        }
+      },
+      "viewerBody": {
+        "node": {
+          "text": "[ 본 문 ]",
+          "rcpNo": "20260701000098",
+          "dcmNo": "11457154",
+          "eleId": "2",
+          "offset": 8185,
+          "length": 391,
+          "dtd": "dart4.xsd"
+        },
+        "access": {
+          "ok": true,
+          "status": 200
+        },
+        "contract": {
+          "textLength": 78,
+          "keywordHits": {
+            "투자목적": false,
+            "운용목적": false,
+            "투자전략": false,
+            "운용전략": false,
+            "비교지수": false,
+            "기초지수": false,
+            "분배금": false,
+            "이익분배": false
+          },
+          "substantiveSignals": {
+            "investmentMandate": false,
+            "benchmark": false,
+            "distribution": false
+          },
+          "downloadPaths": [
+            "/report/download.do?dcmNo=11457154&flNm=3304_%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%ED%82%A4%EC%9B%80kiwoom%EB%AF%B8%EA%B5%AD%EC%9A%B0%EC%A3%BC%ED%85%8C%ED%81%ACtop2%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A950%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9%5D_20260701.pdf"
+          ],
+          "snippet": "[ 본 문 ] 투자설명서 3304_투자설명서_키움kiwoom미국우주테크top2채권혼합50증권상장지수투자신탁[채권혼합]_20260701.pdf"
+        },
+        "raw": {
+          "path": "data/raw/metadata-v2/dart-viewer-canary/20260701000098/b2e4e32c9e34ce0c0063c9818ad456e09d70a6925631475607256ef7d1d75f0a.body-11457154-2.html",
+          "hash": "b2e4e32c9e34ce0c0063c9818ad456e09d70a6925631475607256ef7d1d75f0a",
+          "bytes": 1099,
+          "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260701000098&dcmNo=11457154&eleId=2&offset=8185&length=391&dtd=dart4.xsd",
+          "status": 200
+        }
+      },
+      "attachmentDocuments": [
+        {
+          "attachment": {
+            "rcpNo": "20260701000098",
+            "dcmNo": "11457155",
+            "label": "2026.07.01 간이투자설명서(집합투자증권)"
+          },
+          "access": {
+            "ok": true,
+            "status": 200
+          },
+          "contract": {
+            "nodes": [
+              {
+                "text": "간이투자설명서",
+                "rcpNo": "20260701000098",
+                "dcmNo": "11457155",
+                "eleId": "1",
+                "offset": 587,
+                "length": 4571,
+                "dtd": "dart4.xsd"
+              },
+              {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260701000098",
+                "dcmNo": "11457155",
+                "eleId": "2",
+                "offset": 5366,
+                "length": 395,
+                "dtd": "dart4.xsd"
+              }
+            ],
+            "bodyNode": {
+              "text": "[ 본 문 ]",
+              "rcpNo": "20260701000098",
+              "dcmNo": "11457155",
+              "eleId": "2",
+              "offset": 5366,
+              "length": 395,
+              "dtd": "dart4.xsd"
+            },
+            "dcmNos": [
+              "11457155"
+            ],
+            "viewerPaths": [],
+            "attachmentLinks": [],
+            "attachments": [
+              {
+                "rcpNo": "20260701000098",
+                "dcmNo": "11457155",
+                "label": "2026.07.01 간이투자설명서(집합투자증권)"
+              }
+            ],
+            "attachmentLabelCount": 4,
+            "apartSourceMentioned": false
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/dart-viewer-canary/20260701000098/ca5e55745ccbd76a33d62f6abe690b2d1708c69219b91e6411c695a2e192b46a.attachment-11457155.html",
+            "hash": "ca5e55745ccbd76a33d62f6abe690b2d1708c69219b91e6411c695a2e192b46a",
+            "bytes": 40076,
+            "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000098&dcmNo=11457155",
+            "status": 200
+          },
+          "sections": [
+            {
+              "node": {
+                "text": "간이투자설명서",
+                "rcpNo": "20260701000098",
+                "dcmNo": "11457155",
+                "eleId": "1",
+                "offset": 587,
+                "length": 4571,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 643,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": true,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": true,
+                  "benchmark": true,
+                  "distribution": false
+                },
+                "downloadPaths": [],
+                "snippet": "간이투자설명서 (작성기준일 : 2026.06.01 ) 키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합] (펀드 코드 : EW232 ) 투자위험등급 4등급[ 보통 위험 ] 키움투자자산운용(주)는 이 투자신탁의 투자대상 자산의 종류 및 위험도 등 을 감안하여 4등급 으로 분류하였습니다. 집합투자증권은 예금자보호법에 따라 보호되지 않는 실적배당상품 이며, 국내 채권 에 투자신탁 자산총액의 100% 이하 , 해외 주식 에 투자신탁 자산총액의 50% 미만 을 투자하여 기초지수와 유사한 수익률을 실현하는 것을 목표로 운용 하고 있습니다. 그러나 기초지수 수익률과의 괴리가 발생할 수 있는 추적오차 발생 위험, 주식가격 변동 위험, 금리 변동 위험, 특정종목 집중 투자 위험, 국가위험, 환율변동 위험 등이 있으므로 투자에 신중을 기하여 주시기 바랍니다. 1 2 3 4 5 6 매우 높은 위험 높은 위험 다소 높은 위험 보통 위험 낮은 위험 매우 낮은 위험 이 요약정보는 키움K"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260701000098/1ae40bd13eee6dfd0c941732f578c46901ba3313a23a6bed579964dc0ba0eb69.body-11457155-1.html",
+                "hash": "1ae40bd13eee6dfd0c941732f578c46901ba3313a23a6bed579964dc0ba0eb69",
+                "bytes": 6500,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260701000098&dcmNo=11457155&eleId=1&offset=587&length=4571&dtd=dart4.xsd",
+                "status": 200
+              }
+            },
+            {
+              "node": {
+                "text": "[ 본 문 ]",
+                "rcpNo": "20260701000098",
+                "dcmNo": "11457155",
+                "eleId": "2",
+                "offset": 5366,
+                "length": 395,
+                "dtd": "dart4.xsd"
+              },
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "contract": {
+                "textLength": 82,
+                "keywordHits": {
+                  "투자목적": false,
+                  "운용목적": false,
+                  "투자전략": false,
+                  "운용전략": false,
+                  "비교지수": false,
+                  "기초지수": false,
+                  "분배금": false,
+                  "이익분배": false
+                },
+                "substantiveSignals": {
+                  "investmentMandate": false,
+                  "benchmark": false,
+                  "distribution": false
+                },
+                "downloadPaths": [
+                  "/report/download.do?dcmNo=11457155&flNm=3304_%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%ED%82%A4%EC%9B%80kiwoom%EB%AF%B8%EA%B5%AD%EC%9A%B0%EC%A3%BC%ED%85%8C%ED%81%ACtop2%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A950%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9%5D_20260701.pdf"
+                ],
+                "snippet": "[ 본 문 ] 간이투자설명서 3304_간이투자설명서_키움kiwoom미국우주테크top2채권혼합50증권상장지수투자신탁[채권혼합]_20260701.pdf"
+              },
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260701000098/d9be807205b7680f48b38d6844d2c139c5b5b8f446bdfe64a4f42cd06ff369b2.body-11457155-2.html",
+                "hash": "d9be807205b7680f48b38d6844d2c139c5b5b8f446bdfe64a4f42cd06ff369b2",
+                "bytes": 1129,
+                "url": "https://dart.fss.or.kr/report/viewer.do?rcpNo=20260701000098&dcmNo=11457155&eleId=2&offset=5366&length=395&dtd=dart4.xsd",
+                "status": 200
+              }
+            }
+          ],
+          "downloads": [
+            {
+              "access": {
+                "ok": true,
+                "status": 200
+              },
+              "validPdfHeader": true,
+              "raw": {
+                "path": "data/raw/metadata-v2/dart-viewer-canary/20260701000098/e6b84279de3abcaef388f9112ec00d7eb85d2f641fa7614d489b3a04c77c7036.attachment-11457155.pdf",
+                "hash": "e6b84279de3abcaef388f9112ec00d7eb85d2f641fa7614d489b3a04c77c7036",
+                "bytes": 132421,
+                "url": "https://dart.fss.or.kr/report/download.do?dcmNo=11457155&flNm=3304_%EA%B0%84%EC%9D%B4%ED%88%AC%EC%9E%90%EC%84%A4%EB%AA%85%EC%84%9C_%ED%82%A4%EC%9B%80kiwoom%EB%AF%B8%EA%B5%AD%EC%9A%B0%EC%A3%BC%ED%85%8C%ED%81%ACtop2%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A950%EC%A6%9D%EA%B6%8C%EC%83%81%EC%9E%A5%EC%A7%80%EC%88%98%ED%88%AC%EC%9E%90%EC%8B%A0%ED%83%81%5B%EC%B1%84%EA%B6%8C%ED%98%BC%ED%95%A9%5D_20260701.pdf",
+                "status": 200,
+                "contentType": "application/pdf;charset=UTF-8"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

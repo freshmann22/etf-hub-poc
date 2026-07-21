@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "purpose": "Small, read-only source probe before the 1,141-ETF metadata enrichment run",
+  "networkDefault": false,
+  "hostIntervalMs": 1200,
+  "maxNetworkCanaries": 8,
+  "requiredFields": [
+    "identity",
+    "benchmark",
+    "descriptions",
+    "holdings",
+    "sectorWeights",
+    "countryWeights",
+    "distributionPolicy",
+    "distributionHistory",
+    "fees",
+    "listingDate"
+  ],
+  "sources": [
+    {
+      "sourceId": "issuer_kodex",
+      "issuer": "KODEX",
+      "adapter": "existing_issuer_holdings",
+      "executionPolicy": "network_opt_in",
+      "termsStatus": "robots_allow_verified",
+      "officialUrl": "https://www.samsungfund.com/etf/product/view.do",
+      "host": "www.samsungfund.com"
+    },
+    {
+      "sourceId": "issuer_tiger",
+      "issuer": "TIGER",
+      "adapter": "existing_issuer_holdings",
+      "executionPolicy": "network_opt_in",
+      "termsStatus": "existing_provider_previously_verified",
+      "officialUrl": "https://investments.miraeasset.com/tigeretf/ko/product/search/list.do",
+      "host": "investments.miraeasset.com"
+    },
+    {
+      "sourceId": "issuer_plus",
+      "issuer": "PLUS",
+      "adapter": "discovery_only",
+      "executionPolicy": "blocked_pending_terms",
+      "termsStatus": "pending_terms_and_robots_review",
+      "robotsUrl": "https://www.plusetf.co.kr/robots.txt",
+      "robotsFinding": "User-agent: * / Allow: /",
+      "termsUrl": null,
+      "blockReason": "No site-wide terms of use were found in the official ETF footer; robots permission alone is not treated as terms permission.",
+      "officialUrl": "https://www.plusetf.co.kr/",
+      "host": "www.plusetf.co.kr"
+    },
+    {
+      "sourceId": "issuer_rise",
+      "issuer": "RISE",
+      "adapter": "discovery_only",
+      "executionPolicy": "blocked_pending_terms",
+      "termsStatus": "pending_terms_and_robots_review",
+      "robotsUrl": "https://www.riseetf.co.kr/robots.txt",
+      "robotsFinding": "Disallow: /prod/document/divided and /etf/kor/product/",
+      "termsUrl": null,
+      "blockReason": "Robots contains product-related exclusions and no separate site-wide terms of use were found; endpoint discovery remains blocked.",
+      "officialUrl": "https://www.riseetf.co.kr/",
+      "host": "www.riseetf.co.kr"
+    },
+    {
+      "sourceId": "issuer_sol",
+      "issuer": "SOL",
+      "adapter": "sol_public_json",
+      "executionPolicy": "network_opt_in",
+      "termsStatus": "robots_allow_and_public_noncommercial_terms_verified",
+      "networkCanaryLimit": 2,
+      "robotsUrl": "https://www.soletf.com/robots.txt",
+      "robotsFinding": "User-agent: * / Allow: /",
+      "termsUrl": "https://www.soletf.com/ko/footer/customer01",
+      "termsFinding": "Public service is free; commercial reproduction/distribution without prior consent is prohibited. Probe is restricted to a local, noncommercial PoC.",
+      "endpointTemplate": "https://www.soletf.com/api/fund/pdfList?fund_cd={providerKey}&work_dt={yyyymmdd}",
+      "officialUrl": "https://www.soletf.com/",
+      "host": "www.soletf.com"
+    },
+    {
+      "sourceId": "issuer_kiwoom",
+      "issuer": "KIWOOM",
+      "adapter": "discovery_only",
+      "executionPolicy": "blocked_pending_terms",
+      "termsStatus": "pending_terms_and_robots_review",
+      "robotsUrl": "https://www.kiwoometf.com/robots.txt",
+      "robotsFinding": "Could not verify: TLS certificate chain validation failed (UNABLE_TO_VERIFY_LEAF_SIGNATURE).",
+      "termsUrl": null,
+      "blockReason": "Robots and terms could not be verified safely; no product endpoint request is permitted.",
+      "officialUrl": "https://www.kiwoometf.com/",
+      "host": "www.kiwoometf.com"
+    }
+  ],
+  "canaries": [
+    { "sourceId": "issuer_kodex", "etfCode": "069500", "name": "KODEX 200", "strata": ["domestic", "equity", "broad_index"] },
+    { "sourceId": "issuer_kodex", "etfCode": "122630", "name": "KODEX 레버리지", "strata": ["domestic", "derivative", "leverage"] },
+    { "sourceId": "issuer_kodex", "etfCode": "379810", "name": "KODEX 미국나스닥100", "strata": ["overseas", "equity", "broad_index"] },
+    { "sourceId": "issuer_kodex", "etfCode": "445290", "name": "KODEX 로봇액티브", "strata": ["domestic", "equity", "active", "theme"] },
+    { "sourceId": "issuer_tiger", "etfCode": "102110", "name": "TIGER 200", "strata": ["domestic", "equity", "broad_index"] },
+    { "sourceId": "issuer_tiger", "etfCode": "114820", "name": "TIGER 국채3년", "strata": ["domestic", "bond"] },
+    { "sourceId": "issuer_tiger", "etfCode": "182480", "name": "TIGER 미국MSCI리츠(합성 H)", "strata": ["overseas", "reit", "synthetic", "hedged"] },
+    { "sourceId": "issuer_tiger", "etfCode": "217770", "name": "TIGER 원유선물인버스(H)", "strata": ["commodity", "derivative", "inverse", "hedged"] },
+
+    { "sourceId": "issuer_plus", "etfCode": "269540", "name": "PLUS 미국S&P500(H)", "strata": ["overseas", "equity", "hedged"] },
+    { "sourceId": "issuer_plus", "etfCode": "429760", "name": "PLUS 미국S&P500", "strata": ["overseas", "equity", "broad_index"] },
+    { "sourceId": "issuer_plus", "etfCode": "239660", "name": "PLUS 우량회사채50", "strata": ["domestic", "bond"] },
+    { "sourceId": "issuer_plus", "etfCode": "433880", "name": "PLUS TDF2060액티브 적격", "strata": ["mixed", "active", "tdf"] },
+
+    { "sourceId": "issuer_rise", "etfCode": "114100", "name": "RISE 국고채3년", "strata": ["domestic", "bond"] },
+    { "sourceId": "issuer_rise", "etfCode": "219390", "name": "RISE 미국S&P원유생산기업(합성 H)", "strata": ["overseas", "equity", "synthetic", "hedged"] },
+    { "sourceId": "issuer_rise", "etfCode": "253290", "name": "RISE 헬스케어채권혼합", "strata": ["domestic", "mixed", "sector"] },
+    { "sourceId": "issuer_rise", "etfCode": "275750", "name": "RISE 코스닥150선물인버스", "strata": ["domestic", "derivative", "inverse"] },
+
+    { "sourceId": "issuer_sol", "etfCode": "455850", "providerKey": "210980", "name": "SOL AI반도체소부장", "strata": ["domestic", "equity", "sector"] },
+    { "sourceId": "issuer_sol", "etfCode": "433330", "providerKey": "210930", "name": "SOL 미국S&P500", "strata": ["overseas", "equity", "monthly_distribution"] },
+    { "sourceId": "issuer_sol", "etfCode": "413220", "providerKey": "210896", "name": "SOL 차이나태양광CSI(합성)", "strata": ["overseas", "equity", "synthetic", "theme"] },
+    { "sourceId": "issuer_sol", "etfCode": "436140", "providerKey": "210937", "name": "SOL 종합채권(AA-이상)액티브", "strata": ["domestic", "bond", "active"] },
+
+    { "sourceId": "issuer_kiwoom", "etfCode": "483020", "name": "KIWOOM 의료AI", "strata": ["domestic", "equity", "theme"] },
+    { "sourceId": "issuer_kiwoom", "etfCode": "449770", "name": "KIWOOM 미국S&P500", "strata": ["overseas", "equity", "broad_index"] },
+    { "sourceId": "issuer_kiwoom", "etfCode": "114470", "name": "KIWOOM 국고채3년", "strata": ["domestic", "bond"] },
+    { "sourceId": "issuer_kiwoom", "etfCode": "200250", "name": "KIWOOM 인도Nifty50(합성)", "strata": ["overseas", "equity", "synthetic"] }
+  ]
+}

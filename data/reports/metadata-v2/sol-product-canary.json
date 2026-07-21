@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T06:53:55.308Z",
+  "expectedCount": 4,
+  "attemptedCount": 4,
+  "pass": true,
+  "fieldCoverage": {
+    "productDescription": 4,
+    "investmentObjective": 4,
+    "benchmarkName": 4,
+    "benchmarkDescription": 4,
+    "distributionPolicy": 4
+  },
+  "legacyNumericMetadataAccess": [
+    {
+      "shortCode": "220130",
+      "status": "ok"
+    },
+    {
+      "shortCode": "292500",
+      "status": "ok"
+    }
+  ],
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T06:53:21.761Z",
+      "sourceId": "sol_official_product_html",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "0005D0",
+      "isin": "KR70005D0004",
+      "name": "SOL 전고체배터리&실리콘음극재",
+      "productId": "211079",
+      "sourceName": "SOL 전고체배터리&실리콘음극재",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/211079",
+      "nameMatches": true,
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국내 전고체배터리 및 실리콘음극재 관련 밸류체인 기업에 집중 투자하는 ETF",
+        "investmentObjective": "국내 전고체배터리 및 실리콘음극재 관련 밸류체인 기업에 집중 투자하는 ETF",
+        "benchmarkName": "FnGuide 전고체배터리&실리콘음극재 지수(PR)",
+        "benchmarkDescription": "국내 유가증권 시장 및 코스닥 상장 종목 중 전고체배터리 및 실리콘음극재 키워드와 종목 유사도를 스코어링 후 상위 10종목 선정하여 산출한 지수",
+        "distributionPolicy": "연 1회 지급; - 지급 기준일 : 4월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "officialDocumentLinks": [
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/211079?type=description",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/211079?type=policy",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/211079?type=simple_desc"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fv-des",
+          "snippet": "국내 전고체배터리 및 실리콘음극재 관련 밸류체인 기업에 집중 투자하는 ETF",
+          "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+        },
+        "investmentObjective": {
+          "selector": ".fv-des",
+          "snippet": "국내 전고체배터리 및 실리콘음극재 관련 밸류체인 기업에 집중 투자하는 ETF",
+          "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+        },
+        "benchmarkName": {
+          "selector": ".g-conts dt",
+          "snippet": "FnGuide 전고체배터리&실리콘음극재 지수(PR)",
+          "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+        },
+        "benchmarkDescription": {
+          "selector": ".g-conts dd",
+          "snippet": "국내 유가증권 시장 및 코스닥 상장 종목 중 전고체배터리 및 실리콘음극재 키워드와 종목 유사도를 스코어링 후 상위 10종목 선정하여 산출한 지수",
+          "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+        },
+        "distributionPolicy": {
+          "selector": "dl.def:has(dt)",
+          "snippet": "연 1회 지급; - 지급 기준일 : 4월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+          "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/211079?type=description",
+            "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "집합규약",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/211079?type=policy",
+            "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/211079?type=simple_desc",
+            "rawHash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-product/pages/2026-07-21/0005D0/2026-07-21T06-53-21-761Z.394c9ee231782c8d.html",
+        "hash": "394c9ee231782c8d6d546dac3b6684d4074445565d0bd1b371b2062501e2cc3c",
+        "bytes": 46269,
+        "url": "https://www.soletf.com/ko/fund/etf/211079"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T06:53:21.997Z",
+      "sourceId": "sol_official_product_html",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "220130",
+      "isin": "KR7220130009",
+      "name": "SOL 차이나강소기업CSI500(합성 H)",
+      "productId": "210367",
+      "sourceName": "SOL 차이나강소기업CSI500(합성H)",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/210367",
+      "nameMatches": true,
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "1. 중국 상해 및 심천 시장에 상장된 종목 중 상위 300개 종목을 제외한 500개 중소형주에 분산 투자; 2. 중국 대형주(CSI300) 대비 산업재, 소재 및 IT 비중이 상대적으로 높은 상품",
+        "investmentObjective": "1. 중국 상해 및 심천 시장에 상장된 종목 중 상위 300개 종목을 제외한 500개 중소형주에 분산 투자; 2. 중국 대형주(CSI300) 대비 산업재, 소재 및 IT 비중이 상대적으로 높은 상품",
+        "benchmarkName": "CSI500 Index",
+        "benchmarkDescription": "중국 상해 및 심천 시장에 상장된 종목 중 상위 300개 종목을 제외한 500개 중소형주로 구성된 지수",
+        "distributionPolicy": "연 1회 지급; - 회계기간 종료일 (다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일) - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "officialDocumentLinks": [
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210367?type=description",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210367?type=policy",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210367?type=simple_desc"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fv-des",
+          "snippet": "1. 중국 상해 및 심천 시장에 상장된 종목 중 상위 300개 종목을 제외한 500개 중소형주에 분산 투자; 2. 중국 대형주(CSI300) 대비 산업재, 소재 및 IT 비중이 상대적으로 높은 상품",
+          "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+        },
+        "investmentObjective": {
+          "selector": ".fv-des",
+          "snippet": "1. 중국 상해 및 심천 시장에 상장된 종목 중 상위 300개 종목을 제외한 500개 중소형주에 분산 투자; 2. 중국 대형주(CSI300) 대비 산업재, 소재 및 IT 비중이 상대적으로 높은 상품",
+          "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+        },
+        "benchmarkName": {
+          "selector": ".g-conts dt",
+          "snippet": "CSI500 Index",
+          "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+        },
+        "benchmarkDescription": {
+          "selector": ".g-conts dd",
+          "snippet": "중국 상해 및 심천 시장에 상장된 종목 중 상위 300개 종목을 제외한 500개 중소형주로 구성된 지수",
+          "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+        },
+        "distributionPolicy": {
+          "selector": "dl.def:has(dt)",
+          "snippet": "연 1회 지급; - 회계기간 종료일 (다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일) - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+          "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210367?type=description",
+            "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "집합규약",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210367?type=policy",
+            "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210367?type=simple_desc",
+            "rawHash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-product/pages/2026-07-21/220130/2026-07-21T06-53-21-997Z.37b29281327799ff.html",
+        "hash": "37b29281327799ff5845af43cebdaca3d82870e1590dfeb8623cae745020253d",
+        "bytes": 49364,
+        "url": "https://www.soletf.com/ko/fund/etf/210367"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T06:53:23.387Z",
+      "sourceId": "sol_official_product_html",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "292500",
+      "isin": "KR7292500006",
+      "name": "SOL KRX300",
+      "productId": "210728",
+      "sourceName": "SOL KRX300",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/210728",
+      "nameMatches": true,
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "1. 한국 주식시장을 대표하는 KRX300지수(코스피 및 코스닥 시장 통합); 2. 코스피 및 코스닥 우량기업 300종목 선별 투자",
+        "investmentObjective": "1. 한국 주식시장을 대표하는 KRX300지수(코스피 및 코스닥 시장 통합); 2. 코스피 및 코스닥 우량기업 300종목 선별 투자",
+        "benchmarkName": "KRX300",
+        "benchmarkDescription": "한국거래소(KRX)가 유가증권시장 및 코스닥 시장의 우량기업 300종목을 선정하여 구성한 지수",
+        "distributionPolicy": "연 4회 지급; - 지급 기준일 : 1,4,7,10월의 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "officialDocumentLinks": [
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210728?type=description",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210728?type=policy",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210728?type=simple_desc"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fv-des",
+          "snippet": "1. 한국 주식시장을 대표하는 KRX300지수(코스피 및 코스닥 시장 통합); 2. 코스피 및 코스닥 우량기업 300종목 선별 투자",
+          "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+        },
+        "investmentObjective": {
+          "selector": ".fv-des",
+          "snippet": "1. 한국 주식시장을 대표하는 KRX300지수(코스피 및 코스닥 시장 통합); 2. 코스피 및 코스닥 우량기업 300종목 선별 투자",
+          "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+        },
+        "benchmarkName": {
+          "selector": ".g-conts dt",
+          "snippet": "KRX300",
+          "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+        },
+        "benchmarkDescription": {
+          "selector": ".g-conts dd",
+          "snippet": "한국거래소(KRX)가 유가증권시장 및 코스닥 시장의 우량기업 300종목을 선정하여 구성한 지수",
+          "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+        },
+        "distributionPolicy": {
+          "selector": "dl.def:has(dt)",
+          "snippet": "연 4회 지급; - 지급 기준일 : 1,4,7,10월의 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+          "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210728?type=description",
+            "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "집합규약",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210728?type=policy",
+            "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210728?type=simple_desc",
+            "rawHash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-product/pages/2026-07-21/292500/2026-07-21T06-53-23-387Z.a28fbee7e32102e1.html",
+        "hash": "a28fbee7e32102e17827a1b35dbc88d6c4057da9001410835ffd4bf911fd6ac2",
+        "bytes": 47613,
+        "url": "https://www.soletf.com/ko/fund/etf/210728"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T06:53:24.407Z",
+      "sourceId": "sol_official_product_html",
+      "issuerId": "shinhan-asset-management",
+      "shortCode": "433330",
+      "isin": "KR7433330008",
+      "name": "SOL 미국S&P500",
+      "productId": "210930",
+      "sourceName": "SOL 미국S&P500",
+      "productUrl": "https://www.soletf.com/ko/fund/etf/210930",
+      "nameMatches": true,
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "분배금을 매월 지급하는 국내 최초 미국 S&P500 ETF; S&P500 투자를 통한 자본차익과 함께 월분배금 재투자 전략으로 복리효과 극대화",
+        "investmentObjective": "분배금을 매월 지급하는 국내 최초 미국 S&P500 ETF; S&P500 투자를 통한 자본차익과 함께 월분배금 재투자 전략으로 복리효과 극대화",
+        "benchmarkName": "S&P500 (PR) Index",
+        "benchmarkDescription": "미국 증권시장에서 거래되는 종목 중 시가총액, 유동성, 산업 대표성 등이 반영된 500개 종목으로 구성된 지수",
+        "distributionPolicy": "월 1회 지급; - 지급 기준일 : 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "officialDocumentLinks": [
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210930?type=description",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210930?type=policy",
+          "https://www.soletf.com/api/etf/pds/down/policyDescription/210930?type=simple_desc"
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "selector": ".fv-des",
+          "snippet": "분배금을 매월 지급하는 국내 최초 미국 S&P500 ETF; S&P500 투자를 통한 자본차익과 함께 월분배금 재투자 전략으로 복리효과 극대화",
+          "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+        },
+        "investmentObjective": {
+          "selector": ".fv-des",
+          "snippet": "분배금을 매월 지급하는 국내 최초 미국 S&P500 ETF; S&P500 투자를 통한 자본차익과 함께 월분배금 재투자 전략으로 복리효과 극대화",
+          "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+        },
+        "benchmarkName": {
+          "selector": ".g-conts dt",
+          "snippet": "S&P500 (PR) Index",
+          "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+        },
+        "benchmarkDescription": {
+          "selector": ".g-conts dd",
+          "snippet": "미국 증권시장에서 거래되는 종목 중 시가총액, 유동성, 산업 대표성 등이 반영된 500개 종목으로 구성된 지수",
+          "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+        },
+        "distributionPolicy": {
+          "selector": "dl.def:has(dt)",
+          "snippet": "월 1회 지급; - 지급 기준일 : 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+          "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+        },
+        "officialDocumentLinks": [
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210930?type=description",
+            "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "집합규약",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210930?type=policy",
+            "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+          },
+          {
+            "selector": "a[href*=\"/api/etf/pds/down/policyDescription/\"]",
+            "snippet": "간이투자설명서",
+            "href": "https://www.soletf.com/api/etf/pds/down/policyDescription/210930?type=simple_desc",
+            "rawHash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc"
+          }
+        ]
+      },
+      "raw": {
+        "path": "data/raw/metadata-v2/sol-product/pages/2026-07-21/433330/2026-07-21T06-53-24-407Z.a711ea6bb1f95374.html",
+        "hash": "a711ea6bb1f953749ee3345a16c4a6f34e4fbf143e6664a391bc12b56b2d6ccc",
+        "bytes": 47634,
+        "url": "https://www.soletf.com/ko/fund/etf/210930"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:03:48.634Z",
+  "selected": "hana-asset-management",
+  "candidates": [
+    {
+      "issuer": "korea-investment-management",
+      "brand": "ACE",
+      "inventoryCount": 109,
+      "productCalls": 0,
+      "decision": "blocked_permission_unclear",
+      "evidence": "robots allows public paths but terms body was not reliably observable in prior audit"
+    },
+    {
+      "issuer": "hana-asset-management",
+      "brand": "1Q",
+      "inventoryCount": 26,
+      "decision": "allowed_low_volume_local_poc",
+      "evidence": "public terms pages observable; no general automated product-access prohibition; automated email-address collection alone is prohibited"
+    },
+    {
+      "issuer": "samsung-active-asset-management",
+      "brand": "KoAct",
+      "inventoryCount": 23,
+      "productCalls": 0,
+      "decision": "not_needed_after_selection"
+    },
+    {
+      "issuer": "timefolio-asset-management",
+      "brand": "TIME",
+      "inventoryCount": 19,
+      "productCalls": 0,
+      "decision": "not_needed_after_selection"
+    }
+  ],
+  "guardrails": {
+    "intervalMs": 1200,
+    "sameOriginOnly": true,
+    "authentication": false,
+    "circuitBreaker": [
+      "403",
+      "persistent_429"
+    ]
+  }
+}

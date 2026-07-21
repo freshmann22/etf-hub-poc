@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:12:55.169Z",
+  "allowed": true,
+  "decision": "public_product_detail_allowed_conservative_link_only_documents",
+  "robots": {
+    "url": "https://investments.miraeasset.com/robots.txt",
+    "robotsAllowsProduct": true,
+    "uploadDisallowed": true,
+    "raw": {
+      "retrievedAt": "2026-07-21T07:12:55.171Z",
+      "path": "data/raw/metadata-v2/tiger-product/policy/2026-07-21/2026-07-21T07-12-55-171Z.robots.4a71f1c255014491.raw",
+      "hash": "4a71f1c2550144914b68544f73e88b5da85e2a27c4958d3d6794c6fa68379d37",
+      "url": "https://investments.miraeasset.com/robots.txt"
+    }
+  },
+  "terms": {
+    "url": "https://investments.miraeasset.com/use.do",
+    "automatedCollectionRestrictionFound": false,
+    "raw": {
+      "retrievedAt": "2026-07-21T07:12:55.172Z",
+      "path": "data/raw/metadata-v2/tiger-product/policy/2026-07-21/2026-07-21T07-12-55-172Z.terms.dc7830fd6c7ad70e.raw",
+      "hash": "dc7830fd6c7ad70e9f2db93fb85710bfb67196c43c23a8211162afd50ae2bd3b",
+      "url": "https://investments.miraeasset.com/use.do"
+    }
+  },
+  "constraints": {
+    "hostIntervalMs": 1200,
+    "productPathOnly": "/tigeretf/ko/product/search/detail/index.do",
+    "uploadDocumentsFetched": false,
+    "circuitBreaker": "persistent_429_or_403"
+  }
+}

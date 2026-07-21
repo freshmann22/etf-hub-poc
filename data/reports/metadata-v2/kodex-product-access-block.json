@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T16:06:45.1029724+09:00",
+  "issuer": {
+    "id": "samsung-asset-management",
+    "brand": "KODEX",
+    "inventoryCount": 238
+  },
+  "probeContract": {
+    "purpose": "Revalidate robots and public-use conditions before any KODEX product metadata request",
+    "domain": "www.samsungfund.com",
+    "authenticationUsed": false,
+    "challengeBypassAttempted": false,
+    "cookiesOrBrowserAutomationUsed": false,
+    "policyRequests": 2,
+    "productDetailRequests": 0,
+    "canaryRequests": 0,
+    "fullCollectionRequests": 0
+  },
+  "observations": [
+    {
+      "url": "https://www.samsungfund.com/robots.txt",
+      "httpStatus": 429,
+      "responseBytes": 5567,
+      "responseClass": "cloudflare_managed_challenge",
+      "robotsRulesObservable": false
+    },
+    {
+      "url": "https://www.samsungfund.com/",
+      "httpStatus": 429,
+      "responseBytes": 5495,
+      "responseClass": "cloudflare_managed_challenge",
+      "termsLinksObservable": false
+    }
+  ],
+  "priorEvidence": {
+    "productCanaries": [
+      {
+        "shortCode": "0193W0",
+        "url": "https://www.samsungfund.com/etf/product/view.do?id=2ETFV5",
+        "priorHttpStatus": 429
+      },
+      {
+        "shortCode": "0193T0",
+        "url": "https://www.samsungfund.com/etf/product/view.do?id=2ETFV6",
+        "priorHttpStatus": 429
+      }
+    ],
+    "sourceReport": "data/reports/metadata-v2/official-fallback-probe.json"
+  },
+  "decision": {
+    "status": "blocked_before_product_request",
+    "reason": "robots rules and public-use conditions are not observable because both policy entrypoints return HTTP 429; prior product-detail probes also returned 429",
+    "canaryAllowed": false,
+    "fullCollectionAllowed": false,
+    "converterChanged": false,
+    "canonicalMergeRun": false
+  },
+  "resumeConditions": [
+    "The issuer provides an accessible robots.txt and public-use terms contract that permits the intended local-only collection.",
+    "The issuer provides a documented public product metadata API or explicit collection permission.",
+    "A later low-volume recheck returns ordinary public responses without requiring challenge bypass."
+  ],
+  "prohibitedNextSteps": [
+    "Do not solve or bypass the Cloudflare challenge.",
+    "Do not rotate identities, cookies, user agents, proxies, or IP addresses.",
+    "Do not start four-product canaries or the 238-product collection while this block remains."
+  ]
+}

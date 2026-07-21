@@ -398,24 +398,47 @@ function renderCategory() {
 function renderChips() {
   const container = $('chips');
   const toggle = $('chipsToggle');
+  const panel = container.closest('.filterPanel');
   if (state.watchOnly) {
     container.innerHTML = '';
     container.classList.remove('collapsed');
+    panel?.classList.remove('chips-collapsed');
     toggle.classList.add('hidden');
+    toggle.setAttribute('aria-expanded', 'false');
     return;
   }
   container.innerHTML = (GROUPS[state.group] || [])
     .map((c, i) => `<button class="chip ${c.tagId === state.chip ? 'active' : ''}" data-idx="${i}" role="tab">${esc(c.label)}</button>`)
     .join('');
   container.classList.toggle('collapsed', !state.chipsExpanded);
+  panel?.classList.toggle('chips-collapsed', !state.chipsExpanded);
+  toggle.setAttribute('aria-expanded', String(state.chipsExpanded));
   // 접힘 상태에서 넘칠 때만 '전체 필터' 토글 노출.
   if (state.chipsExpanded) {
     toggle.classList.remove('hidden');
-    toggle.textContent = '접기 −';
+    toggle.textContent = '−';
+    toggle.setAttribute('aria-label', '전체 필터 접기');
   } else if (container.scrollHeight > container.clientHeight + 2) {
     toggle.classList.remove('hidden');
-    toggle.textContent = '전체 필터 +';
+    toggle.textContent = '+';
+    toggle.setAttribute('aria-label', '전체 필터 펼치기');
+
+    // 토글이 별도의 셋째 줄을 만들지 않도록 둘째 줄 우측 공간을 확보한다.
+    const chips = [...container.querySelectorAll('.chip')];
+    const rowTops = [...new Set(chips.map((chip) => chip.offsetTop))].sort((a, b) => a - b);
+    const secondRowTop = rowTops[1];
+    const reservedLeft = container.clientWidth - toggle.offsetWidth - 6;
+    let hideRemainder = false;
+    chips.forEach((chip) => {
+      const beyondSecondRow = secondRowTop !== undefined && chip.offsetTop > secondRowTop + 1;
+      const overlapsToggle = secondRowTop !== undefined
+        && Math.abs(chip.offsetTop - secondRowTop) <= 1
+        && chip.offsetLeft + chip.offsetWidth > reservedLeft;
+      hideRemainder ||= beyondSecondRow || overlapsToggle;
+      chip.classList.toggle('collapsed-hidden', hideRemainder);
+    });
   } else {
+    panel?.classList.remove('chips-collapsed');
     toggle.classList.add('hidden');
   }
 }

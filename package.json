@@ -61,6 +61,7 @@
     "audit:taxonomy-data": "node scripts/tagging/build-data-readiness-report.mjs",
     "review:taxonomy-sample": "npm run audit:taxonomy-data && node scripts/tagging/build-taxonomy-review-sample.mjs",
     "review:taxonomy-sample:v2": "npm run metadata:v2:readiness && node scripts/tagging/build-data-readiness-report.mjs --metadata-v2 && node scripts/tagging/build-taxonomy-review-sample.mjs --metadata-v2",
+    "review:taxonomy-shortlist:v2": "node scripts/tagging/build-taxonomy-human-shortlist.mjs",
     "review:taxonomy-claude": "node scripts/tagging/run-claude-taxonomy-review.mjs",
     "tagging:all": "npm run tagging:prepare && npm run tagging:rules && npm run tagging:enrich-benchmarks && npm run tagging:report"
   }

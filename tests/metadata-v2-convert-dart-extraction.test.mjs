@@ -311,13 +311,12 @@ test('full-batch converter emits only allowlisted semantic fields and preserves 
   assert.deepEqual(output.records[0].fields, {
     'identity.officialName': 'Official legal fund name',
     'product.investmentObjective': 'Track the target index before fees.',
-    'product.benchmark.name': 'KOSPI 200',
     'product.benchmark.description': 'The index represents 200 leading Korean equities.',
     'distribution.schedule': '매월 마지막 영업일',
     'distribution.frequency': 'monthly',
   });
   assert.equal(output.records[0].evidence['product.investmentObjective'].extractionRule, 'explicit_objective_clause');
-  assert.equal(output.records[0].evidence['product.benchmark.name'].extractionRule, 'explicit_benchmark_name_clause');
+  assert.equal(Object.hasOwn(output.records[0].evidence, 'product.benchmark.name'), false);
   assert.equal(output.records[0].evidence['product.benchmark.description'].extractionRule, 'dedicated_benchmark_methodology_clause');
   assert.equal(output.records[0].evidence['distribution.schedule'].extractionRule, 'structured_distribution_schedule');
   assert.equal(output.records[0].evidence['distribution.frequency'].extractionRule, 'explicit_monthly_frequency');
@@ -325,6 +324,11 @@ test('full-batch converter emits only allowlisted semantic fields and preserves 
   assert.notEqual(output.records[0].fields['product.investmentObjective'], 'Unsafe objective window');
   assert.notEqual(output.records[0].fields['product.benchmark.description'], 'Unsafe benchmark window');
   assert.notEqual(output.records[0].fields['distribution.schedule'], 'Unsafe distribution window');
+  assert.deepEqual(output.health.skippedSemanticEvidenceOnlyFields, [{
+    shortCode: '0000D0',
+    inputField: 'benchmarkName',
+    reason: 'full_batch_benchmark_name_is_reconciliation_evidence_only',
+  }]);
 });
 
 test('full-batch validation rejects unsupported or rule-less semantic fields', () => {

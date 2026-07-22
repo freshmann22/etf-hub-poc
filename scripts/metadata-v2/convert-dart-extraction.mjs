@@ -34,10 +34,13 @@ const FULL_BATCH_DIRECT_FIELDS = Object.freeze({
 
 const FULL_BATCH_SEMANTIC_FIELDS = Object.freeze({
   investmentObjective: 'product.investmentObjective',
-  benchmarkName: 'product.benchmark.name',
   benchmarkDescription: 'product.benchmark.description',
   distributionSchedule: 'distribution.schedule',
   distributionFrequency: 'distribution.frequency',
+});
+
+const FULL_BATCH_SEMANTIC_EVIDENCE_ONLY_FIELDS = Object.freeze({
+  benchmarkName: 'full_batch_benchmark_name_is_reconciliation_evidence_only',
 });
 
 const FULL_BATCH_EVIDENCE_ONLY_FIELDS = Object.freeze([
@@ -140,6 +143,7 @@ export function convertDartExtraction(report, { rootDir = ROOT } = {}) {
   const fieldCounts = {};
   const skippedExplicitFlags = [];
   const skippedEvidenceOnlyFields = [];
+  const skippedSemanticEvidenceOnlyFields = [];
 
   for (let index = 0; index < report.rows.length; index += 1) {
     const row = report.rows[index];
@@ -189,6 +193,10 @@ export function convertDartExtraction(report, { rootDir = ROOT } = {}) {
         if (addField(fields, evidence, canonicalField, extracted, { row, name: extracted.rule })) {
           fieldCounts[canonicalField] = (fieldCounts[canonicalField] || 0) + 1;
         }
+      }
+      for (const [inputField, reason] of Object.entries(FULL_BATCH_SEMANTIC_EVIDENCE_ONLY_FIELDS)) {
+        if (!semanticFields[inputField]) continue;
+        skippedSemanticEvidenceOnlyFields.push({ shortCode: row.etfCode, inputField, reason });
       }
       for (const inputField of FULL_BATCH_EVIDENCE_ONLY_FIELDS) {
         if (!extractedFields[inputField]) continue;
@@ -278,6 +286,7 @@ export function convertDartExtraction(report, { rootDir = ROOT } = {}) {
       nullOrAbsentValuesEmittedAsFalseCount: 0,
       skippedExplicitFlags,
       skippedEvidenceOnlyFields,
+      skippedSemanticEvidenceOnlyFields,
       evidenceOnlyRecordCount: records.filter((record) => record.status === 'unavailable').length,
       warnings,
       limitation: report.scaleDecision?.reason ?? null,
@@ -341,7 +350,7 @@ export function validateFullBatchExtraction(report, {
       throw new Error(`DART full-batch row ${row.etfCode} has invalid semanticFields`);
     }
     for (const [field, extracted] of Object.entries(semanticFields || {})) {
-      if (!Object.hasOwn(FULL_BATCH_SEMANTIC_FIELDS, field)) {
+      if (!Object.hasOwn(FULL_BATCH_SEMANTIC_FIELDS, field) && !Object.hasOwn(FULL_BATCH_SEMANTIC_EVIDENCE_ONLY_FIELDS, field)) {
         throw new Error(`DART full-batch row ${row.etfCode} has unsupported semantic field: ${field}`);
       }
       if (!semanticFieldValid(extracted)) {

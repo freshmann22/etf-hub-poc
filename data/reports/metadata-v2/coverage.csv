@@ -2,20 +2,20 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0000D0,0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),partial,68,B,12,12,unknown,n/a,unknown,n/a,eligible,insufficient
 0000H0,0000H0,KODEX 인도Nifty미드캡100,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0000J0,0000J0,PLUS 한화그룹주,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0000Y0,0000Y0,HK 26-12 회사채(AA-이상)액티브,partial,33,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
+0000Y0,0000Y0,HK 26-12 회사채(AA-이상)액티브,partial,43,C,10,10,unknown,n/a,unknown,n/a,eligible,insufficient
 0000Z0,0000Z0,RISE 바이오TOP10액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0001P0,0001P0,마이티 바이오시밀러&CDMO액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0002C0,0002C0,에셋플러스 인도일등기업포커스20액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0004G0,0004G0,1Q 미국배당TOP30,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0005A0,0005A0,KODEX 미국S&P500데일리커버드콜OTM,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0005A0,0005A0,KODEX 미국S&P500데일리커버드콜OTM,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0005C0,0005C0,RISE 미국S&P500엔화노출(합성 H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0005D0,0005D0,SOL 전고체배터리&실리콘음극재,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0005G0,0005G0,IBK K-AI반도체코어테크,partial,48,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
+0005G0,0005G0,IBK K-AI반도체코어테크,partial,58,B,10,10,unknown,n/a,unknown,n/a,eligible,insufficient
 0007F0,0007F0,KODEX 27-12 회사채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0007G0,0007G0,PLUS 글로벌원자력밸류체인,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0007N0,0007N0,아이엠에셋 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0008E0,0008E0,ACE 미국중심중소형제조업,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0008S0,0008S0,TIGER 미국배당다우존스타겟데일리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0007N0,0007N0,아이엠에셋 200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0008E0,0008E0,ACE 미국중심중소형제조업,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0008S0,0008S0,TIGER 미국배당다우존스타겟데일리커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0008T0,0008T0,SOL 화장품TOP3플러스,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0013P0,0013P0,RISE 미국은행TOP10,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0013R0,0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -25,11 +25,11 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0015K0,0015K0,TIGER 미국소비트렌드액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0016X0,0016X0,SOL 중단기회사채(A-이상)액티브,partial,76,A,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0017Y0,0017Y0,1Q 종합채권(AA-이상)액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0018C0,0018C0,PLUS 고배당주위클리고정커버드콜,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0018C0,0018C0,PLUS 고배당주위클리고정커버드콜,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0018Z0,0018Z0,RISE 미국양자컴퓨팅,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0019K0,0019K0,TIME 미국나스닥100채권혼합50액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0019K0,0019K0,TIME 미국나스닥100채권혼합50액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0020H0,0020H0,KoAct 글로벌양자컴퓨팅액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0022T0,0022T0,SOL 국제금커버드콜액티브,partial,76,A,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+0022T0,0022T0,SOL 국제금커버드콜액티브,partial,80,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0023A0,0023A0,SOL 미국양자컴퓨팅TOP10,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0023B0,0023B0,PLUS 미국양자컴퓨팅TOP10,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0025N0,0025N0,TIGER TDF2045 적격,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -37,26 +37,26 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0026S0,0026S0,1Q 미국S&P500,partial,53,C,11,11,unknown,n/a,unknown,n/a,eligible,insufficient
 0028X0,0028X0,KODEX 미국금융테크액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0035T0,0035T0,PLUS 글로벌휴머노이드로봇액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0036D0,0036D0,TIME 미국배당다우존스액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0036D0,0036D0,TIME 미국배당다우존스액티브,partial,39,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0036R0,0036R0,RISE 미국휴머노이드로봇,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0036Z0,0036Z0,RISE 미국천연가스밸류체인,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0038A0,0038A0,KODEX 미국휴머노이드로봇,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0040S0,0040S0,HANARO 글로벌피지컬AI액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0040X0,0040X0,SOL 팔란티어미국채커버드콜혼합,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0040Y0,0040Y0,SOL 팔란티어커버드콜OTM채권혼합,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0040X0,0040X0,SOL 팔란티어미국채커버드콜혼합,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+0040Y0,0040Y0,SOL 팔란티어커버드콜OTM채권혼합,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0041D0,0041D0,KODEX 미국AI소프트웨어TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0041E0,0041E0,KODEX 미국S&P500액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0043B0,0043B0,TIGER 머니마켓액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0043Y0,0043Y0,TIME 차이나AI테크액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0043Y0,0043Y0,TIME 차이나AI테크액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0046A0,0046A0,TIGER 미국초단기(3개월이하)국채,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0046Y0,0046Y0,ACE 미국배당퀄리티,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0047A0,0047A0,TIGER 차이나테크TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0047N0,0047N0,PLUS 차이나AI테크TOP10,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0047P0,0047P0,RISE 테슬라고정테크100,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0047R0,0047R0,RISE 팔란티어고정테크100,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0048J0,0048J0,KODEX 미국머니마켓액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0048J0,0048J0,KODEX 미국머니마켓액티브,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0048K0,0048K0,KODEX 차이나휴머노이드로봇,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0049K0,0049K0,ACE 미국배당퀄리티채권혼합50,partial,33,C,8,8,unknown,n/a,unknown,n/a,eligible,insufficient
+0049K0,0049K0,ACE 미국배당퀄리티채권혼합50,partial,47,C,10,10,unknown,n/a,unknown,n/a,eligible,insufficient
 0049M0,0049M0,ACE 미국배당퀄리티+커버드콜액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0050E0,0050E0,PLUS 미국AI에이전트,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0051A0,0051A0,KoAct 브로드컴밸류체인액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -66,12 +66,12 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0052T0,0052T0,1Q 중단기회사채(A-이상)액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0053L0,0053L0,TIGER 차이나휴머노이드로봇,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0053M0,0053M0,더제이 중소형포커스액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
-0057H0,0057H0,PLUS 미국S&P500미국채혼합50액티브,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0057H0,0057H0,PLUS 미국S&P500미국채혼합50액티브,partial,65,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0060H0,0060H0,TIGER 토탈월드스탁액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0061Z0,0061Z0,RISE 단기특수은행채액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0064K0,0064K0,KODEX 금액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0065G0,0065G0,KODEX 차이나테크TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0066W0,0066W0,SOL 국제금,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0066W0,0066W0,SOL 국제금,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0067V0,0067V0,TIGER 차이나글로벌리더스TOP3+,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0067Y0,0067Y0,TIGER 차이나AI소프트웨어,partial,68,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0068M0,0068M0,KODEX 미국S&P500버퍼6월액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -80,7 +80,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0073X0,0073X0,FOCUS 알리바바미국채커버드콜혼합,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0074K0,0074K0,KoAct K수출핵심기업TOP30액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0078V0,0078V0,PLUS 미국로보택시,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0079X0,0079X0,ACE BYD밸류체인액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0079X0,0079X0,ACE BYD밸류체인액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0080G0,0080G0,KODEX 방산TOP10,partial,48,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
 0080X0,0080X0,SOL 미국S&P500미국채혼합50,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0080Y0,0080Y0,SOL 조선TOP3플러스레버리지,partial,76,A,12,12,unknown,n/a,unknown,n/a,eligible,ready
@@ -90,14 +90,14 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0084D0,0084D0,KIWOOM 미국테크100월간목표헤지액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0084E0,0084E0,KIWOOM 미국대형주500월간목표헤지액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0085N0,0085N0,ACE 미국10년국채액티브(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0085P0,0085P0,ACE 미국10년국채액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0085P0,0085P0,ACE 미국10년국채액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0086B0,0086B0,TIGER 리츠부동산인프라TOP10액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0086C0,0086C0,TIGER 리츠부동산인프라10채권혼합액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
-0087F0,0087F0,ACE 차이나AI빅테크TOP2+액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0087F0,0087F0,ACE 차이나AI빅테크TOP2+액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0088N0,0088N0,WON K-글로벌수급상위,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0089B0,0089B0,PLUS 미국나스닥100미국채혼합50,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0089C0,0089C0,KODEX 미국S&P500변동성확대시커버드콜,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0089D0,0089D0,KODEX 금융고배당TOP10,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0089B0,0089B0,PLUS 미국나스닥100미국채혼합50,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0089C0,0089C0,KODEX 미국S&P500변동성확대시커버드콜,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0089D0,0089D0,KODEX 금융고배당TOP10,partial,44,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0090B0,0090B0,PLUS K방산소부장,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0091C0,0091C0,KODEX 미국10년국채액티브(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0091M0,0091M0,HANARO 27-06 회사채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -108,13 +108,13 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0093B0,0093B0,RISE 엔비디아고정테크100,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0093D0,0093D0,KoAct 팔란티어밸류체인액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0094K0,0094K0,TIGER 28-04 회사채(A+이상)액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0094L0,0094L0,RISE 차이나테크TOP10위클리타겟커버드콜,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0094M0,0094M0,RISE 코리아밸류업위클리고정커버드콜,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0094L0,0094L0,RISE 차이나테크TOP10위클리타겟커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0094M0,0094M0,RISE 코리아밸류업위클리고정커버드콜,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0094X0,0094X0,1Q 샤오미밸류체인액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0097L0,0097L0,KIWOOM 한국고배당&미국AI테크,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0097L0,0097L0,KIWOOM 한국고배당&미국AI테크,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0098F0,0098F0,KODEX 원자력SMR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0098N0,0098N0,PLUS 자사주매입고배당주,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0098Z0,0098Z0,FOCUS 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0098N0,0098N0,PLUS 자사주매입고배당주,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+0098Z0,0098Z0,FOCUS 200,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 0099L0,0099L0,ACE 우량회사채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0100K0,0100K0,KODEX 방산TOP10레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0101N0,0101N0,RISE AI전력인프라,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -123,17 +123,17 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0103T0,0103T0,1Q K소버린AI,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0104G0,0104G0,PLUS K방산레버리지,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0104H0,0104H0,KoAct 미국나스닥채권혼합50액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0104N0,0104N0,TIGER 200타겟위클리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0104P0,0104P0,TIGER 코리아배당다우존스위클리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0104N0,0104N0,TIGER 200타겟위클리커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+0104P0,0104P0,TIGER 코리아배당다우존스위클리커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0105D0,0105D0,SOL 한국AI소프트웨어,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0105E0,0105E0,SOL 코리아고배당,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0107F0,0107F0,KIWOOM 미국고배당&AI테크,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0107F0,0107F0,KIWOOM 미국고배당&AI테크,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0111J0,0111J0,HANARO 증권고배당TOP3플러스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0111P0,0111P0,1Q 미국나스닥100미국채혼합50액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0112X0,0112X0,마이티 200TR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0113D0,0113D0,TIME 글로벌탑픽액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0113D0,0113D0,TIME 글로벌탑픽액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0113G0,0113G0,KoAct 미국바이오헬스케어액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0113P0,0113P0,HK 머니마켓액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0113P0,0113P0,HK 머니마켓액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0114X0,0114X0,RISE 글로벌게임테크TOP3Plus,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0115C0,0115C0,RISE 미국고배당다우존스TOP10,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0115D0,0115D0,KODEX 조선TOP10,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
@@ -141,49 +141,49 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0117L0,0117L0,KODEX 26-12 금융채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0117V0,0117V0,TIGER 코리아AI전력기기TOP3플러스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0118S0,0118S0,SOL 미국넥스트테크TOP10액티브,partial,76,A,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0118Z0,0118Z0,ACE 미국AI테크핵심산업액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0118Z0,0118Z0,ACE 미국AI테크핵심산업액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0119H0,0119H0,KODEX 28-12 회사채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0120J0,0120J0,BNK 카카오그룹포커스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0122W0,0122W0,RISE 26-11 회사채(AA-이상)액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0123G0,0123G0,TIGER 미국AI전력SMR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0123S0,0123S0,HANARO 26-12 은행채(AA+이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0127M0,0127M0,ACE 미국대형가치주액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0127P0,0127P0,ACE 미국대형성장주액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0127M0,0127M0,ACE 미국대형가치주액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0127P0,0127P0,ACE 미국대형성장주액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0127R0,0127R0,RISE 미국AI클라우드인프라,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0127T0,0127T0,KIWOOM 미국S&P500&배당다우존스비중전환,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0127T0,0127T0,KIWOOM 미국S&P500&배당다우존스비중전환,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0127V0,0127V0,KIWOOM 미국S&P500 TOP10&배당다우비중전환,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0128D0,0128D0,PLUS 차이나항셍테크위클리타겟커버드콜,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0128D0,0128D0,PLUS 차이나항셍테크위클리타겟커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0131A0,0131A0,SOL 차이나소비트렌드,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0131V0,0131V0,1Q 미국우주항공테크,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0131W0,0131W0,1Q 단기특수은행채액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0132D0,0132D0,KoAct 글로벌K컬처밸류체인액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0132H0,0132H0,KODEX 미국원자력SMR,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0132K0,0132K0,PLUS 테슬라위클리커버드콜채권혼합,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0132K0,0132K0,PLUS 테슬라위클리커버드콜채권혼합,partial,65,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0133E0,0133E0,TIGER 차이나증권,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0135Y0,0135Y0,IBK 중기종합채권(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0135Y0,0135Y0,IBK 중기종합채권(AA-이상)액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0137V0,0137V0,KIWOOM 미국S&P500모멘텀,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0137W0,0137W0,KIWOOM 미국S&P500&GOLD,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0138D0,0138D0,RISE 동학개미,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0138T0,0138T0,RISE 미국S&P500데일리고정커버드콜,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+0138T0,0138T0,RISE 미국S&P500데일리고정커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0138Y0,0138Y0,PLUS 금채권혼합,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 0139F0,0139F0,TIGER 12월자동연장금융채(AA-이상)액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0139P0,0139P0,ACE 고배당주,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0139P0,0139P0,ACE 고배당주,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0141S0,0141S0,SOL 조선기자재,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0141T0,0141T0,SOL 중기종합채권(AA-이상)액티브,partial,68,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0142D0,0142D0,TIGER 미국AI데이터센터TOP4Plus,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0144L0,0144L0,KODEX 미국성장커버드콜액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0144L0,0144L0,KODEX 미국성장커버드콜액티브,partial,37,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0144M0,0144M0,KODEX 미국드론UAM TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0148J0,0148J0,TIGER 코리아휴머노이드로봇산업,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0150K0,0150K0,KoAct 수소전력ESS인프라액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0151P0,0151P0,RISE 코리아전략산업액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0151S0,0151S0,KODEX 미국AI반도체TOP3플러스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0152E0,0152E0,SOL 배당성향탑픽액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0153K0,0153K0,KODEX 주주환원고배당주,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0153P0,0153P0,ACE 리츠부동산인프라액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-0153X0,0153X0,PLUS 미국고배당주액티브,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0153K0,0153K0,KODEX 주주환원고배당주,partial,44,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0153P0,0153P0,ACE 리츠부동산인프라액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0153X0,0153X0,PLUS 미국고배당주액티브,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0154F0,0154F0,WON 초대형IB&금융지주,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0154H0,0154H0,KoAct 차이나바이오헬스케어액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0155M0,0155M0,ACE 미국SMR원자력TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0155M0,0155M0,ACE 미국SMR원자력TOP10,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0155N0,0155N0,HANARO K휴머노이드테마TOP10,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0162L0,0162L0,KODEX 차이나AI반도체TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0162M0,0162M0,KODEX 금융채1~2년(AA-이상)PLUS액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -191,27 +191,27 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0162Z0,0162Z0,RISE 삼성전자SK하이닉스채권혼합50,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0163Y0,0163Y0,KoAct 코스닥액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0164G0,0164G0,RISE 차이나AI반도체TOP4Plus,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0166N0,0166N0,PLUS 코스닥150액티브,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0166N0,0166N0,PLUS 코스닥150액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0166S0,0166S0,PLUS K제조업핵심기업액티브,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0166T0,0166T0,PLUS 글로벌저작권핵심기업액티브,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0166T0,0166T0,PLUS 글로벌저작권핵심기업액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0167A0,0167A0,SOL AI반도체TOP2플러스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0167B0,0167B0,SOL 200타겟위클리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0167Z0,0167Z0,KODEX 미국우주항공,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0168K0,0168K0,TIGER 기술이전바이오액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0172V0,0172V0,1Q 은액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0172Y0,0172Y0,ACE K수출핵심TOP10산업액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0172Y0,0172Y0,ACE K수출핵심TOP10산업액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 0173Y0,0173Y0,KODEX 미국AI광통신네트워크,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0174B0,0174B0,KoAct 글로벌AI메모리반도체액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0174J0,0174J0,DAISHIN343 오피스리츠플러스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0174R0,0174R0,KIWOOM 미국성장다우존스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0174J0,0174J0,DAISHIN343 오피스리츠플러스,partial,62,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+0174R0,0174R0,KIWOOM 미국성장다우존스,partial,25,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0176E0,0176E0,RISE 미국AI전력인프라액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0176P0,0176P0,FOCUS AI반도체위클리고정커버드콜,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0176P0,0176P0,FOCUS AI반도체위클리고정커버드콜,partial,62,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0177A0,0177A0,WON 두산그룹포커스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0177N0,0177N0,KODEX 삼성전자SK하이닉스채권혼합50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0177R0,0177R0,TIGER 반도체TOP10커버드콜액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
-0177X0,0177X0,ACE K휴머노이드로봇산업TOP2+,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0177R0,0177R0,TIGER 반도체TOP10커버드콜액티브,partial,72,B,13,13,unknown,n/a,unknown,n/a,unknown,n/a
+0177X0,0177X0,ACE K휴머노이드로봇산업TOP2+,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0178H0,0178H0,IBK 미국AI TOP10국채혼합50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0180V0,0180V0,ACE 미국우주테크액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0180V0,0180V0,ACE 미국우주테크액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0181B0,0181B0,HANARO 미국AI메모리반도체TOP4+,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0181L0,0181L0,SOL 미국우주항공TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0182R0,0182R0,1Q K반도체TOP2+,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -219,25 +219,25 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0183J0,0183J0,TIGER 미국우주테크,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0183V0,0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0184E0,0184E0,1Q 200채권혼합50액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-0184L0,0184L0,PLUS 중기종합채권(A-이상)액티브,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0184L0,0184L0,PLUS 중기종합채권(A-이상)액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0184N0,0184N0,PLUS 은채권혼합,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 0184V0,0184V0,UNICORN K바이오액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-0185L0,0185L0,TIME 글로벌휴머노이드로봇산업액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+0185L0,0185L0,TIME 글로벌휴머노이드로봇산업액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0186L0,0186L0,KoAct 미국로봇피지컬AI액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0186S0,0186S0,1Q 코스닥150채권혼합50액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0189B0,0189B0,TIGER 은액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0189Z0,0189Z0,DAISHIN343 금융&지주고배당,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0189Z0,0189Z0,DAISHIN343 금융&지주고배당,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0190C0,0190C0,RISE 현대차고정피지컬AI,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0190G0,0190G0,KODEX 반도체타겟위클리커버드콜,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0190G0,0190G0,KODEX 반도체타겟위클리커버드콜,partial,44,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0190M0,0190M0,KIWOOM 미국AI테크하이베타,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0190Y0,0190Y0,TIGER 구글밸류체인,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0191B0,0191B0,MIDAS 코스닥액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0191M0,0191M0,마이티 5월만기자동연장특수채(AAA)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0191S0,0191S0,IBK 코스닥150,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0191S0,0191S0,IBK 코스닥150,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0191W0,0191W0,HANARO 중기종합채권(A-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0192L0,0192L0,RISE SK하이닉스단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0192M0,0192M0,RISE 삼성전자단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0192S0,0192S0,SOL 코스피200채권혼합50,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0192S0,0192S0,SOL 코스피200채권혼합50,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0192T0,0192T0,SOL 코스닥TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0192Z0,0192Z0,TIGER 중기종합채권(A-이상)액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0193G0,0193G0,KoAct 코스피액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
@@ -246,19 +246,19 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0193M0,0193M0,BNK 27-12 특수채(AAA이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 0193T0,0193T0,KODEX SK하이닉스단일종목레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 0193W0,0193W0,KODEX 삼성전자단일종목레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0194M0,0194M0,ACE 삼성전자단일종목레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0194N0,0194N0,KIWOOM 삼성전자선물단일종목레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0194R0,0194R0,KIWOOM SK하이닉스선물단일종목레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0194T0,0194T0,ACE SK하이닉스단일종목레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0194M0,0194M0,ACE 삼성전자단일종목레버리지,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0194N0,0194N0,KIWOOM 삼성전자선물단일종목레버리지,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0194R0,0194R0,KIWOOM SK하이닉스선물단일종목레버리지,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0194T0,0194T0,ACE SK하이닉스단일종목레버리지,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 0195R0,0195R0,TIGER 삼성전자단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0195S0,0195S0,TIGER SK하이닉스단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0197W0,0197W0,SOL SK하이닉스단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0197X0,0197X0,SOL SK하이닉스선물단일종목인버스2X,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0198A0,0198A0,KIWOOM 코스닥150커버드콜액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0198A0,0198A0,KIWOOM 코스닥150커버드콜액티브,partial,62,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0198B0,0198B0,1Q 삼성전자선물단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0198D0,0198D0,1Q SK하이닉스선물단일종목레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-0199C0,0199C0,ACE 고배당주Plus커버드콜액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-0203D0,0203D0,PLUS 200위클리커버드콜채권혼합,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0199C0,0199C0,ACE 고배당주Plus커버드콜액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+0203D0,0203D0,PLUS 200위클리커버드콜채권혼합,partial,65,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0203R0,0203R0,WON 중단기종합채권(A-이상)액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0203S0,0203S0,WON 삼성전자현대차채권혼합50,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0204D0,0204D0,KODEX 현대차로보틱스밸류체인TOP3플러스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -266,13 +266,13 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 0206G0,0206G0,1Q 현대차기아채권혼합50,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 0207G0,0207G0,SOL 우주항공밸류체인,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 0207Z0,0207Z0,KIWOOM 미국우주데이터센터인프라,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0208N0,0208N0,IBK 코스피액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0208N0,0208N0,IBK 코스피액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 0209D0,0209D0,KODEX 전고체배터리ESS TOP2플러스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0209Z0,0209Z0,ACE 코리아AI전력TOP10,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0210A0,0210A0,ACE K반도체TOP2+,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-0210E0,0210E0,PLUS 200커버드콜액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+0209Z0,0209Z0,ACE 코리아AI전력TOP10,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0210A0,0210A0,ACE K반도체TOP2+,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+0210E0,0210E0,PLUS 200커버드콜액티브,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 0216K0,0216K0,KIWOOM 미국우주테크TOP2채권혼합50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-0216Z0,0216Z0,ACE K방산TOP5+,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+0216Z0,0216Z0,ACE K방산TOP5+,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 069500,069500,KODEX 200,partial,48,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
 069660,069660,KIWOOM 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 091160,091160,KODEX 반도체,partial,48,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
@@ -290,7 +290,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 104520,104520,KIWOOM 블루칩,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 104530,104530,KIWOOM 코리아고배당,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 105010,105010,TIGER 라틴35,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-105190,105190,ACE 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+105190,105190,ACE 200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 105780,105780,RISE 5대그룹주,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 108450,108450,ACE 삼성그룹섹터가중,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 108590,108590,TREX 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
@@ -313,7 +313,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 130730,130730,KIWOOM 단기자금,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 131890,131890,ACE 삼성그룹동일가중,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 132030,132030,KODEX 골드선물(H),partial,33,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
-133690,133690,TIGER 미국나스닥100,partial,68,B,12,12,unknown,n/a,unknown,n/a,eligible,insufficient
+133690,133690,TIGER 미국나스닥100,partial,72,B,13,13,unknown,n/a,unknown,n/a,eligible,insufficient
 136340,136340,RISE 중기우량회사채,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 137610,137610,TIGER 농산물선물Enhanced(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 138230,138230,KIWOOM 미국달러선물,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -340,17 +340,17 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 143850,143850,TIGER 미국S&P500선물(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 143860,143860,TIGER 헬스케어,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 144600,144600,KODEX 은선물(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-145670,145670,ACE 인버스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-145850,145850,TREX 펀더멘탈 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+145670,145670,ACE 인버스,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+145850,145850,TREX 펀더멘탈 200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 147970,147970,TIGER 모멘텀,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 148020,148020,RISE 200,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 148070,148070,KIWOOM 국고채10년,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 150460,150460,TIGER 중국소비테마,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-152100,152100,PLUS 200,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+152100,152100,PLUS 200,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 152380,152380,KODEX 국채선물10년,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-152500,152500,ACE 레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+152500,152500,ACE 레버리지,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 152870,152870,파워 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-153130,153130,KODEX 단기채권,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+153130,153130,KODEX 단기채권,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 153270,153270,KIWOOM 코스피100,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 156080,156080,KODEX MSCI Korea,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 157450,157450,TIGER 단기통안채,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -358,10 +358,10 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 157500,157500,TIGER 증권,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 159800,159800,마이티 코스피100,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 160580,160580,TIGER 구리실물,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-161510,161510,PLUS 고배당주,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-166400,166400,TIGER 200커버드콜OTM,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+161510,161510,PLUS 고배당주,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+166400,166400,TIGER 200커버드콜OTM,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 167860,167860,KIWOOM 국고채10년레버리지,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-168580,168580,ACE 중국본토CSI300,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+168580,168580,ACE 중국본토CSI300,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 169950,169950,KODEX 차이나A50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 174350,174350,TIGER 로우볼,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 174360,174360,RISE 중국본토대형주CSI100,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -393,7 +393,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 211900,211900,KODEX 코리아배당성장,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 213610,213610,KODEX 삼성그룹밸류,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 213630,213630,PLUS 미국다우존스고배당주(합성 H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-214980,214980,KODEX 단기채권PLUS,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+214980,214980,KODEX 단기채권PLUS,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 215620,215620,HK S&P코리아로우볼,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 217770,217770,TIGER 원유선물인버스(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 217780,217780,TIGER 차이나CSI300인버스(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -430,7 +430,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 234310,234310,RISE V&S셀렉트밸류,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 236350,236350,TIGER 인도니프티50레버리지(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 237350,237350,KODEX 코스피100,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-237370,237370,KODEX 코리아배당성장채권혼합,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+237370,237370,KODEX 코리아배당성장채권혼합,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 237440,237440,TIGER 경기방어채권혼합,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 238670,238670,PLUS 스마트베타Quality채권혼합,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 238720,238720,ACE 일본Nikkei225(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -453,7 +453,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 251340,251340,KODEX 코스닥150선물인버스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 251350,251350,KODEX MSCI선진국,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 251590,251590,PLUS 고배당저변동50,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-251600,251600,PLUS 고배당주채권혼합,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+251600,251600,PLUS 고배당주채권혼합,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 252000,252000,TIGER 200동일가중,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 252400,252400,RISE 200선물레버리지,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 252410,252410,RISE 200선물인버스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -507,7 +507,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 272580,272580,TIGER 단기채권액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 272910,272910,ACE 중장기국공채액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 273130,273130,KODEX 종합채권(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-273140,273140,KODEX 단기변동금리부채권액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+273140,273140,KODEX 단기변동금리부채권액티브,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 275280,275280,KODEX 모멘텀주,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 275290,275290,KODEX 가치주,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 275300,275300,KODEX 우량주,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
@@ -517,7 +517,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 276650,276650,RISE 글로벌테크놀로지(합성 H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 276970,276970,KODEX 미국S&P500배당귀족커버드콜(합성 H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 276990,276990,KODEX 글로벌로봇(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-277540,277540,ACE 아시아TOP50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+277540,277540,ACE 아시아TOP50,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 277630,277630,TIGER 코스피,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 277640,277640,TIGER 코스피대형주,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 277650,277650,TIGER 코스피중형주,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -534,16 +534,16 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 281990,281990,RISE 중소형고배당,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 282000,282000,RISE 국고채3년선물인버스,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 283580,283580,KODEX 차이나CSI300,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-284430,284430,KODEX 200미국채혼합50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+284430,284430,KODEX 200미국채혼합50,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 284980,284980,RISE 200금융,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 285690,285690,FOCUS ESG리더스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 287180,287180,PLUS 미국나스닥테크,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 289040,289040,KODEX MSCI KOREA ESG유니버설,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 289250,289250,TIGER MSCI KOREA ESG유니버설,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 289260,289260,TIGER MSCI KOREA ESG리더스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-289480,289480,TIGER 200커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+289480,289480,TIGER 200커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 289670,289670,PLUS 국채선물10년,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-290080,290080,RISE 200고배당커버드콜ATM,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+290080,290080,RISE 200고배당커버드콜ATM,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 290130,290130,RISE ESG사회책임투자,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 291130,291130,ACE MSCI멕시코(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 291620,291620,KIWOOM 코스닥150선물인버스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -557,7 +557,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 292500,292500,SOL KRX300,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 292560,292560,TIGER 일본엔선물,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 292770,292770,KODEX 국채선물3년인버스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-293180,293180,HANARO 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+293180,293180,HANARO 200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 294400,294400,KIWOOM 200TR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 295000,295000,RISE 국채선물10년,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 295020,295020,RISE 국채선물10년인버스,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -572,8 +572,8 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 302450,302450,RISE 코스피,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 304660,304660,KODEX 미국30년국채울트라선물(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 304670,304670,KODEX 미국30년국채울트라선물인버스(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-304760,304760,HANARO KRX300,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-304770,304770,HANARO 코스닥150,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+304760,304760,HANARO KRX300,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+304770,304770,HANARO 코스닥150,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 304780,304780,HANARO 200선물레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 304940,304940,KODEX 미국나스닥100선물(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 305050,305050,ACE 코스피,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
@@ -586,34 +586,34 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 307510,307510,TIGER 의료기기,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 307520,307520,TIGER 지주회사,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 308620,308620,KODEX 미국10년국채선물,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-309230,309230,ACE 미국WideMoat동일가중,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+309230,309230,ACE 미국WideMoat동일가중,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 310080,310080,RISE 중국MSCI China(H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 310960,310960,TIGER 200TR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 310970,310970,TIGER MSCI Korea TR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 314250,314250,KODEX 미국빅테크10(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-314700,314700,HANARO 농업융복합산업,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+314700,314700,HANARO 농업융복합산업,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 315270,315270,TIGER 200커뮤니케이션서비스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 315930,315930,KODEX Top5PlusTR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 315960,315960,RISE 대형고배당10TR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-316300,316300,ACE 싱가포르리츠,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-316670,316670,KIWOOM 코스닥150,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+316300,316300,ACE 싱가포르리츠,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+316670,316670,KIWOOM 코스닥150,partial,62,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 319640,319640,TIGER 골드선물(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 321410,321410,KODEX 멀티에셋하이인컴(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 322400,322400,HANARO e커머스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-322410,322410,HANARO K고배당,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+322410,322410,HANARO K고배당,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 325010,325010,KODEX 성장주,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 325020,325020,KODEX 배당가치,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 326230,326230,RISE 내수주플러스,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 326240,326240,RISE IT플러스,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 328370,328370,PLUS 코스피TR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 329200,329200,TIGER 리츠부동산인프라,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-329650,329650,KODEX TRF3070,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-329660,329660,KODEX TRF5050,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-329670,329670,KODEX TRF7030,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+329650,329650,KODEX TRF3070,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+329660,329660,KODEX TRF5050,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+329670,329670,KODEX TRF7030,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 329750,329750,TIGER 미국달러단기채권액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 332500,332500,ACE 200TR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-332610,332610,PLUS 미국단기회사채(AAA~A),partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
-332620,332620,PLUS 미국장기우량회사채,partial,61,B,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+332610,332610,PLUS 미국단기회사채(AAA~A),partial,65,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+332620,332620,PLUS 미국장기우량회사채,partial,65,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 332930,332930,HANARO 200TR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 332940,332940,HANARO MSCI Korea TR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 334690,334690,RISE 팔라듐선물(H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -634,7 +634,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 359210,359210,KODEX 코스피TR,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 360140,360140,KODEX 200롱코스닥150숏선물,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 360150,360150,KODEX 코스닥150롱코스피200숏선물,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-360200,360200,ACE 미국S&P500,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+360200,360200,ACE 미국S&P500,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 360750,360750,TIGER 미국S&P500,partial,68,B,12,12,unknown,n/a,unknown,n/a,eligible,insufficient
 361580,361580,RISE 200TR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 363510,363510,SOL KIS단기통안채,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -647,12 +647,12 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 364990,364990,TIGER 게임TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 365000,365000,TIGER 인터넷TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 365040,365040,TIGER AI코리아그로스액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
-365780,365780,ACE 국고채10년,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-367380,367380,ACE 미국나스닥100,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+365780,365780,ACE 국고채10년,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+367380,367380,ACE 미국나스닥100,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 367740,367740,HANARO Fn5G산업,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 367760,367760,RISE 네트워크인프라,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 367770,367770,RISE 수소경제테마,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-368190,368190,HANARO Fn K-뉴딜디지털플러스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+368190,368190,HANARO Fn K-뉴딜디지털플러스,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 368590,368590,RISE 미국나스닥100,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 368680,368680,KODEX K-뉴딜디지털플러스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 371150,371150,RISE 차이나항셍테크,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -660,7 +660,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 371450,371450,TIGER 글로벌클라우드컴퓨팅INDXX,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 371460,371460,TIGER 차이나전기차SOLACTIVE,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 371470,371470,TIGER 차이나바이오테크SOLACTIVE,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-371870,371870,ACE 차이나항셍테크,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+371870,371870,ACE 차이나항셍테크,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 372330,372330,KODEX 차이나항셍테크,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 373490,373490,KODEX 코리아혁신성장액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 373790,373790,KIWOOM 미국방어배당성장나스닥,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -669,22 +669,22 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 375770,375770,KODEX 탄소효율그린뉴딜,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 376410,376410,TIGER 탄소효율그린뉴딜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 377990,377990,TIGER Fn신재생에너지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-379780,379780,RISE 미국S&P500,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+379780,379780,RISE 미국S&P500,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 379790,379790,RISE 유로스탁스50(H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 379800,379800,KODEX 미국S&P500,partial,33,C,8,8,unknown,n/a,unknown,n/a,eligible,insufficient
 379810,379810,KODEX 미국나스닥100,partial,33,C,8,8,unknown,n/a,unknown,n/a,eligible,insufficient
 380340,380340,ACE 코리아AI테크핵심산업,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 381170,381170,TIGER 미국테크TOP10 INDXX,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 381180,381180,TIGER 미국필라델피아반도체나스닥,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-381560,381560,HANARO Fn전기&수소차,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-381570,381570,HANARO Fn친환경에너지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+381560,381560,HANARO Fn전기&수소차,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+381570,381570,HANARO Fn친환경에너지,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 385510,385510,KODEX 신재생에너지액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 385520,385520,KODEX 자율주행액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 385540,385540,RISE 종합채권(A-이상)액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 385550,385550,RISE 단기채권알파액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 385560,385560,RISE KIS국고채30년Enhanced,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 385590,385590,ACE ESG액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-385600,385600,ACE 2차전지&친환경차액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+385600,385600,ACE 2차전지&친환경차액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 385710,385710,TIME K이노베이션액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 385720,385720,TIME 코스피액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 387270,387270,TIGER 글로벌이노베이션액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -693,16 +693,16 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 388420,388420,RISE 비메모리반도체액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 390390,390390,KODEX 미국반도체,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 390400,390400,KODEX 미국스마트모빌리티S&P,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-391600,391600,ACE 미국친환경그린테마,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-391670,391670,HK 베스트일레븐액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+391600,391600,ACE 미국친환경그린테마,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+391670,391670,HK 베스트일레븐액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 394660,394660,TIGER 글로벌자율주행&전기차SOLACTIVE,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 394670,394670,TIGER 글로벌리튬&2차전지SOLACTIVE(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 395150,395150,KODEX 웹툰&드라마,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 395160,395160,KODEX AI반도체TOP2플러스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 395170,395170,KODEX Top10동일가중,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-395270,395270,HANARO Fn K-반도체,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-395280,395280,HANARO Fn K-게임,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-395290,395290,HANARO Fn K-POP&미디어,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+395270,395270,HANARO Fn K-반도체,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+395280,395280,HANARO Fn K-게임,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+395290,395290,HANARO Fn K-POP&미디어,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 395750,395750,PLUS ESG가치주액티브,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 395760,395760,PLUS ESG성장주액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 396500,396500,TIGER 반도체TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -719,9 +719,9 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 401470,401470,KODEX 메타버스액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 401590,401590,HANARO 글로벌탄소배출권선물ICE(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 402460,402460,HANARO Fn K-메타버스MZ,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-402970,402970,ACE 미국배당다우존스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+402970,402970,ACE 미국배당다우존스,partial,39,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 403790,403790,MIDAS 코스피액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-404120,404120,TIME K신재생에너지액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+404120,404120,TIME K신재생에너지액티브,partial,40,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 404260,404260,KODEX 기후변화솔루션,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 404540,404540,TIGER KRX기후변화솔루션,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 404650,404650,SOL KRX기후변화솔루션,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -731,8 +731,8 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 407830,407830,에셋플러스 글로벌플랫폼액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 409810,409810,KODEX 미국나스닥100선물인버스(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 409820,409820,KODEX 미국나스닥100레버리지(합성 H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-410870,410870,TIME K컬처액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-411060,411060,ACE KRX금현물,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+410870,410870,TIME K컬처액티브,partial,40,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+411060,411060,ACE KRX금현물,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 411420,411420,KODEX 미국나스닥AI테크액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 411540,411540,SOL 200 Top10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 411860,411860,KIWOOM 독일DAX,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -741,12 +741,12 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 412770,412770,TIGER 글로벌AI플랫폼액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 413220,413220,SOL 차이나태양광CSI(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 413930,413930,WON AI ESG액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
-414270,414270,ACE 글로벌자율주행액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+414270,414270,ACE 글로벌자율주행액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 414780,414780,TIGER 차이나과창판STAR50(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 415340,415340,KODEX 차이나과창판STAR50(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 415760,415760,SOL 차이나육성산업액티브(합성),partial,68,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 415920,415920,PLUS 글로벌희토류&전략자원생산기업,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-416090,416090,ACE 중국과창판STAR50,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+416090,416090,ACE 중국과창판STAR50,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 417450,417450,RISE 글로벌수소경제,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 417630,417630,TIGER KEDI혁신기업ESG30,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 418660,418660,TIGER 미국나스닥100레버리지(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -754,7 +754,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 419420,419420,KODEX 미국클린에너지나스닥,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 419430,419430,KODEX 차이나2차전지MSCI(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 419650,419650,PLUS 글로벌수소&차세대연료전지,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-419890,419890,KIWOOM 단기채권ESG액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+419890,419890,KIWOOM 단기채권ESG액티브,partial,25,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 421320,421320,PLUS 우주항공,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 422420,422420,RISE 2차전지액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 423160,423160,KODEX KOFR금리액티브(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -769,34 +769,34 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 428560,428560,KODEX 미국ETF산업Top10 Indxx,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 429000,429000,TIGER 미국S&P500배당귀족,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 429010,429010,TIGER 미국나스닥넥스트100,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-429740,429740,PLUS K리츠,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-429760,429760,PLUS 미국S&P500,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+429740,429740,PLUS K리츠,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+429760,429760,PLUS 미국S&P500,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 429980,429980,SOL 한국형글로벌전기차&2차전지액티브,partial,68,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-430500,430500,KIWOOM 물가채KIS,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+430500,430500,KIWOOM 물가채KIS,partial,25,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 432600,432600,RISE 국채선물3년,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 432840,432840,HANARO 미국S&P500,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 433220,433220,에셋플러스 글로벌대장장이액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 433250,433250,UNICORN R&D 액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 433330,433330,SOL 미국S&P500,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-433500,433500,ACE 원자력TOP10,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+433500,433500,ACE 원자력TOP10,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 433880,433880,PLUS TDF2060액티브 적격,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 433970,433970,KODEX TDF2030액티브 적격,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 433980,433980,KODEX TDF2040액티브 적격,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 434060,434060,KODEX TDF2050액티브 적격,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 434730,434730,HANARO 원자력iSelect,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-434960,434960,DAISHIN343 K200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-435040,435040,ACE 글로벌브랜드TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+434960,434960,DAISHIN343 K200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+435040,435040,ACE 글로벌브랜드TOP10,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 435420,435420,TIGER 미국나스닥100채권혼합50,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 435530,435530,KIWOOM TDF2030액티브 적격,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 435540,435540,KIWOOM TDF2040액티브 적격,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 435550,435550,KIWOOM TDF2050액티브 적격,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 436140,436140,SOL 종합채권(AA-이상)액티브,partial,68,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-437070,437070,KODEX 아시아달러채권ESG플러스액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+437070,437070,KODEX 아시아달러채권ESG플러스액티브,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 437080,437080,KODEX 미국종합채권ESG액티브(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 437350,437350,RISE 미국단기투자등급회사채액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 437370,437370,RISE 글로벌농업경제,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-438080,438080,ACE 미국S&P500미국채혼합50액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-438100,438100,ACE 미국나스닥100미국채혼합50액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+438080,438080,ACE 미국S&P500미국채혼합50액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+438100,438100,ACE 미국나스닥100미국채혼합50액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 438320,438320,TIGER 차이나항셍테크레버리지(합성 H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 438330,438330,TIGER 우량회사채액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 438560,438560,SOL 국고채3년,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -807,7 +807,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 439870,439870,KODEX 국고채30년액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 440340,440340,TIGER 글로벌멀티에셋TIF액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 440640,440640,ACE 단기채권알파액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-440650,440650,ACE 미국달러단기채권액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+440650,440650,ACE 미국달러단기채권액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 440910,440910,WON 미국우주항공방산,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 441540,441540,HANARO Fn조선해운,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 441640,441640,KODEX 미국배당커버드콜액티브,partial,33,C,9,9,unknown,n/a,unknown,n/a,eligible,insufficient
@@ -829,8 +829,8 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 446690,446690,KODEX 아시아AI반도체exChina액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 446700,446700,RISE 배터리 리사이클링,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 446720,446720,SOL 미국배당다우존스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-446770,446770,ACE 글로벌반도체TOP4 Plus,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-447430,447430,ACE 주주환원가치주액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+446770,446770,ACE 글로벌반도체TOP4 Plus,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+447430,447430,ACE 주주환원가치주액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 447620,447620,SOL 미국TOP5채권혼합50,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 447660,447660,PLUS 애플채권혼합,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 447770,447770,TIGER 테슬라채권혼합Fn,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -839,8 +839,8 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 448300,448300,TIGER 미국나스닥100(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 448330,448330,KODEX 삼성전자채권혼합,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 448490,448490,HANARO 32-10 국고채액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-448540,448540,ACE 엔비디아채권혼합,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-448570,448570,FOCUS AI코리아액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+448540,448540,ACE 엔비디아채권혼합,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+448570,448570,FOCUS AI코리아액티브,partial,50,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 448630,448630,RISE 삼성그룹Top3채권혼합,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 449170,449170,TIGER KOFR금리액티브(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 449180,449180,KODEX 미국S&P500(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -876,7 +876,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 453850,453850,ACE 미국30년국채액티브(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 453870,453870,TIGER 인도니프티50,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 453950,453950,TIGER TSMC파운드리밸류체인,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-454180,454180,KIWOOM 차이나내수소비TOP CSI,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+454180,454180,KIWOOM 차이나내수소비TOP CSI,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 454320,454320,HANARO CAPEX설비투자iSelect,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 454780,454780,KIWOOM 종합채권(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 455030,455030,KODEX 미국달러SOFR금리액티브(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -891,7 +891,7 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 456610,456610,TIGER 미국달러SOFR금리액티브(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 456680,456680,TIGER 차이나전기차레버리지(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 456880,456880,ACE 미국달러SOFR금리(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-457480,457480,ACE 테슬라밸류체인액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+457480,457480,ACE 테슬라밸류체인액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 457690,457690,KODEX 33-06 국고채액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 457700,457700,KODEX 53-09 국고채액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 457930,457930,BNK 미래전략기술액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
@@ -900,16 +900,16 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 458210,458210,KIWOOM CD금리액티브(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 458250,458250,TIGER 미국30년국채스트립액티브(합성 H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 458260,458260,TIGER 미국투자등급회사채액티브(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-458730,458730,TIGER 미국배당다우존스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-458750,458750,TIGER 미국배당다우존스타겟커버드콜1호,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-458760,458760,TIGER 미국배당다우존스타겟커버드콜2호,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+458730,458730,TIGER 미국배당다우존스,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+458750,458750,TIGER 미국배당다우존스타겟커버드콜1호,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+458760,458760,TIGER 미국배당다우존스타겟커버드콜2호,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 459560,459560,KODEX 테슬라밸류체인FactSet,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 459580,459580,KODEX CD금리액티브(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 459750,459750,RISE 글로벌주식분산액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 459790,459790,KIWOOM 미국성장기업30액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 460270,460270,KIWOOM 미국달러SOFR금리액티브(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 460660,460660,RISE 미국S&P배당킹,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-460960,460960,ACE 글로벌인컴TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+460960,460960,ACE 글로벌인컴TOP10,partial,39,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 461340,461340,HANARO 글로벌생성형AI액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 461450,461450,KODEX 코스닥글로벌,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 461460,461460,PLUS 국고채10년액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
@@ -933,14 +933,14 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 463690,463690,KODEX 미국S&P500커뮤니케이션,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 464240,464240,KIWOOM 26-09회사채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 464310,464310,TIGER 글로벌AI&로보틱스 INDXX,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-464470,464470,PLUS 미국채30년액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+464470,464470,PLUS 미국채30년액티브,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 464600,464600,SOL 자동차소부장Fn,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 464610,464610,SOL 의료기기소부장Fn,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 464920,464920,PLUS 일본반도체소부장,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 464930,464930,TIGER 글로벌혁신블루칩TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 465330,465330,RISE 2차전지TOP10,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 465350,465350,RISE 2차전지TOP10인버스(합성),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-465580,465580,ACE 미국빅테크TOP7 Plus,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+465580,465580,ACE 미국빅테크TOP7 Plus,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 465610,465610,ACE 미국빅테크TOP7 Plus레버리지(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 465620,465620,ACE 미국빅테크TOP7 Plus인버스(합성),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 465660,465660,TIGER 일본반도체FACTSET,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -957,9 +957,9 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 469050,469050,RISE 미국반도체NYSE(H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 469060,469060,RISE 미국반도체NYSE,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 469070,469070,RISE AI&로봇,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-469150,469150,ACE AI반도체TOP3+,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-469160,469160,ACE 일본반도체,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-469170,469170,ACE 포스코그룹포커스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+469150,469150,ACE AI반도체TOP3+,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+469160,469160,ACE 일본반도체,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+469170,469170,ACE 포스코그룹포커스,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 469530,469530,RISE 미국달러선물인버스,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 469790,469790,KIWOOM 코리아테크TOP10,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 469830,469830,SOL 초단기채권액티브,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
@@ -975,33 +975,33 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 472170,472170,TIGER 미국테크TOP10채권혼합,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 472720,472720,TRUSTON 주주가치액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 472830,472830,RISE 미국30년국채커버드콜(합성),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-472840,472840,IBK 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+472840,472840,IBK 200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 472870,472870,RISE 미국30년국채엔화노출(합성 H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-472920,472920,HK 종합채권(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+472920,472920,HK 종합채권(AA-이상)액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 473290,473290,KODEX 26-12 회사채(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 473330,473330,SOL 미국30년국채커버드콜(합성),partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-473440,473440,ACE 11월만기자동연장회사채AA-이상액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-473460,473460,KODEX 미국서학개미,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-473490,473490,KIWOOM 글로벌AI반도체,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-473590,473590,ACE 미국주식베스트셀러,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+473440,473440,ACE 11월만기자동연장회사채AA-이상액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+473460,473460,KODEX 미국서학개미,partial,25,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+473490,473490,KIWOOM 글로벌AI반도체,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+473590,473590,ACE 미국주식베스트셀러,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 473640,473640,HANARO 글로벌금채굴기업,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-474220,474220,TIGER 미국테크TOP10타겟커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+474220,474220,TIGER 미국테크TOP10타겟커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 474390,474390,SOL 국고채30년액티브,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 474590,474590,WON 반도체밸류체인액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 474800,474800,KIWOOM 미국원유에너지기업,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 474920,474920,에셋플러스 차이나일등기업포커스10액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-475050,475050,ACE KPOP포커스,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+475050,475050,ACE KPOP포커스,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 475070,475070,KoAct 글로벌친환경전력인프라액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-475080,475080,KODEX 테슬라커버드콜채권혼합액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-475260,475260,ACE 2월만기자동연장회사채AA-이상액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-475270,475270,ACE 5월만기자동연장회사채AA-이상액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-475280,475280,ACE 8월만기자동연장회사채AA-이상액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+475080,475080,KODEX 테슬라커버드콜채권혼합액티브,partial,37,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+475260,475260,ACE 2월만기자동연장회사채AA-이상액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+475270,475270,ACE 5월만기자동연장회사채AA-이상액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+475280,475280,ACE 8월만기자동연장회사채AA-이상액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 475300,475300,SOL 반도체전공정,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 475310,475310,SOL 반도체후공정,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 475350,475350,RISE 버크셔포트폴리오TOP10,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 475380,475380,RISE 글로벌리얼티인컴,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 475630,475630,TIGER CD1년금리액티브(합성),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-475720,475720,RISE 200위클리커버드콜,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+475720,475720,RISE 200위클리커버드콜,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 476000,476000,UNICORN 포스트IPO액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 476030,476030,SOL 미국나스닥100,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 476070,476070,KODEX 글로벌비만치료제TOP2 Plus,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -1011,9 +1011,9 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 476550,476550,TIGER 미국30년국채커버드콜액티브(H),partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 476690,476690,TIGER 글로벌비만치료제TOP2Plus,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 476750,476750,ACE 미국30년국채엔화노출액티브(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-476760,476760,ACE 미국30년국채액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+476760,476760,ACE 미국30년국채액티브,partial,39,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 476800,476800,KODEX 한국부동산리츠인프라,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-476850,476850,KoAct 배당성장액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+476850,476850,KoAct 배당성장액티브,partial,80,A,13,13,unknown,n/a,unknown,n/a,unknown,n/a
 477050,477050,PLUS 머니마켓액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 477080,477080,RISE CD금리액티브(합성),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 477490,477490,에셋플러스 글로벌일등기업포커스10액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
@@ -1034,17 +1034,17 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 481060,481060,KODEX 미국30년국채타겟커버드콜(합성 H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 481180,481180,SOL 미국AI소프트웨어,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 481190,481190,SOL 미국테크TOP10,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-481340,481340,RISE 미국30년국채액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+481340,481340,RISE 미국30년국채액티브,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 481430,481430,RISE 국고채10년액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 482030,482030,KoAct 반도체&2차전지핵심소재액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
-482730,482730,TIGER 미국S&P500타겟데일리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+482730,482730,TIGER 미국S&P500타겟데일리커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 483020,483020,KIWOOM 의료AI,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 483030,483030,KIWOOM 미국블록버스터바이오테크의약품+,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-483280,483280,KODEX 미국AI테크TOP10타겟커버드콜,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-483290,483290,KODEX 미국배당다우존스타겟커버드콜,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-483320,483320,ACE 엔비디아밸류체인액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-483330,483330,ACE 마이크로소프트밸류체인액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-483340,483340,ACE 구글밸류체인액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+483280,483280,KODEX 미국AI테크TOP10타겟커버드콜,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+483290,483290,KODEX 미국배당다우존스타겟커버드콜,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+483320,483320,ACE 엔비디아밸류체인액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+483330,483330,ACE 마이크로소프트밸류체인액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+483340,483340,ACE 구글밸류체인액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 483570,483570,KCGI 미국S&P500 TOP10,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 484790,484790,KODEX 미국30년국채액티브(H),partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 484880,484880,SOL 금융지주플러스고배당,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -1053,17 +1053,17 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 485690,485690,RISE 미국AI밸류체인TOP3Plus,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 485810,485810,TIME 글로벌바이오액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 486240,486240,DAISHIN343 AI반도체&인프라액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-486290,486290,TIGER 미국나스닥100타겟데일리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+486290,486290,TIGER 미국나스닥100타겟데일리커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 486450,486450,SOL 미국AI전력인프라,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 486830,486830,HANARO 머니마켓액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 487130,487130,KoAct AI인프라액티브,partial,68,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 487230,487230,KODEX 미국AI전력핵심인프라,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 487240,487240,KODEX AI전력핵심설비,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-487340,487340,ACE 머니마켓액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+487340,487340,ACE 머니마켓액티브,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 487750,487750,BNK 온디바이스AI,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 487910,487910,ACE 인도컨슈머파워액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 487920,487920,ACE 인도시장대표BIG5그룹액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-487950,487950,KODEX 대만테크고배당다우존스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+487950,487950,KODEX 대만테크고배당다우존스,partial,37,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 488080,488080,TIGER 반도체TOP10레버리지,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 488200,488200,KIWOOM K-2차전지북미공급망,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 488210,488210,KIWOOM K-반도체북미공급망,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
@@ -1075,44 +1075,44 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 488980,488980,SOL 26-12 회사채(AA-이상)액티브,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 489000,489000,PLUS 일본엔화초단기국채(합성),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 489010,489010,PLUS 글로벌AI인프라,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-489030,489030,PLUS 고배당주위클리커버드콜,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+489030,489030,PLUS 고배당주위클리커버드콜,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 489250,489250,KODEX 미국배당다우존스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 489290,489290,WON 미국빌리어네어,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 489860,489860,KIWOOM 글로벌전력GRID인프라,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-490090,490090,TIGER 미국AI빅테크10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+490090,490090,TIGER 미국AI빅테크10,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 490330,490330,KoAct 미국치매&뇌질환치료제액티브,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 490480,490480,SOL K방산,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-490490,490490,SOL 미국배당미국채혼합50,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-490590,490590,RISE 미국AI밸류체인데일리고정커버드콜,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-490600,490600,RISE 미국배당100데일리고정커버드콜,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+490490,490490,SOL 미국배당미국채혼합50,partial,57,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+490590,490590,RISE 미국AI밸류체인데일리고정커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+490600,490600,RISE 미국배당100데일리고정커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 491010,491010,TIGER 글로벌AI전력인프라액티브,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 491090,491090,KODEX 미국테크TOP3플러스,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 491220,491220,PLUS 200TR,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 491230,491230,PLUS 국공채머니마켓액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 491510,491510,파워 K-주주가치액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 491610,491610,1Q CD금리액티브(합성),partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-491620,491620,RISE 미국테크100데일리고정커버드콜,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+491620,491620,RISE 미국테크100데일리고정커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 491630,491630,RISE 미국반도체인버스(합성 H),partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-491700,491700,HK 200,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+491700,491700,HK 200,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 491820,491820,HANARO 전력설비투자,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 491830,491830,TIGER 미국AI반도체팹리스,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 492500,492500,1Q 현대차그룹채권(A+이상)&국고통안,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 493420,493420,SOL 미국배당다우존스2호,partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-493810,493810,TIGER 미국AI빅테크10타겟데일리커버드콜,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+493810,493810,TIGER 미국AI빅테크10타겟데일리커버드콜,partial,72,B,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 494180,494180,TIME 글로벌소비트렌드액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-494210,494210,SOL 미국500타겟데일리커버드콜액티브,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+494210,494210,SOL 미국500타겟데일리커버드콜액티브,partial,57,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 494220,494220,UNICORN SK하이닉스밸류체인액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-494300,494300,KODEX 미국나스닥100데일리커버드콜OTM,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+494300,494300,KODEX 미국나스닥100데일리커버드콜OTM,partial,29,D,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 494310,494310,KODEX 반도체레버리지,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-494330,494330,ACE 라이프자산주주가치액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-494340,494340,ACE 글로벌AI맞춤형반도체,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+494330,494330,ACE 라이프자산주주가치액티브,partial,50,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
+494340,494340,ACE 글로벌AI맞춤형반도체,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 494410,494410,PLUS 미국S&P500성장주,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-494420,494420,PLUS 미국배당증가성장주데일리커버드콜,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
+494420,494420,PLUS 미국배당증가성장주데일리커버드콜,partial,65,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 494670,494670,TIGER 조선TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 494840,494840,TIGER 미국방산TOP10,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 494890,494890,KODEX 200액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
-495040,495040,PLUS 코리아밸류업,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
-495050,495050,RISE 코리아밸류업,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
+495040,495040,PLUS 코리아밸류업,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
+495050,495050,RISE 코리아밸류업,partial,80,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 495060,495060,TIME 코리아밸류업액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 495230,495230,KoAct 코리아밸류업액티브,partial,76,A,12,12,unknown,n/a,unknown,n/a,unknown,n/a
 495330,495330,1Q 코리아밸류업,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
@@ -1123,19 +1123,19 @@ universeKey,shortCode,name,status,score,grade,provenanceSelected,provenanceBacke
 496020,496020,WON 전단채플러스액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 496080,496080,TIGER 코리아밸류업,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 496090,496090,KIWOOM 코리아밸류업,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-496120,496120,ACE 코리아밸류업,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+496120,496120,ACE 코리아밸류업,partial,50,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 496130,496130,TRUSTON 코리아밸류업액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 496770,496770,PLUS 글로벌방산,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
-497510,497510,ACE 글로벌빅파마,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-497520,497520,ACE 일라이릴리밸류체인,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
+497510,497510,ACE 글로벌빅파마,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+497520,497520,ACE 일라이릴리밸류체인,partial,35,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
 497570,497570,TIGER 미국필라델피아AI반도체나스닥,partial,68,B,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 497780,497780,KoAct 미국천연가스인프라액티브,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 497880,497880,SOL CD금리&머니마켓액티브,partial,53,C,9,9,unknown,n/a,unknown,n/a,unknown,n/a
 498050,498050,HANARO 바이오코리아액티브,partial,40,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 498180,498180,파워 종합채권(AA-이상)액티브,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
 498270,498270,KIWOOM 미국양자컴퓨팅,partial,25,D,6,6,unknown,n/a,unknown,n/a,unknown,n/a
-498400,498400,KODEX 200타겟위클리커버드콜,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
-498410,498410,KODEX 금융고배당TOP10타겟위클리커버드콜,partial,40,C,7,7,unknown,n/a,unknown,n/a,unknown,n/a
+498400,498400,KODEX 200타겟위클리커버드콜,partial,44,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
+498410,498410,KODEX 금융고배당TOP10타겟위클리커버드콜,partial,44,C,8,8,unknown,n/a,unknown,n/a,unknown,n/a
 498610,498610,RISE 인도디지털성장,partial,61,B,10,10,unknown,n/a,unknown,n/a,unknown,n/a
 498860,498860,RISE 코리아금융고배당,partial,76,A,11,11,unknown,n/a,unknown,n/a,unknown,n/a
 499150,499150,SOL 미국S&P500엔화노출(H),partial,53,C,10,10,unknown,n/a,unknown,n/a,unknown,n/a

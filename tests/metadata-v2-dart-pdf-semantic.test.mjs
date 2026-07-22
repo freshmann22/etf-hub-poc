@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -149,4 +150,42 @@ test('semantic evidence retains the selected page and is not a fixed 500-charact
   assert.equal(result.fields.investmentObjective.value, objective);
   assert.equal(result.fields.investmentObjective.snippet, objective);
   assert.ok(result.fields.investmentObjective.snippet.length < 500);
+});
+
+test('completed DART artifacts preserve exact semantic counts and conservative promotion policy', () => {
+  const extraction = JSON.parse(readFileSync(resolve(ROOT, 'data/reports/metadata-v2/dart-pdf-batch-extraction.json'), 'utf8'));
+  const sourceResult = JSON.parse(readFileSync(resolve(ROOT, 'data/reports/metadata-v2/dart-pdf-batch-source-result.json'), 'utf8'));
+  const semanticCounts = {};
+  for (const row of extraction.rows) {
+    for (const [field, item] of Object.entries(row.extraction.semanticFields || {})) {
+      semanticCounts[field] = (semanticCounts[field] || 0) + 1;
+      assert.equal(typeof item.rule, 'string');
+      assert.ok(item.rule.length > 0);
+      assert.ok(item.sourceEntries?.every((entry) => /^pdf:p\d+$/.test(entry)));
+      assert.equal(item.snippet, item.value);
+      assert.ok(item.snippet.length < 700);
+    }
+  }
+  assert.equal(extraction.rows.length, 911);
+  assert.deepEqual(extraction.metrics, { parsedCount: 911, pendingOcrCount: 0 });
+  assert.deepEqual(semanticCounts, {
+    investmentObjective: 242,
+    benchmarkName: 451,
+    distributionFrequency: 89,
+    benchmarkDescription: 45,
+    distributionSchedule: 28,
+  });
+  assert.equal(sourceResult.records.length, 911);
+  assert.ok(sourceResult.records.every((record) => record.status === 'ok'));
+  assert.equal(sourceResult.quarantine.count, 0);
+  assert.deepEqual(sourceResult.health.fieldCounts, {
+    'identity.officialName': 910,
+    'product.investmentObjective': 242,
+    'distribution.frequency': 89,
+    'product.benchmark.description': 45,
+    'distribution.schedule': 28,
+  });
+  assert.equal(sourceResult.health.skippedEvidenceOnlyFields.length, 2809);
+  assert.equal(sourceResult.health.skippedSemanticEvidenceOnlyFields.length, 451);
+  assert.ok(sourceResult.records.every((record) => !Object.hasOwn(record.fields, 'product.benchmark.name')));
 });

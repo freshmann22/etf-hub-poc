@@ -1,6 +1,6 @@
 # ETF 메타데이터 보강 작업 중단 보고서
 
-## 최신 완료 체크포인트 · 2026-07-22 15:49 KST
+## 최신 완료 체크포인트 · 2026-07-22 20:37 KST
 
 이 문서의 기존 중단 기록에서 재개한 OpenDART PDF 배치는 수집·전수 추출·보수적 변환·병합·후속 검증까지 완료됐다. 현재 실행 중인 collector/extractor는 없으며, raw PDF와 append-only 원장은 그대로 보존됐다.
 
@@ -11,24 +11,25 @@
 | unresolved / 미시도 | 0 / 0 |
 | malformed ledger | 0 |
 | 전수 추출 parsed / pending OCR | 911 / 0 |
-| source-result records | 911 (ok 910, unavailable 1) |
-| canonical에 추가한 DART 후보 | 공식명 910 |
-| canonical 선택값 변경 | 0 |
+| source-result records | 911 (ok 911) |
+| canonical에 추가한 DART 후보 | 공식명 910 · 투자목적 242 · 지수설명 45 · 분배일정 28 · 분배주기 89 |
+| canonical 선택값 변경 | 결측 채움 216 · 기존값 overwrite 0 |
 | merge quarantine | 0 |
-| metadata-v2 테스트 | 162 / 162 통과 |
+| metadata-v2 테스트 | 173 / 173 통과 |
 | taxonomy v2 표본 | 200개 고유, A 91 / B 109 |
 
-전수 PDF의 500자 근거 창은 별도 의미 감사를 거쳤다. `productDescription` 893건, `investmentObjective` 891건, `benchmarkDescription` 911건, `distributionPolicy` 114건은 각각 전략·위험·성과표·분배재원 문맥이 섞여 canonical 필드 계약과 일치하지 않았다. 총 2,809건은 extraction report에 evidence-only로 보존하고 source-result에서는 승격하지 않았다. 이 결정으로 기존 공식 상품 페이지의 선택값을 DART 창으로 덮어쓰는 일을 차단했다.
+전수 PDF의 500자 근거 창은 별도 의미 감사를 거쳤다. `productDescription` 893건, `investmentObjective` 891건, `benchmarkDescription` 911건, `distributionPolicy` 114건은 각각 전략·위험·성과표·분배재원 문맥이 섞여 canonical 필드 계약과 일치하지 않았다. 총 2,809건은 extraction report에 evidence-only로 계속 보존한다. 그와 별도로 clause-level semantic parser가 완결 절만 재추출했고, 투자목적 242건·지수설명 45건·분배일정 28건·분배주기 89건을 allowlist로 변환했다. 지수명 451건은 기존 publicdata 값이 전건 존재하므로 reconciliation evidence-only로 유지했다.
 
 주요 완료 산출물:
 
 - `data/reports/metadata-v2/dart-pdf-batch-extraction.json`: 911건 전수 추출, OCR 0, PDF 계보·해시 검증 완료
-- `data/reports/metadata-v2/dart-pdf-batch-source-result.json`: 공식명 910건만 merge 후보, 1건 unavailable, evidence-only 제외 사유 포함
-- `data/normalized/etf-metadata-v2.json`: DART 공식명 candidate 910건 추가, 기존 선택값·1,141 shape 불변
+- `data/reports/metadata-v2/dart-pdf-batch-source-result.json`: 911건 모두 ok, 공식명과 검증된 semantic allowlist만 merge 후보, quarantine 0
+- `data/normalized/etf-metadata-v2.json`: DART 결측 216건 채움(투자목적 107·지수설명 13·분배일정 7·분배주기 89), 기존값 overwrite 0, 1,141 shape 불변
 - `tmp/metadata-v2-pre-dart-20260722-153948/`: 병합 전 canonical/quarantine/coverage/report 백업과 SHA-256 manifest
+- `tmp/metadata-v2-pre-dart-semantic-20260722-203543/`: semantic 병합 직전 canonical/quarantine 백업
 - `data/reports/etf-taxonomy-review-sample-v2.json`: 현재 canonical 해시 기준 200개 표본
 
-다음 후속 작업은 네트워크 수집 재개가 아니라 **clause-level semantic parser** 구현이다. 목적·전략·비교지수·분배 문장에서 완결된 절만 추출하고 음성 규칙·실물 PDF 회귀·표본 감사를 통과한 값만 별도 source-result로 승격해야 한다. 기존 2,809개 원문 창을 그대로 병합해서는 안 된다.
+다음 후속 작업은 네트워크 수집 재개가 아니라 **semantic 결과의 사람 표본 감사와 taxonomy v2 200개 리뷰**다. readiness는 A 91 / B 457 / C 340 / D 253, enriched 910 / thin 231로 재생성됐다. 기존 2,809개 원문 창은 앞으로도 직접 병합하지 않으며, 새 필드는 동일한 clause allowlist·음성 규칙·실물 회귀를 통과해야 한다.
 
 아래 11:26 및 2026-07-21 기록은 네트워크 중단 당시의 역사적 체크포인트로 보존한다.
 

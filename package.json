@@ -43,6 +43,8 @@
     "metadata:v2:merge:products": "node scripts/metadata-v2/merge-source-results.mjs --source=data/reports/metadata-v2/product-metadata-source-result.json",
     "metadata:v2:merge:distributions": "node scripts/metadata-v2/merge-source-results.mjs --source=data/reports/metadata-v2/distribution-history-source-result.json",
     "metadata:v2:progress:dart": "node scripts/metadata-v2/build-dart-pdf-progress.mjs",
+    "metadata:v2:extract:dart": "node scripts/metadata-v2/run-dart-pdf-extraction.mjs",
+    "metadata:v2:convert:dart": "node scripts/metadata-v2/convert-dart-extraction.mjs",
     "metadata:v2:test": "node --test tests/metadata-v2/*.test.mjs tests/metadata-v2-*.test.mjs",
     "metadata:all": "npm run metadata:master && npm run metadata:ingest-csv && npm run metadata:sample && npm run metadata:normalize && npm run metadata:report",
     "tagging:inspect": "node scripts/tagging/inspect-tagging.mjs",
@@ -58,6 +60,7 @@
     "tagging:report": "node scripts/tagging/build-tagging-report.mjs",
     "audit:taxonomy-data": "node scripts/tagging/build-data-readiness-report.mjs",
     "review:taxonomy-sample": "npm run audit:taxonomy-data && node scripts/tagging/build-taxonomy-review-sample.mjs",
+    "review:taxonomy-sample:v2": "npm run metadata:v2:readiness && node scripts/tagging/build-data-readiness-report.mjs --metadata-v2 && node scripts/tagging/build-taxonomy-review-sample.mjs --metadata-v2",
     "review:taxonomy-claude": "node scripts/tagging/run-claude-taxonomy-review.mjs",
     "tagging:all": "npm run tagging:prepare && npm run tagging:rules && npm run tagging:enrich-benchmarks && npm run tagging:report"
   }

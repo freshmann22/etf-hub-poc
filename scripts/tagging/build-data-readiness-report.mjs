@@ -1,19 +1,23 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { pathToFileURL } from 'node:url';
+import { adaptCanonicalV2ForTaxonomy, applyCoverageV2ToReadinessRows } from './lib/taxonomy-v2-bridge.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const USE_V2 = process.argv.includes('--metadata-v2');
 const INPUTS = {
   master: 'data/normalized/etf-master.json',
-  metadata: 'data/normalized/etf-metadata.json',
+  metadata: USE_V2 ? 'data/normalized/etf-metadata-v2.json' : 'data/normalized/etf-metadata.json',
   holdings: 'data/normalized/etf-holdings.json',
+  coverage: 'data/reports/metadata-v2/coverage.json',
   indexNames: 'data/tagging/etf-universe-index-names.json',
   tagScores: 'data/tagging/etf-tag-scores.json',
 };
 const OUTPUTS = {
-  json: 'data/reports/etf-taxonomy-data-readiness.json',
-  csv: 'reports/tagging/etf-taxonomy-data-readiness.csv',
-  html: 'reports/tagging/ETF_TAXONOMY_DATA_READINESS.html',
+  json: USE_V2 ? 'data/reports/etf-taxonomy-data-readiness-v2.json' : 'data/reports/etf-taxonomy-data-readiness.json',
+  csv: USE_V2 ? 'reports/tagging/etf-taxonomy-data-readiness-v2.csv' : 'reports/tagging/etf-taxonomy-data-readiness.csv',
+  html: USE_V2 ? 'reports/tagging/ETF_TAXONOMY_DATA_READINESS_V2.html' : 'reports/tagging/ETF_TAXONOMY_DATA_READINESS.html',
 };
 
 const readJson = (relativePath) => JSON.parse(fs.readFileSync(path.join(ROOT, relativePath), 'utf8'));
@@ -136,23 +140,31 @@ function assessEtf(master, metadata, holdingDoc, indexItem, tagScore) {
   };
 }
 
-function buildReport() {
+export function buildReport() {
   const master = readJson(INPUTS.master);
-  const metadata = readJson(INPUTS.metadata);
-  const holdings = readJson(INPUTS.holdings);
+  const rawMetadata = readJson(INPUTS.metadata);
+  const bridge = USE_V2 ? adaptCanonicalV2ForTaxonomy(rawMetadata) : null;
+  const metadata = bridge?.metadata || rawMetadata;
+  const holdings = bridge?.holdings || readJson(INPUTS.holdings);
   const indexNames = readJson(INPUTS.indexNames);
   const tagScores = readJson(INPUTS.tagScores);
 
   const metadataByCode = new Map(metadata.records.map((item) => [item.etfCode, item]));
   const holdingsByCode = new Map(Object.entries(holdings.etfs));
   const indexByCode = new Map(indexNames.items.map((item) => [item.etfCode, item]));
-  const rows = master.etfs.map((item) => assessEtf(
+  let rows = master.etfs.map((item) => assessEtf(
     item,
     metadataByCode.get(item.etfCode),
     holdingsByCode.get(item.etfCode),
     indexByCode.get(item.etfCode),
     tagScores.etfs[item.etfCode],
   ));
+  const coverage = USE_V2 ? readJson(INPUTS.coverage) : null;
+  if (USE_V2) rows = applyCoverageV2ToReadinessRows(rows, coverage).map((row) => ({
+    ...row,
+    detailScope: row.evidence.descriptionCount || row.evidence.holdingsCount || row.evidence.hasDistributionSchedule
+      || row.evidence.hasDistributionHistory || row.evidence.hasSectorCountryWeights ? 'enriched' : 'thin',
+  }));
 
   if (rows.length !== 1141) throw new Error(`ETF 마스터 건수가 1,141이 아닙니다: ${rows.length}`);
   if (new Set(rows.map((row) => row.etfCode)).size !== rows.length) throw new Error('ETF 코드가 중복되었습니다.');
@@ -190,11 +202,17 @@ function buildReport() {
   return {
     generatedAt: new Date().toISOString(),
     purpose: 'ETF taxonomy review input-data readiness audit',
-    scoringVersion: '1.0.0',
+    scoringVersion: USE_V2 ? 'metadata-v2-bridge-1.0.0' : '1.0.0',
+    dataMode: USE_V2 ? 'metadata-v2' : 'legacy',
     scopeNote: '점수는 분류 결과의 정확도가 아니라, 사람이 택소노미 분류를 검토할 때 사용할 근거 데이터의 준비도를 뜻한다.',
-    sourceSnapshots: Object.fromEntries(Object.entries({ master, metadata, holdings, indexNames, tagScores })
-      .map(([key, value]) => [key, { path: INPUTS[key], generatedAt: value.generatedAt || null }])),
-    scoring: {
+    sourceSnapshots: Object.fromEntries(Object.entries({ master, metadata: rawMetadata, holdings, indexNames, tagScores, ...(USE_V2 ? { coverage } : {}) })
+      .map(([key, value]) => [key, { path: USE_V2 && key === 'holdings' ? INPUTS.metadata : INPUTS[key], generatedAt: value.generatedAt || null }])),
+    scoring: USE_V2 ? {
+      maxScore: 100,
+      authority: INPUTS.coverage,
+      note: '점수와 등급은 metadata v2 readiness 보고서 값을 그대로 사용한다. 아래 리뷰용 증거 항목은 canonical v2를 구형 리뷰 화면 계약에 안전하게 투영한 값이다.',
+      grades: { A: '75~100', B: '55~74', C: '30~54', D: '0~29' },
+    } : {
       maxScore: 100,
       components: {
         identity: { max: 15, fields: '이름 3, 표준 KRX 코드 5, 운용사 4, 상장일 3' },
@@ -239,8 +257,16 @@ function writeCsv(report) {
   fs.writeFileSync(fullPath, '\ufeff' + lines.join('\n') + '\n', 'utf8');
 }
 
-function renderHtml(report) {
+export function renderHtml(report) {
   const { summary } = report;
+  const v2 = report.dataMode === 'metadata-v2';
+  const reviewSampleHref = v2 ? 'ETF_TAXONOMY_REVIEW_SAMPLE_V2.html' : 'ETF_TAXONOMY_REVIEW_SAMPLE.html';
+  const readinessJsonHref = v2 ? '../../data/reports/etf-taxonomy-data-readiness-v2.json' : '../../data/reports/etf-taxonomy-data-readiness.json';
+  const readinessCsvHref = v2 ? 'etf-taxonomy-data-readiness-v2.csv' : 'etf-taxonomy-data-readiness.csv';
+  const metadataHref = v2 ? '../../data/normalized/etf-metadata-v2.json' : '../../data/normalized/etf-metadata.json';
+  const scoringExplanation = v2
+    ? `<article class="panel"><b>Metadata v2 준비도 점수</b><p>식별 정보 20 · 상품 설명·목적 20 · 기초지수 5 · 자산군 5 · 구성종목 15 · 산업·국가 비중 15 · 분배 정보 20</p><b>A · 75점 이상</b><p>상세 의미 검토를 먼저 진행할 수 있습니다.</p><b>B · 55~74점</b><p>중요 근거가 일부 빠져 있어 조건부로 검토합니다.</p></article>`
+    : `<article class="panel"><b>데이터 항목별 최대 점수</b><p>식별 정보 15 · 상품·지수 정보 30 · 구성종목 30 · 분배 정보 10 · 출처 추적 15</p><b>A · 75점 이상</b><p>상세 의미 검토를 먼저 진행할 수 있습니다.</p><b>B · 55~74점</b><p>중요 근거가 일부 빠져 있어 조건부로 검토합니다.</p></article>`;
   const gradeCards = ['A', 'B', 'C', 'D'].map((grade) => {
     const item = summary.grades[grade];
     return `<article class="metric grade-${grade.toLowerCase()}"><span>${grade}등급</span><strong>${item.count.toLocaleString('ko-KR')}</strong><small>${item.pct}% · ${escapeHtml(item.label)}</small></article>`;
@@ -278,8 +304,8 @@ function renderHtml(report) {
 <section><div class="wrap"><h2>가장 많이 비어 있는 근거</h2><p class="muted">수치가 높을수록 우선 수집 대상입니다.</p><div class="table-wrap"><table><thead><tr><th>항목</th><th>누락 ETF</th><th>누락률</th><th>규모</th></tr></thead><tbody>${missingRows}</tbody></table></div></div></section>
 <section><div class="wrap"><h2>분류 관점별 근거 수준</h2><p class="muted">‘높음’은 해당 관점을 확정할 만한 복수의 직접 근거가 있다는 뜻입니다. ‘낮음’은 주로 상품명 또는 기초지수명 하나에 의존합니다.</p><div class="table-wrap"><table><thead><tr><th>분류 관점</th><th>높음</th><th>보통</th><th>낮음</th><th>없음</th></tr></thead><tbody>${facetRows}</tbody></table></div></div></section>
 <section><div class="wrap"><h2>ETF별 준비도 목록</h2><p class="muted">이름·코드·운용사·기초지수로 검색하거나 등급과 데이터 범위로 좁힐 수 있습니다.</p><div class="controls"><input id="search" type="search" placeholder="ETF 이름, 코드, 운용사, 기초지수 검색" aria-label="ETF 검색"><select id="grade" aria-label="등급"><option value="">모든 등급</option><option>A</option><option>B</option><option>C</option><option>D</option></select><select id="scope" aria-label="데이터 범위"><option value="">전체 데이터 범위</option><option value="enriched">상세 메타데이터 있음</option><option value="thin">얇은 데이터</option></select><b id="visible">${summary.totalEtfs.toLocaleString('ko-KR')}개</b></div><div class="table-wrap"><table id="etfs"><thead><tr><th>코드</th><th>ETF</th><th>등급·점수</th><th>확보 근거</th><th>주요 누락</th></tr></thead><tbody>${tableRows}</tbody></table></div></div></section>
-<section><div class="wrap"><h2>점수 산정과 해석</h2><div class="split"><article class="panel"><b>데이터 항목별 최대 점수</b><p>식별 정보 15 · 상품·지수 정보 30 · 구성종목 30 · 분배 정보 10 · 출처 추적 15</p><b>A · 75점 이상</b><p>상세 의미 검토를 먼저 진행할 수 있습니다.</p><b>B · 55~74점</b><p>중요 근거가 일부 빠져 있어 조건부로 검토합니다.</p></article><article class="panel"><b>C · 30~54점</b><p>분류 확정보다 근거 데이터 보강이 먼저입니다.</p><b>D · 0~29점</b><p>상품명·기초지수 위주이므로 상세 분류를 확정하지 않습니다.</p><p class="muted">구성종목이 있다는 사실만으로 산업을 확정하지 않고, 기초지수·상품 설명 등 서로 다른 근거가 함께 있을 때 더 높은 수준으로 평가합니다.</p></article></div><p class="notice">점수는 정확도 점수가 아닙니다. A등급도 사람이 검토해야 하며, D등급도 현재 태그가 우연히 맞을 수 있습니다.</p></div></section>
-<section><div class="wrap"><h2>다음 단계와 원본 파일</h2><div class="links"><a href="ETF_TAXONOMY_REVIEW_SAMPLE.html">표본 200개 검토 시작</a><a href="../../data/reports/etf-taxonomy-data-readiness.json">전체 JSON</a><a href="etf-taxonomy-data-readiness.csv">검토용 CSV</a><a href="../../data/normalized/etf-master.json">ETF 마스터</a><a href="../../data/normalized/etf-metadata.json">상세 메타데이터</a><a href="../../data/tagging/etf-tag-scores.json">현재 분류 결과</a></div></div></section></main>
+<section><div class="wrap"><h2>점수 산정과 해석</h2><div class="split">${scoringExplanation}<article class="panel"><b>C · 30~54점</b><p>분류 확정보다 근거 데이터 보강이 먼저입니다.</p><b>D · 0~29점</b><p>상품명·기초지수 위주이므로 상세 분류를 확정하지 않습니다.</p><p class="muted">구성종목이 있다는 사실만으로 산업을 확정하지 않고, 기초지수·상품 설명 등 서로 다른 근거가 함께 있을 때 더 높은 수준으로 평가합니다.</p></article></div><p class="notice">점수는 정확도 점수가 아닙니다. A등급도 사람이 검토해야 하며, D등급도 현재 태그가 우연히 맞을 수 있습니다.</p></div></section>
+<section><div class="wrap"><h2>다음 단계와 원본 파일</h2><div class="links"><a href="${reviewSampleHref}">표본 200개 검토 시작</a><a href="${readinessJsonHref}">전체 JSON</a><a href="${readinessCsvHref}">검토용 CSV</a><a href="../../data/normalized/etf-master.json">ETF 마스터</a><a href="${metadataHref}">상세 메타데이터</a><a href="../../data/tagging/etf-tag-scores.json">현재 분류 결과</a></div></div></section></main>
 <footer><div class="wrap">ETF Hub · Taxonomy data readiness audit · source snapshots are recorded in the JSON report.</div></footer>
 <script>
 const rows=[...document.querySelectorAll('#etfs tbody tr')],search=document.querySelector('#search'),grade=document.querySelector('#grade'),scope=document.querySelector('#scope'),visible=document.querySelector('#visible');function apply(){const q=search.value.trim().toLowerCase();let n=0;for(const row of rows){const show=(!q||row.dataset.search.includes(q))&&(!grade.value||row.dataset.grade===grade.value)&&(!scope.value||row.dataset.scope===scope.value);row.hidden=!show;if(show)n++}visible.textContent=n.toLocaleString('ko-KR')+'개'}search.addEventListener('input',apply);grade.addEventListener('change',apply);scope.addEventListener('change',apply);
@@ -300,4 +326,4 @@ function main() {
   console.log(`[taxonomy-data-audit] → ${OUTPUTS.html}`);
 }
 
-main();
+if (import.meta.url === pathToFileURL(process.argv[1] || '').href) main();

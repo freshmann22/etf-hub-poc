@@ -1,24 +1,34 @@
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { adaptCanonicalV2ForTaxonomy, selectReadyCoreRows } from './lib/taxonomy-v2-bridge.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const USE_V2 = process.argv.includes('--metadata-v2');
 const FILES = {
-  readiness: 'data/reports/etf-taxonomy-data-readiness.json',
+  readiness: USE_V2 ? 'data/reports/etf-taxonomy-data-readiness-v2.json' : 'data/reports/etf-taxonomy-data-readiness.json',
   taxonomy: 'config/etf-tagging/etf-taxonomy.json',
   scores: 'data/tagging/etf-tag-scores.json',
   lowConfidence: 'data/tagging/etf-low-confidence.json',
-  metadata: 'data/normalized/etf-metadata.json',
+  metadata: USE_V2 ? 'data/normalized/etf-metadata-v2.json' : 'data/normalized/etf-metadata.json',
   holdings: 'data/normalized/etf-holdings.json',
 };
 const OUTPUTS = {
-  json: 'data/reports/etf-taxonomy-review-sample.json',
-  csv: 'reports/tagging/etf-taxonomy-review-sample.csv',
-  html: 'reports/tagging/ETF_TAXONOMY_REVIEW_SAMPLE.html',
+  json: USE_V2 ? 'data/reports/etf-taxonomy-review-sample-v2.json' : 'data/reports/etf-taxonomy-review-sample.json',
+  csv: USE_V2 ? 'reports/tagging/etf-taxonomy-review-sample-v2.csv' : 'reports/tagging/etf-taxonomy-review-sample.csv',
+  html: USE_V2 ? 'reports/tagging/ETF_TAXONOMY_REVIEW_SAMPLE_V2.html' : 'reports/tagging/ETF_TAXONOMY_REVIEW_SAMPLE.html',
 };
 const TARGET = 200;
 
 const read = (relativePath) => JSON.parse(fs.readFileSync(path.join(ROOT, relativePath), 'utf8'));
+const sourceSnapshot = (relativePath, value, extra = {}) => ({
+  path: relativePath,
+  generatedAt: value?.generatedAt || null,
+  schemaVersion: value?.schemaVersion || value?.version || null,
+  contentHash: createHash('sha256').update(fs.readFileSync(path.join(ROOT, relativePath))).digest('hex'),
+  ...extra,
+});
 const write = (relativePath, content) => {
   const fullPath = path.join(ROOT, relativePath);
   fs.mkdirSync(path.dirname(fullPath), { recursive: true });
@@ -31,13 +41,15 @@ const csv = (value) => {
   return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
 };
 
-function buildSample() {
+export function buildSample() {
   const readiness = read(FILES.readiness);
   const taxonomy = read(FILES.taxonomy);
   const scores = read(FILES.scores);
   const lowConfidence = read(FILES.lowConfidence);
-  const metadata = read(FILES.metadata);
-  const holdings = read(FILES.holdings);
+  const rawMetadata = read(FILES.metadata);
+  const bridge = USE_V2 ? adaptCanonicalV2ForTaxonomy(rawMetadata) : null;
+  const metadata = bridge?.metadata || rawMetadata;
+  const holdings = bridge?.holdings || read(FILES.holdings);
   const rowByCode = new Map(readiness.etfs.map((row) => [row.etfCode, row]));
   const metaByCode = new Map(metadata.records.map((row) => [row.etfCode, row]));
   const tagById = new Map(taxonomy.tags.map((tag) => [tag.id, tag]));
@@ -66,8 +78,10 @@ function buildSample() {
   const tagsFor = (code) => (scores.etfs[code]?.classifications || []).map((item) => item.tagId);
   const coveredTags = () => new Set([...selected.keys()].flatMap(tagsFor));
 
-  // 1. 데이터 근거가 가장 준비된 A/B 109개는 모두 포함한다.
-  for (const row of readiness.etfs.filter((item) => item.grade === 'A' || item.grade === 'B')) {
+  // 1. A/B가 200개 이하면 전부 포함한다. 200개를 넘으면 태그 다양성·희소성·저신뢰·점수 순으로 200개를 고른다.
+  const readyRows = readiness.etfs.filter((item) => item.grade === 'A' || item.grade === 'B');
+  const readyCore = selectReadyCoreRows(readyRows, { target: TARGET, tagsFor, tagPopulation, lowByCode });
+  for (const row of readyCore) {
     add(row.etfCode, 'ready_core', [`준비도 ${row.grade}등급(${row.score}점)`]);
   }
   const readyCoreCount = selected.size;
@@ -165,17 +179,30 @@ function buildSample() {
 
   return {
     generatedAt: new Date().toISOString(),
-    selectionVersion: '1.0.0',
+    selectionVersion: USE_V2 ? 'metadata-v2-bridge-1.0.0' : '1.0.0',
+    dataMode: USE_V2 ? 'metadata-v2' : 'legacy',
     targetCount: TARGET,
     purpose: '택소노미 정의와 자동 분류를 평가할 사람 검토용 골드셋 후보',
     policy: [
-      'A·B등급 109개 전부 포함',
+      readyRows.length <= TARGET
+        ? `A·B등급 ${readyRows.length}개 전부 포함`
+        : `A·B등급 ${readyRows.length}개 중 태그 다양성·희소성·저신뢰·준비도 기준으로 ${TARGET}개 선정`,
       'C등급에서 A·B 표본에 없는 태그를 희소 태그 우선으로 보완',
       'C등급 저신뢰 분류를 우선 포함',
       '남는 자리는 희소 태그·다중 태그·B등급 경계 사례로 채움',
       'D등급은 정답 표본에서 제외하고 데이터 수집 보류 태그로 기록',
     ],
     sourceReadinessGeneratedAt: readiness.generatedAt,
+    sourceSnapshots: {
+      readiness: sourceSnapshot(FILES.readiness, readiness),
+      taxonomy: sourceSnapshot(FILES.taxonomy, taxonomy),
+      scores: sourceSnapshot(FILES.scores, scores),
+      lowConfidence: sourceSnapshot(FILES.lowConfidence, lowConfidence),
+      metadata: sourceSnapshot(FILES.metadata, rawMetadata),
+      holdings: USE_V2
+        ? sourceSnapshot(FILES.metadata, rawMetadata, { derivedBy: 'taxonomy-v2-bridge' })
+        : sourceSnapshot(FILES.holdings, holdings),
+    },
     summary: {
       sampleCount: sampleItems.length,
       gradeCounts,
@@ -212,7 +239,7 @@ function writeCsv(report) {
   write(OUTPUTS.csv, '\ufeff' + lines.join('\n') + '\n');
 }
 
-function renderHtml(report) {
+export function renderHtml(report) {
   const phaseLabels = { ready_core: 'A·B 전수', tag_gap: '태그 공백', low_confidence: '저신뢰', diversity_boundary: '희소·경계' };
   const generated = new Intl.DateTimeFormat('ko-KR', { dateStyle: 'long', timeStyle: 'short', timeZone: 'Asia/Seoul' }).format(new Date(report.generatedAt));
   const blocked = report.blockedTags.map((tag) => `<li><b>${escapeHtml(tag.label)}</b> <code>${escapeHtml(tag.tagId)}</code> — ${escapeHtml(tag.reason)} (${tag.classifiedEtfCount}개)</li>`).join('');
@@ -228,13 +255,14 @@ function renderHtml(report) {
     </article>`;
   }).join('');
   const embedded = JSON.stringify(report.items.map((item) => ({ sampleNumber: item.sampleNumber, etfCode: item.etfCode, name: item.name, currentTagIds: item.currentClassifications.map((tag) => tag.tagId) }))).replaceAll('<', '\\u003c');
+  const storageKey = report.dataMode === 'metadata-v2' ? 'etf-taxonomy-review-sample-v2' : 'etf-taxonomy-review-sample-v1';
   return `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ETF 택소노미 표본 200개 검토표</title><style>
 :root{--ink:#15231f;--muted:#65736f;--line:#dbe6e2;--paper:#f5f9f7;--mint:#00b89c;--blue:#3478db;--amber:#a66b00;--red:#b43f51}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.55;word-break:keep-all}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}.hero{padding:62px 0 38px;color:#fff;background:linear-gradient(135deg,#102b25,#176052)}h1{margin:0 0 15px;font-size:clamp(36px,6vw,62px);letter-spacing:-.05em;line-height:1.12}.hero p{max-width:760px;color:#c9ddd8}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}.metric{padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:rgba(255,255,255,.08)}.metric b{display:block;font-size:28px}.section{padding:36px 0}.notice{padding:20px;border:1px solid var(--line);border-radius:15px;background:#fff}.notice li{margin:7px 0}.toolbar{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:9px;padding:13px 0;background:rgba(245,249,247,.96)}input,select,textarea,button{font:inherit}input,select,button{min-height:42px;padding:0 12px;border:1px solid #c9d6d1;border-radius:10px;background:#fff}input[type=search]{flex:1;min-width:220px}button{cursor:pointer;font-weight:750}button.primary{border-color:#073d34;background:#103f36;color:#fff}.review-card{margin:0 0 15px;padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff}.review-card>header{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:start}.number{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#e5f6f2;color:#076b5d;font-weight:900}h3{margin:0;font-size:20px;letter-spacing:-.03em}.grade{padding:5px 8px;border-radius:8px;color:#fff;font-size:12px;font-weight:900}.grade-a{background:var(--mint)}.grade-b{background:var(--blue)}.grade-c{background:var(--amber)}.reason{margin:16px 0;padding:10px 12px;border-radius:10px;background:#f0f5f3;font-size:13px}dl{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:0}dl div{padding:11px;border:1px solid #edf1ef;border-radius:10px}dt{color:var(--muted);font-size:11px;font-weight:800}dd{margin:3px 0 0;font-size:13px}.current{margin:14px 0}.tag{display:inline-block;margin:4px 4px 0 0;padding:4px 8px;border-radius:999px;background:#e5f6f2;color:#075e52;font-size:12px}.inputs{display:grid;grid-template-columns:.65fr 1fr 1fr;gap:10px;padding-top:14px;border-top:1px solid var(--line)}label{font-size:12px;font-weight:800}label select,label textarea{display:block;width:100%;margin-top:5px;border:1px solid #c9d6d1;border-radius:9px;padding:8px;background:#fff}.muted,small{color:var(--muted)}.empty{padding:40px;text-align:center}.progress{font-weight:900}@media(max-width:720px){.metrics{grid-template-columns:1fr 1fr}.inputs,dl{grid-template-columns:1fr}.review-card>header{grid-template-columns:40px 1fr}.grade{grid-column:2;justify-self:start}}</style></head><body>
-<section class="hero"><div class="wrap"><small>택소노미 리뷰 · 2단계</small><h1>사람 검토 표본<br>200개</h1><p>A·B등급 109개를 모두 포함하고, C등급에서 태그 공백·저신뢰·희소 경계 사례 91개를 골랐습니다. 각 ETF의 현재 태그를 확인하고 판정과 수정안을 기록하세요.</p><div class="metrics"><div class="metric"><span>전체 표본</span><b>${report.summary.sampleCount}</b></div><div class="metric"><span>포함 태그</span><b>${report.summary.coveredTagCount}/${report.summary.taxonomyTagCount}</b></div><div class="metric"><span>저신뢰 사례</span><b>${report.summary.lowConfidenceEtfCount}</b></div><div class="metric"><span>검토 보류 태그</span><b>${report.summary.blockedTagCount}</b></div></div><small>생성 ${escapeHtml(generated)} · 선정 기준 v${report.selectionVersion}</small></div></section>
+<section class="hero"><div class="wrap"><small>택소노미 리뷰 · 2단계</small><h1>사람 검토 표본<br>200개</h1><p>${escapeHtml(report.policy[0])}. 이후 여유 자리가 있으면 C등급에서 태그 공백·저신뢰·희소 경계 사례를 보완합니다. 각 ETF의 현재 태그를 확인하고 판정과 수정안을 기록하세요.</p><div class="metrics"><div class="metric"><span>전체 표본</span><b>${report.summary.sampleCount}</b></div><div class="metric"><span>포함 태그</span><b>${report.summary.coveredTagCount}/${report.summary.taxonomyTagCount}</b></div><div class="metric"><span>저신뢰 사례</span><b>${report.summary.lowConfidenceEtfCount}</b></div><div class="metric"><span>검토 보류 태그</span><b>${report.summary.blockedTagCount}</b></div></div><small>생성 ${escapeHtml(generated)} · 선정 기준 v${report.selectionVersion}</small></div></section>
 <section class="section"><div class="wrap"><div class="notice"><b>표본에 넣지 않은 태그</b><p class="muted">아래 태그는 현재 D등급 데이터에만 있어 정답을 만들 근거가 부족합니다. 먼저 데이터 수집이 필요합니다.</p><ul>${blocked || '<li>없음</li>'}</ul></div></div></section>
 <main class="wrap"><div class="toolbar"><input id="search" type="search" placeholder="ETF·코드·태그 검색"><select id="grade"><option value="">모든 등급</option><option>A</option><option>B</option><option>C</option></select><select id="phase"><option value="">모든 선정 이유</option>${Object.entries(phaseLabels).map(([id,label])=>`<option value="${id}">${label}</option>`).join('')}</select><select id="decisionFilter"><option value="">모든 검토 상태</option><option value="pending">미검토</option><option value="correct">맞음</option><option value="incorrect">수정 필요</option><option value="insufficient">근거 부족</option></select><span class="progress" id="progress">0/200 검토</span><button id="exportJson" class="primary">결과 JSON 저장</button><button id="exportCsv">결과 CSV 저장</button></div><div id="cards">${rows}</div><div id="empty" class="empty" hidden>조건에 맞는 ETF가 없습니다.</div></main>
 <footer class="section"><div class="wrap muted">판정은 이 브라우저에 자동 저장됩니다. 다른 환경으로 옮기기 전 반드시 JSON 또는 CSV로 내보내세요.</div></footer>
-<script>const seed=${embedded};const key='etf-taxonomy-review-sample-v1';const cards=[...document.querySelectorAll('.review-card')];let saved=JSON.parse(localStorage.getItem(key)||'{}');function state(card){const code=card.dataset.code;return saved[code]||{decision:'',correctedTagIds:'',note:''}}function persist(card){saved[card.dataset.code]={decision:card.querySelector('.decision').value,correctedTagIds:card.querySelector('.corrected').value,note:card.querySelector('.note').value};localStorage.setItem(key,JSON.stringify(saved));update()}for(const card of cards){const s=state(card);card.querySelector('.decision').value=s.decision;card.querySelector('.corrected').value=s.correctedTagIds;card.querySelector('.note').value=s.note;for(const el of card.querySelectorAll('select,textarea'))el.addEventListener('input',()=>persist(card))}const search=document.querySelector('#search'),grade=document.querySelector('#grade'),phase=document.querySelector('#phase'),decisionFilter=document.querySelector('#decisionFilter');function update(){const q=search.value.trim().toLowerCase();let visible=0,reviewed=0;for(const card of cards){const decision=card.querySelector('.decision').value;if(decision)reviewed++;const matches=(!q||card.dataset.search.includes(q))&&(!grade.value||card.dataset.grade===grade.value)&&(!phase.value||card.dataset.phase===phase.value)&&(!decisionFilter.value||(decisionFilter.value==='pending'?!decision:decision===decisionFilter.value));card.hidden=!matches;if(matches)visible++}document.querySelector('#progress').textContent=reviewed+'/200 검토';document.querySelector('#empty').hidden=visible>0}for(const el of [search,grade,phase,decisionFilter])el.addEventListener('input',update);function results(){return seed.map(item=>({...item,...(saved[item.etfCode]||{decision:'',correctedTagIds:'',note:''}),reviewedAt:new Date().toISOString()}))}function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}document.querySelector('#exportJson').onclick=()=>download('etf-taxonomy-review-results.json',JSON.stringify({exportedAt:new Date().toISOString(),items:results()},null,2),'application/json');document.querySelector('#exportCsv').onclick=()=>{const esc=v=>'"'+String(v??'').replaceAll('"','""')+'"';const lines=[['sampleNumber','etfCode','name','currentTagIds','decision','correctedTagIds','note'].join(',')];for(const r of results())lines.push([r.sampleNumber,r.etfCode,r.name,r.currentTagIds.join('|'),r.decision,r.correctedTagIds,r.note].map(esc).join(','));download('etf-taxonomy-review-results.csv','\ufeff'+lines.join('\\n'),'text/csv')};update();</script></body></html>`;
+<script>const seed=${embedded};const key=${JSON.stringify(storageKey)};const cards=[...document.querySelectorAll('.review-card')];let saved=JSON.parse(localStorage.getItem(key)||'{}');function state(card){const code=card.dataset.code;return saved[code]||{decision:'',correctedTagIds:'',note:''}}function persist(card){saved[card.dataset.code]={decision:card.querySelector('.decision').value,correctedTagIds:card.querySelector('.corrected').value,note:card.querySelector('.note').value};localStorage.setItem(key,JSON.stringify(saved));update()}for(const card of cards){const s=state(card);card.querySelector('.decision').value=s.decision;card.querySelector('.corrected').value=s.correctedTagIds;card.querySelector('.note').value=s.note;for(const el of card.querySelectorAll('select,textarea'))el.addEventListener('input',()=>persist(card))}const search=document.querySelector('#search'),grade=document.querySelector('#grade'),phase=document.querySelector('#phase'),decisionFilter=document.querySelector('#decisionFilter');function update(){const q=search.value.trim().toLowerCase();let visible=0,reviewed=0;for(const card of cards){const decision=card.querySelector('.decision').value;if(decision)reviewed++;const matches=(!q||card.dataset.search.includes(q))&&(!grade.value||card.dataset.grade===grade.value)&&(!phase.value||card.dataset.phase===phase.value)&&(!decisionFilter.value||(decisionFilter.value==='pending'?!decision:decision===decisionFilter.value));card.hidden=!matches;if(matches)visible++}document.querySelector('#progress').textContent=reviewed+'/200 검토';document.querySelector('#empty').hidden=visible>0}for(const el of [search,grade,phase,decisionFilter])el.addEventListener('input',update);function results(){return seed.map(item=>({...item,...(saved[item.etfCode]||{decision:'',correctedTagIds:'',note:''}),reviewedAt:new Date().toISOString()}))}function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}document.querySelector('#exportJson').onclick=()=>download('etf-taxonomy-review-results.json',JSON.stringify({exportedAt:new Date().toISOString(),items:results()},null,2),'application/json');document.querySelector('#exportCsv').onclick=()=>{const esc=v=>'"'+String(v??'').replaceAll('"','""')+'"';const lines=[['sampleNumber','etfCode','name','currentTagIds','decision','correctedTagIds','note'].join(',')];for(const r of results())lines.push([r.sampleNumber,r.etfCode,r.name,r.currentTagIds.join('|'),r.decision,r.correctedTagIds,r.note].map(esc).join(','));download('etf-taxonomy-review-results.csv','\ufeff'+lines.join('\\n'),'text/csv')};update();</script></body></html>`;
 }
 
 function main() {
@@ -250,4 +278,4 @@ function main() {
   console.log(`[taxonomy-review-sample] → ${OUTPUTS.html}`);
 }
 
-main();
+if (import.meta.url === pathToFileURL(process.argv[1] || '').href) main();

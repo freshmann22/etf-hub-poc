@@ -6,6 +6,7 @@ import { normalizeText } from './text.js';
 const TAG_MAP_URL = '/data/tagging/etf-filter-map.json';
 const MASTER_URL = '/data/tagging/etf-universe-index-names.json';
 const HOLDINGS_URL = '/public/data/etf-holdings.json';
+const SEARCH_INDEX_URL = '/public/data/reverse-search-index.json';
 const BUNDLE_URL = '/api/bundle';
 
 async function fetchJson(url, fetchImpl) {
@@ -52,6 +53,26 @@ export async function loadMarketSnapshot(fetchImpl = fetch) {
   }));
 }
 
+// 보조 텍스트 검색 인덱스 — scripts/build-reverse-search-index.mjs 가 canonical metadata 에서 생성한 정본.
+// code -> { officialName, benchmarkName, investmentObjective }(존재하는 필드만). 값은 원문(정규화는 ranker 담당).
+export function buildSearchIndexMap(payload) {
+  const map = new Map();
+  for (const item of payload?.etfs || []) {
+    if (!item?.code) continue;
+    const entry = {};
+    for (const field of ['officialName', 'benchmarkName', 'investmentObjective']) {
+      if (typeof item[field] === 'string' && item[field].trim()) entry[field] = item[field];
+    }
+    map.set(item.code, entry);
+  }
+  return map;
+}
+
+export async function loadSearchIndex(fetchImpl = fetch) {
+  const payload = await fetchJson(SEARCH_INDEX_URL, fetchImpl);
+  return buildSearchIndexMap(payload);
+}
+
 // 순수 함수 — 네트워크 없이 단위테스트 가능. 종목명(정규화) -> {code, name} 정본 사전.
 // 동일 정규화명이 여러 티커에 걸리는 경우는 실무상 드물어 첫 등장을 우선한다.
 export function buildStockNameIndex(holdingsUniverse) {
@@ -66,17 +87,19 @@ export function buildStockNameIndex(holdingsUniverse) {
 }
 
 export async function loadReverseSearchContext(fetchImpl = fetch) {
-  const [tagUniverse, master, holdingsUniverse, marketSnapshot] = await Promise.all([
+  const [tagUniverse, master, holdingsUniverse, marketSnapshot, searchIndex] = await Promise.all([
     loadTagUniverse(fetchImpl),
     loadEtfMaster(fetchImpl),
     loadHoldingsUniverse(fetchImpl),
     loadMarketSnapshot(fetchImpl),
+    loadSearchIndex(fetchImpl),
   ]);
   return {
     tagUniverse,
     master,
     holdingsUniverse,
     marketSnapshot,
+    searchIndex,
     stockNameIndex: buildStockNameIndex(holdingsUniverse),
   };
 }

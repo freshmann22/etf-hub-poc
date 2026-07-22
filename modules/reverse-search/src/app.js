@@ -1,6 +1,7 @@
 import { loadReverseSearchContext } from './adapters.js';
 import { parseQuery } from './nlu.js';
-import { rankByStockWeight, rankByTag, rankBySortField, rankComposite, rankFallbackDefault, rankByQueryPlan } from './ranker.js';
+import { summarizeDroppedConditions } from './query-plan.js';
+import { rankByStockWeight, rankByTag, rankBySortField, rankComposite, rankByQueryPlan } from './ranker.js';
 
 const els = {
   form: document.getElementById('searchForm'),
@@ -41,11 +42,14 @@ function renderResults(result) {
   }
 }
 
+const TEXT_MODE_LABELS = { required: '필수', preferred: '선호', excluded: '제외' };
+
 function renderQueryPlan(plan, source) {
   els.planTags.innerHTML = '';
   const tags = plan?.tags || [];
-  els.plan.hidden = tags.length === 0;
-  if (!tags.length) return;
+  const textConstraints = plan?.textConstraints || [];
+  els.plan.hidden = tags.length === 0 && textConstraints.length === 0;
+  if (els.plan.hidden) return;
   els.planSource.textContent = source === 'llm' ? 'LLM 해석' : '규칙 해석';
   for (const tag of tags) {
     const item = document.createElement('span');
@@ -56,6 +60,18 @@ function renderQueryPlan(plan, source) {
     score.className = 'query-tag-score';
     score.textContent = `${Math.round(tag.queryScore * 100)}점`;
     item.append(label, score);
+    els.planTags.appendChild(item);
+  }
+  // 텍스트 조건은 태그와 구분되는 칩으로 표시(확정 태그 vs 텍스트 근거 구분).
+  for (const constraint of textConstraints) {
+    const item = document.createElement('span');
+    item.className = 'query-tag query-tag-text';
+    const label = document.createElement('span');
+    label.textContent = `"${constraint.value}"`;
+    const meta = document.createElement('span');
+    meta.className = 'query-tag-score';
+    meta.textContent = `텍스트·${TEXT_MODE_LABELS[constraint.mode] || constraint.mode}`;
+    item.append(label, meta);
     els.planTags.appendChild(item);
   }
 }
@@ -84,9 +100,17 @@ async function runSearch(rawQuery) {
       renderStatus('질문의 맥락을 해석하고 있어요');
       const planned = await requestQueryPlan(rawQuery);
       renderQueryPlan(planned.plan, planned.source);
-      if (planned.plan.tags.length || planned.plan.sort) {
+      const dropped = summarizeDroppedConditions(planned.warnings);
+      if (planned.plan.tags.length || planned.plan.textConstraints?.length || planned.plan.sort) {
         result = rankByQueryPlan(context, planned.plan);
+        // 이해했지만 지원하지 못해 버린 조건이 있으면 조용히 넘기지 않고 덧붙인다.
+        if (dropped) result = { ...result, note: `${result.note} · 제외한 조건: ${dropped}` };
         renderResults(result);
+        return;
+      }
+      // plan 이 비었는데 버려진 조건이 있으면(예: LLM 이 낸 미등록 태그) 그 사실을 명시한다.
+      if (dropped) {
+        renderResults({ status: 'empty', items: [], note: `요청하신 조건 중 지원하지 않는 항목이 있어 결과를 만들지 못했어요: ${dropped}` });
         return;
       }
     } catch {
@@ -101,6 +125,14 @@ async function runSearch(rawQuery) {
     case 'TAG_MATCH':
       result = rankByTag(context, parsed.tagGroups);
       break;
+    case 'TEXT_MATCH':
+      // 서버 plan 을 못 받은 오프라인 복원 경로 — 로컬 파싱 결과로 질의 plan 을 구성해 텍스트 검색.
+      result = rankByQueryPlan(context, {
+        tags: [],
+        textConstraints: parsed.textConstraints || [],
+        sort: parsed.sortField ? { field: parsed.sortField, direction: parsed.sortDir, label: parsed.sortLabel } : null,
+      });
+      break;
     case 'MARKET_SORT':
       result = rankBySortField(context, context.marketSnapshot, parsed.sortField, parsed.sortDir, parsed.sortLabel);
       break;
@@ -108,8 +140,8 @@ async function runSearch(rawQuery) {
       result = rankComposite(context, context.marketSnapshot, parsed.tagGroups, parsed.sortField, parsed.sortDir, parsed.sortLabel);
       break;
     default:
-      result = { ...rankFallbackDefault(context, context.marketSnapshot), status: 'fallback' };
-      result.note = '질문 의도를 정확히 파악하지 못해 지금 거래대금이 많은 ETF를 보여드려요';
+      // 이해하지 못한 질의 — 거래대금 목록을 검색 결과처럼 위장하지 않고 정직하게 빈 상태로 안내한다.
+      result = { status: 'empty', items: [], note: '질문을 이해하지 못했어요. ETF 이름·기초지수에 들어가는 단어나 태그(예: 반도체, 미국, 월배당, 대만)로 다시 검색해 주세요' };
   }
   renderResults(result);
 }

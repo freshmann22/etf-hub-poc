@@ -128,6 +128,12 @@ body {
   font-size: 12px;
 }
 
+/* 텍스트 근거 칩 — 확정 taxonomy 태그와 구분되게 점선 테두리로 표시. */
+.query-tag-text {
+  border-style: dashed;
+  background: #f6fffd;
+}
+
 .query-tag-score {
   color: var(--mint);
   font-variant-numeric: tabular-nums;

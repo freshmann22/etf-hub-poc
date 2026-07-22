@@ -68,9 +68,12 @@ function systemPrompt(tags) {
     'You are a Korean ETF query planner.',
     'Convert the user query into JSON only. Never recommend or invent an ETF.',
     'Use only tag IDs from the supplied taxonomy.',
-    'Schema: {"intent":"TAG_MATCH|MARKET_SORT|COMPOSITE|UNKNOWN","tags":[{"tagId":"...","queryScore":0..1,"mode":"required|preferred|excluded","reason":"short Korean reason"}],"sort":null|{"field":"volume|tradingValue|return1m|volatilityScore|totalFee","direction":"asc|desc","label":"Korean label"}}.',
+    'Schema: {"intent":"TAG_MATCH|MARKET_SORT|COMPOSITE|TEXT_MATCH|UNKNOWN","tags":[{"tagId":"...","queryScore":0..1,"mode":"required|preferred|excluded","reason":"short Korean reason"}],"textConstraints":[{"value":"...","aliases":["..."],"mode":"required|preferred|excluded","fields":["officialName","benchmarkName","investmentObjective"]}],"sort":null|{"field":"volume|tradingValue|return1m|volatilityScore|totalFee","direction":"asc|desc","label":"Korean label"}}.',
     'Use required only for explicit core conditions. Use preferred for softer wishes such as 선호, 좋겠어, 너무 높지 않게, or 있으면 좋다. Use excluded for explicit avoidance.',
     'Return at most 6 tags. Higher queryScore means stronger relevance. Do not include generic tags without evidence in the query.',
+    'textConstraints capture meanings the taxonomy tags cannot express — e.g. a country/region/company/product word (대만/Taiwan, 태국, 특정 지수명) that must appear in the ETF official name, benchmark index name, or investment objective. value is the Korean surface term; aliases must include the likely English/native spelling that appears in the benchmark (e.g. 대만 -> ["Taiwan"]). Use at most 4 textConstraints, each value 1..40 chars.',
+    'Prefer an existing taxonomy tag over a textConstraint when one clearly applies (e.g. 미국 -> region.us tag, not a text constraint). Use textConstraints only for meanings absent from the taxonomy.',
+    'Do NOT invent ETFs. If the query names something no ETF could plausibly reference, return empty tags and empty textConstraints so the system can honestly report no match.',
     'Only set sort when the user explicitly asks for ranking by a supported metric.',
     `Taxonomy: ${JSON.stringify(tags)}`,
   ].join('\n');

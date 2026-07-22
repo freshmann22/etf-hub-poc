@@ -85,6 +85,27 @@ export const TAG_KEYWORD_GROUPS = [
   { keywords: ['통화', '환율형'], tagIds: ['asset.currency'] },
 ];
 
+// 보조 텍스트 검색 키워드 — taxonomy region 태그에 "없는" 국가·지역만 둔다(있는 건 태그가 처리).
+// value/aliases 는 ETF 공식명·기초지수에 실제로 등장하는 표기다(존재 확인은 인덱스 검증 테스트가 담당).
+// 태그(region.us/china/japan/india/vietnam/domestic_kr/emerging/developed)와 겹치는 국가는 넣지 않는다.
+export const TEXT_CONSTRAINT_KEYWORDS = [
+  { keywords: ['대만', '타이완'], value: '대만', aliases: ['Taiwan'] },
+  { keywords: ['태국'], value: '태국', aliases: ['Thailand'] },
+  { keywords: ['인도네시아'], value: '인도네시아', aliases: ['Indonesia'] },
+  { keywords: ['필리핀'], value: '필리핀', aliases: ['Philippines'] },
+  { keywords: ['말레이시아'], value: '말레이시아', aliases: ['Malaysia'] },
+  { keywords: ['싱가포르'], value: '싱가포르', aliases: ['Singapore'] },
+  { keywords: ['브라질'], value: '브라질', aliases: ['Brazil'] },
+  { keywords: ['멕시코'], value: '멕시코', aliases: ['Mexico'] },
+  { keywords: ['사우디'], value: '사우디', aliases: ['Saudi'] },
+  // 광역 지역 — taxonomy region 태그에 없는 것만(미국/US 는 region.us 태그가 있어 제외; 'us' 는 부분문자열 오탐).
+  { keywords: ['북미'], value: '북미', aliases: ['North America'] },
+  { keywords: ['유럽'], value: '유럽', aliases: ['Europe'] },
+];
+
+// 텍스트 조건 부정(제외) 힌트 — 있으면 규칙 파서가 텍스트 조건을 excluded 로 뒤집는다(단순 전역 규칙).
+export const TEXT_NEGATION_HINTS = ['아닌', '제외', '빼고', '말고', '아니'];
+
 // 시황 정렬 지표 — /api/bundle 커버리지가 큐레이션 종목·실시간 연동 종목 위주라 전체 유니버스 기준은 아님.
 export const SORT_KEYWORD_GROUPS = [
   { keywords: ['거래대금'], field: 'tradingValue', label: '거래대금' },

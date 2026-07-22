@@ -13,6 +13,7 @@
     "serve:static": "node scripts/dev-server.js",
     "explore": "node scripts/launch.mjs",
     "reverse-search": "node scripts/launch.mjs --reverse-search",
+    "benchmark:reverse-search": "node scripts/benchmark-reverse-search.mjs",
     "build:data": "node scripts/build-etf-holdings-data.mjs",
     "metadata:web": "node scripts/build-etf-metadata-web.mjs",
     "metadata:inspect": "node scripts/inspect-etf-data-sources.mjs",

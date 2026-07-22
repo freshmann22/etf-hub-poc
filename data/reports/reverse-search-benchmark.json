@@ -1,0 +1,286 @@
+{
+  "generatedAtNote": "timestamp injected by caller",
+  "execute": true,
+  "maxCalls": 120,
+  "repeats": 3,
+  "dryRun": {
+    "rulesPlanner_ms": {
+      "n": 2400,
+      "mean": 0.07,
+      "p50": 0.068,
+      "p90": 0.094,
+      "p95": 0.106,
+      "max": 0.622
+    },
+    "ranking_ms": {
+      "n": 2400,
+      "mean": 4.991,
+      "p50": 4.748,
+      "p90": 7.587,
+      "p95": 8.066,
+      "max": 14.256
+    },
+    "perQuery": {
+      "대만 기업에 투자하는 ETF 찾아줘": {
+        "plan": {
+          "n": 300,
+          "mean": 0.078,
+          "p50": 0.073,
+          "p90": 0.097,
+          "p95": 0.109,
+          "max": 0.299
+        },
+        "rank": {
+          "n": 300,
+          "mean": 5.073,
+          "p50": 4.973,
+          "p90": 5.527,
+          "p95": 5.799,
+          "max": 7.788
+        },
+        "planTags": [],
+        "textConstraints": [
+          "대만"
+        ]
+      },
+      "미국 반도체 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.072,
+          "p50": 0.069,
+          "p90": 0.089,
+          "p95": 0.105,
+          "max": 0.214
+        },
+        "rank": {
+          "n": 300,
+          "mean": 4.321,
+          "p50": 4.181,
+          "p90": 4.81,
+          "p95": 5.234,
+          "max": 6.745
+        },
+        "planTags": [
+          "region.us",
+          "sector.semiconductor"
+        ],
+        "textConstraints": []
+      },
+      "월배당 주는 고배당 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.068,
+          "p50": 0.063,
+          "p90": 0.085,
+          "p95": 0.101,
+          "max": 0.62
+        },
+        "rank": {
+          "n": 300,
+          "mean": 3.898,
+          "p50": 3.735,
+          "p90": 4.343,
+          "p95": 5.31,
+          "max": 7.052
+        },
+        "planTags": [
+          "dividend.korea_high_dividend",
+          "dividend.monthly"
+        ],
+        "textConstraints": []
+      },
+      "반도체 중에서 거래량 많은 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.078,
+          "p50": 0.07,
+          "p90": 0.106,
+          "p95": 0.111,
+          "max": 0.333
+        },
+        "rank": {
+          "n": 300,
+          "mean": 5.764,
+          "p50": 5.369,
+          "p90": 7.38,
+          "p95": 7.879,
+          "max": 14.256
+        },
+        "planTags": [
+          "sector.semiconductor"
+        ],
+        "textConstraints": []
+      },
+      "대만 월배당 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.072,
+          "p50": 0.068,
+          "p90": 0.09,
+          "p95": 0.104,
+          "max": 0.151
+        },
+        "rank": {
+          "n": 300,
+          "mean": 5.134,
+          "p50": 4.971,
+          "p90": 5.699,
+          "p95": 6.194,
+          "max": 7.663
+        },
+        "planTags": [
+          "dividend.monthly"
+        ],
+        "textConstraints": [
+          "대만"
+        ]
+      },
+      "북미 전기차 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.078,
+          "p50": 0.071,
+          "p90": 0.105,
+          "p95": 0.113,
+          "max": 0.239
+        },
+        "rank": {
+          "n": 300,
+          "mean": 8.213,
+          "p50": 7.826,
+          "p90": 9.994,
+          "p95": 10.666,
+          "max": 11.91
+        },
+        "planTags": [
+          "sector.ev_battery"
+        ],
+        "textConstraints": [
+          "북미"
+        ]
+      },
+      "삼성전자 비중 높은 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.056,
+          "p50": 0.053,
+          "p90": 0.065,
+          "p95": 0.086,
+          "max": 0.267
+        },
+        "rank": {
+          "n": 300,
+          "mean": 3.701,
+          "p50": 3.586,
+          "p90": 4.073,
+          "p95": 4.722,
+          "max": 6.313
+        },
+        "planTags": [],
+        "textConstraints": []
+      },
+      "아틀란티스 ETF": {
+        "plan": {
+          "n": 300,
+          "mean": 0.057,
+          "p50": 0.054,
+          "p90": 0.078,
+          "p95": 0.09,
+          "max": 0.142
+        },
+        "rank": {
+          "n": 300,
+          "mean": 3.82,
+          "p50": 3.632,
+          "p90": 4.65,
+          "p95": 5.039,
+          "max": 6.272
+        },
+        "planTags": [],
+        "textConstraints": []
+      }
+    },
+    "promptSize": {
+      "full_chars": 7779,
+      "compact_chars": 3229,
+      "full_estTokens": 2223,
+      "compact_estTokens": 923,
+      "reductionPct": 58.5
+    },
+    "universeSize": 1141
+  },
+  "live": {
+    "models": {
+      "deepseek/deepseek-v4-flash": {
+        "latency_ms": {
+          "n": 22,
+          "mean": 1011.696,
+          "p50": 1009.931,
+          "p90": 1419.239,
+          "p95": 1600.646,
+          "max": 2479.204
+        },
+        "calls": 24,
+        "planOkRate": 0.79,
+        "avgPromptTokens": 3558,
+        "avgCompletionTokens": 394
+      },
+      "openai/gpt-4o-mini": {
+        "latency_ms": {
+          "n": 24,
+          "mean": 889.955,
+          "p50": 860.848,
+          "p90": 1169.889,
+          "p95": 1453.084,
+          "max": 1471.375
+        },
+        "calls": 24,
+        "planOkRate": 1,
+        "avgPromptTokens": 3083,
+        "avgCompletionTokens": 97
+      },
+      "google/gemini-2.5-flash": {
+        "latency_ms": {
+          "n": 24,
+          "mean": 1739.826,
+          "p50": 858.1,
+          "p90": 5648.428,
+          "p95": 5804.209,
+          "max": 10033.061
+        },
+        "calls": 24,
+        "planOkRate": 0.92,
+        "avgPromptTokens": 2814,
+        "avgCompletionTokens": 109
+      }
+    },
+    "promptVariant": {
+      "full": {
+        "model": "deepseek/deepseek-v4-flash",
+        "latency_ms": {
+          "n": 8,
+          "mean": 1633.767,
+          "p50": 1267.445,
+          "p90": 3968.199,
+          "p95": 3968.199,
+          "max": 3968.199
+        },
+        "avgPromptTokens": 3561
+      },
+      "compact": {
+        "model": "deepseek/deepseek-v4-flash",
+        "latency_ms": {
+          "n": 7,
+          "mean": 811.856,
+          "p50": 814.281,
+          "p90": 1375.045,
+          "p95": 1375.045,
+          "max": 1375.045
+        },
+        "avgPromptTokens": 1188
+      }
+    },
+    "note": "3 model(s) live"
+  },
+  "callCount": 91
+}

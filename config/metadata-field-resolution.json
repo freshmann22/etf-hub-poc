@@ -31,12 +31,100 @@
     },
     "product.investmentObjective": {
       "strategy": "authority_then_confidence",
-      "sourceIds": ["issuer", "kind", "index_provider", "wisereport"],
+      "sourceIds": [
+        "issuer_tiger_product",
+        "plus_official_product_html",
+        "issuer_rise_product",
+        "hana_1q_official_product_html",
+        "sol_official_product_html",
+        "koact_official_product_api",
+        "thej_official_product_html",
+        "won_official_product_html",
+        "issuer",
+        "kind",
+        "index_provider",
+        "wisereport",
+        "opendart_pdf_batch"
+      ],
       "staleAfterDays": 30
     },
     "product.benchmark": {
       "strategy": "authority_then_confidence",
       "sourceIds": ["issuer", "index_provider", "publicdata", "wisereport"],
+      "staleAfterDays": 30
+    },
+    "product.benchmark.name": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": [
+        "issuer_tiger_product",
+        "plus_official_product_html",
+        "issuer_rise_product",
+        "hana_1q_official_product_html",
+        "sol_official_product_html",
+        "koact_official_product_api",
+        "thej_official_product_html",
+        "won_official_product_html",
+        "issuer",
+        "index_provider",
+        "publicdata",
+        "wisereport",
+        "opendart_pdf_batch"
+      ],
+      "staleAfterDays": 30
+    },
+    "product.benchmark.description": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": [
+        "issuer_tiger_product",
+        "plus_official_product_html",
+        "issuer_rise_product",
+        "hana_1q_official_product_html",
+        "sol_official_product_html",
+        "koact_official_product_api",
+        "thej_official_product_html",
+        "won_official_product_html",
+        "issuer",
+        "index_provider",
+        "publicdata",
+        "wisereport",
+        "opendart_pdf_batch"
+      ],
+      "staleAfterDays": 30
+    },
+    "distribution.schedule": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": [
+        "issuer_tiger_product",
+        "plus_official_product_html",
+        "issuer_rise_product",
+        "hana_1q_official_product_html",
+        "sol_official_product_html",
+        "koact_official_product_api",
+        "thej_official_product_html",
+        "won_official_product_html",
+        "issuer",
+        "kind",
+        "wisereport",
+        "opendart_pdf_batch"
+      ],
+      "staleAfterDays": 30
+    },
+    "distribution.frequency": {
+      "strategy": "authority_then_confidence",
+      "sourceIds": [
+        "issuer_tiger_product",
+        "plus_official_product_html",
+        "issuer_rise_product",
+        "hana_1q_official_product_html",
+        "sol_official_product_html",
+        "koact_official_product_api",
+        "thej_official_product_html",
+        "won_official_product_html",
+        "issuer",
+        "kind",
+        "wisereport",
+        "opendart_pdf_batch"
+      ],
       "staleAfterDays": 30
     },
     "portfolio.holdings": {

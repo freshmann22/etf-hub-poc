@@ -1,9 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { mergeSourceResults, SOURCE_RESULT_CONTRACT, validateHoldings } from '../scripts/metadata-v2/merge-source-results.mjs';
 import { makeFieldCandidate, makeProvenance } from '../scripts/metadata-v2/lib/provenance.js';
 
 const NOW = new Date('2026-07-21T00:00:00.000Z');
+const FIELD_RESOLUTION = JSON.parse(readFileSync(new URL('../config/metadata-field-resolution.json', import.meta.url), 'utf8'));
 
 function baseRecord(code, isin) {
   return {
@@ -128,6 +130,49 @@ test('primary source overrides explicit legacy secondary candidate without delet
   assert.equal(merged.product.description, 'Official text');
   assert.equal(merged.fieldCandidates['product.description'].length, 2);
   assert.equal(merged.conflicts[0].field, 'product.description');
+});
+
+test('exact semantic field priorities preserve issuer values and let DART fill missing values', () => {
+  const input = fixtures();
+  input.resolutionConfig = FIELD_RESOLUTION;
+  const issuerFields = {
+    'product.investmentObjective': 'Issuer investment objective',
+    'product.benchmark.name': 'Issuer benchmark',
+    'product.benchmark.description': 'Issuer benchmark description',
+    'distribution.schedule': 'Issuer distribution schedule',
+    'distribution.frequency': 'monthly',
+  };
+  const dartFields = {
+    'product.investmentObjective': 'DART investment objective',
+    'product.benchmark.name': 'DART benchmark',
+    'product.benchmark.description': 'DART benchmark description',
+    'distribution.schedule': 'DART distribution schedule',
+    'distribution.frequency': 'quarterly',
+  };
+  const issuer = source('issuer_tiger_product', 'primary', [{
+    universeKey: '0000D0', status: 'ok', fields: issuerFields,
+  }]);
+  const dart = source('opendart_pdf_batch', 'primary', [
+    { universeKey: '0000D0', status: 'ok', fields: dartFields },
+    { universeKey: '069500', status: 'ok', fields: dartFields },
+  ]);
+
+  const result = mergeSourceResults({ ...input, sourceDocuments: [issuer, dart], now: NOW });
+  const existing = result.output.records[0];
+  const missing = result.output.records[1];
+
+  assert.equal(existing.product.investmentObjective, issuerFields['product.investmentObjective']);
+  assert.equal(existing.product.benchmark.name, issuerFields['product.benchmark.name']);
+  assert.equal(existing.product.benchmark.description, issuerFields['product.benchmark.description']);
+  assert.equal(existing.distribution.schedule, issuerFields['distribution.schedule']);
+  assert.equal(existing.distribution.frequency, issuerFields['distribution.frequency']);
+  assert.equal(missing.product.investmentObjective, dartFields['product.investmentObjective']);
+  assert.equal(missing.product.benchmark.name, dartFields['product.benchmark.name']);
+  assert.equal(missing.product.benchmark.description, dartFields['product.benchmark.description']);
+  assert.equal(missing.distribution.schedule, dartFields['distribution.schedule']);
+  assert.equal(missing.distribution.frequency, dartFields['distribution.frequency']);
+  assert.equal(existing.fieldCandidates['product.benchmark.description'].length, 2);
+  assert.equal(result.quarantineReport.quarantinedCount, 0);
 });
 
 test('holdings gate accepts derivative exposure and quarantines corrupt rows, dates, and row counts', () => {

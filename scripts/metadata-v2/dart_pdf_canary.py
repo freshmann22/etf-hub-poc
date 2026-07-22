@@ -29,9 +29,9 @@ FIELDS = {
 }
 
 HEADING_ANCHORS = {
-    "objective": [r"(?:^|\s)1\.\s*투자\s*목적", r"투자\s*목적\s*및\s*투자\s*전략"],
-    "strategy": [r"(?:^|\s)2\.\s*투자\s*전략", r"투자\s*목적\s*및\s*투자\s*전략"],
-    "benchmark": [r"(?:기초|비교|참고)\s*지수\s*[:：]", r".{2,80}지수.{0,20}(?:를|을)\s*기초\s*지수로"],
+    "objective": [r"(?:^|\s)1\.\s*투자\s*목적", r"(?:^|\s)투자\s*목적\s*및(?=\s*(?:를|이\s*투자신탁|신탁\s*재산|$))", r"투자\s*목적\s*및\s*투자\s*전략"],
+    "strategy": [r"(?:^|\s)2\.\s*투자\s*전략", r"(?:^|\s)투자\s*전략(?=\s*(?:함|이\s*투자신탁|신탁\s*재산|$))", r"투자\s*목적\s*및\s*투자\s*전략"],
+    "benchmark": [r"※\s*(?:기초|비교|참고)\s*지수\s*[:：]", r"(?:기초|비교|참고)\s*지수\s*[:：]", r".{2,80}지수.{0,20}(?:를|을)\s*기초\s*지수로"],
     "distribution": [r"월\s*분배금", r"분배금\s*지급기준일", r"분배\s*정책"],
 }
 
@@ -51,12 +51,51 @@ PASS_CRITERIA = {
     "strategyEvidenceRate": 1.0,
     "visualFalsePositiveCount": 0,
     "benchmarkAndDistributionPolicy": "report explicit evidence rates; absence is not coerced to false",
-    "ocrPolicy": "required only when either extractor yields fewer than 500 normalized characters or agreement is below 0.80",
+    "ocrPolicy": "required only when neither native-text extractor passes length, page coverage, token-content, diversity, replacement-glyph, control-character, and mojibake guards; low order-sensitive agreement is a review warning",
+}
+
+MIN_NATIVE_TEXT_LENGTH = 500
+MIN_PAGE_TEXT_LENGTH = 50
+MIN_PAGE_COVERAGE = 0.80
+MIN_TOKEN_CONTENT_RATIO = 0.50
+MIN_UNIQUE_ALPHANUMERIC_CHARACTERS = 10
+MIN_UNIQUE_TOKENS = 20
+MIN_UNIQUE_TOKEN_RATIO = 0.01
+MAX_REPLACEMENT_GLYPH_RATIO = 0.01
+MAX_CONTROL_CHARACTER_RATIO = 0.30
+MAX_MOJIBAKE_SIGNAL_RATIO = 0.10
+LOCAL_CONTEXT_BEFORE = 260
+LOCAL_CONTEXT_AFTER = 340
+
+# Some DART PDFs expose Wingdings/Symbol list markers through Private Use
+# Area code points. Translate only the glyphs observed and verified as list
+# markers; unknown private-use characters must remain visible to hygiene gates.
+PDF_GLYPH_TRANSLATION = str.maketrans({
+    "\uf09e": "\u2022",
+    "\uf09f": "\u2022",
+    "\uf0d8": "\u25b6",
+    "\uf06c": "\u2022",
+})
+
+RISK_DISCLAIMER_PATTERNS = (
+    r"투자\s*전략에\s*따른\s*투자\s*목적",
+    r"(?:투자\s*목적|성과\s*목표).{0,100}(?:실현|보장).{0,50}(?:없|아니)",
+    r"(?:주요\s*투자\s*위험|투자\s*위험의\s*주요\s*내용)",
+)
+
+SUBSTANTIVE_PATTERNS = {
+    "objective": (r"목표로\s*운용", r"운용함을\s*목적", r"초과\s*성과를\s*달성", r"투자할\s*계획"),
+    "strategy": (r"투자할\s*계획", r"투자\s*대상", r"비교\s*지수.{0,100}초과", r"신탁\s*재산"),
+    "benchmark": (r"※\s*(?:기초|비교|참고)\s*지수\s*[:：]", r"(?:기초|비교|참고)\s*지수\s*[:：]"),
+    "distribution": (r"분배금\s*지급\s*기준일", r"매월.{0,30}분배금", r"이익\s*분배금"),
 }
 
 
 def normalize(text: str) -> str:
-    return re.sub(r"\s+", " ", text or "").strip()
+    translated = (text or "").translate(PDF_GLYPH_TRANSLATION)
+    translated = re.sub(r"\s*([\u2022\u25b6])\s*", r" \1 ", translated)
+    without_controls = re.sub(r"[\x00-\x1f\x7f]+", " ", translated)
+    return re.sub(r"\s+", " ", without_controls).strip()
 
 
 def hash_file(path: Path) -> str:
@@ -69,51 +108,152 @@ def hash_file(path: Path) -> str:
 
 def extract_pdfplumber(path: Path) -> list[str]:
     with pdfplumber.open(path) as pdf:
-        return [normalize(page.extract_text() or "") for page in pdf.pages]
+        return [page.extract_text() or "" for page in pdf.pages]
 
 
 def extract_pypdf(path: Path) -> list[str]:
     reader = PdfReader(str(path))
-    return [normalize(page.extract_text() or "") for page in reader.pages]
+    return [page.extract_text() or "" for page in reader.pages]
 
 
 def agreement(left: str, right: str) -> float:
-    compact_left = re.sub(r"\s+", "", left)
-    compact_right = re.sub(r"\s+", "", right)
+    compact_left = re.sub(r"\s+", "", normalize(left))
+    compact_right = re.sub(r"\s+", "", normalize(right))
     return round(SequenceMatcher(None, compact_left, compact_right, autojunk=False).ratio(), 4)
+
+
+def native_text_quality(pages: list[str]) -> dict:
+    raw_text = "\n".join(pages)
+    normalized_pages = [normalize(page) for page in pages]
+    text = " ".join(page for page in normalized_pages if page)
+    compact = re.sub(r"\s+", "", text)
+    alphanumeric_characters = [character.lower() for character in compact if character.isalnum()]
+    tokens = [token.lower() for token in re.findall(r"[0-9A-Za-z가-힣]+", text)]
+    unique_alphanumeric_count = len(set(alphanumeric_characters))
+    unique_token_count = len(set(tokens))
+    unique_token_ratio = round(unique_token_count / len(tokens), 4) if tokens else 0.0
+    token_count = len(alphanumeric_characters)
+    page_count = len(normalized_pages)
+    non_empty_pages = sum(len(page) >= MIN_PAGE_TEXT_LENGTH for page in normalized_pages)
+    page_coverage = round(non_empty_pages / page_count, 4) if page_count else 0.0
+    token_content_ratio = round(token_count / len(compact), 4) if compact else 0.0
+    text_length = len(normalize(text))
+    raw_length = len(raw_text)
+    replacement_glyph_count = raw_text.count("\ufffd")
+    control_character_count = sum(ord(character) < 32 and character not in "\t\r\n" for character in raw_text)
+    private_use_count = sum(0xE000 <= ord(character) <= 0xF8FF for character in raw_text)
+    unexpected_cjk_count = sum(0x3400 <= ord(character) <= 0x9FFF for character in raw_text)
+    replacement_glyph_ratio = round(replacement_glyph_count / raw_length, 4) if raw_length else 0.0
+    control_character_ratio = round(control_character_count / raw_length, 4) if raw_length else 0.0
+    mojibake_signal_ratio = round((replacement_glyph_count + private_use_count + unexpected_cjk_count) / raw_length, 4) if raw_length else 0.0
+    usable = (
+        text_length >= MIN_NATIVE_TEXT_LENGTH
+        and page_coverage >= MIN_PAGE_COVERAGE
+        and token_content_ratio >= MIN_TOKEN_CONTENT_RATIO
+        and unique_alphanumeric_count >= MIN_UNIQUE_ALPHANUMERIC_CHARACTERS
+        and unique_token_count >= MIN_UNIQUE_TOKENS
+        and unique_token_ratio >= MIN_UNIQUE_TOKEN_RATIO
+        and replacement_glyph_ratio <= MAX_REPLACEMENT_GLYPH_RATIO
+        and control_character_ratio <= MAX_CONTROL_CHARACTER_RATIO
+        and mojibake_signal_ratio <= MAX_MOJIBAKE_SIGNAL_RATIO
+    )
+    return {
+        "textLength": text_length,
+        "pageCount": page_count,
+        "nonEmptyPages": non_empty_pages,
+        "pageCoverage": page_coverage,
+        "tokenContentRatio": token_content_ratio,
+        "uniqueAlphanumericCharacterCount": unique_alphanumeric_count,
+        "tokenCount": len(tokens),
+        "uniqueTokenCount": unique_token_count,
+        "uniqueTokenRatio": unique_token_ratio,
+        "replacementGlyphCount": replacement_glyph_count,
+        "replacementGlyphRatio": replacement_glyph_ratio,
+        "controlCharacterCount": control_character_count,
+        "controlCharacterRatio": control_character_ratio,
+        "privateUseCharacterCount": private_use_count,
+        "unexpectedCjkCharacterCount": unexpected_cjk_count,
+        "mojibakeSignalRatio": mojibake_signal_ratio,
+        "usableNativeText": usable,
+    }
+
+
+def assess_extraction_quality(plumber_pages: list[str], pypdf_pages: list[str]) -> dict:
+    plumber = native_text_quality(plumber_pages)
+    pypdf = native_text_quality(pypdf_pages)
+    extractor_agreement = agreement("\n".join(plumber_pages), "\n".join(pypdf_pages))
+    native_text_usable = plumber["usableNativeText"] or pypdf["usableNativeText"]
+    layout_disagreement = native_text_usable and extractor_agreement < PASS_CRITERIA["minimumExtractorAgreement"]
+    review_reasons = []
+    if layout_disagreement:
+        review_reasons.append("layout_order_disagreement")
+    if not native_text_usable:
+        review_reasons.append("native_text_unusable_requires_ocr")
+    return {
+        "pdfplumber": plumber,
+        "pypdf": pypdf,
+        "agreement": extractor_agreement,
+        "nativeTextUsable": native_text_usable,
+        "ocrRequired": not native_text_usable,
+        "layoutOrderDisagreement": layout_disagreement,
+        "reviewRequired": bool(review_reasons),
+        "reviewReasons": review_reasons,
+    }
+
+
+def local_context(text: str, match: re.Match) -> str:
+    return text[max(0, match.start() - LOCAL_CONTEXT_BEFORE) : match.end() + LOCAL_CONTEXT_AFTER]
+
+
+def is_safe_evidence_context(field: str, context: str, explicit_heading: bool) -> bool:
+    if field in ("objective", "strategy") and re.search(r"운용\s*전문\s*인력|책임\s*운용", context, re.I | re.S) and not explicit_heading:
+        return False
+    risk_disclaimer = any(re.search(pattern, context, re.I | re.S) for pattern in RISK_DISCLAIMER_PATTERNS)
+    substantive = any(re.search(pattern, context, re.I | re.S) for pattern in SUBSTANTIVE_PATTERNS[field])
+    return not risk_disclaimer or (explicit_heading and substantive)
 
 
 def evidence_for_pages(pages: list[str]) -> dict[str, dict]:
     output = {}
     for field, patterns in FIELDS.items():
         scored = []
-        for page_number, text in enumerate(pages, 1):
-            hits = sum(len(re.findall(pattern, text, re.I | re.S)) for pattern in patterns)
-            if not hits:
-                continue
+        for page_number, raw_text in enumerate(pages, 1):
+            text = normalize(raw_text)
             heading_matches = [(pattern, match) for pattern in HEADING_ANCHORS[field] for match in re.finditer(pattern, text, re.I | re.S)]
-            section_heading = bool(re.search(r"(?:^|\s)(?:1\.\s*투자\s*목적|2\.\s*투자\s*전략)|투자\s*목적\s*및\s*투자\s*전략", text, re.I | re.S))
-            is_people_context = bool(re.search(r"운용\s*전문\s*인력|책임\s*운용", text)) and not heading_matches
-            is_risk_context = (bool(re.search(r"주요\s*투자\s*위험|투자\s*위험의\s*주요\s*내용", text)) or text.count("위험") >= 5) and not section_heading
-            if field in ("objective", "strategy") and is_people_context:
+            candidates = []
+            for pattern in patterns:
+                for match in re.finditer(pattern, text, re.I | re.S):
+                    nearby_headings = [
+                        (heading_pattern, heading_match)
+                        for heading_pattern, heading_match in heading_matches
+                        if abs(heading_match.start() - match.start()) <= LOCAL_CONTEXT_BEFORE + LOCAL_CONTEXT_AFTER
+                    ]
+                    explicit_heading = bool(nearby_headings)
+                    context = local_context(text, match)
+                    if is_safe_evidence_context(field, context, explicit_heading):
+                        candidates.append((pattern, match, context, nearby_headings))
+            if not candidates:
                 continue
-            if field in ("objective", "strategy", "benchmark") and is_risk_context:
-                continue
-            detail_bonus = sum(token in text for token in ("목적으로", "투자대상", "지수 산출", "지급기준일", "분배율", "운용"))
-            heading_bonus = 100 if heading_matches else 0
-            if field == "benchmark" and section_heading:
+            best_pattern, best_match, best_context, nearby_headings = max(
+                candidates,
+                key=lambda item: (
+                    100 if item[3] else 0,
+                    sum(bool(re.search(pattern, item[2], re.I | re.S)) for pattern in SUBSTANTIVE_PATTERNS[field]),
+                    -item[1].start(),
+                ),
+            )
+            hits = len(candidates)
+            detail_bonus = sum(bool(re.search(pattern, best_context, re.I | re.S)) for pattern in SUBSTANTIVE_PATTERNS[field])
+            heading_bonus = 100 if nearby_headings else 0
+            if field == "benchmark" and nearby_headings:
                 heading_bonus += 300
-            scored.append((hits * 10 + detail_bonus + heading_bonus, page_number, text, heading_matches))
+            anchor = min(nearby_headings, key=lambda item: abs(item[1].start() - best_match.start())) if nearby_headings else (best_pattern, best_match)
+            scored.append((hits * 10 + detail_bonus + heading_bonus, page_number, text, anchor))
         if not scored:
             output[field] = {"found": False, "candidatePages": [], "selectedPage": None, "snippet": None}
             continue
         scored.sort(key=lambda row: (-row[0], row[1]))
-        _, selected_page, selected_text, selected_headings = scored[0]
-        if selected_headings:
-            anchor_pattern, anchor_match = min(selected_headings, key=lambda item: item[1].start())
-        else:
-            matches = [(pattern, match) for pattern in patterns for match in re.finditer(pattern, selected_text, re.I | re.S)]
-            anchor_pattern, anchor_match = min(matches, key=lambda item: item[1].start())
+        _, selected_page, selected_text, (anchor_pattern, anchor_match) = scored[0]
         start = max(0, anchor_match.start() - 120)
         output[field] = {
             "found": True,
@@ -192,7 +332,7 @@ def main() -> None:
         plumber_text = "\n".join(plumber_pages)
         pypdf_text = "\n".join(pypdf_pages)
         evidence = evidence_for_pages(plumber_pages)
-        needs_ocr = min(len(normalize(plumber_text)), len(normalize(pypdf_text))) < 500 or agreement(plumber_text, pypdf_text) < PASS_CRITERIA["minimumExtractorAgreement"]
+        quality = assess_extraction_quality(plumber_pages, pypdf_pages)
         render_roles = {"first": 1}
         for field, item in evidence.items():
             if item["selectedPage"] is not None:
@@ -205,11 +345,16 @@ def main() -> None:
             "pdfinfo": pdfinfo(path, pdfinfo_exe),
             "extractors": {
                 "pdftotext": {"available": bool(pdftotext_exe), "used": False, "reason": "binary unavailable in bundled/system Poppler" if not pdftotext_exe else "comparison deferred to avoid a third derived artifact"},
-                "pdfplumber": {"available": True, "pages": len(plumber_pages), "textLength": len(normalize(plumber_text)), "nonEmptyPages": sum(bool(page) for page in plumber_pages)},
-                "pypdf": {"available": True, "pages": len(pypdf_pages), "textLength": len(normalize(pypdf_text)), "nonEmptyPages": sum(bool(page) for page in pypdf_pages)},
-                "agreement": agreement(plumber_text, pypdf_text),
+                "pdfplumber": {"available": True, **quality["pdfplumber"]},
+                "pypdf": {"available": True, **quality["pypdf"]},
+                "agreement": quality["agreement"],
             },
-            "ocr": {"required": needs_ocr, "tesseractAvailable": bool(tesseract_exe), "performed": False},
+            "ocr": {"required": quality["ocrRequired"], "tesseractAvailable": bool(tesseract_exe), "performed": False},
+            "review": {
+                "required": quality["reviewRequired"],
+                "reasons": quality["reviewReasons"],
+                "layoutOrderDisagreement": quality["layoutOrderDisagreement"],
+            },
             "evidence": evidence,
             "rendered": render_pages(path, source_row["etfCode"], render_roles, render_dir, pdftoppm_exe),
         })

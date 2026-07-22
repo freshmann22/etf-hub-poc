@@ -1,5 +1,63 @@
 # ETF 메타데이터 보강 작업 중단 보고서
 
+## 최신 완료 체크포인트 · 2026-07-22 15:49 KST
+
+이 문서의 기존 중단 기록에서 재개한 OpenDART PDF 배치는 수집·전수 추출·보수적 변환·병합·후속 검증까지 완료됐다. 현재 실행 중인 collector/extractor는 없으며, raw PDF와 append-only 원장은 그대로 보존됐다.
+
+| 항목 | 현재 상태 |
+|---|---:|
+| DART 매핑 대상 | 911 |
+| 시도 / 성공 | 911 / 911 |
+| unresolved / 미시도 | 0 / 0 |
+| malformed ledger | 0 |
+| 전수 추출 parsed / pending OCR | 911 / 0 |
+| source-result records | 911 (ok 910, unavailable 1) |
+| canonical에 추가한 DART 후보 | 공식명 910 |
+| canonical 선택값 변경 | 0 |
+| merge quarantine | 0 |
+| metadata-v2 테스트 | 162 / 162 통과 |
+| taxonomy v2 표본 | 200개 고유, A 91 / B 109 |
+
+전수 PDF의 500자 근거 창은 별도 의미 감사를 거쳤다. `productDescription` 893건, `investmentObjective` 891건, `benchmarkDescription` 911건, `distributionPolicy` 114건은 각각 전략·위험·성과표·분배재원 문맥이 섞여 canonical 필드 계약과 일치하지 않았다. 총 2,809건은 extraction report에 evidence-only로 보존하고 source-result에서는 승격하지 않았다. 이 결정으로 기존 공식 상품 페이지의 선택값을 DART 창으로 덮어쓰는 일을 차단했다.
+
+주요 완료 산출물:
+
+- `data/reports/metadata-v2/dart-pdf-batch-extraction.json`: 911건 전수 추출, OCR 0, PDF 계보·해시 검증 완료
+- `data/reports/metadata-v2/dart-pdf-batch-source-result.json`: 공식명 910건만 merge 후보, 1건 unavailable, evidence-only 제외 사유 포함
+- `data/normalized/etf-metadata-v2.json`: DART 공식명 candidate 910건 추가, 기존 선택값·1,141 shape 불변
+- `tmp/metadata-v2-pre-dart-20260722-153948/`: 병합 전 canonical/quarantine/coverage/report 백업과 SHA-256 manifest
+- `data/reports/etf-taxonomy-review-sample-v2.json`: 현재 canonical 해시 기준 200개 표본
+
+다음 후속 작업은 네트워크 수집 재개가 아니라 **clause-level semantic parser** 구현이다. 목적·전략·비교지수·분배 문장에서 완결된 절만 추출하고 음성 규칙·실물 PDF 회귀·표본 감사를 통과한 값만 별도 source-result로 승격해야 한다. 기존 2,809개 원문 창을 그대로 병합해서는 안 된다.
+
+아래 11:26 및 2026-07-21 기록은 네트워크 중단 당시의 역사적 체크포인트로 보존한다.
+
+## 최신 안전 중단 체크포인트 · 2026-07-22 11:26 KST
+
+인터넷 연결 중단 가능성 때문에 단일 DART collector PID 15596만 종료했다. 종료 후 3초 간격으로 진행도 스냅샷을 두 번 생성했으며 두 결과가 동일해 writer가 완전히 멈춘 것을 확인했다. raw 파일과 append-only 원장은 수정하지 않았다.
+
+| 항목 | 최신 상태 |
+|---|---:|
+| 전체 DART 대상 | 911 |
+| 시도한 고유 키 | 888 |
+| 성공 | 885 |
+| 재시도 가능 오류 | 3 |
+| 미시도 | 23 |
+| 진행률 | 97.48% |
+| 원장 유효 행 / malformed 행 | 889 / 0 |
+
+재시도 대상은 모두 `TimeoutError`다.
+
+- `123320` TIGER 레버리지
+- `232080` TIGER 코스닥150
+- `480460` WON 한국부동산TOP3플러스
+
+재개 시 먼저 `npm run metadata:v2:progress:dart`로 위 수치를 확인한 뒤 `node scripts/metadata-v2/collect-dart-prospectus-pdfs.mjs`를 단일 프로세스로 실행한다. collector는 성공 885건을 건너뛰고 오류 3건과 미시도 23건만 처리한다.
+
+이 세션에서는 full-batch PDF extractor/converter와 엄격한 병합 게이트, Python runtime launcher, v2 기반 taxonomy 200개 표본 경로를 구현하고 관련 테스트를 통과시켰다. 그러나 batch가 아직 완결되지 않았으므로 **전수 추출, converter 실행, canonical merge, readiness 재계산, v2 200개 표본 생성은 실행하지 않았다.**
+
+아래 2026-07-21 내용은 최초 중단 당시의 역사적 기준선으로 보존한다.
+
 기준 시각: 2026-07-21 16:57 KST (`dart-pdf-batch-progress.json` 생성 시각 2026-07-21T07:57:10.632Z)
 
 ## 결론

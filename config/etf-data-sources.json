@@ -47,9 +47,9 @@
       "accessMethod": "xls",
       "endpoint": "https://m.samsungfund.com/excel_pdf.do?fId={fId}&gijunYMD={yyyymmdd}",
       "requiresLogin": false,
-      "rateLimit": "미구현",
+      "rateLimit": "HTTP timeout/retry + 사용자 opt-in; 대표 10종 순차 실측",
       "reliability": 0.95,
-      "notes": "AMC_FEASIBILITY.md 실측: 전체(200+) 구성종목 확보 가능, 로그인/키 불필요. 단 ETF코드→fId 매핑표가 없어 이번 세션 범위에서는 미구현(BL-12 연장선). fId 매핑 확보 시 최우선 전체 구성종목 소스가 될 수 있음."
+      "notes": "server/providers/issuer 구현 완료. 공식 product.do의 srchVal로 단축코드→fId를 동적 해석하고 product-pdf JSON을 정규화한다. 숫자·영문 혼합 대표 10종 10/10 성공, 500행 초과 상품도 전체 반환 확인. ISSUER_ENABLED=true에서만 활성화."
     },
     {
       "sourceId": "issuer_tiger",
@@ -58,9 +58,9 @@
       "accessMethod": "ajax_html",
       "endpoint": "https://investments.miraeasset.com/tigeretf/ko/reference/pdf-status-list.ajax (POST, ksdFund=ISIN)",
       "requiresLogin": false,
-      "rateLimit": "미구현",
+      "rateLimit": "HTTP timeout/retry + 사용자 opt-in; 대표 10종 순차 실측",
       "reliability": 0.95,
-      "notes": "AMC_FEASIBILITY.md 실측: 전체 구성종목 확보 가능, 로그인/키 불필요. ETF코드→ISIN 매핑 미확보로 이번 세션 미구현."
+      "notes": "server/providers/issuer 구현 완료. 숫자형 단축코드는 ISO 6166 check digit로 ISIN을 계산해 전체 구성종목을 조회한다(대표 10종 10/10 성공). 영문 혼합 단축코드는 공공데이터 ISIN 매핑 추가 전까지 미지원. ISSUER_ENABLED=true에서만 활성화."
     },
     {
       "sourceId": "seibro",

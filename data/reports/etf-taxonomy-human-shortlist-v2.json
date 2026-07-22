@@ -1,0 +1,3908 @@
+{
+  "schemaVersion": "etf-taxonomy-human-shortlist-v2",
+  "artifactId": "taxonomy-human-shortlist-v2",
+  "shortlistVersion": "2.0.0",
+  "generatedAt": "2026-07-22T11:53:26.852Z",
+  "targetCount": 24,
+  "purpose": "AI가 위험·경계 사례를 선별해 사람의 최종 검토량을 200개에서 24개로 줄이는 검토 자료",
+  "parentSample": {
+    "path": "data/reports/etf-taxonomy-review-sample-v2.json",
+    "contentHash": "421c721ec86e266c4ec181ee326997f86fd4e67b68c8690752191997c8cb69ad",
+    "generatedAt": "2026-07-22T11:37:41.133Z",
+    "selectionVersion": "metadata-v2-bridge-1.0.0"
+  },
+  "taxonomySnapshot": {
+    "path": "config/etf-tagging/etf-taxonomy.json",
+    "contentHash": "b12a296229c820516a911bb121c87e161e939b5380e80c46a3cbd96820dcee42",
+    "tagCount": 56
+  },
+  "allowedTagIds": [
+    "asset.equity",
+    "asset.bond",
+    "asset.bond.government",
+    "asset.bond.corporate",
+    "asset.bond.target_maturity",
+    "asset.bond.money_market",
+    "asset.commodity",
+    "asset.reit",
+    "asset.mixed",
+    "asset.currency",
+    "region.domestic_kr",
+    "region.us",
+    "region.china",
+    "region.japan",
+    "region.india",
+    "region.vietnam",
+    "region.developed",
+    "region.emerging",
+    "sector.game_entertainment_media",
+    "sector.it",
+    "sector.healthcare_bio_pharma",
+    "sector.semiconductor",
+    "sector.ev_battery",
+    "sector.clean_energy",
+    "sector.autonomous_mobility",
+    "sector.tech_general",
+    "sector.financials",
+    "sector.aerospace_defense",
+    "sector.ai_power_infrastructure",
+    "sector.consumer_discretionary",
+    "sector.shipbuilding",
+    "sector.nuclear_power",
+    "sector.beauty_cosmetics",
+    "sector.consumer_staples_food",
+    "sector.energy_chemicals",
+    "sector.steel_metals",
+    "sector.construction",
+    "sector.robotics",
+    "sector.transportation_logistics",
+    "strategy.leverage",
+    "strategy.inverse",
+    "strategy.active",
+    "strategy.passive_index",
+    "strategy.growth",
+    "strategy.value",
+    "strategy.low_volatility",
+    "strategy.benchmark.sp500",
+    "strategy.benchmark.nasdaq100",
+    "strategy.benchmark.kospi200",
+    "strategy.value_up",
+    "strategy.esg_screening",
+    "strategy.large_conglomerate_group",
+    "dividend.korea_high_dividend",
+    "dividend.dividend_growth",
+    "dividend.covered_call",
+    "dividend.monthly"
+  ],
+  "policy": [
+    "AI 권고는 태그를 자동 변경하지 않으며 최종 판단은 사람이 기록한다.",
+    "명백한 규칙 오탐, 희소 태그, 정의 경계, 근거 부족, DART 반영 경계를 우선한다.",
+    "현재 200개 부모 표본에 없는 태그는 억지로 포함하지 않고 데이터 보강 대기열로 분리한다."
+  ],
+  "summary": {
+    "shortlistCount": 24,
+    "parentCount": 200,
+    "reductionPercent": 88,
+    "tierCounts": {
+      "critical_rule_error": 2,
+      "lineage_error": 2,
+      "rare_tag": 4,
+      "evidence_gap": 2,
+      "post_dart_boundary": 3,
+      "multi_sector_boundary": 3,
+      "definition_boundary": 3,
+      "confidence_check": 1,
+      "low_confidence_fallback": 4
+    },
+    "deferredEnrichmentCount": 3
+  },
+  "sampleDiversityAudit": {
+    "finding": "DART frequency 반영으로 미국·커버드콜 표본이 늘고 저변동성·중국·채권·헬스케어 다양성이 감소함",
+    "enteredCurrentSample": [
+      "458750",
+      "458760",
+      "474220",
+      "493810",
+      "458730",
+      "490090"
+    ],
+    "displacedFromPreviousSample": [
+      "143860",
+      "157450",
+      "157500",
+      "174350",
+      "203780",
+      "204480"
+    ],
+    "recommendedRestorationCandidates": [
+      "174350",
+      "204480",
+      "157450",
+      "143860",
+      "203780"
+    ],
+    "note": "이 항목들은 현재 부모 표본의 부분집합이 아니므로 shortlist에 섞지 않고 다음 표본 재구성 후보로 기록함"
+  },
+  "deferredEnrichment": [
+    {
+      "tagId": "region.vietnam",
+      "label": "베트남",
+      "facet": "region",
+      "classifiedEtfCount": 1,
+      "gradeCounts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "reason": "D등급 데이터에만 존재",
+      "nextAction": "분류 판단 전 공식 보유종목·국가·지수 방법론 근거 보강"
+    },
+    {
+      "tagId": "sector.tech_general",
+      "label": "테크/기술",
+      "facet": "sector",
+      "classifiedEtfCount": 3,
+      "gradeCounts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0
+      },
+      "reason": "현재 200개 표본에 미포함",
+      "nextAction": "분류 판단 전 공식 보유종목·국가·지수 방법론 근거 보강"
+    },
+    {
+      "tagId": "sector.transportation_logistics",
+      "label": "운송/물류",
+      "facet": "sector",
+      "classifiedEtfCount": 1,
+      "gradeCounts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "reason": "현재 200개 표본에 미포함",
+      "nextAction": "분류 판단 전 공식 보유종목·국가·지수 방법론 근거 보강"
+    }
+  ],
+  "items": [
+    {
+      "shortlistNumber": 1,
+      "parentSampleNumber": 44,
+      "etfCode": "0104P0",
+      "name": "TIGER 코리아배당다우존스위클리커버드콜",
+      "priority": {
+        "score": 100,
+        "tier": "critical_rule_error"
+      },
+      "reasons": [
+        "국내 배당 ETF에 미국 지역 태그가 붙은 규칙 오탐 가능성"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "region.us 제거 및 국내 노출 여부 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 72,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration",
+            "rule_v2"
+          ],
+          "label": "커버드콜 배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.62,
+          "confidence": 0.45,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "한국 고배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "0104P0",
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.62,
+          "confidence": 0.45,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "KRX 다우존스 코리아 배당 30 타겟 7% 위클리 커버드콜 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "미스토홀딩스",
+            "code": "081660",
+            "weight": 4.91
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 4.64
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 4.51
+          },
+          {
+            "name": "영원무역",
+            "code": "111770",
+            "weight": 4.48
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 4.45
+          },
+          {
+            "name": "기업은행",
+            "code": "024110",
+            "weight": 4.24
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 4.2
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 4.16
+          },
+          {
+            "name": "한국타이어앤테크놀로지",
+            "code": "161390",
+            "weight": 4.09
+          },
+          {
+            "name": "제일기획",
+            "code": "030000",
+            "weight": 3.87
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 19
+      },
+      "contextHash": "b34b9af27b38d9314a0de340fe0943ba7d1d02af42cf227203fb825c30004f3e",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 2,
+      "parentSampleNumber": 178,
+      "etfCode": "0052D0",
+      "name": "TIGER 코리아배당다우존스",
+      "priority": {
+        "score": 99,
+        "tier": "critical_rule_error"
+      },
+      "reasons": [
+        "국내 배당 ETF에 미국 지역 태그가 붙은 규칙 오탐 가능성"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "region.us 제거 및 국내 노출 여부 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.85,
+          "confidence": 0.6,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "한국 고배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "Dow Jones Korea Dividend 30 지수 (Price Return)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "미스토홀딩스",
+            "code": "081660",
+            "weight": 5.03
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 4.75
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 4.63
+          },
+          {
+            "name": "영원무역",
+            "code": "111770",
+            "weight": 4.58
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 4.56
+          },
+          {
+            "name": "기업은행",
+            "code": "024110",
+            "weight": 4.34
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 4.3
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 4.26
+          },
+          {
+            "name": "한국타이어앤테크놀로지",
+            "code": "161390",
+            "weight": 4.19
+          },
+          {
+            "name": "제일기획",
+            "code": "030000",
+            "weight": 3.96
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 18
+      },
+      "contextHash": "a30893b2a3850c4b5c04f240775cc199109e0067daa7325b926c25686c01eb11",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 3,
+      "parentSampleNumber": 144,
+      "etfCode": "490090",
+      "name": "TIGER 미국AI빅테크10",
+      "priority": {
+        "score": 98,
+        "tier": "lineage_error"
+      },
+      "reasons": [
+        "493810과 같은 PDF·해시·접수번호를 공유해 월분배 정보가 잘못 전이된 정황"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "monthly 근거를 보류하고 DART 첨부문서 연결 관계를 우선 수정",
+      "readiness": {
+        "grade": "B",
+        "score": 72,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국AI빅테크10\" matched /미국|S&P\\s*500|나스닥|다우존스|러셀/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-default",
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "KEDI 미국AI빅테크10 지수(PR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "Apple Inc",
+            "code": "AAPL US EQUITY",
+            "weight": 19.81
+          },
+          {
+            "name": "NVIDIA Corp",
+            "code": "NVDA US EQUITY",
+            "weight": 19.07
+          },
+          {
+            "name": "Alphabet Inc",
+            "code": "GOOGL US EQUITY",
+            "weight": 14.06
+          },
+          {
+            "name": "Microsoft Corp",
+            "code": "MSFT US EQUITY",
+            "weight": 11.83
+          },
+          {
+            "name": "Amazon.com Inc",
+            "code": "AMZN US EQUITY",
+            "weight": 9.79
+          },
+          {
+            "name": "Broadcom Inc",
+            "code": "AVGO US EQUITY",
+            "weight": 7.05
+          },
+          {
+            "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+            "code": "TSM US EQUITY",
+            "weight": 6.05
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "code": "META US EQUITY",
+            "weight": 4.96
+          },
+          {
+            "name": "Tesla Inc",
+            "code": "TSLA US EQUITY",
+            "weight": 4.34
+          },
+          {
+            "name": "ASML Holding NV",
+            "code": "ASML US EQUITY",
+            "weight": 2.71
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 18
+      },
+      "contextHash": "4aa67fbc8e23062b4e92d83903c62a455f32dfdf5aaef794dd05720c754ec57a",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 4,
+      "parentSampleNumber": 143,
+      "etfCode": "458730",
+      "name": "TIGER 미국배당다우존스",
+      "priority": {
+        "score": 97,
+        "tier": "lineage_error"
+      },
+      "reasons": [
+        "비커버드콜 상품에 커버드콜 상품 설명 PDF가 연결된 것으로 의심됨"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "monthly 근거를 보류하고 DART 첨부문서 연결 관계를 우선 수정",
+      "readiness": {
+        "grade": "B",
+        "score": 72,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국배당다우존스\" matched /미국|S&P\\s*500|나스닥|다우존스|러셀/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-default",
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "Dow Jones U.S. Dividend 100 Price Return Index",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "Abbott Laboratories",
+            "code": "ABT US EQUITY",
+            "weight": 4.5
+          },
+          {
+            "name": "UnitedHealth Group Inc",
+            "code": "UNH US EQUITY",
+            "weight": 4.4
+          },
+          {
+            "name": "Merck & Co Inc",
+            "code": "MRK US EQUITY",
+            "weight": 4.33
+          },
+          {
+            "name": "Amgen Inc",
+            "code": "AMGN US EQUITY",
+            "weight": 4.22
+          },
+          {
+            "name": "Home Depot Inc/The",
+            "code": "HD US EQUITY",
+            "weight": 4.22
+          },
+          {
+            "name": "Procter & Gamble Co/The",
+            "code": "PG US EQUITY",
+            "weight": 4.17
+          },
+          {
+            "name": "Coca-Cola Co/The",
+            "code": "KO US EQUITY",
+            "weight": 4.03
+          },
+          {
+            "name": "Chevron Corp",
+            "code": "CVX US EQUITY",
+            "weight": 3.85
+          },
+          {
+            "name": "PepsiCo Inc",
+            "code": "PEP US EQUITY",
+            "weight": 3.75
+          },
+          {
+            "name": "Verizon Communications Inc",
+            "code": "VZ US EQUITY",
+            "weight": 3.64
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 18
+      },
+      "contextHash": "fad4afd6e41792a86b37377a9bd4a6f0d18dcb0bc77dee1421de679962f6a1e2",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 5,
+      "parentSampleNumber": 2,
+      "etfCode": "387280",
+      "name": "TIGER 퓨처모빌리티액티브",
+      "priority": {
+        "score": 96,
+        "tier": "rare_tag"
+      },
+      "reasons": [
+        "표본 내 희소한 자율주행·미래 모빌리티 태그 검증 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "자율주행과 전기차·배터리 태그 병존 검토",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.65,
+          "confidence": 0.5,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "전기차/2차전지",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.autonomous_mobility",
+          "score": 0.55,
+          "confidence": 0.45,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "자율주행/모빌리티",
+          "facet": "sector"
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.8,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "액티브",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "387280",
+          "tagId": "sector.autonomous_mobility",
+          "score": 0.55,
+          "confidence": 0.45,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "FnGuide 퓨처모빌리티 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "현대모비스",
+            "code": "012330",
+            "weight": 9.19
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 8.19
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 7.72
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 7.44
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 6.86
+          },
+          {
+            "name": "현대글로비스",
+            "code": "086280",
+            "weight": 5.99
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 5.82
+          },
+          {
+            "name": "로보티즈",
+            "code": "108490",
+            "weight": 5.56
+          },
+          {
+            "name": "현대오토에버",
+            "code": "307950",
+            "weight": 5.42
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 3.09
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 19
+      },
+      "contextHash": "5429143f421e103420145d2c4036cca95ba0bbb17d5941d3b62bfcf886b8947a",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 6,
+      "parentSampleNumber": 16,
+      "etfCode": "266550",
+      "name": "PLUS 중형주저변동50",
+      "priority": {
+        "score": 95,
+        "tier": "rare_tag"
+      },
+      "reasons": [
+        "저변동성 태그의 대표적인 명시형 상품"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "저변동성 태그 유지 및 신뢰도 상향 검토",
+      "readiness": {
+        "grade": "A",
+        "score": 76,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "strategy.low_volatility",
+          "score": 0.55,
+          "confidence": 0.4,
+          "source": "auditor_promoted(reused_worker_evidence)",
+          "mergedFrom": [
+            "auditor_promoted(reused_worker_evidence)"
+          ],
+          "label": "저변동성(로우볼)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "266550",
+          "tagId": "strategy.low_volatility",
+          "score": 0.55,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.6/minimumConfidence=0.46 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "한화자산운용",
+        "benchmarkName": "FnGuide 중형주저변동50지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "iM금융지주",
+            "code": "139130",
+            "weight": 3.1
+          },
+          {
+            "name": "한국콜마",
+            "code": "161890",
+            "weight": 3.03
+          },
+          {
+            "name": "오리온",
+            "code": "271560",
+            "weight": 2.99
+          },
+          {
+            "name": "CJ제일제당",
+            "code": "097950",
+            "weight": 2.96
+          },
+          {
+            "name": "강원랜드",
+            "code": "035250",
+            "weight": 2.95
+          },
+          {
+            "name": "제일기획",
+            "code": "030000",
+            "weight": 2.87
+          },
+          {
+            "name": "코리안리",
+            "code": "003690",
+            "weight": 2.84
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 2.68
+          },
+          {
+            "name": "이노션",
+            "code": "214320",
+            "weight": 2.66
+          },
+          {
+            "name": "에스원",
+            "code": "012750",
+            "weight": 2.65
+          }
+        ],
+        "distributionSchedule": "배당금 발생시 1,4,7,10월, 마지막 영업일 및 회계기간 종료일 기준 지급(회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 19
+      },
+      "contextHash": "4e395fd9364f6d645d1aad885eb91670d34169308a628e6606c171e6fd364964",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 7,
+      "parentSampleNumber": 9,
+      "etfCode": "489000",
+      "name": "PLUS 일본엔화초단기국채(합성)",
+      "priority": {
+        "score": 94,
+        "tier": "evidence_gap"
+      },
+      "reasons": [
+        "일본 엔화·초단기 국채 분류를 검증할 보유종목 근거가 부족함"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "현재 분류를 잠정 유지하되 근거 부족이면 insufficient",
+      "readiness": {
+        "grade": "B",
+        "score": 61,
+        "detailScope": "enriched",
+        "missing": [
+          "구성종목",
+          "산업·국가 비중"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "asset.bond.money_market",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 일본엔화초단기국채(합성)\" matched /KOFR|CD\\s*금리|초단기|머니마켓/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "초단기/금리",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "asset.bond",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule-implied",
+          "evidence": [
+            "implied by asset.bond.money_market"
+          ],
+          "mergedFrom": [
+            "rule-implied"
+          ],
+          "label": "채권",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "asset.bond.government",
+          "score": 0.8,
+          "confidence": 0.7,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 일본엔화초단기국채(합성)\" matched /국고채|통안채|미국채|국채/"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "국채",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.japan",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"PLUS 일본엔화초단기국채(합성)\" matched /일본|닛케이|TOPIX/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "일본",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "한화자산운용",
+        "benchmarkName": "KAP 일본 단기 국채 지수(총수익)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [],
+        "distributionSchedule": "투자신탁 회계기간 종료일. 다만 투자신탁 회계기간 종료일이 아닌 경우 그 직전 영업일",
+        "sourceCount": 15
+      },
+      "contextHash": "fb5d924daea158440d1421f4a53c4301536ccd5d1bb21d7d7f824510064f2ae3",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 8,
+      "parentSampleNumber": 10,
+      "etfCode": "375270",
+      "name": "RISE 글로벌데이터센터리츠(합성)",
+      "priority": {
+        "score": 93,
+        "tier": "evidence_gap"
+      },
+      "reasons": [
+        "글로벌 데이터센터 리츠의 국가·보유종목 근거가 부족함"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "리츠·선진국 분류를 잠정 유지하되 insufficient 검토",
+      "readiness": {
+        "grade": "B",
+        "score": 61,
+        "detailScope": "enriched",
+        "missing": [
+          "구성종목",
+          "산업·국가 비중"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "asset.reit",
+          "score": 0.9,
+          "confidence": 0.85,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 글로벌데이터센터리츠(합성)\" matched /리츠|REIT/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "리츠/부동산",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.developed",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "name=\"RISE 글로벌데이터센터리츠(합성)\" matched /선진국|MSCI\\s*World|(?<!코스닥)(?<!K-)글로벌/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "선진국/글로벌",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "KB자산운용",
+        "benchmarkName": "Kelly Data Center & Tech Infrastructure Net Total Return Index",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [],
+        "distributionSchedule": "회계기간 종료일",
+        "sourceCount": 15
+      },
+      "contextHash": "f082db5f05d185b3be7218736ea222fd58421962177987eb4be44bdd6292d48f",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 9,
+      "parentSampleNumber": 142,
+      "etfCode": "493810",
+      "name": "TIGER 미국AI빅테크10타겟데일리커버드콜",
+      "priority": {
+        "score": 92,
+        "tier": "post_dart_boundary"
+      },
+      "reasons": [
+        "월분배 공시가 정합하지만 490090에 동일 PDF가 공유된 계보 감사 기준점"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "monthly는 유지 검토하되 490090과 문서 계보를 분리",
+      "readiness": {
+        "grade": "B",
+        "score": 72,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국AI빅테크10타겟데일리커버드콜\" matched /커버드콜/"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "커버드콜 배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국AI빅테크10타겟데일리커버드콜\" matched /미국|S&P\\s*500|나스닥|다우존스|러셀/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-default",
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "KEDI 미국AI빅테크10+15%데일리프리미엄 지수(TR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "Apple Inc",
+            "code": "AAPL US EQUITY",
+            "weight": 20.13
+          },
+          {
+            "name": "NVIDIA Corp",
+            "code": "NVDA US EQUITY",
+            "weight": 19.38
+          },
+          {
+            "name": "Alphabet Inc",
+            "code": "GOOGL US EQUITY",
+            "weight": 14.28
+          },
+          {
+            "name": "Microsoft Corp",
+            "code": "MSFT US EQUITY",
+            "weight": 12.02
+          },
+          {
+            "name": "Amazon.com Inc",
+            "code": "AMZN US EQUITY",
+            "weight": 9.94
+          },
+          {
+            "name": "Broadcom Inc",
+            "code": "AVGO US EQUITY",
+            "weight": 7.16
+          },
+          {
+            "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+            "code": "TSM US EQUITY",
+            "weight": 6.15
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "code": "META US EQUITY",
+            "weight": 5.04
+          },
+          {
+            "name": "Tesla Inc",
+            "code": "TSLA US EQUITY",
+            "weight": 4.41
+          },
+          {
+            "name": "ASML Holding NV",
+            "code": "ASML US EQUITY",
+            "weight": 2.76
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 18
+      },
+      "contextHash": "d9cccfdab57290ca5540825e85054afa2cfa43ae7929f76bac7755d1336e1110",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 10,
+      "parentSampleNumber": 35,
+      "etfCode": "364960",
+      "name": "TIGER BBIG",
+      "priority": {
+        "score": 91,
+        "tier": "multi_sector_boundary"
+      },
+      "reasons": [
+        "배터리·바이오·게임을 동시에 허용할 기준을 대표하는 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "보유종목이 세 영역을 지지하므로 복수 태그 유지 검토",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.5,
+          "confidence": 0.45,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "전기차/2차전지",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.5,
+          "confidence": 0.45,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "의료/제약/바이오",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.5,
+          "confidence": 0.45,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "게임/엔터/미디어",
+          "facet": "sector"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "364960",
+          "tagId": "sector.ev_battery",
+          "score": 0.5,
+          "confidence": 0.45,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        },
+        {
+          "etfCode": "364960",
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.5,
+          "confidence": 0.45,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        },
+        {
+          "etfCode": "364960",
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.5,
+          "confidence": 0.45,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "KRX BBIG 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 10.35
+          },
+          {
+            "name": "NC",
+            "code": "036570",
+            "weight": 10.14
+          },
+          {
+            "name": "크래프톤",
+            "code": "259960",
+            "weight": 9.8
+          },
+          {
+            "name": "셀트리온",
+            "code": "068270",
+            "weight": 8.91
+          },
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 8.85
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 8.74
+          },
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 8.45
+          },
+          {
+            "name": "삼성바이오로직스",
+            "code": "207940",
+            "weight": 8.33
+          },
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 7.79
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 6.94
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 17
+      },
+      "contextHash": "b2bcab4d6989c0c840e3da2bb3493c7821f1597eb757b56e228a6dce2561ace0",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 11,
+      "parentSampleNumber": 30,
+      "etfCode": "0192T0",
+      "name": "SOL 코스닥TOP10",
+      "priority": {
+        "score": 90,
+        "tier": "multi_sector_boundary"
+      },
+      "reasons": [
+        "광범위 TOP10 지수에 세부 섹터 태그를 붙이는 임계값 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "바이오·배터리·반도체 태그의 편입비중 기준 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.55,
+          "confidence": 0.5,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "의료/제약/바이오",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.ev_battery",
+          "score": 0.5,
+          "confidence": 0.5,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "전기차/2차전지",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.4,
+          "confidence": 0.4,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "반도체",
+          "facet": "sector"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "0192T0",
+          "tagId": "sector.healthcare_bio_pharma",
+          "score": 0.55,
+          "confidence": 0.5,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        },
+        {
+          "etfCode": "0192T0",
+          "tagId": "sector.ev_battery",
+          "score": 0.5,
+          "confidence": 0.5,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        },
+        {
+          "etfCode": "0192T0",
+          "tagId": "sector.semiconductor",
+          "score": 0.4,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "신한자산운용",
+        "benchmarkName": "코스닥 TOP 10 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "알테오젠",
+            "code": "196170",
+            "weight": 22
+          },
+          {
+            "name": "에코프로",
+            "code": "086520",
+            "weight": 16.45
+          },
+          {
+            "name": "에코프로비엠",
+            "code": "247540",
+            "weight": 12.7
+          },
+          {
+            "name": "원익IPS",
+            "code": "240810",
+            "weight": 9.74
+          },
+          {
+            "name": "HLB",
+            "code": "028300",
+            "weight": 8.7
+          },
+          {
+            "name": "리노공업",
+            "code": "058470",
+            "weight": 7.53
+          },
+          {
+            "name": "에이비엘바이오",
+            "code": "298380",
+            "weight": 6.59
+          },
+          {
+            "name": "레인보우로보틱스",
+            "code": "277810",
+            "weight": 6.51
+          },
+          {
+            "name": "이오테크닉스",
+            "code": "039030",
+            "weight": 6.06
+          },
+          {
+            "name": "우리기술",
+            "code": "032820",
+            "weight": 3.27
+          }
+        ],
+        "distributionSchedule": "연 1회 지급; - 지급 기준일 : 4월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "sourceCount": 17
+      },
+      "contextHash": "7224297635e3e5d7eb73d1a89fd401a9728a7accd97a62928bd058946bed66e1",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 12,
+      "parentSampleNumber": 22,
+      "etfCode": "234310",
+      "name": "RISE V&S셀렉트밸류",
+      "priority": {
+        "score": 89,
+        "tier": "rare_tag"
+      },
+      "reasons": [
+        "가치주 태그의 희소한 검증 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "지수 방법론 확인 후 가치주 태그 유지 검토",
+      "readiness": {
+        "grade": "A",
+        "score": 76,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "strategy.value",
+          "score": 0.55,
+          "confidence": 0.35,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "가치주",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "234310",
+          "tagId": "strategy.value",
+          "score": 0.55,
+          "confidence": 0.35,
+          "reason": "minimumScore=0.6/minimumConfidence=0.45 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "KB자산운용",
+        "benchmarkName": "FnGuide 셀렉트 밸류 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 28.45
+          },
+          {
+            "name": "메리츠금융지주",
+            "code": "138040",
+            "weight": 11.82
+          },
+          {
+            "name": "현대모비스",
+            "code": "012330",
+            "weight": 4.34
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 3.76
+          },
+          {
+            "name": "LG",
+            "code": "003550",
+            "weight": 3.14
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 3.06
+          },
+          {
+            "name": "현대차2우B",
+            "code": "005387",
+            "weight": 2.25
+          },
+          {
+            "name": "POSCO홀딩스",
+            "code": "005490",
+            "weight": 2.04
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 1.92
+          },
+          {
+            "name": "티앤엘",
+            "code": "340570",
+            "weight": 1.9
+          }
+        ],
+        "distributionSchedule": "1, 4, 7, 10월 마지막 영업일 및 회계기간 종료일(비정기지급)",
+        "sourceCount": 18
+      },
+      "contextHash": "d4f88f2271d087414c259c2d8875a1c664db104b6adcd6513569d70236d84055",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 13,
+      "parentSampleNumber": 23,
+      "etfCode": "376410",
+      "name": "TIGER 탄소효율그린뉴딜",
+      "priority": {
+        "score": 88,
+        "tier": "definition_boundary"
+      },
+      "reasons": [
+        "탄소효율 ESG와 클린에너지를 구분해야 하는 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "ESG는 유지하되 클린에너지는 추가하지 않음",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "strategy.esg_screening",
+          "score": 0.5,
+          "confidence": 0.4,
+          "source": "auditor_promoted(reused_worker_evidence)",
+          "mergedFrom": [
+            "auditor_promoted(reused_worker_evidence)"
+          ],
+          "label": "ESG/탄소효율",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "376410",
+          "tagId": "strategy.esg_screening",
+          "score": 0.5,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.5/minimumConfidence=0.45 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "KRX/S&P 탄소효율 그린뉴딜지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 27.1
+          },
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 21.38
+          },
+          {
+            "name": "SK스퀘어",
+            "code": "402340",
+            "weight": 3.55
+          },
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 1.66
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 1.64
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 1.56
+          },
+          {
+            "name": "두산에너빌리티",
+            "code": "034020",
+            "weight": 1.34
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 1.31
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 1.19
+          },
+          {
+            "name": "한화에어로스페이스",
+            "code": "012450",
+            "weight": 1.13
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 18
+      },
+      "contextHash": "59abddd66e7d0f6f011cf25e9fc00044cc2f3ecb4989b704c593f717f91fd947",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 14,
+      "parentSampleNumber": 29,
+      "etfCode": "0152E0",
+      "name": "SOL 배당성향탑픽액티브",
+      "priority": {
+        "score": 87,
+        "tier": "confidence_check"
+      },
+      "reasons": [
+        "배당성향과 금융주 근거가 모두 있는 양성 대조 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "고배당·금융 태그 유지 및 신뢰도 상향 검토",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.68,
+          "confidence": 0.45,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "한국 고배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.55,
+          "confidence": 0.4,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "금융",
+          "facet": "sector"
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.8,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "액티브",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "0152E0",
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.68,
+          "confidence": 0.45,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        },
+        {
+          "etfCode": "0152E0",
+          "tagId": "sector.financials",
+          "score": 0.55,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "신한자산운용",
+        "benchmarkName": "FnGuide 배당성향탑픽 지수(PR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "삼성화재",
+            "code": "000810",
+            "weight": 12.26
+          },
+          {
+            "name": "DB손해보험",
+            "code": "005830",
+            "weight": 8.81
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 8.8
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 7.64
+          },
+          {
+            "name": "NH투자증권",
+            "code": "005940",
+            "weight": 7.37
+          },
+          {
+            "name": "삼성증권",
+            "code": "016360",
+            "weight": 7.33
+          },
+          {
+            "name": "케이카",
+            "code": "381970",
+            "weight": 6.24
+          },
+          {
+            "name": "제일기획",
+            "code": "030000",
+            "weight": 5.3
+          },
+          {
+            "name": "코리안리",
+            "code": "003690",
+            "weight": 5.01
+          },
+          {
+            "name": "SNT홀딩스",
+            "code": "036530",
+            "weight": 4.1
+          }
+        ],
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능 ('26년 3월 부터 지급 예정)",
+        "sourceCount": 16
+      },
+      "contextHash": "4d93fd26032c8c74c03b36538b54795c9803706c37ee19eacf84c3602815591a",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 15,
+      "parentSampleNumber": 20,
+      "etfCode": "487130",
+      "name": "KoAct AI인프라액티브",
+      "priority": {
+        "score": 86,
+        "tier": "definition_boundary"
+      },
+      "reasons": [
+        "AI 인프라 테마에서 운용목표와 실제 보유종목을 구분하는 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "반도체는 유지, AI 전력은 비중 기준 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.semiconductor",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "반도체",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.ai_power_infrastructure",
+          "score": 0.55,
+          "confidence": 0.4,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "AI전력/인프라",
+          "facet": "sector"
+        },
+        {
+          "tagId": "strategy.active",
+          "score": 0.9,
+          "confidence": 0.8,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "액티브",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "487130",
+          "tagId": "sector.ai_power_infrastructure",
+          "score": 0.55,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "삼성액티브자산운용",
+        "benchmarkName": "Solactive AI인프라 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "SK하이닉스",
+            "code": "000660",
+            "weight": 18.29
+          },
+          {
+            "name": "삼성전자",
+            "code": "005930",
+            "weight": 11.97
+          },
+          {
+            "name": "테스",
+            "code": "095610",
+            "weight": 9.12
+          },
+          {
+            "name": "피에스케이",
+            "code": "319660",
+            "weight": 5.5
+          },
+          {
+            "name": "LS ELECTRIC",
+            "code": "010120",
+            "weight": 5.11
+          },
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 4.22
+          },
+          {
+            "name": "HD현대일렉트릭",
+            "code": "267260",
+            "weight": 3.93
+          },
+          {
+            "name": "원익IPS",
+            "code": "240810",
+            "weight": 3.38
+          },
+          {
+            "name": "삼성SDI",
+            "code": "006400",
+            "weight": 3.37
+          },
+          {
+            "name": "삼성전기",
+            "code": "009150",
+            "weight": 3.08
+          }
+        ],
+        "distributionSchedule": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+        "sourceCount": 16
+      },
+      "contextHash": "fafc4ea41ee62d8a004132b13812a945dbe641fa876cce90180873f5f7f1dd82",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 16,
+      "parentSampleNumber": 19,
+      "etfCode": "469070",
+      "name": "RISE AI&로봇",
+      "priority": {
+        "score": 85,
+        "tier": "rare_tag"
+      },
+      "reasons": [
+        "로봇 태그의 명시적 양성 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "로봇 태그 유지 및 신뢰도 상향 검토",
+      "readiness": {
+        "grade": "A",
+        "score": 76,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "sector.robotics",
+          "score": 0.55,
+          "confidence": 0.4,
+          "source": "auditor_promoted(reused_worker_evidence)",
+          "mergedFrom": [
+            "auditor_promoted(reused_worker_evidence)"
+          ],
+          "label": "휴머노이드로봇/로보틱스",
+          "facet": "sector"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "469070",
+          "tagId": "sector.robotics",
+          "score": 0.55,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "KB자산운용",
+        "benchmarkName": "iSelect AI&로봇 지수(시장가격)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 6.6
+          },
+          {
+            "name": "LG전자",
+            "code": "066570",
+            "weight": 5.81
+          },
+          {
+            "name": "LG씨엔에스",
+            "code": "064400",
+            "weight": 5.77
+          },
+          {
+            "name": "로보티즈",
+            "code": "108490",
+            "weight": 5.67
+          },
+          {
+            "name": "레인보우로보틱스",
+            "code": "277810",
+            "weight": 5.38
+          },
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 5.23
+          },
+          {
+            "name": "두산로보틱스",
+            "code": "454910",
+            "weight": 5.05
+          },
+          {
+            "name": "현대모비스",
+            "code": "012330",
+            "weight": 4.67
+          },
+          {
+            "name": "HL만도",
+            "code": "204320",
+            "weight": 4.66
+          },
+          {
+            "name": "에스피지",
+            "code": "058610",
+            "weight": 3.63
+          }
+        ],
+        "distributionSchedule": "1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 18
+      },
+      "contextHash": "7ad422bbfcbc3d9f760795f17637b7e12541af989f3b73ce4e3222d84152efac",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 17,
+      "parentSampleNumber": 7,
+      "etfCode": "157490",
+      "name": "TIGER 소프트웨어",
+      "priority": {
+        "score": 84,
+        "tier": "multi_sector_boundary"
+      },
+      "reasons": [
+        "소프트웨어 ETF에 게임·미디어까지 허용할지 판단하는 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "IT는 유지, 게임·미디어는 편입비중 기준 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.it",
+          "score": 0.85,
+          "confidence": 0.6,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "IT",
+          "facet": "sector"
+        },
+        {
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.5,
+          "confidence": 0.4,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "게임/엔터/미디어",
+          "facet": "sector"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "157490",
+          "tagId": "sector.game_entertainment_media",
+          "score": 0.5,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "FnGuide 소프트웨어 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 25.41
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 20.75
+          },
+          {
+            "name": "삼성에스디에스",
+            "code": "018260",
+            "weight": 12.94
+          },
+          {
+            "name": "크래프톤",
+            "code": "259960",
+            "weight": 11.11
+          },
+          {
+            "name": "NC",
+            "code": "036570",
+            "weight": 6.78
+          },
+          {
+            "name": "LG씨엔에스",
+            "code": "064400",
+            "weight": 5.48
+          },
+          {
+            "name": "현대오토에버",
+            "code": "307950",
+            "weight": 4.15
+          },
+          {
+            "name": "펄어비스",
+            "code": "263750",
+            "weight": 2.24
+          },
+          {
+            "name": "넷마블",
+            "code": "251270",
+            "weight": 1.95
+          },
+          {
+            "name": "포스코DX",
+            "code": "022100",
+            "weight": 1.61
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 17
+      },
+      "contextHash": "a62618dc8952c9cf6dccd40d7cdebde7ae0652b9fc23eaa2921e85777cf6e5b2",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 18,
+      "parentSampleNumber": 25,
+      "etfCode": "227550",
+      "name": "TIGER 200 산업재",
+      "priority": {
+        "score": 83,
+        "tier": "definition_boundary"
+      },
+      "reasons": [
+        "산업재와 방산·운송 태그의 경계를 확인하는 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "방산은 근거 확인, 운송은 대리 태그로 추가하지 않음",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.aerospace_defense",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "우주항공/방산",
+          "facet": "sector"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "strategy.benchmark.kospi200",
+          "score": 0.7,
+          "confidence": 0.55,
+          "source": "rule",
+          "evidence": [
+            "benchmarkName=\"코스피 200 산업재\" matched /코스피\\s*200|KOSPI\\s*200|코스피\\s*50|KRX\\s*100/i"
+          ],
+          "mergedFrom": [
+            "publicdata_benchmark_enrichment"
+          ],
+          "label": "코스피200",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "227550",
+          "tagId": "sector.aerospace_defense",
+          "score": 0.6,
+          "confidence": 0.5,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "코스피 200 산업재",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "한화에어로스페이스",
+            "code": "012450",
+            "weight": 16.97
+          },
+          {
+            "name": "LG에너지솔루션",
+            "code": "373220",
+            "weight": 12.9
+          },
+          {
+            "name": "LS ELECTRIC",
+            "code": "010120",
+            "weight": 11.59
+          },
+          {
+            "name": "한국항공우주",
+            "code": "047810",
+            "weight": 8.37
+          },
+          {
+            "name": "LIG디펜스앤에어로스페이스",
+            "code": "079550",
+            "weight": 7.7
+          },
+          {
+            "name": "현대글로비스",
+            "code": "086280",
+            "weight": 5.68
+          },
+          {
+            "name": "대한항공",
+            "code": "003490",
+            "weight": 5.33
+          },
+          {
+            "name": "HMM",
+            "code": "011200",
+            "weight": 5.18
+          },
+          {
+            "name": "포스코퓨처엠",
+            "code": "003670",
+            "weight": 4.04
+          },
+          {
+            "name": "LS",
+            "code": "006260",
+            "weight": 3.68
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 18
+      },
+      "contextHash": "aff19ca6bd3634b163630645c9f5b08fa6afba8e30f3b046aa8c065ed9433ee0",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 19,
+      "parentSampleNumber": 139,
+      "etfCode": "458750",
+      "name": "TIGER 미국배당다우존스타겟커버드콜1호",
+      "priority": {
+        "score": 82,
+        "tier": "post_dart_boundary"
+      },
+      "reasons": [
+        "월분배 구조화 문구와 상품 특성이 정합한 DART 양성 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "monthly·커버드콜 근거 유지; 쌍둥이 상품 458760은 별도 중복 검토 생략",
+      "readiness": {
+        "grade": "B",
+        "score": 72,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국배당다우존스타겟커버드콜1호\" matched /커버드콜/"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "커버드콜 배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국배당다우존스타겟커버드콜1호\" matched /미국|S&P\\s*500|나스닥|다우존스|러셀/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-default",
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "DowJones U.S. Dividend 100 3% Premium Covered Call 지수 (TR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "Schwab US Dividend Equity ETF",
+            "code": "SCHD US EQUITY",
+            "weight": 11.6
+          },
+          {
+            "name": "Abbott Laboratories",
+            "code": "ABT US EQUITY",
+            "weight": 4
+          },
+          {
+            "name": "UnitedHealth Group Inc",
+            "code": "UNH US EQUITY",
+            "weight": 3.93
+          },
+          {
+            "name": "Merck & Co Inc",
+            "code": "MRK US EQUITY",
+            "weight": 3.86
+          },
+          {
+            "name": "Amgen Inc",
+            "code": "AMGN US EQUITY",
+            "weight": 3.78
+          },
+          {
+            "name": "Home Depot Inc/The",
+            "code": "HD US EQUITY",
+            "weight": 3.72
+          },
+          {
+            "name": "Procter & Gamble Co/The",
+            "code": "PG US EQUITY",
+            "weight": 3.72
+          },
+          {
+            "name": "Coca-Cola Co/The",
+            "code": "KO US EQUITY",
+            "weight": 3.58
+          },
+          {
+            "name": "Chevron Corp",
+            "code": "CVX US EQUITY",
+            "weight": 3.41
+          },
+          {
+            "name": "PepsiCo Inc",
+            "code": "PEP US EQUITY",
+            "weight": 3.34
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 17
+      },
+      "contextHash": "540ed37d1bce62310d4ed2616f0e3a6a144e03353e4b1c2cd1c6b52b1c9f3fd5",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 20,
+      "parentSampleNumber": 141,
+      "etfCode": "474220",
+      "name": "TIGER 미국테크TOP10타겟커버드콜",
+      "priority": {
+        "score": 80,
+        "tier": "post_dart_boundary"
+      },
+      "reasons": [
+        "월분배 구조화 문구가 상품명과 정합한 DART 양성 사례"
+      ],
+      "selectionSignals": [
+        "expert_rule_audit"
+      ],
+      "aiRecommendation": "monthly·커버드콜 근거 유지 검토",
+      "readiness": {
+        "grade": "B",
+        "score": 72,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.covered_call",
+          "score": 1,
+          "confidence": 1,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국테크TOP10타겟커버드콜\" matched /커버드콜/"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "커버드콜 배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "region.us",
+          "score": 0.85,
+          "confidence": 0.75,
+          "source": "rule",
+          "evidence": [
+            "name=\"TIGER 미국테크TOP10타겟커버드콜\" matched /미국|S&P\\s*500|나스닥|다우존스|러셀/i"
+          ],
+          "mergedFrom": [
+            "rule"
+          ],
+          "label": "미국",
+          "facet": "region"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule-default",
+          "evidence": [
+            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule-default",
+          "evidence": [
+            "액티브 신호 없음 → 패시브 지수추종 기본값"
+          ],
+          "mergedFrom": [
+            "rule-default"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [],
+      "evidence": {
+        "issuer": "미래에셋자산운용",
+        "benchmarkName": "Bloomberg U.S. Tech Top10+10% Premium Covered Call Index",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "Apple Inc",
+            "code": "AAPL US EQUITY",
+            "weight": 20.24
+          },
+          {
+            "name": "NVIDIA Corp",
+            "code": "NVDA US EQUITY",
+            "weight": 19.04
+          },
+          {
+            "name": "Alphabet Inc",
+            "code": "GOOGL US EQUITY",
+            "weight": 15.18
+          },
+          {
+            "name": "Microsoft Corp",
+            "code": "MSFT US EQUITY",
+            "weight": 12.29
+          },
+          {
+            "name": "Amazon.com Inc",
+            "code": "AMZN US EQUITY",
+            "weight": 10.1
+          },
+          {
+            "name": "Broadcom Inc",
+            "code": "AVGO US EQUITY",
+            "weight": 7.24
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "code": "META US EQUITY",
+            "weight": 5.96
+          },
+          {
+            "name": "Tesla Inc",
+            "code": "TSLA US EQUITY",
+            "weight": 5.34
+          },
+          {
+            "name": "Micron Technology Inc",
+            "code": "MU US EQUITY",
+            "weight": 4.01
+          },
+          {
+            "name": "Netflix Inc",
+            "code": "NFLX US EQUITY",
+            "weight": 1.21
+          }
+        ],
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "sourceCount": 17
+      },
+      "contextHash": "667d648d9b66e4200dd07c8939be7fd403cd9a60162b4a0408ff83b2233ed63e",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 21,
+      "parentSampleNumber": 50,
+      "etfCode": "484880",
+      "name": "SOL 금융지주플러스고배당",
+      "priority": {
+        "score": 50,
+        "tier": "low_confidence_fallback"
+      },
+      "reasons": [
+        "낮은 신뢰도 또는 경계 태그 1건을 추가 점검"
+      ],
+      "selectionSignals": [
+        "deterministic_low_confidence_rank"
+      ],
+      "aiRecommendation": "현재 태그와 보유종목·기초지수 근거의 일치 여부 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.financials",
+          "score": 0.92,
+          "confidence": 0.65,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "금융",
+          "facet": "sector"
+        },
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.6,
+          "confidence": 0.4,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "한국 고배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "484880",
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.6,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "신한자산운용",
+        "benchmarkName": "FnGuide 금융지주플러스고배당 지수(PR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 22.28
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 20.95
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 19.71
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 14.54
+          },
+          {
+            "name": "한국금융지주",
+            "code": "071050",
+            "weight": 6.99
+          },
+          {
+            "name": "NH투자증권",
+            "code": "005940",
+            "weight": 4.29
+          },
+          {
+            "name": "BNK금융지주",
+            "code": "138930",
+            "weight": 3.73
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 3.2
+          },
+          {
+            "name": "메리츠금융지주",
+            "code": "138040",
+            "weight": 2.46
+          },
+          {
+            "name": "iM금융지주",
+            "code": "139130",
+            "weight": 1.86
+          }
+        ],
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "sourceCount": 15
+      },
+      "contextHash": "749a0594eed2350c137b5161b3b2d4731928aec5edf591ffb8fab88a0e07b962",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 22,
+      "parentSampleNumber": 36,
+      "etfCode": "0098N0",
+      "name": "PLUS 자사주매입고배당주",
+      "priority": {
+        "score": 49,
+        "tier": "low_confidence_fallback"
+      },
+      "reasons": [
+        "낮은 신뢰도 또는 경계 태그 1건을 추가 점검"
+      ],
+      "selectionSignals": [
+        "deterministic_low_confidence_rank"
+      ],
+      "aiRecommendation": "현재 태그와 보유종목·기초지수 근거의 일치 여부 확인",
+      "readiness": {
+        "grade": "A",
+        "score": 80,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "dividend.korea_high_dividend",
+          "score": 0.68,
+          "confidence": 0.5,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "한국 고배당",
+          "facet": "dividend"
+        },
+        {
+          "tagId": "sector.financials",
+          "score": 0.5,
+          "confidence": 0.4,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "금융",
+          "facet": "sector"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "0098N0",
+          "tagId": "sector.financials",
+          "score": 0.5,
+          "confidence": 0.4,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "한화자산운용",
+        "benchmarkName": "FnGuide 고배당주 플러스 자사주 지수 (PR)",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "KB금융",
+            "code": "105560",
+            "weight": 5.69
+          },
+          {
+            "name": "메리츠금융지주",
+            "code": "138040",
+            "weight": 5.6
+          },
+          {
+            "name": "신한지주",
+            "code": "055550",
+            "weight": 5.18
+          },
+          {
+            "name": "미스토홀딩스",
+            "code": "081660",
+            "weight": 5.06
+          },
+          {
+            "name": "HMM",
+            "code": "011200",
+            "weight": 5.02
+          },
+          {
+            "name": "하나금융지주",
+            "code": "086790",
+            "weight": 4.89
+          },
+          {
+            "name": "JB금융지주",
+            "code": "175330",
+            "weight": 4.27
+          },
+          {
+            "name": "우리금융지주",
+            "code": "316140",
+            "weight": 4.16
+          },
+          {
+            "name": "KT&G",
+            "code": "033780",
+            "weight": 4.13
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 3.96
+          }
+        ],
+        "distributionSchedule": "매월 15일(다만, 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 21
+      },
+      "contextHash": "945b0da36b31cc8c63384084b5240638c116481e5451d0485e866d4e1b1f4044",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 23,
+      "parentSampleNumber": 51,
+      "etfCode": "0103T0",
+      "name": "1Q K소버린AI",
+      "priority": {
+        "score": 48,
+        "tier": "low_confidence_fallback"
+      },
+      "reasons": [
+        "낮은 신뢰도 또는 경계 태그 1건을 추가 점검"
+      ],
+      "selectionSignals": [
+        "deterministic_low_confidence_rank"
+      ],
+      "aiRecommendation": "현재 태그와 보유종목·기초지수 근거의 일치 여부 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "sector.it",
+          "score": 0.62,
+          "confidence": 0.5,
+          "source": "v1_migration",
+          "mergedFrom": [
+            "v1_migration"
+          ],
+          "label": "IT",
+          "facet": "sector"
+        },
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "0103T0",
+          "tagId": "sector.it",
+          "score": 0.62,
+          "confidence": 0.5,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "하나자산운용",
+        "benchmarkName": "iSelect K소버린AI 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "NAVER",
+            "code": "035420",
+            "weight": 28.65
+          },
+          {
+            "name": "카카오",
+            "code": "035720",
+            "weight": 23.86
+          },
+          {
+            "name": "삼성에스디에스",
+            "code": "018260",
+            "weight": 15.33
+          },
+          {
+            "name": "LG씨엔에스",
+            "code": "064400",
+            "weight": 6.76
+          },
+          {
+            "name": "현대오토에버",
+            "code": "307950",
+            "weight": 6.15
+          },
+          {
+            "name": "NHN",
+            "code": "181710",
+            "weight": 2.37
+          },
+          {
+            "name": "플리토",
+            "code": "300080",
+            "weight": 2.24
+          },
+          {
+            "name": "우리기술투자",
+            "code": "041190",
+            "weight": 2.13
+          },
+          {
+            "name": "한글과컴퓨터",
+            "code": "030520",
+            "weight": 2.07
+          },
+          {
+            "name": "포스코DX",
+            "code": "022100",
+            "weight": 2.04
+          }
+        ],
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "sourceCount": 16
+      },
+      "contextHash": "5c31a0338d0dcec5b00f9bf847732fe8087df96a3ef23e1c4c3927c715f5e3c4",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    },
+    {
+      "shortlistNumber": 24,
+      "parentSampleNumber": 54,
+      "etfCode": "0190C0",
+      "name": "RISE 현대차고정피지컬AI",
+      "priority": {
+        "score": 47,
+        "tier": "low_confidence_fallback"
+      },
+      "reasons": [
+        "낮은 신뢰도 또는 경계 태그 1건을 추가 점검"
+      ],
+      "selectionSignals": [
+        "deterministic_low_confidence_rank"
+      ],
+      "aiRecommendation": "현재 태그와 보유종목·기초지수 근거의 일치 여부 확인",
+      "readiness": {
+        "grade": "B",
+        "score": 68,
+        "detailScope": "enriched",
+        "missing": [
+          "표준 KRX 코드",
+          "산업·국가 비중",
+          "실제 분배금 이력"
+        ]
+      },
+      "currentClassifications": [
+        {
+          "tagId": "asset.equity",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "주식",
+          "facet": "assetClass"
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 0.6,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "국내",
+          "facet": "region"
+        },
+        {
+          "tagId": "strategy.passive_index",
+          "score": 0.6,
+          "confidence": 0.5,
+          "source": "rule_v2",
+          "mergedFrom": [
+            "rule_v2"
+          ],
+          "label": "지수추종(패시브)",
+          "facet": "strategy"
+        },
+        {
+          "tagId": "sector.robotics",
+          "score": 0.55,
+          "confidence": 0.5,
+          "source": "auditor_promoted(reused_worker_evidence)",
+          "mergedFrom": [
+            "auditor_promoted(reused_worker_evidence)"
+          ],
+          "label": "휴머노이드로봇/로보틱스",
+          "facet": "sector"
+        }
+      ],
+      "lowConfidenceAssignments": [
+        {
+          "etfCode": "0190C0",
+          "tagId": "sector.robotics",
+          "score": 0.55,
+          "confidence": 0.5,
+          "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+        }
+      ],
+      "evidence": {
+        "issuer": "KB자산운용",
+        "benchmarkName": "KEDI 현대차고정피지컬AI 지수",
+        "rawTypeText": null,
+        "nameHints": [],
+        "holdings": [
+          {
+            "name": "현대차",
+            "code": "005380",
+            "weight": 23.83
+          },
+          {
+            "name": "현대모비스",
+            "code": "012330",
+            "weight": 17.92
+          },
+          {
+            "name": "기아",
+            "code": "000270",
+            "weight": 15.14
+          },
+          {
+            "name": "LG이노텍",
+            "code": "011070",
+            "weight": 11.93
+          },
+          {
+            "name": "현대오토에버",
+            "code": "307950",
+            "weight": 7.4
+          },
+          {
+            "name": "레인보우로보틱스",
+            "code": "277810",
+            "weight": 6.16
+          },
+          {
+            "name": "LG씨엔에스",
+            "code": "064400",
+            "weight": 5.08
+          },
+          {
+            "name": "두산로보틱스",
+            "code": "454910",
+            "weight": 3.14
+          },
+          {
+            "name": "로보티즈",
+            "code": "108490",
+            "weight": 2.31
+          },
+          {
+            "name": "에스엘",
+            "code": "005850",
+            "weight": 1.93
+          }
+        ],
+        "distributionSchedule": "1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일 (회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "sourceCount": 15
+      },
+      "contextHash": "e484c6366c630e6319bcdc71e9a70d52a30a6373fa4a5f38eb51eafe02c442cb",
+      "review": {
+        "workflowStatus": "pending",
+        "decision": "",
+        "finalTagIds": [],
+        "note": "",
+        "missingEvidence": "",
+        "nextAction": "",
+        "reviewer": "",
+        "reviewedAt": "",
+        "reviewedAgainstHash": ""
+      }
+    }
+  ]
+}

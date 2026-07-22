@@ -11,6 +11,9 @@ import { describeConfig } from '../server/config.js';
 const PORT = Number(process.env.PORT) || 4173;
 const exploreUrl = `http://localhost:${PORT}/etf-explore.html`;
 const hubUrl = `http://localhost:${PORT}/`;
+const reverseSearchUrl = `http://localhost:${PORT}/reverse-search/`;
+// npm run reverse-search → 역검색 화면을 연다(그 외엔 기존대로 탐색 화면).
+const openUrl = process.argv.includes('--reverse-search') ? reverseSearchUrl : exploreUrl;
 
 server.on('error', (err) => {
   if (err && err.code === 'EADDRINUSE') {
@@ -35,7 +38,7 @@ server.listen(PORT, () => {
     `  종료: 이 창을 닫거나 Ctrl+C\n` +
     `============================================================\n`
   );
-  openBrowser(exploreUrl);
+  openBrowser(openUrl);
 });
 
 function openBrowser(u) {

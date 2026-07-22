@@ -22,14 +22,29 @@
         <span class="search-ico" aria-hidden="true">⌕</span>
         <input id="search-input" class="search-input" type="search"
                placeholder="ETF, 종목, 테마를 검색해보세요" aria-label="ETF 검색" />
+        <a href="/reverse-search/" aria-label="AI 역검색" title="AI 역검색"
+           style="display:inline-flex;align-items:center;justify-content:center;flex:none;color:#00C7A9;text-decoration:none;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.2c.42 4.06 1.92 5.56 5.98 5.98-4.06.42-5.56 1.92-5.98 5.98-.42-4.06-1.92-5.56-5.98-5.98 4.06-.42 5.56-1.92 5.98-5.98z"/>
+            <path d="M18.6 13.6c.22 2.08.98 2.84 3.06 3.06-2.08.22-2.84.98-3.06 3.06-.22-2.08-.98-2.84-3.06-3.06 2.08-.22 2.84-.98 3.06-3.06z"/>
+          </svg>
+        </a>
       </div>
 
       <div class="tabs" id="categoryTabs" role="tablist"></div>
 
       <div class="filterPanel">
         <div class="chips collapsed" id="chips"></div>
-        <button class="chips-toggle hidden" id="chipsToggle" type="button">전체 필터 +</button>
+        <button class="chips-toggle hidden" id="chipsToggle" type="button"
+                aria-controls="chips" aria-expanded="false" aria-label="전체 필터 펼치기">+</button>
       </div>
+
+      <section id="briefSection" class="briefSection hidden" aria-labelledby="brief-heading">
+        <div class="briefSectionHead">
+          <h2 id="brief-heading">AI 브리핑</h2>
+        </div>
+        <div id="tagBriefList" class="briefList"></div>
+      </section>
 
       <div class="listHead">
         <b id="listTitle">ETF</b>

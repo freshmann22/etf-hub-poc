@@ -222,8 +222,9 @@ export function createEtfService({ config = defaultConfig, registry, cache, now 
       // 큐레이션 24종: 공공데이터로 순자산/NAV/기초지수/시총 보강 + 전일종가 보관.
       let curated = base.etfsRaw.map((e) => {
         const r = pdByCode.get(e.code);
-        const merged = { ...e, _curated: true, _prevClose: r ? r.prevClose : null };
+        const merged = { ...e, volume: null, _curated: true, _prevClose: r ? r.prevClose : null };
         if (r) {
+          if (isNum(r.volume)) merged.volume = r.volume;
           if (isNum(r.netAssets)) merged.netAssets = r.netAssets;
           if (isNum(r.nav)) merged.nav = r.nav;
           if (r.indexName) merged.indexName = r.indexName;
@@ -246,6 +247,7 @@ export function createEtfService({ config = defaultConfig, registry, cache, now 
           changeRate1d: r.changeRate,
           return1w: null,
           return1m: null,
+          volume: r.volume,
           tradingValue: r.tradingValue,
           tradingValueChangeRate: null,
           netAssets: r.netAssets,
@@ -384,7 +386,7 @@ export function createEtfService({ config = defaultConfig, registry, cache, now 
         universeAsOf: pdAsOf,
         priceMatched,
         stockMatched,
-        fields: ['currentPrice', 'changeRate1d', 'return1w', 'return1m', 'tradingValue', 'tradingValueChangeRate', 'netAssets', 'nav', 'indexName'],
+        fields: ['currentPrice', 'changeRate1d', 'return1w', 'return1m', 'volume', 'tradingValue', 'tradingValueChangeRate', 'netAssets', 'nav', 'indexName'],
         derived,
         stillMock: ['volatilityScore(전종목)', 'totalFee(thin)', 'riskTags(thin)', 'holdings(thin)', 'themes(thin)', 'contents'],
       };

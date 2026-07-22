@@ -19,6 +19,11 @@ import { Status, errorCodeToHttp, ErrorCodes } from '../server/lib/errors.js';
 import { createRegistry } from '../server/providers/registry.js';
 import { createEtfService } from '../server/services/etf-service.js';
 import { handleApiRequest } from '../server/routes/api.js';
+import { createReverseSearchQueryPlanner } from '../server/services/reverse-search-query-planner.js';
+import { OpenRouterQueryPlannerClient } from '../server/llm/openrouter-query-planner.js';
+import { IssuerProvider, buildKoreanIsin, parseKodexHoldingsPayload, parseTigerHoldingsHtml } from '../server/providers/issuer/index.js';
+import { OpenRouterTagBriefClient } from '../server/llm/openrouter-tag-brief.js';
+import { mapReverseSearchPath } from '../server/index.js';
 
 // ---------------------------------------------------------------------------
 // 공용 픽스처
@@ -38,7 +43,7 @@ function makeConfig(o = {}) {
       seibro: { enabled: false },
       dart: { apiKey: '' },
       broker: { baseUrl: '', apiKey: '', apiSecret: '', accountProfile: '' },
-      issuer: { configUrl: '' },
+        issuer: { enabled: false },
     },
   };
 }
@@ -220,6 +225,83 @@ test('registry: builds all providers; mock available, disabled krx unavailable',
   assert.ok(desc.every((d) => 'available' in d && 'capabilities' in d));
 });
 
+test('issuer: derives Korean ETF ISIN and parses TIGER holdings rows', () => {
+  assert.equal(buildKoreanIsin('102110'), 'KR7102110004');
+  assert.equal(buildKoreanIsin('069500'), 'KR7069500007');
+  const html = `<tr data-tot-cnt="1">
+    <td>1</td><td>005930</td><td class="subject">삼성전자</td>
+    <td class="price">6,984</td><td class="price">1,777,428,000</td>
+    <td class="price">32.72</td><td class="price">-21.09</td>
+  </tr>`;
+  const parsed = parseTigerHoldingsHtml(html);
+  assert.equal(parsed.declaredCount, 1);
+  assert.deepEqual(parsed.rows[0], {
+    stockCode: '005930', stockName: '삼성전자', weight: 32.72,
+    shares: 6984, marketValue: 1777428000, rank: 1, asOfDate: null,
+  });
+});
+
+test('issuer: parses KODEX official JSON holdings including base date', () => {
+  const parsed = parseKodexHoldingsPayload({ data: { pdf: {
+    gijunYMD: '20260716', totalCnt: 1,
+    list: [{ itmNo: '005930', secNm: '삼성전자', ratio: '33.31', applyQ: '6,978', evalA: '1,950,351,000' }],
+  } } });
+  assert.equal(parsed.declaredCount, 1);
+  assert.equal(parsed.baseDate, '20260716');
+  assert.deepEqual(parsed.rows[0], {
+    stockCode: '005930', stockName: '삼성전자', weight: 33.31,
+    shares: 6978, marketValue: 1950351000, rank: 1,
+    asOfDate: '2026-07-16T00:00:00+09:00',
+  });
+});
+
+test('issuer: resolves KODEX ticker to fund id and fetches official JSON holdings', async () => {
+  const oldFetch = globalThis.fetch;
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('/product.do?')) {
+      return new Response(JSON.stringify({ data: [{ stkTicker: '069500', fId: '2ETF01', gijunYMD: '20260716' }] }), { status: 200 });
+    }
+    assert.match(String(url), /product-pdf\/2ETF01\.do\?gijunYMD=20260716/);
+    return new Response(JSON.stringify({ data: { pdf: {
+      gijunYMD: '20260716', totalCnt: 1,
+      list: [{ itmNo: '005930', secNm: '삼성전자', ratio: '33.31', applyQ: '6978', evalA: '1950351000' }],
+    } } }), { status: 200 });
+  };
+  try {
+    const provider = new IssuerProvider({ enabled: true, retries: 0 });
+    const env = await provider.getEtfHoldings('069500');
+    assert.equal(env.meta.source, 'issuer_kodex');
+    assert.equal(env.data.length, 1);
+    assert.equal(env.data[0].weight, 33.31);
+  } finally {
+    globalThis.fetch = oldFetch;
+  }
+});
+
+test('issuer: fetches official TIGER holdings and rejects unsupported codes honestly', async () => {
+  const oldFetch = globalThis.fetch;
+  const html = '<tr data-tot-cnt="1"><td>1</td><td>005930</td><td>삼성전자</td><td>10</td><td>1000</td><td>25.5</td><td>0</td></tr>';
+  globalThis.fetch = async (url, init) => {
+    if (String(url).includes('samsungfund.com')) {
+      return new Response(JSON.stringify({ data: [] }), { status: 200 });
+    }
+    assert.match(String(init.body), /ksdFund=KR7102110004/);
+    return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=UTF-8' } });
+  };
+  try {
+    const provider = new IssuerProvider({ enabled: true, retries: 0 });
+    const env = await provider.getEtfHoldings('102110');
+    assert.equal(env.meta.source, 'issuer_tiger');
+    assert.equal(env.data.length, 1);
+    assert.equal(env.data[0].stockName, '삼성전자');
+    const unsupported = await provider.getEtfHoldings('0000D0');
+    assert.deepEqual(unsupported.data, []);
+    assert.equal(unsupported.meta.status, Status.UNAVAILABLE);
+  } finally {
+    globalThis.fetch = oldFetch;
+  }
+});
+
 // ---------------------------------------------------------------------------
 // service — mock 모드
 // ---------------------------------------------------------------------------
@@ -242,6 +324,7 @@ test('service(mock): getBundle includes all UI collections', async () => {
   const svc = createEtfService({ config: makeConfig({ mode: 'mock' }) });
   const b = await svc.getBundle();
   assert.ok(Array.isArray(b.etfsRaw) && b.etfsRaw.length > 0);
+  assert.ok(b.etfsRaw.every((etf) => typeof etf.volume === 'number' || etf.volume === null));
   assert.ok(Array.isArray(b.themesRaw) && b.themesRaw.length > 0);
   assert.ok(Array.isArray(b.stocksRaw));
   assert.ok(Array.isArray(b.holdingsRaw));
@@ -318,6 +401,110 @@ test('router: unknown field → 404, non-GET → 405', async () => {
   assert.equal(r405.statusCode, 405);
 });
 
+test('router: reverse-search planner accepts POST and returns a validated plan', async () => {
+  const req = {
+    method: 'POST',
+    url: '/api/reverse-search/plan',
+    async *[Symbol.asyncIterator]() {
+      yield Buffer.from(JSON.stringify({ query: '반도체 ETF' }));
+    },
+  };
+  const queryPlanner = {
+    async createPlan(query) {
+      return { source: 'rules', taxonomyVersion: '2.0.0', warnings: [], plan: { intent: 'TAG_MATCH', query, tags: [] } };
+    },
+  };
+  const res = fakeRes();
+  await handleApiRequest(req, res, { service: createEtfService({ config: makeConfig() }), queryPlanner });
+  assert.equal(res.statusCode, 200);
+  const payload = JSON.parse(res.body);
+  assert.equal(payload.source, 'rules');
+  assert.equal(payload.plan.query, '반도체 ETF');
+});
+
+test('reverse-search planner validates LLM output against canonical taxonomy', async () => {
+  const planner = createReverseSearchQueryPlanner({
+    llmClient: {
+      async createPlan() {
+        return {
+          intent: 'TAG_MATCH',
+          tags: [
+            { tagId: 'sector.semiconductor', queryScore: 0.92, mode: 'required', reason: 'direct match' },
+            { tagId: 'sector.fabricated', queryScore: 1, mode: 'required' },
+          ],
+        };
+      },
+    },
+  });
+  const result = await planner.createPlan('반도체 ETF');
+  assert.equal(result.source, 'llm');
+  assert.deepEqual(result.plan.tags.map((tag) => tag.tagId), ['sector.semiconductor']);
+  assert.deepEqual(result.warnings, ['unknown_tag:sector.fabricated']);
+});
+
+test('openrouter query planner sends a structured request and parses JSON content', async () => {
+  const originalFetch = globalThis.fetch;
+  let captured;
+  globalThis.fetch = async (url, options) => {
+    captured = { url: String(url), options };
+    return new Response(JSON.stringify({
+      choices: [{ message: { content: JSON.stringify({
+        intent: 'TAG_MATCH',
+        tags: [{ tagId: 'sector.semiconductor', queryScore: 0.9, mode: 'required', reason: '반도체 요청' }],
+        sort: null,
+      }) } }],
+    }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  };
+  try {
+    const client = new OpenRouterQueryPlannerClient({
+      apiKey: 'SECRET_KEY',
+      model: 'deepseek/deepseek-v4-flash',
+      retries: 0,
+    });
+    const plan = await client.createPlan({
+      query: '반도체 ETF',
+      taxonomy: { tags: [{ id: 'sector.semiconductor', facet: 'sector', label: '반도체', definition: '반도체 ETF', enabled: true }] },
+    });
+    assert.equal(plan.tags[0].tagId, 'sector.semiconductor');
+    assert.equal(captured.url, 'https://openrouter.ai/api/v1/chat/completions');
+    assert.equal(captured.options.headers.Authorization, 'Bearer SECRET_KEY');
+    const body = JSON.parse(captured.options.body);
+    assert.equal(body.model, 'deepseek/deepseek-v4-flash');
+    assert.deepEqual(body.response_format, { type: 'json_object' });
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test('openrouter tag-brief client sends evidence and validates JSON content', async () => {
+  const oldFetch = globalThis.fetch;
+  let requestBody;
+  globalThis.fetch = async (_url, init) => {
+    requestBody = JSON.parse(init.body);
+    return new Response(JSON.stringify({
+      choices: [{ message: { content: JSON.stringify({
+        title: '반도체 브리핑',
+        summary: '공급 계약 소식이 있었어요.',
+        keyPoints: ['공급 계약이 발표됐어요.'],
+        mentionedStockIds: ['005930', '005930'],
+        mentionedTopicIds: [],
+      }) } }],
+    }), { status: 200, headers: { 'content-type': 'application/json' } });
+  };
+  try {
+    const client = new OpenRouterTagBriefClient({ apiKey: 'secret', model: 'test/model', retries: 0 });
+    const content = await client.createContent({
+      tagUniverse: { tagId: 'sector.semiconductor', label: '반도체', stockIds: ['005930'], topicIds: [], etfIds: [] },
+      articles: [{ id: 'n1', title: '계약 발표', summary: '공급 계약 체결', source: '테스트', publishedAt: '2026-07-16', mentionedStockIds: ['005930'], mentionedTopicIds: [] }],
+    });
+    assert.equal(requestBody.model, 'test/model');
+    assert.ok(requestBody.messages[1].content.includes('n1'));
+    assert.deepEqual(content.mentionedStockIds, ['005930']);
+  } finally {
+    globalThis.fetch = oldFetch;
+  }
+});
+
 // ---------------------------------------------------------------------------
 // 오류코드 → HTTP 매핑
 // ---------------------------------------------------------------------------
@@ -336,12 +523,15 @@ test('config: describeConfig never leaks secret values', async () => {
   process.env.DART_API_KEY = 'SECRET_SHOULD_NOT_LEAK';
   process.env.BROKER_API_KEY = 'BROKER_SECRET_XYZ';
   process.env.BROKER_API_SECRET = 'BROKER_SECRET_XYZ';
+  process.env.OPENROUTER_API_KEY = 'OPENROUTER_SECRET_XYZ';
   process.env.BROKER_API_BASE_URL = 'https://example.invalid';
   // 캐시버스터로 새 모듈 인스턴스를 만들어 현재 env 를 반영.
   const mod = await import('../server/config.js?secrettest=1');
   const d = mod.describeConfig();
   const serialized = JSON.stringify(d);
   assert.ok(!serialized.includes('SECRET_SHOULD_NOT_LEAK'));
+  assert.ok(!serialized.includes('OPENROUTER_SECRET_XYZ'));
+  assert.equal(d.reverseSearch.configured, true);
   assert.ok(!serialized.includes('BROKER_SECRET_XYZ'));
   assert.equal(d.providers.dart, 'configured');
   assert.equal(d.providers.broker, 'configured');
@@ -424,6 +614,7 @@ test('toss: computes return1w/return1m/tradingValue from daily candles', async (
     assert.equal(q.changeRate, 2.04); // vs 98000
     assert.equal(q.return1w, 5.26); // vs 95000
     assert.equal(q.return1m, 25); // vs 80000
+    assert.equal(q.volume, 12000000);
     assert.equal(q.tradingValue, 12000); // 억원
     assert.equal(q.tradingValueChangeRate, 22.45); // 12000 vs 9800
   } finally {
@@ -506,6 +697,7 @@ test('publicdata: lists ETFs and converts amounts to 억원 (mocked)', async () 
     assert.equal(kodex.name, 'KODEX 200');
     assert.equal(kodex.prevClose, 10000);
     assert.equal(kodex.netAssets, 500); // 50,000,000,000 / 1e8 = 500 억원
+    assert.equal(kodex.volume, 1000);
     assert.equal(kodex.tradingValue, 1); // 100,000,000 / 1e8 = 1 억원
     assert.equal(kodex.indexName, '테스트지수');
     assert.equal(env.meta.source, 'publicdata');
@@ -546,6 +738,7 @@ test('service: publicdata expands universe with thin ETFs (toss off)', async () 
     assert.equal(thin.themeId, null);
     assert.ok(Array.isArray(thin.topHoldings));
     assert.equal(thin.currentPrice, 10000); // toss off → 공공데이터 종가
+    assert.equal(thin.volume, 1000);
     assert.equal(thin.netAssets, 500);
     // 모든 유니버스 항목이 렌더 안전(topHoldings 배열 + id/code/name).
     assert.ok(b.etfsRaw.every((e) => e.id && e.code && e.name && Array.isArray(e.topHoldings)));
@@ -560,4 +753,19 @@ test('service: publicdata expands universe with thin ETFs (toss off)', async () 
   } finally {
     globalThis.fetch = orig;
   }
+});
+
+// ---------------------------------------------------------------------------
+// 역검색 모듈 라우트 마운트 (/reverse-search) — 루트(/)를 건드리지 않는다.
+// ---------------------------------------------------------------------------
+test('mapReverseSearchPath mounts the module without touching root', () => {
+  assert.deepEqual(mapReverseSearchPath('/reverse-search'), { redirect: '/reverse-search/' });
+  assert.deepEqual(mapReverseSearchPath('/reverse-search/'), { rel: 'modules/reverse-search/index.html' });
+  assert.deepEqual(mapReverseSearchPath('/reverse-search/src/app.js'), { rel: 'modules/reverse-search/src/app.js' });
+  // 루트와 무관한 경로는 기본 정적 처리로 위임(null).
+  assert.equal(mapReverseSearchPath('/'), null);
+  assert.equal(mapReverseSearchPath('/etf-explore.html'), null);
+  assert.equal(mapReverseSearchPath('/api/bundle'), null);
+  // 접두만 같고 실제 다른 경로는 마운트하지 않는다.
+  assert.equal(mapReverseSearchPath('/reverse-search-other'), null);
 });

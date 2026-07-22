@@ -1,0 +1,487 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:12:55.188Z",
+  "pass": true,
+  "fieldCoverage": {
+    "productDescription": 4,
+    "investmentObjective": 4,
+    "benchmarkName": 4,
+    "benchmarkDescription": 4,
+    "distributionPolicy": 4,
+    "officialDocumentLinks": 4
+  },
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T07:07:29.032Z",
+      "sourceId": "issuer_tiger_product",
+      "issuerId": "mirae-asset-global-investments",
+      "shortCode": "102110",
+      "isin": "KR7102110004",
+      "name": "TIGER 200",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "complete": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "대한민국 대표 우량기업 200개 종목에 분산투자합니다",
+        "investmentObjective": "한국거래소가 발표하는 코스피 200 지수를 추적대상지수로하여 1좌당 순자산가치의 변동률을 기초지수의 변동률과 유사하도록 투자신탁재산을 운용.",
+        "benchmarkName": "코스피 200",
+        "benchmarkDescription": "- 산출기관 및 대상종목 : 한국거래소에서 발표하는 지수로서 증권시장 전체에 상장된 전체 종목 중에서 시장대표성, 업종대표성 및 유동성등을 감안하여 200종목 선정 - 산출방법 : 유동주식수 가중 시가총액식 주가지수/ 연 2회 정기변경 - 해당지수에 대한 정보는 www.krx.co.kr에서 검색하실 수 있습니다. ※ 비교지수는 회사의 판단에 따라 변경될 수 있으며, 변경시에는 법 제89조제2항에 따라 집합투자업자 등의 홈페이지 및 한국거래소 공시 등을 통해 안내해 드릴 예정입니다.",
+        "distributionPolicy": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "officialDocumentLinks": [
+          {
+            "label": "월간운용보고서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827002747.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260416021509007653.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260416021509000496.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "월간운용보고서(FactSheet)",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827002747.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "집합투자규약",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260416021509009590.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+          "selector": "#section1 .title",
+          "snippet": "대한민국 대표 우량기업 200개 종목에 분산투자합니다"
+        },
+        "investmentObjective": {
+          "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+          "selector": ".c-card-header=\"운용목표\" + .c-card-content",
+          "snippet": "한국거래소가 발표하는 코스피 200 지수를 추적대상지수로하여 1좌당 순자산가치의 변동률을 기초지수의 변동률과 유사하도록 투자신탁재산을 운용."
+        },
+        "benchmarkName": {
+          "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+          "selector": "#section3 .label=\"기초지수\" + .value",
+          "snippet": "코스피 200"
+        },
+        "benchmarkDescription": {
+          "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+          "selector": "h3=\"기초지수\" + .c-card .c-card-content",
+          "snippet": "- 산출기관 및 대상종목 : 한국거래소에서 발표하는 지수로서 증권시장 전체에 상장된 전체 종목 중에서 시장대표성, 업종대표성 및 유동성등을 감안하여 200종목 선정 - 산출방법 : 유동주식수 가중 시가총액식 주가지수/ 연 2회 정기변경 - 해당지수에 대한 정보는 www.krx.co.kr에서 검색하실 수 있습니다. ※ 비교지수는 회사의 판단에 따라 변경될 수 있으며, 변경시에는 법 제89조제2항에 따라 집합투자업자 등의 홈페이지 및 한국거래소 공시 등을 통해 안내해 드릴 예정입니다."
+        },
+        "distributionPolicy": {
+          "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+          "selector": ".c-card-header=\"분배금 지급 기준일\" + .c-card-content",
+          "snippet": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+            "selector": ".temp-resources a[label=\"월간운용보고서\"]",
+            "snippet": "월간운용보고서: https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827002747.pdf"
+          },
+          {
+            "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+            "selector": ".temp-resources a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260416021509007653.pdf"
+          },
+          {
+            "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+            "selector": ".temp-resources a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260416021509000496.pdf"
+          },
+          {
+            "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+            "selector": ".temp-resources a[label=\"월간운용보고서(FactSheet)\"]",
+            "snippet": "월간운용보고서(FactSheet): https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827002747.pdf"
+          },
+          {
+            "rawHash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+            "selector": ".temp-resources a[label=\"집합투자규약\"]",
+            "snippet": "집합투자규약: https://investments.miraeasset.com/tigeretf/upload/etf/20260416021509009590.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T07:07:30.423Z",
+        "path": "data/raw/metadata-v2/tiger-product/2026-07-21/102110/2026-07-21T07-07-30-423Z.53c209a88ceb15f5.html",
+        "hash": "53c209a88ceb15f5e1bfd5f3dffe7aec6df16fb7288fa78c701921b54b2febb3",
+        "bytes": 174334,
+        "url": "https://investments.miraeasset.com/tigeretf/ko/product/search/detail/index.do?ksdFund=KR7102110004"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:07:30.426Z",
+      "sourceId": "issuer_tiger_product",
+      "issuerId": "mirae-asset-global-investments",
+      "shortCode": "114820",
+      "isin": "KR7114820004",
+      "name": "TIGER 국채3년",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "complete": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "한국거래소가 산출하는 채권시장 대표지수인 KTB Index지수를 추종합니다.",
+        "investmentObjective": "한국거래소가 발표하는 KTB INDEX(시장가격)를 추적대상지수로 하여 1좌당 순자산가치의 변동률을 기초지수의 변동률과 유사하도록 투자신탁재산을 운용",
+        "benchmarkName": "KTB INDEX(시장가격)",
+        "benchmarkDescription": "- 산출기관 및 대상종목 : 한국거래소에서 발표하는 지수로서 국고채3년 선물(KTB 3yr)의 기초자산이 되는 바스켓 3종목(3년물 2종목, 5년물 1종목)으로 구성 - 산출방법 : 액면기준 동일가중방식 - 2009년 6월 1일 = 10,000pt - 정기변경 : 선물 근월물 최종거래일(3 / 6 / 9 / 12월) - 해당지수에 대한 정보는 www.krx.co.kr에서 검색하실 수 있습니다 ※ 비교지수는 회사의 판단에 따라 변경될 수 있으며, 변경시에는 법 제89조제2항에 따라 집합투자업자 등의 홈페이지 및 한국거래소 공시 등을 통해 안내해 드릴 예정입니다.",
+        "distributionPolicy": "- 지급기준일 : 11월 마지막 영업일 - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "officialDocumentLinks": [
+          {
+            "label": "월간운용보고서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827000683.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260416082644004768.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260416082644005794.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "월간운용보고서(FactSheet)",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827000683.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "집합투자규약",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260416082644007405.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+          "selector": "#section1 .title",
+          "snippet": "한국거래소가 산출하는 채권시장 대표지수인 KTB Index지수를 추종합니다."
+        },
+        "investmentObjective": {
+          "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+          "selector": ".c-card-header=\"운용목표\" + .c-card-content",
+          "snippet": "한국거래소가 발표하는 KTB INDEX(시장가격)를 추적대상지수로 하여 1좌당 순자산가치의 변동률을 기초지수의 변동률과 유사하도록 투자신탁재산을 운용"
+        },
+        "benchmarkName": {
+          "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+          "selector": "#section3 .label=\"기초지수\" + .value",
+          "snippet": "KTB INDEX(시장가격)"
+        },
+        "benchmarkDescription": {
+          "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+          "selector": "h3=\"기초지수\" + .c-card .c-card-content",
+          "snippet": "- 산출기관 및 대상종목 : 한국거래소에서 발표하는 지수로서 국고채3년 선물(KTB 3yr)의 기초자산이 되는 바스켓 3종목(3년물 2종목, 5년물 1종목)으로 구성 - 산출방법 : 액면기준 동일가중방식 - 2009년 6월 1일 = 10,000pt - 정기변경 : 선물 근월물 최종거래일(3 / 6 / 9 / 12월) - 해당지수에 대한 정보는 www.krx.co.kr에서 검색하실 수 있습니다 ※ 비교지수는 회사의 판단에 따라 변경될 수 있으며, 변경시에는 법 제89조제2항에 따라 집합투자업자 등의 홈페이지 및 한국거래소 공시 등을 통해 안내해 드릴 예정입니다."
+        },
+        "distributionPolicy": {
+          "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+          "selector": ".c-card-header=\"분배금 지급 기준일\" + .c-card-content",
+          "snippet": "- 지급기준일 : 11월 마지막 영업일 - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+            "selector": ".temp-resources a[label=\"월간운용보고서\"]",
+            "snippet": "월간운용보고서: https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827000683.pdf"
+          },
+          {
+            "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+            "selector": ".temp-resources a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260416082644004768.pdf"
+          },
+          {
+            "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+            "selector": ".temp-resources a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260416082644005794.pdf"
+          },
+          {
+            "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+            "selector": ".temp-resources a[label=\"월간운용보고서(FactSheet)\"]",
+            "snippet": "월간운용보고서(FactSheet): https://investments.miraeasset.com/tigeretf/upload/etf/20260709013827000683.pdf"
+          },
+          {
+            "rawHash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+            "selector": ".temp-resources a[label=\"집합투자규약\"]",
+            "snippet": "집합투자규약: https://investments.miraeasset.com/tigeretf/upload/etf/20260416082644007405.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T07:07:31.524Z",
+        "path": "data/raw/metadata-v2/tiger-product/2026-07-21/114820/2026-07-21T07-07-31-524Z.c4f215edfa576d67.html",
+        "hash": "c4f215edfa576d67f39b6507eaf288df55a8ce53bff06e873cda373def9538c2",
+        "bytes": 175561,
+        "url": "https://investments.miraeasset.com/tigeretf/ko/product/search/detail/index.do?ksdFund=KR7114820004"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:07:31.526Z",
+      "sourceId": "issuer_tiger_product",
+      "issuerId": "mirae-asset-global-investments",
+      "shortCode": "182480",
+      "isin": "KR7182480004",
+      "name": "TIGER 미국MSCI리츠(합성 H)",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "complete": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "미국 상업용 부동산에 투자하여 안정적인 인컴수익을 추구합니다.",
+        "investmentObjective": "MSCI (Morgan Stanley Capital International)가 발표하는 MSCI US REIT Index 을 추적대상지수로 하여 1좌당 순자산가치 변동률을 기초지수의 변동률과 유사하도록 투자신탁재산을 운용하고, 분기별 투자신탁 분배금을 지급",
+        "benchmarkName": "MSCI US REIT Index",
+        "benchmarkDescription": "- 산출기관 : MSCI Inc. - 지수개요: 미국 거래소에 상장된 종목 중, 규모？유동성？투자 용이성을 감안하여 선정한 2500종목을 구성종목으로 하는 “MSCI US Investable Market 2500 지수”에 포함된 리츠 구성종목으로 아래 조건에 해당하는 종목 (1) 배당가능이익의 90% 이상을 배당하는 종목 (2) 이익의 75% 이상을 부동산 임대와 매매에서 얻는 종목 단, 모기지 리츠？특수 리츠 등의 일부 종목 제외 - 구성종목 : 미국 주식시장에 상장된 리츠 - 산출방식 : 유동시가총액 가중방식 - 정기변경: 연 4회(매 2월, 5월, 8월, 11월 말일 기준) - 기준일 및 기준지수 : 1994.12.30 = 100pt ※ 비교지수는 회사의 판단에 따라 변경될 수 있으며, 변경시에는 법 제89조제2항에 따라 집합투자업자 등의 홈페이지 및 한국거래소 공시 등을 통해 안내해 드릴 예정입니다.",
+        "distributionPolicy": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제10영업일 이내 분배금 지급현황",
+        "officialDocumentLinks": [
+          {
+            "label": "월간운용보고서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000244.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260430013737012598.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260430013815011905.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "월간운용보고서(FactSheet)",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000244.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "집합투자규약",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20240112090342004938.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+          "selector": "#section1 .title",
+          "snippet": "미국 상업용 부동산에 투자하여 안정적인 인컴수익을 추구합니다."
+        },
+        "investmentObjective": {
+          "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+          "selector": ".c-card-header=\"운용목표\" + .c-card-content",
+          "snippet": "MSCI (Morgan Stanley Capital International)가 발표하는 MSCI US REIT Index 을 추적대상지수로 하여 1좌당 순자산가치 변동률을 기초지수의 변동률과 유사하도록 투자신탁재산을 운용하고, 분기별 투자신탁 분배금을 지급"
+        },
+        "benchmarkName": {
+          "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+          "selector": "#section3 .label=\"기초지수\" + .value",
+          "snippet": "MSCI US REIT Index"
+        },
+        "benchmarkDescription": {
+          "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+          "selector": "h3=\"기초지수\" + .c-card .c-card-content",
+          "snippet": "- 산출기관 : MSCI Inc. - 지수개요: 미국 거래소에 상장된 종목 중, 규모？유동성？투자 용이성을 감안하여 선정한 2500종목을 구성종목으로 하는 “MSCI US Investable Market 2500 지수”에 포함된 리츠 구성종목으로 아래 조건에 해당하는 종목 (1) 배당가능이익의 90% 이상을 배당하는 종목 (2) 이익의 75% 이상을 부동산 임대와 매매에서 얻는 종목 단, 모기지 리츠？특수 리츠 등의 일부 종목 제외 - 구성종목 : 미국 주식시장에 상장된 리츠 - 산출방식 : 유동시가총액 가중방식 - 정기변경: 연 4회(매 2월, 5월, 8월, 11월"
+        },
+        "distributionPolicy": {
+          "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+          "selector": ".c-card-header=\"분배금 지급 기준일\" + .c-card-content",
+          "snippet": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제10영업일 이내 분배금 지급현황"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+            "selector": ".temp-resources a[label=\"월간운용보고서\"]",
+            "snippet": "월간운용보고서: https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000244.pdf"
+          },
+          {
+            "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+            "selector": ".temp-resources a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260430013737012598.pdf"
+          },
+          {
+            "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+            "selector": ".temp-resources a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260430013815011905.pdf"
+          },
+          {
+            "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+            "selector": ".temp-resources a[label=\"월간운용보고서(FactSheet)\"]",
+            "snippet": "월간운용보고서(FactSheet): https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000244.pdf"
+          },
+          {
+            "rawHash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+            "selector": ".temp-resources a[label=\"집합투자규약\"]",
+            "snippet": "집합투자규약: https://investments.miraeasset.com/tigeretf/upload/etf/20240112090342004938.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T07:07:32.632Z",
+        "path": "data/raw/metadata-v2/tiger-product/2026-07-21/182480/2026-07-21T07-07-32-632Z.781b6f3321cc10d6.html",
+        "hash": "781b6f3321cc10d6c65042777b0462ddc7c017babffbdeb869772c373aacb1d1",
+        "bytes": 227062,
+        "url": "https://investments.miraeasset.com/tigeretf/ko/product/search/detail/index.do?ksdFund=KR7182480004"
+      }
+    },
+    {
+      "retrievedAt": "2026-07-21T07:07:32.634Z",
+      "sourceId": "issuer_tiger_product",
+      "issuerId": "mirae-asset-global-investments",
+      "shortCode": "217770",
+      "isin": "KR7217770007",
+      "name": "TIGER 원유선물인버스(H)",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "complete": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "benchmarkDescription": true,
+          "distributionPolicy": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "S&P가 발표하는 원유선물지수 일간 변동률의 음의 1배수로 연동되도록 운용합니다.",
+        "investmentObjective": "스탠다드앤푸어스(Standard & Poor's)가 발표하는 S&P GSCI Crude Oil Index ER의 (-1)배를 추적대상지수로 하여 1좌당 순자산가치 변동률을 기초지수의 변동률과유사하도록 투자신탁재산을 운용",
+        "benchmarkName": "S&P GSCI Crude Oil Index ER",
+        "benchmarkDescription": "- 산출기관 : S&P Dow Jones Indices - 지수개요 : 선물시장(NYMEX: New York Mercantile Exchange(뉴욕상업거래소))에 상장된 WTI원유 선물 가격의 움직임을 나타내는 지수로서, 선물투자시 발생하는 롤오버비용(Roll over Cost)을 반영하여 산출 - 산출방법 : WTI원유선물을 최근월물에서 차근월물(2번째 근월물)로 롤오버 ？ 최근월물 : 현재 시점에서 만기도래가 가장 먼저 임박한 월물 ？ 차근월물 : 차월물들 중 최근월물 이후 최초로 만기가 도래하는 월물 - 기준일 및 기준지수: 1987.01.07. = 100pt ※ 비교지수는 회사의 판단에 따라 변경될 수 있으며, 변경시에는 법 제89조제2항에 따라 집합투자업자 등의 홈페이지 및 한국거래소 공시 등을 통해 안내해 드릴 예정입니다.",
+        "distributionPolicy": "- 지급기준일 : 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "officialDocumentLinks": [
+          {
+            "label": "월간운용보고서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000262.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260430015440077541.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260430015459017508.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "월간운용보고서(FactSheet)",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000262.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          },
+          {
+            "label": "집합투자규약",
+            "url": "https://investments.miraeasset.com/tigeretf/upload/etf/20260430015546012458.pdf",
+            "fetchPolicy": "link_only_robots_disallow_upload"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+          "selector": "#section1 .title",
+          "snippet": "S&P가 발표하는 원유선물지수 일간 변동률의 음의 1배수로 연동되도록 운용합니다."
+        },
+        "investmentObjective": {
+          "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+          "selector": ".c-card-header=\"운용목표\" + .c-card-content",
+          "snippet": "스탠다드앤푸어스(Standard & Poor's)가 발표하는 S&P GSCI Crude Oil Index ER의 (-1)배를 추적대상지수로 하여 1좌당 순자산가치 변동률을 기초지수의 변동률과유사하도록 투자신탁재산을 운용"
+        },
+        "benchmarkName": {
+          "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+          "selector": "#section3 .label=\"기초지수\" + .value",
+          "snippet": "S&P GSCI Crude Oil Index ER"
+        },
+        "benchmarkDescription": {
+          "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+          "selector": "h3=\"기초지수\" + .c-card .c-card-content",
+          "snippet": "- 산출기관 : S&P Dow Jones Indices - 지수개요 : 선물시장(NYMEX: New York Mercantile Exchange(뉴욕상업거래소))에 상장된 WTI원유 선물 가격의 움직임을 나타내는 지수로서, 선물투자시 발생하는 롤오버비용(Roll over Cost)을 반영하여 산출 - 산출방법 : WTI원유선물을 최근월물에서 차근월물(2번째 근월물)로 롤오버 ？ 최근월물 : 현재 시점에서 만기도래가 가장 먼저 임박한 월물 ？ 차근월물 : 차월물들 중 최근월물 이후 최초로 만기가 도래하는 월물 - 기준일 및 기준지수: 1987.01.07. = 100pt"
+        },
+        "distributionPolicy": {
+          "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+          "selector": ".c-card-header=\"분배금 지급 기준일\" + .c-card-content",
+          "snippet": "- 지급기준일 : 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+            "selector": ".temp-resources a[label=\"월간운용보고서\"]",
+            "snippet": "월간운용보고서: https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000262.pdf"
+          },
+          {
+            "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+            "selector": ".temp-resources a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260430015440077541.pdf"
+          },
+          {
+            "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+            "selector": ".temp-resources a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://investments.miraeasset.com/tigeretf/upload/etf/20260430015459017508.pdf"
+          },
+          {
+            "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+            "selector": ".temp-resources a[label=\"월간운용보고서(FactSheet)\"]",
+            "snippet": "월간운용보고서(FactSheet): https://investments.miraeasset.com/tigeretf/upload/etf/20260709013828000262.pdf"
+          },
+          {
+            "rawHash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+            "selector": ".temp-resources a[label=\"집합투자규약\"]",
+            "snippet": "집합투자규약: https://investments.miraeasset.com/tigeretf/upload/etf/20260430015546012458.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T07:07:33.923Z",
+        "path": "data/raw/metadata-v2/tiger-product/2026-07-21/217770/2026-07-21T07-07-33-923Z.11d120440b17bb3a.html",
+        "hash": "11d120440b17bb3a171b435b64e8d02a75c9505455a01992d89ba2a7d133f692",
+        "bytes": 174349,
+        "url": "https://investments.miraeasset.com/tigeretf/ko/product/search/detail/index.do?ksdFund=KR7217770007"
+      }
+    }
+  ]
+}

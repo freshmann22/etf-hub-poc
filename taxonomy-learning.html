@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ETF 택소노미 학습 도구</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f7;
+      --surface: #ffffff;
+      --surface-muted: #f8faf9;
+      --line: #d7ddda;
+      --line-strong: #aeb8b3;
+      --text: #18201c;
+      --muted: #5d6963;
+      --green: #176b4d;
+      --green-soft: #e6f2ec;
+      --blue: #255d8a;
+      --blue-soft: #e9f1f7;
+      --amber: #8a5a00;
+      --amber-soft: #fff4d6;
+      --red: #9b3d34;
+      --focus: #0b6bcb;
+      --radius: 6px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+
+    button, code { font: inherit; }
+
+    button:focus-visible, [role="tab"]:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--focus) 34%, transparent);
+      outline-offset: 2px;
+    }
+
+    .app-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner, main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .header-inner { padding: 20px 0 0; }
+
+    .title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 3px; font-size: 22px; line-height: 1.35; }
+    h2 { margin-bottom: 6px; font-size: 19px; line-height: 1.4; }
+    h3 { margin-bottom: 7px; font-size: 15px; line-height: 1.4; }
+    p { margin-bottom: 12px; }
+    .subtitle, .muted { color: var(--muted); }
+    .subtitle { margin: 0; font-size: 13px; }
+
+    .version {
+      flex: 0 0 auto;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 18px;
+    }
+
+    .tab {
+      min-height: 42px;
+      padding: 9px 13px;
+      border: 0;
+      border-bottom: 3px solid transparent;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .tab[aria-selected="true"] { border-bottom-color: var(--green); color: var(--green); }
+
+    main { padding: 24px 0 48px; }
+    [role="tabpanel"][hidden] { display: none; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .section-head p { margin: 0; max-width: 760px; }
+
+    .builder-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(310px, .85fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .workspace, .record-panel, .facet-band, .namespace, .summary-block, .glossary {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .workspace, .record-panel { padding: 18px; }
+    .record-panel { position: sticky; top: 16px; }
+
+    .presets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .preset, .chip, .small-button {
+      min-height: 36px;
+      border: 1px solid var(--line-strong);
+      border-radius: 5px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 650;
+    }
+
+    .preset { padding: 7px 10px; }
+    .preset:hover, .chip:hover, .small-button:hover { border-color: var(--green); }
+    .preset[aria-pressed="true"] { border-color: var(--green); background: var(--green-soft); color: var(--green); }
+
+    .facet-picker { padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .facet-picker:last-of-type { border-bottom: 0; }
+
+    .facet-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 7px;
+      margin-bottom: 9px;
+    }
+
+    .facet-heading h3 { margin: 0; }
+    .cardinality {
+      padding: 1px 6px;
+      border-radius: 4px;
+      background: var(--surface-muted);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .facet-note { color: var(--muted); font-size: 12px; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip { padding: 6px 9px; font-size: 13px; overflow-wrap: anywhere; }
+    .chip[aria-pressed="true"] { border-color: var(--green); background: var(--green-soft); color: var(--green); }
+    .chip.child { margin-left: 13px; border-style: dashed; }
+    .chip.child[aria-pressed="true"] { border-style: solid; }
+
+    .record-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .record-title h2 { margin: 0; font-size: 16px; }
+    .small-button { min-height: 32px; padding: 5px 9px; font-size: 12px; }
+
+    .etf-name {
+      margin-bottom: 14px;
+      padding: 11px 12px;
+      border-left: 4px solid var(--green);
+      background: var(--surface-muted);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .record-rows { display: grid; gap: 10px; }
+    .record-row {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 9px;
+      align-items: start;
+    }
+
+    .record-key { color: var(--muted); font-size: 12px; font-weight: 800; }
+    .value-list { display: flex; flex-wrap: wrap; gap: 5px; min-width: 0; }
+    .value {
+      padding: 3px 6px;
+      border-radius: 4px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 11px;
+      overflow-wrap: anywhere;
+    }
+
+    .empty { color: var(--muted); font-size: 12px; }
+    .record-status {
+      min-height: 42px;
+      margin: 15px 0 0;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .principle-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-bottom: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--line);
+    }
+
+    .principle { padding: 14px; background: var(--surface); }
+    .principle strong { display: block; margin-bottom: 3px; font-size: 13px; }
+    .principle span { color: var(--muted); font-size: 12px; }
+
+    .facet-list { display: grid; gap: 12px; }
+    .facet-band { padding: 16px; }
+    .facet-band-header {
+      display: grid;
+      grid-template-columns: 150px 90px minmax(0, 1fr);
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 12px;
+    }
+
+    .facet-band-header h3 { margin: 0; }
+    .facet-question { color: var(--muted); font-size: 13px; }
+    .tree {
+      display: grid;
+      grid-template-columns: 165px minmax(0, 1fr);
+      gap: 12px;
+      padding: 12px;
+      border-left: 3px solid var(--green);
+      background: var(--surface-muted);
+    }
+
+    .tree-parent code, .mono { color: var(--green); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; overflow-wrap: anywhere; }
+    .tree-children { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+    .tree-child { padding-left: 12px; border-left: 1px solid var(--line-strong); }
+    .tree-child strong { display: block; font-size: 13px; }
+    .tree-child code { color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+
+    .namespace-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .namespace { padding: 15px; border-top-width: 4px; }
+    .namespace.taxonomy { border-top-color: var(--green); }
+    .namespace.news { border-top-color: var(--blue); }
+    .namespace.channel { border-top-color: var(--amber); }
+    .namespace h3 { margin-bottom: 3px; }
+    .namespace .ns-id { display: block; margin-bottom: 10px; color: var(--muted); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; overflow-wrap: anywhere; }
+    .namespace dl { margin: 0; }
+    .namespace dt { margin-top: 8px; color: var(--muted); font-size: 11px; font-weight: 800; }
+    .namespace dd { margin: 1px 0 0; font-size: 13px; }
+
+    .flow-section { margin-top: 22px; }
+    .flow-section h3 { margin-bottom: 10px; font-size: 16px; }
+    .flow {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr);
+      gap: 6px;
+      align-items: stretch;
+    }
+
+    .flow-step {
+      min-width: 0;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .flow-step small { display: block; margin-bottom: 4px; color: var(--muted); font-weight: 800; }
+    .flow-step strong, .flow-step code { display: block; overflow-wrap: anywhere; }
+    .flow-step code { margin-top: 5px; color: var(--blue); font-size: 11px; }
+    .arrow { display: grid; place-items: center; color: var(--muted); font-size: 20px; font-weight: 800; }
+
+    .rule-note {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--amber);
+      background: var(--amber-soft);
+      color: #594006;
+      font-size: 13px;
+    }
+
+    .summary-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; }
+    .summary-block, .glossary { padding: 18px; }
+    .summary-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; counter-reset: summary; }
+    .summary-list li {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr);
+      gap: 10px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .summary-list li:last-child { border-bottom: 0; }
+    .summary-list li::before {
+      counter-increment: summary;
+      content: counter(summary);
+      display: grid;
+      width: 24px;
+      height: 24px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green-soft);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .glossary dl { margin: 0; }
+    .glossary dt { margin-top: 12px; font-weight: 800; }
+    .glossary dt:first-child { margin-top: 0; }
+    .glossary dd { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+
+    .source-note { margin-top: 18px; color: var(--muted); font-size: 11px; }
+
+    @media (max-width: 860px) {
+      .builder-layout, .summary-grid { grid-template-columns: 1fr; }
+      .record-panel { position: static; }
+      .namespace-grid { grid-template-columns: 1fr; }
+      .flow { grid-template-columns: 1fr; }
+      .arrow { min-height: 24px; transform: rotate(90deg); }
+      .facet-band-header { grid-template-columns: 120px 80px minmax(0, 1fr); }
+    }
+
+    @media (max-width: 560px) {
+      body { font-size: 14px; }
+      .header-inner, main { width: min(100% - 24px, 1180px); }
+      .header-inner { padding-top: 15px; }
+      .title-row { display: block; }
+      .version { display: inline-block; margin-top: 8px; }
+      .tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tab { padding: 8px 6px; font-size: 13px; }
+      main { padding-top: 18px; }
+      .section-head { display: block; }
+      .section-head p { font-size: 13px; }
+      .workspace, .record-panel, .facet-band, .summary-block, .glossary { padding: 14px; }
+      .preset { flex: 1 1 100%; text-align: left; }
+      .principle-strip { grid-template-columns: 1fr; }
+      .facet-band-header { grid-template-columns: 1fr auto; }
+      .facet-question { grid-column: 1 / -1; }
+      .tree { grid-template-columns: 1fr; }
+      .tree-children { grid-template-columns: 1fr; }
+      .record-row { grid-template-columns: 76px minmax(0, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="title-row">
+        <div>
+          <h1>ETF 택소노미 학습 도구</h1>
+          <p class="subtitle">상품 속성, 탐색 필터, 뉴스 브리핑이 연결되는 방식을 직접 확인합니다.</p>
+        </div>
+        <span class="version">taxonomy 2.0.0 · explore map 1.0.0</span>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="학습 내용">
+        <button class="tab" id="tab-builder" role="tab" aria-selected="true" aria-controls="panel-builder" tabindex="0">ETF 조립기</button>
+        <button class="tab" id="tab-facets" role="tab" aria-selected="false" aria-controls="panel-facets" tabindex="-1">5개 Facet</button>
+        <button class="tab" id="tab-flow" role="tab" aria-selected="false" aria-controls="panel-flow" tabindex="-1">데이터 흐름</button>
+        <button class="tab" id="tab-summary" role="tab" aria-selected="false" aria-controls="panel-summary" tabindex="-1">핵심 요약</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="panel-builder" role="tabpanel" aria-labelledby="tab-builder">
+      <div class="section-head">
+        <div>
+          <h2>한 ETF의 속성 레코드 조립하기</h2>
+          <p class="muted">예시 상품을 고르거나 태그를 직접 누르세요. primary는 주값 1개, multi는 여러 값을 가질 수 있습니다.</p>
+        </div>
+      </div>
+      <div class="builder-layout">
+        <div class="workspace">
+          <h3>예시 ETF</h3>
+          <div class="presets" id="presets" aria-label="예시 ETF 선택"></div>
+          <div id="facet-pickers"></div>
+        </div>
+        <aside class="record-panel" aria-live="polite" aria-label="조립된 ETF 속성 레코드">
+          <div class="record-title">
+            <h2>속성 레코드</h2>
+            <button class="small-button" id="reset-button" type="button">초기화</button>
+          </div>
+          <div class="etf-name" id="etf-name">직접 조립 중</div>
+          <div class="record-rows" id="record-rows"></div>
+          <p class="record-status" id="record-status">태그를 선택하면 이곳에 분류 규칙이 표시됩니다.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="panel-facets" role="tabpanel" aria-labelledby="tab-facets" hidden>
+      <div class="section-head">
+        <div>
+          <h2>5개 독립 축으로 보는 ETF</h2>
+          <p class="muted">각 facet은 서로 다른 질문에 답합니다. 상품명 한 줄을 여러 독립 속성으로 풀어내는 구조입니다.</p>
+        </div>
+      </div>
+      <div class="principle-strip">
+        <div class="principle"><strong>Primary</strong><span>자산군과 지역은 원칙적으로 주값 1개입니다.</span></div>
+        <div class="principle"><strong>Multi</strong><span>섹터, 전략, 배당은 0개 이상 함께 붙을 수 있습니다.</span></div>
+        <div class="principle"><strong>근거 우선</strong><span>이름·기초지수·구성종목 근거가 없으면 태그를 만들지 않습니다.</span></div>
+      </div>
+      <div class="facet-list">
+        <article class="facet-band">
+          <div class="facet-band-header"><h3>assetClass · 자산군</h3><span class="cardinality">primary</span><span class="facet-question">무엇에 투자하는가?</span></div>
+          <div class="tree">
+            <div class="tree-parent"><strong>채권</strong><br><code>asset.bond</code></div>
+            <div class="tree-children">
+              <div class="tree-child"><strong>국채</strong><code>asset.bond.government</code></div>
+              <div class="tree-child"><strong>회사채</strong><code>asset.bond.corporate</code></div>
+              <div class="tree-child"><strong>만기매칭</strong><code>asset.bond.target_maturity</code></div>
+              <div class="tree-child"><strong>초단기/금리</strong><code>asset.bond.money_market</code></div>
+            </div>
+          </div>
+          <p class="source-note">다른 주값: 주식, 원자재, 리츠/부동산, 혼합/멀티에셋, 통화/환. 채권은 주값 아래 보조 세부태그를 허용합니다.</p>
+        </article>
+        <article class="facet-band">
+          <div class="facet-band-header"><h3>region · 지역</h3><span class="cardinality">primary</span><span class="facet-question">주로 어느 시장에 투자하는가?</span></div>
+          <div class="chip-row" aria-label="지역 예시"><span class="value">region.domestic_kr</span><span class="value">region.us</span><span class="value">region.china</span><span class="value">region.japan</span><span class="value">region.india</span><span class="value">region.vietnam</span><span class="value">region.developed</span><span class="value">region.emerging</span></div>
+        </article>
+        <article class="facet-band">
+          <div class="facet-band-header"><h3>sector · 섹터/테마</h3><span class="cardinality">multi</span><span class="facet-question">어떤 산업 익스포저가 있는가?</span></div>
+          <p class="muted">반도체, 철강/금속, 조선, 금융, 원전, 로봇 등 여러 산업 태그를 동시에 가질 수 있습니다. 원자재는 섹터가 아니라 자산군으로 이동했습니다.</p>
+        </article>
+        <article class="facet-band">
+          <div class="facet-band-header"><h3>strategy · 구조·전략</h3><span class="cardinality">multi</span><span class="facet-question">어떤 구조와 운용방식을 쓰는가?</span></div>
+          <p class="muted">구조/배율, 운용방식, 팩터, 대표지수, 테마전략을 한 facet 안에서 평면 tagId로 관리합니다. 예: 액티브 + 가치주, 패시브 + 나스닥100.</p>
+        </article>
+        <article class="facet-band">
+          <div class="facet-band-header"><h3>dividend · 배당</h3><span class="cardinality">multi</span><span class="facet-question">어떤 배당 성격과 분배 구조인가?</span></div>
+          <p class="muted">한국 고배당, 배당성장, 커버드콜 배당, 월배당을 필요에 따라 함께 표시합니다. 지역 정보는 배당 태그에 숨기지 않고 region이 담당합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="panel-flow" role="tabpanel" aria-labelledby="tab-flow" hidden>
+      <div class="section-head">
+        <div>
+          <h2>세 네임스페이스는 섞지 않습니다</h2>
+          <p class="muted">ETF 속성 태그와 뉴스 주석은 서로 다른 체계이며, BriefChannel만 둘을 연결합니다.</p>
+        </div>
+      </div>
+      <div class="namespace-grid">
+        <article class="namespace taxonomy">
+          <h3>1. ETF taxonomy tags</h3>
+          <span class="ns-id">asset.* · region.* · sector.* · strategy.* · dividend.*</span>
+          <dl><dt>원천</dt><dd>ETF 이름·기초지수·구성종목 스코어링</dd><dt>소비자</dt><dd>ETF 탐색 필터</dd></dl>
+        </article>
+        <article class="namespace news">
+          <h3>2. 뉴스 entity/topic 주석</h3>
+          <span class="ns-id">종목코드 · topic.*</span>
+          <dl><dt>원천</dt><dd>기사 스크래핑 후 엔티티·토픽 분류</dd><dt>소비자</dt><dd>기사와 브리핑의 배정</dd></dl>
+        </article>
+        <article class="namespace channel">
+          <h3>3. BriefChannel mapping</h3>
+          <span class="ns-id">targetTagId · newsTopicIds · top_holdings</span>
+          <dl><dt>원천</dt><dd>explore-tag-map.json의 명시적 연결</dd><dt>소비자</dt><dd>태그별 AI 브리핑 생성</dd></dl>
+        </article>
+      </div>
+
+      <div class="flow-section">
+        <h3>탐색 필터: UI 버튼에서 ETF 목록까지</h3>
+        <div class="flow" aria-label="ETF 필터 흐름">
+          <div class="flow-step"><small>1 · 화면</small><strong>“철강/금속” 버튼</strong><code>explore-tag-map facets[].filters</code></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="flow-step"><small>2 · 식별자</small><strong>taxonomy tagId</strong><code>sector.steel_metals</code></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="flow-step"><small>3 · 소속 판정</small><strong>ETF filter map</strong><code>filters[tagId]</code></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="flow-step"><small>4 · 결과</small><strong>매칭 ETF 목록</strong><code>라벨·상품명 키워드로 판정하지 않음</code></div>
+        </div>
+      </div>
+
+      <div class="flow-section">
+        <h3>브리핑: 채널에서 기사 묶음까지</h3>
+        <div class="flow" aria-label="뉴스 브리핑 흐름">
+          <div class="flow-step"><small>1 · 채널</small><strong>BriefChannel</strong><code>targetTagId: asset.bond</code></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="flow-step"><small>2 · ETF 앵커</small><strong>상위 구성종목 8개</strong><code>stockAnchorMode: top_holdings</code></div>
+          <div class="arrow" aria-hidden="true">+</div>
+          <div class="flow-step"><small>3 · 뉴스 앵커</small><strong>금리·크레딧 토픽</strong><code>topic.rates · topic.credit</code></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="flow-step"><small>4 · 산출물</small><strong>채권 태그 브리핑</strong><code>taxonomyVersion 일치 필요</code></div>
+        </div>
+      </div>
+      <div class="rule-note"><strong>중요:</strong> 모든 필터 태그가 브리핑 채널을 갖는 것은 아닙니다. 채널이 없어도 ETF 필터는 동작하지만 AI 브리핑은 발행하지 않습니다. Explore map, filter map, 브리핑 결과의 taxonomyVersion도 서로 같아야 합니다.</div>
+    </section>
+
+    <section id="panel-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
+      <div class="section-head">
+        <div>
+          <h2>핵심만 다시 보기</h2>
+          <p class="muted">제품 의사결정 시 혼동하기 쉬운 경계를 짧게 정리했습니다.</p>
+        </div>
+      </div>
+      <div class="summary-grid">
+        <article class="summary-block">
+          <h3>다섯 문장 요약</h3>
+          <ol class="summary-list">
+            <li><span><strong>ETF 한 종목은 5개 facet으로 설명합니다.</strong> 자산군·지역·섹터·전략·배당은 서로 다른 질문입니다.</span></li>
+            <li><span><strong>자산군과 지역은 primary입니다.</strong> 주값은 하나이며, 채권에는 국채·회사채·만기매칭·초단기 같은 보조 세부태그가 붙을 수 있습니다.</span></li>
+            <li><span><strong>섹터·전략·배당은 multi입니다.</strong> 하나의 ETF에 여러 태그가 동시에 붙을 수 있습니다.</span></li>
+            <li><span><strong>UI 라벨이 ETF 소속을 결정하지 않습니다.</strong> 버튼은 tagId를 가리키고 실제 소속은 etf-filter-map의 filters[tagId]가 판정합니다.</span></li>
+            <li><span><strong>뉴스 토픽은 ETF 태그가 아닙니다.</strong> BriefChannel이 ETF 태그, 상위 구성종목, 뉴스 토픽을 명시적으로 연결합니다.</span></li>
+          </ol>
+        </article>
+        <aside class="glossary">
+          <h3>작은 용어집</h3>
+          <dl>
+            <dt>Taxonomy</dt><dd>ETF 속성을 일관된 tagId와 계층으로 정의한 분류 체계.</dd>
+            <dt>Facet</dt><dd>서로 독립된 분류 축. “무엇에”, “어디에”, “어떻게” 같은 질문에 답함.</dd>
+            <dt>Primary</dt><dd>원칙적으로 주값 1개를 선택하는 cardinality.</dd>
+            <dt>Multi</dt><dd>0개 이상의 값을 함께 가질 수 있는 cardinality.</dd>
+            <dt>tagId</dt><dd>화면 라벨이 바뀌어도 데이터 계약을 유지하는 식별자.</dd>
+            <dt>ETF filter map</dt><dd>tagId별로 실제 매칭 ETF를 제공하는 분류 결과.</dd>
+            <dt>뉴스 앵커</dt><dd>브리핑에 기사를 공급하는 종목 엔티티 또는 topic.* 주석.</dd>
+            <dt>BriefChannel</dt><dd>targetTagId와 ETF·뉴스 앵커를 묶어 브리핑 발행 범위를 정하는 매핑.</dd>
+          </dl>
+        </aside>
+      </div>
+      <p class="source-note">근거: etf-taxonomy.json v2.0.0, explore-tag-map.json v1.0.0, ETF_TAXONOMY_V2_FACET_DESIGN.md, ETF_TAG_PIPELINE_MAPPING.md.</p>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const facets = [
+        {
+          id: "assetClass", label: "자산군", cardinality: "primary", note: "주값 1개 + 채권 세부태그",
+          values: [
+            ["asset.equity", "주식"], ["asset.bond", "채권"],
+            ["asset.bond.government", "국채", "asset.bond"], ["asset.bond.corporate", "회사채", "asset.bond"],
+            ["asset.bond.target_maturity", "만기매칭", "asset.bond"], ["asset.bond.money_market", "초단기/금리", "asset.bond"],
+            ["asset.commodity", "원자재"], ["asset.reit", "리츠/부동산"], ["asset.mixed", "혼합/멀티에셋"], ["asset.currency", "통화/환"]
+          ]
+        },
+        {
+          id: "region", label: "지역", cardinality: "primary", note: "주 투자지역 1개",
+          values: [["region.domestic_kr", "국내"], ["region.us", "미국"], ["region.china", "중국"], ["region.japan", "일본"], ["region.india", "인도"], ["region.vietnam", "베트남"], ["region.developed", "선진국/글로벌"], ["region.emerging", "신흥국"]]
+        },
+        {
+          id: "sector", label: "섹터/테마", cardinality: "multi", note: "유의미한 산업 익스포저",
+          values: [["sector.semiconductor", "반도체"], ["sector.steel_metals", "철강/금속"], ["sector.shipbuilding", "조선/조선기자재"], ["sector.ev_battery", "전기차/2차전지"], ["sector.financials", "금융"], ["sector.aerospace_defense", "우주항공/방산"], ["sector.robotics", "휴머노이드로봇/로보틱스"]]
+        },
+        {
+          id: "strategy", label: "구조·전략", cardinality: "multi", note: "구조·운용·팩터·벤치마크",
+          values: [["strategy.active", "액티브"], ["strategy.passive_index", "지수추종(패시브)"], ["strategy.leverage", "레버리지"], ["strategy.inverse", "인버스"], ["strategy.growth", "성장주"], ["strategy.value", "가치주"], ["strategy.benchmark.sp500", "S&P500"], ["strategy.benchmark.nasdaq100", "나스닥100"], ["strategy.benchmark.kospi200", "코스피200"]]
+        },
+        {
+          id: "dividend", label: "배당", cardinality: "multi", note: "배당 성격·분배 구조",
+          values: [["dividend.korea_high_dividend", "한국 고배당"], ["dividend.dividend_growth", "배당성장"], ["dividend.covered_call", "커버드콜 배당"], ["dividend.monthly", "월배당"]]
+        }
+      ];
+
+      const examples = [
+        { name: "TIGER 미국나스닥100", tags: ["asset.equity", "region.us", "strategy.passive_index", "strategy.benchmark.nasdaq100"] },
+        { name: "KODEX 철강", tags: ["asset.equity", "region.domestic_kr", "sector.steel_metals", "strategy.passive_index"] },
+        { name: "KODEX 27-12 회사채(AA-이상)액티브", tags: ["asset.bond", "asset.bond.corporate", "asset.bond.target_maturity", "region.domestic_kr", "strategy.active"] }
+      ];
+
+      const labels = new Map();
+      const tagFacet = new Map();
+      facets.forEach(facet => facet.values.forEach(([id, label]) => { labels.set(id, label); tagFacet.set(id, facet.id); }));
+
+      let selected = new Set(examples[0].tags);
+      let selectedExample = 0;
+      let status = "나스닥100 벤치마크 태그는 region.us를 함께 뜻합니다.";
+
+      const presetsEl = document.getElementById("presets");
+      const pickersEl = document.getElementById("facet-pickers");
+      const rowsEl = document.getElementById("record-rows");
+      const nameEl = document.getElementById("etf-name");
+      const statusEl = document.getElementById("record-status");
+
+      function renderPresets() {
+        presetsEl.innerHTML = examples.map((example, index) =>
+          `<button type="button" class="preset" data-example="${index}" aria-pressed="${selectedExample === index}">${example.name}</button>`
+        ).join("");
+      }
+
+      function renderPickers() {
+        pickersEl.innerHTML = facets.map(facet => `
+          <section class="facet-picker" aria-labelledby="picker-${facet.id}">
+            <div class="facet-heading">
+              <h3 id="picker-${facet.id}">${facet.label}</h3>
+              <span class="cardinality">${facet.cardinality}</span>
+              <span class="facet-note">${facet.note}</span>
+            </div>
+            <div class="chip-row">${facet.values.map(([id, label, parent]) =>
+              `<button type="button" class="chip${parent ? " child" : ""}" data-tag="${id}" aria-pressed="${selected.has(id)}" title="${id}">${parent ? "↳ " : ""}${label}</button>`
+            ).join("")}</div>
+          </section>
+        `).join("");
+      }
+
+      function selectedForFacet(facetId) {
+        return [...selected].filter(tag => tagFacet.get(tag) === facetId);
+      }
+
+      function renderRecord() {
+        nameEl.textContent = selectedExample === null ? "직접 조립 중" : examples[selectedExample].name;
+        rowsEl.innerHTML = facets.map(facet => {
+          const values = selectedForFacet(facet.id);
+          return `<div class="record-row"><div class="record-key">${facet.id}</div><div class="value-list">${
+            values.length ? values.map(value => `<span class="value" title="${labels.get(value)}">${value}</span>`).join("") : '<span class="empty">선택 없음</span>'
+          }</div></div>`;
+        }).join("");
+        statusEl.textContent = status;
+      }
+
+      function render() {
+        renderPresets();
+        renderPickers();
+        renderRecord();
+      }
+
+      function setPrimary(tag, facetId) {
+        const isBondChild = tag.startsWith("asset.bond.");
+        if (facetId === "assetClass" && isBondChild) {
+          [...selected].filter(item => tagFacet.get(item) === "assetClass" && !item.startsWith("asset.bond")).forEach(item => selected.delete(item));
+          selected.add("asset.bond");
+          selected.has(tag) ? selected.delete(tag) : selected.add(tag);
+          status = `${labels.get(tag)}은(는) 채권 주값 아래의 보조 세부태그입니다.`;
+          return;
+        }
+
+        selectedForFacet(facetId).forEach(item => selected.delete(item));
+        selected.add(tag);
+        status = `${labels.get(tag)}을(를) ${facetId === "region" ? "주 투자지역" : "주 자산군"}으로 선택했습니다.`;
+      }
+
+      function toggleTag(tag) {
+        const facetId = tagFacet.get(tag);
+        const facet = facets.find(item => item.id === facetId);
+        selectedExample = null;
+
+        if (facet.cardinality === "primary") {
+          setPrimary(tag, facetId);
+        } else {
+          selected.has(tag) ? selected.delete(tag) : selected.add(tag);
+          status = `${labels.get(tag)} 태그를 ${selected.has(tag) ? "추가" : "제거"}했습니다. multi facet은 여러 값을 함께 가질 수 있습니다.`;
+        }
+
+        const impliedRegions = {
+          "strategy.benchmark.sp500": "region.us",
+          "strategy.benchmark.nasdaq100": "region.us",
+          "strategy.benchmark.kospi200": "region.domestic_kr"
+        };
+        if (selected.has(tag) && impliedRegions[tag]) {
+          selectedForFacet("region").forEach(item => selected.delete(item));
+          selected.add(impliedRegions[tag]);
+          status = `${labels.get(tag)}의 impliesTags 규칙으로 ${labels.get(impliedRegions[tag])} 지역을 함께 선택했습니다.`;
+        }
+        render();
+      }
+
+      presetsEl.addEventListener("click", event => {
+        const button = event.target.closest("[data-example]");
+        if (!button) return;
+        selectedExample = Number(button.dataset.example);
+        selected = new Set(examples[selectedExample].tags);
+        status = "예시 레코드를 불러왔습니다. 태그를 누르면 직접 조립 모드로 전환됩니다.";
+        render();
+      });
+
+      pickersEl.addEventListener("click", event => {
+        const button = event.target.closest("[data-tag]");
+        if (button) toggleTag(button.dataset.tag);
+      });
+
+      document.getElementById("reset-button").addEventListener("click", () => {
+        selected = new Set();
+        selectedExample = null;
+        status = "초기화했습니다. primary 축부터 선택해 보세요.";
+        render();
+      });
+
+      const tabs = [...document.querySelectorAll('[role="tab"]')];
+      function activateTab(tab) {
+        tabs.forEach(item => {
+          const active = item === tab;
+          item.setAttribute("aria-selected", String(active));
+          item.tabIndex = active ? 0 : -1;
+          document.getElementById(item.getAttribute("aria-controls")).hidden = !active;
+        });
+        tab.focus();
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => activateTab(tab));
+        tab.addEventListener("keydown", event => {
+          let nextIndex = null;
+          if (event.key === "ArrowRight") nextIndex = (index + 1) % tabs.length;
+          if (event.key === "ArrowLeft") nextIndex = (index - 1 + tabs.length) % tabs.length;
+          if (event.key === "Home") nextIndex = 0;
+          if (event.key === "End") nextIndex = tabs.length - 1;
+          if (nextIndex !== null) {
+            event.preventDefault();
+            activateTab(tabs[nextIndex]);
+          }
+        });
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

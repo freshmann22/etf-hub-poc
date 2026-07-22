@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Node tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run regression suite
+        run: npm test
+
+  fixture-reproducibility:
+    name: Tag brief fixture is reproducible
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Rebuild deterministic manual fixture
+        run: npm run build:tag-briefs
+        env:
+          TAG_BRIEF_MODE: manual
+      - name: Verify generated fixture is committed
+        run: git diff --exit-code -- data/fixtures/tag-briefs.json

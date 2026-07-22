@@ -21,12 +21,12 @@
 | BL-04 | pykrx 대표 표본 실호출 벤치마크 | High | **DONE** |
 | BL-05 | 실패 리포트/집계 산출물 | Med | **DONE** |
 | BL-06 | KRX_DIRECT 구성종목 실수집기 | High | **중단** |
-| BL-07 | 정식/대체 구성종목 소스 조사(SEIBro·운용사·금투협) | **High(승격)** | OPEN |
+| BL-07 | 정식/대체 구성종목 소스 조사(SEIBro·운용사·금투협) | **High(승격)** | **DONE** |
 | BL-08 | pykrx 재평가(버전/엔드포인트 복구 점검) | Low(재검토) | OPEN |
-| BL-09 | repository ↔ ETF UI 연결 | Blocked | OPEN |
+| BL-09 | repository ↔ ETF UI 연결 | High | **PARTIAL(TIGER)** |
 | BL-10 | 국내 ETF 전수 dry-run | Blocked | OPEN |
 | BL-11 | SEIBro 실연동 | Low(조건부) | OPEN |
-| BL-12 | 운용사별 수집기 | Low(조건부) | OPEN |
+| BL-12 | 운용사별 수집기 | High | **IN PROGRESS(KODEX/TIGER 완료)** |
 | BL-13 | KRX Data Marketplace 웹 직접 수집(스파이크) | Low(재검토) | **중단** |
 
 ---
@@ -76,6 +76,11 @@
 - 진입 조건: BL-06 결과 불충분 또는 커버리지 부족 확인 시.
 - 완료 조건: 소스별 제공범위·라이선스·호출조건 조사표 + 우선순위 결정.
 - 의존성: BL-06 결과.
+- **처리 결과(2026-07-20)**: `spikes/krx-direct/AMC_FEASIBILITY.md`의 실측을 재검증했다.
+  KODEX와 TIGER 운용사 공식 공개자료가 로그인/API 키 없이 전체 구성종목을 제공한다. 구현 우선순위는
+  표준 ISIN을 계산해 바로 호출 가능한 TIGER → 별도 `fId` 매핑이 필요한 KODEX → 나머지 운용사 순으로 확정했다.
+  TIGER 숫자 단축코드 대표 10종을 재호출해 10/10 성공(2~204행)했으며 BL-12 구현으로 이어졌다.
+- 상태: **DONE**(소스별 제공범위·호출조건·우선순위 결정 완료).
 
 ### BL-08 · pykrx 재평가 — Low(재검토 상태)
 - 배경: 현재 `get_etf_portfolio_deposit_file` 구조적 EMPTY(pykrx 1.0.51). KRX PDF 경로 변경 가능성.
@@ -88,6 +93,9 @@
 - 진입 조건: 구성종목 실데이터 소스 1개 이상이 대표 표본 성공률 ≥80% 달성(BL-06/07).
 - 완료 조건: UI 가 repository 인터페이스만으로 구성종목 표시, 실패 시 정직한 빈/오류 상태.
 - 의존성: BL-06 또는 BL-07. **현재 차단**(실소스 0%).
+- **진행 결과(2026-07-20)**: Explore 구성종목 탭이 `/api/etf/:code/holdings`의
+  `issuer_tiger` 응답을 우선 사용하고, 미지원 종목은 기존 CSV 스냅샷으로 폴백하도록 연결했다.
+  TIGER 숫자 단축코드 범위에서는 차단 해제. 전체 운용사 연결은 BL-12 후속 구현 대기.
 
 ### BL-10 · 국내 ETF 전수 dry-run — Blocked
 - 진입 조건: 표본 성공률 ≥80% + 구조적 전면 실패 없음 + 차단 징후 경미(§2.3).
@@ -103,6 +111,14 @@
 - 진입 조건: KRX/SEIBro 로 커버되지 않는 운용사/상품 존재 확인.
 - 완료 조건: 운용사별 파서 + 공통 스키마 정규화.
 - 의존성: BL-06/07 결과.
+- **진행 결과(2026-07-20)**: 미래에셋 공식 TIGER PDF 조회 provider 구현 완료.
+  한국 ETF ISIN check digit 계산, HTML 표 파싱, 500행 상한, timeout/재시도/호스트 allowlist,
+  명시적 `ISSUER_ENABLED` opt-in을 적용했다. 숫자 단축코드 대표 10종 100% 성공.
+  신규 영문 혼합 단축코드는 단축코드만으로 ISIN을 계산할 수 없어 공공데이터 ISIN 매핑이 필요하다.
+  삼성자산운용 KODEX도 공식 상품검색 API(`srchVal=단축코드`)로 `fId`를 동적 해석한 뒤
+  공식 JSON PDF API를 조회하도록 구현했다. 숫자·영문 혼합 대표 10종 10/10 성공했으며,
+  500행 초과 ETF 3종도 상한 조정 후 505~510행 전체 반환을 확인했다.
+  남은 범위는 KBSTAR/RISE·ACE·SOL·HANARO·KOSEF 등 다른 운용사다.
 
 ### BL-13 · KRX Data Marketplace 웹 직접 수집(스파이크) — Low(재검토), **중단**
 - 배경: `data.krx.co.kr` ETF PDF 메뉴(웹 화면) 요청을 직접 재현할 수 있는지 별도 브랜치

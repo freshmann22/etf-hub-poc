@@ -165,7 +165,7 @@ export class MockProvider extends BaseProvider {
   // 화면 초기 로드용: UI 번들 전체를 fixture 그대로 노출(어댑터가 UI 형태로 변환).
   async getBundle() {
     return {
-      etfsRaw: etfs,
+      etfsRaw: etfs.map((e) => ({ ...e, volume: null })),
       themesRaw: themes,
       holdingsRaw: holdings,
       stocksRaw: stocks,

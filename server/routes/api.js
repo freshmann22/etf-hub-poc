@@ -3,6 +3,7 @@
 import { etfService as defaultService } from '../services/etf-service.js';
 import { describeConfig } from '../config.js';
 import { ProviderError, errorCodeToHttp, classifyError, ErrorCodes } from '../lib/errors.js';
+import { reverseSearchQueryPlanner as defaultQueryPlanner } from '../services/reverse-search-query-planner.js';
 
 const API_PREFIX = '/api';
 
@@ -44,7 +45,7 @@ const ETF_FIELD_METHOD = {
  * API 요청을 처리한다. 처리했으면 true, 이 라우터 소관이 아니면 false 를 반환한다.
  * service 주입 가능(테스트용).
  */
-export async function handleApiRequest(req, res, { service = defaultService } = {}) {
+export async function handleApiRequest(req, res, { service = defaultService, queryPlanner = defaultQueryPlanner } = {}) {
   let pathname;
   try {
     pathname = new URL(req.url, 'http://localhost').pathname;
@@ -53,8 +54,9 @@ export async function handleApiRequest(req, res, { service = defaultService } = 
   }
   if (!pathname.startsWith(API_PREFIX)) return false;
 
-  // API 는 GET 만 허용.
-  if (req.method !== 'GET' && req.method !== 'HEAD') {
+  const isQueryPlanRequest = pathname === '/api/reverse-search/plan';
+  const methodAllowed = req.method === 'GET' || req.method === 'HEAD' || (isQueryPlanRequest && req.method === 'POST');
+  if (!methodAllowed) {
     sendJson(res, 405, { error: ErrorCodes.BAD_REQUEST });
     return true;
   }
@@ -75,6 +77,21 @@ export async function handleApiRequest(req, res, { service = defaultService } = 
     if (pathname === '/api/bundle') {
       const bundle = await service.getBundle();
       sendJson(res, 200, bundle);
+      return true;
+    }
+    if (isQueryPlanRequest) {
+      if (req.method !== 'POST') {
+        sendJson(res, 405, { error: ErrorCodes.BAD_REQUEST });
+        return true;
+      }
+      const payload = await readJsonBody(req);
+      const query = typeof payload.query === 'string' ? payload.query.trim() : '';
+      if (!query || query.length > 500) {
+        sendJson(res, 400, { error: ErrorCodes.BAD_REQUEST });
+        return true;
+      }
+      const result = await queryPlanner.createPlan(query);
+      sendJson(res, 200, result);
       return true;
     }
 
@@ -108,6 +125,23 @@ export async function handleApiRequest(req, res, { service = defaultService } = 
     const { status, body } = errorPayload(err);
     sendJson(res, status, body);
     return true;
+  }
+}
+
+async function readJsonBody(req, maxBytes = 4096) {
+  if (!req || typeof req[Symbol.asyncIterator] !== 'function') return {};
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of req) {
+    const buffer = Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk);
+    size += buffer.length;
+    if (size > maxBytes) throw new ProviderError(ErrorCodes.BAD_REQUEST, 'request body too large');
+    chunks.push(buffer);
+  }
+  try {
+    return JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}');
+  } catch {
+    throw new ProviderError(ErrorCodes.BAD_REQUEST, 'invalid json');
   }
 }
 

@@ -1,0 +1,498 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:37:45.019Z",
+  "issuer": {
+    "id": "samsung-active-asset-management",
+    "brand": "KoAct",
+    "inventoryCount": 23
+  },
+  "probeContract": {
+    "domain": "www.samsungactive.co.kr",
+    "authenticationUsed": false,
+    "challengeBypassAttempted": false,
+    "cookiesReplayed": false,
+    "identityRotationUsed": false,
+    "intervalMs": 1200,
+    "circuitBreaker": [
+      "403",
+      "429",
+      "cloudflare_challenge"
+    ],
+    "policyRequests": 2,
+    "staticContractRequests": 0,
+    "officialListRequests": 2,
+    "productDetailRequests": 4,
+    "canaryRequests": 4,
+    "fullCollectionRequests": 0
+  },
+  "policy": {
+    "allowed": true,
+    "circuitOpen": false,
+    "robotsObservable": true,
+    "homepageObservable": true,
+    "robotsInterpretation": "only Yeti is named; no group matches this collector user-agent, so no robots rule applies",
+    "publicUseTerms": "no site-wide automated-use restriction or general website terms link was observed; footer policies concern privacy, credit information, CCTV, and customer rights",
+    "observations": [
+      {
+        "url": "https://www.samsungactive.co.kr/robots.txt",
+        "status": 200,
+        "ok": true,
+        "bytes": 25,
+        "sha256": "34c6b8cd440d1e719113d816a73250644f007220841bd52600589fcceeea9271",
+        "server": "cloudflare",
+        "cloudflareRay": "a1e88b281a649d6e-ICN",
+        "challenge": false
+      },
+      {
+        "url": "https://www.samsungactive.co.kr/",
+        "status": 200,
+        "ok": true,
+        "bytes": 70691,
+        "sha256": "8fd2bd133234dfb024b64863f24f797299b0fa8fd4215dfc51807c103908764a",
+        "server": "cloudflare",
+        "cloudflareRay": "a1e88b3058449d6e-ICN",
+        "challenge": false
+      }
+    ],
+    "robotsBody": "User-agent: Yeti\r\nAllow:/",
+    "visibleFooterPolicies": [
+      "개인정보처리방침(고객)",
+      "신용정보활용체제",
+      "영상정보처리기기 운영·관리방침",
+      "고객권리 안내문"
+    ]
+  },
+  "officialList": {
+    "pages": [
+      {
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf.do?graphTerm=week&sort=DESC&orderType=YIELD_WEEK&pageNo=1",
+        "httpStatus": 200,
+        "responseBytes": 24714,
+        "rawSha256": "5cb8c453d7dd216c5e2c08f6cf5a848971d0dec2da1e3a99152ac77c476eb764",
+        "challenge": false
+      },
+      {
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf.do?graphTerm=week&sort=DESC&orderType=YIELD_WEEK&pageNo=2",
+        "httpStatus": 200,
+        "responseBytes": 4998,
+        "rawSha256": "9d574bf8753bf5595a70b13b4cb56605a82be0f70d74492a844269b37bff59c1",
+        "challenge": false
+      }
+    ],
+    "declaredTotalCount": 24,
+    "returnedCount": 24,
+    "reconciliation": {
+      "localCount": 23,
+      "officialCount": 24,
+      "matchedCount": 23,
+      "exactNameCount": 23,
+      "coverage": 1,
+      "mappings": [
+        {
+          "universeOrdinal": 21,
+          "ticker": "0015B0",
+          "localName": "KoAct 미국나스닥성장기업액티브",
+          "matched": true,
+          "officialFId": "2ETFQ1",
+          "officialName": "KoAct 미국나스닥성장기업액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20250225",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 30,
+          "ticker": "0020H0",
+          "localName": "KoAct 글로벌양자컴퓨팅액티브",
+          "matched": true,
+          "officialFId": "2ETFQ5",
+          "officialName": "KoAct 글로벌양자컴퓨팅액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20250311",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 61,
+          "ticker": "0051A0",
+          "localName": "KoAct 브로드컴밸류체인액티브",
+          "matched": true,
+          "officialFId": "2ETFR2",
+          "officialName": "KoAct 브로드컴밸류체인액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20250520",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 80,
+          "ticker": "0074K0",
+          "localName": "KoAct K수출핵심기업TOP30액티브",
+          "matched": true,
+          "officialFId": "2ETFR6",
+          "officialName": "KoAct K수출핵심기업TOP30액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20250708",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 108,
+          "ticker": "0093D0",
+          "localName": "KoAct 팔란티어밸류체인액티브",
+          "matched": true,
+          "officialFId": "2ETFR9",
+          "officialName": "KoAct 팔란티어밸류체인액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20250826",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 124,
+          "ticker": "0104H0",
+          "localName": "KoAct 미국나스닥채권혼합50액티브",
+          "matched": true,
+          "officialFId": "2ETFS3",
+          "officialName": "KoAct 미국나스닥채권혼합50액티브",
+          "officialType": "혼합자산",
+          "officialListingDate": "20250930",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 134,
+          "ticker": "0113G0",
+          "localName": "KoAct 미국바이오헬스케어액티브",
+          "matched": true,
+          "officialFId": "2ETFS9",
+          "officialName": "KoAct 미국바이오헬스케어액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20251111",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 158,
+          "ticker": "0132D0",
+          "localName": "KoAct 글로벌K컬처밸류체인액티브",
+          "matched": true,
+          "officialFId": "2ETFT2",
+          "officialName": "KoAct 글로벌K컬처밸류체인액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20251125",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 176,
+          "ticker": "0150K0",
+          "localName": "KoAct 수소전력ESS인프라액티브",
+          "matched": true,
+          "officialFId": "2ETFT9",
+          "officialName": "KoAct 수소전력ESS인프라액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20260113",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 184,
+          "ticker": "0154H0",
+          "localName": "KoAct 차이나바이오헬스케어액티브",
+          "matched": true,
+          "officialFId": "2ETFT6",
+          "officialName": "KoAct 차이나바이오헬스케어액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20260127",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 191,
+          "ticker": "0163Y0",
+          "localName": "KoAct 코스닥액티브",
+          "matched": true,
+          "officialFId": "2ETFU6",
+          "officialName": "KoAct 코스닥액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20260310",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 203,
+          "ticker": "0174B0",
+          "localName": "KoAct 글로벌AI메모리반도체액티브",
+          "matched": true,
+          "officialFId": "2ETFU5",
+          "officialName": "KoAct 글로벌AI메모리반도체액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20260414",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 225,
+          "ticker": "0186L0",
+          "localName": "KoAct 미국로봇피지컬AI액티브",
+          "matched": true,
+          "officialFId": "2ETFU7",
+          "officialName": "KoAct 미국로봇피지컬AI액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20260428",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 242,
+          "ticker": "0193G0",
+          "localName": "KoAct 코스피액티브",
+          "matched": true,
+          "officialFId": "2ETFV2",
+          "officialName": "KoAct 코스피액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20260519",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 925,
+          "ticker": "462900",
+          "localName": "KoAct 바이오헬스케어액티브",
+          "matched": true,
+          "officialFId": "2ETFJ9",
+          "officialName": "KoAct 바이오헬스케어액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20230803",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 966,
+          "ticker": "471040",
+          "localName": "KoAct 글로벌AI&로봇액티브",
+          "matched": true,
+          "officialFId": "2ETFL3",
+          "officialName": "KoAct 글로벌AI&로봇액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20231121",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 993,
+          "ticker": "475070",
+          "localName": "KoAct 글로벌친환경전력인프라액티브",
+          "matched": true,
+          "officialFId": "2ETFL9",
+          "officialName": "KoAct 글로벌친환경전력인프라액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20240118",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 1015,
+          "ticker": "476850",
+          "localName": "KoAct 배당성장액티브",
+          "matched": true,
+          "officialFId": "2ETFM2",
+          "officialName": "KoAct 배당성장액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20240227",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 1038,
+          "ticker": "482030",
+          "localName": "KoAct 반도체&2차전지핵심소재액티브",
+          "matched": true,
+          "officialFId": "2ETFM8",
+          "officialName": "KoAct 반도체&2차전지핵심소재액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20240514",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 1058,
+          "ticker": "487130",
+          "localName": "KoAct AI인프라액티브",
+          "matched": true,
+          "officialFId": "2ETFN8",
+          "officialName": "KoAct AI인프라액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20240709",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 1082,
+          "ticker": "490330",
+          "localName": "KoAct 미국치매&뇌질환치료제액티브",
+          "matched": true,
+          "officialFId": "2ETFO5",
+          "officialName": "KoAct 미국치매&뇌질환치료제액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20240903",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 1116,
+          "ticker": "495230",
+          "localName": "KoAct 코리아밸류업액티브",
+          "matched": true,
+          "officialFId": "2ETFP3",
+          "officialName": "KoAct 코리아밸류업액티브",
+          "officialType": "국내주식",
+          "officialListingDate": "20241104",
+          "nameExact": true
+        },
+        {
+          "universeOrdinal": 1131,
+          "ticker": "497780",
+          "localName": "KoAct 미국천연가스인프라액티브",
+          "matched": true,
+          "officialFId": "2ETFO9",
+          "officialName": "KoAct 미국천연가스인프라액티브",
+          "officialType": "해외주식",
+          "officialListingDate": "20241210",
+          "nameExact": true
+        }
+      ],
+      "officialOnly": [
+        {
+          "ticker": "0219B0",
+          "fId": "2ETFV4",
+          "name": "KoAct 광통신&위성네트워크액티브",
+          "listingDate": "20260714"
+        }
+      ]
+    },
+    "contractSource": "https://www.samsungactive.co.kr/assets/js/product.js"
+  },
+  "canary": {
+    "selected": [
+      {
+        "universeOrdinal": 21,
+        "ticker": "0015B0",
+        "localName": "KoAct 미국나스닥성장기업액티브",
+        "matched": true,
+        "officialFId": "2ETFQ1",
+        "officialName": "KoAct 미국나스닥성장기업액티브",
+        "officialType": "해외주식",
+        "officialListingDate": "20250225",
+        "nameExact": true
+      },
+      {
+        "universeOrdinal": 80,
+        "ticker": "0074K0",
+        "localName": "KoAct K수출핵심기업TOP30액티브",
+        "matched": true,
+        "officialFId": "2ETFR6",
+        "officialName": "KoAct K수출핵심기업TOP30액티브",
+        "officialType": "국내주식",
+        "officialListingDate": "20250708",
+        "nameExact": true
+      },
+      {
+        "universeOrdinal": 124,
+        "ticker": "0104H0",
+        "localName": "KoAct 미국나스닥채권혼합50액티브",
+        "matched": true,
+        "officialFId": "2ETFS3",
+        "officialName": "KoAct 미국나스닥채권혼합50액티브",
+        "officialType": "혼합자산",
+        "officialListingDate": "20250930",
+        "nameExact": true
+      },
+      {
+        "universeOrdinal": 242,
+        "ticker": "0193G0",
+        "localName": "KoAct 코스피액티브",
+        "matched": true,
+        "officialFId": "2ETFV2",
+        "officialName": "KoAct 코스피액티브",
+        "officialType": "국내주식",
+        "officialListingDate": "20260519",
+        "nameExact": true
+      }
+    ],
+    "results": [
+      {
+        "ticker": "0015B0",
+        "fId": "2ETFQ1",
+        "name": "KoAct 미국나스닥성장기업액티브",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFQ1.do",
+        "httpStatus": 200,
+        "responseBytes": 64916,
+        "responseSha256": "b8965af41dc277148d71afec98e3ee4a7b03870facd6090efe9a92cd9efdd898",
+        "rawSha256": "58124e38e82206bff5b303e39d51177bb2d5cd4462a1c07415169ca80ea122d6",
+        "rawBytes": 95881,
+        "rawPath": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0015B0.b8965af41dc2.json",
+        "validation": {
+          "valid": true,
+          "identity": {
+            "ticker": "0015B0",
+            "fId": "2ETFQ1",
+            "name": "KoAct 미국나스닥성장기업액티브"
+          }
+        },
+        "status": "ok"
+      },
+      {
+        "ticker": "0074K0",
+        "fId": "2ETFR6",
+        "name": "KoAct K수출핵심기업TOP30액티브",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFR6.do",
+        "httpStatus": 200,
+        "responseBytes": 59024,
+        "responseSha256": "ded7d39fd890eedbc468b2e2b28a3a1fa635cc6335f1251f4d338fd098d4f2ba",
+        "rawSha256": "15a02ff3cbc330c3f2daed9f405864ab465ad4d00d1192c5ef4bcbb033702047",
+        "rawBytes": 90616,
+        "rawPath": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0074K0.ded7d39fd890.json",
+        "validation": {
+          "valid": true,
+          "identity": {
+            "ticker": "0074K0",
+            "fId": "2ETFR6",
+            "name": "KoAct K수출핵심기업TOP30액티브"
+          }
+        },
+        "status": "ok"
+      },
+      {
+        "ticker": "0104H0",
+        "fId": "2ETFS3",
+        "name": "KoAct 미국나스닥채권혼합50액티브",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFS3.do",
+        "httpStatus": 200,
+        "responseBytes": 57206,
+        "responseSha256": "3454eef4a4c013967eccc2b143fd46ac6ad40fdae68aee95033afa362d62c783",
+        "rawSha256": "90287ed620f7499db532e1b54a0bbe8dc3df133008927903ea27aa7e6ded60d3",
+        "rawBytes": 83756,
+        "rawPath": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0104H0.3454eef4a4c0.json",
+        "validation": {
+          "valid": true,
+          "identity": {
+            "ticker": "0104H0",
+            "fId": "2ETFS3",
+            "name": "KoAct 미국나스닥채권혼합50액티브"
+          }
+        },
+        "status": "ok"
+      },
+      {
+        "ticker": "0193G0",
+        "fId": "2ETFV2",
+        "name": "KoAct 코스피액티브",
+        "url": "https://www.samsungactive.co.kr/api/v1/product/etf/2ETFV2.do",
+        "httpStatus": 200,
+        "responseBytes": 59213,
+        "responseSha256": "bc53f397e555a398278082f360bb1d47fe9b8263acccb91e0799869485204aae",
+        "rawSha256": "e2a539371809c83c2eac8e49310f7c6652619e7025b215cd76e0d28b4a823f4e",
+        "rawBytes": 88334,
+        "rawPath": "data/raw/metadata-v2/koact-product-canary/2026-07-21/0193G0.bc53f397e555.json",
+        "validation": {
+          "valid": true,
+          "identity": {
+            "ticker": "0193G0",
+            "fId": "2ETFV2",
+            "name": "KoAct 코스피액티브"
+          }
+        },
+        "status": "ok"
+      }
+    ],
+    "stage": "completed"
+  },
+  "decision": {
+    "status": "four_canary_passed_awaiting_full_run_approval",
+    "canaryAllowed": true,
+    "fullCollectionAllowed": false,
+    "localExpansionTargetCount": 23,
+    "note": "The official live catalog contains one additional product outside the frozen 1,141-row local universe; it is reported but not silently added."
+  }
+}

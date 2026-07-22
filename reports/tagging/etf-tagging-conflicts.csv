@@ -1,15 +1,7 @@
 etfCode,tagId,selectedValue,otherValue,reason
-0026S0,strategy.sp500,rule(1/0.95),claude_subagent(1/0.95),confidence 높은 값 채택
-0086B0,strategy.reit,rule(0.9/0.85),claude_subagent(0.9/0.85),confidence 높은 값 채택
-0153P0,strategy.reit,rule(0.9/0.85),claude_subagent(0.9/0.6),confidence 높은 값 채택
-0174J0,strategy.reit,rule(0.9/0.85),claude_subagent(0.92/0.8),confidence 높은 값 채택
-133690,strategy.nasdaq100,rule(1/0.95),claude_subagent(1/0.9),confidence 높은 값 채택
-329200,strategy.reit,rule(0.9/0.85),claude_subagent(0.92/0.85),confidence 높은 값 채택
-341850,strategy.reit,rule(0.9/0.85),claude_subagent(0.78/0.7),confidence 높은 값 채택
-360750,strategy.sp500,rule(1/0.95),claude_subagent(1/0.95),confidence 높은 값 채택
-379800,strategy.sp500,rule(1/0.95),claude_subagent(1/0.95),confidence 높은 값 채택
-379810,strategy.nasdaq100,rule(1/0.95),claude_subagent(1/0.95),confidence 높은 값 채택
-429740,strategy.reit,rule(0.9/0.85),claude_subagent(0.97/0.7),confidence 높은 값 채택
-441640,dividend.covered_call,"rule(score=1,confidence=1)","claude_subagent(score=0.9,confidence=0.75)","규칙 확정치(score=1,confidence=1) 우선, LLM 값은 참고용으로만 기록"
-441640,strategy.sp500,rule(1/0.95),claude_subagent(0.75/0.65),confidence 높은 값 채택
-476800,strategy.reit,rule(0.9/0.85),claude_subagent(0.92/0.7),confidence 높은 값 채택
+341850,asset.bond,asset.reit(0.9/0.85),asset.bond(0.75/0.65),primary facet(assetClass) 단일값 원칙 — 최고 score/confidence 태그만 유지
+480460,asset.reit,asset.equity(1/0.6),asset.reit(0.92/0.7),primary facet(assetClass) 단일값 원칙 — 최고 score/confidence 태그만 유지
+0000D0,asset.mixed,asset.bond(0.8/0.7),asset.mixed(0.75/0.6),primary facet(assetClass) 단일값 원칙 — 최고 score/confidence 태그만 유지
+0049K0,asset.mixed,asset.bond(0.75/0.65),asset.mixed(0.75/0.6),primary facet(assetClass) 단일값 원칙 — 최고 score/confidence 태그만 유지
+0086C0,asset.bond,asset.reit(0.9/0.85),asset.bond(0.75/0.65),primary facet(assetClass) 단일값 원칙 — 최고 score/confidence 태그만 유지
+0086C0,asset.mixed,asset.reit(0.9/0.85),asset.mixed(0.75/0.6),primary facet(assetClass) 단일값 원칙 — 최고 score/confidence 태그만 유지

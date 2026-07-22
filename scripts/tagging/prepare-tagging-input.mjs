@@ -10,6 +10,7 @@ import { readJsonCache, writeCache, writeJsonCache, cacheExists } from '../metad
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const METADATA_FILE = resolve(ROOT, 'data/normalized/etf-metadata.json');
+const INDEX_NAMES_FILE = resolve(ROOT, 'data/tagging/etf-universe-index-names.json');
 const OUT_JSONL = resolve(ROOT, 'data/tagging/etf-tagging-input.jsonl');
 const OUT_STATS = resolve(ROOT, 'data/tagging/etf-tagging-input.stats.json');
 const MAX_HOLDINGS = 10;
@@ -29,7 +30,15 @@ function estimateTokens(charCount) {
   return Math.ceil(charCount / 2.2);
 }
 
-function buildCompactRecord(r) {
+function buildCompactRecord(r, indexNameByCode = new Map()) {
+  const fallbackIndexName = indexNameByCode.get(r.etfCode) || null;
+  const benchmarkName = r.benchmark?.name ?? fallbackIndexName;
+  const usedIndexFallback = !r.benchmark?.name && Boolean(fallbackIndexName);
+  const originalMissingFields = r.coverage?.missingFields ?? [];
+  const missingFields = usedIndexFallback
+    ? originalMissingFields.filter((field) => field !== 'benchmarkName')
+    : originalMissingFields;
+  const coverageScore = r.coverage?.score ?? null;
   const holdings = (r.holdings || [])
     .slice()
     .sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0))
@@ -42,9 +51,10 @@ function buildCompactRecord(r) {
     issuer: r.issuer,
     listingDate: r.listingDate,
     benchmark: {
-      name: r.benchmark?.name ?? null,
+      name: benchmarkName,
       description: r.benchmark?.description ?? null,
       provider: r.benchmark?.provider ?? null,
+      source: r.benchmark?.name ? 'normalized_metadata' : (fallbackIndexName ? 'publicdata_universe_snapshot' : null),
     },
     descriptions: {
       product: r.descriptions?.productDescription ?? null,
@@ -67,7 +77,10 @@ function buildCompactRecord(r) {
       coveredCall: r.distribution?.coveredCall ?? false,
       trailing12MonthAmount: r.distribution?.trailing12MonthAmount ?? null,
     },
-    coverage: { score: r.coverage?.score ?? null, missingFields: r.coverage?.missingFields ?? [] },
+    coverage: {
+      score: usedIndexFallback && coverageScore !== null ? Math.min(1, Number((coverageScore + 0.15).toFixed(2))) : coverageScore,
+      missingFields,
+    },
   };
   return compact;
 }
@@ -76,6 +89,8 @@ function main() {
   if (!cacheExists(METADATA_FILE)) throw new Error('먼저 npm run metadata:normalize 를 실행하세요.');
   const args = parseArgs(process.argv.slice(2));
   const metadata = readJsonCache(METADATA_FILE);
+  const indexNames = cacheExists(INDEX_NAMES_FILE) ? readJsonCache(INDEX_NAMES_FILE) : { items: [] };
+  const indexNameByCode = new Map((indexNames.items || []).filter((item) => item.indexName).map((item) => [item.etfCode, item.indexName]));
 
   let records = metadata.records;
   if (args.etf) {
@@ -87,7 +102,7 @@ function main() {
   const lines = [];
   const perRecordStats = [];
   for (const r of records) {
-    const compact = buildCompactRecord(r);
+    const compact = buildCompactRecord(r, indexNameByCode);
     const line = JSON.stringify(compact);
     lines.push(line);
     perRecordStats.push({ etfCode: r.etfCode, charCount: line.length, estimatedTokens: estimateTokens(line.length) });
@@ -105,6 +120,7 @@ function main() {
     avgCharCountPerEtf: records.length ? Math.round(totalChars / records.length) : 0,
     avgEstimatedTokensPerEtf: records.length ? Math.round(totalTokens / records.length) : 0,
     maxHoldingsPerEtf: MAX_HOLDINGS,
+    benchmarkFallbackCount: records.filter((record) => !record.benchmark?.name && indexNameByCode.has(record.etfCode)).length,
     perRecord: perRecordStats,
   };
   writeJsonCache(OUT_STATS, stats);

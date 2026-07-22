@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:43:07.502Z",
+  "executionOrder": [
+    "kcgi-asset-management",
+    "midas-asset-management",
+    "thej-asset-management"
+  ],
+  "strictRequiredFields": [
+    "productDescription",
+    "investmentObjective",
+    "benchmarkName",
+    "benchmarkDescription",
+    "distributionPolicy"
+  ],
+  "guardrails": {
+    "intervalMs": 1200,
+    "maxCanaryPerIssuer": 4,
+    "cacheAndResume": true,
+    "rawSha256": true,
+    "stopSourceOnAnyCanaryFailure": true,
+    "canonicalMergePerformed": false
+  },
+  "targetCount": 6,
+  "completedCount": 1,
+  "pendingCount": 5,
+  "issuers": [
+    {
+      "issuerId": "kcgi-asset-management",
+      "brand": "KCGI",
+      "targetCount": 1,
+      "mappingStatus": "mapped",
+      "discoveryRaw": {
+        "path": "data/raw/metadata-v2/kcgi-product/discovery/2026-07-21/list/2026-07-21T07-43-06-027Z.d33fde71ede8fa05.html",
+        "hash": "d33fde71ede8fa0573455cd2edf29c14e788d6ae3307fc9f5daba986c20c8b61",
+        "bytes": 47017,
+        "retrievedAt": "2026-07-21T07:43:06.027Z",
+        "url": "https://www.kcgiam.com/fund/etf-product.php?goPage=List"
+      },
+      "mappings": [
+        {
+          "issuerId": "kcgi-asset-management",
+          "shortCode": "483570",
+          "isin": "KR7483570008",
+          "name": "KCGI 미국S&P500 TOP10",
+          "productId": "47",
+          "sourceName": "케이씨지아이 KCGI 미국S&P500 TOP10증권상장지수(주식) 높은 위험 기준일 : 2026.07.21 16,211.91 259.39 -3.84 0.96 4.31 25.90 - - 62.12",
+          "productUrl": "https://www.kcgiam.com/fund/etf-product.php?goPage=View&idx=47",
+          "status": "mapped"
+        }
+      ],
+      "canaryPass": false,
+      "fullCollectionTriggered": false,
+      "completedCount": 0,
+      "pendingCount": 1,
+      "rows": [
+        {
+          "retrievedAt": "2026-07-21T07:43:06.031Z",
+          "sourceId": "kcgi_official_product_html",
+          "issuerId": "kcgi-asset-management",
+          "shortCode": "483570",
+          "isin": "KR7483570008",
+          "name": "KCGI 미국S&P500 TOP10",
+          "productId": "47",
+          "sourceName": "케이씨지아이 KCGI 미국S&P500 TOP10증권상장지수(주식) 높은 위험 기준일 : 2026.07.21 16,211.91 259.39 -3.84 0.96 4.31 25.90 - - 62.12",
+          "productUrl": "https://www.kcgiam.com/fund/etf-product.php?goPage=View&idx=47",
+          "status": "validation_failed",
+          "validation": {
+            "pass": false,
+            "failures": [
+              "ticker_mismatch",
+              "missing_distributionPolicy"
+            ],
+            "missingFields": [
+              "distributionPolicy"
+            ],
+            "fieldCoverage": {
+              "productDescription": true,
+              "investmentObjective": true,
+              "benchmarkName": true,
+              "benchmarkDescription": true,
+              "distributionPolicy": false
+            }
+          },
+          "metadata": {
+            "productDescription": "- S&P Dow Jones Indices 지수사업자가 상장한 &ldquo;S&P 500 Top 10 25% Capped Index(원화환산기준)&rdquo;를 기초 지수로 하여 투자목적 달성을 위해서",
+            "investmentObjective": "- S&P Dow Jones Indices 지수사업자가 상장한 &ldquo;S&P 500 Top 10 25% Capped Index(원화환산기준)&rdquo;를 기초 지수로 하여 투자목적 달성을 위해서",
+            "benchmarkName": "S&P 500 TOP10 25%Capped Index (KRW)",
+            "benchmarkDescription": "- S&P Dow Jones Indices 지수사업자가 상장한 &ldquo;S&P 500 Top 10 25% Capped Index(원화환산기준)&rdquo;를 기초 지수로 하여 투자목적 달성을 위해서",
+            "distributionPolicy": null
+          },
+          "provenance": {
+            "productDescription": {
+              "selector": "#sec1 .doc-txt",
+              "snippet": "- S&P Dow Jones Indices 지수사업자가 상장한 &ldquo;S&P 500 Top 10 25% Capped Index(원화환산기준)&rdquo;를 기초 지수로 하여 투자목적 달성을 위해서",
+              "rawHash": "7a33cecfe0360e122e015d8abb3755a8f7ca5a3d5170e96ed92bd1e67e617fa6"
+            },
+            "investmentObjective": {
+              "selector": "#sec1 .doc-txt",
+              "snippet": "- S&P Dow Jones Indices 지수사업자가 상장한 &ldquo;S&P 500 Top 10 25% Capped Index(원화환산기준)&rdquo;를 기초 지수로 하여 투자목적 달성을 위해서",
+              "rawHash": "7a33cecfe0360e122e015d8abb3755a8f7ca5a3d5170e96ed92bd1e67e617fa6"
+            },
+            "benchmarkName": {
+              "selector": "th + td",
+              "snippet": "S&P 500 TOP10 25%Capped Index (KRW)",
+              "rawHash": "7a33cecfe0360e122e015d8abb3755a8f7ca5a3d5170e96ed92bd1e67e617fa6"
+            },
+            "benchmarkDescription": {
+              "selector": "#sec1 .doc-txt",
+              "snippet": "- S&P Dow Jones Indices 지수사업자가 상장한 &ldquo;S&P 500 Top 10 25% Capped Index(원화환산기준)&rdquo;를 기초 지수로 하여 투자목적 달성을 위해서",
+              "rawHash": "7a33cecfe0360e122e015d8abb3755a8f7ca5a3d5170e96ed92bd1e67e617fa6"
+            }
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/kcgi-product/pages/2026-07-21/483570/2026-07-21T07-43-06-031Z.7a33cecfe0360e12.html",
+            "hash": "7a33cecfe0360e122e015d8abb3755a8f7ca5a3d5170e96ed92bd1e67e617fa6",
+            "bytes": 98942,
+            "retrievedAt": "2026-07-21T07:43:06.031Z",
+            "url": "https://www.kcgiam.com/fund/etf-product.php?goPage=View&idx=47"
+          }
+        }
+      ]
+    },
+    {
+      "issuerId": "midas-asset-management",
+      "brand": "MIDAS",
+      "targetCount": 4,
+      "mappingStatus": "blocked_mapping",
+      "reason": "public ETF filter depends on wp-admin/admin-ajax.php; exact official product URLs and ticker identity were not exposed by the static list within the four-request low-volume discovery budget",
+      "canaryPass": false,
+      "completedCount": 0,
+      "pendingCount": 4,
+      "rows": []
+    },
+    {
+      "issuerId": "thej-asset-management",
+      "brand": "더제이",
+      "targetCount": 1,
+      "mappingStatus": "mapped",
+      "discoveryRaw": {
+        "path": "data/raw/metadata-v2/thej-product/discovery/2026-07-21/list/2026-07-21T07-43-07-500Z.ce0b5f54b26d5e8f.html",
+        "hash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc",
+        "bytes": 25863,
+        "retrievedAt": "2026-07-21T07:43:07.500Z",
+        "url": "https://www.thejasset.com/etf/etf_product.php"
+      },
+      "mappings": [
+        {
+          "issuerId": "thej-asset-management",
+          "shortCode": "0053M0",
+          "isin": "KR70053M0004",
+          "name": "더제이 중소형포커스액티브",
+          "productId": "etf_product",
+          "sourceName": "더제이 중소형포커스액티브증권상장지수투자신탁[주식]",
+          "productUrl": "https://www.thejasset.com/etf/etf_product.php",
+          "status": "mapped"
+        }
+      ],
+      "canaryPass": true,
+      "fullCollectionTriggered": true,
+      "completedCount": 1,
+      "pendingCount": 0,
+      "rows": [
+        {
+          "retrievedAt": "2026-07-21T07:42:13.356Z",
+          "sourceId": "thej_official_product_html",
+          "issuerId": "thej-asset-management",
+          "shortCode": "0053M0",
+          "isin": "KR70053M0004",
+          "name": "더제이 중소형포커스액티브",
+          "productId": "etf_product",
+          "sourceName": "더제이 중소형포커스액티브증권상장지수투자신탁[주식]",
+          "productUrl": "https://www.thejasset.com/etf/etf_product.php",
+          "status": "ok",
+          "validation": {
+            "pass": true,
+            "failures": [],
+            "missingFields": [],
+            "fieldCoverage": {
+              "productDescription": true,
+              "investmentObjective": true,
+              "benchmarkName": true,
+              "benchmarkDescription": true,
+              "distributionPolicy": true
+            }
+          },
+          "metadata": {
+            "productDescription": "코스피200중소형주 지수 추종 ETF (0053M0)",
+            "investmentObjective": "코스피200중소형주 지수 추종 ETF (0053M0)",
+            "benchmarkName": "코스피200중소형주 지수",
+            "benchmarkDescription": "코스피200중소형주 지수 추종 ETF (0053M0)",
+            "distributionPolicy": "분배금지급 지급 분배금 현황 지급기준일: 매 1월, 4월, 7월, 10월의 마지막 영업일 및 회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일 ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인"
+          },
+          "provenance": {
+            "productDescription": {
+              "selector": ".subt-area",
+              "snippet": "코스피200중소형주 지수 추종 ETF (0053M0)",
+              "rawHash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc"
+            },
+            "investmentObjective": {
+              "selector": ".b-article",
+              "snippet": "코스피200중소형주 지수 추종 ETF (0053M0)",
+              "rawHash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc"
+            },
+            "benchmarkName": {
+              "selector": ".b-article, .subt-area",
+              "snippet": "코스피200중소형주 지수",
+              "rawHash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc"
+            },
+            "benchmarkDescription": {
+              "selector": ".b-article, .subt-area",
+              "snippet": "코스피200중소형주 지수 추종 ETF (0053M0)",
+              "rawHash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc"
+            },
+            "distributionPolicy": {
+              "selector": ".b-article__tit + .b-article__des-wrap",
+              "snippet": "분배금지급 지급 분배금 현황 지급기준일: 매 1월, 4월, 7월, 10월의 마지막 영업일 및 회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일 ※지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+              "rawHash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc"
+            }
+          },
+          "raw": {
+            "path": "data/raw/metadata-v2/thej-product/pages/2026-07-21/0053M0/2026-07-21T07-42-13-356Z.ce0b5f54b26d5e8f.html",
+            "hash": "ce0b5f54b26d5e8fec6d8d785122291c5b0e3a80eff0c570586e16de8f9c75cc",
+            "bytes": 25863,
+            "retrievedAt": "2026-07-21T07:42:13.356Z",
+            "url": "https://www.thejasset.com/etf/etf_product.php"
+          }
+        }
+      ]
+    }
+  ]
+}

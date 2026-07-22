@@ -6,12 +6,20 @@ const readText = (path) => readFileSync(path, 'utf8');
 const jsFiles = readdirSync('src/js')
   .filter((fileName) => fileName.endsWith('.js'))
   .map((fileName) => `src/js/${fileName}`);
-const scannedFiles = ['index.html', ...jsFiles].map((fileName) => ({
+const reverseSearchJsFiles = readdirSync('modules/reverse-search/src')
+  .filter((fileName) => fileName.endsWith('.js'))
+  .map((fileName) => `modules/reverse-search/src/${fileName}`);
+const scannedFiles = [
+  'index.html',
+  'modules/reverse-search/index.html',
+  ...jsFiles,
+  ...reverseSearchJsFiles,
+].map((fileName) => ({
   fileName,
   text: readText(fileName),
 }));
 
-test('forbidden investment-inducement substrings do not appear in index.html or src/js/*.js', () => {
+test('forbidden investment-inducement substrings do not appear in shipped HTML or JavaScript', () => {
   const forbiddenSubstrings = [
     '추천 ETF',
     'ETF 추천',
@@ -50,6 +58,16 @@ test('viewport meta and horizontal overflow guard are present', () => {
 
   assert.match(html, /<meta\b[^>]*name=["']viewport["'][^>]*content=["'][^"']*width=device-width/i, 'index.html missing viewport meta with width=device-width');
   assert.match(css, /(?:html|body)[^{]*\{[^}]*overflow-x\s*:\s*hidden\b/is, 'src/styles/main.css missing html/body overflow-x: hidden rule');
+});
+
+test('reverse-search module has a mobile viewport and horizontal overflow guard', () => {
+  const html = readText('modules/reverse-search/index.html');
+  const css = readText('modules/reverse-search/src/styles.css');
+
+  assert.match(html, /<meta\b[^>]*name=["']viewport["'][^>]*content=["'][^"']*width=device-width/i,
+    'reverse-search index missing viewport meta with width=device-width');
+  assert.match(css, /(?:html|body|\.app-shell)[^{]*\{[^}]*overflow-x\s*:\s*(?:hidden|clip)\b/is,
+    'reverse-search styles missing a horizontal overflow guard');
 });
 
 test('index.html has no buy, sell, or order buttons', () => {

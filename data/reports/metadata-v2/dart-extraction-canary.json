@@ -1,0 +1,1007 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T06:15:46.640Z",
+  "extractionContract": {
+    "inputProbe": "data/reports/metadata-v2/dart-probe.json",
+    "canaryCount": 16,
+    "maxApiCalls": 20,
+    "actualApiCalls": 16,
+    "rawArchivePolicy": "content_addressed_sha256_zip_snapshot",
+    "rawResponsesEmbeddedInReport": false,
+    "credentialsStoredOrLogged": false,
+    "missingValuePolicy": "null_without_explicit_section_evidence"
+  },
+  "metrics": {
+    "canaryCount": 16,
+    "parsedCount": 16,
+    "coverOnlyDocumentCount": 16,
+    "coverOnlyDocumentRatio": 1,
+    "fieldCoverage": {
+      "officialName": {
+        "count": 16,
+        "ratio": 1
+      },
+      "issuer": {
+        "count": 16,
+        "ratio": 1
+      },
+      "productDescription": {
+        "count": 0,
+        "ratio": 0
+      },
+      "investmentObjective": {
+        "count": 0,
+        "ratio": 0
+      },
+      "benchmarkName": {
+        "count": 0,
+        "ratio": 0
+      },
+      "benchmarkDescription": {
+        "count": 0,
+        "ratio": 0
+      },
+      "distributionPolicy": {
+        "count": 0,
+        "ratio": 0
+      }
+    },
+    "flagCoverage": {
+      "derivative": {
+        "explicitTrueCount": 9,
+        "ratio": 0.5625,
+        "absentRepresentation": "null_not_false"
+      },
+      "leveraged": {
+        "explicitTrueCount": 6,
+        "ratio": 0.375,
+        "absentRepresentation": "null_not_false"
+      },
+      "inverse": {
+        "explicitTrueCount": 1,
+        "ratio": 0.0625,
+        "absentRepresentation": "null_not_false"
+      },
+      "synthetic": {
+        "explicitTrueCount": 0,
+        "ratio": 0,
+        "absentRepresentation": "null_not_false"
+      },
+      "currencyHedged": {
+        "explicitTrueCount": 0,
+        "ratio": 0,
+        "absentRepresentation": "null_not_false"
+      }
+    },
+    "evidenceSnippetViolationCount": 0
+  },
+  "qualityReview": {
+    "automatedFalsePositiveChecks": [
+      "Every populated value includes a section heading and evidence snippet.",
+      "Structural flags are emitted only when their keyword appears in the official fund name; absence remains null, never false.",
+      "Objective, description, benchmark, and distribution fields require a substantive matching body section."
+    ],
+    "detectedEvidenceViolations": [],
+    "manualSpotCheck": {
+      "sampleCodes": [
+        "0193W0",
+        "0204S0",
+        "0197X0",
+        "0216K0"
+      ],
+      "dimensions": [
+        "official identity",
+        "derivative flag",
+        "leveraged/inverse flag",
+        "null-on-absent-body behavior"
+      ],
+      "observedFalsePositiveCount": 0,
+      "note": "Four structurally diverse canaries were compared with their evidence snippets; every emitted flag was explicitly present in the official fund name."
+    },
+    "observedPrimaryLimitation": "OpenDART document.xml archives for these prospectuses contain the cover and an empty [본문] section, not the substantive prospectus body."
+  },
+  "scaleDecision": {
+    "readyForFullUniverseOfficialNameAndIssuer": true,
+    "readyForFullUniverseTaxonomyMetadata": false,
+    "reason": "The API contract is suitable for official name and issuer provenance, but the returned XML lacks the body needed for investment objective, benchmark, and distribution-policy enrichment.",
+    "requiredNextStep": "Locate an official attachment/viewer-body download contract or use issuer/KOFIA source documents before scaling taxonomy metadata extraction."
+  },
+  "rows": [
+    {
+      "etfCode": "0193W0",
+      "localName": "KODEX 삼성전자단일종목레버리지",
+      "brand": "KODEX",
+      "reportName": "투자설명서(집합투자증권)(삼성KODEX삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형])",
+      "receptionNo": "20260514000101",
+      "receptionDate": "20260514",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000101",
+        "rawSha256": "6d82317397fbc4385bcda6e581bf1cb7240fbce656dcce943248b6d19d9bcf94",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/6d82317397fbc4385bcda6e581bf1cb7240fbce656dcce943248b6d19d9bcf94.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260514000101.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1202,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]"
+          },
+          "issuer": {
+            "value": "삼성자산운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "삼성자산운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]"
+            },
+            "leveraged": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "삼성KODEX 삼성전자단일종목레버리지증권상장지수투자신탁[주식-파생형]"
+            },
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0204S0",
+      "localName": "TIGER 코스닥액티브",
+      "brand": "TIGER",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식))",
+      "receptionNo": "20260602000038",
+      "receptionDate": "20260602",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000038",
+        "rawSha256": "6be7462cc49738a5e5ba3643ceb472d600c50e6f3d1125909f254ccbd3d88757",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/6be7462cc49738a5e5ba3643ceb472d600c50e6f3d1125909f254ccbd3d88757.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260602000038.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1228,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "미래에셋TIGER코스닥액티브증권상장지수투자신탁(주식)"
+          },
+          "issuer": {
+            "value": "미래에셋자산운용(주)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "미래에셋자산운용(주)"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0195S0",
+      "localName": "TIGER SK하이닉스단일종목레버리지",
+      "brand": "TIGER",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGERSK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+      "receptionNo": "20260716000361",
+      "receptionDate": "20260716",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000361",
+        "rawSha256": "dbcb186b2ce5baccf0a686f94db200b15f52237bfa7a121b660f40f5e5162ee3",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/dbcb186b2ce5baccf0a686f94db200b15f52237bfa7a121b660f40f5e5162ee3.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260716000361.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1265,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)"
+          },
+          "issuer": {
+            "value": "미래에셋자산운용(주)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "미래에셋자산운용(주)"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)"
+            },
+            "leveraged": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "미래에셋TIGER SK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형)"
+            },
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0195R0",
+      "localName": "TIGER 삼성전자단일종목레버리지",
+      "brand": "TIGER",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+      "receptionNo": "20260716000222",
+      "receptionDate": "20260716",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260716000222",
+        "rawSha256": "a337a02d085c76bc8d7bceb62d6455a8a5babe13cf5cf7e7e717151f9163ec06",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/a337a02d085c76bc8d7bceb62d6455a8a5babe13cf5cf7e7e717151f9163ec06.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260716000222.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1259,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)"
+          },
+          "issuer": {
+            "value": "미래에셋자산운용㈜",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "미래에셋자산운용㈜"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)"
+            },
+            "leveraged": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "미래에셋TIGER삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형)"
+            },
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0192M0",
+      "localName": "RISE 삼성전자단일종목레버리지",
+      "brand": "RISE",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(KBRISE삼성전자단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+      "receptionNo": "20260522000007",
+      "receptionDate": "20260522",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000007",
+        "rawSha256": "21b146101ffe52f442bbb47c4129063967443bc2f5531efeba9c7653177d8fc8",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/21b146101ffe52f442bbb47c4129063967443bc2f5531efeba9c7653177d8fc8.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260522000007.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1196,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)"
+          },
+          "issuer": {
+            "value": "KB자산운용주식회사(☎ 02-2167-8200)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "KB자산운용주식회사(☎ 02-2167-8200)"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)"
+            },
+            "leveraged": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "KB RISE 삼성전자단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)"
+            },
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0192L0",
+      "localName": "RISE SK하이닉스단일종목레버리지",
+      "brand": "RISE",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(KBRISESK하이닉스단일종목레버리지증권상장지수투자신탁(주식-파생형))",
+      "receptionNo": "20260522000005",
+      "receptionDate": "20260522",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260522000005",
+        "rawSha256": "a6d526a48924c48097818d16499bae2f059ff3f1916dcea100030e2790b875d8",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/a6d526a48924c48097818d16499bae2f059ff3f1916dcea100030e2790b875d8.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260522000005.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1202,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)"
+          },
+          "issuer": {
+            "value": "KB자산운용주식회사(☎ 02-2167-8200)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "KB자산운용주식회사(☎ 02-2167-8200)"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)"
+            },
+            "leveraged": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "KB RISE SK하이닉스단일종목레버리지 증권 상장지수 투자신탁(주식-파생형)"
+            },
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0216Z0",
+      "localName": "ACE K방산TOP5+",
+      "brand": "ACE",
+      "reportName": "투자설명서(집합투자증권)(한국투자ACEK방산TOP5+증권상장지수투자신탁(주식))",
+      "receptionNo": "20260618000201",
+      "receptionDate": "20260618",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000201",
+        "rawSha256": "16d90da577fbe9cadda2340ddf61d60c3488db26d8bd572464e03c9757b1fd92",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/16d90da577fbe9cadda2340ddf61d60c3488db26d8bd572464e03c9757b1fd92.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260618000201.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1289,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "한국투자 ACE K방산TOP5+ 증권 상장지수투자신탁(주식)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한국투자 ACE K방산TOP5+ 증권 상장지수투자신탁(주식)"
+          },
+          "issuer": {
+            "value": "한국투자신탁운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한국투자신탁운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0210A0",
+      "localName": "ACE K반도체TOP2+",
+      "brand": "ACE",
+      "reportName": "투자설명서(집합투자증권)(한국투자ACEK반도체TOP2+증권상장지수투자신탁(주식))",
+      "receptionNo": "20260612000022",
+      "receptionDate": "20260612",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000022",
+        "rawSha256": "98438b0f39895efffb8c8089a32cbcc70ab390ef1ad5dd3431b9ab395ff3e856",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/98438b0f39895efffb8c8089a32cbcc70ab390ef1ad5dd3431b9ab395ff3e856.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260612000022.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1292,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "한국투자 ACE K반도체TOP2+ 증권 상장지수투자신탁(주식)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한국투자 ACE K반도체TOP2+ 증권 상장지수투자신탁(주식)"
+          },
+          "issuer": {
+            "value": "한국투자신탁운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한국투자신탁운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0209Z0",
+      "localName": "ACE 코리아AI전력TOP10",
+      "brand": "ACE",
+      "reportName": "투자설명서(집합투자증권)(한국투자ACE코리아AI전력TOP10증권상장지수투자신탁(주식))",
+      "receptionNo": "20260612000017",
+      "receptionDate": "20260612",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260612000017",
+        "rawSha256": "def901b5fc8f8101a6874e135f5dae030d33df85616679d76ed5539e1b077f9e",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/def901b5fc8f8101a6874e135f5dae030d33df85616679d76ed5539e1b077f9e.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260612000017.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1301,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "한국투자 ACE 코리아AI전력TOP10 증권 상장지수투자신탁(주식)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한국투자 ACE 코리아AI전력TOP10 증권 상장지수투자신탁(주식)"
+          },
+          "issuer": {
+            "value": "한국투자신탁운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한국투자신탁운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0210E0",
+      "localName": "PLUS 200커버드콜액티브",
+      "brand": "PLUS",
+      "reportName": "투자설명서(집합투자증권)(한화PLUS200커버드콜액티브증권상장지수투자신탁(주식-파생형))",
+      "receptionNo": "20260615000021",
+      "receptionDate": "20260615",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000021",
+        "rawSha256": "af4f0cb9d62a3df3d3894775e678d9afbf3a6cccd298bca6cc5b2e5110873a77",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/af4f0cb9d62a3df3d3894775e678d9afbf3a6cccd298bca6cc5b2e5110873a77.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260615000021.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1199,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "한화 PLUS 200커버드콜액티브증권상장지수투자신탁(주식-파생형)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한화 PLUS 200커버드콜액티브증권상장지수투자신탁(주식-파생형)"
+          },
+          "issuer": {
+            "value": "한화자산운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "한화자산운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "한화 PLUS 200커버드콜액티브증권상장지수투자신탁(주식-파생형)"
+            },
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0197X0",
+      "localName": "SOL SK하이닉스선물단일종목인버스2X",
+      "brand": "SOL",
+      "reportName": "투자설명서(집합투자증권)(신한SOLSK하이닉스선물단일종목인버스2X증권상장지수신탁[주식-파생형])",
+      "receptionNo": "20260514000166",
+      "receptionDate": "20260514",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000166",
+        "rawSha256": "494fb0a03b6a5ca5e1de2079927ac610b38b73b7e7ebf7d27fd04182b892b166",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/494fb0a03b6a5ca5e1de2079927ac610b38b73b7e7ebf7d27fd04182b892b166.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260514000166.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1228,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]"
+          },
+          "issuer": {
+            "value": "신한자산운용(주)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "신한자산운용(주)"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]"
+            },
+            "leveraged": null,
+            "inverse": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "신한SOLSK하이닉스선물단일종목인버스2X증권상장지수투자신탁[주식-파생형]"
+            },
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0197W0",
+      "localName": "SOL SK하이닉스단일종목레버리지",
+      "brand": "SOL",
+      "reportName": "투자설명서(집합투자증권)(신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형])",
+      "receptionNo": "20260514000152",
+      "receptionDate": "20260514",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000152",
+        "rawSha256": "174eb07206f6ea94b8f21810d1839d39e29f57bba834d79015dfcc881dcca2c8",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/174eb07206f6ea94b8f21810d1839d39e29f57bba834d79015dfcc881dcca2c8.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260514000152.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1219,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]"
+          },
+          "issuer": {
+            "value": "신한자산운용(주)",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "신한자산운용(주)"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]"
+            },
+            "leveraged": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "신한SOLSK하이닉스단일종목레버리지증권상장지수투자신탁[주식-파생형]"
+            },
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0216K0",
+      "localName": "KIWOOM 미국우주테크TOP2채권혼합50",
+      "brand": "KIWOOM",
+      "reportName": "투자설명서(집합투자증권)(키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합])",
+      "receptionNo": "20260701000098",
+      "receptionDate": "20260701",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000098",
+        "rawSha256": "71fc66ce352117585d02421e7997b2d88e43d34648827377e56ebaf5d0fc1584",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/71fc66ce352117585d02421e7997b2d88e43d34648827377e56ebaf5d0fc1584.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260701000098.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1253,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "키움KIWOOM미국우주테크TOP2채권혼합50증권상장지수투자신탁[채권혼합]"
+          },
+          "issuer": {
+            "value": "키움투자자산운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "키움투자자산운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0207Z0",
+      "localName": "KIWOOM 미국우주데이터센터인프라",
+      "brand": "KIWOOM",
+      "reportName": "투자설명서(집합투자증권)(키움KIWOOM미국우주데이터센터인프라증권상장지수투자신탁[주식])",
+      "receptionNo": "20260601000160",
+      "receptionDate": "20260601",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601000160",
+        "rawSha256": "eba53fb9eac3cbc48b8ed23d4be05e24e4dffddd3589f33f6f3023cd3a91c2e8",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/eba53fb9eac3cbc48b8ed23d4be05e24e4dffddd3589f33f6f3023cd3a91c2e8.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260601000160.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1236,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "키움KIWOOM미국우주데이터센터인프라증권상장지수투자신탁[주식]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "키움KIWOOM미국우주데이터센터인프라증권상장지수투자신탁[주식]"
+          },
+          "issuer": {
+            "value": "키움투자자산운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "키움투자자산운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0198A0",
+      "localName": "KIWOOM 코스닥150커버드콜액티브",
+      "brand": "KIWOOM",
+      "reportName": "투자설명서(집합투자증권)(키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형])",
+      "receptionNo": "20260520000005",
+      "receptionDate": "20260520",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000005",
+        "rawSha256": "7213b7cbf4741d0b0aee7b6e51eb794f457c0b6ad6c0bb8a8259228f7083e688",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/7213b7cbf4741d0b0aee7b6e51eb794f457c0b6ad6c0bb8a8259228f7083e688.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260520000005.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1252,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형]"
+          },
+          "issuer": {
+            "value": "키움투자자산운용 주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "키움투자자산운용 주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": {
+              "value": true,
+              "sectionHeading": "투자설명서 표지",
+              "snippet": "키움KIWOOM코스닥150커버드콜액티브증권상장지수투자신탁[주식-파생형]"
+            },
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    },
+    {
+      "etfCode": "0191W0",
+      "localName": "HANARO 중기종합채권(A-이상)액티브",
+      "brand": "HANARO",
+      "reportName": "[기재정정]투자설명서(집합투자증권)(NH-AmundiHANARO중기종합채권(A-이상)액티브증권상장지수투자신탁[채권])",
+      "receptionNo": "20260520000006",
+      "receptionDate": "20260520",
+      "source": {
+        "sourceId": "opendart_document_xml",
+        "viewerUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260520000006",
+        "rawSha256": "3654da43e14de2df0e1e6f1b60f13b26f1ea4c6fe3d6a831119b52032eedbbfb",
+        "rawSnapshotPath": "data/raw/metadata-v2/dart-documents/3654da43e14de2df0e1e6f1b60f13b26f1ea4c6fe3d6a831119b52032eedbbfb.zip"
+      },
+      "extraction": {
+        "parserStatus": "parsed",
+        "sourceEntries": [
+          "20260520000006.xml"
+        ],
+        "diagnostics": {
+          "xmlEntryCount": 1,
+          "coverTextLength": 1254,
+          "sectionCount": 1,
+          "substantiveBodySectionCount": 0,
+          "substantiveBodyTextLength": 0,
+          "coverOnly": true
+        },
+        "fields": {
+          "officialName": {
+            "value": "NH-Amundi HANARO 중기종합채권(A-이상) 액티브증권상장지수투자신탁[채권]",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "NH-Amundi HANARO 중기종합채권(A-이상) 액티브증권상장지수투자신탁[채권]"
+          },
+          "issuer": {
+            "value": "NH-Amundi자산운용주식회사",
+            "sectionHeading": "투자설명서 표지",
+            "snippet": "NH-Amundi자산운용주식회사"
+          },
+          "productDescription": null,
+          "investmentObjective": null,
+          "benchmarkName": null,
+          "benchmarkDescription": null,
+          "flags": {
+            "derivative": null,
+            "leveraged": null,
+            "inverse": null,
+            "synthetic": null,
+            "currencyHedged": null
+          },
+          "distributionPolicy": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:30:00.000Z",
+  "issuer": {
+    "id": "assetplus-investment-management",
+    "displayName": "에셋플러스자산운용",
+    "inventoryCount": 9
+  },
+  "scope": {
+    "domain": "www.assetplus.co.kr",
+    "purpose": "Preflight robots, public-use terms, and TLS before any official ETF list or product request",
+    "policyHttpCalls": 2,
+    "productListCalls": 0,
+    "productDetailCalls": 0,
+    "authenticationUsed": false,
+    "bypassUsed": false
+  },
+  "tls": {
+    "authorized": true,
+    "protocol": "TLSv1.2",
+    "certificateCommonName": "www.assetplus.co.kr",
+    "certificateOrganization": "에셋플러스자산운용(주)",
+    "issuer": "Thawte TLS RSA CA G1",
+    "validTo": "2026-08-26T23:59:59Z"
+  },
+  "robots": {
+    "url": "https://www.assetplus.co.kr/robots.txt",
+    "httpStatus": 200,
+    "observed": "User-agent: *\nDisallow: /\nUser-agent: Yeti\nAllow: /",
+    "interpretation": "All paths are disallowed for the collector's generic user agent. The Allow rule applies only to Yeti and is not applicable.",
+    "raw": {
+      "path": "data/raw/metadata-v2/assetplus-policy/robots.txt",
+      "hash": "a3b890a1a9b2ece739bb8895675541d0a4a4fdec7caf48cc04a840027ea9f1c2",
+      "bytes": 52
+    }
+  },
+  "homepage": {
+    "url": "https://www.assetplus.co.kr/",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "note": "Connectivity check only; no ETF list or product path was requested."
+  },
+  "terms": {
+    "status": "not_attempted_after_robots_block",
+    "reason": "The preflight stopped at the explicit generic-user-agent Disallow rule; deeper site traversal was not authorized."
+  },
+  "decision": {
+    "status": "blocked",
+    "reason": "robots_disallow_all_for_generic_user_agent",
+    "officialListMapping": "not_attempted",
+    "canaryAttemptedCount": 0,
+    "fullAttemptedCount": 0,
+    "converterRecordCount": 0,
+    "canonicalMergeExecuted": false
+  },
+  "resumeConditions": [
+    "AssetPlus changes robots.txt to allow the intended public ETF paths for generic user agents.",
+    "AssetPlus provides explicit permission for this local metadata collection despite the current robots rule."
+  ],
+  "inventory": [
+    { "shortCode": "0002C0", "name": "에셋플러스 인도일등기업포커스20액티브" },
+    { "shortCode": "407820", "name": "에셋플러스 코리아플랫폼액티브" },
+    { "shortCode": "407830", "name": "에셋플러스 글로벌플랫폼액티브" },
+    { "shortCode": "433220", "name": "에셋플러스 글로벌대장장이액티브" },
+    { "shortCode": "442090", "name": "에셋플러스 코리아대장장이액티브" },
+    { "shortCode": "451150", "name": "에셋플러스 글로벌영에이지액티브" },
+    { "shortCode": "462340", "name": "에셋플러스 글로벌다이나믹시니어액티브" },
+    { "shortCode": "474920", "name": "에셋플러스 차이나일등기업포커스10액티브" },
+    { "shortCode": "477490", "name": "에셋플러스 글로벌일등기업포커스10액티브" }
+  ]
+}

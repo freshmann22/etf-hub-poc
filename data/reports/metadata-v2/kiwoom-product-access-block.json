@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T07:26:19.372Z",
+  "issuer": {
+    "id": "kiwoom-asset-management",
+    "brand": "KIWOOM",
+    "inventoryCount": 68
+  },
+  "probeContract": {
+    "purpose": "Diagnose TLS trust and gate a maximum one-then-four product canary without weakening certificate verification.",
+    "authenticationUsed": false,
+    "certificateVerificationDisabled": false,
+    "ignoreCertificateErrorsUsed": false,
+    "customCaTrusted": false,
+    "productDetailRequests": 0,
+    "canaryRequests": 0,
+    "fullCollectionRequests": 0
+  },
+  "observations": {
+    "nodeBundled": {
+      "ok": false,
+      "status": null,
+      "url": "https://www.kiwoometf.com/robots.txt",
+      "code": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+      "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    "nodeSystemCa": {
+      "ok": false,
+      "code": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+      "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+    },
+    "windowsNative": {
+      "ok": false,
+      "exitCode": 35,
+      "tlsBackend": "Schannel",
+      "error": "curl: (35) schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS (0x8009030E) - ���� ��Ű���� ����� �� �ִ� �������� �����ϴ�."
+    },
+    "serverChain": {
+      "ok": false,
+      "exitCode": 1,
+      "presentedCertificateCount": 1,
+      "verificationError": "unable to get local issuer certificate",
+      "leaf": {
+        "subject": "C=KR\nST=Seoul\nO=KIWOOM ASSET MANAGEMENT CO.\\, LTD.\nCN=www.kiwoomam.com",
+        "issuer": "C=GB\nST=Greater Manchester\nL=Salford\nO=Sectigo Limited\nCN=Sectigo RSA Organization Validation Secure Server CA",
+        "validFrom": "Jan 13 00:00:00 2026 GMT",
+        "validTo": "Jan 23 23:59:59 2027 GMT",
+        "fingerprint256": "9F:ED:AE:D6:68:76:D3:D6:B1:BD:D4:CD:EF:4D:0E:BC:D4:15:58:4F:B7:EC:A3:C2:6B:E6:B5:ED:ED:43:09:34",
+        "subjectAltName": "DNS:www.kiwoomam.com, DNS:new.kiwoomam.com, DNS:www.kiwoometf.com, DNS:www.kosef.co.kr",
+        "infoAccess": "CA Issuers - URI:http://crt.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crt\nOCSP - URI:http://ocsp.sectigo.com"
+      }
+    },
+    "alternateHosts": [
+      {
+        "host": "www.kiwoomam.com",
+        "ok": false,
+        "status": null,
+        "url": "https://www.kiwoomam.com/robots.txt",
+        "code": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+      },
+      {
+        "host": "new.kiwoomam.com",
+        "ok": false,
+        "status": null,
+        "url": "https://new.kiwoomam.com/robots.txt",
+        "code": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+      },
+      {
+        "host": "www.kosef.co.kr",
+        "ok": false,
+        "status": null,
+        "url": "https://www.kosef.co.kr/robots.txt",
+        "code": "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+        "error": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca"
+      }
+    ],
+    "robots": {
+      "ok": false,
+      "url": "https://www.kiwoometf.com/robots.txt",
+      "allowsProductRoute": null,
+      "reason": "TLS validation failed before HTTP response"
+    },
+    "terms": {
+      "ok": false,
+      "url": null,
+      "automatedCollectionRestrictionFound": null,
+      "reason": "homepage/terms not requested after TLS policy gate failed"
+    },
+    "publicProductContract": {
+      "verified": false,
+      "routeTemplate": "https://www.kiwoometf.com/service/etf/KO02010200M?gcode={shortCode}",
+      "evidence": "Official pages are publicly indexed with ticker-bound gcode routes, but this runtime cannot verify and fetch them over TLS."
+    }
+  },
+  "diagnosis": {
+    "rootCause": "The endpoint presents only the leaf certificate and omits its Sectigo RSA Organization Validation Secure Server CA intermediate. The leaf hostname and validity window are acceptable, but normal clients cannot build a chain to a trusted root.",
+    "nodeVsWindows": "This is not isolated to Node bundled CAs: Node default, Node --use-system-ca, and Windows Schannel all fail. Adding system roots does not supply the missing server intermediate.",
+    "alternateHostFinding": "All certificate SAN alternatives tested resolve to the same failing TLS deployment; no normally verified official alternate host was found."
+  },
+  "decision": {
+    "status": "blocked_before_product_request",
+    "canaryAllowed": false,
+    "fullCollectionAllowed": false,
+    "reasons": [
+      "no_normally_verified_tls_endpoint",
+      "server_certificate_chain_incomplete",
+      "robots_not_normally_verifiable",
+      "public_use_terms_not_normally_verifiable",
+      "public_product_contract_not_runtime_verified"
+    ]
+  },
+  "resumeConditions": [
+    "The issuer serves the missing intermediate certificate and strict Node plus Windows TLS probes pass.",
+    "robots.txt is retrievable with certificate validation enabled and permits the ticker-bound product route.",
+    "Public-use terms are retrievable and do not prohibit the intended bounded local collection.",
+    "Only then run one product request; expand to four canaries only after identity and raw-provenance validation passes.",
+    "Full 68-product collection requires a separate approval after the four-canary report."
+  ],
+  "prohibitedNextSteps": [
+    "Do not use rejectUnauthorized=false, NODE_TLS_REJECT_UNAUTHORIZED=0, curl -k, or --ignore-certificate-errors.",
+    "Do not install or pin the missing intermediate as a workaround for collection; the issuer must deliver a normally valid chain or provide another valid official endpoint.",
+    "Do not fetch product pages while robots and public-use terms remain unverifiable."
+  ],
+  "references": [
+    {
+      "title": "Official KIWOOM ticker-bound product route",
+      "url": "https://www.kiwoometf.com/service/etf/KO02010200M?gcode=449770"
+    },
+    {
+      "title": "Sectigo intermediate certificate guidance",
+      "url": "https://www.sectigo.com/faqs/detail/Sectigo-Intermediate-Certificates"
+    },
+    {
+      "title": "Node.js --use-system-ca documentation",
+      "url": "https://nodejs.org/api/cli.html#--use-system-ca"
+    }
+  ]
+}

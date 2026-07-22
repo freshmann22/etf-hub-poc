@@ -1,0 +1,8 @@
+{
+  "topics": {
+    "topic.us_index": { "label": "미국 대표지수" },
+    "topic.rates": { "label": "금리/통화정책" },
+    "topic.credit": { "label": "크레딧/스프레드" },
+    "topic.fx": { "label": "환율" }
+  }
+}

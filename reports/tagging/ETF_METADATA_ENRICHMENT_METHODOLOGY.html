@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ETF 1,141종 메타데이터 보강 방법론</title>
+  <style>
+    :root{--ink:#17231f;--muted:#66736e;--paper:#f3f6f5;--card:#fff;--line:#d9e3df;--green:#00a98f;--deep:#14362e;--soft:#e5f7f3;--amber:#9a6200;--amber-soft:#fff2d6;--red:#9e3f51;--red-soft:#ffe9ed;--blue:#326fbd;--blue-soft:#eaf2ff}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.62;word-break:keep-all}.wrap{width:min(1120px,calc(100% - 30px));margin:auto}.hero{padding:54px 0 42px;background:var(--deep);color:#fff}.eyebrow{color:#9fddd2;font-weight:800;font-size:13px}.hero h1{margin:9px 0 13px;font-size:clamp(34px,6vw,58px);line-height:1.1;letter-spacing:-.05em}.hero p{max-width:850px;margin:0;color:#c8dcd6}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:25px}.metric{padding:15px;border:1px solid rgba(255,255,255,.14);border-radius:15px;background:rgba(255,255,255,.07)}.metric b{display:block;font-size:28px;line-height:1.2}.metric span{font-size:12px;color:#c8dcd6}main{padding:26px 0 64px}.section{margin-top:28px}.panel,.card{padding:21px;border:1px solid var(--line);border-radius:17px;background:var(--card)}.lead{border-left:6px solid var(--green)}h2{margin:0 0 13px;font-size:24px;letter-spacing:-.03em}h3{margin:0 0 8px;font-size:17px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.two{grid-template-columns:repeat(2,1fr)}.badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:800}.green{background:var(--soft);color:#087765}.amber{background:var(--amber-soft);color:var(--amber)}.red{background:var(--red-soft);color:var(--red)}.blue{background:var(--blue-soft);color:var(--blue)}.muted{color:var(--muted)}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted)}ul,ol{margin:8px 0 0;padding-left:21px}li+li{margin-top:6px}.callout{padding:16px 18px;border-radius:14px;background:var(--amber-soft);color:#674700}.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.step{padding:14px;border:1px solid var(--line);border-radius:13px;background:#fff}.step b{display:block;margin-bottom:4px;color:var(--green);font-size:12px}.source{border-top:4px solid var(--green)}.risk{border-top-color:#df9a21}.no{border-top-color:#c95569}.decision{display:flex;gap:12px;align-items:flex-start}.decision .mark{flex:0 0 auto;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:#087765;font-weight:900}.links{display:flex;flex-wrap:wrap;gap:8px}.links a{padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#176b5e;text-decoration:none;font-size:13px}.foot{font-size:12px;color:var(--muted)}code{padding:2px 5px;border-radius:5px;background:#edf2f0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em}@media(max-width:820px){.metrics,.grid,.flow{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}table{font-size:12px}th,td{padding:8px 5px}}@media(max-width:500px){.metrics,.grid,.flow{grid-template-columns:1fr}.metric b{font-size:23px}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <div class="eyebrow">APPROVAL REPORT · 2026-07-21 · TAXONOMY UNCHANGED</div>
+    <h1>ETF 1,141종<br>메타데이터 보강 방법론</h1>
+    <p>Claude 200종 검수에서 드러난 근거 부족을 정량화하고, 공식·공공 자료를 우선한 전수 보강 파이프라인과 승인 후 실행 순서를 제안합니다. 이 문서는 수집 착수안이며 현재 taxonomy와 태그를 변경하지 않습니다.</p>
+    <div class="metrics">
+      <div class="metric"><b>126 / 200</b><span>하나 이상 근거 부족</span></div>
+      <div class="metric"><b>112</b><span>배당 facet 근거 부족</span></div>
+      <div class="metric"><b>1,032</b><span>전수 C·D 등급 종목</span></div>
+      <div class="metric"><b>0%</b><span>설명·노출비중·실제 분배이력</span></div>
+    </div>
+  </div></header>
+
+  <main class="wrap">
+    <section class="panel lead">
+      <span class="badge green">권고: 조건부 승인</span>
+      <h2>전수 Claude 재검수보다 메타데이터 보강이 먼저입니다</h2>
+      <p>다만 곧바로 1,141종을 크롤링하지는 않습니다. 먼저 식별자 계약과 20~30종 층화 probe를 통과시키고, 공식 운용사 어댑터의 성공률과 이용 조건을 확인한 뒤 전수로 확대합니다. 동일 200종을 metadata 전후로 A/B 재검수해 효과가 확인될 때까지 기존 taxonomy와 태그는 동결합니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>1. 무엇이 부족했나</h2>
+      <div class="grid">
+        <article class="card"><span class="badge red">112건</span><h3>배당 판단 근거</h3><p>실제 분배 이력 112건, 상품 설명 112건이 비어 있고 111건은 운용사·분배 일정도 없습니다. 분배 <b>정책</b>과 실제 <b>지급 이벤트</b>를 분리해 채워야 합니다.</p></article>
+        <article class="card"><span class="badge amber">24건</span><h3>섹터 판단 근거</h3><p>24건 모두 상품 설명과 산업비중이 없고, 7건은 구성종목도 없습니다. 명시된 투자 mandate와 당일 exposure를 구분해야 합니다.</p></article>
+        <article class="card"><span class="badge blue">8건</span><h3>지역 판단 근거</h3><p>8건 모두 상품 설명과 국가비중이 없습니다. 통화·원자재·멀티지역 상품은 지역값이 없는 것이 결측이 아니라 <code>N/A</code>일 수 있습니다.</p></article>
+      </div>
+      <table style="margin-top:14px"><thead><tr><th>전수 결손</th><th>1,141종 중 결손</th><th>taxonomy 영향</th></tr></thead><tbody>
+        <tr><td>상품 설명·투자 목적</td><td>1,141 (100%)</td><td>상품의 명시적 mandate를 판정할 수 없음</td></tr>
+        <tr><td>산업·국가 비중</td><td>1,141 (100%)</td><td>sector·region 노출 검증 불가</td></tr>
+        <tr><td>실제 분배 이력</td><td>1,141 (100%)</td><td>dividend 태그의 양·음성 근거 모두 부족</td></tr>
+        <tr><td>운용사·분배 일정</td><td>각 1,119 (98.1%)</td><td>공식 원문 연결과 지급 주기 판단이 불안정</td></tr>
+        <tr><td>구성종목</td><td>682 (59.8%)</td><td>노출 비중과 재간접 구조 확인 제한</td></tr>
+        <tr><td>상세 provenance</td><td>671 (58.8%)</td><td>값이 있어도 재현·감사할 근거가 없음</td></tr>
+      </tbody></table>
+      <div class="callout" style="margin-top:14px"><b>중요:</b> 69건 불일치 중 16건만 메타데이터가 직접 차단한 사안으로 분류됐고, 42건은 정책·정의 문제입니다. 메타데이터를 채워도 sector mandate 대 현재 편입비중, KOSPI200 하위지수, 비주식 region 같은 정책 결정은 별도로 남습니다.</div>
+    </section>
+
+    <section class="section">
+      <h2>2. 공식 출처 우선순위</h2>
+      <div class="grid">
+        <article class="card source"><span class="badge green">Tier 0</span><h3>식별자·유니버스</h3><p>금융위 공공데이터 ETF API와 KIND 신규상장 공시로 단축코드·ISIN·공식명·상장 상태를 맞춥니다. 시세 API는 taxonomy 설명 원천으로 사용하지 않습니다.</p></article>
+        <article class="card source"><span class="badge green">Tier 1</span><h3>상품 정의</h3><p>DART 투자설명서 원문과 KIND 변경공시에서 투자 목적, 운용 방법, 기초지수, 파생·환헤지·분배 정책을 추출합니다.</p></article>
+        <article class="card source"><span class="badge green">Tier 2</span><h3>운용사 공식 데이터</h3><p>KODEX·TIGER 기존 어댑터를 확장하고 RISE·ACE·PLUS·SOL·KIWOOM·HANARO 순으로 공식 JSON/Excel/HTML/PDF를 연결합니다.</p></article>
+        <article class="card source"><span class="badge blue">Tier 3</span><h3>보유종목·노출</h3><p>공식 PDF(Portfolio Deposit File) 또는 운용사 전체 보유종목을 수집하고 공통 security master에 조인해 산업·국가 비중을 파생합니다.</p></article>
+        <article class="card risk"><span class="badge amber">허가 확인</span><h3>KRX Data·SEIBro 웹</h3><p>중요한 중앙 자료지만 문서화된 전수 API가 없고 자동수집·재배포 조건이 제한적입니다. 수동 export 또는 기관 승인 전에는 주 파이프라인으로 쓰지 않습니다.</p></article>
+        <article class="card no"><span class="badge red">최후 수단</span><h3>2차 출처</h3><p>Naver·WiseReport는 공식 원천 누락 시 발견·교차검증용으로만 사용합니다. 최종값으로 채택하면 낮은 신뢰도와 출처를 명시합니다.</p></article>
+      </div>
+      <table style="margin-top:14px"><thead><tr><th>필드</th><th>주 원천</th><th>보조·검증</th></tr></thead><tbody>
+        <tr><td>코드·ISIN·명칭·상태</td><td>공공데이터, KIND 신규상장</td><td>운용사 registry</td></tr>
+        <tr><td>운용사·설정/상장일</td><td>KIND, DART</td><td>SEIBro, 운용사</td></tr>
+        <tr><td>설명·목적·전략·기초지수</td><td>DART 최신 투자설명서</td><td>KIND 변경공시, 운용사 페이지·factsheet</td></tr>
+        <tr><td>구성종목</td><td>운용사 공식 JSON/Excel/PDF</td><td>허가된 KRX PDF</td></tr>
+        <tr><td>산업·국가 비중</td><td>공식 holdings 기반 파생</td><td>운용사 factsheet 직접 비중</td></tr>
+        <tr><td>분배 정책</td><td>DART·운용사 상품 페이지</td><td>KIND 공시</td></tr>
+        <tr><td>실제 지급 이력</td><td>운용사 공식 이력</td><td>허가된 SEIBro, KIND 공시</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="section">
+      <h2>3. 데이터 계약</h2>
+      <div class="grid two">
+        <article class="card"><h3>식별자를 먼저 고칩니다</h3><p><code>shortCode</code>는 숫자 전용이 아니라 <code>^[0-9A-Z]{6}$</code>로 정의합니다. <code>0000D0</code> 같은 영숫자 코드도 공식 KRX 단축코드일 수 있으므로 기존 ‘미해결 274’부터 공공데이터의 단축코드+ISIN으로 다시 조정합니다. 이름만 같은 상품은 자동 병합하지 않습니다.</p></article>
+        <article class="card"><h3>mandate와 exposure를 분리합니다</h3><p><code>mandateSectorTags</code>는 설명서에 명시된 투자대상이고, <code>exposureSectorWeights</code>는 기준일의 실제 편입비중입니다. 분배도 <code>policy</code>와 <code>actualEvents</code>로 나눕니다.</p></article>
+        <article class="card"><h3>모든 값에 원문을 연결합니다</h3><p>각 atomic field 후보에 source URL/type, 문서 종류, 기준일, 수집일, raw snapshot 경로, content hash, parser version, confidence를 저장합니다. 최종값과 탈락 후보·충돌을 함께 보존합니다.</p></article>
+        <article class="card"><h3>추정은 사실과 분리합니다</h3><p>이름에서 유추한 정보는 <code>hints</code>에만 두고 공식 fact로 승격하지 않습니다. 산업·국가 비중 파생값에는 분류체계 버전, 매핑 실패 비중, look-through 가능 범위를 기록합니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>4. 승인 후 실행 흐름</h2>
+      <div class="flow">
+        <div class="step"><b>0 · 계약</b>v2 schema와 유니버스 기준일 고정</div>
+        <div class="step"><b>1 · Probe</b>20~30종으로 접근·약관·파서 검증</div>
+        <div class="step"><b>2 · Identity</b>1,141종 코드·ISIN·상태 reconciliation</div>
+        <div class="step"><b>3 · Collect</b>공식 소스별 raw snapshot 수집</div>
+        <div class="step"><b>4 · Resolve</b>정규화·충돌·파생 노출 계산</div>
+        <div class="step"><b>5 · A/B</b>동일 200종 재검수 후 전수 여부 결정</div>
+      </div>
+      <div class="grid two" style="margin-top:12px">
+        <article class="card"><h3>재개 가능한 작업 ledger</h3><p>source×ETF 작업을 pending/running/success/empty/retryable/terminal로 기록합니다. 실패 파일이 있다는 이유로 영구 cache hit가 되지 않게 하고, raw는 append-only로 저장합니다.</p></article>
+        <article class="card"><h3>안전한 HTTP 운용</h3><p>전체 동시성 4~6, host별 1~2를 기본으로 하고 공식 bulk API만 2~4까지 허용합니다. Retry-After, 지수 backoff, circuit breaker, ETag/Last-Modified를 적용하며 로그인·CAPTCHA 우회는 하지 않습니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>5. 서브에이전트와 수집 병렬화</h2>
+      <div class="panel">
+        <div class="decision"><div class="mark">3</div><div><h3>3개 작업 스트림이 적정합니다</h3><p>에이전트는 웹 요청을 무작정 늘리는 용도가 아니라 어댑터 개발과 검증을 병렬화하는 데 씁니다. 외부 요청은 한 개 중앙 scheduler가 통제합니다.</p></div></div>
+        <table><thead><tr><th>스트림</th><th>담당</th><th>독립 산출물</th></tr></thead><tbody>
+          <tr><td>Worker A</td><td>운용사·DART source probe와 어댑터</td><td>공식 raw fixture, parser, source health</td></tr>
+          <tr><td>Worker B</td><td>schema·식별자·정규화·provenance</td><td>identity map, canonical v2, conflict resolver</td></tr>
+          <tr><td>Worker C</td><td>검증·readiness·200종 A/B</td><td>품질 gate, coverage, 비교 리포트</td></tr>
+          <tr><td>Root</td><td>계약 고정, 중앙 큐, 통합·의사결정</td><td>재개 가능한 전수 실행과 최종 보고</td></tr>
+        </tbody></table>
+        <p class="muted">5개 에이전트가 동일 사이트를 동시에 긁는 방식은 중복 호출·차단·충돌을 늘립니다. 운용사별 개발 작업은 병렬화하되 실제 수집은 domain별 큐로 직렬화하는 편이 전체 시간이 더 짧습니다.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>6. 품질 게이트와 중단 조건</h2>
+      <div class="grid">
+        <article class="card"><span class="badge green">전수 전</span><h3>수집 준비도</h3><ul><li>유니버스 1,141행 보존</li><li>식별자 해결 ≥99%, 중복 0</li><li>non-null provenance 100%</li><li>parser fixture 100% 통과</li><li>설명·기초지수 ≥95%</li><li>주식형 holdings ≥90%</li></ul></article>
+        <article class="card"><span class="badge blue">A/B 목표</span><h3>동일 200종</h3><ul><li>exact match 65.5% → ≥80%</li><li>근거 부족 126 → ≤80</li><li>C등급 exact 54.9% → ≥75%</li><li>metadata-blocked 16 → ≤4</li></ul></article>
+        <article class="card"><span class="badge red">자동 중단</span><h3>확대 금지 조건</h3><ul><li>약관·robots·허가 불명확</li><li>HTML schema drift</li><li>식별자 ambiguous join</li><li>429/오류율 급증</li><li>파서가 빈 결과를 성공 처리</li><li>A/B 개선 gate 미달</li></ul></article>
+      </div>
+      <p class="muted">비주식형 ETF의 sector, 통화·원자재 상품의 region처럼 적용 불가능한 facet은 결측이 아니라 eligibility별 N/A로 집계합니다. 모든 insufficient를 0으로 만드는 것은 올바른 목표가 아닙니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>7. 예상 일정과 승인 범위</h2>
+      <table><thead><tr><th>단계</th><th>예상 벽시계</th><th>이번 승인 시 수행</th></tr></thead><tbody>
+        <tr><td>계약·층화 probe</td><td>0.5~1일</td><td>예</td></tr>
+        <tr><td>식별자 전수 reconciliation</td><td>1~3시간</td><td>예</td></tr>
+        <tr><td>공식 source adapter 개발</td><td>1~3 개발일</td><td>예, probe 통과 소스만</td></tr>
+        <tr><td>1,141종 수집</td><td>2~8시간, PDF 중심이면 약 1일</td><td>중간 gate 통과 후</td></tr>
+        <tr><td>정규화·충돌·readiness</td><td>2~4시간</td><td>예</td></tr>
+        <tr><td>동일 200종 A/B 재검수</td><td>1~3시간</td><td>예</td></tr>
+      </tbody></table>
+      <div class="callout" style="margin-top:14px"><b>승인 요청 범위:</b> v2 파이프라인을 기존 결과와 나란히 구축하고, 20~30종 probe → 식별자 전수 정합 → 공식 어댑터 → 1,141종 보강 → 동일 200종 A/B 리포트까지 진행합니다. A/B 승인 전 taxonomy·태그 자동 수정은 하지 않습니다.</div>
+    </section>
+
+    <section class="section panel">
+      <h2>공식 자료 링크</h2>
+      <div class="links">
+        <a href="https://www.data.go.kr/data/15094806/openapi.do" target="_blank" rel="noreferrer">금융위 증권상품시세정보</a>
+        <a href="https://openapi.krx.co.kr/contents/OPP/INFO/service/OPPINFO004.cmd" target="_blank" rel="noreferrer">KRX Open API 목록</a>
+        <a href="https://data.krx.co.kr/contents/MDC/INFO/informationController/MDCINFO003.cmd" target="_blank" rel="noreferrer">KRX Data 이용약관</a>
+        <a href="https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&amp;apiId=2019001" target="_blank" rel="noreferrer">OpenDART 공시검색</a>
+        <a href="https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS001&amp;apiId=2019003" target="_blank" rel="noreferrer">OpenDART 원문파일</a>
+        <a href="https://dis.kofia.or.kr/doc/dis_manual.pdf" target="_blank" rel="noreferrer">금융투자협회 전자공시 매뉴얼</a>
+        <a href="https://m.seibro.or.kr/cnts/etf/selectPublishInfo.do" target="_blank" rel="noreferrer">SEIBro ETF 발행현황</a>
+        <a href="https://www.samsungfund.com/etf/product/view.do?id=2ETFE4" target="_blank" rel="noreferrer">KODEX 공식 상품 예시</a>
+        <a href="https://investments.miraeasset.com/tigeretf/ko/product/search/detail/index.do?ksdFund=KR7157490004" target="_blank" rel="noreferrer">TIGER 공식 상품 예시</a>
+      </div>
+      <p class="foot">조사 기준일: 2026-07-21. KRX 공식 화면의 현재 상장 수와 프로젝트 snapshot 1,141종 사이에 차이가 있으므로, 실행 시 기존 1,141종을 덮어쓰지 않고 universe_as_of와 신규상장·상장폐지 상태를 별도 reconciliation합니다.</p>
+    </section>
+
+    <section class="section links">
+      <a href="ETF_TAXONOMY_200_TRIAGE_AND_METADATA_PLAN.html">200종 triage</a>
+      <a href="ETF_TAXONOMY_FULL_SCALE_DECISION_REPORT.html">전수 확장 판단 리포트</a>
+      <a href="CLAUDE_TAXONOMY_REVIEW.html">Claude 200종 원본 리뷰</a>
+    </section>
+  </main>
+</body>
+</html>

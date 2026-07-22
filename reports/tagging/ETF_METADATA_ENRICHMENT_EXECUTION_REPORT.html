@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ETF 메타데이터 보강 실행 리포트</title>
+  <style>
+    :root {
+      --ink: #17202b; --muted: #657184; --line: #dde3ea; --paper: #f5f7fa;
+      --card: #fff; --navy: #18324b; --teal: #00a88f; --teal-soft: #dff7f2;
+      --amber: #b46b00; --amber-soft: #fff4d8; --red: #b3343a; --red-soft: #fdecee;
+      --blue: #2463a9; --blue-soft: #e9f2fc;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 1180px; margin: 0 auto; padding: 36px 24px 70px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 8px; font-size: clamp(28px, 4vw, 44px); line-height: 1.12; letter-spacing: -1.5px; }
+    h2 { margin: 42px 0 16px; font-size: 23px; letter-spacing: -.5px; }
+    h3 { margin-bottom: 8px; font-size: 16px; }
+    .eyebrow { color: var(--teal); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .lead { max-width: 820px; color: #475466; font-size: 17px; }
+    .topline { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 30px; }
+    .stamp { color: var(--muted); text-align: right; font-size: 12px; }
+    button { border: 1px solid #cbd3dc; border-radius: 9px; background: #fff; color: var(--navy); padding: 8px 12px; cursor: pointer; font-weight: 700; }
+    button:hover { border-color: var(--teal); }
+    .notice { margin: 24px 0; padding: 18px 20px; border: 1px solid #efcf86; border-left: 5px solid #e0a11b; border-radius: 12px; background: var(--amber-soft); }
+    .notice strong { display: block; margin-bottom: 4px; font-size: 16px; }
+    .grid { display: grid; gap: 14px; }
+    .kpis { grid-template-columns: repeat(4, 1fr); }
+    .card { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 18px; box-shadow: 0 2px 10px rgba(24,50,75,.035); }
+    .kpi .label { color: var(--muted); font-size: 12px; font-weight: 700; }
+    .kpi .value { margin: 4px 0 2px; color: var(--navy); font-size: 28px; font-weight: 850; letter-spacing: -.7px; }
+    .kpi .sub { color: var(--muted); font-size: 12px; }
+    .ok { color: #00826f; } .warn { color: var(--amber); } .bad { color: var(--red); }
+    .status { display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; padding: 3px 8px; font-size: 11px; font-weight: 800; white-space: nowrap; }
+    .status.ok { background: var(--teal-soft); } .status.warn { background: var(--amber-soft); }
+    .status.bad { background: var(--red-soft); } .status.info { background: var(--blue-soft); color: var(--blue); }
+    .two { grid-template-columns: 1.1fr .9fr; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 11px 10px; border-bottom: 1px solid #e8edf2; text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .bar-row { display: grid; grid-template-columns: 178px 1fr 80px; align-items: center; gap: 12px; margin: 11px 0; }
+    .track { height: 9px; overflow: hidden; border-radius: 999px; background: #edf1f5; }
+    .fill { height: 100%; min-width: 0; border-radius: inherit; background: var(--teal); }
+    .fill.low { background: #d69a28; } .fill.zero { background: #d5dbe2; }
+    .metric { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+    .callout { border-radius: 12px; padding: 16px; background: #eef4fa; color: #2d4963; }
+    .callout strong { color: var(--navy); }
+    ol.timeline { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+    .timeline li { position: relative; margin-left: 17px; padding: 0 0 22px 34px; border-left: 2px solid #dce3ea; }
+    .timeline li:last-child { border-left-color: transparent; padding-bottom: 0; }
+    .timeline li::before { counter-increment: step; content: counter(step); position: absolute; left: -15px; top: -2px; width: 28px; height: 28px; border-radius: 50%; background: var(--navy); color: white; display: grid; place-items: center; font-size: 12px; font-weight: 800; }
+    .timeline b { display: block; margin-bottom: 3px; }
+    code { border-radius: 5px; background: #eef1f5; padding: 2px 5px; color: #34465a; }
+    .file-list { color: var(--muted); font-size: 12px; word-break: break-all; }
+    .foot { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    @media (max-width: 850px) { .kpis, .two { grid-template-columns: 1fr 1fr; } .topline { align-items: flex-start; } }
+    @media (max-width: 600px) { main { padding: 24px 15px 50px; } .kpis, .two { grid-template-columns: 1fr; } .bar-row { grid-template-columns: 135px 1fr 66px; } table { font-size: 12px; } th, td { padding: 9px 6px; } }
+    @media print { body { background: white; } main { max-width: none; padding: 18px; } button { display: none; } .card { box-shadow: none; break-inside: avoid; } h2 { break-after: avoid; } }
+  </style>
+</head>
+<body>
+<main>
+  <div class="topline">
+    <div>
+      <div class="eyebrow">Metadata v2 · Execution report</div>
+      <h1>ETF 메타데이터 보강 실행 리포트</h1>
+      <p class="lead">1,141개 canonical 유니버스를 보존한 채 공식 출처 기반 후보값과 증거를 축적한 현재 상태, 차단 요인, 전수 확장 순서를 요약한다.</p>
+    </div>
+    <div class="stamp">
+      <div id="snapshotTime">스냅샷 2026-07-22 15:48 KST</div>
+      <button id="refreshButton" type="button">최신 JSON 다시 읽기</button>
+      <div id="refreshState">정적 스냅샷 표시 중</div>
+    </div>
+  </div>
+
+  <div class="notice">
+    <strong>택소노미 자체는 아직 변경하지 않았다.</strong>
+    이번 단계는 분류 규칙을 확정하거나 69건의 리뷰 제안을 자동 반영하는 작업이 아니다. 공식 메타데이터·원문·필드별 근거를 먼저 보강해, 이후 택소노미 변경 여부를 증거 기반으로 판단하기 위한 데이터 준비 단계다.
+  </div>
+
+  <section>
+    <div class="grid kpis">
+      <article class="card kpi"><div class="label">CANONICAL SHAPE</div><div class="value" id="universe">1,141</div><div class="sub"><span class="ok">100% 보존</span> · 행 추가/삭제 없음</div></article>
+      <article class="card kpi"><div class="label">설명·투자목적</div><div class="value" id="objectiveCoverage">596 <small>/ 52.2%</small></div><div class="sub">8개 운용사 공식 상품 페이지</div></article>
+      <article class="card kpi"><div class="label">보유종목</div><div class="value" id="holdingsCoverage">619 <small>/ 54.3%</small></div><div class="sub">기존값 + 공식 출처 후보 반영</div></article>
+      <article class="card kpi"><div class="label">선택값 PROVENANCE</div><div class="value" id="provenanceCoverage">99.97%</div><div class="sub" id="provenanceSub">9,930개 중 9,927개 근거 보유</div></article>
+    </div>
+  </section>
+
+  <section>
+    <h2>판단 요약</h2>
+    <div class="grid two">
+      <article class="card">
+        <h3>현재 결론</h3>
+        <p>v2 파이프라인은 <b>원본 1,141개 구조를 훼손하지 않고</b> 출처별 값을 candidate로 추가하고, 우선순위 규칙으로 선택값을 만들며, 문제가 있는 입력은 격리하는 구조까지 검증됐다.</p>
+        <p>OpenDART PDF 911건은 수집·전수 추출·clause-level semantic 병합까지 완료했다. 공식명 910건과 검증된 투자목적 242건, 지수설명 45건, 분배일정 28건, 분배주기 89건을 candidate로 추가했고, 기존값을 덮지 않고 결측 216건만 채웠다. 의미가 섞인 2,809개 원문 창은 계속 evidence-only로 보존한다.</p>
+        <p>다만 전체 종목의 설명·투자목적 커버리지는 아직 낮고, 지역·섹터 판정의 선행 필드가 비어 있어 <b>택소노미 전수 재분류를 시작할 단계는 아니다.</b></p>
+      </article>
+      <article class="card">
+        <h3>확장 가능성</h3>
+        <p>PLUS 84, RISE 140, SOL 77, TIGER 229, 1Q 26, WON 16, KoAct 23, TheJ 1종목의 공식 상품 메타데이터 596건이 병합됐다. 동일한 append-only 원장·재시작 구조를 추가 운용사에 적용할 수 있어 1,141개까지 확장 가능하다.</p>
+        <div class="callout"><strong>병목은 AI 리뷰 속도가 아니라 출처별 접근 계약과 adapter 구현이다.</strong><br>수집은 운용사 단위 병렬화가 가능하지만 동일 호스트에 대한 무제한 병렬 요청은 429/403을 키우므로 제한해야 한다.</div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>출처별 실행 현황</h2>
+    <div class="card" style="overflow-x:auto">
+      <table>
+        <thead><tr><th>출처 / 범위</th><th>상태</th><th class="num">성공·반영</th><th class="num">잔여·실패</th><th>판단</th></tr></thead>
+        <tbody>
+          <tr><td>공공데이터 기준 유니버스</td><td><span class="status ok">대조 완료</span></td><td class="num">1,140 / 1,141</td><td class="num">로컬 1 · 공식전용 6</td><td>로컬 1,141은 유지. 424460과 신규 6종목은 개별 검토.</td></tr>
+          <tr><td>PLUS 공식 상품 HTML</td><td><span class="status ok">전수 완료</span></td><td class="num" id="plusDone">84 / 84</td><td class="num" id="plusPending">0</td><td>원문 hash·selector·snippet 검증 후 product source result에 반영.</td></tr>
+          <tr><td>RISE 공식 상품 HTML</td><td><span class="status ok">전수 완료</span></td><td class="num" id="riseDone">140 / 140</td><td class="num" id="risePending">0</td><td>최신 성공 140건이 product source result와 canonical에 병합됨.</td></tr>
+          <tr><td>SOL 공식 상품 메타데이터</td><td><span class="status ok">전수 완료</span></td><td class="num" id="solDone">77 / 77</td><td class="num">부분 18</td><td>77건 모두 병합. benchmark가 없는 18건은 null을 유지한 partial.</td></tr>
+          <tr><td>TIGER 공식 상품 메타데이터</td><td><span class="status ok">전수 완료</span></td><td class="num" id="tigerDone">229 / 229</td><td class="num">0</td><td>상품 설명·목적·벤치마크·분배 일정 병합 완료.</td></tr>
+          <tr><td>1Q / WON 공식 상품 메타데이터</td><td><span class="status ok">전수 완료</span></td><td class="num"><span id="hanaDone">26</span> + <span id="wonDone">16</span></td><td class="num">0</td><td>1Q 26종목, WON 16종목 원문·필드 provenance 검증 및 병합 완료.</td></tr>
+          <tr><td>KoAct / TheJ 공식 상품 메타데이터</td><td><span class="status ok">전수 완료</span></td><td class="num"><span id="koactDone">23</span> + <span id="thejDone">1</span></td><td class="num">0</td><td>공식 원문 및 필드별 provenance 검증 후 병합.</td></tr>
+          <tr><td>공식 분배금 지급 이력</td><td><span class="status ok">1차 병합</span></td><td class="num"><span id="historyDone">241</span>종목</td><td class="num"><span id="historyEvents">1,586</span> events</td><td>일정 문구와 실제 지급일·금액 행을 엄격히 분리.</td></tr>
+          <tr><td>TIGER 공식 holdings</td><td><span class="status ok">완료</span></td><td class="num">229 / 229</td><td class="num">0</td><td>공식 보유종목 raw artifact와 hash 보존.</td></tr>
+          <tr><td>KODEX 공식 상품 / holdings</td><td><span class="status bad">429 중단</span></td><td class="num">0 / 238</td><td class="num">238</td><td>persistent 429. 호스트별 저속 재시도 또는 공식 공개 파일 경로 필요.</td></tr>
+          <tr><td>SOL 공식 holdings</td><td><span class="status warn">부분 완료</span></td><td class="num">52 / 77</td><td class="num">403 실패 25</td><td>성공분은 보존. 실패 종목만 제한적으로 재시도.</td></tr>
+          <tr><td>SOL 실제 분배 이력</td><td><span class="status info">조사 진행 중</span></td><td class="num">raw HTML 0 / 77</td><td class="num">popup 77</td><td>저장 HTML에는 JS popup 링크만 존재. 공식 지급이력 응답 계약을 추가 조사 중.</td></tr>
+          <tr><td>OpenDART PDF 수집</td><td><span class="status ok">전수 완료</span></td><td class="num"><span id="dartDone">911</span> 성공 / <span id="dartAttempted">911</span> 시도 / <span id="dartTarget">911</span></td><td class="num"><span id="dartIssues">0</span></td><td>append-only 원장 911키, malformed 0. 원문 PDF·SHA-256 보존.</td></tr>
+          <tr><td>OpenDART PDF 추출·승격</td><td><span class="status ok">semantic 병합 완료</span></td><td class="num">공식명 <span id="dartPromoted">910</span> · 목적 <span id="dartObjective">242</span> · 지수설명 <span id="dartBenchmarkDescription">45</span> · 일정 <span id="dartSchedule">28</span> · 주기 <span id="dartFrequency">89</span></td><td class="num"><span id="dartEvidenceOnly">2,809</span> raw windows</td><td>911 parsed, OCR 0, quarantine 0. 결측 216건 채움, 기존값 overwrite 0. 지수명 451건은 reconciliation evidence-only.</td></tr>
+          <tr><td>ACE / TIME 공식 상품</td><td><span class="status bad">policy 차단</span></td><td class="num">0</td><td class="num">정책 검토 대기</td><td>접근·이용정책이 해소될 때까지 자동 수집을 시작하지 않음.</td></tr>
+          <tr><td>기타 운용사</td><td><span class="status warn">adapter 대기</span></td><td class="num">—</td><td class="num">다수</td><td>KIWOOM, HANARO 및 중소형 운용사 순차 확장 필요.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>필드 커버리지</h2>
+    <div class="grid two">
+      <article class="card" id="coverageBars">
+        <div class="bar-row"><span>식별자·공식명·운용사</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="metric">1,141 · 100%</span></div>
+        <div class="bar-row"><span>벤치마크</span><div class="track"><div class="fill" style="width:99.9%"></div></div><span class="metric">1,140 · 99.9%</span></div>
+        <div class="bar-row"><span>보유종목</span><div class="track"><div class="fill" style="width:54.3%"></div></div><span class="metric">619 · 54.3%</span></div>
+        <div class="bar-row"><span>분배 일정</span><div class="track"><div class="fill" style="width:53.4%"></div></div><span class="metric">609 · 53.4%</span></div>
+        <div class="bar-row"><span>설명·투자목적</span><div class="track"><div class="fill" style="width:52.2%"></div></div><span class="metric">596 · 52.2%</span></div>
+        <div class="bar-row"><span>실제 분배 이력</span><div class="track"><div class="fill low" style="width:21.1%"></div></div><span class="metric">241 · 21.1%</span></div>
+        <div class="bar-row"><span>자산군</span><div class="track"><div class="fill zero" style="width:0%"></div></div><span class="metric">0 · 0%</span></div>
+        <div class="bar-row"><span>대상 지역</span><div class="track"><div class="fill zero" style="width:0%"></div></div><span class="metric">0 · 0%</span></div>
+        <div class="bar-row"><span>섹터·국가 비중</span><div class="track"><div class="fill zero" style="width:0%"></div></div><span class="metric">0 · 0%</span></div>
+      </article>
+      <article class="card">
+        <h3>왜 1,141개가 모두 partial인가</h3>
+        <p>identity는 전수 보존됐고 91종목이 A 등급에 도달했지만, taxonomy 판단에 필요한 자산군·지역·섹터 필드는 아직 전수 근거를 갖추지 못했다. 현재 등급은 A 91, B 450, C 289, D 311이며 canonical 상태는 1,141개 모두 partial이다.</p>
+        <p>특히 지역·섹터 facet은 1,141개 모두 eligibility가 아직 <code>unknown</code>이다. 배당 facet도 eligible 22개를 찾았지만 근거 충족 종목은 아직 0개다.</p>
+        <div class="callout"><strong>벤치마크 99.9%는 곧 taxonomy 준비 완료를 뜻하지 않는다.</strong><br>기존 v1 후보를 포함한 선택값 커버리지이며, 지역·섹터를 안정적으로 파생하려면 공식 설명·투자목적·holdings 근거를 더 넓혀야 한다.</div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Provenance와 격리 정책</h2>
+    <div class="grid kpis">
+      <article class="card kpi"><div class="label">선택값</div><div class="value">9,930</div><div class="sub">canonical 전체 선택 필드</div></article>
+      <article class="card kpi"><div class="label">근거 연결</div><div class="value ok">9,927</div><div class="sub">99.97%</div></article>
+      <article class="card kpi"><div class="label">미연결</div><div class="value warn">3</div><div class="sub">후속 정리 대상</div></article>
+      <article class="card kpi"><div class="label">MERGE QUARANTINE</div><div class="value ok" id="mergeQuarantine">0</div><div class="sub">현재 source merge 기준</div></article>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <p><b>보존 단위:</b> source ID, URL, 조회시각, 원문 snapshot 경로, SHA-256, parser version, 필드별 selector/section heading/snippet.</p>
+      <p><b>실패 처리:</b> 실패 레코드는 원장에서 삭제하지 않고 이벤트로 남긴다. 최신 <code>ok</code>/<code>partial</code>만 승격하며, raw hash 불일치·식별자 불일치·필드 근거 누락은 해당 레코드 또는 필드만 격리한다.</p>
+      <p style="margin-bottom:0"><b>해석 주의:</b> quarantine 0은 수집 실패가 없다는 뜻이 아니다. KODEX 429, SOL holdings 403, 과거 validation failure는 source health/failureEvents에 보존되고, merge 입력으로 승격되지 않았기 때문에 merge quarantine은 0이다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>미완료 항목과 다음 실행 순서</h2>
+    <div class="grid two">
+      <article class="card">
+        <ol class="timeline">
+          <li><b>DART semantic 표본 감사</b>clause parser와 보수적 allowlist 병합은 완료됐다. 신규 선택된 목적·지수설명·분배 필드를 사람 표본으로 재검토하고 오탐 규칙을 보강한다.</li>
+          <li><b>SOL 지급이력 조사 완료</b>현재 popup 응답 계약 조사를 마치고 명시적 지급 행만 승격한다.</li>
+          <li><b>KODEX 429 대응</b>속도 제한과 Retry-After를 준수하는 저속 canary 또는 공식 공개 파일 경로를 확인한다. 우회나 보안 예외는 사용하지 않는다.</li>
+          <li><b>ACE·TIME policy 게이트 해소</b>이용정책과 robots 허용 범위를 확인하기 전까지 수집을 중지하고, 승인된 공개 계약만 adapter 대상으로 삼는다.</li>
+          <li><b>추가 운용사 adapter 확장</b>KIWOOM, HANARO 및 중소형 운용사를 canary → 전수 순으로 확장한다.</li>
+          <li><b>전수 재병합과 품질 게이트</b>운용사 단위 완료 때마다 canonical 1,141 shape, provenance, quarantine, 필드 커버리지를 다시 검증한다.</li>
+          <li><b>파생 필드와 taxonomy 재검토</b>공식 메타데이터로 asset class·region·sector·distribution eligibility를 산출한 뒤 200개 리뷰를 다시 대조하고 택소노미 변경안을 별도 승인받는다.</li>
+        </ol>
+      </article>
+      <article class="card">
+        <h3>전수 확장 운영안</h3>
+        <table>
+          <tbody>
+            <tr><th>병렬화 단위</th><td>운용사/호스트 단위</td></tr>
+            <tr><th>권장 worker</th><td>3~5개, 서로 다른 호스트 배정</td></tr>
+            <tr><th>동일 호스트</th><td>1 worker + 1.2초 이상 간격, Retry-After 준수</td></tr>
+            <tr><th>배치 단위</th><td>초기 10~20개 canary, 안정화 후 25~50개 checkpoint</td></tr>
+            <tr><th>재시작 키</th><td>sourceId + shortCode의 최신 성공 상태</td></tr>
+            <tr><th>승격 게이트</th><td>identity, raw hash, 필드 evidence, schema 검증</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:14px">서브에이전트는 adapter 구현·출처 계약 조사·QA를 병렬화하는 데 유효하다. 실제 네트워크 수집은 동일 호스트 경쟁을 피하도록 중앙 rate limiter 또는 운용사별 단일 worker가 더 안전하다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>승인 판단 체크포인트</h2>
+    <div class="card">
+      <table>
+        <thead><tr><th>게이트</th><th>현재</th><th>승인 기준</th></tr></thead>
+        <tbody>
+          <tr><td>유니버스 무결성</td><td><span class="status ok">충족</span> 1,141 / shapePreserved</td><td>계속 유지</td></tr>
+          <tr><td>출처 추적성</td><td><span class="status ok">충족</span> 99.97%</td><td>미연결 3건 원인 해소</td></tr>
+          <tr><td>DART PDF 전수 처리</td><td><span class="status ok">충족</span> 911 / 911 · OCR 0 · quarantine 0</td><td>raw windows 2,809건은 영구 직접 승격 금지, semantic allowlist만 허용</td></tr>
+          <tr><td>상품 설명 전수성</td><td><span class="status warn">52.2%</span></td><td>차단 해소 및 추가 운용사 adapter 확장 후 재평가</td></tr>
+          <tr><td>실제 분배 이력</td><td><span class="status warn">21.1%</span> · 1,586 events</td><td>SOL 공식 이력 계약 조사 및 추가 운용사 확장</td></tr>
+          <tr><td>지역·섹터 판단 근거</td><td><span class="status bad">0%</span></td><td>eligibility unknown을 유의미하게 축소</td></tr>
+          <tr><td>택소노미 변경</td><td><span class="status info">미실행</span></td><td>메타데이터 보강 결과와 200개 리뷰 대조 후 별도 승인</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="foot">
+    <b>정적 스냅샷 기준:</b> coverage.json 2026-07-22T11:37:39Z. 이 페이지를 프로젝트 HTTP 서버에서 열고 “최신 JSON 다시 읽기”를 누르면 coverage, product source result, distribution history, PLUS/RISE/SOL collection, DART progress/source result, merge quarantine의 현재 값을 다시 읽는다.
+    <div class="file-list">근거 파일: data/normalized/etf-metadata-v2.json · data/reports/metadata-v2/coverage.json · product-metadata-source-result.json · distribution-history-source-result.json · distribution-history-extraction.json · holdings-collection.json · holdings-source-result.json · plus-collection.json · rise-collection.json · sol-product-collection.json · dart-pdf-batch-progress.json · dart-pdf-batch-extraction.json · dart-pdf-batch-source-result.json · source-merge-quarantine.json · publicdata-reconciliation.json</div>
+  </div>
+</main>
+
+<script>
+  const paths = {
+    coverage: '../../data/reports/metadata-v2/coverage.json',
+    product: '../../data/reports/metadata-v2/product-metadata-source-result.json',
+    plus: '../../data/reports/metadata-v2/plus-collection.json',
+    rise: '../../data/reports/metadata-v2/rise-collection.json',
+    sol: '../../data/reports/metadata-v2/sol-product-collection.json',
+    history: '../../data/reports/metadata-v2/distribution-history-extraction.json',
+    quarantine: '../../data/reports/metadata-v2/source-merge-quarantine.json',
+    dartProgress: '../../data/reports/metadata-v2/dart-pdf-batch-progress.json',
+    dartSource: '../../data/reports/metadata-v2/dart-pdf-batch-source-result.json'
+  };
+  const fmt = n => Number(n || 0).toLocaleString('ko-KR');
+  function fieldLine(label, field) {
+    const f = field || { count: 0, pct: 0 };
+    const cls = f.pct === 0 ? 'zero' : f.pct < 25 ? 'low' : '';
+    return `<div class="bar-row"><span>${label}</span><div class="track"><div class="fill ${cls}" style="width:${f.pct}%"></div></div><span class="metric">${fmt(f.count)} · ${f.pct}%</span></div>`;
+  }
+  async function refresh() {
+    const state = document.getElementById('refreshState');
+    state.textContent = 'JSON 읽는 중…';
+    try {
+      const [coverage, product, plus, rise, sol, history, quarantine, dartProgress, dartSource] = await Promise.all(Object.values(paths).map(p => fetch(`${p}?t=${Date.now()}`).then(r => { if (!r.ok) throw new Error(`${p}: ${r.status}`); return r.json(); })));
+      const f = coverage.fieldCoverage;
+      document.getElementById('universe').textContent = fmt(coverage.universeCount);
+      document.getElementById('objectiveCoverage').innerHTML = `${fmt(f.investmentObjective.count)} <small>/ ${f.investmentObjective.pct}%</small>`;
+      document.getElementById('holdingsCoverage').innerHTML = `${fmt(f.holdings.count)} <small>/ ${f.holdings.pct}%</small>`;
+      document.getElementById('provenanceCoverage').textContent = `${coverage.provenance.backedPct}%`;
+      document.getElementById('provenanceSub').textContent = `${fmt(coverage.provenance.selectedValueCount)}개 중 ${fmt(coverage.provenance.backedSelectedValueCount)}개 근거 보유`;
+      const bySource = product.health.emittedBySource || {};
+      const riseDone = bySource.issuer_rise_product || 0;
+      document.getElementById('plusDone').textContent = `${fmt(bySource.plus_official_product_html || plus.completedCount)} / ${fmt(plus.inventoryCount)}`;
+      document.getElementById('plusPending').textContent = fmt(plus.pendingMappedCount);
+      document.getElementById('riseDone').textContent = `${fmt(riseDone)} / ${fmt(rise.targetCount)}`;
+      document.getElementById('risePending').textContent = fmt(Math.max(0, rise.targetCount - riseDone));
+      document.getElementById('solDone').textContent = `${fmt(sol.completedCount)} / ${fmt(sol.targetCount)}`;
+      document.getElementById('tigerDone').textContent = `${fmt(bySource.issuer_tiger_product)} / 229`;
+      document.getElementById('hanaDone').textContent = fmt(bySource.hana_1q_official_product_html);
+      document.getElementById('wonDone').textContent = fmt(bySource.won_official_product_html);
+      document.getElementById('koactDone').textContent = fmt(bySource.koact_official_product_api);
+      document.getElementById('thejDone').textContent = fmt(bySource.thej_official_product_html);
+      document.getElementById('historyDone').textContent = fmt(history.totals.emittedRecordCount);
+      document.getElementById('historyEvents').textContent = fmt(history.totals.emittedEventCount);
+      document.getElementById('dartDone').textContent = fmt(dartProgress.metrics.successfulCount);
+      document.getElementById('dartAttempted').textContent = fmt(dartProgress.metrics.attemptedCount);
+      document.getElementById('dartTarget').textContent = fmt(dartProgress.metrics.targetCount);
+      document.getElementById('dartIssues').textContent = fmt(dartProgress.metrics.unresolvedAttemptCount);
+      document.getElementById('dartPromoted').textContent = fmt(dartSource.health.fieldCounts['identity.officialName']);
+      document.getElementById('dartObjective').textContent = fmt(dartSource.health.fieldCounts['product.investmentObjective']);
+      document.getElementById('dartBenchmarkDescription').textContent = fmt(dartSource.health.fieldCounts['product.benchmark.description']);
+      document.getElementById('dartSchedule').textContent = fmt(dartSource.health.fieldCounts['distribution.schedule']);
+      document.getElementById('dartFrequency').textContent = fmt(dartSource.health.fieldCounts['distribution.frequency']);
+      document.getElementById('dartEvidenceOnly').textContent = fmt(dartSource.health.skippedEvidenceOnlyFields.length);
+      document.getElementById('mergeQuarantine').textContent = fmt(quarantine.quarantinedCount);
+      document.getElementById('coverageBars').innerHTML = [
+        fieldLine('식별자·공식명·운용사', f.officialName), fieldLine('벤치마크', f.benchmark),
+        fieldLine('보유종목', f.holdings), fieldLine('분배 일정', f.distributionSchedule),
+        fieldLine('설명·투자목적', f.investmentObjective), fieldLine('실제 분배 이력', f.distributionHistory), fieldLine('자산군', f.assetClass),
+        fieldLine('대상 지역', f.targetRegions),
+        fieldLine('섹터·국가 비중', { count: (f.sectorWeights?.count || 0) + (f.countryWeights?.count || 0), pct: Math.max(f.sectorWeights?.pct || 0, f.countryWeights?.pct || 0) })
+      ].join('');
+      document.getElementById('snapshotTime').textContent = `최신 coverage ${new Date(coverage.generatedAt).toLocaleString('ko-KR')}`;
+      state.textContent = '최신 JSON 반영 완료';
+    } catch (error) {
+      state.textContent = '정적 스냅샷 유지 · HTTP 서버에서 갱신 가능';
+      console.warn(error);
+    }
+  }
+  document.getElementById('refreshButton').addEventListener('click', refresh);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "bundle": "claude-reverse-search-hardening",
+  "createdAt": "2026-07-22",
+  "baseline": {
+    "branch": "feat/etf-metadata-pipeline",
+    "commit": "bf77449",
+    "canonicalEtfCount": 1141,
+    "taxonomyTagCount": 56,
+    "unclassifiedEtfCount": 0,
+    "regressionTestCount": 167
+  },
+  "entrypoint": "CLAUDE_CODE_PROMPT.md",
+  "documents": [
+    "README.md",
+    "CURRENT_STATE.md",
+    "WORK_ORDER.md",
+    "ACCEPTANCE_TESTS.md",
+    "CLAUDE_CODE_PROMPT.md"
+  ],
+  "externalCallsAuthorized": false,
+  "taxonomyMutationAuthorized": false
+}

@@ -29,6 +29,8 @@ pnpm-debug.log*
 Thumbs.db
 .vscode/
 .idea/
+.claude/settings.local.json
+docs/.claude/
 
 # Temporary files
 *.tmp

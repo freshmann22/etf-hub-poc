@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ETF 택소노미 전수 확장 의사결정 리포트</title>
+  <style>
+    :root{--ink:#18231f;--muted:#66726d;--line:#dce5e1;--paper:#f4f7f6;--card:#fff;--mint:#00a98f;--mint-soft:#e2f5f1;--amber:#a56a00;--amber-soft:#fff2d6;--red:#a83e51;--red-soft:#ffe9ed;--blue:#326fbd;--blue-soft:#e9f2ff}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6;word-break:keep-all}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}.hero{padding:56px 0 42px;background:#15332c;color:#fff}.eyebrow{color:#9dd9ce;font-weight:700}.hero h1{margin:8px 0 12px;font-size:clamp(32px,6vw,58px);line-height:1.12;letter-spacing:-.045em}.hero p{max-width:760px;color:#c9dbd6}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}.metric{padding:15px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.07)}.metric b{display:block;font-size:27px}.metric span{font-size:12px;color:#c9dbd6}main{padding:24px 0 60px}.decision{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.panel,.card{padding:21px;border:1px solid var(--line);border-radius:16px;background:var(--card)}h2{margin:0 0 12px;font-size:22px;letter-spacing:-.025em}h3{margin:0 0 8px;font-size:17px}.verdict{border-left:6px solid var(--amber)}.badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700}.amber{background:var(--amber-soft);color:var(--amber)}.green{background:var(--mint-soft);color:#087c6a}.red{background:var(--red-soft);color:var(--red)}.blue{background:var(--blue-soft);color:var(--blue)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.section{margin-top:28px}.muted{color:var(--muted)}ul,ol{margin:9px 0 0;padding-left:21px}li+li{margin-top:6px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);font-size:12px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.step{padding:15px;border-radius:14px;background:#fff;border:1px solid var(--line)}.step b{display:block;color:var(--mint);font-size:12px}.callout{padding:15px 17px;border-radius:13px;background:var(--blue-soft);color:#244d7e}.risk{background:var(--red-soft);color:#763241}.links{display:flex;flex-wrap:wrap;gap:8px}.links a{padding:8px 11px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#176b5e;text-decoration:none;font-size:13px}code{padding:2px 5px;border-radius:5px;background:#edf1ef;font-size:.9em}@media(max-width:760px){.metrics,.grid,.flow,.decision{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}table{font-size:12px}th,td{padding:8px 5px}}@media(max-width:480px){.metrics,.grid,.flow{grid-template-columns:1fr 1fr}.metric b{font-size:22px}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <div class="eyebrow">TAXONOMY 2.0.1 · FULL-SCALE DECISION</div>
+    <h1>200개 파일럿에서<br>1,141개 전수 검토로</h1>
+    <p>개별 ETF 판정표가 아니라, 파일럿이 어떻게 수행됐고 어떤 조건에서 남은 941개로 안전하게 확장할 수 있는지 판단하기 위한 작업 리포트입니다.</p>
+    <div class="metrics">
+      <div class="metric"><b>200 / 200</b><span>최신 표본 검토 완료</span></div>
+      <div class="metric"><b>131</b><span>현재 태그와 완전 일치</span></div>
+      <div class="metric"><b>69</b><span>사람 검토 우선 이견</span></div>
+      <div class="metric"><b>126</b><span>하나 이상 근거 부족 표시</span></div>
+    </div>
+  </div></header>
+
+  <main class="wrap">
+    <section class="decision">
+      <article class="panel verdict">
+        <span class="badge amber">조건부 확장 권고</span>
+        <h2>941개를 지금 그대로 한 번에 돌리지는 않습니다</h2>
+        <p>Claude 호출 자체는 20개 배치 모두 성공했고 캐시 기반 재개도 확인됐습니다. 그러나 현재 200개는 오류 탐색용 목적 표본이고, 남은 941개 중 671개는 상품명·기초지수 위주의 얇은 데이터입니다. 또한 현재 runner는 전수 입력, 안전한 병렬 shard, 단일 merge가 준비되지 않았습니다.</p>
+        <p><b>권장 순서:</b> 69개 이견 정책 정리 → runner 병렬 안전성 보강 → 근거가 있는 C등급 270개 우선 확장 → D등급 671개 데이터 보강 후 검토.</p>
+      </article>
+      <article class="panel">
+        <h2>파일럿 무결성</h2>
+        <ul>
+          <li>배치 JSON 20개 모두 <code>success</code></li>
+          <li>각 배치 10개, 고유 ETF 200개</li>
+          <li>합본 JSON·CSV 모두 200행</li>
+          <li>최신 표본과 코드 집합·순서 완전 일치</li>
+          <li>마지막 표본 <code>0007N0</code>까지 재실행 확인</li>
+          <li>16개 재호출, 4개 최신 캐시 재사용</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>1. 작업이 어떻게 진행됐나</h2>
+      <div class="flow">
+        <div class="step"><b>01 · 표본 구성</b>A/B 전량과 C등급의 태그 공백·저신뢰·경계 사례를 합쳐 200개 선정</div>
+        <div class="step"><b>02 · 블라인드 리뷰</b>현재 태그는 숨기고 taxonomy 정의와 ETF 근거만 Claude에 전달</div>
+        <div class="step"><b>03 · 중단·재개</b>OAuth 만료를 갱신한 뒤 prompt hash가 맞는 배치는 캐시로 통과</div>
+        <div class="step"><b>04 · 단일 합본</b>20개 배치를 순서대로 모아 JSON·CSV·HTML을 200개로 재생성</div>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>표본 구성</h3><p><b>A 3 · B 106 · C 91 · D 0</b></p><p class="muted">전체 1,141개의 17.5%. 무작위 표본이 아니라 오류와 경계 사례 발견을 위한 목적 표본입니다.</p></article>
+        <article class="card"><h3>비교 결과</h3><p><b>완전 일치율 65.5%</b></p><p class="muted">멀티라벨 중 태그 하나만 달라도 이견으로 계산됩니다. 이 수치는 정답률이 아니라 동일 근거에 대한 재현 일치율입니다.</p></article>
+        <article class="card"><h3>근거 부족</h3><p><b>배당 112 · 섹터 24 · 지역 8</b></p><p class="muted">한 ETF가 여러 facet에서 부족할 수 있어 facet 합계는 126보다 큽니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2. 200개 결과를 어떻게 해석해야 하나</h2>
+      <div class="callout"><b>블라인드 리뷰는 ground truth가 아닙니다.</b> 동일 taxonomy와 제공된 동일 근거로 분류가 재현되는지 보는 독립 모델 1차 심사입니다. 외부 사실 확인을 금지했으므로 실제 상품 진실성 검증보다 규칙·정의·근거의 일관성을 측정합니다.</div>
+      <div class="grid">
+        <article class="card"><h3>유효한 신호</h3><ul><li>반복 이견이 정의·규칙의 빈틈을 드러냄</li><li>근거가 약한 facet을 우선순위화</li><li>캐시·재개·합본의 운영 가능성 검증</li></ul></article>
+        <article class="card"><h3>과대해석 금지</h3><ul><li>65.5%를 전체 정확도로 외삽 금지</li><li>D등급 671개는 표본에 없음</li><li>단일 모델·단일 패스 결과</li></ul></article>
+        <article class="card"><h3>사람 검수 우선</h3><ul><li>이견 69개 전수 adjudication</li><li>일치군 131개 중 5~10% 층화 확인</li><li>정책 이견과 데이터 이견을 분리</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3. 전수 1,141개로 확장 가능한가</h2>
+      <table>
+        <thead><tr><th>구간</th><th>규모</th><th>현재 상태</th><th>권장 처리</th></tr></thead>
+        <tbody>
+          <tr><td>파일럿 A/B/C</td><td>200</td><td>완료</td><td>69개 이견 정책·근거 검수 후 기준 고정</td></tr>
+          <tr><td>잔여 enriched C</td><td>270</td><td>구성종목 등 일부 근거 보유</td><td>50~100개 wave로 우선 확장, wave별 gate</td></tr>
+          <tr><td>thin D</td><td>671</td><td>상품명·기초지수 중심</td><td>코드·holdings·설명·국가/산업·분배 근거 보강 후 실행</td></tr>
+          <tr><td><b>전체</b></td><td><b>1,141</b></td><td>규칙상 최소 태그는 존재</td><td>“태그 존재”와 “리뷰 완료”를 구분해 관리</td></tr>
+        </tbody>
+      </table>
+      <p class="risk"><b>현재 데이터 한계:</b> 전체의 58.8%인 671개가 D등급이며, 1,119개(98.1%)는 배당 근거가 없습니다. 산업·국가 비중, 상품 설명·투자 목적, 실제 분배금 이력은 1,141개 전부 누락입니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>4. 병렬 실행 권장안</h2>
+      <div class="decision">
+        <article class="panel">
+          <span class="badge green">권장: 3 workers × batch 10</span>
+          <h2>5개보다 3개부터 시작</h2>
+          <ul>
+            <li>배치 10은 20회 모두 5분 timeout 안에 성공</li>
+            <li>현재 협업 슬롯은 루트 포함 4개라 worker 최대 3개</li>
+            <li>동일 OAuth quota를 공유하므로 5개 동시는 429·throttle 위험 증가</li>
+            <li>배치 15~20은 출력·timeout 실패 시 재작업 손실이 커짐</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>실측 기반 추정</h2>
+          <table><tbody>
+            <tr><th>파일럿 표시 비용</th><td>$9.03 / 200</td></tr>
+            <tr><th>배치 처리시간</th><td>2.04~3.49분, 중앙 2.78분</td></tr>
+            <tr><th>남은 941 순차</th><td>약 4.5시간</td></tr>
+            <tr><th>3-worker 현실 예상</th><td>약 1.7~2.1시간</td></tr>
+            <tr><th>남은 표시 비용 추정</th><td>약 $42.46</td></tr>
+          </tbody></table>
+          <p class="muted">비용은 Claude CLI의 modelUsage 표기 합계로, OAuth 구독의 실제 추가 청구액과 같다고 단정할 수 없습니다.</p>
+        </article>
+      </div>
+      <h3 style="margin-top:18px">3-worker shard 예시</h3>
+      <table><thead><tr><th>worker</th><th>절대 offset</th><th>limit</th><th>예상 batch</th></tr></thead><tbody>
+        <tr><td>A</td><td>200</td><td>320</td><td>21~52</td></tr>
+        <tr><td>B</td><td>520</td><td>320</td><td>53~84</td></tr>
+        <tr><td>C</td><td>840</td><td>301</td><td>85~115</td></tr>
+      </tbody></table>
+      <p class="muted">이 shard는 전수 1,141개 manifest가 만들어진 뒤에만 유효합니다. 현재 입력 파일은 200개뿐입니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>5. 병렬화 전에 반드시 고칠 것</h2>
+      <div class="grid">
+        <article class="card"><span class="badge red">입력</span><h3>전수 manifest</h3><p>현재 표본 생성기는 200개로 고정입니다. 1,141개 코드 순서, taxonomy·model·prompt·schema 버전을 고정한 immutable manifest가 필요합니다.</p></article>
+        <article class="card"><span class="badge red">쓰기 충돌</span><h3>worker와 merge 분리</h3><p>현재 여러 worker가 공용 합본 JSON·CSV·HTML을 덮어쓸 수 있습니다. worker는 batch 파일만 쓰고, 마지막 단일 merge 단계가 전수 결과를 한 번만 생성해야 합니다.</p></article>
+        <article class="card"><span class="badge red">복구</span><h3>retry와 원자적 저장</h3><p>429·5xx·network·timeout에 exponential backoff와 jitter를 적용하고, 임시 파일 검증 후 atomic rename으로 성공 결과를 확정해야 합니다.</p></article>
+      </div>
+      <ul>
+        <li>파일명에 범위와 코드 hash 포함: <code>batch-000200-000209-&lt;hash&gt;.json</code></li>
+        <li><code>promptHash</code>에 정확한 model ID, schemaVersion, runnerVersion 포함</li>
+        <li>batch range gap/overlap 0, 전수 unique code 1,141, taxonomy 고아 tag 0 검증</li>
+        <li>summary 수치를 rows에서 다시 계산해 JSON·CSV·HTML 간 일치 확인</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>6. 권장 실행 게이트</h2>
+      <ol>
+        <li><b>G0 — 기준 고정:</b> 현재 200 결과를 보존하고 69개 이견을 정책·규칙·데이터 문제로 분류합니다.</li>
+        <li><b>G1 — runner 보강:</b> 전수 manifest, run-id, worker-only, merge-only, retry, atomic write를 구현합니다.</li>
+        <li><b>G2 — 30개 병렬 smoke:</b> 3 workers가 각 배치 하나씩 실행해 429·timeout·덮어쓰기 0을 확인합니다.</li>
+        <li><b>G3 — 잔여 C 270:</b> 50~100개 wave로 처리하고 readiness별 이견·근거 부족 추세가 악화되지 않는지 봅니다.</li>
+        <li><b>G4 — D 671:</b> 데이터 보강 전에는 provisional/candidate로 유지하고, 보강 후 전수 리뷰합니다.</li>
+        <li><b>G5 — 독립 QA:</b> facet·등급·희소태그 층화 표본에 대해 사람 기준 precision/recall/F1과 재실행 Jaccard를 확인합니다.</li>
+      </ol>
+    </section>
+
+    <section class="section panel">
+      <h2>최종 판단</h2>
+      <p><span class="badge green">기술적으로 확장 가능</span> <span class="badge amber">즉시 전수 실행은 보류</span></p>
+      <p>호출·캐시·재개는 파일럿으로 검증됐습니다. 가장 효율적인 시작점은 <b>배치 10, 동시 worker 3개</b>입니다. 다만 200개 입력 고정과 공용 리포트 덮어쓰기 문제를 먼저 해결하고, 69개 이견에서 정책을 고정한 다음 잔여 C등급 270개부터 확장하는 것이 안전합니다. D등급 671개는 데이터 보강 없이 “검증 완료”로 세지 않는 것을 권고합니다.</p>
+      <div class="links">
+        <a href="CLAUDE_TAXONOMY_REVIEW.html">200개 상세 리뷰</a>
+        <a href="ETF_TAXONOMY_REVIEW_SAMPLE.html">검토 표본</a>
+        <a href="ETF_TAXONOMY_DATA_READINESS.html">전수 데이터 준비도</a>
+        <a href="claude-taxonomy-review-comparison.csv">비교 CSV</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

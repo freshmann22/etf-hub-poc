@@ -2,22 +2,40 @@
 //   실행: node scripts/tagging/merge-scores.mjs [batch-0001 batch-0002 ...]  (인자 없으면 validated 전체)
 //   출력: data/tagging/etf-llm-scores.json (LLM측 원본 통합), data/tagging/etf-tag-scores.json (규칙+LLM 최종 병합),
 //         data/tagging/etf-candidate-tags-raw.json (auditor 입력), data/tagging/etf-scoring-cache.json (입력해시 캐시)
+//   --taxonomy=/--rule-scores=/--batches-dir=/--out-dir= 로 개별 override 가능(기본은 위 canonical 경로).
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readdirSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { readJsonCache, writeJsonCache, cacheExists } from '../metadata/lib/cache.js';
+import { assertFullUniverse } from './lib/full-universe-guard.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
-const VALIDATED_DIR = resolve(ROOT, 'data/tagging/batches/validated');
-const REVIEWS_DIR = resolve(ROOT, 'data/tagging/batches/reviews');
-const INPUTS_DIR = resolve(ROOT, 'data/tagging/batches/inputs');
-const RULE_SCORES_FILE = resolve(ROOT, 'data/tagging/etf-rule-scores.json');
-const TAXONOMY_FILE = resolve(ROOT, 'config/etf-tagging/etf-taxonomy.json');
-const OUT_LLM = resolve(ROOT, 'data/tagging/etf-llm-scores.json');
-const OUT_FINAL = resolve(ROOT, 'data/tagging/etf-tag-scores.json');
-const OUT_CANDIDATES_RAW = resolve(ROOT, 'data/tagging/etf-candidate-tags-raw.json');
-const OUT_CACHE = resolve(ROOT, 'data/tagging/etf-scoring-cache.json');
+
+function parseArgs() {
+  const out = {};
+  const positional = [];
+  for (const arg of process.argv.slice(2)) {
+    const m = arg.match(/^--([^=]+)=(.*)$/);
+    if (m) out[m[1]] = m[2];
+    else positional.push(arg);
+  }
+  return { flags: out, positional };
+}
+const { flags: cliFlags, positional: cliPositional } = parseArgs();
+
+const BATCHES_DIR = resolve(ROOT, cliFlags['batches-dir'] || 'data/tagging/batches');
+const VALIDATED_DIR = resolve(BATCHES_DIR, 'validated');
+const REVIEWS_DIR = resolve(BATCHES_DIR, 'reviews');
+const INPUTS_DIR = resolve(BATCHES_DIR, 'inputs');
+const RULE_SCORES_FILE = resolve(ROOT, cliFlags['rule-scores'] || 'data/tagging/etf-rule-scores.json');
+const TAXONOMY_FILE = resolve(ROOT, cliFlags.taxonomy || 'config/etf-tagging/etf-taxonomy.json');
+const OUT_DIR = resolve(ROOT, cliFlags['out-dir'] || 'data/tagging');
+const OUT_LLM = resolve(OUT_DIR, 'etf-llm-scores.json');
+const OUT_FINAL = resolve(OUT_DIR, 'etf-tag-scores.json');
+const OUT_CANDIDATES_RAW = resolve(OUT_DIR, 'etf-candidate-tags-raw.json');
+const OUT_CACHE = resolve(OUT_DIR, 'etf-scoring-cache.json');
+const CANONICAL_METADATA = resolve(ROOT, 'data/normalized/etf-metadata-v2.json');
 const TAXONOMY_VERSION_FALLBACK = '1.0.0';
 const WORKER_PROMPT_VERSION = '1.0.0';
 
@@ -33,7 +51,7 @@ function inputHash(inputRecord) {
 }
 
 function main() {
-  const explicitBatchIds = process.argv.slice(2);
+  const explicitBatchIds = cliPositional;
   const batchIds = explicitBatchIds.length
     ? explicitBatchIds
     : (cacheExists(VALIDATED_DIR) ? readdirSync(VALIDATED_DIR) : []).filter((f) => f.endsWith('.validated.json')).map((f) => f.replace('.validated.json', ''));
@@ -86,17 +104,23 @@ function main() {
     }
   }
 
-  writeJsonCache(OUT_LLM, { generatedAt: new Date().toISOString(), etfCount: llmByCode.size, etfs: Object.fromEntries(llmByCode) });
-
   // candidateTags 원본 집계(auditor 입력) — 정규화는 auditor 몫, 여기선 그대로 모으기만 한다.
   const candidatesRaw = [];
   for (const [etfCode, llm] of llmByCode) {
     for (const ct of llm.candidateTags || []) candidatesRaw.push({ etfCode, ...ct });
   }
-  writeJsonCache(OUT_CANDIDATES_RAW, { generatedAt: new Date().toISOString(), count: candidatesRaw.length, candidates: candidatesRaw });
-
   // 최종 병합: 동일 tagId는 하나로, 규칙(score=1,confidence=1) 우선 보존, LLM이 더 풍부한 evidence 추가 가능.
   const allCodes = new Set([...ruleByCode.keys(), ...llmByCode.keys()]);
+  if (resolve(OUT_DIR) === resolve(ROOT, 'data/tagging') && cacheExists(CANONICAL_METADATA)) {
+    const canonical = readJsonCache(CANONICAL_METADATA);
+    assertFullUniverse({
+      expectedCount: canonical.universeCount || canonical.records?.length,
+      actualCodes: allCodes,
+      operation: 'tagging:merge canonical write',
+    });
+  }
+  writeJsonCache(OUT_LLM, { generatedAt: new Date().toISOString(), etfCount: llmByCode.size, etfs: Object.fromEntries(llmByCode) });
+  writeJsonCache(OUT_CANDIDATES_RAW, { generatedAt: new Date().toISOString(), count: candidatesRaw.length, candidates: candidatesRaw });
   const finalEtfs = {};
   const conflicts = [];
 

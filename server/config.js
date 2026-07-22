@@ -21,6 +21,7 @@ const num = (v, d) => {
   return Number.isFinite(n) ? n : d;
 };
 const has = (v) => typeof v === 'string' && v.trim() !== '';
+const TAG_BRIEF_MODES = Object.freeze(['manual', 'hybrid', 'live']);
 
 export const MODES = Object.freeze(['mock', 'live', 'hybrid']);
 
@@ -44,6 +45,22 @@ export const config = {
     retries: num(env.HTTP_RETRIES, 2),
   },
 
+  llm: {
+    openrouter: {
+      apiKey: env.OPENROUTER_API_KEY || '',
+      model: env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash',
+      baseUrl: env.OPENROUTER_BASE_URL || 'https://openrouter.ai/api/v1',
+      siteUrl: env.OPENROUTER_SITE_URL || 'http://localhost:4174',
+      appName: env.OPENROUTER_APP_NAME || 'ETF Hub Reverse Search',
+      timeoutMs: num(env.OPENROUTER_TIMEOUT_MS, 30000),
+      retries: num(env.OPENROUTER_RETRIES, 0),
+    },
+    tagBrief: {
+      mode: TAG_BRIEF_MODES.includes(env.TAG_BRIEF_MODE) ? env.TAG_BRIEF_MODE : 'manual',
+      model: env.TAG_BRIEF_MODEL || env.OPENROUTER_MODEL || 'deepseek/deepseek-v4-flash',
+    },
+  },
+
   // provider 별 인증정보 존재 여부(값 자체는 노출 안 함).
   providers: {
     mock: { enabled: true },
@@ -64,7 +81,11 @@ export const config = {
       apiSecret: env.BROKER_API_SECRET || '',
       accountProfile: env.BROKER_ACCOUNT_PROFILE || '',
     },
-    issuer: { configUrl: env.ISSUER_DATA_BASE_URL || '' },
+    issuer: {
+      enabled: env.ISSUER_ENABLED === 'true',
+      tigerPdfUrl: env.ISSUER_TIGER_PDF_URL || '',
+      kodexApiRoot: env.ISSUER_KODEX_API_ROOT || '',
+    },
     // 공공데이터포털(data.go.kr) — ETF 전종목 목록/스냅샷(T+1).
     publicdata: {
       serviceKey: env.PUBLICDATA_SERVICE_KEY || '',
@@ -85,7 +106,7 @@ export function providerCredentialStatus() {
     dart: has(p.dart.apiKey),
     toss: has(p.toss.clientId) && has(p.toss.clientSecret),
     broker: has(p.broker.baseUrl) && has(p.broker.apiKey) && has(p.broker.apiSecret),
-    issuer: has(p.issuer.configUrl),
+    issuer: !!p.issuer.enabled,
     publicdata: !!p.publicdata.enabled && has(p.publicdata.serviceKey),
   };
 }
@@ -97,6 +118,16 @@ export function describeConfig() {
     mode: config.mode,
     defaultProvider: config.defaultProvider,
     cache: config.cache,
+    reverseSearch: {
+      planner: has(config.llm.openrouter.apiKey) ? 'openrouter' : 'rules',
+      model: config.llm.openrouter.model,
+      configured: has(config.llm.openrouter.apiKey),
+    },
+    tagBrief: {
+      mode: config.llm.tagBrief.mode,
+      model: config.llm.tagBrief.model,
+      configured: has(config.llm.openrouter.apiKey),
+    },
     providers: Object.fromEntries(
       Object.entries(cred).map(([id, ok]) => [id, ok ? 'configured' : 'unconfigured'])
     ),

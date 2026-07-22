@@ -1,0 +1,434 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-21T06:57:48.212Z",
+  "expectedCount": 4,
+  "attemptedCount": 4,
+  "pass": true,
+  "fieldCoverage": {
+    "productDescription": 4,
+    "investmentObjective": 4,
+    "benchmarkName": 4,
+    "distributionPolicy": 4,
+    "benchmarkDescription": 4,
+    "officialDocumentLinks": 4
+  },
+  "scaleDecision": "approved_for_full",
+  "rows": [
+    {
+      "retrievedAt": "2026-07-21T06:57:47.550Z",
+      "sourceId": "issuer_rise_product",
+      "shortCode": "114100",
+      "isin": "KR7114100001",
+      "name": "RISE 국고채3년",
+      "productId": "4427",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "distributionPolicy": true,
+          "benchmarkDescription": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국고채 3종목 투자를 통해 듀레이션 약 3년 내외의 채권투자성과를 기대하는 ETF",
+        "investmentObjective": "국고채 3종목 투자를 통해 듀레이션 약 3년 내외의 채권투자성과를 기대하는 ETF — RISE 국고채3년 ETF는 대표 안전자산인 국고채에 투자하는 ETF로, 각 종목을 채권액면금액 동일비중방식으로 투자하는 국내최초 채권형 ETF입니다. / 100억 단위로 거래되는 채권 투자를 약10만원 단위 소액으로 투자 — 국내 대표 안전자산인 국고채를 소액으로 투자해 채권의 자본차익 및 이자를 얻을 수 있습니다. 채권 단일투자 시 발생하는 만기 롤오버 없이 지속적으로 투자할 수 있습니다.",
+        "benchmarkName": "KTB채권지수",
+        "benchmarkDescription": "KTB 국고채 지수(KTB Index)는 KRX의 장내시장 및 장외시장의 호가정보를 활용하여 국내 전체 채권시장의 정보를 반영한 지수로 유동성이 풍부한 KTB 3년 국채선물을 지수구성종목으로 하여 산출하는 지수입니다.",
+        "distributionPolicy": "3, 6, 9, 12월 10일의 전 영업일 기준(비정기지급)",
+        "officialDocumentLinks": [
+          {
+            "label": "투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14464?file=/upload/cdn/2026/03/03/20260303277020ac9a4e4d6.pdf"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14465?file=/upload/cdn/2026/03/03/20260303bb445d7ee2ee4a9.pdf"
+          },
+          {
+            "label": "신탁계약서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14466?file=/upload/cdn/2026/03/03/20260303f75cb094b63f4af.pdf"
+          },
+          {
+            "label": "월간 운용 현황",
+            "url": "https://riseetf.co.kr/pdf/viewer/15335?file=/upload/cdn/2026/07/08/20260708239e654ca3844b0.pdf"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+          "selector": ".key_info:first-of-type .point_title || meta[name=\"description\"]",
+          "snippet": "국고채 3종목 투자를 통해 듀레이션 약 3년 내외의 채권투자성과를 기대하는 ETF"
+        },
+        "investmentObjective": {
+          "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+          "selector": ".key_info .point_title + .point_desc",
+          "snippet": "국고채 3종목 투자를 통해 듀레이션 약 3년 내외의 채권투자성과를 기대하는 ETF — RISE 국고채3년 ETF는 대표 안전자산인 국고채에 투자하는 ETF로, 각 종목을 채권액면금액 동일비중방식으로 투자하는 국내최초 채권형 ETF입니다. / 100억 단위로 거래되는 채권 투자를 약10만원 단위 소액으로 투자 — 국내 대표 안전자산인 국고채를 소액으로 투자해 채권의 자본차익 및 이자를 얻을 수 있습니다. 채권 단일투자 시 발생하는 만기 롤오버 없이 지속적으로 투자할 수 있습니다."
+        },
+        "benchmarkName": {
+          "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+          "selector": "table caption^=\"기본정보\" row:first td:nth-child(2)",
+          "snippet": "KTB채권지수"
+        },
+        "benchmarkDescription": {
+          "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+          "selector": ".intro_index .txt_desc > p || .key_info containing \"기초 지수\" or \"추종\"",
+          "snippet": "KTB 국고채 지수(KTB Index)는 KRX의 장내시장 및 장외시장의 호가정보를 활용하여 국내 전체 채권시장의 정보를 반영한 지수로 유동성이 풍부한 KTB 3년 국채선물을 지수구성종목으로 하여 산출하는 지수입니다."
+        },
+        "distributionPolicy": {
+          "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+          "selector": "table header=\"분배금 지급 기준일\" adjacent value cell",
+          "snippet": "3, 6, 9, 12월 10일의 전 영업일 기준(비정기지급)"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+            "selector": ".btn_file_download a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://riseetf.co.kr/pdf/viewer/14464?file=/upload/cdn/2026/03/03/20260303277020ac9a4e4d6.pdf"
+          },
+          {
+            "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+            "selector": ".btn_file_download a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://riseetf.co.kr/pdf/viewer/14465?file=/upload/cdn/2026/03/03/20260303bb445d7ee2ee4a9.pdf"
+          },
+          {
+            "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+            "selector": ".btn_file_download a[label=\"신탁계약서\"]",
+            "snippet": "신탁계약서: https://riseetf.co.kr/pdf/viewer/14466?file=/upload/cdn/2026/03/03/20260303f75cb094b63f4af.pdf"
+          },
+          {
+            "rawHash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+            "selector": ".btn_file_download a[label=\"월간 운용 현황\"]",
+            "snippet": "월간 운용 현황: https://riseetf.co.kr/pdf/viewer/15335?file=/upload/cdn/2026/07/08/20260708239e654ca3844b0.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T06:33:24.409Z",
+        "path": "data/raw/metadata-v2/rise-product/2026-07-21/114100/2026-07-21T06-33-24-409Z.cc546306ef8925d7.html",
+        "hash": "cc546306ef8925d7adc8671aa1803e42a840c8dc05c23126db6ac4af3889ad6b",
+        "bytes": 706185,
+        "url": "https://riseetf.co.kr/prod/finderDetail/4427"
+      },
+      "reparsedFromRaw": true
+    },
+    {
+      "retrievedAt": "2026-07-21T06:57:47.600Z",
+      "sourceId": "issuer_rise_product",
+      "shortCode": "219390",
+      "isin": "KR7219390002",
+      "name": "RISE 미국S&P원유생산기업(합성 H)",
+      "productId": "4443",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "distributionPolicy": true,
+          "benchmarkDescription": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "국내 최초 미국 원유/가스 탐사 및 생산기업에 투자하는 ETF",
+        "investmentObjective": "국내 최초 미국 원유/가스 탐사 및 생산기업에 투자하는 ETF — RISE 미국S&P원유생산기업(합성H) ETF는 미국에 상장된 원유/가스 탐사 및 생산하는 기업(Oil & Gas Exploration & Production sub-industry)에 동일가중방식으로 투자합니다. / 중장기적인 유가 흐름 및 에너지 안보 확보를 위한 투자사이클의 수혜를 누릴 수 있는 미국 원유관련 기업 투자 — 선물 롤오버 비용이 발생하여 중장기적인 유가 흐름을 추종하지 못하는 원유선물 투자의 대안으로 활용할 수 있습니다. 환율 변동의 고민없이 유가 상승에 미국 원유/가스 탐사, 생산 기업 매수로 유사한 성과를 가져갈 수 있습니다.",
+        "benchmarkName": "S&P Oil & Gas Exploration & Production Select Industry",
+        "benchmarkDescription": "S&P Oil & Gas Exploration & Production Select Industry 지수는 S&P Total Market Index* 구성종목 중 GICS** 산업분류에서 하부 산업인 Oil & Gas Exploration & Product 에 해당하는 원유/가스의 탐사 및 생산 기업으로 구성된 수정 동일가중방식의 주가 지수 입니다. * S&P Total Market Index : NYSE(NYSE Arca 포함), The NYSE MKT, NASDAQ에 상장된 모든 보통주를 포함하는 지수 ** GICS(The Global Industry Classification Standard) : 글로벌 지수산출기관인 S&P와 MSCI가 1999년 공동으로 개발한 증시전용 산업분류체계",
+        "distributionPolicy": "회계기간 종료일",
+        "officialDocumentLinks": [
+          {
+            "label": "투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14133?file=/upload/cdn/2026/01/29/202601293da0b038926f4cb.pdf"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14134?file=/upload/cdn/2026/01/29/20260129326c4b181571464.pdf"
+          },
+          {
+            "label": "신탁계약서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14135?file=/upload/cdn/2026/01/29/20260129f1862a532984459.pdf"
+          },
+          {
+            "label": "월간 운용 현황",
+            "url": "https://riseetf.co.kr/pdf/viewer/15378?file=/upload/cdn/2026/07/08/202607084bdcb78a6f554b9.pdf"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+          "selector": ".key_info:first-of-type .point_title || meta[name=\"description\"]",
+          "snippet": "국내 최초 미국 원유/가스 탐사 및 생산기업에 투자하는 ETF"
+        },
+        "investmentObjective": {
+          "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+          "selector": ".key_info .point_title + .point_desc",
+          "snippet": "국내 최초 미국 원유/가스 탐사 및 생산기업에 투자하는 ETF — RISE 미국S&P원유생산기업(합성H) ETF는 미국에 상장된 원유/가스 탐사 및 생산하는 기업(Oil & Gas Exploration & Production sub-industry)에 동일가중방식으로 투자합니다. / 중장기적인 유가 흐름 및 에너지 안보 확보를 위한 투자사이클의 수혜를 누릴 수 있는 미국 원유관련 기업 투자 — 선물 롤오버 비용이 발생하여 중장기적인 유가 흐름을 추종하지 못하는 원유선물 투자의 대안으로 활용할 수 "
+        },
+        "benchmarkName": {
+          "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+          "selector": "table caption^=\"기본정보\" row:first td:nth-child(2)",
+          "snippet": "S&P Oil & Gas Exploration & Production Select Industry"
+        },
+        "benchmarkDescription": {
+          "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+          "selector": ".intro_index .txt_desc > p || .key_info containing \"기초 지수\" or \"추종\"",
+          "snippet": "S&P Oil & Gas Exploration & Production Select Industry 지수는 S&P Total Market Index* 구성종목 중 GICS** 산업분류에서 하부 산업인 Oil & Gas Exploration & Product 에 해당하는 원유/가스의 탐사 및 생산 기업으로 구성된 수정 동일가중방식의 주가 지수 입니다. * S&P Total Market Index : NYSE(NYSE Arca 포함), The NYSE MKT, NASDAQ에 상장된 모든 보통주를 포함하"
+        },
+        "distributionPolicy": {
+          "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+          "selector": "table header=\"분배금 지급 기준일\" adjacent value cell",
+          "snippet": "회계기간 종료일"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+            "selector": ".btn_file_download a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://riseetf.co.kr/pdf/viewer/14133?file=/upload/cdn/2026/01/29/202601293da0b038926f4cb.pdf"
+          },
+          {
+            "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+            "selector": ".btn_file_download a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://riseetf.co.kr/pdf/viewer/14134?file=/upload/cdn/2026/01/29/20260129326c4b181571464.pdf"
+          },
+          {
+            "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+            "selector": ".btn_file_download a[label=\"신탁계약서\"]",
+            "snippet": "신탁계약서: https://riseetf.co.kr/pdf/viewer/14135?file=/upload/cdn/2026/01/29/20260129f1862a532984459.pdf"
+          },
+          {
+            "rawHash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+            "selector": ".btn_file_download a[label=\"월간 운용 현황\"]",
+            "snippet": "월간 운용 현황: https://riseetf.co.kr/pdf/viewer/15378?file=/upload/cdn/2026/07/08/202607084bdcb78a6f554b9.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T06:33:34.445Z",
+        "path": "data/raw/metadata-v2/rise-product/2026-07-21/219390/2026-07-21T06-33-34-445Z.68f3c3051957e2c6.html",
+        "hash": "68f3c3051957e2c6fccdab4f8001b19d9253bd22117ff40135dc8fcf69f6d3b0",
+        "bytes": 726742,
+        "url": "https://riseetf.co.kr/prod/finderDetail/4443"
+      },
+      "reparsedFromRaw": true
+    },
+    {
+      "retrievedAt": "2026-07-21T06:57:47.645Z",
+      "sourceId": "issuer_rise_product",
+      "shortCode": "253290",
+      "isin": "KR7253290001",
+      "name": "RISE 헬스케어채권혼합",
+      "productId": "4451",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "distributionPolicy": true,
+          "benchmarkDescription": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "채권의 안정성과 주식의 수익성을 겸비한 혼합형 ETF",
+        "investmentObjective": "채권의 안정성과 주식의 수익성을 겸비한 혼합형 ETF — RISE 헬스케어채권혼합 ETF는 자산의 70%수준을 국고채에 투자하고 30%는 헬스케어 섹터 종목에 투자합니다. / 채권의 안정적인 수익률과 헬스케어 섹터의 수익성을 알파로 추구합니다. — 정기 예금 이상의 수익을 추구하는 중위험-중수익 상품입니다. 채권과 헬스케어 주식을 한번에 투자 할 수 있습니다.",
+        "benchmarkName": "FnGuide 헬스케어 채권혼합 지수",
+        "benchmarkDescription": "FnGuide 헬스케어 채권혼합 지수는 FnGuide 헬스케어 지수를 구성하는 주식 종목과 MKF 국고채 3년 지수를 구성하는 국고채권 3종목으로 구성된 지수로 채권과 주식의 비중을 매일 7:3으로 유지합니다.",
+        "distributionPolicy": "6, 12월 지수구성종목 이자지급일 전 영업일 기준(비정기지급)",
+        "officialDocumentLinks": [
+          {
+            "label": "투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14490?file=/upload/cdn/2026/03/03/20260303e1c9c93a079546a.pdf"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14491?file=/upload/cdn/2026/03/03/20260303b1a444684a3744c.pdf"
+          },
+          {
+            "label": "신탁계약서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14154?file=/upload/cdn/2026/01/29/20260129fad85c6a5a3d402.pdf"
+          },
+          {
+            "label": "월간 운용 현황",
+            "url": "https://riseetf.co.kr/pdf/viewer/15439?file=/upload/cdn/2026/07/08/20260708f7fe89b55a2a4b9.pdf"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+          "selector": ".key_info:first-of-type .point_title || meta[name=\"description\"]",
+          "snippet": "채권의 안정성과 주식의 수익성을 겸비한 혼합형 ETF"
+        },
+        "investmentObjective": {
+          "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+          "selector": ".key_info .point_title + .point_desc",
+          "snippet": "채권의 안정성과 주식의 수익성을 겸비한 혼합형 ETF — RISE 헬스케어채권혼합 ETF는 자산의 70%수준을 국고채에 투자하고 30%는 헬스케어 섹터 종목에 투자합니다. / 채권의 안정적인 수익률과 헬스케어 섹터의 수익성을 알파로 추구합니다. — 정기 예금 이상의 수익을 추구하는 중위험-중수익 상품입니다. 채권과 헬스케어 주식을 한번에 투자 할 수 있습니다."
+        },
+        "benchmarkName": {
+          "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+          "selector": "table caption^=\"기본정보\" row:first td:nth-child(2)",
+          "snippet": "FnGuide 헬스케어 채권혼합 지수"
+        },
+        "benchmarkDescription": {
+          "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+          "selector": ".intro_index .txt_desc > p || .key_info containing \"기초 지수\" or \"추종\"",
+          "snippet": "FnGuide 헬스케어 채권혼합 지수는 FnGuide 헬스케어 지수를 구성하는 주식 종목과 MKF 국고채 3년 지수를 구성하는 국고채권 3종목으로 구성된 지수로 채권과 주식의 비중을 매일 7:3으로 유지합니다."
+        },
+        "distributionPolicy": {
+          "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+          "selector": "table header=\"분배금 지급 기준일\" adjacent value cell",
+          "snippet": "6, 12월 지수구성종목 이자지급일 전 영업일 기준(비정기지급)"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+            "selector": ".btn_file_download a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://riseetf.co.kr/pdf/viewer/14490?file=/upload/cdn/2026/03/03/20260303e1c9c93a079546a.pdf"
+          },
+          {
+            "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+            "selector": ".btn_file_download a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://riseetf.co.kr/pdf/viewer/14491?file=/upload/cdn/2026/03/03/20260303b1a444684a3744c.pdf"
+          },
+          {
+            "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+            "selector": ".btn_file_download a[label=\"신탁계약서\"]",
+            "snippet": "신탁계약서: https://riseetf.co.kr/pdf/viewer/14154?file=/upload/cdn/2026/01/29/20260129fad85c6a5a3d402.pdf"
+          },
+          {
+            "rawHash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+            "selector": ".btn_file_download a[label=\"월간 운용 현황\"]",
+            "snippet": "월간 운용 현황: https://riseetf.co.kr/pdf/viewer/15439?file=/upload/cdn/2026/07/08/20260708f7fe89b55a2a4b9.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T06:33:40.820Z",
+        "path": "data/raw/metadata-v2/rise-product/2026-07-21/253290/2026-07-21T06-33-40-820Z.65e51e715324a8a7.html",
+        "hash": "65e51e715324a8a7ec0450bb4fb34d81f5f7b8e1f9aaf5ad8cad65d19753033f",
+        "bytes": 718493,
+        "url": "https://riseetf.co.kr/prod/finderDetail/4451"
+      },
+      "reparsedFromRaw": true
+    },
+    {
+      "retrievedAt": "2026-07-21T06:57:47.697Z",
+      "sourceId": "issuer_rise_product",
+      "shortCode": "275750",
+      "isin": "KR7275750008",
+      "name": "RISE 코스닥150선물인버스",
+      "productId": "4463",
+      "status": "ok",
+      "validation": {
+        "pass": true,
+        "failures": [],
+        "missingFields": [],
+        "fieldCoverage": {
+          "productDescription": true,
+          "investmentObjective": true,
+          "benchmarkName": true,
+          "distributionPolicy": true,
+          "benchmarkDescription": true,
+          "officialDocumentLinks": true
+        }
+      },
+      "metadata": {
+        "productDescription": "코스닥150 선물지수 일간 수익률의 음(-)의 1배 성과를 추종하는 ETF",
+        "investmentObjective": "코스닥150 선물지수 일간 수익률의 음(-)의 1배 성과를 추종하는 ETF — RISE 코스닥150선물인버스 ETF는 코스닥150 선물지수의 일간 수익률의 -1배를 추종하는 것을 목표로 코스닥150 선물에 투자합니다. / 코스닥150 시장의 하락을 예측하는 투자자에게 효과적인 투자 수단 — 코스닥 시장을 대표하는 코스닥150지수의 선물 매도를 통해 하락장에서 수익을 낼 수 있습니다. 기초지수의 일정기간 누적수익률이 변동이 없어도 동기간 RISE 코스닥150선물인버스 ETF의 누적수익률은 마이너스(-)를 기록할 수 있습니다.",
+        "benchmarkName": "코스닥 150 선물지수(F-KOSDAQ 150)",
+        "benchmarkDescription": "코스닥 150 선물지수(F-KOSDAQ 150)는 KOSDAQ 150 선물시장에 상장된 최근월종목의 가격과 동일하게 연동하는 지수로서 2016년 2월 1일부터 산출, 발표하고 있습니다.",
+        "distributionPolicy": "회계기간 종료일",
+        "officialDocumentLinks": [
+          {
+            "label": "투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14709?file=/upload/cdn/2026/03/25/2026032554874bf7a7f040d.pdf"
+          },
+          {
+            "label": "간이투자설명서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14710?file=/upload/cdn/2026/03/25/202603254847a80814764b3.pdf"
+          },
+          {
+            "label": "신탁계약서",
+            "url": "https://riseetf.co.kr/pdf/viewer/14752?file=/upload/cdn/2026/04/03/20260403e7f5cf87ce8c4b7.pdf"
+          },
+          {
+            "label": "월간 운용 현황",
+            "url": "https://riseetf.co.kr/pdf/viewer/15430?file=/upload/cdn/2026/07/08/2026070832ef261746964cf.pdf"
+          }
+        ]
+      },
+      "provenance": {
+        "productDescription": {
+          "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+          "selector": ".key_info:first-of-type .point_title || meta[name=\"description\"]",
+          "snippet": "코스닥150 선물지수 일간 수익률의 음(-)의 1배 성과를 추종하는 ETF"
+        },
+        "investmentObjective": {
+          "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+          "selector": ".key_info .point_title + .point_desc",
+          "snippet": "코스닥150 선물지수 일간 수익률의 음(-)의 1배 성과를 추종하는 ETF — RISE 코스닥150선물인버스 ETF는 코스닥150 선물지수의 일간 수익률의 -1배를 추종하는 것을 목표로 코스닥150 선물에 투자합니다. / 코스닥150 시장의 하락을 예측하는 투자자에게 효과적인 투자 수단 — 코스닥 시장을 대표하는 코스닥150지수의 선물 매도를 통해 하락장에서 수익을 낼 수 있습니다. 기초지수의 일정기간 누적수익률이 변동이 없어도 동기간 RISE 코스닥150선물인버스 ETF의 누적수익률은 마이너스("
+        },
+        "benchmarkName": {
+          "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+          "selector": "table caption^=\"기본정보\" row:first td:nth-child(2)",
+          "snippet": "코스닥 150 선물지수(F-KOSDAQ 150)"
+        },
+        "benchmarkDescription": {
+          "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+          "selector": ".intro_index .txt_desc > p || .key_info containing \"기초 지수\" or \"추종\"",
+          "snippet": "코스닥 150 선물지수(F-KOSDAQ 150)는 KOSDAQ 150 선물시장에 상장된 최근월종목의 가격과 동일하게 연동하는 지수로서 2016년 2월 1일부터 산출, 발표하고 있습니다."
+        },
+        "distributionPolicy": {
+          "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+          "selector": "table header=\"분배금 지급 기준일\" adjacent value cell",
+          "snippet": "회계기간 종료일"
+        },
+        "officialDocumentLinks": [
+          {
+            "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+            "selector": ".btn_file_download a[label=\"투자설명서\"]",
+            "snippet": "투자설명서: https://riseetf.co.kr/pdf/viewer/14709?file=/upload/cdn/2026/03/25/2026032554874bf7a7f040d.pdf"
+          },
+          {
+            "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+            "selector": ".btn_file_download a[label=\"간이투자설명서\"]",
+            "snippet": "간이투자설명서: https://riseetf.co.kr/pdf/viewer/14710?file=/upload/cdn/2026/03/25/202603254847a80814764b3.pdf"
+          },
+          {
+            "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+            "selector": ".btn_file_download a[label=\"신탁계약서\"]",
+            "snippet": "신탁계약서: https://riseetf.co.kr/pdf/viewer/14752?file=/upload/cdn/2026/04/03/20260403e7f5cf87ce8c4b7.pdf"
+          },
+          {
+            "rawHash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+            "selector": ".btn_file_download a[label=\"월간 운용 현황\"]",
+            "snippet": "월간 운용 현황: https://riseetf.co.kr/pdf/viewer/15430?file=/upload/cdn/2026/07/08/2026070832ef261746964cf.pdf"
+          }
+        ]
+      },
+      "raw": {
+        "retrievedAt": "2026-07-21T06:32:13.466Z",
+        "path": "data/raw/metadata-v2/rise-product/2026-07-21/275750/2026-07-21T06-32-13-466Z.458922669eea162a.html",
+        "hash": "458922669eea162abd9cbeca49bee879e847a4fe1640b4429284ee17c2c28f5d",
+        "bytes": 697829,
+        "url": "https://riseetf.co.kr/prod/finderDetail/4463"
+      },
+      "reparsedFromRaw": true
+    }
+  ]
+}

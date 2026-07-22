@@ -23,7 +23,7 @@ http.createServer(async (req, res) => {
   try {
     if (await handleApiRequest(req, res)) return;
     const urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-    const rel = urlPath === '/' ? 'index.html' : urlPath.replace(/^\/+/, '');
+    const rel = urlPath === '/' ? 'etf-explore.html' : urlPath.replace(/^\/+/, '');
     const filePath = normalize(join(root, rel));
     if (!filePath.startsWith(normalize(root))) {
       res.writeHead(403).end('Forbidden');

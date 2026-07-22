@@ -16,11 +16,16 @@
 | **dart** | 전자공시 OpenAPI | API 키 | ✅ 실호출 확인 | – | – | – | – | – | ✅ |
 | **krx** | 거래소 공개 데이터 | 불필요(베스트에포트) | ⚠ 400 발생 | ✅ | ✅ | – | – | – | – |
 | **broker** | 범용 증권사 오픈API | 키·시크릿 | – | – | ✅ | – | – | – | – |
-| **issuer** | 운용사 공식 공개자료 | 다운로드 URL | – | – | – | ✅※ | – | ✅※ | – |
+| **issuer** | 운용사 공식 공개자료 | 명시적 활성화 | ✅ KODEX/TIGER 각 10종 | – | – | ✅ KODEX/TIGER | – | – | – |
 | **kind** | KRX 기업공시(스크래핑) | 활성화 플래그 | – | – | – | – | – | – | ✅※ |
 | **seibro** | 예탁결제원(스크래핑) | 활성화 플래그 | – | – | – | ✅※ | – | ✅※ | – |
 
 ※ = 파서/약관 확인 전까지 "설정되면 시도, 미구현이면 NOT_SUPPORTED 로 정직 표기".
+
+**운용사 공식 구성종목(issuer)**: `ISSUER_ENABLED=true`일 때 삼성 KODEX와 미래에셋 TIGER 공개 PDF 조회를 사용한다.
+KODEX는 공식 상품검색으로 `fId`를 해석해 JSON 목록을 받고, TIGER 숫자형 단축코드는 표준 ISIN을 계산해 HTML 표를 받는다.
+각 대표 10종 10/10 성공을 확인했으며, 미지원 운용사·TIGER 영문 혼합 단축코드는 빈 응답으로 정직하게 폴백한다.
+Explore 구성종목 탭은 이 공식 응답을 우선 사용한다.
 
 **토스증권(toss)**: `POST /oauth2/token`(client_credentials) → Bearer 토큰(캐시), `GET /api/v1/prices`(현재가 배치),
 `GET /api/v1/candles?interval=1d`(전일종가)로 등락률 계산. 실제 자격으로 토큰·시세 응답 200 확인.
@@ -43,7 +48,7 @@ Toss 는 전종목 열거 API 가 없으므로, ETF 유니버스는 **공공데�
 `server/services/etf-service.js` 의 `PREFERENCE` 를 따른다. 위에서부터 `available && supports` 인
 첫 provider 를 시도하고, 실패 시 다음으로 넘어간다.
 
-- `getEtfList`: krx
+- `getEtfList`: publicdata → krx
 - `getEtfSummary` / `getEtfPrice`: **toss** → broker → krx
 - `getEtfHoldings`: issuer → seibro
 - `getEtfPerformance`: (실 provider 없음 — hybrid 는 mock, live 는 unavailable)
@@ -60,7 +65,7 @@ toss 가용 시 번들은 다음을 live 로 채운다(없으면 krx 리스트 �
 - **테마(파생)**: 멤버 ETF 집계 — `return1d/1w/1m`(평균), `tradingValue`(합).
 - **시장요약 1d(파생)**: 상승/하락/보합 종목수, 총거래대금, 최강/최약 테마, 중립 요약문구.
 
-여전히 fixture(=toss 밖): `volatilityScore`, `netAssets`, `totalFee`, `riskTags`, 구성종목·비중(holdings),
+여전히 fixture 또는 부분 커버리지: `volatilityScore`, `netAssets`, `totalFee`, `riskTags`, 구성종목·비중(TIGER 외),
 NAV·괴리율·추적오차, 콘텐츠(뉴스/공시/리서치), 시장요약의 `tradingValueChangeRate`. 커버리지는
 `/api/bundle` 응답 `meta.overlay`(fields/derived/stillMock)로 확인한다.
 

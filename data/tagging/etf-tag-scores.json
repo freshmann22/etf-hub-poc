@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T05:19:47.472Z",
+  "generatedAt": "2026-07-22T12:48:03.047Z",
   "taxonomyVersion": "2.0.1",
   "sourceNote": "v1 etf-tag-scores.json 이관 + v2 rule classifier(assetClass/region) + auditor 승격 태그(원본 worker evidence 재사용, 신규 subagent 호출 없음)",
   "etfCount": 1141,
@@ -2603,18 +2603,6 @@
       "etfCode": "139320",
       "classifications": [
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -2637,10 +2625,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -4019,10 +4026,29 @@
           "mergedFrom": [
             "publicdata_benchmark_enrichment"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -4515,18 +4541,6 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"RISE 200채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -4537,40 +4551,35 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
     "183710": {
       "etfCode": "183710",
       "classifications": [
-        {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "benchmarkName=\"주식국채혼합(주식형)지수\" matched /국고채|통안채|미국채|국채/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
-          "mergedFrom": [
-            "rule-implied"
-          ]
-        },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
@@ -4594,10 +4603,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -8800,10 +8828,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -12812,30 +12859,6 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"KODEX 200미국채혼합50\" matched /국고채|통안채|미국채|국채/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
-          "mergedFrom": [
-            "rule-implied"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -12846,10 +12869,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -13230,10 +13272,29 @@
           "mergedFrom": [
             "publicdata_benchmark_enrichment"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -13345,10 +13406,29 @@
           "mergedFrom": [
             "publicdata_benchmark_enrichment"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -16584,10 +16664,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -16641,10 +16740,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -21332,18 +21450,6 @@
       "etfCode": "400570",
       "classifications": [
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -21366,10 +21472,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -21434,18 +21559,6 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -21456,10 +21569,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -21638,18 +21770,6 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -21660,10 +21780,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -24119,10 +24258,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -24956,18 +25114,6 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"TIGER 미국나스닥100채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -24978,10 +25124,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -25409,32 +25574,27 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"ACE 미국S&P500미국채혼합50액티브\" matched /국고채|통안채|미국채|국채/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
+            "full_auto_audit"
           ],
-          "mergedFrom": [
-            "rule-implied"
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -25478,32 +25638,27 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"ACE 미국나스닥100미국채혼합50액티브\" matched /국고채|통안채|미국채|국채/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
+            "full_auto_audit"
           ],
-          "mergedFrom": [
-            "rule-implied"
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -27163,18 +27318,6 @@
       "etfCode": "447620",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"SOL 미국TOP5채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75,
@@ -27197,10 +27340,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -29997,18 +30159,6 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -30019,10 +30169,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "region.developed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=region_europe_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "region_europe_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -30814,10 +30983,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -30871,10 +31059,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -32401,10 +32608,29 @@
           "mergedFrom": [
             "rule"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -35065,10 +35291,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -35382,18 +35627,6 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"KODEX 테슬라커버드콜채권혼합액티브\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -35404,10 +35637,47 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -35858,10 +36128,29 @@
           "mergedFrom": [
             "publicdata_benchmark_enrichment"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -36453,10 +36742,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -37541,10 +37849,29 @@
           "mergedFrom": [
             "rule"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -37721,10 +38048,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -38551,10 +38897,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -39000,18 +39365,6 @@
       "etfCode": "487950",
       "classifications": [
         {
-          "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.75,
-          "source": "rule",
-          "evidence": [
-            "name=\"KODEX 대만테크고배당다우존스\" matched /미국|S&P\\s*500|나스닥|다우존스|러셀/i"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -39034,10 +39387,34 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "region_remove_dow_jones_provider_false_positive",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -39678,10 +40055,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -39959,30 +40355,6 @@
       "etfCode": "490490",
       "classifications": [
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"SOL 미국배당미국채혼합50\" matched /국고채|통안채|미국채|국채/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
-          "mergedFrom": [
-            "rule-implied"
-          ]
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75,
@@ -40005,10 +40377,47 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -40062,10 +40471,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -40119,10 +40547,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -40472,10 +40919,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -40826,10 +41292,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -40928,10 +41413,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -41300,10 +41804,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -41491,10 +42014,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -42882,24 +43424,6 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule_v2",
-          "mergedFrom": [
-            "rule_v2"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule_v2",
-          "mergedFrom": [
-            "rule_v2"
-          ]
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75,
@@ -42916,6 +43440,19 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
@@ -42924,6 +43461,11 @@
           "type": "score_confidence_logic",
           "tagId": "dividend.monthly",
           "detail": "taxonomy상 dividend.monthly의 minimumScore=0.85, minimumConfidence=0.75인데 worker는 score=0.8, confidence=0.65로 두 값 모두 기준 미달인 채로 확정 분류에 포함함. 근거(distribution.scheduleText=\"매월 마지막 영업일\")는 명확하므로 기준을 충족하도록 상향하거나, 상향할 수 없다면 확정 분류에서 제외해야 함."
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
         }
       ],
       "hasRuleContribution": true,
@@ -43385,6 +43927,19 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
@@ -43393,6 +43948,11 @@
           "type": "below_taxonomy_threshold",
           "tagId": "sector.financials",
           "detail": "score=0.55/confidence=0.45로 taxonomy의 sector.financials minimumScore(0.65)/minimumConfidence(0.5)를 모두 하회함. evidence에서도 '기아/KT/제일기획 등으로 분산되어 절대적 지배력은 아님'이라 인정하는 등 자기모순적 근거로 확정 태그를 부여함. dividend.korea_high_dividend(score=0.7/confidence=0.55, threshold 충족)는 유지하되 sector.financials는 제거해야 함."
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
         }
       ],
       "hasRuleContribution": true,
@@ -43449,24 +44009,6 @@
       "etfCode": "0049K0",
       "classifications": [
         {
-          "tagId": "dividend.monthly",
-          "score": 0.85,
-          "confidence": 0.75,
-          "source": "v1_migration",
-          "mergedFrom": [
-            "v1_migration"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule_v2",
-          "mergedFrom": [
-            "rule_v2"
-          ]
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75,
@@ -43482,6 +44024,32 @@
           "source": "rule_v2",
           "mergedFrom": [
             "rule_v2"
+          ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
@@ -43504,6 +44072,16 @@
           "type": "name_bias",
           "tagId": "dividend.us_dividend_growth",
           "detail": "holdings가 전혀 없고 benchmark명 중 \"Quality Dividend\"가 지수의 절반 비중을 차지한다는 사실만으로 부여됨(구성종목 근거 없음). 게다가 score=0.55/confidence=0.4는 taxonomy 최소 기준(0.65/0.5) 미달인데도 확정 분류로 포함되어, worker 스스로 warnings에서 \"연속 배당 증액 요건 충족 여부 확인 불가\"라고 적어 낮은 확신을 인정하면서 확정 태그로 남겨둔 모순이 있음. 확정 분류에서 제외하고 candidateTag로 이동해야 함."
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
         }
       ],
       "hasRuleContribution": true,
@@ -43816,16 +44394,6 @@
       "etfCode": "0086C0",
       "classifications": [
         {
-          "tagId": "asset.reit",
-          "score": 0.9,
-          "confidence": 0.85,
-          "source": "v1_migration",
-          "mergedFrom": [
-            "v1_migration",
-            "rule_v2"
-          ]
-        },
-        {
           "tagId": "strategy.active",
           "score": 0.9,
           "confidence": 0.8,
@@ -43842,10 +44410,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_holdings_20pct_each",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_holdings_20pct_each",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -44195,6 +44782,19 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
@@ -44203,6 +44803,11 @@
           "type": "score_confidence_logic",
           "tagId": "strategy.value_up",
           "detail": "taxonomy상 strategy.value_up의 minimumConfidence=0.6인데 worker는 confidence=0.55로 기준 미달인 채 확정 분류에 포함함(score=0.8은 기준 충족). holdings가 밸류업 참여 대형주(금융지주 등)와 일치한다는 근거는 있으므로 기준을 충족하도록 소폭 상향하거나, 그럴 수 없다면 확정 분류에서 제외해야 함."
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
         }
       ],
       "hasRuleContribution": true,
@@ -44308,10 +44913,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -44628,10 +45252,29 @@
           "mergedFrom": [
             "publicdata_benchmark_enrichment"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -44683,6 +45326,19 @@
           "mergedFrom": [
             "accepted_ai_review"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
@@ -44692,6 +45348,11 @@
           "artifactId": "taxonomy-human-shortlist-results-v2",
           "reviewedAt": "2026-07-22T12:28:58.021Z",
           "note": "국내 주식 배당지수 상품이며 다우존스 명칭만으로 미국 지역을 부여한 오탐. 미국 태그를 제거하고 국내 태그를 적용."
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
         }
       ],
       "hasRuleContribution": true,
@@ -45996,10 +46657,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -46051,10 +46731,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -46159,6 +46858,19 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
@@ -46167,6 +46879,11 @@
           "type": "evidence_math_error",
           "tagId": "sector.semiconductor",
           "detail": "evidence에서 상위 10종목 합산 비중을 '약 91%'로 주장했으나 실제 나열된 가중치(20.94+20.74+12.41+7.64+7+2.91+2.61+2.47+2.22+2.1)를 합산하면 약 81.04%로 10%p 이상 과장됨. 태그 자체(반도체 상위 2종목만으로도 41.68%)는 충분히 타당하나 evidence 수치는 정정 필요."
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
         }
       ],
       "hasRuleContribution": true,
@@ -47421,10 +48138,29 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -47922,10 +48658,29 @@
           "mergedFrom": [
             "publicdata_benchmark_enrichment"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -48778,10 +49533,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -49302,20 +50076,27 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"TIME 미국나스닥100채권혼합50액티브\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -49414,10 +50195,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -49990,10 +50790,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -50047,10 +50866,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -50886,32 +51724,27 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"1Q 미국S&P500미국채혼합50액티브\" matched /국고채|통안채|미국채|국채/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
+            "full_auto_audit"
           ],
-          "mergedFrom": [
-            "rule-implied"
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -51057,32 +51890,45 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"PLUS 미국S&P500미국채혼합50액티브\" matched /국고채|통안채|미국채|국채/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule-implied"
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -51192,18 +52038,6 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -51214,10 +52048,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -51747,30 +52600,6 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"SOL 미국S&P500미국채혼합50\" matched /국고채|통안채|미국채|국채/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
-          "mergedFrom": [
-            "rule-implied"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -51781,10 +52610,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -51804,18 +52652,6 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -51826,10 +52662,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "region.developed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=region_europe_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "region_europe_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -52200,30 +53055,6 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"PLUS 미국나스닥100미국채혼합50\" matched /국고채|통안채|미국채|국채/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
-          "mergedFrom": [
-            "rule-implied"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -52234,10 +53065,47 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -52714,10 +53582,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -52929,18 +53816,6 @@
           ]
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "해외 지역 신호 없음 → 국내 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -52951,10 +53826,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "region.developed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=region_europe_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "region_europe_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -52974,18 +53868,6 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"KoAct 미국나스닥채권혼합50액티브\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75,
@@ -52996,10 +53878,29 @@
           "mergedFrom": [
             "rule"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -53088,32 +53989,27 @@
           ]
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"1Q 미국나스닥100미국채혼합50액티브\" matched /국고채|통안채|미국채|국채/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
+            "full_auto_audit"
           ],
-          "mergedFrom": [
-            "rule-implied"
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -54064,10 +54960,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -54346,10 +55261,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -54631,10 +55565,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -54904,10 +55857,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -55039,10 +56011,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -55242,18 +56233,6 @@
       "etfCode": "0162Z0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"RISE 삼성전자SK하이닉스채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -55276,10 +56255,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -55434,18 +56432,6 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -55456,10 +56442,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -55647,18 +56652,6 @@
       "etfCode": "0177N0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"KODEX 삼성전자SK하이닉스채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -55681,40 +56674,35 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
     "0178H0": {
       "etfCode": "0178H0",
       "classifications": [
-        {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule",
-          "evidence": [
-            "name=\"IBK 미국AI TOP10국채혼합50\" matched /국고채|통안채|미국채|국채/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7,
-          "source": "rule-implied",
-          "evidence": [
-            "implied by asset.bond.government"
-          ],
-          "mergedFrom": [
-            "rule-implied"
-          ]
-        },
         {
           "tagId": "region.us",
           "score": 0.85,
@@ -55738,10 +56726,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -55884,18 +56891,6 @@
       "etfCode": "0182S0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"1Q K반도체TOP2채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -55918,10 +56913,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -55974,18 +56988,6 @@
       "etfCode": "0183V0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"KIWOOM 삼성전자&SK하이닉스채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -56008,10 +57010,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56055,20 +57076,27 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"1Q 200채권혼합50액티브\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
           "mergedFrom": [
-            "rule"
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
           ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56268,18 +57296,6 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"1Q 코스닥150채권혼합50액티브\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -56290,10 +57306,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56313,18 +57348,6 @@
           ]
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6,
-          "source": "rule-default",
-          "evidence": [
-            "채권/원자재/리츠/혼합/통화 신호 없음 → 주식 기본값"
-          ],
-          "mergedFrom": [
-            "rule-default"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -56335,10 +57358,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_commodity_explicit_name_and_benchmark",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_commodity_explicit_name_and_benchmark",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56550,18 +57592,6 @@
           ]
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"SOL 코스피200채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5,
@@ -56572,10 +57602,47 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        },
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56812,10 +57879,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=dividend_monthly_frequency_and_schedule",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "dividend_monthly_frequency_and_schedule",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56868,18 +57954,6 @@
       "etfCode": "0203S0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"WON 삼성전자현대차채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -56902,10 +57976,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -56958,18 +58051,6 @@
       "etfCode": "0206G0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"1Q 현대차기아채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6,
@@ -56992,10 +58073,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -57048,18 +58148,6 @@
       "etfCode": "0216K0",
       "classifications": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65,
-          "source": "rule",
-          "evidence": [
-            "name=\"KIWOOM 미국우주테크TOP2채권혼합50\" matched /채권|종합채권|금리|KOFR|통안/"
-          ],
-          "mergedFrom": [
-            "rule"
-          ]
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75,
@@ -57082,10 +58170,29 @@
           "mergedFrom": [
             "rule-default"
           ]
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1,
+          "source": "full_auto_audit",
+          "mergedFrom": [
+            "full_auto_audit"
+          ],
+          "evidence": [
+            "rule=asset_mixed_explicit_50_50",
+            "appliedAt=2026-07-22T12:48:03.047Z"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "full_auto_audit",
+          "ruleId": "asset_mixed_explicit_50_50",
+          "appliedAt": "2026-07-22T12:48:03.047Z"
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": false
     },
@@ -57723,5 +58830,43 @@
     "acceptedPolicy": "project_owner_accepted_all_ai_recommendations",
     "reviewedAt": "2026-07-22T12:28:58.021Z",
     "appliedCount": 2
+  },
+  "automatedFullAudit": {
+    "schemaVersion": "taxonomy-full-auto-audit-v1",
+    "appliedAt": "2026-07-22T12:48:03.047Z",
+    "universeCount": 1141,
+    "actionCount": 93,
+    "affectedEtfCount": 86,
+    "quarantinedAssignments": [
+      {
+        "etfCode": "0192T0",
+        "tagId": "sector.healthcare_bio_pharma",
+        "reason": "broad_top10_sector_threshold_missing"
+      },
+      {
+        "etfCode": "0192T0",
+        "tagId": "sector.ev_battery",
+        "reason": "broad_top10_sector_threshold_missing"
+      },
+      {
+        "etfCode": "0192T0",
+        "tagId": "sector.semiconductor",
+        "reason": "broad_top10_sector_threshold_missing"
+      },
+      {
+        "etfCode": "487130",
+        "tagId": "sector.ai_power_infrastructure",
+        "reason": "mandate_vs_holdings_threshold_missing"
+      },
+      {
+        "etfCode": "157490",
+        "tagId": "sector.game_entertainment_media",
+        "reason": "multi_sector_threshold_missing"
+      }
+    ],
+    "dartLineageAudit": {
+      "schemaVersion": "dart-lineage-audit-v1",
+      "highRiskRecordCount": 46
+    }
   }
 }

@@ -4,11 +4,11 @@
 <style>
 :root{--ink:#15231f;--muted:#65736f;--line:#dce6e2;--paper:#f7faf9;--mint:#00b89c;--mint2:#e5f8f3;--blue:#3478db;--amber:#a66b00;--red:#b43f51}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font-family:Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6;word-break:keep-all}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}header{padding:72px 0 42px;background:linear-gradient(135deg,#0e2822,#164d43);color:#fff}header p{max-width:800px;color:#c8ddd7;font-size:18px}h1{margin:0 0 18px;font-size:clamp(36px,6vw,64px);line-height:1.15;letter-spacing:-.05em}h2{margin:0 0 10px;font-size:32px;letter-spacing:-.04em}section{padding:42px 0}.notice{padding:18px 20px;border-left:5px solid var(--mint);border-radius:12px;background:#fff}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}.metric{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff}.metric span,.metric small{display:block;color:var(--muted)}.metric strong{display:block;margin:5px 0;font-size:36px}.grade-a{border-top:5px solid var(--mint)}.grade-b{border-top:5px solid var(--blue)}.grade-c{border-top:5px solid var(--amber)}.grade-d{border-top:5px solid var(--red)}.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{padding:26px;border:1px solid var(--line);border-radius:20px;background:#fff}.big{font-size:32px;font-weight:900}.muted,small{display:block;color:var(--muted)}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{position:sticky;top:0;background:#edf4f1;font-size:13px}td small{font-size:11px}.bar{height:8px;min-width:90px;border-radius:8px;background:#e9efed;overflow:hidden}.bar i{display:block;height:100%;background:var(--amber)}.controls{position:sticky;top:0;z-index:3;display:flex;flex-wrap:wrap;gap:10px;padding:14px 0;background:rgba(247,250,249,.96)}input,select{min-height:44px;padding:0 13px;border:1px solid #cbd8d3;border-radius:10px;background:#fff;font:inherit}input{flex:1;min-width:240px}.table-wrap{overflow:auto;max-height:720px;border:1px solid var(--line);border-radius:16px}.badge{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;color:#fff;font-weight:900}.badge-a{background:var(--mint)}.badge-b{background:var(--blue)}.badge-c{background:var(--amber)}.badge-d{background:var(--red)}.chip{display:inline-block;margin:2px;padding:3px 7px;border-radius:999px;background:var(--mint2);font-size:11px}.links{display:flex;flex-wrap:wrap;gap:10px}.links a{padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#075e52;text-decoration:none}footer{padding:30px 0 60px;color:var(--muted);font-size:13px}@media(max-width:760px){.metrics,.split{grid-template-columns:1fr 1fr}th:nth-child(4),td:nth-child(4){display:none}}@media(max-width:480px){.metrics,.split{grid-template-columns:1fr}header{padding-top:45px}th:nth-child(5),td:nth-child(5){display:none}}
 </style></head><body>
-<header><div class="wrap"><small>택소노미 리뷰 · 1단계</small><h1>ETF 1,141개<br>데이터 준비도 감사</h1><p>각 ETF에 분류 근거가 얼마나 준비되어 있는지 측정했습니다. 이 등급은 현재 태그의 정답률이 아니라, 사람이 분류를 검토할 때 사용할 수 있는 증거의 충분함을 뜻합니다.</p><small>생성: 2026년 7월 22일 오후 8:37 · 산정 기준 vmetadata-v2-bridge-1.0.0</small></div></header>
-<main><section><div class="wrap"><div class="notice"><b>핵심 결론</b><br>상세 메타데이터가 있는 ETF는 910개, 상품명·기초지수 중심의 얇은 데이터는 231개입니다. 사람의 택소노미 리뷰를 먼저 진행할 수 있는 A·B등급은 <b>548개</b>, 데이터 수집이 먼저인 C·D등급은 <b>593개</b>입니다.</div><div class="metrics"><article class="metric grade-a"><span>A등급</span><strong>91</strong><small>8% · 상세 리뷰 가능</small></article><article class="metric grade-b"><span>B등급</span><strong>457</strong><small>40.1% · 조건부 리뷰</small></article><article class="metric grade-c"><span>C등급</span><strong>340</strong><small>29.8% · 근거 보강 우선</small></article><article class="metric grade-d"><span>D등급</span><strong>253</strong><small>22.2% · 얇은 데이터</small></article></div></div></section>
-<section><div class="wrap"><h2>전체 기반 상태</h2><div class="split"><article class="panel"><span class="big">910 / 1141</span><b>상세 메타데이터 연결</b><p class="muted">나머지 231개는 전체 유니버스 확장 단계에서 상품명과 기초지수명 위주로 분류되었습니다.</p></article><article class="panel"><span class="big">867 / 1141</span><b>표준 KRX 숫자 코드</b><p class="muted">274개는 네이버 내부 식별자 형태여서 다른 데이터와 결합할 때 코드 해소가 필요합니다.</p></article></div></div></section>
-<section><div class="wrap"><h2>가장 많이 비어 있는 근거</h2><p class="muted">수치가 높을수록 우선 수집 대상입니다.</p><div class="table-wrap"><table><thead><tr><th>항목</th><th>누락 ETF</th><th>누락률</th><th>규모</th></tr></thead><tbody><tr><td>산업·국가 비중</td><td>1,141</td><td>100%</td><td><div class="bar"><i style="width:100%"></i></div></td></tr><tr><td>실제 분배금 이력</td><td>903</td><td>79.1%</td><td><div class="bar"><i style="width:79.1%"></i></div></td></tr><tr><td>구성종목</td><td>522</td><td>45.7%</td><td><div class="bar"><i style="width:45.7%"></i></div></td></tr><tr><td>분배 일정</td><td>498</td><td>43.6%</td><td><div class="bar"><i style="width:43.6%"></i></div></td></tr><tr><td>상품 설명·투자 목적</td><td>432</td><td>37.9%</td><td><div class="bar"><i style="width:37.9%"></i></div></td></tr><tr><td>표준 KRX 코드</td><td>274</td><td>24%</td><td><div class="bar"><i style="width:24%"></i></div></td></tr></tbody></table></div></div></section>
-<section><div class="wrap"><h2>분류 관점별 근거 수준</h2><p class="muted">‘높음’은 해당 관점을 확정할 만한 복수의 직접 근거가 있다는 뜻입니다. ‘낮음’은 주로 상품명 또는 기초지수명 하나에 의존합니다.</p><div class="table-wrap"><table><thead><tr><th>분류 관점</th><th>높음</th><th>보통</th><th>낮음</th><th>없음</th></tr></thead><tbody><tr><td><b>자산군</b></td><td>0 (0%)</td><td>709 (62.1%)</td><td>432 (37.9%)</td><td>0 (0%)</td></tr><tr><td><b>지역</b></td><td>0 (0%)</td><td>0 (0%)</td><td>1141 (100%)</td><td>0 (0%)</td></tr><tr><td><b>섹터·테마</b></td><td>0 (0%)</td><td>619 (54.3%)</td><td>522 (45.7%)</td><td>0 (0%)</td></tr><tr><td><b>구조·전략</b></td><td>0 (0%)</td><td>709 (62.1%)</td><td>432 (37.9%)</td><td>0 (0%)</td></tr><tr><td><b>배당</b></td><td>238 (20.9%)</td><td>0 (0%)</td><td>405 (35.5%)</td><td>498 (43.6%)</td></tr></tbody></table></div></div></section>
+<header><div class="wrap"><small>택소노미 리뷰 · 1단계</small><h1>ETF 1,141개<br>데이터 준비도 감사</h1><p>각 ETF에 분류 근거가 얼마나 준비되어 있는지 측정했습니다. 이 등급은 현재 태그의 정답률이 아니라, 사람이 분류를 검토할 때 사용할 수 있는 증거의 충분함을 뜻합니다.</p><small>생성: 2026년 7월 22일 오후 9:48 · 산정 기준 vmetadata-v2-bridge-1.0.0</small></div></header>
+<main><section><div class="wrap"><div class="notice"><b>핵심 결론</b><br>상세 메타데이터가 있는 ETF는 908개, 상품명·기초지수 중심의 얇은 데이터는 233개입니다. 사람의 택소노미 리뷰를 먼저 진행할 수 있는 A·B등급은 <b>547개</b>, 데이터 수집이 먼저인 C·D등급은 <b>594개</b>입니다.</div><div class="metrics"><article class="metric grade-a"><span>A등급</span><strong>91</strong><small>8% · 상세 리뷰 가능</small></article><article class="metric grade-b"><span>B등급</span><strong>456</strong><small>40% · 조건부 리뷰</small></article><article class="metric grade-c"><span>C등급</span><strong>340</strong><small>29.8% · 근거 보강 우선</small></article><article class="metric grade-d"><span>D등급</span><strong>254</strong><small>22.3% · 얇은 데이터</small></article></div></div></section>
+<section><div class="wrap"><h2>전체 기반 상태</h2><div class="split"><article class="panel"><span class="big">908 / 1141</span><b>상세 메타데이터 연결</b><p class="muted">나머지 233개는 전체 유니버스 확장 단계에서 상품명과 기초지수명 위주로 분류되었습니다.</p></article><article class="panel"><span class="big">867 / 1141</span><b>표준 KRX 숫자 코드</b><p class="muted">274개는 네이버 내부 식별자 형태여서 다른 데이터와 결합할 때 코드 해소가 필요합니다.</p></article></div></div></section>
+<section><div class="wrap"><h2>가장 많이 비어 있는 근거</h2><p class="muted">수치가 높을수록 우선 수집 대상입니다.</p><div class="table-wrap"><table><thead><tr><th>항목</th><th>누락 ETF</th><th>누락률</th><th>규모</th></tr></thead><tbody><tr><td>산업·국가 비중</td><td>1,141</td><td>100%</td><td><div class="bar"><i style="width:100%"></i></div></td></tr><tr><td>실제 분배금 이력</td><td>903</td><td>79.1%</td><td><div class="bar"><i style="width:79.1%"></i></div></td></tr><tr><td>구성종목</td><td>522</td><td>45.7%</td><td><div class="bar"><i style="width:45.7%"></i></div></td></tr><tr><td>분배 일정</td><td>501</td><td>43.9%</td><td><div class="bar"><i style="width:43.9%"></i></div></td></tr><tr><td>상품 설명·투자 목적</td><td>435</td><td>38.1%</td><td><div class="bar"><i style="width:38.1%"></i></div></td></tr><tr><td>표준 KRX 코드</td><td>274</td><td>24%</td><td><div class="bar"><i style="width:24%"></i></div></td></tr></tbody></table></div></div></section>
+<section><div class="wrap"><h2>분류 관점별 근거 수준</h2><p class="muted">‘높음’은 해당 관점을 확정할 만한 복수의 직접 근거가 있다는 뜻입니다. ‘낮음’은 주로 상품명 또는 기초지수명 하나에 의존합니다.</p><div class="table-wrap"><table><thead><tr><th>분류 관점</th><th>높음</th><th>보통</th><th>낮음</th><th>없음</th></tr></thead><tbody><tr><td><b>자산군</b></td><td>0 (0%)</td><td>706 (61.9%)</td><td>435 (38.1%)</td><td>0 (0%)</td></tr><tr><td><b>지역</b></td><td>0 (0%)</td><td>0 (0%)</td><td>1141 (100%)</td><td>0 (0%)</td></tr><tr><td><b>섹터·테마</b></td><td>0 (0%)</td><td>619 (54.3%)</td><td>522 (45.7%)</td><td>0 (0%)</td></tr><tr><td><b>구조·전략</b></td><td>0 (0%)</td><td>706 (61.9%)</td><td>435 (38.1%)</td><td>0 (0%)</td></tr><tr><td><b>배당</b></td><td>238 (20.9%)</td><td>0 (0%)</td><td>402 (35.2%)</td><td>501 (43.9%)</td></tr></tbody></table></div></div></section>
 <section><div class="wrap"><h2>ETF별 준비도 목록</h2><p class="muted">이름·코드·운용사·기초지수로 검색하거나 등급과 데이터 범위로 좁힐 수 있습니다.</p><div class="controls"><input id="search" type="search" placeholder="ETF 이름, 코드, 운용사, 기초지수 검색" aria-label="ETF 검색"><select id="grade" aria-label="등급"><option value="">모든 등급</option><option>A</option><option>B</option><option>C</option><option>D</option></select><select id="scope" aria-label="데이터 범위"><option value="">전체 데이터 범위</option><option value="enriched">상세 메타데이터 있음</option><option value="thin">얇은 데이터</option></select><b id="visible">1,141개</b></div><div class="table-wrap"><table id="etfs"><thead><tr><th>코드</th><th>ETF</th><th>등급·점수</th><th>확보 근거</th><th>주요 누락</th></tr></thead><tbody><tr data-grade="A" data-scope="enriched" data-search="0018c0 plus 고배당주위클리고정커버드콜 한화자산운용 코스피 고배당 위클리 고정 커버드콜 지수">
       <td><b>0018C0</b><small>naver_internal_unresolved</small></td>
       <td><b>PLUS 고배당주위클리고정커버드콜</b><small>한화자산운용</small></td>
@@ -33,12 +33,6 @@
       <td><span class="badge badge-a">A</span> <b>80</b></td>
       <td><span class="chip">구성종목 9</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>표준 KRX 코드, 산업·국가 비중</td>
-    </tr><tr data-grade="A" data-scope="enriched" data-search="0066w0 sol 국제금 신한자산운용 kedi 국제금현물 etf 가격지수(pr)">
-      <td><b>0066W0</b><small>naver_internal_unresolved</small></td>
-      <td><b>SOL 국제금</b><small>신한자산운용</small></td>
-      <td><span class="badge badge-a">A</span> <b>80</b></td>
-      <td><span class="chip">구성종목 11</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
-      <td>표준 KRX 코드, 산업·국가 비중</td>
     </tr><tr data-grade="A" data-scope="enriched" data-search="0094m0 rise 코리아밸류업위클리고정커버드콜 kb자산운용 코리아 밸류업 위클리 커버드콜 30% 지수">
       <td><b>0094M0</b><small>naver_internal_unresolved</small></td>
       <td><b>RISE 코리아밸류업위클리고정커버드콜</b><small>KB자산운용</small></td>
@@ -51,18 +45,6 @@
       <td><span class="badge badge-a">A</span> <b>80</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>표준 KRX 코드, 산업·국가 비중</td>
-    </tr><tr data-grade="A" data-scope="enriched" data-search="152100 plus 200 한화자산운용 코스피 200">
-      <td><b>152100</b><small>krx_numeric</small></td>
-      <td><b>PLUS 200</b><small>한화자산운용</small></td>
-      <td><span class="badge badge-a">A</span> <b>80</b></td>
-      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
-      <td>산업·국가 비중</td>
-    </tr><tr data-grade="A" data-scope="enriched" data-search="161510 plus 고배당주 한화자산운용 fnguide 배당주 지수">
-      <td><b>161510</b><small>krx_numeric</small></td>
-      <td><b>PLUS 고배당주</b><small>한화자산운용</small></td>
-      <td><span class="badge badge-a">A</span> <b>80</b></td>
-      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
-      <td>산업·국가 비중</td>
     </tr><tr data-grade="A" data-scope="enriched" data-search="290080 rise 200고배당커버드콜atm kb자산운용 코스피 200 고배당커버드콜 atm 지수(시장가격지수)">
       <td><b>290080</b><small>krx_numeric</small></td>
       <td><b>RISE 200고배당커버드콜ATM</b><small>KB자산운용</small></td>
@@ -96,12 +78,6 @@
     </tr><tr data-grade="A" data-scope="enriched" data-search="495040 plus 코리아밸류업 한화자산운용 코리아 밸류업 지수">
       <td><b>495040</b><small>krx_numeric</small></td>
       <td><b>PLUS 코리아밸류업</b><small>한화자산운용</small></td>
-      <td><span class="badge badge-a">A</span> <b>80</b></td>
-      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
-      <td>산업·국가 비중</td>
-    </tr><tr data-grade="A" data-scope="enriched" data-search="495050 rise 코리아밸류업 kb자산운용 코리아 밸류업 지수">
-      <td><b>495050</b><small>krx_numeric</small></td>
-      <td><b>RISE 코리아밸류업</b><small>KB자산운용</small></td>
       <td><span class="badge badge-a">A</span> <b>80</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>산업·국가 비중</td>
@@ -146,6 +122,12 @@
       <td><b>SOL 미국원자력SMR</b><small>신한자산운용</small></td>
       <td><span class="badge badge-a">A</span> <b>76</b></td>
       <td><span class="chip">구성종목 21</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
+      <td>표준 KRX 코드, 산업·국가 비중</td>
+    </tr><tr data-grade="A" data-scope="enriched" data-search="0066w0 sol 국제금 신한자산운용 kedi 국제금현물 etf 가격지수(pr)">
+      <td><b>0066W0</b><small>naver_internal_unresolved</small></td>
+      <td><b>SOL 국제금</b><small>신한자산운용</small></td>
+      <td><span class="badge badge-a">A</span> <b>76</b></td>
+      <td><span class="chip">구성종목 11</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>표준 KRX 코드, 산업·국가 비중</td>
     </tr><tr data-grade="A" data-scope="enriched" data-search="0080x0 sol 미국s&amp;p500미국채혼합50 신한자산운용 s&amp;p 500 and iboxx $ treasuries 7-10y 5050 blend index(usd) pr/tr hybrid">
       <td><b>0080X0</b><small>naver_internal_unresolved</small></td>
@@ -270,6 +252,18 @@
     </tr><tr data-grade="A" data-scope="enriched" data-search="148020 rise 200 kb자산운용 코스피 200">
       <td><b>148020</b><small>krx_numeric</small></td>
       <td><b>RISE 200</b><small>KB자산운용</small></td>
+      <td><span class="badge badge-a">A</span> <b>76</b></td>
+      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
+      <td>산업·국가 비중</td>
+    </tr><tr data-grade="A" data-scope="enriched" data-search="152100 plus 200 한화자산운용 코스피 200">
+      <td><b>152100</b><small>krx_numeric</small></td>
+      <td><b>PLUS 200</b><small>한화자산운용</small></td>
+      <td><span class="badge badge-a">A</span> <b>76</b></td>
+      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
+      <td>산업·국가 비중</td>
+    </tr><tr data-grade="A" data-scope="enriched" data-search="161510 plus 고배당주 한화자산운용 fnguide 배당주 지수">
+      <td><b>161510</b><small>krx_numeric</small></td>
+      <td><b>PLUS 고배당주</b><small>한화자산운용</small></td>
       <td><span class="badge badge-a">A</span> <b>76</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>산업·국가 비중</td>
@@ -543,6 +537,12 @@
       <td><span class="badge badge-a">A</span> <b>76</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>산업·국가 비중</td>
+    </tr><tr data-grade="A" data-scope="enriched" data-search="495050 rise 코리아밸류업 kb자산운용 코리아 밸류업 지수">
+      <td><b>495050</b><small>krx_numeric</small></td>
+      <td><b>RISE 코리아밸류업</b><small>KB자산운용</small></td>
+      <td><span class="badge badge-a">A</span> <b>76</b></td>
+      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
+      <td>산업·국가 비중</td>
     </tr><tr data-grade="A" data-scope="enriched" data-search="495230 koact 코리아밸류업액티브 삼성액티브자산운용 코리아 밸류업 지수">
       <td><b>495230</b><small>krx_numeric</small></td>
       <td><b>KoAct 코리아밸류업액티브</b><small>삼성액티브자산운용</small></td>
@@ -609,12 +609,6 @@
       <td><span class="badge badge-b">B</span> <b>72</b></td>
       <td><span class="chip">구성종목 204</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>산업·국가 비중, 실제 분배금 이력</td>
-    </tr><tr data-grade="B" data-scope="enriched" data-search="458730 tiger 미국배당다우존스 미래에셋자산운용 dow jones u.s. dividend 100 price return index">
-      <td><b>458730</b><small>krx_numeric</small></td>
-      <td><b>TIGER 미국배당다우존스</b><small>미래에셋자산운용</small></td>
-      <td><span class="badge badge-b">B</span> <b>72</b></td>
-      <td><span class="chip">구성종목 100</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
-      <td>산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="458750 tiger 미국배당다우존스타겟커버드콜1호 미래에셋자산운용 dowjones u.s. dividend 100 3% premium covered call 지수 (tr)">
       <td><b>458750</b><small>krx_numeric</small></td>
       <td><b>TIGER 미국배당다우존스타겟커버드콜1호</b><small>미래에셋자산운용</small></td>
@@ -644,12 +638,6 @@
       <td><b>TIGER 미국나스닥100타겟데일리커버드콜</b><small>미래에셋자산운용</small></td>
       <td><span class="badge badge-b">B</span> <b>72</b></td>
       <td><span class="chip">구성종목 106</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
-      <td>산업·국가 비중, 실제 분배금 이력</td>
-    </tr><tr data-grade="B" data-scope="enriched" data-search="490090 tiger 미국ai빅테크10 미래에셋자산운용 kedi 미국ai빅테크10 지수(pr)">
-      <td><b>490090</b><small>krx_numeric</small></td>
-      <td><b>TIGER 미국AI빅테크10</b><small>미래에셋자산운용</small></td>
-      <td><span class="badge badge-b">B</span> <b>72</b></td>
-      <td><span class="chip">구성종목 11</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="493810 tiger 미국ai빅테크10타겟데일리커버드콜 미래에셋자산운용 kedi 미국ai빅테크10+15%데일리프리미엄 지수(tr)">
       <td><b>493810</b><small>krx_numeric</small></td>
@@ -2103,6 +2091,12 @@
       <td><span class="badge badge-b">B</span> <b>68</b></td>
       <td><span class="chip">구성종목 630</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>산업·국가 비중, 실제 분배금 이력</td>
+    </tr><tr data-grade="B" data-scope="enriched" data-search="458730 tiger 미국배당다우존스 미래에셋자산운용 dow jones u.s. dividend 100 price return index">
+      <td><b>458730</b><small>krx_numeric</small></td>
+      <td><b>TIGER 미국배당다우존스</b><small>미래에셋자산운용</small></td>
+      <td><span class="badge badge-b">B</span> <b>68</b></td>
+      <td><span class="chip">구성종목 100</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
+      <td>산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="461580 tiger 코스닥글로벌 미래에셋자산운용 코스닥 글로벌 지수">
       <td><b>461580</b><small>krx_numeric</small></td>
       <td><b>TIGER 코스닥글로벌</b><small>미래에셋자산운용</small></td>
@@ -2289,6 +2283,12 @@
       <td><span class="badge badge-b">B</span> <b>68</b></td>
       <td><span class="chip">구성종목 504</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>산업·국가 비중, 실제 분배금 이력</td>
+    </tr><tr data-grade="B" data-scope="enriched" data-search="490090 tiger 미국ai빅테크10 미래에셋자산운용 kedi 미국ai빅테크10 지수(pr)">
+      <td><b>490090</b><small>krx_numeric</small></td>
+      <td><b>TIGER 미국AI빅테크10</b><small>미래에셋자산운용</small></td>
+      <td><span class="badge badge-b">B</span> <b>68</b></td>
+      <td><span class="chip">구성종목 11</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
+      <td>산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="490480 sol k방산 신한자산운용 kedi k방산 지수(pr)">
       <td><b>490480</b><small>krx_numeric</small></td>
       <td><b>SOL K방산</b><small>신한자산운용</small></td>
@@ -2421,18 +2421,6 @@
       <td><span class="badge badge-b">B</span> <b>65</b></td>
       <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>구성종목, 산업·국가 비중</td>
-    </tr><tr data-grade="B" data-scope="enriched" data-search="379780 rise 미국s&amp;p500 kb자산운용 s&amp;p 500">
-      <td><b>379780</b><small>krx_numeric</small></td>
-      <td><b>RISE 미국S&amp;P500</b><small>KB자산운용</small></td>
-      <td><span class="badge badge-b">B</span> <b>65</b></td>
-      <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
-      <td>구성종목, 산업·국가 비중</td>
-    </tr><tr data-grade="B" data-scope="enriched" data-search="429760 plus 미국s&amp;p500 한화자산운용 s&amp;p 500">
-      <td><b>429760</b><small>krx_numeric</small></td>
-      <td><b>PLUS 미국S&amp;P500</b><small>한화자산운용</small></td>
-      <td><span class="badge badge-b">B</span> <b>65</b></td>
-      <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
-      <td>구성종목, 산업·국가 비중</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="464470 plus 미국채30년액티브 한화자산운용 ice u.s. treasury 20+ year bond index(total return)">
       <td><b>464470</b><small>krx_numeric</small></td>
       <td><b>PLUS 미국채30년액티브</b><small>한화자산운용</small></td>
@@ -2487,12 +2475,6 @@
       <td><span class="badge badge-b">B</span> <b>62</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>표준 KRX 코드, 산업·국가 비중, 실제 분배금 이력</td>
-    </tr><tr data-grade="B" data-scope="enriched" data-search="316670 kiwoom 코스닥150 키움투자자산운용 코스닥 150">
-      <td><b>316670</b><small>krx_numeric</small></td>
-      <td><b>KIWOOM 코스닥150</b><small>키움투자자산운용</small></td>
-      <td><span class="badge badge-b">B</span> <b>62</b></td>
-      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
-      <td>산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="0005c0 rise 미국s&amp;p500엔화노출(합성 h) kb자산운용 s&amp;p500 yen hedged index(pr)">
       <td><b>0005C0</b><small>naver_internal_unresolved</small></td>
       <td><b>RISE 미국S&amp;P500엔화노출(합성 H)</b><small>KB자산운용</small></td>
@@ -2883,6 +2865,12 @@
       <td><span class="badge badge-b">B</span> <b>61</b></td>
       <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>구성종목, 산업·국가 비중</td>
+    </tr><tr data-grade="B" data-scope="enriched" data-search="379780 rise 미국s&amp;p500 kb자산운용 s&amp;p 500">
+      <td><b>379780</b><small>krx_numeric</small></td>
+      <td><b>RISE 미국S&amp;P500</b><small>KB자산운용</small></td>
+      <td><span class="badge badge-b">B</span> <b>61</b></td>
+      <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
+      <td>구성종목, 산업·국가 비중</td>
     </tr><tr data-grade="B" data-scope="enriched" data-search="379790 rise 유로스탁스50(h) kb자산운용 euro stoxx 50 index">
       <td><b>379790</b><small>krx_numeric</small></td>
       <td><b>RISE 유로스탁스50(H)</b><small>KB자산운용</small></td>
@@ -2940,6 +2928,12 @@
     </tr><tr data-grade="B" data-scope="enriched" data-search="426150 won 대한민국국고채액티브 우리자산운용 kap 한국 국고채 총수익 지수">
       <td><b>426150</b><small>krx_numeric</small></td>
       <td><b>WON 대한민국국고채액티브</b><small>우리자산운용</small></td>
+      <td><span class="badge badge-b">B</span> <b>61</b></td>
+      <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
+      <td>구성종목, 산업·국가 비중</td>
+    </tr><tr data-grade="B" data-scope="enriched" data-search="429760 plus 미국s&amp;p500 한화자산운용 s&amp;p 500">
+      <td><b>429760</b><small>krx_numeric</small></td>
+      <td><b>PLUS 미국S&amp;P500</b><small>한화자산운용</small></td>
       <td><span class="badge badge-b">B</span> <b>61</b></td>
       <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>구성종목, 산업·국가 비중</td>
@@ -3627,12 +3621,6 @@
       <td><span class="badge badge-c">C</span> <b>50</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">상세분류</span></td>
       <td>표준 KRX 코드, 산업·국가 비중, 분배 일정, 실제 분배금 이력</td>
-    </tr><tr data-grade="C" data-scope="enriched" data-search="0139p0 ace 고배당주 한국투자신탁운용 krx-akros 고배당주 20 지수">
-      <td><b>0139P0</b><small>naver_internal_unresolved</small></td>
-      <td><b>ACE 고배당주</b><small>한국투자신탁운용</small></td>
-      <td><span class="badge badge-c">C</span> <b>50</b></td>
-      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">상세분류</span></td>
-      <td>표준 KRX 코드, 산업·국가 비중, 분배 일정, 실제 분배금 이력</td>
     </tr><tr data-grade="C" data-scope="enriched" data-search="0153p0 ace 리츠부동산인프라액티브 한국투자신탁운용 fnguide 맥쿼리인프라 배당 리츠 지수 (시장가격)">
       <td><b>0153P0</b><small>naver_internal_unresolved</small></td>
       <td><b>ACE 리츠부동산인프라액티브</b><small>한국투자신탁운용</small></td>
@@ -3927,12 +3915,6 @@
       <td><span class="badge badge-c">C</span> <b>47</b></td>
       <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
       <td>표준 KRX 코드, 구성종목, 산업·국가 비중, 실제 분배금 이력</td>
-    </tr><tr data-grade="C" data-scope="enriched" data-search="0089d0 kodex 금융고배당top10 삼성자산운용 코스피 200 금융 고배당 top 10 지수">
-      <td><b>0089D0</b><small>naver_internal_unresolved</small></td>
-      <td><b>KODEX 금융고배당TOP10</b><small>삼성자산운용</small></td>
-      <td><span class="badge badge-c">C</span> <b>44</b></td>
-      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">분배일정</span><span class="chip">상세분류</span></td>
-      <td>표준 KRX 코드, 상품 설명·투자 목적, 산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="C" data-scope="enriched" data-search="0153k0 kodex 주주환원고배당주 삼성자산운용 akros 주주환원 고배당 지수 (price return)">
       <td><b>0153K0</b><small>naver_internal_unresolved</small></td>
       <td><b>KODEX 주주환원고배당주</b><small>삼성자산운용</small></td>
@@ -3966,6 +3948,12 @@
     </tr><tr data-grade="C" data-scope="enriched" data-search="0001p0 마이티 바이오시밀러&amp;cdmo액티브 db자산운용 fnguide 바이오시밀러&amp;cdmo 지수">
       <td><b>0001P0</b><small>naver_internal_unresolved</small></td>
       <td><b>마이티 바이오시밀러&amp;CDMO액티브</b><small>DB자산운용</small></td>
+      <td><span class="badge badge-c">C</span> <b>40</b></td>
+      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">상세분류</span></td>
+      <td>표준 KRX 코드, 상품 설명·투자 목적, 산업·국가 비중, 분배 일정 외 1개</td>
+    </tr><tr data-grade="C" data-scope="enriched" data-search="0089d0 kodex 금융고배당top10 삼성자산운용 코스피 200 금융 고배당 top 10 지수">
+      <td><b>0089D0</b><small>naver_internal_unresolved</small></td>
+      <td><b>KODEX 금융고배당TOP10</b><small>삼성자산운용</small></td>
       <td><span class="badge badge-c">C</span> <b>40</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">상세분류</span></td>
       <td>표준 KRX 코드, 상품 설명·투자 목적, 산업·국가 비중, 분배 일정 외 1개</td>
@@ -4008,6 +3996,12 @@
     </tr><tr data-grade="C" data-scope="enriched" data-search="0120j0 bnk 카카오그룹포커스 bnk자산운용 fnguide 카카오그룹 포커스 지수">
       <td><b>0120J0</b><small>naver_internal_unresolved</small></td>
       <td><b>BNK 카카오그룹포커스</b><small>BNK자산운용</small></td>
+      <td><span class="badge badge-c">C</span> <b>40</b></td>
+      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">상세분류</span></td>
+      <td>표준 KRX 코드, 상품 설명·투자 목적, 산업·국가 비중, 분배 일정 외 1개</td>
+    </tr><tr data-grade="C" data-scope="enriched" data-search="0139p0 ace 고배당주 한국투자신탁운용 krx-akros 고배당주 20 지수">
+      <td><b>0139P0</b><small>naver_internal_unresolved</small></td>
+      <td><b>ACE 고배당주</b><small>한국투자신탁운용</small></td>
       <td><span class="badge badge-c">C</span> <b>40</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">상세분류</span></td>
       <td>표준 KRX 코드, 상품 설명·투자 목적, 산업·국가 비중, 분배 일정 외 1개</td>
@@ -4470,6 +4464,12 @@
     </tr><tr data-grade="C" data-scope="enriched" data-search="315930 kodex top5plustr 삼성자산운용 fnguide top 5 plus total return 지수">
       <td><b>315930</b><small>krx_numeric</small></td>
       <td><b>KODEX Top5PlusTR</b><small>삼성자산운용</small></td>
+      <td><span class="badge badge-c">C</span> <b>40</b></td>
+      <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">상세분류</span></td>
+      <td>상품 설명·투자 목적, 산업·국가 비중, 분배 일정, 실제 분배금 이력</td>
+    </tr><tr data-grade="C" data-scope="enriched" data-search="316670 kiwoom 코스닥150 키움투자자산운용 코스닥 150">
+      <td><b>316670</b><small>krx_numeric</small></td>
+      <td><b>KIWOOM 코스닥150</b><small>키움투자자산운용</small></td>
       <td><span class="badge badge-c">C</span> <b>40</b></td>
       <td><span class="chip">구성종목 10</span><span class="chip">기초지수</span><span class="chip">상세분류</span></td>
       <td>상품 설명·투자 목적, 산업·국가 비중, 분배 일정, 실제 분배금 이력</td>
@@ -5133,12 +5133,6 @@
       <td><span class="badge badge-c">C</span> <b>35</b></td>
       <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">규칙분류</span></td>
       <td>구성종목, 산업·국가 비중, 분배 일정, 실제 분배금 이력</td>
-    </tr><tr data-grade="C" data-scope="enriched" data-search="367380 ace 미국나스닥100 한국투자신탁운용 nasdaq 100">
-      <td><b>367380</b><small>krx_numeric</small></td>
-      <td><b>ACE 미국나스닥100</b><small>한국투자신탁운용</small></td>
-      <td><span class="badge badge-c">C</span> <b>35</b></td>
-      <td><span class="chip">기초지수</span><span class="chip">설명</span><span class="chip">규칙분류</span></td>
-      <td>구성종목, 산업·국가 비중, 분배 일정, 실제 분배금 이력</td>
     </tr><tr data-grade="C" data-scope="enriched" data-search="371870 ace 차이나항셍테크 한국투자신탁운용 hang seng tech index">
       <td><b>371870</b><small>krx_numeric</small></td>
       <td><b>ACE 차이나항셍테크</b><small>한국투자신탁운용</small></td>
@@ -5373,12 +5367,6 @@
       <td><span class="badge badge-d">D</span> <b>29</b></td>
       <td><span class="chip">기초지수</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
       <td>표준 KRX 코드, 상품 설명·투자 목적, 구성종목, 산업·국가 비중 외 1개</td>
-    </tr><tr data-grade="D" data-scope="enriched" data-search="153130 kodex 단기채권 삼성자산운용 krw cash 지수(총수익)">
-      <td><b>153130</b><small>krx_numeric</small></td>
-      <td><b>KODEX 단기채권</b><small>삼성자산운용</small></td>
-      <td><span class="badge badge-d">D</span> <b>29</b></td>
-      <td><span class="chip">기초지수</span><span class="chip">분배일정</span><span class="chip">규칙분류</span></td>
-      <td>상품 설명·투자 목적, 구성종목, 산업·국가 비중, 실제 분배금 이력</td>
     </tr><tr data-grade="D" data-scope="enriched" data-search="214980 kodex 단기채권plus 삼성자산운용 krw cash plus 지수(총수익)">
       <td><b>214980</b><small>krx_numeric</small></td>
       <td><b>KODEX 단기채권PLUS</b><small>삼성자산운용</small></td>
@@ -5841,6 +5829,12 @@
       <td><span class="badge badge-d">D</span> <b>25</b></td>
       <td><span class="chip">기초지수</span><span class="chip">규칙분류</span></td>
       <td>상품 설명·투자 목적, 구성종목, 산업·국가 비중, 분배 일정 외 1개</td>
+    </tr><tr data-grade="D" data-scope="thin" data-search="153130 kodex 단기채권 삼성자산운용 krw cash 지수(총수익)">
+      <td><b>153130</b><small>krx_numeric</small></td>
+      <td><b>KODEX 단기채권</b><small>삼성자산운용</small></td>
+      <td><span class="badge badge-d">D</span> <b>25</b></td>
+      <td><span class="chip">기초지수</span><span class="chip">규칙분류</span></td>
+      <td>상품 설명·투자 목적, 구성종목, 산업·국가 비중, 분배 일정 외 1개</td>
     </tr><tr data-grade="D" data-scope="thin" data-search="167860 kiwoom 국고채10년레버리지 키움투자자산운용 kis 10년 국고채 지수 (총수익)">
       <td><b>167860</b><small>krx_numeric</small></td>
       <td><b>KIWOOM 국고채10년레버리지</b><small>키움투자자산운용</small></td>
@@ -6162,6 +6156,12 @@
     </tr><tr data-grade="D" data-scope="thin" data-search="363570 kodex 장기종합채권(aa-이상)액티브 삼성자산운용 kap 한국장기종합채권지수(aa-이상, 총수익)">
       <td><b>363570</b><small>krx_numeric</small></td>
       <td><b>KODEX 장기종합채권(AA-이상)액티브</b><small>삼성자산운용</small></td>
+      <td><span class="badge badge-d">D</span> <b>25</b></td>
+      <td><span class="chip">기초지수</span><span class="chip">규칙분류</span></td>
+      <td>상품 설명·투자 목적, 구성종목, 산업·국가 비중, 분배 일정 외 1개</td>
+    </tr><tr data-grade="D" data-scope="thin" data-search="367380 ace 미국나스닥100 한국투자신탁운용 nasdaq 100">
+      <td><b>367380</b><small>krx_numeric</small></td>
+      <td><b>ACE 미국나스닥100</b><small>한국투자신탁운용</small></td>
       <td><span class="badge badge-d">D</span> <b>25</b></td>
       <td><span class="chip">기초지수</span><span class="chip">규칙분류</span></td>
       <td>상품 설명·투자 목적, 구성종목, 산업·국가 비중, 분배 일정 외 1개</td>

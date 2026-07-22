@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T12:30:58.587Z",
+  "generatedAt": "2026-07-22T12:48:03.810Z",
   "taxonomyVersion": "2.0.1",
   "filters": {
     "strategy.benchmark.kospi200": [
@@ -646,11 +646,6 @@
         "confidence": 0.6
       },
       {
-        "etfCode": "0082F0",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
         "etfCode": "0082V0",
         "score": 1,
         "confidence": 0.6
@@ -757,11 +752,6 @@
       },
       {
         "etfCode": "0101N0",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "0102X0",
         "score": 1,
         "confidence": 0.6
       },
@@ -3351,11 +3341,6 @@
         "confidence": 0.6
       },
       {
-        "etfCode": "456250",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
         "etfCode": "457480",
         "score": 1,
         "confidence": 0.6
@@ -4223,11 +4208,6 @@
         "confidence": 0.6
       },
       {
-        "etfCode": "0064K0",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
         "etfCode": "0065G0",
         "score": 1,
         "confidence": 0.6
@@ -4713,11 +4693,6 @@
         "confidence": 0.6
       },
       {
-        "etfCode": "0172V0",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
         "etfCode": "0172Y0",
         "score": 1,
         "confidence": 0.6
@@ -4799,11 +4774,6 @@
       },
       {
         "etfCode": "0186L0",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "0189B0",
         "score": 1,
         "confidence": 0.6
       },
@@ -5219,11 +5189,6 @@
       },
       {
         "etfCode": "139290",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "139320",
         "score": 1,
         "confidence": 0.6
       },
@@ -6718,17 +6683,7 @@
         "confidence": 0.6
       },
       {
-        "etfCode": "400570",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
         "etfCode": "400580",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "400590",
         "score": 1,
         "confidence": 0.6
       },
@@ -6744,11 +6699,6 @@
       },
       {
         "etfCode": "401470",
-        "score": 1,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "401590",
         "score": 1,
         "confidence": 0.6
       },
@@ -12566,11 +12516,6 @@
     ],
     "asset.bond.government": [
       {
-        "etfCode": "0000D0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0013R0",
         "score": 0.8,
         "confidence": 0.7
@@ -12596,22 +12541,7 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "0052S0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0057H0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0073X0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0080X0",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -12626,22 +12556,7 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "0089B0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0091C0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0111P0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0178H0",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -12701,11 +12616,6 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "183710",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "190620",
         "score": 0.8,
         "confidence": 0.7
@@ -12732,11 +12642,6 @@
       },
       {
         "etfCode": "282000",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "284430",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -12817,16 +12722,6 @@
       },
       {
         "etfCode": "432600",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "438080",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "438100",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -12977,11 +12872,6 @@
       },
       {
         "etfCode": "489000",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "490490",
         "score": 0.8,
         "confidence": 0.7
       }
@@ -13218,11 +13108,6 @@
         "confidence": 0.75
       },
       {
-        "etfCode": "0000D0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0013R0",
         "score": 0.8,
         "confidence": 0.7
@@ -13253,27 +13138,12 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "0052S0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0052T0",
         "score": 0.8,
         "confidence": 0.7
       },
       {
-        "etfCode": "0057H0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0073X0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0080X0",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -13288,22 +13158,12 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "0089B0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "0091C0",
         "score": 0.8,
         "confidence": 0.7
       },
       {
         "etfCode": "0099L0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0111P0",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -13324,11 +13184,6 @@
       },
       {
         "etfCode": "0162M0",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "0178H0",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -13393,11 +13248,6 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "183710",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "190620",
         "score": 0.8,
         "confidence": 0.7
@@ -13439,11 +13289,6 @@
       },
       {
         "etfCode": "282000",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "284430",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -13559,16 +13404,6 @@
       },
       {
         "etfCode": "437350",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "438080",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
-        "etfCode": "438100",
         "score": 0.8,
         "confidence": 0.7
       },
@@ -13773,11 +13608,6 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "490490",
-        "score": 0.8,
-        "confidence": 0.7
-      },
-      {
         "etfCode": "492500",
         "score": 0.8,
         "confidence": 0.7
@@ -13788,52 +13618,12 @@
         "confidence": 0.7
       },
       {
-        "etfCode": "0019K0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
         "etfCode": "0040Y0",
         "score": 0.75,
         "confidence": 0.65
       },
       {
-        "etfCode": "0049K0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0104H0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
         "etfCode": "0132K0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0162Z0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0177N0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0182S0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0183V0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0184E0",
         "score": 0.75,
         "confidence": 0.65
       },
@@ -13848,17 +13638,7 @@
         "confidence": 0.65
       },
       {
-        "etfCode": "0186S0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
         "etfCode": "0191W0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0192S0",
         "score": 0.75,
         "confidence": 0.65
       },
@@ -13878,27 +13658,7 @@
         "confidence": 0.65
       },
       {
-        "etfCode": "0203S0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0206G0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "0216K0",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
         "etfCode": "153130",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "183700",
         "score": 0.75,
         "confidence": 0.65
       },
@@ -13983,11 +13743,6 @@
         "confidence": 0.65
       },
       {
-        "etfCode": "435420",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
         "etfCode": "437070",
         "score": 0.75,
         "confidence": 0.65
@@ -14004,11 +13759,6 @@
       },
       {
         "etfCode": "440650",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "447620",
         "score": 0.75,
         "confidence": 0.65
       },
@@ -14074,11 +13824,6 @@
       },
       {
         "etfCode": "472170",
-        "score": 0.75,
-        "confidence": 0.65
-      },
-      {
-        "etfCode": "475080",
         "score": 0.75,
         "confidence": 0.65
       },
@@ -14955,6 +14700,41 @@
       }
     ],
     "asset.commodity": [
+      {
+        "etfCode": "0064K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0172V0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0189B0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "139320",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "400570",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "400590",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "401590",
+        "score": 1,
+        "confidence": 1
+      },
       {
         "etfCode": "132030",
         "score": 0.95,
@@ -16542,11 +16322,6 @@
         "confidence": 0.75
       },
       {
-        "etfCode": "487950",
-        "score": 0.85,
-        "confidence": 0.75
-      },
-      {
         "etfCode": "489250",
         "score": 0.85,
         "confidence": 0.75
@@ -18120,6 +17895,273 @@
         "confidence": 1
       }
     ],
+    "dividend.monthly": [
+      {
+        "etfCode": "0008S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0018C0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0022T0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0040X0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0040Y0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0049K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0057H0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0089B0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0094L0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0094M0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0098N0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104N0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104P0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0128D0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0132K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0138T0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0144L0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0153X0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0174J0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0176P0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0177R0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0192S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0198A0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0203D0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0210E0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "166400",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "251600",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "289480",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "290080",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "332610",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "332620",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "429740",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "458750",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "458760",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "464470",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "474220",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "475080",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "475720",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "476850",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "481340",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "482730",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "486290",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "487950",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "489030",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "490490",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "490590",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "490600",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "491620",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "493810",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "494210",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "494420",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "495040",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0000D0",
+        "score": 0.85,
+        "confidence": 0.75
+      }
+    ],
     "strategy.low_volatility": [
       {
         "etfCode": "174350",
@@ -18135,11 +18177,6 @@
     "asset.reit": [
       {
         "etfCode": "0086B0",
-        "score": 0.9,
-        "confidence": 0.85
-      },
-      {
-        "etfCode": "0086C0",
         "score": 0.9,
         "confidence": 0.85
       },
@@ -18204,7 +18241,249 @@
         "confidence": 0.85
       }
     ],
+    "asset.mixed": [
+      {
+        "etfCode": "0000D0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0019K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0049K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0052S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0057H0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0080X0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0086C0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0089B0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104H0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0111P0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0162Z0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0177N0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0178H0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0182S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0183V0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0184E0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0186S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0192S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0203S0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0206G0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0216K0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "183700",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "183710",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "284430",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "435420",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "438080",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "438100",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "447620",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "475080",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "490490",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0025N0",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "0082V0",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "321410",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "433880",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "433970",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "433980",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "434060",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "435530",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "435540",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "435550",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "440340",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "442550",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "442560",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "442570",
+        "score": 0.75,
+        "confidence": 0.6
+      },
+      {
+        "etfCode": "461490",
+        "score": 0.75,
+        "confidence": 0.6
+      }
+    ],
     "region.developed": [
+      {
+        "etfCode": "0082F0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0102X0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "456250",
+        "score": 1,
+        "confidence": 1
+      },
       {
         "etfCode": "0007G0",
         "score": 0.7,
@@ -20468,83 +20747,6 @@
         "confidence": 0.5
       }
     ],
-    "asset.mixed": [
-      {
-        "etfCode": "0025N0",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "0082V0",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "321410",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "433880",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "433970",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "433980",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "434060",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "435530",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "435540",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "435550",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "440340",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "442550",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "442560",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "442570",
-        "score": 0.75,
-        "confidence": 0.6
-      },
-      {
-        "etfCode": "461490",
-        "score": 0.75,
-        "confidence": 0.6
-      }
-    ],
     "strategy.growth": [
       {
         "etfCode": "365040",
@@ -20964,18 +21166,6 @@
         "etfCode": "495330",
         "score": 0.8,
         "confidence": 0.6
-      }
-    ],
-    "dividend.monthly": [
-      {
-        "etfCode": "0000D0",
-        "score": 0.85,
-        "confidence": 0.75
-      },
-      {
-        "etfCode": "0049K0",
-        "score": 0.85,
-        "confidence": 0.75
       }
     ],
     "sector.robotics": [
@@ -22141,11 +22331,6 @@
     "139320": {
       "tags": [
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -22154,6 +22339,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -22805,6 +22995,11 @@
           "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -23017,29 +23212,19 @@
           "confidence": 0.6
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
     "183710": {
       "tags": [
-        {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
         {
           "tagId": "region.domestic_kr",
           "score": 1,
@@ -23049,6 +23234,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -24911,6 +25101,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -26762,19 +26957,14 @@
           "confidence": 0.6
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -26953,6 +27143,11 @@
           "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -27006,6 +27201,11 @@
           "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -28522,6 +28722,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -28546,6 +28751,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -30640,11 +30850,6 @@
     "400570": {
       "tags": [
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -30653,6 +30858,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -30683,14 +30893,14 @@
           "confidence": 0.55
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -30769,14 +30979,14 @@
           "confidence": 0.55
         },
         {
-          "tagId": "asset.equity",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.commodity",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -31875,6 +32085,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -32240,14 +32455,14 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -32431,14 +32646,9 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -32460,14 +32670,9 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -33215,11 +33420,6 @@
     "447620": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
@@ -33228,6 +33428,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -34440,14 +34645,14 @@
           "confidence": 0.6
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "region.developed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -34788,6 +34993,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -34812,6 +35022,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -35496,6 +35711,11 @@
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -36659,6 +36879,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -36804,14 +37029,19 @@
           "confidence": 1
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -37018,6 +37248,11 @@
           "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -37281,6 +37516,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -37745,6 +37985,11 @@
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -37827,6 +38072,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -38181,6 +38431,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -38383,11 +38638,6 @@
     "487950": {
       "tags": [
         {
-          "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.75
-        },
-        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6
@@ -38396,6 +38646,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -38689,6 +38944,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -38814,16 +39074,6 @@
     "490490": {
       "tags": [
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
@@ -38832,6 +39082,16 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -38856,6 +39116,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -38880,6 +39145,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -39033,6 +39303,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -39186,6 +39461,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -39229,6 +39509,11 @@
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -39397,6 +39682,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -39488,6 +39778,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40141,16 +40436,6 @@
           "confidence": 0.75
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
@@ -40159,6 +40444,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40385,6 +40675,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40415,16 +40710,6 @@
     "0049K0": {
       "tags": [
         {
-          "tagId": "dividend.monthly",
-          "score": 0.85,
-          "confidence": 0.75
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
@@ -40433,6 +40718,16 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40578,11 +40873,6 @@
     "0086C0": {
       "tags": [
         {
-          "tagId": "asset.reit",
-          "score": 0.9,
-          "confidence": 0.85
-        },
-        {
           "tagId": "strategy.active",
           "score": 0.9,
           "confidence": 0.8
@@ -40591,6 +40881,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40769,6 +41064,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40817,6 +41117,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40971,6 +41276,11 @@
           "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40993,6 +41303,11 @@
         },
         {
           "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
           "score": 1,
           "confidence": 1
         }
@@ -41612,6 +41927,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -41641,6 +41961,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -41694,6 +42019,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -42285,6 +42615,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -42530,6 +42865,11 @@
           "tagId": "strategy.benchmark.kospi200",
           "score": 0.7,
           "confidence": 0.55
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -42923,6 +43263,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43145,9 +43490,9 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43191,6 +43536,11 @@
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43434,6 +43784,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43458,6 +43813,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43813,14 +44173,9 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43885,14 +44240,14 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -43942,14 +44297,14 @@
           "confidence": 0.8
         },
         {
-          "tagId": "asset.equity",
+          "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
         },
         {
-          "tagId": "region.domestic_kr",
+          "tagId": "asset.commodity",
           "score": 1,
-          "confidence": 0.6
+          "confidence": 1
         }
       ]
     },
@@ -44176,19 +44531,14 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -44200,14 +44550,14 @@
           "confidence": 0.6
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "region.developed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -44367,19 +44717,19 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -44582,6 +44932,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -44674,14 +45029,14 @@
           "confidence": 0.6
         },
         {
-          "tagId": "region.domestic_kr",
-          "score": 1,
-          "confidence": 0.6
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "region.developed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -44693,14 +45048,14 @@
           "confidence": 0.8
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -44741,14 +45096,9 @@
           "confidence": 0.95
         },
         {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45151,6 +45501,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45270,6 +45625,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45390,6 +45750,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45505,6 +45870,11 @@
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45562,6 +45932,11 @@
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45649,11 +46024,6 @@
     "0162Z0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -45662,6 +46032,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45730,14 +46105,14 @@
           "confidence": 0.8
         },
         {
-          "tagId": "asset.equity",
+          "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
         },
         {
-          "tagId": "region.domestic_kr",
+          "tagId": "asset.commodity",
           "score": 1,
-          "confidence": 0.6
+          "confidence": 1
         }
       ]
     },
@@ -45820,11 +46195,6 @@
     "0177N0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -45833,21 +46203,16 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
     "0178H0": {
       "tags": [
-        {
-          "tagId": "asset.bond.government",
-          "score": 0.8,
-          "confidence": 0.7
-        },
-        {
-          "tagId": "asset.bond",
-          "score": 0.8,
-          "confidence": 0.7
-        },
         {
           "tagId": "region.us",
           "score": 0.85,
@@ -45857,6 +46222,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45920,11 +46290,6 @@
     "0182S0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -45933,6 +46298,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45958,11 +46328,6 @@
     "0183V0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -45971,6 +46336,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -45992,9 +46362,9 @@
           "confidence": 0.6
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46082,14 +46452,14 @@
           "confidence": 0.8
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46101,14 +46471,14 @@
           "confidence": 0.8
         },
         {
-          "tagId": "asset.equity",
+          "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
         },
         {
-          "tagId": "region.domestic_kr",
+          "tagId": "asset.commodity",
           "score": 1,
-          "confidence": 0.6
+          "confidence": 1
         }
       ]
     },
@@ -46201,14 +46571,19 @@
           "confidence": 0.6
         },
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46310,6 +46685,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "dividend.monthly",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46335,11 +46715,6 @@
     "0203S0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -46348,6 +46723,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46373,11 +46753,6 @@
     "0206G0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.domestic_kr",
           "score": 1,
           "confidence": 0.6
@@ -46386,6 +46761,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46411,11 +46791,6 @@
     "0216K0": {
       "tags": [
         {
-          "tagId": "asset.bond",
-          "score": 0.75,
-          "confidence": 0.65
-        },
-        {
           "tagId": "region.us",
           "score": 0.85,
           "confidence": 0.75
@@ -46424,6 +46799,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "asset.mixed",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -46446,5 +46826,8 @@
         }
       ]
     }
+  },
+  "automatedQuarantine": {
+    "assignmentCount": 5
   }
 }

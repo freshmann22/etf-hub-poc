@@ -71,7 +71,7 @@
 0061Z0,RISE 단기특수은행채액티브,naver_internal_unresolved,KB자산운용,KAP 단기 특수은행채 지수(시장가격),enriched,61,B,medium,low,low,medium,high,0,3,false,표준 KRX 코드|구성종목|산업·국가 비중
 0064K0,KODEX 금액티브,naver_internal_unresolved,삼성자산운용,Bloomberg Gold Spot NY 4pm USD Index,thin,25,D,low,low,low,low,none,0,3,false,표준 KRX 코드|상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 0065G0,KODEX 차이나테크TOP10,naver_internal_unresolved,삼성자산운용,Hang Seng China Tech Top 10 Select Index (HKD) (Price Return),thin,25,D,low,low,low,low,none,0,3,false,표준 KRX 코드|상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
-0066W0,SOL 국제금,naver_internal_unresolved,신한자산운용,KEDI 국제금현물 ETF 가격지수(PR),enriched,80,A,medium,low,medium,medium,high,11,3,false,표준 KRX 코드|산업·국가 비중
+0066W0,SOL 국제금,naver_internal_unresolved,신한자산운용,KEDI 국제금현물 ETF 가격지수(PR),enriched,76,A,medium,low,medium,medium,high,11,3,false,표준 KRX 코드|산업·국가 비중
 0067V0,TIGER 차이나글로벌리더스TOP3+,naver_internal_unresolved,미래에셋자산운용,"Solactive-KEDI 차이나글로벌리더스TOP3플러스 지수 (Price Return, CNH)",enriched,68,B,medium,low,medium,medium,low,11,3,false,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
 0067Y0,TIGER 차이나AI소프트웨어,naver_internal_unresolved,미래에셋자산운용,"Mirae Asset China AI Software 지수 (Price Return, HKD)",enriched,68,B,medium,low,medium,medium,low,16,3,false,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
 0068M0,KODEX 미국S&P500버퍼6월액티브,naver_internal_unresolved,삼성자산운용,S&P500 10% Buffered Index June Series (USD) TR,thin,25,D,low,low,low,low,none,0,4,false,표준 KRX 코드|상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
@@ -97,7 +97,7 @@
 0088N0,WON K-글로벌수급상위,naver_internal_unresolved,우리자산운용,DeepSearch 외인수급 Top20 지수,enriched,68,B,medium,low,medium,medium,low,10,3,true,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
 0089B0,PLUS 미국나스닥100미국채혼합50,naver_internal_unresolved,한화자산운용,Nasdaq-100 US T-Bills 1-3 Month 50/50 Index (USD),enriched,65,B,medium,low,low,medium,high,0,5,false,표준 KRX 코드|구성종목|산업·국가 비중
 0089C0,KODEX 미국S&P500변동성확대시커버드콜,naver_internal_unresolved,삼성자산운용,Cboe S&P 500 Volatility Contingent Daily Covered Call Index(Total Retrun),enriched,29,D,low,low,low,low,low,0,5,false,표준 KRX 코드|상품 설명·투자 목적|구성종목|산업·국가 비중|실제 분배금 이력
-0089D0,KODEX 금융고배당TOP10,naver_internal_unresolved,삼성자산운용,코스피 200 금융 고배당 TOP 10 지수,enriched,44,C,low,low,medium,low,low,10,6,true,표준 KRX 코드|상품 설명·투자 목적|산업·국가 비중|실제 분배금 이력
+0089D0,KODEX 금융고배당TOP10,naver_internal_unresolved,삼성자산운용,코스피 200 금융 고배당 TOP 10 지수,enriched,40,C,low,low,medium,low,none,10,6,true,표준 KRX 코드|상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 0090B0,PLUS K방산소부장,naver_internal_unresolved,한화자산운용,Akros K방산소부장 지수(PR),enriched,76,A,medium,low,medium,medium,high,10,4,true,표준 KRX 코드|산업·국가 비중
 0091C0,KODEX 미국10년국채액티브(H),naver_internal_unresolved,삼성자산운용,KAP 미국 국채 10년 지수(총수익),thin,25,D,low,low,low,low,none,0,4,false,표준 KRX 코드|상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 0091M0,HANARO 27-06 회사채(AA-이상)액티브,naver_internal_unresolved,NH-Amundi자산운용,KIS 회사채(AA-이상)2706만기형지수(총수익),thin,25,D,low,low,low,low,none,0,5,false,표준 KRX 코드|상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
@@ -167,7 +167,7 @@
 0138T0,RISE 미국S&P500데일리고정커버드콜,naver_internal_unresolved,KB자산운용,S&P500 10% Daily Fixed Covered Call Index,enriched,65,B,medium,low,low,medium,high,0,5,false,표준 KRX 코드|구성종목|산업·국가 비중
 0138Y0,PLUS 금채권혼합,naver_internal_unresolved,한화자산운용,Akros 미국 금현물 ETF 채권혼합 지수,enriched,61,B,medium,low,low,medium,high,0,3,false,표준 KRX 코드|구성종목|산업·국가 비중
 0139F0,TIGER 12월자동연장금융채(AA-이상)액티브,naver_internal_unresolved,미래에셋자산운용,KIS 12월 만기 자동연장금융채(AA-이상) 총수익지수,enriched,68,B,medium,low,medium,medium,low,173,4,false,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
-0139P0,ACE 고배당주,naver_internal_unresolved,한국투자신탁운용,KRX-Akros 고배당주 20 지수,enriched,50,C,medium,low,medium,medium,none,10,4,true,표준 KRX 코드|산업·국가 비중|분배 일정|실제 분배금 이력
+0139P0,ACE 고배당주,naver_internal_unresolved,한국투자신탁운용,KRX-Akros 고배당주 20 지수,enriched,40,C,low,low,medium,low,none,10,4,true,표준 KRX 코드|상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 0141S0,SOL 조선기자재,naver_internal_unresolved,신한자산운용,FnGuide 조선기자재 지수(PR),enriched,68,B,medium,low,medium,medium,low,11,4,true,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
 0141T0,SOL 중기종합채권(AA-이상)액티브,naver_internal_unresolved,신한자산운용,"KAP K-중기종합채권지수(AA-이상,총수익)",enriched,68,B,medium,low,medium,medium,low,15,4,false,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
 0142D0,TIGER 미국AI데이터센터TOP4Plus,naver_internal_unresolved,미래에셋자산운용,Akros U.S. AI Data Center TOP4 Plus 지수(PR),enriched,68,B,medium,low,medium,medium,low,11,3,false,표준 KRX 코드|산업·국가 비중|실제 분배금 이력
@@ -346,11 +346,11 @@
 148020,RISE 200,krx_numeric,KB자산운용,코스피 200,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
 148070,KIWOOM 국고채10년,krx_numeric,키움투자자산운용,KIS 10년 국고채 지수 (총수익),thin,25,D,low,low,low,low,none,0,4,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 150460,TIGER 중국소비테마,krx_numeric,미래에셋자산운용,FnGuide 중국내수테마 지수,enriched,68,B,medium,low,medium,medium,low,24,3,true,산업·국가 비중|실제 분배금 이력
-152100,PLUS 200,krx_numeric,한화자산운용,코스피 200,enriched,80,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
+152100,PLUS 200,krx_numeric,한화자산운용,코스피 200,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
 152380,KODEX 국채선물10년,krx_numeric,삼성자산운용,10년국채선물지수,thin,25,D,low,low,low,low,none,0,4,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 152500,ACE 레버리지,krx_numeric,한국투자신탁운용,코스피 200,enriched,50,C,medium,low,medium,medium,none,10,5,true,산업·국가 비중|분배 일정|실제 분배금 이력
 152870,파워 200,krx_numeric,교보악사자산운용,코스피 200,enriched,40,C,low,low,medium,low,none,10,4,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
-153130,KODEX 단기채권,krx_numeric,삼성자산운용,KRW Cash 지수(총수익),enriched,29,D,low,low,low,low,low,0,3,false,상품 설명·투자 목적|구성종목|산업·국가 비중|실제 분배금 이력
+153130,KODEX 단기채권,krx_numeric,삼성자산운용,KRW Cash 지수(총수익),thin,25,D,low,low,low,low,none,0,3,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 153270,KIWOOM 코스피100,krx_numeric,키움투자자산운용,코스피 100,enriched,40,C,low,low,medium,low,none,10,3,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 156080,KODEX MSCI Korea,krx_numeric,삼성자산운용,MSCI Korea Index,enriched,40,C,low,low,medium,low,none,10,3,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 157450,TIGER 단기통안채,krx_numeric,미래에셋자산운용,KIS MSB 6M(총수익),enriched,68,B,medium,low,medium,medium,low,4,4,false,산업·국가 비중|실제 분배금 이력
@@ -358,7 +358,7 @@
 157500,TIGER 증권,krx_numeric,미래에셋자산운용,FnGuide 증권 지수,enriched,68,B,medium,low,medium,medium,low,11,4,true,산업·국가 비중|실제 분배금 이력
 159800,마이티 코스피100,krx_numeric,DB자산운용,코스피 100,enriched,40,C,low,low,medium,low,none,10,3,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 160580,TIGER 구리실물,krx_numeric,미래에셋자산운용,S&P GSCI Cash Copper Index,enriched,68,B,medium,low,medium,medium,low,3,3,false,산업·국가 비중|실제 분배금 이력
-161510,PLUS 고배당주,krx_numeric,한화자산운용,FnGuide 배당주 지수,enriched,80,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
+161510,PLUS 고배당주,krx_numeric,한화자산운용,FnGuide 배당주 지수,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
 166400,TIGER 200커버드콜OTM,krx_numeric,미래에셋자산운용,코스피 200 커버드콜 5% OTM,enriched,72,B,medium,low,medium,medium,low,205,5,true,산업·국가 비중|실제 분배금 이력
 167860,KIWOOM 국고채10년레버리지,krx_numeric,키움투자자산운용,KIS 10년 국고채 지수 (총수익),thin,25,D,low,low,low,low,none,0,5,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 168580,ACE 중국본토CSI300,krx_numeric,한국투자신탁운용,CSI 300 Index,enriched,35,C,medium,low,low,medium,none,0,3,false,구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
@@ -596,7 +596,7 @@
 315930,KODEX Top5PlusTR,krx_numeric,삼성자산운용,FnGuide TOP 5 Plus Total Return 지수,enriched,40,C,low,low,medium,low,none,10,3,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 315960,RISE 대형고배당10TR,krx_numeric,KB자산운용,WISE 대형고배당10 TR 지수,enriched,68,B,medium,low,medium,medium,low,10,4,true,산업·국가 비중|실제 분배금 이력
 316300,ACE 싱가포르리츠,krx_numeric,한국투자신탁운용,Morningstar Singapore REIT Yield Focus Index(PR),enriched,35,C,medium,low,low,medium,none,0,3,false,구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
-316670,KIWOOM 코스닥150,krx_numeric,키움투자자산운용,코스닥 150,enriched,62,B,medium,low,medium,medium,low,10,3,true,산업·국가 비중|실제 분배금 이력
+316670,KIWOOM 코스닥150,krx_numeric,키움투자자산운용,코스닥 150,enriched,40,C,low,low,medium,low,none,10,3,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 319640,TIGER 골드선물(H),krx_numeric,미래에셋자산운용,S&P GSCI Gold Index(TR),enriched,68,B,medium,low,medium,medium,low,4,3,false,산업·국가 비중|실제 분배금 이력
 321410,KODEX 멀티에셋하이인컴(H),krx_numeric,삼성자산운용,Morningstar Multi-Asset High Income 10% Capped Index,thin,25,D,low,low,low,low,none,0,3,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 322400,HANARO e커머스,krx_numeric,NH-Amundi자산운용,FnGuide E커머스 지수,enriched,40,C,low,low,medium,low,none,10,3,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
@@ -648,7 +648,7 @@
 365000,TIGER 인터넷TOP10,krx_numeric,미래에셋자산운용,KRX 인터넷 TOP 10 지수,enriched,68,B,medium,low,medium,medium,low,11,4,true,산업·국가 비중|실제 분배금 이력
 365040,TIGER AI코리아그로스액티브,krx_numeric,미래에셋자산운용,코스피,enriched,68,B,medium,low,medium,medium,low,183,5,true,산업·국가 비중|실제 분배금 이력
 365780,ACE 국고채10년,krx_numeric,한국투자신탁운용,KIS 10년 국고채 지수 (총수익),enriched,35,C,medium,low,low,medium,none,0,4,false,구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
-367380,ACE 미국나스닥100,krx_numeric,한국투자신탁운용,NASDAQ 100,enriched,35,C,medium,low,low,medium,none,0,4,false,구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
+367380,ACE 미국나스닥100,krx_numeric,한국투자신탁운용,NASDAQ 100,thin,25,D,low,low,low,low,none,0,4,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 367740,HANARO Fn5G산업,krx_numeric,NH-Amundi자산운용,FnGuide 5G 산업 지수,enriched,40,C,low,low,medium,low,none,10,4,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 367760,RISE 네트워크인프라,krx_numeric,KB자산운용,FnGuide 네트워크 인프라 지수,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
 367770,RISE 수소경제테마,krx_numeric,KB자산운용,FnGuide 수소 경제 테마 지수,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
@@ -669,7 +669,7 @@
 375770,KODEX 탄소효율그린뉴딜,krx_numeric,삼성자산운용,KRX/S&P 탄소효율 그린뉴딜지수,enriched,40,C,low,low,medium,low,none,10,4,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 376410,TIGER 탄소효율그린뉴딜,krx_numeric,미래에셋자산운용,KRX/S&P 탄소효율 그린뉴딜지수,enriched,68,B,medium,low,medium,medium,low,634,4,true,산업·국가 비중|실제 분배금 이력
 377990,TIGER Fn신재생에너지,krx_numeric,미래에셋자산운용,FnGuide 신재생에너지 지수,enriched,68,B,medium,low,medium,medium,low,22,4,true,산업·국가 비중|실제 분배금 이력
-379780,RISE 미국S&P500,krx_numeric,KB자산운용,S&P 500,enriched,65,B,medium,low,low,medium,high,0,4,false,구성종목|산업·국가 비중
+379780,RISE 미국S&P500,krx_numeric,KB자산운용,S&P 500,enriched,61,B,medium,low,low,medium,high,0,4,false,구성종목|산업·국가 비중
 379790,RISE 유로스탁스50(H),krx_numeric,KB자산운용,EURO STOXX 50 Index,enriched,61,B,medium,low,low,medium,high,0,3,false,구성종목|산업·국가 비중
 379800,KODEX 미국S&P500,krx_numeric,삼성자산운용,S&P 500,enriched,33,C,low,low,low,low,low,0,4,true,상품 설명·투자 목적|구성종목|산업·국가 비중|실제 분배금 이력
 379810,KODEX 미국나스닥100,krx_numeric,삼성자산운용,NASDAQ 100,enriched,33,C,low,low,low,low,low,0,4,true,상품 설명·투자 목적|구성종목|산업·국가 비중|실제 분배금 이력
@@ -770,7 +770,7 @@
 429000,TIGER 미국S&P500배당귀족,krx_numeric,미래에셋자산운용,S&P 500 Dividend Aristocrats 지수 (Price Return),enriched,68,B,medium,low,medium,medium,low,70,4,false,산업·국가 비중|실제 분배금 이력
 429010,TIGER 미국나스닥넥스트100,krx_numeric,미래에셋자산운용,Nasdaq Next Generation 100 지수 (Price Return),enriched,68,B,medium,low,medium,medium,low,106,3,false,산업·국가 비중|실제 분배금 이력
 429740,PLUS K리츠,krx_numeric,한화자산운용,FnGuide 리츠 지수,enriched,80,A,medium,low,medium,medium,high,10,3,true,산업·국가 비중
-429760,PLUS 미국S&P500,krx_numeric,한화자산운용,S&P 500,enriched,65,B,medium,low,low,medium,high,0,4,false,구성종목|산업·국가 비중
+429760,PLUS 미국S&P500,krx_numeric,한화자산운용,S&P 500,enriched,61,B,medium,low,low,medium,high,0,4,false,구성종목|산업·국가 비중
 429980,SOL 한국형글로벌전기차&2차전지액티브,krx_numeric,신한자산운용,FactSet Global Electric Vehicle and Rechargeable Battery Korea-Tilted Index(PR),enriched,68,B,medium,low,medium,medium,low,33,3,false,산업·국가 비중|실제 분배금 이력
 430500,KIWOOM 물가채KIS,krx_numeric,키움투자자산운용,KIS TIPS 지수(총수익),enriched,25,D,medium,low,low,medium,none,0,3,false,구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 432600,RISE 국채선물3년,krx_numeric,KB자산운용,국채선물지수,enriched,61,B,medium,low,low,medium,high,0,4,false,구성종목|산업·국가 비중
@@ -900,7 +900,7 @@
 458210,KIWOOM CD금리액티브(합성),krx_numeric,키움투자자산운용,FnGuide CD91일 금리투자 지수(총수익),thin,25,D,low,low,low,low,none,0,4,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 458250,TIGER 미국30년국채스트립액티브(합성 H),krx_numeric,미래에셋자산운용,ICE BofA Long US Treasury Principal STRIPS Index,enriched,68,B,medium,low,medium,medium,low,6,4,false,산업·국가 비중|실제 분배금 이력
 458260,TIGER 미국투자등급회사채액티브(H),krx_numeric,미래에셋자산운용,iBoxx USD Liquid Investment Grade Index(Price Return),enriched,68,B,medium,low,medium,medium,low,630,4,false,산업·국가 비중|실제 분배금 이력
-458730,TIGER 미국배당다우존스,krx_numeric,미래에셋자산운용,Dow Jones U.S. Dividend 100 Price Return Index,enriched,72,B,medium,low,medium,medium,low,100,3,false,산업·국가 비중|실제 분배금 이력
+458730,TIGER 미국배당다우존스,krx_numeric,미래에셋자산운용,Dow Jones U.S. Dividend 100 Price Return Index,enriched,68,B,medium,low,medium,medium,low,100,3,false,산업·국가 비중|실제 분배금 이력
 458750,TIGER 미국배당다우존스타겟커버드콜1호,krx_numeric,미래에셋자산운용,DowJones U.S. Dividend 100 3% Premium Covered Call 지수 (TR),enriched,72,B,medium,low,medium,medium,low,102,4,false,산업·국가 비중|실제 분배금 이력
 458760,TIGER 미국배당다우존스타겟커버드콜2호,krx_numeric,미래에셋자산운용,DowJones U.S. Dividend 100 7% Premium Covered Call 지수 (TR),enriched,72,B,medium,low,medium,medium,low,102,4,false,산업·국가 비중|실제 분배금 이력
 459560,KODEX 테슬라밸류체인FactSet,krx_numeric,삼성자산운용,FactSet TSLA Value Chain Index(PR),thin,25,D,low,low,low,low,none,0,3,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
@@ -1079,7 +1079,7 @@
 489250,KODEX 미국배당다우존스,krx_numeric,삼성자산운용,Dow Jones U.S. Dividend 100 Price Return Index,thin,25,D,low,low,low,low,none,0,3,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
 489290,WON 미국빌리어네어,krx_numeric,우리자산운용,Bloomberg US Billionaires Investment Select Index(PR),enriched,53,C,medium,low,low,medium,low,0,3,false,구성종목|산업·국가 비중|실제 분배금 이력
 489860,KIWOOM 글로벌전력GRID인프라,krx_numeric,키움투자자산운용,NASDAQ OMX Clean Edge Smart Grid Infrastructure Index,thin,25,D,low,low,low,low,none,0,3,false,상품 설명·투자 목적|구성종목|산업·국가 비중|분배 일정|실제 분배금 이력
-490090,TIGER 미국AI빅테크10,krx_numeric,미래에셋자산운용,KEDI 미국AI빅테크10 지수(PR),enriched,72,B,medium,low,medium,medium,low,11,3,false,산업·국가 비중|실제 분배금 이력
+490090,TIGER 미국AI빅테크10,krx_numeric,미래에셋자산운용,KEDI 미국AI빅테크10 지수(PR),enriched,68,B,medium,low,medium,medium,low,11,3,false,산업·국가 비중|실제 분배금 이력
 490330,KoAct 미국치매&뇌질환치료제액티브,krx_numeric,삼성액티브자산운용,Solactive 미국뇌질환치료제 PR 지수,enriched,53,C,medium,low,low,medium,low,0,3,false,구성종목|산업·국가 비중|실제 분배금 이력
 490480,SOL K방산,krx_numeric,신한자산운용,KEDI K방산 지수(PR),enriched,68,B,medium,low,medium,medium,low,10,4,true,산업·국가 비중|실제 분배금 이력
 490490,SOL 미국배당미국채혼합50,krx_numeric,신한자산운용,KRX 다우존스 미국배당국채 혼합지수,enriched,57,B,medium,low,low,medium,low,0,4,false,구성종목|산업·국가 비중|실제 분배금 이력
@@ -1112,7 +1112,7 @@
 494840,TIGER 미국방산TOP10,krx_numeric,미래에셋자산운용,Mirae Asset US Defense Top 10 Index(PR),enriched,68,B,medium,low,medium,medium,low,11,3,false,산업·국가 비중|실제 분배금 이력
 494890,KODEX 200액티브,krx_numeric,삼성자산운용,코스피 200,enriched,40,C,low,low,medium,low,none,10,4,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 495040,PLUS 코리아밸류업,krx_numeric,한화자산운용,코리아 밸류업 지수,enriched,80,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
-495050,RISE 코리아밸류업,krx_numeric,KB자산운용,코리아 밸류업 지수,enriched,80,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
+495050,RISE 코리아밸류업,krx_numeric,KB자산운용,코리아 밸류업 지수,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
 495060,TIME 코리아밸류업액티브,krx_numeric,타임폴리오자산운용,코리아 밸류업 지수,enriched,40,C,low,low,medium,low,none,10,4,true,상품 설명·투자 목적|산업·국가 비중|분배 일정|실제 분배금 이력
 495230,KoAct 코리아밸류업액티브,krx_numeric,삼성액티브자산운용,코리아 밸류업 지수,enriched,76,A,medium,low,medium,medium,high,10,4,true,산업·국가 비중
 495330,1Q 코리아밸류업,krx_numeric,하나자산운용,코리아 밸류업 지수,enriched,68,B,medium,low,medium,medium,low,10,4,true,산업·국가 비중|실제 분배금 이력

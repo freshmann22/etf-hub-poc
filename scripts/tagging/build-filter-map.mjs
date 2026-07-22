@@ -36,12 +36,19 @@ function main() {
   const lowConfidence = []; // {etfCode, tagId, score, confidence, reason}
   const unclassified = []; // {etfCode, reason}
   const etfsOut = {};
+  const quarantinedAssignments = new Map((tagScores.automatedFullAudit?.quarantinedAssignments || [])
+    .map((item) => [`${item.etfCode}|${item.tagId}`, item]));
 
   for (const [etfCode, etf] of Object.entries(tagScores.etfs)) {
     const passingTags = [];
     for (const c of etf.classifications) {
       const tag = taxonomyMap.get(c.tagId);
       if (!tag || !tag.enabled) continue;
+      const quarantined = quarantinedAssignments.get(`${etfCode}|${c.tagId}`);
+      if (quarantined) {
+        lowConfidence.push({ etfCode, tagId: c.tagId, score: c.score, confidence: c.confidence, reason: `automated_quarantine:${quarantined.reason}` });
+        continue;
+      }
       if (c.score >= tag.minimumScore && c.confidence >= tag.minimumConfidence) {
         passingTags.push({ tagId: c.tagId, score: c.score, confidence: c.confidence });
         if (!filters[c.tagId]) filters[c.tagId] = [];
@@ -77,6 +84,7 @@ function main() {
     taxonomyVersion: tagScores.taxonomyVersion,
     filters,
     etfs: etfsOut,
+    automatedQuarantine: { assignmentCount: quarantinedAssignments.size },
   };
   writeJsonCache(OUT_FILTER_MAP, filterMap);
   writeJsonCache(OUT_LOW_CONFIDENCE, { generatedAt: new Date().toISOString(), count: lowConfidence.length, items: lowConfidence });

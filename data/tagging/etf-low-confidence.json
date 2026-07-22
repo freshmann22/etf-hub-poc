@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T05:19:47.577Z",
+  "generatedAt": "2026-07-22T12:48:03.828Z",
   "count": 94,
   "items": [
     {
@@ -49,7 +49,7 @@
       "tagId": "sector.game_entertainment_media",
       "score": 0.5,
       "confidence": 0.4,
-      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+      "reason": "automated_quarantine:multi_sector_threshold_missing"
     },
     {
       "etfCode": "192720",
@@ -427,7 +427,7 @@
       "tagId": "sector.ai_power_infrastructure",
       "score": 0.55,
       "confidence": 0.4,
-      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+      "reason": "automated_quarantine:mandate_vs_holdings_threshold_missing"
     },
     {
       "etfCode": "491820",
@@ -574,21 +574,21 @@
       "tagId": "sector.healthcare_bio_pharma",
       "score": 0.55,
       "confidence": 0.5,
-      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+      "reason": "automated_quarantine:broad_top10_sector_threshold_missing"
     },
     {
       "etfCode": "0192T0",
       "tagId": "sector.ev_battery",
       "score": 0.5,
       "confidence": 0.5,
-      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+      "reason": "automated_quarantine:broad_top10_sector_threshold_missing"
     },
     {
       "etfCode": "0192T0",
       "tagId": "sector.semiconductor",
       "score": 0.4,
       "confidence": 0.4,
-      "reason": "minimumScore=0.65/minimumConfidence=0.5 미달"
+      "reason": "automated_quarantine:broad_top10_sector_threshold_missing"
     },
     {
       "etfCode": "0193G0",

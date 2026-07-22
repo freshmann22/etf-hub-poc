@@ -1,0 +1,4345 @@
+{
+  "schemaVersion": "taxonomy-full-auto-audit-v1",
+  "generatedAt": "2026-07-22T12:48:03.047Z",
+  "policy": [
+    "고신뢰 규칙은 자동 반영",
+    "근거 임계값이 없는 태그는 필터에서 자동 격리",
+    "taxonomy 공백은 넓은 대체 태그로 추측하지 않음",
+    "두 번째 실행에서 태그 결과가 같아야 함"
+  ],
+  "summary": {
+    "universeCount": 1141,
+    "actionCount": 93,
+    "affectedEtfCount": 86,
+    "belowMinimumCount": 94,
+    "sparseTagCount": 11,
+    "quarantinedAssignmentCount": 5
+  },
+  "actions": [
+    {
+      "etfCode": "139320",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "TIGER 금은선물(H)",
+        "benchmarkName": "S&P GSCI Precious Metals Index(TR)",
+        "distributionFrequency": null,
+        "distributionSchedule": "- 지급기준일 : 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "GOLD 100 OZ FUT COMEX DEC 2026",
+            "weight": 83.16
+          },
+          {
+            "name": "SILVER FUT COMEX SEPT 2026",
+            "weight": 6.63
+          },
+          {
+            "name": "SPDR Gold Shares",
+            "weight": 6.51
+          },
+          {
+            "name": "iShares Silver Trust",
+            "weight": 3.39
+          },
+          {
+            "name": "미달러선물26년08월물",
+            "weight": -65.63
+          },
+          {
+            "name": "원화예금",
+            "weight": 90.11
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "400570",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "KODEX 유럽탄소배출권선물ICE(H)",
+        "benchmarkName": "ICE EUA Carbon Futures Index(Excess Return)",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "400590",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "region.developed",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.developed",
+        "strategy.passive_index",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "SOL 글로벌탄소배출권선물ICE(합성)",
+        "benchmarkName": "ICE Global Carbon Futures Index(Excess Return)",
+        "distributionFrequency": null,
+        "distributionSchedule": "연 1회 지급; - 회계기간 종료일 (다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일) - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "스왑(미래에셋증권)",
+            "weight": 79.59
+          },
+          {
+            "name": "스왑(메리츠증권)",
+            "weight": 20.11
+          },
+          {
+            "name": "현금성자산",
+            "weight": 0.31
+          },
+          {
+            "name": "100%현금설정액",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "401590",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "region.developed",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.developed",
+        "strategy.passive_index",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "HANARO 글로벌탄소배출권선물ICE(합성)",
+        "benchmarkName": "ICE Global Carbon Futures Index(Excess Return)",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0064K0",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "region.domestic_kr",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "KODEX 금액티브",
+        "benchmarkName": "Bloomberg Gold Spot NY 4pm USD Index",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0172V0",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "region.domestic_kr",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "1Q 은액티브",
+        "benchmarkName": "Bloomberg Blended Silver Spot USD index",
+        "distributionFrequency": null,
+        "distributionSchedule": "회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0189B0",
+      "ruleId": "asset_commodity_explicit_name_and_benchmark",
+      "before": [
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "region.domestic_kr",
+        "asset.commodity"
+      ],
+      "evidence": {
+        "name": "TIGER 은액티브",
+        "benchmarkName": "ICE Silver Spot 지수 (시장가격)",
+        "distributionFrequency": null,
+        "distributionSchedule": "- 지급기준일 : 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "iShares Silver Trust",
+            "weight": 27.14
+          },
+          {
+            "name": "abrdn Physical Silver Shares ETF",
+            "weight": 26.94
+          },
+          {
+            "name": "Global X Physical Silver Structured",
+            "weight": 23.94
+          },
+          {
+            "name": "iShares Physical Silver ETC",
+            "weight": 8.5
+          },
+          {
+            "name": "Sprott Physical Silver Trust",
+            "weight": 7.96
+          },
+          {
+            "name": "iShares Silver Bullion ETF",
+            "weight": 4.83
+          },
+          {
+            "name": "원화예금",
+            "weight": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "183700",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "RISE 200채권혼합50",
+        "benchmarkName": "코스피 200 KTB 혼합지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "6, 12월 지수구성종목 이자지급일 전 영업일 기준(비정기지급)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "183710",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond.government",
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "RISE 주식혼합",
+        "benchmarkName": "주식국채혼합(주식형)지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "6, 12월 지수구성종목 이자지급일 전 영업일 기준(비정기지급)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "284430",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "asset.bond.government",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "KODEX 200미국채혼합50",
+        "benchmarkName": "코스피 200 미국채 혼합지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "435420",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "TIGER 미국나스닥100채권혼합50",
+        "benchmarkName": "FnGuide 나스닥100채권혼합50 지수(총수익 지수)",
+        "distributionFrequency": null,
+        "distributionSchedule": "- 지급기준일 : 1,4,7,10 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "국고채권03250-3512(25-11)",
+            "weight": 12.17
+          },
+          {
+            "name": "국고채권02625-3506(25-5)",
+            "weight": 11.64
+          },
+          {
+            "name": "국고채권03375-3103(26-3)",
+            "weight": 8.64
+          },
+          {
+            "name": "국고채권02750-2812(25-10)",
+            "weight": 8.63
+          },
+          {
+            "name": "국고채권02250-2806(25-4)",
+            "weight": 8.61
+          },
+          {
+            "name": "Apple Inc",
+            "weight": 3.86
+          },
+          {
+            "name": "NVIDIA Corp",
+            "weight": 3.86
+          },
+          {
+            "name": "Microsoft Corp",
+            "weight": 2.3
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 2.09
+          },
+          {
+            "name": "Micron Technology Inc",
+            "weight": 2.07
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "438080",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "ACE 미국S&P500미국채혼합50액티브",
+        "benchmarkName": "S&P 500 and Short-Term Treasury 50/50 Blend Index",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "438100",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "ACE 미국나스닥100미국채혼합50액티브",
+        "benchmarkName": "NASDAQ-100 US T-Bills 50/50 Index",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "447620",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "SOL 미국TOP5채권혼합50",
+        "benchmarkName": "Solactive US TOP5 Balanced50 Index(PR)",
+        "distributionFrequency": null,
+        "distributionSchedule": "연 1회 지급; - 지급 기준일 : 4월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "국고03875-2612(23-10)",
+            "weight": 28.09
+          },
+          {
+            "name": "SOL 초단기채권액티브",
+            "weight": 17.85
+          },
+          {
+            "name": "APPLE INC",
+            "weight": 10.6
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 10.28
+          },
+          {
+            "name": "MICROSOFT",
+            "weight": 10
+          },
+          {
+            "name": "NVIDIA",
+            "weight": 9.95
+          },
+          {
+            "name": "ALPHABET INC-CL A",
+            "weight": 9.77
+          },
+          {
+            "name": "현금성자산",
+            "weight": 3.45
+          },
+          {
+            "name": "100%현금설정액",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "475080",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "dividend.covered_call",
+        "asset.bond",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "dividend.covered_call",
+        "region.domestic_kr",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "KODEX 테슬라커버드콜채권혼합액티브",
+        "benchmarkName": "KEDI 테슬라 인컴 프리미엄 밸런스드 지수(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "490490",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "SOL 미국배당미국채혼합50",
+        "benchmarkName": "KRX 다우존스 미국배당국채 혼합지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 15일 (15일이 영업일이 아닌 경우 직전 영업일) - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0000D0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "dividend.covered_call",
+        "dividend.monthly",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "dividend.monthly",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "TIGER 엔비디아미국채커버드콜밸런스(합성)",
+        "benchmarkName": "KEDI 엔비디아미국채30년타겟커버드콜혼합지수(TR)",
+        "distributionFrequency": null,
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "TIGER 단기통안채",
+            "weight": 21.33
+          },
+          {
+            "name": "TIGER 머니마켓액티브",
+            "weight": 4.69
+          },
+          {
+            "name": "TIGER CD금리플러스액티브(합성)",
+            "weight": 4.55
+          },
+          {
+            "name": "TIGER CD금리투자KIS(합성)",
+            "weight": 3.94
+          },
+          {
+            "name": "KEDI Nvidia U.S. 30Y Treasury Target Covered Call Balanced Index TRS 260507-01",
+            "weight": 0.84
+          },
+          {
+            "name": "KEDI Nvidia U.S. 30Y Treasury Target Covered Call Balanced Index TRS 251229-01",
+            "weight": 0.23
+          },
+          {
+            "name": "KEDI Nvidia U.S. 30Y Treasury Target Covered Call Balanced Index TRS 260626-04",
+            "weight": -0.37
+          },
+          {
+            "name": "KEDI Nvidia U.S. 30Y Treasury Target Covered Call Balanced Index TRS 260616-09",
+            "weight": -0.4
+          },
+          {
+            "name": "원화예금",
+            "weight": 15.53
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0049K0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "dividend.monthly",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.monthly",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "ACE 미국배당퀄리티채권혼합50",
+        "benchmarkName": "Bloomberg WisdomTree U.S. Quality Dividend & Short Term KRW Bonds 50:50 TR Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월의 마지막 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0019K0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "TIME 미국나스닥100채권혼합50액티브",
+        "benchmarkName": "FnGuide 미국나스닥100 단기채권혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0052S0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "1Q 미국S&P500미국채혼합50액티브",
+        "benchmarkName": "S&P 500 and Short-Term Treasury 50/50 Blend Index",
+        "distributionFrequency": null,
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0057H0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "PLUS 미국S&P500미국채혼합50액티브",
+        "benchmarkName": "S&P 500 and U.S. Treasury Bill 0-3 Month 50/50 Blend Index (USD)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일 (단, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0080X0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.sp500",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "SOL 미국S&P500미국채혼합50",
+        "benchmarkName": "S&P 500 and iBoxx $ Treasuries 7-10Y 5050 Blend Index(USD) PR/TR Hybrid",
+        "distributionFrequency": null,
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 15일 (15일이 영업일이 아닌 경우 직전 영업일) - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "T 4 3/8 05/15/34",
+            "weight": 14.37
+          },
+          {
+            "name": "T 4 1/2 11/15/33",
+            "weight": 13.5
+          },
+          {
+            "name": "T 4 02/15/34",
+            "weight": 13.05
+          },
+          {
+            "name": "NVIDIA",
+            "weight": 4
+          },
+          {
+            "name": "T 3 7/8 08/15/33",
+            "weight": 3.9
+          },
+          {
+            "name": "APPLE INC",
+            "weight": 3.73
+          },
+          {
+            "name": "MICROSOFT",
+            "weight": 2.28
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 1.94
+          },
+          {
+            "name": "ALPHABET INC-CL A",
+            "weight": 1.69
+          },
+          {
+            "name": "BROADCOM INC",
+            "weight": 1.45
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0089B0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "PLUS 미국나스닥100미국채혼합50",
+        "benchmarkName": "Nasdaq-100 US T-Bills 1-3 Month 50/50 Index (USD)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일 (단, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0104H0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "asset.bond",
+        "region.us"
+      ],
+      "after": [
+        "strategy.active",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "KoAct 미국나스닥채권혼합50액티브",
+        "benchmarkName": "FnGuide 미국나스닥 금융채권혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "지급 (지급 기준일 : 1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일. 영업일이 아닌 경우 그 직전 영업일) ※ 지급 기준일은 참고사항으로, 실제 지급일은 아래 '분배금 지급현황'을 확인",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0111P0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.bond.government",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "1Q 미국나스닥100미국채혼합50액티브",
+        "benchmarkName": "Nasdaq-100 US T-Bills 0-6 Month 50/50 Index",
+        "distributionFrequency": null,
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0162Z0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "RISE 삼성전자SK하이닉스채권혼합50",
+        "benchmarkName": "KAP 삼성전자SK하이닉스채권혼합50 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "1월, 4월, 7월, 10월 마지막 영업일 및 회계기간 종료일 (회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0177N0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "KODEX 삼성전자SK하이닉스채권혼합50",
+        "benchmarkName": "Wise 삼성전자 SK하이닉스 채권혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0178H0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "IBK 미국AI TOP10국채혼합50",
+        "benchmarkName": "FnGuide 미국AI TOP10국채혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0182S0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "1Q K반도체TOP2채권혼합50",
+        "benchmarkName": "KEDI K반도체TOP2채권혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0183V0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "KIWOOM 삼성전자&SK하이닉스채권혼합50",
+        "benchmarkName": "FnGuide 삼성전자 & SK하이닉스 채권혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0184E0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "asset.bond"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "1Q 200채권혼합50액티브",
+        "benchmarkName": "코스피 200 단기국공채 혼합지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0186S0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.active",
+        "asset.bond",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "region.domestic_kr",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "1Q 코스닥150채권혼합50액티브",
+        "benchmarkName": "코스닥 150 단기국공채 혼합지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0192S0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "SOL 코스피200채권혼합50",
+        "benchmarkName": "코스피 200 KTB 혼합지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 매월 마지막 영업일 기준 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "국고02750-2812(25-10)",
+            "weight": 15.59
+          },
+          {
+            "name": "국고02250-2806(25-4)",
+            "weight": 15.53
+          },
+          {
+            "name": "국고02500-3009(25-8)",
+            "weight": 15.12
+          },
+          {
+            "name": "삼성전자",
+            "weight": 13.13
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 11.34
+          },
+          {
+            "name": "SOL 200TR",
+            "weight": 7.56
+          },
+          {
+            "name": "현금성자산",
+            "weight": 5.72
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 1.16
+          },
+          {
+            "name": "삼성전기",
+            "weight": 0.81
+          },
+          {
+            "name": "현대차",
+            "weight": 0.63
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0203S0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "WON 삼성전자현대차채권혼합50",
+        "benchmarkName": "KAP 삼성전자현대차채권혼합지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "(1,4,7,10)월 마지막영업일 및 투자신탁회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0206G0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "1Q 현대차기아채권혼합50",
+        "benchmarkName": "KEDI 현대차&기아채권혼합50지수",
+        "distributionFrequency": null,
+        "distributionSchedule": "1,4,7,10월의 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0216K0",
+      "ruleId": "asset_mixed_explicit_50_50",
+      "before": [
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "KIWOOM 미국우주테크TOP2채권혼합50",
+        "benchmarkName": "Akros 미국 우주 Top 2 채권혼합 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0086C0",
+      "ruleId": "asset_mixed_holdings_20pct_each",
+      "before": [
+        "asset.reit",
+        "strategy.active",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "region.domestic_kr",
+        "asset.mixed"
+      ],
+      "evidence": {
+        "name": "TIGER 리츠부동산인프라10채권혼합액티브",
+        "benchmarkName": "KEDI 리츠부동산인프라TOP10채권혼합지수 (Price Return)",
+        "distributionFrequency": null,
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "TIGER 단기통안채",
+            "weight": 52.15
+          },
+          {
+            "name": "맥쿼리인프라",
+            "weight": 13.76
+          },
+          {
+            "name": "SK리츠",
+            "weight": 8.97
+          },
+          {
+            "name": "신한알파리츠",
+            "weight": 5.11
+          },
+          {
+            "name": "롯데리츠",
+            "weight": 4.86
+          },
+          {
+            "name": "ESR켄달스퀘어리츠",
+            "weight": 4.19
+          },
+          {
+            "name": "한화리츠",
+            "weight": 4.15
+          },
+          {
+            "name": "코람코라이프인프라리츠",
+            "weight": 2.8
+          },
+          {
+            "name": "삼성FN리츠",
+            "weight": 1.6
+          },
+          {
+            "name": "이지스밸류플러스리츠",
+            "weight": 1.4
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0008S0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국배당다우존스타겟데일리커버드콜",
+        "benchmarkName": "Dow Jones U.S. Dividend 100 10% Daily Premium Covered Call 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "Abbott Laboratories",
+            "weight": 4.25
+          },
+          {
+            "name": "UnitedHealth Group Inc",
+            "weight": 4.16
+          },
+          {
+            "name": "Merck & Co Inc",
+            "weight": 4.09
+          },
+          {
+            "name": "Amgen Inc",
+            "weight": 3.99
+          },
+          {
+            "name": "Home Depot Inc/The",
+            "weight": 3.99
+          },
+          {
+            "name": "Schwab US Dividend Equity ETF",
+            "weight": 3.99
+          },
+          {
+            "name": "Procter & Gamble Co/The",
+            "weight": 3.94
+          },
+          {
+            "name": "Coca-Cola Co/The",
+            "weight": 3.81
+          },
+          {
+            "name": "Chevron Corp",
+            "weight": 3.64
+          },
+          {
+            "name": "PepsiCo Inc",
+            "weight": 3.54
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0018C0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "dividend.korea_high_dividend",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "dividend.korea_high_dividend",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 고배당주위클리고정커버드콜",
+        "benchmarkName": "코스피 고배당 위클리 고정 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일(다만, 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": [
+          {
+            "name": "기업은행",
+            "weight": 5.23
+          },
+          {
+            "name": "DB손해보험",
+            "weight": 5.19
+          },
+          {
+            "name": "NH투자증권",
+            "weight": 5.14
+          },
+          {
+            "name": "우리금융지주",
+            "weight": 4.9
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 4.5
+          },
+          {
+            "name": "기아",
+            "weight": 4.5
+          },
+          {
+            "name": "삼성카드",
+            "weight": 4.46
+          },
+          {
+            "name": "제일기획",
+            "weight": 4.23
+          },
+          {
+            "name": "삼성증권",
+            "weight": 4.03
+          },
+          {
+            "name": "KT",
+            "weight": 3.91
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0022T0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "dividend.covered_call",
+        "asset.commodity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "strategy.active",
+        "dividend.covered_call",
+        "asset.commodity",
+        "region.domestic_kr",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "SOL 국제금커버드콜액티브",
+        "benchmarkName": "KEDI 골드인컴프리미엄 지수(NTR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "abrdn Physical Gold Shares ETF",
+            "weight": 30.1
+          },
+          {
+            "name": "SPDR Gold MiniShares Trust",
+            "weight": 29.07
+          },
+          {
+            "name": "iShares Gold Trust Micro",
+            "weight": 28.83
+          },
+          {
+            "name": "SPDR Gold Trust",
+            "weight": 11.62
+          },
+          {
+            "name": "현금성자산",
+            "weight": 0.48
+          },
+          {
+            "name": "100%현금설정액",
+            "weight": 0
+          },
+          {
+            "name": "GLD US 07/24/26 C375 EQUITY",
+            "weight": -0.11
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0040X0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "SOL 팔란티어미국채커버드콜혼합",
+        "benchmarkName": "KEDI 팔란티어미국채커버드콜혼합지수(NTR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "Palantir Technologies Inc",
+            "weight": 28.43
+          },
+          {
+            "name": "Vanguard Long-Term Treasury",
+            "weight": 23.19
+          },
+          {
+            "name": "iShares 20+ Year Treasury Bond ETF",
+            "weight": 21.18
+          },
+          {
+            "name": "iShares 0-3 Month Treasury Bon",
+            "weight": 11.69
+          },
+          {
+            "name": "State Street SPDR Portfolio Long Term Treasury ETF",
+            "weight": 10.54
+          },
+          {
+            "name": "현금성자산",
+            "weight": 3.28
+          },
+          {
+            "name": "GraniteShares 2x Long PLTR Daily ETF",
+            "weight": 1.41
+          },
+          {
+            "name": "Schwab Long-Term U.S. Treasury ETF",
+            "weight": 0.25
+          },
+          {
+            "name": "Vanguard Extended Duration Tre",
+            "weight": 0.02
+          },
+          {
+            "name": "Ishares 25+ Year Treasury STRIPS Bond ETF",
+            "weight": 0.01
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0040Y0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "SOL 팔란티어커버드콜OTM채권혼합",
+        "benchmarkName": "KEDI 팔란티어커버드콜OTM 채권혼합지수(NTR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "현금성자산",
+            "weight": 41.69
+          },
+          {
+            "name": "Palantir Technologies Inc",
+            "weight": 29.05
+          },
+          {
+            "name": "국고02250-2806(25-4)",
+            "weight": 15.86
+          },
+          {
+            "name": "국고02750-2812(25-10)",
+            "weight": 8.23
+          },
+          {
+            "name": "USD현금",
+            "weight": 4.85
+          },
+          {
+            "name": "국고02875-2712(24-12)",
+            "weight": 0.84
+          },
+          {
+            "name": "100%현금설정액",
+            "weight": 0
+          },
+          {
+            "name": "PLTR US 07/17/26 P130 EQUITY",
+            "weight": -0.01
+          },
+          {
+            "name": "PLTR US 07/17/26 C130 EQUITY",
+            "weight": -0.5
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0049K0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.monthly",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "after": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "ACE 미국배당퀄리티채권혼합50",
+        "benchmarkName": "Bloomberg WisdomTree U.S. Quality Dividend & Short Term KRW Bonds 50:50 TR Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월의 마지막 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0057H0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.mixed"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.sp500",
+        "region.us",
+        "asset.mixed",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국S&P500미국채혼합50액티브",
+        "benchmarkName": "S&P 500 and U.S. Treasury Bill 0-3 Month 50/50 Blend Index (USD)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일 (단, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0089B0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "after": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국나스닥100미국채혼합50",
+        "benchmarkName": "Nasdaq-100 US T-Bills 1-3 Month 50/50 Index (USD)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일 (단, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0094L0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.china",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.china",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 차이나테크TOP10위클리타겟커버드콜",
+        "benchmarkName": "Bloomberg China Tech Select TOP 10 + 12% Target Premium Weekly Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우, 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0094M0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "strategy.value_up",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "strategy.value_up",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 코리아밸류업위클리고정커버드콜",
+        "benchmarkName": "코리아 밸류업 위클리 커버드콜 30% 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일(다만, 매월 15일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": [
+          {
+            "name": "SK하이닉스",
+            "weight": 19.23
+          },
+          {
+            "name": "삼성전자",
+            "weight": 15.1
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 8.24
+          },
+          {
+            "name": "현대차",
+            "weight": 4.72
+          },
+          {
+            "name": "KB금융",
+            "weight": 4.4
+          },
+          {
+            "name": "신한지주",
+            "weight": 3.48
+          },
+          {
+            "name": "기아",
+            "weight": 2.71
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 2.57
+          },
+          {
+            "name": "한화에어로스페이스",
+            "weight": 2.41
+          },
+          {
+            "name": "현대모비스",
+            "weight": 2.36
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0098N0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.korea_high_dividend",
+        "sector.financials",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.korea_high_dividend",
+        "sector.financials",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 자사주매입고배당주",
+        "benchmarkName": "FnGuide 고배당주 플러스 자사주 지수 (PR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일(다만, 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": [
+          {
+            "name": "KB금융",
+            "weight": 5.69
+          },
+          {
+            "name": "메리츠금융지주",
+            "weight": 5.6
+          },
+          {
+            "name": "신한지주",
+            "weight": 5.18
+          },
+          {
+            "name": "미스토홀딩스",
+            "weight": 5.06
+          },
+          {
+            "name": "HMM",
+            "weight": 5.02
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 4.89
+          },
+          {
+            "name": "JB금융지주",
+            "weight": 4.27
+          },
+          {
+            "name": "우리금융지주",
+            "weight": 4.16
+          },
+          {
+            "name": "KT&G",
+            "weight": 4.13
+          },
+          {
+            "name": "기아",
+            "weight": 3.96
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0104N0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 200타겟위클리커버드콜",
+        "benchmarkName": "코스피 200 타겟 7% 위클리 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "삼성전자",
+            "weight": 32.27
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 27.67
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 3.04
+          },
+          {
+            "name": "삼성전기",
+            "weight": 2.02
+          },
+          {
+            "name": "TIGER 200",
+            "weight": 1.55
+          },
+          {
+            "name": "현대차",
+            "weight": 1.52
+          },
+          {
+            "name": "KB금융",
+            "weight": 1.46
+          },
+          {
+            "name": "신한지주",
+            "weight": 1.19
+          },
+          {
+            "name": "기아",
+            "weight": 0.97
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 0.94
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0104P0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "dividend.korea_high_dividend",
+        "asset.equity",
+        "strategy.passive_index",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "dividend.korea_high_dividend",
+        "asset.equity",
+        "strategy.passive_index",
+        "region.domestic_kr",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 코리아배당다우존스위클리커버드콜",
+        "benchmarkName": "KRX 다우존스 코리아 배당 30 타겟 7% 위클리 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "미스토홀딩스",
+            "weight": 4.91
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 4.64
+          },
+          {
+            "name": "JB금융지주",
+            "weight": 4.51
+          },
+          {
+            "name": "영원무역",
+            "weight": 4.48
+          },
+          {
+            "name": "DB손해보험",
+            "weight": 4.45
+          },
+          {
+            "name": "기업은행",
+            "weight": 4.24
+          },
+          {
+            "name": "BNK금융지주",
+            "weight": 4.2
+          },
+          {
+            "name": "우리금융지주",
+            "weight": 4.16
+          },
+          {
+            "name": "한국타이어앤테크놀로지",
+            "weight": 4.09
+          },
+          {
+            "name": "제일기획",
+            "weight": 3.87
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0128D0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.china",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.china",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 차이나항셍테크위클리타겟커버드콜",
+        "benchmarkName": "HSTECH 15% Target Premium Weekly Covered Call Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0132K0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 테슬라위클리커버드콜채권혼합",
+        "benchmarkName": "Akros 테슬라 위클리 커버드콜 채권혼합 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0138T0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.benchmark.sp500",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.sp500",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 미국S&P500데일리고정커버드콜",
+        "benchmarkName": "S&P500 10% Daily Fixed Covered Call Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일(다만, 매월 15일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0144L0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity"
+      ],
+      "after": [
+        "strategy.active",
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "KODEX 미국성장커버드콜액티브",
+        "benchmarkName": "NASDAQ 100",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0153X0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "region.us",
+        "asset.equity"
+      ],
+      "after": [
+        "strategy.active",
+        "region.us",
+        "asset.equity",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국고배당주액티브",
+        "benchmarkName": "Akros 미국 고배당주 20 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 투자신탁회계기간 종료일.",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0174J0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "asset.reit",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.reit",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "DAISHIN343 오피스리츠플러스",
+        "benchmarkName": "KRX 프라임 오피스 리츠 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일; 익일로부터 10영업일 이내",
+        "topHoldings": [
+          {
+            "name": "SK리츠",
+            "weight": 26.42
+          },
+          {
+            "name": "ESR켄달스퀘어리츠",
+            "weight": 13.7
+          },
+          {
+            "name": "롯데리츠",
+            "weight": 11.44
+          },
+          {
+            "name": "신한알파리츠",
+            "weight": 11.19
+          },
+          {
+            "name": "한화리츠",
+            "weight": 9.91
+          },
+          {
+            "name": "코람코더원리츠",
+            "weight": 7.49
+          },
+          {
+            "name": "삼성FN리츠",
+            "weight": 6.6
+          },
+          {
+            "name": "대신밸류리츠",
+            "weight": 4.24
+          },
+          {
+            "name": "NH올원리츠",
+            "weight": 2.97
+          },
+          {
+            "name": "KB스타리츠",
+            "weight": 1.85
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0176P0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "sector.semiconductor",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "sector.semiconductor",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "FOCUS AI반도체위클리고정커버드콜",
+        "benchmarkName": "AI 반도체 위클리 고정 30% 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일; 지급기준일 익영업일로부터 10영업일 이내",
+        "topHoldings": [
+          {
+            "name": "삼성전자",
+            "weight": 23.11
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 21.51
+          },
+          {
+            "name": "삼성전기",
+            "weight": 12.46
+          },
+          {
+            "name": "피에스케이홀딩스",
+            "weight": 5.12
+          },
+          {
+            "name": "대덕전자",
+            "weight": 4.24
+          },
+          {
+            "name": "케이씨텍",
+            "weight": 3.84
+          },
+          {
+            "name": "심텍",
+            "weight": 3.81
+          },
+          {
+            "name": "두산",
+            "weight": 3.23
+          },
+          {
+            "name": "한미반도체",
+            "weight": 3.18
+          },
+          {
+            "name": "티씨케이",
+            "weight": 2.75
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0177R0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "sector.semiconductor",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "sector.semiconductor",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 반도체TOP10커버드콜액티브",
+        "benchmarkName": "FnGuide 반도체 TOP10 Capped 지수(Price Return)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "SK하이닉스",
+            "weight": 21.6
+          },
+          {
+            "name": "삼성전자",
+            "weight": 21.45
+          },
+          {
+            "name": "TIGER 반도체TOP10",
+            "weight": 11.2
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 8.35
+          },
+          {
+            "name": "SK스퀘어선물2608",
+            "weight": 7.57
+          },
+          {
+            "name": "삼성전기",
+            "weight": 7.47
+          },
+          {
+            "name": "SK하이닉스선물2608",
+            "weight": 4.66
+          },
+          {
+            "name": "원익IPS",
+            "weight": 2.9
+          },
+          {
+            "name": "삼성전기선물2608",
+            "weight": 2.76
+          },
+          {
+            "name": "DB하이텍",
+            "weight": 2.45
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0192S0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "after": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "asset.mixed",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "SOL 코스피200채권혼합50",
+        "benchmarkName": "코스피 200 KTB 혼합지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 매월 마지막 영업일 기준 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": [
+          {
+            "name": "국고02750-2812(25-10)",
+            "weight": 15.59
+          },
+          {
+            "name": "국고02250-2806(25-4)",
+            "weight": 15.53
+          },
+          {
+            "name": "국고02500-3009(25-8)",
+            "weight": 15.12
+          },
+          {
+            "name": "삼성전자",
+            "weight": 13.13
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 11.34
+          },
+          {
+            "name": "SOL 200TR",
+            "weight": 7.56
+          },
+          {
+            "name": "현금성자산",
+            "weight": 5.72
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 1.16
+          },
+          {
+            "name": "삼성전기",
+            "weight": 0.81
+          },
+          {
+            "name": "현대차",
+            "weight": 0.63
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0198A0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "KIWOOM 코스닥150커버드콜액티브",
+        "benchmarkName": "코스닥 150 위클리 고정 30% 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일",
+        "topHoldings": [
+          {
+            "name": "KIWOOM 코스닥150",
+            "weight": 16.71
+          },
+          {
+            "name": "알테오젠",
+            "weight": 4.71
+          },
+          {
+            "name": "에코프로",
+            "weight": 2.97
+          },
+          {
+            "name": "에코프로비엠",
+            "weight": 2.36
+          },
+          {
+            "name": "주성엔지니어링",
+            "weight": 2.08
+          },
+          {
+            "name": "원익IPS",
+            "weight": 1.48
+          },
+          {
+            "name": "리노공업",
+            "weight": 1.3
+          },
+          {
+            "name": "피에스케이",
+            "weight": 1.29
+          },
+          {
+            "name": "레인보우로보틱스",
+            "weight": 1.27
+          },
+          {
+            "name": "에이비엘바이오",
+            "weight": 1.18
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "0203D0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "dividend.covered_call",
+        "asset.bond",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.kospi200",
+        "region.domestic_kr",
+        "dividend.covered_call",
+        "asset.bond",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 200위클리커버드콜채권혼합",
+        "benchmarkName": "코스피 200 KTB 혼합 위클리 고정 10% 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0210E0",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.benchmark.kospi200"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.benchmark.kospi200",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 200커버드콜액티브",
+        "benchmarkName": "코스피 200 위클리 고정 30% 커버드콜 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": [
+          {
+            "name": "삼성전자",
+            "weight": 32.72
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 28.28
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 2.86
+          },
+          {
+            "name": "삼성전기",
+            "weight": 2.01
+          },
+          {
+            "name": "현대차",
+            "weight": 1.67
+          },
+          {
+            "name": "KB금융",
+            "weight": 1.55
+          },
+          {
+            "name": "신한지주",
+            "weight": 1.21
+          },
+          {
+            "name": "기아",
+            "weight": 0.95
+          },
+          {
+            "name": "삼성물산",
+            "weight": 0.94
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "166400",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 200커버드콜OTM",
+        "benchmarkName": "코스피 200 커버드콜 5% OTM",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "삼성전자",
+            "weight": 23.88
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 20.52
+          },
+          {
+            "name": "선물2026년09월물",
+            "weight": 11.8
+          },
+          {
+            "name": "TIGER 200",
+            "weight": 8.51
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 2.3
+          },
+          {
+            "name": "삼성전기",
+            "weight": 1.51
+          },
+          {
+            "name": "TIGER 200TR",
+            "weight": 1.41
+          },
+          {
+            "name": "현대차",
+            "weight": 1.14
+          },
+          {
+            "name": "KB금융",
+            "weight": 1.08
+          },
+          {
+            "name": "신한지주",
+            "weight": 0.88
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "251600",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.bond",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 고배당주채권혼합",
+        "benchmarkName": "FnGuide 고배당 채권혼합 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 투자신탁회계기간 종료일. 다만, 회계기간 종료일이 영업일이 아닌 경우 그 직전 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "289480",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 200커버드콜",
+        "benchmarkName": "코스피 200 커버드콜 ATM 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "삼성전자",
+            "weight": 21.81
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 18.75
+          },
+          {
+            "name": "TIGER 200",
+            "weight": 18.66
+          },
+          {
+            "name": "선물2026년09월물",
+            "weight": 8.68
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 2.12
+          },
+          {
+            "name": "삼성전기",
+            "weight": 1.42
+          },
+          {
+            "name": "현대차",
+            "weight": 1.06
+          },
+          {
+            "name": "KB금융",
+            "weight": 1
+          },
+          {
+            "name": "신한지주",
+            "weight": 0.81
+          },
+          {
+            "name": "기아",
+            "weight": 0.66
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "290080",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 200고배당커버드콜ATM",
+        "benchmarkName": "코스피 200 고배당커버드콜 ATM 지수(시장가격지수)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우, 그 직전 영업일)",
+        "topHoldings": [
+          {
+            "name": "DB손해보험",
+            "weight": 3.07
+          },
+          {
+            "name": "미스토홀딩스",
+            "weight": 2.86
+          },
+          {
+            "name": "삼성카드",
+            "weight": 2.81
+          },
+          {
+            "name": "기업은행",
+            "weight": 2.8
+          },
+          {
+            "name": "JB금융지주",
+            "weight": 2.71
+          },
+          {
+            "name": "제일기획",
+            "weight": 2.7
+          },
+          {
+            "name": "강원랜드",
+            "weight": 2.61
+          },
+          {
+            "name": "BNK금융지주",
+            "weight": 2.55
+          },
+          {
+            "name": "LG유플러스",
+            "weight": 2.53
+          },
+          {
+            "name": "우리금융지주",
+            "weight": 2.51
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "332610",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "asset.bond.corporate",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.bond.corporate",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국단기회사채(AAA~A)",
+        "benchmarkName": "ICE BofaAML 1-3 Year AAA-A US Corporate Index(총수익지수)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "332620",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "asset.bond.corporate",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.bond.corporate",
+        "asset.bond",
+        "region.us",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국장기우량회사채",
+        "benchmarkName": "ICE BofaAML 15+ Year AAA-A US Corporate Index(총수익지수)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "429740",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "asset.reit",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.reit",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS K리츠",
+        "benchmarkName": "FnGuide 리츠 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "분배금 지급 사유 발생시 매월 마지막 영업일 및 회계기간 종료일에 분배금 지급 가능",
+        "topHoldings": [
+          {
+            "name": "SK리츠",
+            "weight": 14.27
+          },
+          {
+            "name": "ESR켄달스퀘어리츠",
+            "weight": 12.92
+          },
+          {
+            "name": "롯데리츠",
+            "weight": 11.36
+          },
+          {
+            "name": "신한알파리츠",
+            "weight": 11.1
+          },
+          {
+            "name": "한화리츠",
+            "weight": 9.28
+          },
+          {
+            "name": "코람코라이프인프라리츠",
+            "weight": 8.43
+          },
+          {
+            "name": "코람코더원리츠",
+            "weight": 7.06
+          },
+          {
+            "name": "삼성FN리츠",
+            "weight": 6.41
+          },
+          {
+            "name": "제이알글로벌리츠",
+            "weight": 4.62
+          },
+          {
+            "name": "대신밸류리츠",
+            "weight": 4
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "458750",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국배당다우존스타겟커버드콜1호",
+        "benchmarkName": "DowJones U.S. Dividend 100 3% Premium Covered Call 지수 (TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "Schwab US Dividend Equity ETF",
+            "weight": 11.6
+          },
+          {
+            "name": "Abbott Laboratories",
+            "weight": 4
+          },
+          {
+            "name": "UnitedHealth Group Inc",
+            "weight": 3.93
+          },
+          {
+            "name": "Merck & Co Inc",
+            "weight": 3.86
+          },
+          {
+            "name": "Amgen Inc",
+            "weight": 3.78
+          },
+          {
+            "name": "Home Depot Inc/The",
+            "weight": 3.72
+          },
+          {
+            "name": "Procter & Gamble Co/The",
+            "weight": 3.72
+          },
+          {
+            "name": "Coca-Cola Co/The",
+            "weight": 3.58
+          },
+          {
+            "name": "Chevron Corp",
+            "weight": 3.41
+          },
+          {
+            "name": "PepsiCo Inc",
+            "weight": 3.34
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "458760",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국배당다우존스타겟커버드콜2호",
+        "benchmarkName": "DowJones U.S. Dividend 100 7% Premium Covered Call 지수 (TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "Abbott Laboratories",
+            "weight": 4.4
+          },
+          {
+            "name": "UnitedHealth Group Inc",
+            "weight": 4.28
+          },
+          {
+            "name": "Merck & Co Inc",
+            "weight": 4.23
+          },
+          {
+            "name": "Amgen Inc",
+            "weight": 4.15
+          },
+          {
+            "name": "Home Depot Inc/The",
+            "weight": 4.1
+          },
+          {
+            "name": "Procter & Gamble Co/The",
+            "weight": 4.09
+          },
+          {
+            "name": "Coca-Cola Co/The",
+            "weight": 3.95
+          },
+          {
+            "name": "Chevron Corp",
+            "weight": 3.76
+          },
+          {
+            "name": "PepsiCo Inc",
+            "weight": 3.67
+          },
+          {
+            "name": "Verizon Communications Inc",
+            "weight": 3.56
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "464470",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us"
+      ],
+      "after": [
+        "strategy.active",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국채30년액티브",
+        "benchmarkName": "ICE U.S. Treasury 20+ Year Bond Index(Total Return)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "474220",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국테크TOP10타겟커버드콜",
+        "benchmarkName": "Bloomberg U.S. Tech Top10+10% Premium Covered Call Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "Apple Inc",
+            "weight": 20.24
+          },
+          {
+            "name": "NVIDIA Corp",
+            "weight": 19.04
+          },
+          {
+            "name": "Alphabet Inc",
+            "weight": 15.18
+          },
+          {
+            "name": "Microsoft Corp",
+            "weight": 12.29
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 10.1
+          },
+          {
+            "name": "Broadcom Inc",
+            "weight": 7.24
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "weight": 5.96
+          },
+          {
+            "name": "Tesla Inc",
+            "weight": 5.34
+          },
+          {
+            "name": "Micron Technology Inc",
+            "weight": 4.01
+          },
+          {
+            "name": "Netflix Inc",
+            "weight": 1.21
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "475080",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "dividend.covered_call",
+        "region.domestic_kr",
+        "asset.mixed"
+      ],
+      "after": [
+        "strategy.active",
+        "dividend.covered_call",
+        "region.domestic_kr",
+        "asset.mixed",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "KODEX 테슬라커버드콜채권혼합액티브",
+        "benchmarkName": "KEDI 테슬라 인컴 프리미엄 밸런스드 지수(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "475720",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "strategy.benchmark.kospi200",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 200위클리커버드콜",
+        "benchmarkName": "코스피 200 위클리 커버드콜 ATM 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우, 그 직전 영업일)",
+        "topHoldings": [
+          {
+            "name": "삼성전자",
+            "weight": 27.22
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 24.6
+          },
+          {
+            "name": "RISE 200",
+            "weight": 3.82
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 2.73
+          },
+          {
+            "name": "삼성전기",
+            "weight": 1.82
+          },
+          {
+            "name": "현대차",
+            "weight": 1.53
+          },
+          {
+            "name": "KB금융",
+            "weight": 1.43
+          },
+          {
+            "name": "신한지주",
+            "weight": 1.14
+          },
+          {
+            "name": "기아",
+            "weight": 0.92
+          },
+          {
+            "name": "삼성물산",
+            "weight": 0.91
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "476850",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "sector.semiconductor",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr"
+      ],
+      "after": [
+        "sector.semiconductor",
+        "strategy.active",
+        "asset.equity",
+        "region.domestic_kr",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "KoAct 배당성장액티브",
+        "benchmarkName": "코스피",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "지급 (월지급) *매월 마지막영업일 분배금지급 기준일",
+        "topHoldings": [
+          {
+            "name": "삼성전자우",
+            "weight": 22.91
+          },
+          {
+            "name": "SK하이닉스",
+            "weight": 20.44
+          },
+          {
+            "name": "HD현대중공업",
+            "weight": 4
+          },
+          {
+            "name": "KB금융",
+            "weight": 3.49
+          },
+          {
+            "name": "한국금융지주",
+            "weight": 3.24
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 3.11
+          },
+          {
+            "name": "삼성전기",
+            "weight": 2.14
+          },
+          {
+            "name": "F&F",
+            "weight": 1.95
+          },
+          {
+            "name": "키움증권",
+            "weight": 1.82
+          },
+          {
+            "name": "HD한국조선해양",
+            "weight": 1.8
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "481340",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us"
+      ],
+      "after": [
+        "strategy.active",
+        "asset.bond.government",
+        "asset.bond",
+        "region.us",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 미국30년국채액티브",
+        "benchmarkName": "Bloomberg U.S Treasury 20+ Year Total Return Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우, 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "482730",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.benchmark.sp500",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.sp500",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국S&P500타겟데일리커버드콜",
+        "benchmarkName": "S&P500 10% Daily Premium Covered Call Index(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "S&P500 EMINI FUT SEPT 2026",
+            "weight": 7.72
+          },
+          {
+            "name": "NVIDIA Corp",
+            "weight": 6.79
+          },
+          {
+            "name": "Apple Inc",
+            "weight": 6.78
+          },
+          {
+            "name": "Microsoft Corp",
+            "weight": 4.04
+          },
+          {
+            "name": "Vanguard S&P 500 ETF",
+            "weight": 3.64
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 3.35
+          },
+          {
+            "name": "Alphabet Inc",
+            "weight": 2.81
+          },
+          {
+            "name": "Broadcom Inc",
+            "weight": 2.43
+          },
+          {
+            "name": "Alphabet Inc",
+            "weight": 2.26
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "weight": 1.96
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "486290",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.benchmark.nasdaq100",
+        "region.us",
+        "dividend.covered_call",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국나스닥100타겟데일리커버드콜",
+        "benchmarkName": "NASDAQ 100 Daily Covered Call Target Premium 15% 지수(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 마지막영업일, 회계기간종료일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "NVIDIA Corp",
+            "weight": 7.18
+          },
+          {
+            "name": "Apple Inc",
+            "weight": 7.17
+          },
+          {
+            "name": "NASDAQ 100 E-MINI INDEX SEPT 2026",
+            "weight": 6.63
+          },
+          {
+            "name": "Microsoft Corp",
+            "weight": 4.28
+          },
+          {
+            "name": "Invesco QQQ Trust Series 1",
+            "weight": 4.13
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 3.89
+          },
+          {
+            "name": "Micron Technology Inc",
+            "weight": 3.87
+          },
+          {
+            "name": "Advanced Micro Devices Inc",
+            "weight": 3.26
+          },
+          {
+            "name": "Alphabet Inc",
+            "weight": 2.95
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "weight": 2.8
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "487950",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "KODEX 대만테크고배당다우존스",
+        "benchmarkName": "Dow Jones Taiwan Technology Dividend 30 Index(TWD)(PR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "489030",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "dividend.korea_high_dividend",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "dividend.korea_high_dividend",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 고배당주위클리커버드콜",
+        "benchmarkName": "코스피 고배당 위클리 콜매도 ATM 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 투자신탁 회계기간 종료일에 지급",
+        "topHoldings": [
+          {
+            "name": "기업은행",
+            "weight": 4.95
+          },
+          {
+            "name": "DB손해보험",
+            "weight": 4.91
+          },
+          {
+            "name": "NH투자증권",
+            "weight": 4.87
+          },
+          {
+            "name": "우리금융지주",
+            "weight": 4.63
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 4.26
+          },
+          {
+            "name": "기아",
+            "weight": 4.25
+          },
+          {
+            "name": "삼성카드",
+            "weight": 4.22
+          },
+          {
+            "name": "제일기획",
+            "weight": 4
+          },
+          {
+            "name": "삼성증권",
+            "weight": 3.83
+          },
+          {
+            "name": "KT",
+            "weight": 3.69
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "490490",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed"
+      ],
+      "after": [
+        "region.us",
+        "strategy.passive_index",
+        "asset.mixed",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "SOL 미국배당미국채혼합50",
+        "benchmarkName": "KRX 다우존스 미국배당국채 혼합지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 15일 (15일이 영업일이 아닌 경우 직전 영업일) - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "490590",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 미국AI밸류체인데일리고정커버드콜",
+        "benchmarkName": "KEDI 미국 AI밸류체인 90%참여+데일리옵션 프리미엄 지수(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우, 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "490600",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 미국배당100데일리고정커버드콜",
+        "benchmarkName": "KEDI 미국 배당100 90%참여+데일리옵션 프리미엄 지수(총수익지수)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일(다만, 매월 15일이 영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "491620",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "RISE 미국테크100데일리고정커버드콜",
+        "benchmarkName": "KEDI 미국 테크100 90%참여+데일리옵션 프리미엄 지수(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일 및 회계기간 종료일(회계기간 종료일이 영업일이 아닌 경우, 그 직전 영업일)",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "493810",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "TIGER 미국AI빅테크10타겟데일리커버드콜",
+        "benchmarkName": "KEDI 미국AI빅테크10+15%데일리프리미엄 지수(TR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "- 지급기준일 : 매월 15일(비영업일인경우 직전영업일) - 지급시기 : 지급기준일 익영업일로부터 제7영업일 이내 분배금 지급현황",
+        "topHoldings": [
+          {
+            "name": "Apple Inc",
+            "weight": 20.13
+          },
+          {
+            "name": "NVIDIA Corp",
+            "weight": 19.38
+          },
+          {
+            "name": "Alphabet Inc",
+            "weight": 14.28
+          },
+          {
+            "name": "Microsoft Corp",
+            "weight": 12.02
+          },
+          {
+            "name": "Amazon.com Inc",
+            "weight": 9.94
+          },
+          {
+            "name": "Broadcom Inc",
+            "weight": 7.16
+          },
+          {
+            "name": "Taiwan Semiconductor Manufacturing Co Ltd",
+            "weight": 6.15
+          },
+          {
+            "name": "Meta Platforms Inc",
+            "weight": 5.04
+          },
+          {
+            "name": "Tesla Inc",
+            "weight": 4.41
+          },
+          {
+            "name": "ASML Holding NV",
+            "weight": 2.76
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "494210",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.active",
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity"
+      ],
+      "after": [
+        "strategy.active",
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "SOL 미국500타겟데일리커버드콜액티브",
+        "benchmarkName": "KEDI 미국퀄리티500+월1%프리미엄 지수(NTR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "월 1회 지급; - 지급 기준일 : 매월 마지막 영업일 - 단, 운용사 정책에 따라 유보 및 지급률 변동 가능",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "494420",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "dividend.covered_call",
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 미국배당증가성장주데일리커버드콜",
+        "benchmarkName": "Bloomberg U.S. Dividend Growth Partial Covered Call Index",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일",
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "495040",
+      "ruleId": "dividend_monthly_frequency_and_schedule",
+      "before": [
+        "strategy.value_up",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "strategy.value_up",
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "PLUS 코리아밸류업",
+        "benchmarkName": "코리아 밸류업 지수",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 15일(영업일이 아닌 경우 그 직전 영업일)",
+        "topHoldings": [
+          {
+            "name": "SK하이닉스",
+            "weight": 20.31
+          },
+          {
+            "name": "삼성전자",
+            "weight": 15.95
+          },
+          {
+            "name": "SK스퀘어",
+            "weight": 8.71
+          },
+          {
+            "name": "현대차",
+            "weight": 4.97
+          },
+          {
+            "name": "KB금융",
+            "weight": 4.64
+          },
+          {
+            "name": "신한지주",
+            "weight": 3.67
+          },
+          {
+            "name": "기아",
+            "weight": 2.88
+          },
+          {
+            "name": "하나금융지주",
+            "weight": 2.71
+          },
+          {
+            "name": "한화에어로스페이스",
+            "weight": 2.53
+          },
+          {
+            "name": "현대모비스",
+            "weight": 2.49
+          }
+        ]
+      }
+    },
+    {
+      "etfCode": "456250",
+      "ruleId": "region_europe_explicit_name_and_benchmark",
+      "before": [
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.equity",
+        "strategy.passive_index",
+        "region.developed"
+      ],
+      "evidence": {
+        "name": "KODEX 유럽명품TOP10 STOXX",
+        "benchmarkName": "STOXX Europe Luxury 10 Index(Price Return)",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0082F0",
+      "ruleId": "region_europe_explicit_name_and_benchmark",
+      "before": [
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.equity",
+        "strategy.passive_index",
+        "region.developed"
+      ],
+      "evidence": {
+        "name": "HANARO 유럽방산",
+        "benchmarkName": "Stoxx 유럽 방산 지수",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "0102X0",
+      "ruleId": "region_europe_explicit_name_and_benchmark",
+      "before": [
+        "asset.equity",
+        "region.domestic_kr",
+        "strategy.passive_index"
+      ],
+      "after": [
+        "asset.equity",
+        "strategy.passive_index",
+        "region.developed"
+      ],
+      "evidence": {
+        "name": "ACE 유럽방산TOP10",
+        "benchmarkName": "NYSE FactSet Europe Defense TOP10 Index (Price Return)",
+        "distributionFrequency": null,
+        "distributionSchedule": null,
+        "topHoldings": []
+      }
+    },
+    {
+      "etfCode": "487950",
+      "ruleId": "region_remove_dow_jones_provider_false_positive",
+      "before": [
+        "region.us",
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "after": [
+        "asset.equity",
+        "strategy.passive_index",
+        "dividend.monthly"
+      ],
+      "evidence": {
+        "name": "KODEX 대만테크고배당다우존스",
+        "benchmarkName": "Dow Jones Taiwan Technology Dividend 30 Index(TWD)(PR)",
+        "distributionFrequency": "monthly",
+        "distributionSchedule": "매월 마지막 영업일",
+        "topHoldings": []
+      }
+    }
+  ],
+  "quarantinedAssignments": [
+    {
+      "etfCode": "0192T0",
+      "tagId": "sector.healthcare_bio_pharma",
+      "reason": "broad_top10_sector_threshold_missing"
+    },
+    {
+      "etfCode": "0192T0",
+      "tagId": "sector.ev_battery",
+      "reason": "broad_top10_sector_threshold_missing"
+    },
+    {
+      "etfCode": "0192T0",
+      "tagId": "sector.semiconductor",
+      "reason": "broad_top10_sector_threshold_missing"
+    },
+    {
+      "etfCode": "487130",
+      "tagId": "sector.ai_power_infrastructure",
+      "reason": "mandate_vs_holdings_threshold_missing"
+    },
+    {
+      "etfCode": "157490",
+      "tagId": "sector.game_entertainment_media",
+      "reason": "multi_sector_threshold_missing"
+    }
+  ],
+  "reviewOnly": {
+    "belowMinimum": [
+      {
+        "etfCode": "102960",
+        "tagId": "sector.shipbuilding",
+        "score": 0.7,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "104530",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.68,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "117460",
+        "tagId": "sector.energy_chemicals",
+        "score": 0.75,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "117680",
+        "tagId": "sector.steel_metals",
+        "score": 0.8,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "117700",
+        "tagId": "sector.construction",
+        "score": 0.8,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "145850",
+        "tagId": "strategy.value",
+        "score": 0.5,
+        "confidence": 0.3
+      },
+      {
+        "etfCode": "157490",
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "192720",
+        "tagId": "strategy.low_volatility",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "213610",
+        "tagId": "strategy.value",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "213610",
+        "tagId": "strategy.large_conglomerate_group",
+        "score": 0.6,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "226380",
+        "tagId": "sector.beauty_cosmetics",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "226380",
+        "tagId": "sector.consumer_staples_food",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "227550",
+        "tagId": "sector.aerospace_defense",
+        "score": 0.6,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "234310",
+        "tagId": "strategy.value",
+        "score": 0.55,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "237350",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "266160",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.5,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "266550",
+        "tagId": "strategy.low_volatility",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "275290",
+        "tagId": "strategy.value",
+        "score": 0.65,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "279540",
+        "tagId": "strategy.low_volatility",
+        "score": 0.6,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "315960",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "325020",
+        "tagId": "strategy.value",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "364690",
+        "tagId": "sector.tech_general",
+        "score": 0.6,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "364960",
+        "tagId": "sector.ev_battery",
+        "score": 0.5,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "364960",
+        "tagId": "sector.healthcare_bio_pharma",
+        "score": 0.5,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "364960",
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.5,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "367740",
+        "tagId": "sector.semiconductor",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "367770",
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "368190",
+        "tagId": "sector.healthcare_bio_pharma",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "368190",
+        "tagId": "sector.ev_battery",
+        "score": 0.45,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "368680",
+        "tagId": "sector.healthcare_bio_pharma",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "368680",
+        "tagId": "sector.ev_battery",
+        "score": 0.45,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "373490",
+        "tagId": "strategy.growth",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "375760",
+        "tagId": "strategy.esg_screening",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "375770",
+        "tagId": "strategy.esg_screening",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "376410",
+        "tagId": "strategy.esg_screening",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "380340",
+        "tagId": "sector.it",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "381570",
+        "tagId": "sector.clean_energy",
+        "score": 0.6,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "381570",
+        "tagId": "sector.ev_battery",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "385520",
+        "tagId": "sector.autonomous_mobility",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "385590",
+        "tagId": "strategy.esg_screening",
+        "score": 0.45,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "385710",
+        "tagId": "sector.ev_battery",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "385710",
+        "tagId": "sector.healthcare_bio_pharma",
+        "score": 0.45,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "387280",
+        "tagId": "sector.autonomous_mobility",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "395750",
+        "tagId": "strategy.value",
+        "score": 0.5,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "395760",
+        "tagId": "strategy.growth",
+        "score": 0.5,
+        "confidence": 0.35
+      },
+      {
+        "etfCode": "401170",
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "404260",
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "404540",
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "404650",
+        "tagId": "sector.clean_energy",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "410870",
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "445290",
+        "tagId": "sector.robotics",
+        "score": 0.6,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "457990",
+        "tagId": "sector.ev_battery",
+        "score": 0.55,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "464600",
+        "tagId": "sector.consumer_discretionary",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "469070",
+        "tagId": "sector.robotics",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "469790",
+        "tagId": "sector.semiconductor",
+        "score": 0.62,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "469790",
+        "tagId": "sector.tech_general",
+        "score": 0.7,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "470310",
+        "tagId": "sector.tech_general",
+        "score": 0.68,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "476850",
+        "tagId": "sector.semiconductor",
+        "score": 0.45,
+        "confidence": 0.3
+      },
+      {
+        "etfCode": "484880",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.6,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "486240",
+        "tagId": "sector.ai_power_infrastructure",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "487130",
+        "tagId": "sector.ai_power_infrastructure",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "491820",
+        "tagId": "sector.ai_power_infrastructure",
+        "score": 0.68,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "495060",
+        "tagId": "strategy.value_up",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "495230",
+        "tagId": "strategy.value_up",
+        "score": 0.75,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "496130",
+        "tagId": "strategy.value_up",
+        "score": 0.7,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0098N0",
+        "tagId": "sector.financials",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0103T0",
+        "tagId": "sector.it",
+        "score": 0.62,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0104P0",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.62,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0111J0",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0115E0",
+        "tagId": "sector.it",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0120J0",
+        "tagId": "sector.game_entertainment_media",
+        "score": 0.52,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0151P0",
+        "tagId": "sector.semiconductor",
+        "score": 0.72,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0152E0",
+        "tagId": "dividend.korea_high_dividend",
+        "score": 0.68,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0152E0",
+        "tagId": "sector.financials",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0153K0",
+        "tagId": "sector.financials",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0162Y0",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0163Y0",
+        "tagId": "sector.semiconductor",
+        "score": 0.58,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0166S0",
+        "tagId": "sector.semiconductor",
+        "score": 0.58,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0190C0",
+        "tagId": "sector.robotics",
+        "score": 0.55,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0191B0",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0192M0",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0192T0",
+        "tagId": "sector.healthcare_bio_pharma",
+        "score": 0.55,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0192T0",
+        "tagId": "sector.ev_battery",
+        "score": 0.5,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0192T0",
+        "tagId": "sector.semiconductor",
+        "score": 0.4,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0193G0",
+        "tagId": "sector.semiconductor",
+        "score": 0.6,
+        "confidence": 0.45
+      },
+      {
+        "etfCode": "0193K0",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0193W0",
+        "tagId": "sector.semiconductor",
+        "score": 0.6,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0194M0",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.5
+      },
+      {
+        "etfCode": "0194N0",
+        "tagId": "sector.semiconductor",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0194R0",
+        "tagId": "sector.semiconductor",
+        "score": 0.55,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0195R0",
+        "tagId": "sector.semiconductor",
+        "score": 0.6,
+        "confidence": 0.55
+      },
+      {
+        "etfCode": "0198B0",
+        "tagId": "sector.semiconductor",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0198D0",
+        "tagId": "sector.semiconductor",
+        "score": 0.5,
+        "confidence": 0.4
+      },
+      {
+        "etfCode": "0199C0",
+        "tagId": "sector.financials",
+        "score": 0.5,
+        "confidence": 0.45
+      }
+    ],
+    "sparseTags": [
+      {
+        "tagId": "region.vietnam",
+        "count": 1
+      },
+      {
+        "tagId": "region.emerging",
+        "count": 2
+      },
+      {
+        "tagId": "sector.autonomous_mobility",
+        "count": 2
+      },
+      {
+        "tagId": "sector.tech_general",
+        "count": 3
+      },
+      {
+        "tagId": "sector.beauty_cosmetics",
+        "count": 4
+      },
+      {
+        "tagId": "sector.energy_chemicals",
+        "count": 3
+      },
+      {
+        "tagId": "sector.steel_metals",
+        "count": 2
+      },
+      {
+        "tagId": "sector.construction",
+        "count": 2
+      },
+      {
+        "tagId": "sector.transportation_logistics",
+        "count": 1
+      },
+      {
+        "tagId": "strategy.growth",
+        "count": 4
+      },
+      {
+        "tagId": "dividend.dividend_growth",
+        "count": 2
+      }
+    ],
+    "taxonomyGaps": [
+      {
+        "etfCode": "487950",
+        "gap": "Taiwan region tag missing"
+      },
+      {
+        "etfCode": "265690",
+        "gap": "Russia region tag missing"
+      },
+      {
+        "etfCode": "316300",
+        "gap": "Singapore single-country region tag missing"
+      },
+      {
+        "scope": "dividend",
+        "gap": "global high-dividend tag missing"
+      }
+    ]
+  },
+  "application": {
+    "applied": true
+  }
+}

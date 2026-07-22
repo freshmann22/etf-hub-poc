@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { readdirSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { readJsonCache, writeJsonCache, cacheExists } from '../metadata/lib/cache.js';
+import { assertFullUniverse } from './lib/full-universe-guard.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -34,6 +35,7 @@ const OUT_LLM = resolve(OUT_DIR, 'etf-llm-scores.json');
 const OUT_FINAL = resolve(OUT_DIR, 'etf-tag-scores.json');
 const OUT_CANDIDATES_RAW = resolve(OUT_DIR, 'etf-candidate-tags-raw.json');
 const OUT_CACHE = resolve(OUT_DIR, 'etf-scoring-cache.json');
+const CANONICAL_METADATA = resolve(ROOT, 'data/normalized/etf-metadata-v2.json');
 const TAXONOMY_VERSION_FALLBACK = '1.0.0';
 const WORKER_PROMPT_VERSION = '1.0.0';
 
@@ -102,17 +104,23 @@ function main() {
     }
   }
 
-  writeJsonCache(OUT_LLM, { generatedAt: new Date().toISOString(), etfCount: llmByCode.size, etfs: Object.fromEntries(llmByCode) });
-
   // candidateTags 원본 집계(auditor 입력) — 정규화는 auditor 몫, 여기선 그대로 모으기만 한다.
   const candidatesRaw = [];
   for (const [etfCode, llm] of llmByCode) {
     for (const ct of llm.candidateTags || []) candidatesRaw.push({ etfCode, ...ct });
   }
-  writeJsonCache(OUT_CANDIDATES_RAW, { generatedAt: new Date().toISOString(), count: candidatesRaw.length, candidates: candidatesRaw });
-
   // 최종 병합: 동일 tagId는 하나로, 규칙(score=1,confidence=1) 우선 보존, LLM이 더 풍부한 evidence 추가 가능.
   const allCodes = new Set([...ruleByCode.keys(), ...llmByCode.keys()]);
+  if (resolve(OUT_DIR) === resolve(ROOT, 'data/tagging') && cacheExists(CANONICAL_METADATA)) {
+    const canonical = readJsonCache(CANONICAL_METADATA);
+    assertFullUniverse({
+      expectedCount: canonical.universeCount || canonical.records?.length,
+      actualCodes: allCodes,
+      operation: 'tagging:merge canonical write',
+    });
+  }
+  writeJsonCache(OUT_LLM, { generatedAt: new Date().toISOString(), etfCount: llmByCode.size, etfs: Object.fromEntries(llmByCode) });
+  writeJsonCache(OUT_CANDIDATES_RAW, { generatedAt: new Date().toISOString(), count: candidatesRaw.length, candidates: candidatesRaw });
   const finalEtfs = {};
   const conflicts = [];
 

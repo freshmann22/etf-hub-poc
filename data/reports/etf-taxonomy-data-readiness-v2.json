@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T11:37:40.299Z",
+  "generatedAt": "2026-07-22T12:48:01.456Z",
   "purpose": "ETF taxonomy review input-data readiness audit",
   "scoringVersion": "metadata-v2-bridge-1.0.0",
   "dataMode": "metadata-v2",
@@ -11,11 +11,11 @@
     },
     "metadata": {
       "path": "data/normalized/etf-metadata-v2.json",
-      "generatedAt": "2026-07-22T11:35:44.582Z"
+      "generatedAt": "2026-07-22T12:47:58.283Z"
     },
     "holdings": {
       "path": "data/normalized/etf-metadata-v2.json",
-      "generatedAt": "2026-07-22T11:35:44.582Z"
+      "generatedAt": "2026-07-22T12:47:58.283Z"
     },
     "indexNames": {
       "path": "data/tagging/etf-universe-index-names.json",
@@ -27,7 +27,7 @@
     },
     "coverage": {
       "path": "data/reports/metadata-v2/coverage.json",
-      "generatedAt": "2026-07-22T11:37:39.572Z"
+      "generatedAt": "2026-07-22T12:48:00.737Z"
     }
   },
   "scoring": {
@@ -43,8 +43,8 @@
   },
   "summary": {
     "totalEtfs": 1141,
-    "enrichedEtfs": 910,
-    "thinEtfs": 231,
+    "enrichedEtfs": 908,
+    "thinEtfs": 233,
     "krxNumericEtfs": 867,
     "unresolvedCodeEtfs": 274,
     "grades": {
@@ -56,8 +56,8 @@
         "meaning": "핵심 근거가 비교적 충분해 사람의 의미 검토를 우선 진행할 수 있음"
       },
       "B": {
-        "count": 457,
-        "pct": 40.1,
+        "count": 456,
+        "pct": 40,
         "id": "B",
         "label": "조건부 리뷰",
         "meaning": "일부 중요한 근거가 빠져 있어 주의 표시와 함께 검토 가능"
@@ -70,8 +70,8 @@
         "meaning": "상품명·일부 지수·구성종목에 편중되어 데이터 보강이 먼저 필요"
       },
       "D": {
-        "count": 253,
-        "pct": 22.2,
+        "count": 254,
+        "pct": 22.3,
         "id": "D",
         "label": "얇은 데이터",
         "meaning": "상품명·기초지수 위주의 최소 데이터로 의미 분류 확정에 부적합"
@@ -84,12 +84,12 @@
           "pct": 0
         },
         "medium": {
-          "count": 709,
-          "pct": 62.1
+          "count": 706,
+          "pct": 61.9
         },
         "low": {
-          "count": 432,
-          "pct": 37.9
+          "count": 435,
+          "pct": 38.1
         },
         "none": {
           "count": 0,
@@ -138,12 +138,12 @@
           "pct": 0
         },
         "medium": {
-          "count": 709,
-          "pct": 62.1
+          "count": 706,
+          "pct": 61.9
         },
         "low": {
-          "count": 432,
-          "pct": 37.9
+          "count": 435,
+          "pct": 38.1
         },
         "none": {
           "count": 0,
@@ -160,12 +160,12 @@
           "pct": 0
         },
         "low": {
-          "count": 405,
-          "pct": 35.5
+          "count": 402,
+          "pct": 35.2
         },
         "none": {
-          "count": 498,
-          "pct": 43.6
+          "count": 501,
+          "pct": 43.9
         }
       }
     },
@@ -187,13 +187,13 @@
       },
       {
         "field": "분배 일정",
-        "count": 498,
-        "pct": 43.6
+        "count": 501,
+        "pct": 43.9
       },
       {
         "field": "상품 설명·투자 목적",
-        "count": 432,
-        "pct": 37.9
+        "count": 435,
+        "pct": 38.1
       },
       {
         "field": "표준 KRX 코드",
@@ -202,8 +202,8 @@
       }
     ],
     "averageScore": 50.8,
-    "humanReviewPriorityCount": 548,
-    "dataCollectionPriorityCount": 593
+    "humanReviewPriorityCount": 547,
+    "dataCollectionPriorityCount": 594
   },
   "etfs": [
     {
@@ -2219,7 +2219,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 16,
         "sourceFieldCount": 12,
         "conflictCount": 2,
         "hasRawType": false,
@@ -3076,7 +3076,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 9,
+        "sourceCount": 7,
         "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
@@ -3773,7 +3773,7 @@
         "tagCount": 4,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
-        "reviewIssueCount": 0
+        "reviewIssueCount": 1
       },
       "missing": [
         "표준 KRX 코드",
@@ -4306,7 +4306,7 @@
       "issuer": "신한자산운용",
       "benchmarkName": "KEDI 국제금현물 ETF 가격지수(PR)",
       "detailScope": "enriched",
-      "score": 80,
+      "score": 76,
       "grade": "A",
       "gradeLabel": "조건부 리뷰",
       "components": {
@@ -4328,8 +4328,8 @@
         "holdingsCount": 11,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
-        "sourceFieldCount": 15,
+        "sourceCount": 15,
+        "sourceFieldCount": 14,
         "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
@@ -4348,10 +4348,10 @@
         "산업·국가 비중"
       ],
       "v2Readiness": {
-        "score": 80,
+        "score": 76,
         "grade": "A",
-        "provenanceSelected": 12,
-        "provenanceBacked": 12
+        "provenanceSelected": 11,
+        "provenanceBacked": 11
       }
     },
     {
@@ -4554,7 +4554,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 3,
-        "sourceCount": 14,
+        "sourceCount": 12,
         "sourceFieldCount": 11,
         "conflictCount": 1,
         "hasRawType": false,
@@ -4896,7 +4896,7 @@
         "holdingsCount": 11,
         "holdingsWeightsKnown": true,
         "descriptionCount": 0,
-        "sourceCount": 14,
+        "sourceCount": 12,
         "sourceFieldCount": 10,
         "conflictCount": 0,
         "hasRawType": false,
@@ -5791,14 +5791,14 @@
       "issuer": "삼성자산운용",
       "benchmarkName": "코스피 200 금융 고배당 TOP 10 지수",
       "detailScope": "enriched",
-      "score": 44,
+      "score": 40,
       "grade": "C",
       "gradeLabel": "조건부 리뷰",
       "components": {
         "identity": 7,
         "productFacts": 10,
         "portfolio": 25,
-        "distribution": 5,
+        "distribution": 0,
         "provenance": 15
       },
       "facetEvidence": {
@@ -5806,19 +5806,19 @@
         "region": "low",
         "sector": "medium",
         "strategy": "low",
-        "dividend": "low"
+        "dividend": "none"
       },
       "evidence": {
         "metadata": true,
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 0,
-        "sourceCount": 11,
-        "sourceFieldCount": 9,
+        "sourceCount": 8,
+        "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
-        "hasDistributionSchedule": true,
+        "hasDistributionSchedule": false,
         "hasDistributionHistory": false,
         "hasSectorCountryWeights": false
       },
@@ -5832,13 +5832,14 @@
         "표준 KRX 코드",
         "상품 설명·투자 목적",
         "산업·국가 비중",
+        "분배 일정",
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 44,
+        "score": 40,
         "grade": "C",
-        "provenanceSelected": 8,
-        "provenanceBacked": 8
+        "provenanceSelected": 7,
+        "provenanceBacked": 7
       }
     },
     {
@@ -7352,7 +7353,7 @@
         "tagCount": 5,
         "hasRuleContribution": true,
         "hasLlmContribution": true,
-        "reviewIssueCount": 0
+        "reviewIssueCount": 1
       },
       "missing": [
         "표준 KRX 코드",
@@ -9771,30 +9772,30 @@
       "issuer": "한국투자신탁운용",
       "benchmarkName": "KRX-Akros 고배당주 20 지수",
       "detailScope": "enriched",
-      "score": 50,
+      "score": 40,
       "grade": "C",
       "gradeLabel": "조건부 리뷰",
       "components": {
         "identity": 7,
-        "productFacts": 20,
+        "productFacts": 10,
         "portfolio": 25,
         "distribution": 0,
         "provenance": 15
       },
       "facetEvidence": {
-        "assetClass": "medium",
+        "assetClass": "low",
         "region": "low",
         "sector": "medium",
-        "strategy": "medium",
+        "strategy": "low",
         "dividend": "none"
       },
       "evidence": {
         "metadata": true,
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
-        "descriptionCount": 1,
-        "sourceCount": 11,
-        "sourceFieldCount": 9,
+        "descriptionCount": 0,
+        "sourceCount": 8,
+        "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
@@ -9810,15 +9811,16 @@
       },
       "missing": [
         "표준 KRX 코드",
+        "상품 설명·투자 목적",
         "산업·국가 비중",
         "분배 일정",
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 50,
+        "score": 40,
         "grade": "C",
-        "provenanceSelected": 8,
-        "provenanceBacked": 8
+        "provenanceSelected": 7,
+        "provenanceBacked": 7
       }
     },
     {
@@ -12457,7 +12459,7 @@
         "productFacts": 20,
         "portfolio": 25,
         "distribution": 5,
-        "provenance": 10
+        "provenance": 15
       },
       "facetEvidence": {
         "assetClass": "medium",
@@ -12471,9 +12473,9 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 14,
+        "sourceCount": 13,
         "sourceFieldCount": 12,
-        "conflictCount": 1,
+        "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -16115,7 +16117,7 @@
         "holdingsCount": 11,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 17,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -16170,9 +16172,9 @@
         "holdingsCount": 36,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
-        "conflictCount": 2,
+        "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -16398,7 +16400,7 @@
         "holdingsCount": 200,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 21,
+        "sourceCount": 19,
         "sourceFieldCount": 14,
         "conflictCount": 2,
         "hasRawType": false,
@@ -17017,7 +17019,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 3,
-        "sourceCount": 17,
+        "sourceCount": 15,
         "sourceFieldCount": 12,
         "conflictCount": 1,
         "hasRawType": false,
@@ -18253,7 +18255,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 9,
+        "sourceCount": 7,
         "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
@@ -18757,7 +18759,7 @@
         "holdingsCount": 29,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 17,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -19759,7 +19761,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 16,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -19904,7 +19906,7 @@
       "issuer": "한화자산운용",
       "benchmarkName": "코스피 200",
       "detailScope": "enriched",
-      "score": 80,
+      "score": 76,
       "grade": "A",
       "gradeLabel": "상세 리뷰 가능",
       "components": {
@@ -19926,9 +19928,9 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 21,
-        "sourceFieldCount": 14,
-        "conflictCount": 3,
+        "sourceCount": 16,
+        "sourceFieldCount": 13,
+        "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -19945,10 +19947,10 @@
         "산업·국가 비중"
       ],
       "v2Readiness": {
-        "score": 80,
+        "score": 76,
         "grade": "A",
-        "provenanceSelected": 12,
-        "provenanceBacked": 12
+        "provenanceSelected": 11,
+        "provenanceBacked": 11
       }
     },
     {
@@ -20128,15 +20130,15 @@
       "name": "KODEX 단기채권",
       "issuer": "삼성자산운용",
       "benchmarkName": "KRW Cash 지수(총수익)",
-      "detailScope": "enriched",
-      "score": 29,
+      "detailScope": "thin",
+      "score": 25,
       "grade": "D",
       "gradeLabel": "근거 보강 우선",
       "components": {
         "identity": 12,
         "productFacts": 10,
         "portfolio": 0,
-        "distribution": 5,
+        "distribution": 0,
         "provenance": 15
       },
       "facetEvidence": {
@@ -20144,19 +20146,19 @@
         "region": "low",
         "sector": "low",
         "strategy": "low",
-        "dividend": "low"
+        "dividend": "none"
       },
       "evidence": {
         "metadata": true,
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 10,
-        "sourceFieldCount": 8,
+        "sourceCount": 7,
+        "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
-        "hasDistributionSchedule": true,
+        "hasDistributionSchedule": false,
         "hasDistributionHistory": false,
         "hasSectorCountryWeights": false
       },
@@ -20170,13 +20172,14 @@
         "상품 설명·투자 목적",
         "구성종목",
         "산업·국가 비중",
+        "분배 일정",
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 29,
+        "score": 25,
         "grade": "D",
-        "provenanceSelected": 7,
-        "provenanceBacked": 7
+        "provenanceSelected": 6,
+        "provenanceBacked": 6
       }
     },
     {
@@ -20577,7 +20580,7 @@
       "issuer": "한화자산운용",
       "benchmarkName": "FnGuide 배당주 지수",
       "detailScope": "enriched",
-      "score": 80,
+      "score": 76,
       "grade": "A",
       "gradeLabel": "상세 리뷰 가능",
       "components": {
@@ -20599,9 +20602,9 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 21,
-        "sourceFieldCount": 14,
-        "conflictCount": 3,
+        "sourceCount": 16,
+        "sourceFieldCount": 13,
+        "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -20618,10 +20621,10 @@
         "산업·국가 비중"
       ],
       "v2Readiness": {
-        "score": 80,
+        "score": 76,
         "grade": "A",
-        "provenanceSelected": 12,
-        "provenanceBacked": 12
+        "provenanceSelected": 11,
+        "provenanceBacked": 11
       }
     },
     {
@@ -23520,7 +23523,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 0,
-        "sourceCount": 10,
+        "sourceCount": 8,
         "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
@@ -24128,7 +24131,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 0,
-        "sourceCount": 10,
+        "sourceCount": 8,
         "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
@@ -24299,7 +24302,7 @@
         "holdingsCount": 151,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 17,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -24466,7 +24469,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 16,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -26081,7 +26084,7 @@
         "holdingsCount": 1,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 15,
+        "sourceCount": 13,
         "sourceFieldCount": 12,
         "conflictCount": 1,
         "hasRawType": false,
@@ -26526,7 +26529,7 @@
         "holdingsCount": 1,
         "holdingsWeightsKnown": true,
         "descriptionCount": 0,
-        "sourceCount": 10,
+        "sourceCount": 8,
         "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
@@ -26640,7 +26643,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 16,
         "sourceFieldCount": 13,
         "conflictCount": 0,
         "hasRawType": false,
@@ -27253,7 +27256,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 9,
+        "sourceCount": 7,
         "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
@@ -27425,7 +27428,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 9,
+        "sourceCount": 7,
         "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
@@ -28489,7 +28492,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 16,
         "sourceFieldCount": 13,
         "conflictCount": 0,
         "hasRawType": false,
@@ -31517,7 +31520,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 0,
-        "sourceCount": 10,
+        "sourceCount": 8,
         "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
@@ -31854,7 +31857,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 3,
-        "sourceCount": 17,
+        "sourceCount": 15,
         "sourceFieldCount": 12,
         "conflictCount": 1,
         "hasRawType": false,
@@ -32297,9 +32300,9 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 20,
+        "sourceCount": 16,
         "sourceFieldCount": 13,
-        "conflictCount": 3,
+        "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -33905,34 +33908,34 @@
       "issuer": "키움투자자산운용",
       "benchmarkName": "코스닥 150",
       "detailScope": "enriched",
-      "score": 62,
-      "grade": "B",
-      "gradeLabel": "상세 리뷰 가능",
+      "score": 40,
+      "grade": "C",
+      "gradeLabel": "조건부 리뷰",
       "components": {
         "identity": 12,
-        "productFacts": 20,
+        "productFacts": 10,
         "portfolio": 25,
-        "distribution": 5,
+        "distribution": 0,
         "provenance": 15
       },
       "facetEvidence": {
-        "assetClass": "medium",
+        "assetClass": "low",
         "region": "low",
         "sector": "medium",
-        "strategy": "medium",
-        "dividend": "low"
+        "strategy": "low",
+        "dividend": "none"
       },
       "evidence": {
         "metadata": true,
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
-        "descriptionCount": 1,
-        "sourceCount": 13,
-        "sourceFieldCount": 11,
+        "descriptionCount": 0,
+        "sourceCount": 8,
+        "sourceFieldCount": 8,
         "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
-        "hasDistributionSchedule": true,
+        "hasDistributionSchedule": false,
         "hasDistributionHistory": false,
         "hasSectorCountryWeights": false
       },
@@ -33943,14 +33946,16 @@
         "reviewIssueCount": 0
       },
       "missing": [
+        "상품 설명·투자 목적",
         "산업·국가 비중",
+        "분배 일정",
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 62,
-        "grade": "B",
-        "provenanceSelected": 10,
-        "provenanceBacked": 10
+        "score": 40,
+        "grade": "C",
+        "provenanceSelected": 7,
+        "provenanceBacked": 7
       }
     },
     {
@@ -34485,9 +34490,9 @@
         "holdingsCount": 15,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
-        "conflictCount": 2,
+        "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -36459,7 +36464,7 @@
         "holdingsCount": 13,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 17,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -36823,31 +36828,31 @@
       "name": "ACE 미국나스닥100",
       "issuer": "한국투자신탁운용",
       "benchmarkName": "NASDAQ 100",
-      "detailScope": "enriched",
-      "score": 35,
-      "grade": "C",
+      "detailScope": "thin",
+      "score": 25,
+      "grade": "D",
       "gradeLabel": "근거 보강 우선",
       "components": {
         "identity": 12,
-        "productFacts": 20,
+        "productFacts": 10,
         "portfolio": 0,
         "distribution": 0,
         "provenance": 15
       },
       "facetEvidence": {
-        "assetClass": "medium",
+        "assetClass": "low",
         "region": "low",
         "sector": "low",
-        "strategy": "medium",
+        "strategy": "low",
         "dividend": "none"
       },
       "evidence": {
         "metadata": true,
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
-        "descriptionCount": 1,
-        "sourceCount": 10,
-        "sourceFieldCount": 8,
+        "descriptionCount": 0,
+        "sourceCount": 7,
+        "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
@@ -36862,16 +36867,17 @@
         "reviewIssueCount": 0
       },
       "missing": [
+        "상품 설명·투자 목적",
         "구성종목",
         "산업·국가 비중",
         "분배 일정",
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 35,
-        "grade": "C",
-        "provenanceSelected": 7,
-        "provenanceBacked": 7
+        "score": 25,
+        "grade": "D",
+        "provenanceSelected": 6,
+        "provenanceBacked": 6
       }
     },
     {
@@ -37998,7 +38004,7 @@
       "issuer": "KB자산운용",
       "benchmarkName": "S&P 500",
       "detailScope": "enriched",
-      "score": 65,
+      "score": 61,
       "grade": "B",
       "gradeLabel": "근거 보강 우선",
       "components": {
@@ -38020,8 +38026,8 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 3,
-        "sourceCount": 18,
-        "sourceFieldCount": 13,
+        "sourceCount": 15,
+        "sourceFieldCount": 12,
         "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
@@ -38040,10 +38046,10 @@
         "산업·국가 비중"
       ],
       "v2Readiness": {
-        "score": 65,
+        "score": 61,
         "grade": "B",
-        "provenanceSelected": 11,
-        "provenanceBacked": 11
+        "provenanceSelected": 10,
+        "provenanceBacked": 10
       }
     },
     {
@@ -38130,7 +38136,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 13,
+        "sourceCount": 11,
         "sourceFieldCount": 9,
         "conflictCount": 0,
         "hasRawType": false,
@@ -40033,9 +40039,9 @@
         "holdingsCount": 11,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
+        "sourceCount": 15,
         "sourceFieldCount": 13,
-        "conflictCount": 2,
+        "conflictCount": 1,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -43654,15 +43660,15 @@
       "issuer": "한화자산운용",
       "benchmarkName": "S&P 500",
       "detailScope": "enriched",
-      "score": 65,
+      "score": 61,
       "grade": "B",
-      "gradeLabel": "근거 보강 우선",
+      "gradeLabel": "조건부 리뷰",
       "components": {
         "identity": 12,
         "productFacts": 20,
         "portfolio": 0,
         "distribution": 10,
-        "provenance": 10
+        "provenance": 15
       },
       "facetEvidence": {
         "assetClass": "medium",
@@ -43676,9 +43682,9 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 3,
-        "sourceCount": 20,
-        "sourceFieldCount": 13,
-        "conflictCount": 2,
+        "sourceCount": 15,
+        "sourceFieldCount": 12,
+        "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -43696,10 +43702,10 @@
         "산업·국가 비중"
       ],
       "v2Readiness": {
-        "score": 65,
+        "score": 61,
         "grade": "B",
-        "provenanceSelected": 11,
-        "provenanceBacked": 11
+        "provenanceSelected": 10,
+        "provenanceBacked": 10
       }
     },
     {
@@ -46941,7 +46947,7 @@
         "holdingsCount": 101,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 16,
+        "sourceCount": 14,
         "sourceFieldCount": 13,
         "conflictCount": 1,
         "hasRawType": false,
@@ -47893,7 +47899,7 @@
         "holdingsCount": 11,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 22,
+        "sourceCount": 20,
         "sourceFieldCount": 14,
         "conflictCount": 1,
         "hasRawType": false,
@@ -48112,7 +48118,7 @@
         "holdingsCount": 0,
         "holdingsWeightsKnown": false,
         "descriptionCount": 0,
-        "sourceCount": 9,
+        "sourceCount": 7,
         "sourceFieldCount": 7,
         "conflictCount": 0,
         "hasRawType": false,
@@ -50974,15 +50980,15 @@
       "issuer": "미래에셋자산운용",
       "benchmarkName": "Dow Jones U.S. Dividend 100 Price Return Index",
       "detailScope": "enriched",
-      "score": 72,
+      "score": 68,
       "grade": "B",
-      "gradeLabel": "조건부 리뷰",
+      "gradeLabel": "상세 리뷰 가능",
       "components": {
         "identity": 12,
         "productFacts": 20,
         "portfolio": 25,
         "distribution": 5,
-        "provenance": 10
+        "provenance": 15
       },
       "facetEvidence": {
         "assetClass": "medium",
@@ -50996,9 +51002,9 @@
         "holdingsCount": 100,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
-        "sourceFieldCount": 14,
-        "conflictCount": 1,
+        "sourceCount": 14,
+        "sourceFieldCount": 13,
+        "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -51016,10 +51022,10 @@
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 72,
+        "score": 68,
         "grade": "B",
-        "provenanceSelected": 12,
-        "provenanceBacked": 12
+        "provenanceSelected": 11,
+        "provenanceBacked": 11
       }
     },
     {
@@ -53636,7 +53642,7 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 15,
+        "sourceCount": 13,
         "sourceFieldCount": 12,
         "conflictCount": 1,
         "hasRawType": false,
@@ -61050,15 +61056,15 @@
       "issuer": "미래에셋자산운용",
       "benchmarkName": "KEDI 미국AI빅테크10 지수(PR)",
       "detailScope": "enriched",
-      "score": 72,
+      "score": 68,
       "grade": "B",
-      "gradeLabel": "조건부 리뷰",
+      "gradeLabel": "상세 리뷰 가능",
       "components": {
         "identity": 12,
         "productFacts": 20,
         "portfolio": 25,
         "distribution": 5,
-        "provenance": 10
+        "provenance": 15
       },
       "facetEvidence": {
         "assetClass": "medium",
@@ -61072,9 +61078,9 @@
         "holdingsCount": 11,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 18,
-        "sourceFieldCount": 14,
-        "conflictCount": 1,
+        "sourceCount": 14,
+        "sourceFieldCount": 13,
+        "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -61092,10 +61098,10 @@
         "실제 분배금 이력"
       ],
       "v2Readiness": {
-        "score": 72,
+        "score": 68,
         "grade": "B",
-        "provenanceSelected": 12,
-        "provenanceBacked": 12
+        "provenanceSelected": 11,
+        "provenanceBacked": 11
       }
     },
     {
@@ -62892,7 +62898,7 @@
       "issuer": "KB자산운용",
       "benchmarkName": "코리아 밸류업 지수",
       "detailScope": "enriched",
-      "score": 80,
+      "score": 76,
       "grade": "A",
       "gradeLabel": "상세 리뷰 가능",
       "components": {
@@ -62900,7 +62906,7 @@
         "productFacts": 20,
         "portfolio": 25,
         "distribution": 10,
-        "provenance": 10
+        "provenance": 15
       },
       "facetEvidence": {
         "assetClass": "medium",
@@ -62914,9 +62920,9 @@
         "holdingsCount": 10,
         "holdingsWeightsKnown": true,
         "descriptionCount": 3,
-        "sourceCount": 20,
-        "sourceFieldCount": 14,
-        "conflictCount": 1,
+        "sourceCount": 16,
+        "sourceFieldCount": 13,
+        "conflictCount": 0,
         "hasRawType": false,
         "hasNameHints": false,
         "hasDistributionSchedule": true,
@@ -62933,10 +62939,10 @@
         "산업·국가 비중"
       ],
       "v2Readiness": {
-        "score": 80,
+        "score": 76,
         "grade": "A",
-        "provenanceSelected": 12,
-        "provenanceBacked": 12
+        "provenanceSelected": 11,
+        "provenanceBacked": 11
       }
     },
     {

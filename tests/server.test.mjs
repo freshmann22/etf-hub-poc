@@ -23,6 +23,7 @@ import { createReverseSearchQueryPlanner } from '../server/services/reverse-sear
 import { OpenRouterQueryPlannerClient } from '../server/llm/openrouter-query-planner.js';
 import { IssuerProvider, buildKoreanIsin, parseKodexHoldingsPayload, parseTigerHoldingsHtml } from '../server/providers/issuer/index.js';
 import { OpenRouterTagBriefClient } from '../server/llm/openrouter-tag-brief.js';
+import { mapReverseSearchPath } from '../server/index.js';
 
 // ---------------------------------------------------------------------------
 // 공용 픽스처
@@ -752,4 +753,19 @@ test('service: publicdata expands universe with thin ETFs (toss off)', async () 
   } finally {
     globalThis.fetch = orig;
   }
+});
+
+// ---------------------------------------------------------------------------
+// 역검색 모듈 라우트 마운트 (/reverse-search) — 루트(/)를 건드리지 않는다.
+// ---------------------------------------------------------------------------
+test('mapReverseSearchPath mounts the module without touching root', () => {
+  assert.deepEqual(mapReverseSearchPath('/reverse-search'), { redirect: '/reverse-search/' });
+  assert.deepEqual(mapReverseSearchPath('/reverse-search/'), { rel: 'modules/reverse-search/index.html' });
+  assert.deepEqual(mapReverseSearchPath('/reverse-search/src/app.js'), { rel: 'modules/reverse-search/src/app.js' });
+  // 루트와 무관한 경로는 기본 정적 처리로 위임(null).
+  assert.equal(mapReverseSearchPath('/'), null);
+  assert.equal(mapReverseSearchPath('/etf-explore.html'), null);
+  assert.equal(mapReverseSearchPath('/api/bundle'), null);
+  // 접두만 같고 실제 다른 경로는 마운트하지 않는다.
+  assert.equal(mapReverseSearchPath('/reverse-search-other'), null);
 });

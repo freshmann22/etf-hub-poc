@@ -22,10 +22,29 @@ const MIME = {
   '.ico': 'image/x-icon',
 };
 
+// 역검색 모듈 마운트 — 제품 라우트에 장착하되 루트(/=Explore)는 건드리지 않는다.
+// 순수 함수(단위테스트 가능): /reverse-search → 301 /reverse-search/ (상대경로 base 보정),
+// /reverse-search/* → modules/reverse-search/*, 그 외는 null(기본 정적 처리로 위임).
+export function mapReverseSearchPath(urlPath) {
+  if (urlPath === '/reverse-search') return { redirect: '/reverse-search/' };
+  if (urlPath === '/reverse-search/' || urlPath.startsWith('/reverse-search/')) {
+    const tail = urlPath.slice('/reverse-search/'.length);
+    return { rel: 'modules/reverse-search/' + (tail || 'index.html') };
+  }
+  return null;
+}
+
 async function serveStatic(req, res) {
   try {
     const urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-    const rel = urlPath === '/' ? 'etf-explore.html' : urlPath.replace(/^\/+/, '');
+    const mounted = mapReverseSearchPath(urlPath);
+    if (mounted?.redirect) {
+      res.writeHead(301, { Location: mounted.redirect }).end();
+      return;
+    }
+    const rel = mounted?.rel
+      ? mounted.rel
+      : urlPath === '/' ? 'etf-explore.html' : urlPath.replace(/^\/+/, '');
     const filePath = normalize(join(root, rel));
     if (!filePath.startsWith(normalize(root))) {
       res.writeHead(403).end('Forbidden');

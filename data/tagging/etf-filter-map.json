@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T05:19:47.570Z",
+  "generatedAt": "2026-07-22T12:30:58.587Z",
   "taxonomyVersion": "2.0.1",
   "filters": {
     "strategy.benchmark.kospi200": [
@@ -485,6 +485,16 @@
       }
     ],
     "region.domestic_kr": [
+      {
+        "etfCode": "0052D0",
+        "score": 1,
+        "confidence": 1
+      },
+      {
+        "etfCode": "0104P0",
+        "score": 1,
+        "confidence": 1
+      },
       {
         "etfCode": "0000J0",
         "score": 1,
@@ -15772,11 +15782,6 @@
         "confidence": 0.75
       },
       {
-        "etfCode": "0052D0",
-        "score": 0.85,
-        "confidence": 0.75
-      },
-      {
         "etfCode": "0073X0",
         "score": 0.85,
         "confidence": 0.75
@@ -15828,11 +15833,6 @@
       },
       {
         "etfCode": "0104H0",
-        "score": 0.85,
-        "confidence": 0.75
-      },
-      {
-        "etfCode": "0104P0",
         "score": 0.85,
         "confidence": 0.75
       },
@@ -40444,11 +40444,6 @@
           "confidence": 0.6
         },
         {
-          "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.75
-        },
-        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6
@@ -40457,6 +40452,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },
@@ -40982,11 +40982,6 @@
           "confidence": 1
         },
         {
-          "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.75
-        },
-        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6
@@ -40995,6 +40990,11 @@
           "tagId": "strategy.passive_index",
           "score": 0.6,
           "confidence": 0.5
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 1
         }
       ]
     },

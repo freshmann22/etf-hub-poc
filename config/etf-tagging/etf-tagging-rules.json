@@ -213,7 +213,7 @@
         "name",
         "benchmarkName"
       ],
-      "pattern": "미국|S&P\\s*500|나스닥|다우존스|러셀",
+      "pattern": "미국|S&P\\s*500|나스닥|러셀",
       "flags": "i",
       "score": 0.85,
       "confidence": 0.75,

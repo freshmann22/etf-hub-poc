@@ -43522,15 +43522,6 @@
           ]
         },
         {
-          "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.75,
-          "source": "rule_v2",
-          "mergedFrom": [
-            "rule_v2"
-          ]
-        },
-        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -43547,10 +43538,26 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 1,
+          "source": "accepted_ai_review",
+          "mergedFrom": [
+            "accepted_ai_review"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "accepted_ai_review_override",
+          "artifactId": "taxonomy-human-shortlist-results-v2",
+          "reviewedAt": "2026-07-22T12:28:58.021Z",
+          "note": "국내 주식 배당지수 상품이며 다우존스 명칭만으로 미국 지역을 부여한 오탐. 미국 태그를 제거하고 국내 태그를 적용."
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -44651,15 +44658,6 @@
           ]
         },
         {
-          "tagId": "region.us",
-          "score": 0.85,
-          "confidence": 0.75,
-          "source": "rule_v2",
-          "mergedFrom": [
-            "rule_v2"
-          ]
-        },
-        {
           "tagId": "asset.equity",
           "score": 1,
           "confidence": 0.6,
@@ -44676,10 +44674,26 @@
           "mergedFrom": [
             "rule_v2"
           ]
+        },
+        {
+          "tagId": "region.domestic_kr",
+          "score": 1,
+          "confidence": 1,
+          "source": "accepted_ai_review",
+          "mergedFrom": [
+            "accepted_ai_review"
+          ]
         }
       ],
       "candidateTags": [],
-      "reviewIssues": [],
+      "reviewIssues": [
+        {
+          "type": "accepted_ai_review_override",
+          "artifactId": "taxonomy-human-shortlist-results-v2",
+          "reviewedAt": "2026-07-22T12:28:58.021Z",
+          "note": "국내 주식 배당지수 상품이며 다우존스 명칭만으로 미국 지역을 부여한 오탐. 미국 태그를 제거하고 국내 태그를 적용."
+        }
+      ],
       "hasRuleContribution": true,
       "hasLlmContribution": true
     },
@@ -57703,5 +57717,11 @@
       }
     ],
     "note": "기존 검토·auditor 승격 분류는 보존하고 공공데이터 기초지수명에서 규칙으로 확정된 benchmark 태그만 추가"
+  },
+  "reviewOverride": {
+    "artifactId": "taxonomy-human-shortlist-results-v2",
+    "acceptedPolicy": "project_owner_accepted_all_ai_recommendations",
+    "reviewedAt": "2026-07-22T12:28:58.021Z",
+    "appliedCount": 2
   }
 }
